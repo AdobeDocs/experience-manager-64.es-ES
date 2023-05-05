@@ -1,5 +1,5 @@
 ---
-title: Invocación de AEM Forms mediante API
+title: Invocar AEM Forms mediante API
 seo-title: Invoking AEM Forms using APIs
 description: Adobe Experience Manager Forms es un software empresarial basado en J2EE que consta de servicios que funcionan dentro de una infraestructura compartida. Aprenda a utilizar aplicaciones de cliente para invocar AEM Forms mediante programación mediante una API de Java, servicios web, Remoting y API de REST.
 seo-description: Adobe Experience Manager Forms is J2EE-based enterprise software that consists of services that operate within a shared infrastructure. Learn how to use client applications to invoke AEM Forms programmatically using a Java API, web services, Remoting, and REST API.
@@ -11,14 +11,18 @@ topic-tags: development-tools, coding
 discoiquuid: 1825e12c-0306-4e0a-9643-47ce1ce82132
 role: Developer
 exl-id: 6b60209f-aced-4698-97f1-b1a7782eef46
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 0%
+source-wordcount: '340'
+ht-degree: 5%
 
 ---
 
-# Invocación de AEM Forms mediante API {#invoking-aem-forms-using-apis}
+# Invocar AEM Forms mediante API {#invoking-aem-forms-using-apis}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Adobe Experience Manager Forms es un software empresarial basado en J2EE que consta de servicios que funcionan dentro de una infraestructura compartida. Las operaciones de servicio suelen consumir o producir documentos. Con AEM Forms, puede combinar el flujo de trabajo de los formularios con formularios electrónicos, la seguridad de los documentos y la generación de documentos en un conjunto integrado y coherente de servicios. Se puede acceder a estos servicios desde dentro y fuera del cortafuegos.
 

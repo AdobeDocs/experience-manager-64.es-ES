@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_je
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e4f31377-ccc9-4986-a3bf-ef2e83d12448
 exl-id: 07671470-59dd-4290-be9a-465fcd89ac2d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 0%
+source-wordcount: '306'
+ht-degree: 7%
 
 ---
 
 # Actualizar el tipo de licencia para la implementación {#update-the-license-type-for-the-deployment}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Como parte del proceso de instalación de AEM formularios, se ha utilizado Configuration Manager para configurar e implementar los módulos de AEM formularios que se requieran. De forma predeterminada, estos módulos se configuran con una licencia de evaluación de 60 días. Utilice la página Cambiar licencia de la consola de administración para cambiar el tipo de licencia de la implementación. Los módulos implementados actualmente se muestran en la página Cambiar licencia .
 

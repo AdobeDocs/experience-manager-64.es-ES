@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
 role: Developer
 exl-id: 883b33c8-50b1-4df2-a762-02be67ce24f1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2149'
-ht-degree: 0%
+source-wordcount: '2185'
+ht-degree: 1%
 
 ---
 
 # Creación dinámica de documentos DDX {#dynamically-creating-ddx-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede crear dinámicamente un documento DDX que pueda utilizarse para realizar una operación Assembler. La creación dinámica de un documento DDX permite utilizar valores en el documento DDX obtenidos durante la ejecución. Para crear dinámicamente un documento DDX, utilice clases que pertenezcan al lenguaje de programación que esté utilizando. Por ejemplo, si está desarrollando la aplicación cliente mediante Java, utilice clases que pertenezcan al grupo `org.w3c.dom.*`paquete. Del mismo modo, si utiliza Microsoft .NET, utilice clases que pertenezcan a la variable `System.Xml` espacio de nombres.
 
@@ -84,7 +88,7 @@ Un documento DDX que se crea mediante el uso de `org.w3c.dom` las clases deben c
 
 **Haga referencia a un documento del PDF para desmontarlo**
 
-Para desmontar un documento de PDF, haga referencia a un archivo de PDF que representa el documento de PDF que se va a desmontar. Cuando se pasa al servicio Assembler, se devuelve un documento PDF independiente para cada marcador de nivel 1 del documento.
+Para desmontar un documento de PDF, haga referencia a un archivo de PDF que represente el documento de PDF que desea desmontar. Cuando se pasa al servicio Assembler, se devuelve un documento PDF independiente para cada marcador de nivel 1 del documento.
 
 **Establecer opciones de tiempo de ejecución**
 
@@ -98,7 +102,7 @@ Desmonte el documento del PDF invocando el `invokeDDX` operación. Pase el docum
 
 Todos los documentos PDF desmontados se devuelven dentro de un objeto de colección. Itere a través del objeto de colección y guarde cada documento de PDF como archivo de PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Creación dinámica de un documento DDX mediante la API de Java](/help/forms/developing/dynamically-creating-ddx-documents.md#dynamically-create-a-ddx-document-using-the-java-api)
 
@@ -184,7 +188,7 @@ Cree dinámicamente un documento DDX y desmonte un documento PDF utilizando la A
    * Iterar a través de la variable `java.util.Map` hasta que encuentre el resultado `com.adobe.idp.Document` objeto.
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` método para extraer el documento PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido (modo SOAP): Creación dinámica de un documento DDX mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
@@ -273,7 +277,7 @@ Cree dinámicamente un documento DDX y desmonte un documento PDF utilizando la A
    * Iterar a través de la variable `Map` para obtener cada documento resultante. A continuación, cree el `value` a `BLOB`.
    * Extraiga los datos binarios que representan el documento del PDF accediendo a su `BLOB` del objeto `MTOM` propiedad. Esto devuelve una matriz de bytes que puede escribir en un archivo PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 

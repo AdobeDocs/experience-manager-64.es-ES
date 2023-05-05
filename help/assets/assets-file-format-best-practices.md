@@ -1,18 +1,22 @@
 ---
 title: Prácticas recomendadas del formato de los archivos de recursos
-description: Prácticas recomendadas para la compatibilidad con archivos en  [!DNL Experience Manager] Assets.
+description: Prácticas recomendadas para la compatibilidad con archivos en [!DNL Experience Manager] Recursos.
 contentOwner: AG
 feature: Asset Management,Developer Tools
 role: Admin
 exl-id: ff739a17-188e-4779-8820-9e4d9b7031d0
-source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '424'
-ht-degree: 0%
+source-wordcount: '460'
+ht-degree: 2%
 
 ---
 
 # Prácticas recomendadas del formato de los archivos de recursos {#assets-file-format-best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 [!DNL Experience Manager Assets] admite muchas bibliotecas de formato de archivos propietarias y de terceros para satisfacer los diversos requisitos de compatibilidad de archivos de los usuarios. Las bibliotecas de Adobe admitidas son Adobe Camera Raw, Gibson, Adobe PDF Rasterizer y Adobe InDesign Server. Además, [!DNL Assets] admite bibliotecas de terceros, como ImageMagick, TwelveMonkeys, etc.
 
@@ -25,9 +29,9 @@ Para obtener un rendimiento óptimo, Adobe recomienda utilizar la biblioteca de 
 * RAW
 * DNG
 
-La biblioteca de Adobe Camera Raw admite el perfil de color CMYK como entrada. Sin embargo, genera la salida en espacio de color RGB y sólo admite la salida en formato JPEG. No conserva el espacio de color del archivo de origen (por ejemplo, CMYK) en las miniaturas.
+La biblioteca de Adobe Camera Raw admite el perfil de color CMYK como entrada. Sin embargo, genera la salida en el espacio de color del RGB y solo admite la salida en formato de JPEG. No conserva el espacio de color del archivo de origen (por ejemplo, CMYK) en las miniaturas.
 
-Para obtener más información, consulte [Soporte Camera Raw](camera-raw.md) en [!DNL Assets].
+Para obtener más información, consulte [compatibilidad Camera Raw](camera-raw.md) en [!DNL Assets].
 
 ## Biblioteca Adobe PDF Rasterizer {#adobe-pdf-rasterizer-library}
 
@@ -37,11 +41,11 @@ Para obtener mejores resultados, Adobe recomienda utilizar la biblioteca Adobe P
 * Los archivos AI con miniaturas no se generan de forma predeterminada
 * Para archivos AI con colores SPOT (PMS)
 
-Las miniaturas y vistas previas generadas con el rasterizador de PDF son de mejor calidad en comparación con los resultados de raster predeterminados. La biblioteca Rasterizer de Adobe PDF no admite conversión de espacios de color. Independientemente del espacio de color del archivo PDF de origen, Adobe PDF Rasterizer genera sólo salida RGB.
+Las miniaturas y vistas previas generadas con el PDF Rasterizador son de mejor calidad en comparación con la salida de trama predeterminada. La biblioteca Rasterizer de Adobe PDF no admite conversión de espacios de color. Independientemente del espacio de color del archivo del PDF de origen, Adobe PDF Rasterizer genera únicamente la salida del RGB.
 
 ## Servidor de Adobe InDesign {#adobe-indesign-cc-server}
 
-Adobe recomienda utilizar el servidor de Adobe InDesign para extraer representaciones específicas de Adobe InDesign, como IDML y HTML. Para obtener más información, consulte [Adición de [!DNL Experience Manager] recursos como referencias en Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
+Adobe recomienda utilizar el servidor de Adobe InDesign para extraer representaciones específicas de Adobe InDesign, como IDML y HTML. Para obtener más información, consulte [Adición [!DNL Experience Manager] recursos como referencias en Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign).
 
 ## Dynamic Media  {#dynamic-media}
 
@@ -56,7 +60,7 @@ Adobe recomienda utilizar la biblioteca ImageMagick en los siguientes escenarios
 * Generación de representaciones en miniatura para archivos EPS
 * Conservar la información del perfil de imagen
 * Para preservar la transparencia
-* Procesamiento de archivos PSD y PSB
+* Para procesar archivos PSD y PSB
 
 Para saber cómo configurar la biblioteca ImageMagic en [!DNL Experience Manager], consulte [Uso de ImageMagick](media-handlers.md#an-example-using-imagemagick). Para obtener un uso óptimo, consulte [Prácticas recomendadas para configurar ImageMagick](best-practices-for-imagemagick.md).
 
@@ -70,7 +74,7 @@ La biblioteca de transcodificación de imágenes admite los siguientes tipos de 
 * PNG (8 bits y 16 bits)
 * GIF
 * BMP
-* TIFF/TIFF comprimido (excepto Tiffs de 32 bits y PTiffs).
+* TIFF TIFF/comprimido (excepto Tiffs de 32 bits y PTiffs).
 * ICO
 * ICN
 

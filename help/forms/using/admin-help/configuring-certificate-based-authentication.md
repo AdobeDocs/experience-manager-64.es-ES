@@ -1,5 +1,5 @@
 ---
-title: Configuración de la autenticación basada en certificados
+title: Configurar la autenticación basada en certificados
 seo-title: Configuring certificate-based authentication
 description: Importe un certificado de entidad emisora de certificados (CA) en el almacén de confianza y cree una asignación de certificados para la autenticación basada en certificados.
 seo-description: Import a Certificate Authority (CA) certificate into the Trust Store and create a certificate mapping for certificate-based authentication.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d958ae65-3008-4d68-9e11-4346e149827f
 exl-id: 88932b5b-2acc-4f21-8ce3-b819a990ad30
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 0%
+source-wordcount: '762'
+ht-degree: 2%
 
 ---
 
-# Configuración de la autenticación basada en certificados {#configuring-certificate-based-authentication}
+# Configurar la autenticación basada en certificados {#configuring-certificate-based-authentication}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 La administración de usuarios suele realizar la autenticación mediante el uso de un nombre de usuario y una contraseña. La administración de usuarios también admite la autenticación basada en certificados, que puede utilizar para autenticar usuarios a través de Acrobat o para autenticar usuarios mediante programación. Para obtener más información sobre la autenticación de usuarios mediante programación, consulte [Programación con formularios AEM](https://www.adobe.com/go/learn_aemforms_programming_63).
 

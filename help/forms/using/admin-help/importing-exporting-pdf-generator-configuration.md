@@ -1,5 +1,5 @@
 ---
-title: Importación y exportación de archivos de configuración de PDF Generator
+title: Importar y exportar archivos de configuración del generador de PDF
 seo-title: Importing and exporting PDF Generator configuration files
 description: Obtenga información sobre cómo importar y exportar archivos de configuración de PDF Generator.
 seo-description: Learn how to import and export PDF Generator configuration files.
@@ -11,20 +11,24 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e25c1b35-73eb-4353-8e39-a2d4cdccd101
 feature: PDF Generator
 exl-id: 57673410-b8f1-494e-b4a0-c6724bab643c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 0%
+source-wordcount: '414'
+ht-degree: 6%
 
 ---
 
-# Importación y exportación de archivos de configuración de PDF Generator {#importing-and-exporting-pdf-generator-configuration-files}
+# Importar y exportar archivos de configuración del generador de PDF {#importing-and-exporting-pdf-generator-configuration-files}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El archivo de configuración contiene la información de conversión de Generador de PDF, que incluye el PDF, el tipo de archivo y la configuración de seguridad.
 
 >[!NOTE]
 >
->No puede cambiar la configuración de tiempo de espera para Generador de PDF importando un archivo nativo2pdfconfig.xml personalizado. La configuración de tiempo de espera de ese archivo es solo para fines informativos y muestra la configuración actual en el Generador de PDF. Para cambiar la configuración de tiempo de espera, consulte &quot;Configuración de los parámetros de rendimiento del generador de PDF&quot; en [Instalación e implementación de AEM formularios](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
+>No puede cambiar la configuración de tiempo de espera para Generador de PDF importando un archivo nativo2pdfconfig.xml personalizado. La configuración de tiempo de espera de ese archivo es solo para fines informativos y muestra la configuración actual en el Generador de PDF. Para cambiar la configuración de tiempo de espera, consulte &quot;Configuración de los parámetros de rendimiento del generador de PDF&quot; en [Instalación e implementación de AEM formularios](https://www.adobe.com/go/learn_aemforms_installJBoss_63_es).
 
 ## Exportar el archivo de configuración actual {#export-your-current-configuration-file}
 

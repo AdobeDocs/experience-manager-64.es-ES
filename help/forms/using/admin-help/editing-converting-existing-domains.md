@@ -1,5 +1,5 @@
 ---
-title: Edición y conversión de dominios existentes
+title: Editar y convertir dominios existentes
 seo-title: Editing and converting existing domains
 description: Obtenga información sobre cómo cambiar la configuración de dominios existentes desde la página Administración de dominios . Convierta un dominio de empresa existente en un dominio híbrido o viceversa.
 seo-description: Learn how to change the settings for existing domains from the Domain Management page. Convert an existing enterprise domain to a hybrid domain or vice versa.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 44dec184-3ef7-4ba6-a87f-ad171d3cb188
 exl-id: 07ca7715-f7b3-40e0-95bc-e05f0662ed08
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 0%
+source-wordcount: '346'
+ht-degree: 5%
 
 ---
 
-# Edición y conversión de dominios existentes{#editing-and-converting-existing-domains}
+# Editar y convertir dominios existentes{#editing-and-converting-existing-domains}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede cambiar la configuración de los dominios existentes desde la página Administración de dominios . También puede convertir un dominio de empresa existente en un dominio híbrido.
 

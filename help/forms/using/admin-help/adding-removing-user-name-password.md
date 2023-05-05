@@ -1,5 +1,5 @@
 ---
-title: Adición y eliminación de credenciales de nombre de usuario y contraseña
+title: Agregar y eliminar credenciales de nombre de usuario y contraseña
 seo-title: Adding and removing user name and password credentials
 description: Obtenga información sobre cómo agregar y quitar credenciales de nombre de usuario y contraseña.
 seo-description: Learn how to add and remove user name and password credentials.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 1fd28077-37a4-4cba-bbce-6d5b353f1e7d
 exl-id: 67537323-e9c8-4eec-bcec-dc5bac4b623c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '150'
-ht-degree: 0%
+source-wordcount: '186'
+ht-degree: 12%
 
 ---
 
-# Adición y eliminación de credenciales de nombre de usuario y contraseña {#adding-and-removing-user-name-and-password-credentials}
+# Agregar y eliminar credenciales de nombre de usuario y contraseña {#adding-and-removing-user-name-and-password-credentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Desde la página Administración de almacén de confianza, puede agregar y eliminar las credenciales de nombre de usuario y contraseña que utiliza el servicio de Forms cuando recibe una solicitud con seguridad de nivel SOAP.
 

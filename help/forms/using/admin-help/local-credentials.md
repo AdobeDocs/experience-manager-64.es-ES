@@ -1,5 +1,5 @@
 ---
-title: Administración de credenciales locales
+title: Administrar credenciales locales
 seo-title: Managing local credentials
 description: Obtenga información sobre cómo administrar las credenciales locales.
 seo-description: Learn how to manage local credentials.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 598a9a03-3773-4620-8867-1f754d8ca031
 exl-id: f8c6f4e3-4c2d-4843-8f29-6d3297e57c89
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 0%
+source-wordcount: '537'
+ht-degree: 4%
 
 ---
 
-# Administración de credenciales locales {#managing-local-credentials}
+# Administrar credenciales locales {#managing-local-credentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Las credenciales locales son credenciales de clave privada alojadas en Administración de almacén de confianza. A *credencial local* identifica dónde se almacena la credencial DES de un usuario. Mediante la administración de almacenes de confianza, puede importar y administrar sus credenciales locales utilizando, por ejemplo, archivos PFX existentes para que pueda importar, editar y eliminar credenciales locales.
 
@@ -36,7 +40,7 @@ Para obtener información e instrucciones relacionadas con las extensiones de Ac
    * **Credencial de extensiones de Acrobat Reader DC:** Certificado digital específico de extensiones de Acrobat Reader DC que permite activar los derechos de uso de Adobe Reader en los documentos de PDF producidos.
    * **Predeterminado:** Indica que esta es la credencial predeterminada para usar con extensiones de Acrobat Reader DC.
 
-   Para obtener información sobre cómo obtener una credencial, consulte [Preparación para la instalación de AEM formularios](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
+   Para obtener información sobre cómo obtener una credencial, consulte [Preparación para la instalación de AEM formularios](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_es).
 
 1. En el cuadro Alias, escriba un identificador para la credencial. Este identificador se utiliza como nombre para mostrar para las credenciales de las extensiones de Acrobat Reader DC y el servicio de firma. Este alias también se utiliza para acceder a las credenciales mediante programación mediante el SDK de AEM forms.
 

@@ -1,30 +1,33 @@
 ---
-title: Licencias de conector de SharePoint, avisos de copyright y renuncias de responsabilidad
-seo-title: Licencias de conector de SharePoint, avisos de copyright y renuncias de responsabilidad
-description: Obtenga más información sobre las licencias de SharePoint Connector, los avisos de copyright y la exención de responsabilidades.
-seo-description: Obtenga más información sobre las licencias de SharePoint Connector, los avisos de copyright y la exención de responsabilidades.
+title: Licencias de SharePoint Connector, avisos de copyright y exenciones de responsabilidad
+seo-title: SharePoint Connector Licenses, Copyright Notices, and Disclaimers
+description: Obtenga más información sobre las licencias de SharePoint Connector, los avisos de copyright y las exenciones de responsabilidad.
+seo-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
 uuid: fba2c8ad-c6f3-484e-87b6-ddc426f7087a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 487fc170-3750-49a7-af59-f1cc20d5f528
-translation-type: tm+mt
-source-git-commit: b98e1ec0f4f5bf44e0d91e4eb9b9317523a23938
+exl-id: 4cd44f33-1bf9-4ec6-868f-0db60bfc56c0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 10%
+source-wordcount: '398'
+ht-degree: 19%
 
 ---
 
+# Licencias de SharePoint Connector, avisos de copyright y exenciones de responsabilidad{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-# Licencias de conector de SharePoint, avisos de copyright y renuncias de responsabilidad{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-Esta sección lista todas las licencias, avisos de copyright y renuncias de responsabilidad que deben indicarse explícitamente en relación con Day JCR Connector para MS SharePoint.
+Esta sección enumera todas las licencias, avisos de copyright y exenciones de responsabilidad que deben declararse explícitamente en relación con Day JCR Connector para MS SharePoint.
 
-## Visión general de las bibliotecas de conectores de terceros {#overview-of-connector-rd-party-libraries}
+## Descripción general de las bibliotecas de terceros del conector {#overview-of-connector-rd-party-libraries}
 
-La siguiente tabla lista las bibliotecas de terceros utilizadas en las bibliotecas principales de SharePoint Connector, junto con las licencias, los avisos de copyright o los avisos de exención de responsabilidades que cubren:
+La siguiente tabla enumera las bibliotecas de terceros utilizadas dentro de las bibliotecas principales de SharePoint Connector, junto con las licencias, los avisos de copyright o las exenciones de responsabilidad por las que se tratan:
 
 | Biblioteca | Tipo de licencia |
 |---|---|
@@ -34,16 +37,16 @@ La siguiente tabla lista las bibliotecas de terceros utilizadas en las bibliotec
 | axiom-impl | [Apache](#apache) |
 | axis2-adb | [Apache](#apache) |
 | axis2-kernel | [Apache](#apache) |
-| Backport-util-Simultáneamente | Dominio público |
+| Backport-util-simultánea | Dominio público |
 | commons-codec | [Apache](#apache) |
-| commons-collection | [Apache](#apache) |
+| commons-collections | [Apache](#apache) |
 | commons-fileupload | [Apache](#apache) |
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| concurrente | [Simultáneo](#concurrent)  (dominio público) |
-| geronimo-activación_1.1_especificación | [Apache](#apache) |
-| geronimo-stax-api_1.0_Spec | [Apache](#apache) |
+| simultáneo | [Simultáneo](#concurrent) (Dominio público) |
+| geronimo-activation_1.1_spec | [Apache](#apache) |
+| geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
 | jackrabbit-jcr2spi | [Apache](#apache) |
 | jackrabbit-jcr-commons | [Apache](#apache) |
@@ -52,7 +55,7 @@ La siguiente tabla lista las bibliotecas de terceros utilizadas en las bibliotec
 | jaxen | BSD |
 | log4j | [Apache](#apache) |
 | lucene-core | [Apache](#apache) |
-| neethi | [Apache](#apache) |
+| nethi | [Apache](#apache) |
 | slf4j-api | [SLF4J.ORG](#slf-j-org) |
 | slf4j-jdk14 | [SLF4J.ORG](#slf-j-org) |
 | stax-api | [Apache](#apache) |
@@ -63,9 +66,9 @@ La siguiente tabla lista las bibliotecas de terceros utilizadas en las bibliotec
 | xml-apis | [Apache](#apache) (contiene partes cubiertas por licencias de dominio público y software W3C) |
 | XmlSchema | [Apache](#apache) |
 
-## Información general sobre las bibliotecas de terceros de CRX {#overview-of-crx-rd-party-libraries}
+## Descripción general de las bibliotecas de terceros de CRX {#overview-of-crx-rd-party-libraries}
 
-La siguiente tabla lista las bibliotecas de terceros utilizadas en CRX, junto con las licencias, avisos de copyright o renuncias de responsabilidad por las que están cubiertas:
+La siguiente tabla enumera las bibliotecas de terceros utilizadas dentro de CRX, junto con las licencias, avisos de copyright o exenciones de responsabilidad por las que están cubiertas:
 
 <table> 
  <colgroup> 
@@ -85,7 +88,7 @@ La siguiente tabla lista las bibliotecas de terceros utilizadas en CRX, junto co
    <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
-   <td>commons-collection-3.1.jar</td> 
+   <td>commons-collections-3.1.jar</td> 
    <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
@@ -97,7 +100,7 @@ La siguiente tabla lista las bibliotecas de terceros utilizadas en CRX, junto co
    <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
-   <td>Simultáneamente-1.3.4.jar</td> 
+   <td>concurrent-1.3.4.jar</td> 
    <td><a href="#concurrent">Simultáneo</a></td> 
   </tr> 
   <tr> 
@@ -106,7 +109,7 @@ La siguiente tabla lista las bibliotecas de terceros utilizadas en CRX, junto co
   </tr> 
   <tr> 
    <td>hsqldb-1.8.0.4.jar</td> 
-   <td><a href="#hypersonic-sql-group">Grupo SQL Hipersónico</a></td> 
+   <td><a href="#hypersonic-sql-group">Grupo SQL Hypersonic</a></td> 
   </tr> 
   <tr> 
    <td>jaxen-1.1-beta-6.jar</td> 
@@ -155,9 +158,9 @@ La siguiente tabla lista las bibliotecas de terceros utilizadas en CRX, junto co
  </tbody> 
 </table>
 
-## Visión General de Bibliotecas de Terceros CQSE {#overview-of-cqse-rd-party-libraries}
+## Descripción general de las bibliotecas de terceros de CQSE {#overview-of-cqse-rd-party-libraries}
 
-La siguiente tabla lista las bibliotecas de terceros utilizadas en el motor servlet del comunicado, junto con las licencias, avisos de copyright o declaraciones de renuncia de responsabilidad por las que se cubren:
+La siguiente tabla enumera las bibliotecas de terceros utilizadas dentro del motor Servlet de Communiqué, junto con las licencias, los avisos de copyright o las exenciones de responsabilidad por las que se tratan:
 
 <table> 
  <colgroup> 
@@ -174,7 +177,7 @@ La siguiente tabla lista las bibliotecas de terceros utilizadas en el motor serv
    <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
-   <td>geronimo-Spec-j2ee-Connector-1.0-M1.jar</td> 
+   <td>geronimo-spec-j2ee-connector-1.0-M1.jar</td> 
    <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
@@ -182,7 +185,7 @@ La siguiente tabla lista las bibliotecas de terceros utilizadas en el motor serv
    <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
-   <td>jasper-Runtime-4.1.30-cqse.jar</td> 
+   <td>jasper-runtime-4.1.30-cqse.jar</td> 
    <td><a href="#apache">Apache</a></td> 
   </tr> 
   <tr> 
@@ -195,7 +198,7 @@ La siguiente tabla lista las bibliotecas de terceros utilizadas en el motor serv
   </tr> 
   <tr> 
    <td>portlet-api-1.0.jar</td> 
-   <td><a href="#apache">Sun Portlet</a></td> 
+   <td><a href="#apache">Portlet Sun</a></td> 
   </tr> 
   <tr> 
    <td>servletapi-2.3.jar</td> 
@@ -426,7 +429,7 @@ La siguiente tabla lista las bibliotecas de terceros utilizadas en el motor serv
      limitations under the License.
 ```
 
-## Concurrente {#concurrent}
+## Simultáneo {#concurrent}
 
 ```xml
      All classes are released to the public domain and may be used for any
@@ -567,7 +570,7 @@ La siguiente tabla lista las bibliotecas de terceros utilizadas en el motor serv
      implementations, and test suites thereof.
 ```
 
-## Grupo SQL Hipersónico {#hypersonic-sql-group}
+## Grupo SQL Hypersonic {#hypersonic-sql-group}
 
 ```xml
      COPYRIGHTS AND LICENSES
@@ -770,7 +773,7 @@ La siguiente tabla lista las bibliotecas de terceros utilizadas en el motor serv
      WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 ```
 
-## Sun Portlet {#sun-portlet}
+## Portlet Sun {#sun-portlet}
 
 ```xml
      SPECIFICATION LEAD IS WILLING TO LICENSE THIS
@@ -1290,4 +1293,3 @@ database. Title to copyright in this software, database and any associated
 documentation shall at all times remain with Princeton University and 
 LICENSEE agrees to preserve same.
 ```
-

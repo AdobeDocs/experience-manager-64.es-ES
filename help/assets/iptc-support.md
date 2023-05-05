@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Metadata
 role: User,Admin,Leader
 exl-id: 3e22e8e4-3675-4d6d-94f4-fc1a4d4801e8
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 7%
+source-wordcount: '400'
+ht-degree: 8%
 
 ---
 
 # Compatibilidad con metadatos IPTC {#support-for-iptc-metadata}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Descubra cómo Adobe Experience Manager Assets admite los metadatos IPTC, las clasificaciones creativas y las palabras clave agregadas a los recursos a través de Adobe Bridge y otras aplicaciones creativas.
 
@@ -23,15 +27,15 @@ El esquema de metadatos predeterminado para los recursos ahora incorpora los esq
 La página Propiedades de los recursos ahora incluye fichas independientes para mostrar los metadatos principales de IPTC y de la extensión IPTC en campos editables.
 
 1. En la interfaz de usuario de Assets, seleccione una imagen.
-1. Toque o haga clic en el icono **[!UICONTROL Properties]** de la barra de herramientas.
-1. En la página Propiedades , pulse o haga clic en la pestaña **[!UICONTROL IPTC]** para ver los metadatos IPTC del recurso.
+1. Toque o haga clic en **[!UICONTROL Propiedades]** de la barra de herramientas.
+1. En la página Propiedades , toque o haga clic en el **[!UICONTROL IPTC]** para ver los metadatos IPTC del recurso.
 1. Edite las propiedades de los metadatos IPTC según sea necesario.
 
    ![iptc_tab](assets/iptc_tab.png)
 
 1. Pulse o haga clic en la pestaña **[!UICONTROL Extensión IPTC]** para ver los metadatos de la extensión IPTC para el recurso.
 1. Edite las propiedades de metadatos de la extensión ITPC, según sea necesario.
-1. Toque o haga clic en **[!UICONTROL Guardar y cerrar]** para guardar los cambios.
+1. Toque o haga clic **[!UICONTROL Guardar y cerrar]** para guardar los cambios.
 
 ## Compatibilidad con la clasificación creativa {#creative-rating-support}
 
@@ -45,6 +49,6 @@ Sin embargo, esta propiedad no está indexada actualmente para evitar conflictos
 
 ## Compatibilidad con palabras clave {#keyword-support}
 
-La pestaña **[!UICONTROL IPTC]** de la página Propiedades también muestra las palabras clave agregadas a los recursos a través de Adobe Bridge y otras aplicaciones creativas. También puede editar estas palabras clave y agregar más palabras clave desde la pestaña **[!UICONTROL IPTC]**.
+La variable **[!UICONTROL IPTC]** en la página Propiedades también muestra las palabras clave agregadas a los recursos a través de Adobe Bridge y otras aplicaciones creativas. También puede editar estas palabras clave y agregar más palabras clave desde **[!UICONTROL IPTC]** pestaña .
 
 ![keywords](assets/keywords.png)

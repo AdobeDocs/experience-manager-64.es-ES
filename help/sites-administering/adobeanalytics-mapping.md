@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 2a9be3b7-b325-4d74-a5bc-8d24db491920
 exl-id: 04adbbc9-9e4c-4c64-aab1-20b17bd75bb5
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1443'
-ht-degree: 1%
+source-wordcount: '1479'
+ht-degree: 2%
 
 ---
 
 # Asignación de datos de componente con propiedades de Adobe Analytics{#mapping-component-data-with-adobe-analytics-properties}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Agregue componentes a la estructura que recopilen los datos para enviarlos a Adobe Analytics. Los componentes diseñados para recopilar datos de análisis almacenan los datos en los **Variable CQ**. Cuando se agrega un componente de este tipo a un marco, el marco muestra la lista de variables de CQ para que pueda dirigirse a las correspondientes **Variable de Analytics**.
 
@@ -103,7 +107,7 @@ Inicialmente, cuando se abre un marco de Adobe Analytics, el buscador de conteni
 
 * Conversión
 
-* Sucesos
+* Eventos
 
 Cuando se selecciona un RSID, todas las variables que pertenecen a ese RSID se agregan a la lista.\
 La variable `cf#` es necesario para asignar variables de Analytics a las variables de CQ presentes en los distintos componentes de seguimiento. Consulte Configuración de un marco para el seguimiento básico.

@@ -10,16 +10,20 @@ topic-tags: components
 content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 exl-id: 3444d7df-fc43-4383-87b0-0f00fef116bc
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 8%
+source-wordcount: '625'
+ht-degree: 52%
 
 ---
 
 # Información general sobre componentes{#components-overview}
 
-Esta página proporciona información general sobre los componentes de Adobe Experience Manager (AEM), como los [se utiliza para la creación de páginas](/help/sites-authoring/default-components-foundation.md).
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+Esta página proporciona información general sobre los componentes de Adobe Experience Manager (AEM), como los [usados para la creación de páginas](/help/sites-authoring/default-components-foundation.md).
 
 ## ¿Qué son los componentes? {#what-exactly-is-a-component}
 
@@ -27,20 +31,20 @@ Esta página proporciona información general sobre los componentes de Adobe Exp
 * Reutilizable.
 * Se desarrolla como unidades independientes dentro de una carpeta del repositorio.
 * No tienen archivos de configuración ocultos.
-* Puede contener otros componentes.
+* Pueden contener otros componentes.
 * Puede ejecutarse en cualquier lugar dentro de cualquier sistema AEM. También se pueden limitar para que se ejecuten en componentes específicos.
 * Disponen de una interfaz de usuario estandarizada.
-* Tenga un comportamiento de edición que se pueda configurar.
-* Utilizar cuadros de diálogo creados con subelementos basados en componentes de la interfaz de usuario de Granite
+* Tienen un comportamiento de edición que se puede configurar.
+* Utilizan cuadros de diálogo creados con subelementos basados en componentes de la IU de Granite
 * Se desarrollan utilizando [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) (recomendado) o JSP.
-* Se puede desarrollar para crear componentes personalizados que amplíen la funcionalidad predeterminada.
+* Se pueden desarrollar para crear componentes personalizados que amplíen la funcionalidad predeterminada.
 
-Como los componentes son modulares, puede:
+Como los componentes son modulares, puede hacer lo siguiente:
 
-* Desarrolle un nuevo componente en la instancia local.
-* Implíquela en el entorno de prueba.
-* Implíquela en su entorno de creación activo, donde permiten a los autores o administradores añadir y configurar contenido.
-* Implemente en los entornos de publicación activos, donde se utilizan para representar contenido para los visitantes del sitio web. Algunos componentes, por ejemplo para Comunidades, también aceptan la entrada de los usuarios.
+* Desarrollar un nuevo componente en la instancia local.
+* Implementarla en su entorno de prueba.
+* Implementarla en su entorno de creación activo, donde permiten a los autores o administradores añadir y configurar contenido.
+* Implementarla en los entornos de publicación activos, donde se utilizan para representar contenido para los visitantes del sitio web. Algunos componentes, por ejemplo para Comunidades, también aceptan la entrada de los usuarios.
 
 Cada componente AEM:
 
@@ -73,25 +77,25 @@ Hay dos conjuntos de componentes de AEM proporcionados por el Adobe disponibles:
 
 >[!NOTE]
 >
->[Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) representan las prácticas recomendadas actuales para el diseño y desarrollo de componentes y sirven como implementaciones de referencia.
+>[Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es) representan las prácticas recomendadas actuales para el diseño y desarrollo de componentes y sirven como implementaciones de referencia.
 >
 >[Herramientas de modernización AEM](modernization-tools.md) puede ayudar a migrar a componentes principales.
 
 ### Visualización de componentes disponibles {#viewing-available-components}
 
-Para obtener una descripción general de todos los componentes disponibles en la instancia de AEM, utilice la variable [Consola Componentes](/help/sites-authoring/default-components-console.md).
+Para información general de todos los componentes disponibles en la instancia de AEM, utilice la [Consola de Componentes](/help/sites-authoring/default-components-console.md).
 
 Como alternativa, también puede utilizar CRXDE Lite para obtener una lista de todos los componentes disponibles en el repositorio.
 
-1. En **[!UICONTROL CRXDE Lite]**, seleccione **[!UICONTROL Herramientas]** en la barra de herramientas y, a continuación, **[!UICONTROL Consulta]**, que abre el **[!UICONTROL Consulta]** pestaña .
+1. En **[!UICONTROL CRXDE Lite]**, seleccione **[!UICONTROL Herramientas]** en la barra de herramientas y, a continuación, **[!UICONTROL Consulta]**, que abre la pestaña **[!UICONTROL Consulta]**.
 
-1. En el **[!UICONTROL Consulta]** , seleccione `XPath` como **[!UICONTROL Tipo]**.
+1. En la pestaña **[!UICONTROL Consulta]**, seleccione `XPath` como **[!UICONTROL Tipo]**.
 
 1. En el campo de entrada **[!UICONTROL Consulta]**, escriba la cadena siguiente:
 
    `//element(*, cq:Component)`
 
-1. Haga clic en **[!UICONTROL Ejecutar]** y se muestran los componentes.
+1. Cuando hace clic en **[!UICONTROL Ejecutar]**, se muestran los componentes.
 
 ## Recursos adicionales {#further-reading}
 
@@ -106,7 +110,7 @@ Las páginas siguientes proporcionan información más detallada sobre el desarr
 * [Componentes para fragmentos de contenido](/help/sites-developing/components-content-fragments.md)
 * [Obtención de información de página en formato JSON](/help/sites-developing/pageinfo.md)
 * [Internacionalización de componentes](/help/sites-developing/i18n.md)
-* [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [Componentes principales](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=es)
 * [Uso de Ocultar condiciones](/help/sites-developing/hide-conditions.md)
 * IU clásica
 

@@ -4,14 +4,18 @@ seo-title: Best Practices for Performance Testing
 description: Este artículo describe las estrategias y metodologías generales utilizadas para las pruebas de rendimiento, así como algunas de las herramientas disponibles para ayudar en el proceso.
 seo-description: This article outlines the overall strategies and methodologies used for performance testing as well as some of the tools that are available to assist in the process.
 exl-id: 8d0863be-108d-49d8-8243-ea5e404ed64c
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1928'
 ht-degree: 0%
 
 ---
 
 # Prácticas recomendadas para pruebas de rendimiento{#best-practices-for-performance-testing}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Introducción {#introduction}
 

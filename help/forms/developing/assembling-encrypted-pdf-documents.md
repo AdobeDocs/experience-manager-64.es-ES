@@ -1,5 +1,5 @@
 ---
-title: Montaje de documentos de PDF cifrados
+title: Agrupar documentos PDF cifrados
 seo-title: Assembling Encrypted PDF Documents
 description: Ensamble documentos de PDF cifrados mediante la API de Java y la API de servicio web.
 seo-description: Assemble encrypted PDF documents using the Java API and Web Service API.
@@ -12,16 +12,20 @@ topic-tags: operations
 discoiquuid: 6d75c7b1-9c0e-47f3-bdb1-61acf16b97f9
 role: Developer
 exl-id: fa543e13-f920-4b77-9762-36f115261e8c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1645'
-ht-degree: 0%
+source-wordcount: '1681'
+ht-degree: 4%
 
 ---
 
-# Montaje de documentos de PDF cifrados {#assembling-encrypted-pdf-documents}
+# Agrupar documentos PDF cifrados {#assembling-encrypted-pdf-documents}
 
-Puede cifrar un documento PDF con una contraseña utilizando el servicio Assembler. Una vez que un documento de PDF está cifrado con una contraseña, un usuario debe especificar la contraseña para ver el documento de PDF en Adobe Reader o Acrobat. Para codificar un documento PDF con una contraseña, el documento DDX debe contener valores de elementos de cifrado necesarios para cifrar un documento PDF.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+Puede cifrar un documento PDF con una contraseña utilizando el servicio Assembler. Una vez que un documento PDF esté cifrado con una contraseña, los usuarios deberán especificar la contraseña para ver el documento PDF en Adobe Reader o Acrobat. Para cifrar un documento PDF con una contraseña, el documento DDX debe contener valores de elementos de cifrado necesarios para cifrar un documento PDF.
 
 A los efectos de esta discusión, supongamos que se utiliza el siguiente documento DDX.
 
@@ -101,7 +105,7 @@ Después de crear el cliente de servicio Assembler, hacer referencia al document
 
 Si solo se pasa un documento PDF al servicio Assembler, el servicio Assembler devuelve un documento único en lugar de un objeto de colección. Es decir, al invocar la variable `invokeOneDocument` , se devuelve un solo documento. Dado que el documento DDX al que se hace referencia en esta sección contiene información de codificación, el servicio Assembler devuelve un documento de PDF cifrado con una contraseña.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -150,7 +154,7 @@ Si solo se pasa un documento PDF al servicio Assembler, el servicio Assembler de
    * Cree un `java.io.File` y asegúrese de que la extensión del nombre de archivo es .pdf.
    * Invocar el `Document` del objeto `copyToFile` para copiar el contenido del `Document` al archivo. Asegúrese de usar la variable `Document` que la variable `invokeOneDocument` método devuelto.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido (modo SOAP): Montaje de un documento PDF cifrado mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
 
@@ -215,6 +219,6 @@ Si solo se pasa un documento PDF al servicio Assembler, el servicio Assembler de
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en un archivo de PDF invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

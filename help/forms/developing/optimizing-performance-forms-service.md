@@ -1,5 +1,5 @@
 ---
-title: Optimización del rendimiento del servicio Forms
+title: Optimizar el rendimiento del servicio de Forms
 seo-title: Optimizing the Performance of theForms Service
 description: Configure las opciones en tiempo de ejecución al procesar un formulario y almacenar archivos XDP en el repositorio para optimizar el rendimiento del servicio Forms.
 seo-description: Set run-time options when rendering a form and store XDP files in the repository to optimize the performance of the Forms service.
@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 9f883483-b81e-42c6-a4a1-eb499dd112e7
 role: Developer
 exl-id: a6d468cd-2b70-4332-8277-15f8b9fc1329
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1417'
-ht-degree: 0%
+source-wordcount: '1453'
+ht-degree: 2%
 
 ---
 
 # Optimización del rendimiento del servicio Forms {#optimizing-the-performance-of-theforms-service}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Optimización del rendimiento del servicio Forms {#optimizing-the-performance-of-the-forms-service}
 
@@ -67,7 +71,7 @@ Para procesar el formulario después de definir las opciones de rendimiento, se 
 
 Una vez que el servicio Forms procesa un formulario, devuelve un flujo de datos de formulario que debe escribir en el explorador web del cliente. Cuando se escribe en el explorador web del cliente, el formulario es visible para el usuario.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -75,9 +79,9 @@ Una vez que el servicio Forms procesa un formulario, devuelve un flujo de datos 
 
 [Inicio rápido de la API del servicio de Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Renderización de PDF forms interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Procesar formularios PDF interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Representación de Forms como HTML](/help/forms/developing/rendering-forms-html.md)
+[Procesar formularios como HTML](/help/forms/developing/rendering-forms-html.md)
 
 [Creación de aplicaciones web que procesen Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -120,7 +124,7 @@ Representar un formulario con rendimiento optimizado mediante la API de Forms (J
    * Cree una matriz de bytes y rellénela con la secuencia de datos del formulario invocando la variable `InputStream` del objeto `read`y pasando la matriz de bytes como argumento.
    * Invocar el `javax.servlet.ServletOutputStream` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido (modo SOAP): Optimización del rendimiento mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
 
@@ -172,6 +176,6 @@ Representar un formulario con un rendimiento optimizado mediante la API de Forms
    * Cree una matriz de bytes y rellénela invocando la variable `BLOB` del objeto `getBinaryData` método. Esta tarea asigna el contenido de la variable `FormsResult` a la matriz de bytes.
    * Invocar el `javax.servlet.http.HttpServletResponse` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

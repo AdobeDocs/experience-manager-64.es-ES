@@ -1,20 +1,24 @@
 ---
 title: Ordenación mejorada de los recursos en AEM
-description: Obtenga información sobre cómo  [!DNL Experience Manager] Assets implementa la ordenación del lado del servidor para ordenar los recursos de las carpetas o una consulta de búsqueda de una sola vez, en lugar de ordenarlos por lotes en el lado del cliente.
+description: Descubra cómo [!DNL Experience Manager] Assets implementa la ordenación del lado del servidor para ordenar los recursos de las carpetas o una consulta de búsqueda de una sola vez, en lugar de ordenarlos por lotes en el lado del cliente.
 contentOwner: AG
 feature: Search
 role: User
 exl-id: aa24ca68-d94e-4bd4-a5cc-113906650a2e
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '433'
-ht-degree: 3%
+source-wordcount: '469'
+ht-degree: 4%
 
 ---
 
-# Clasificación mejorada de los recursos en [!DNL Experience Manager] {#enhanced-sorting-of-assets-in-aem}
+# Ordenación mejorada de los recursos en [!DNL Experience Manager] {#enhanced-sorting-of-assets-in-aem}
 
-Obtenga información sobre cómo [!DNL Experience Manager] Assets implementa la ordenación del lado del servidor para ordenar los recursos de las carpetas o una consulta de búsqueda de una sola vez, en lugar de ordenarlos por lotes en el lado del cliente.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+Descubra cómo [!DNL Experience Manager] Assets implementa la ordenación del lado del servidor para ordenar los recursos de las carpetas o una consulta de búsqueda de una sola vez, en lugar de ordenarlos por lotes en el lado del cliente.
 
 La capacidad de búsqueda de Adobe Experience Manager Assets se ha mejorado para ordenar de forma eficaz un gran número de recursos en las páginas de resultados de búsqueda y vista de lista de carpetas. También puede ordenar las entradas de la línea de tiempo.
 
@@ -24,7 +28,7 @@ La capacidad de búsqueda de Adobe Experience Manager Assets se ha mejorado para
 
 [!DNL Experience Manager] Assets permite ordenar los recursos de las carpetas en función de los campos siguientes:
 
-* Conf. regional
+* Configuración regional
 * Estado
 * Tipo
 * Tamaño
@@ -51,7 +55,7 @@ La capacidad de búsqueda de Adobe Experience Manager Assets se ha mejorado para
 
 >[!NOTE]
 >
->Para ordenar los valores en las columnas `Name` o `Title`, superponga `/libs/dam/gui/content/commons/availablecolumns` y cambie el valor de `sortable` a `True`.
+>Para ordenar los valores en la variable `Name` o `Title`columnas, superposición `/libs/dam/gui/content/commons/availablecolumns` y cambiar el valor de `sortable` a `True`.
 
 ## Clasificación de recursos en resultados de búsqueda {#sorting-assets-in-search-results}
 
@@ -78,7 +82,7 @@ Puede ordenar los resultados de la búsqueda según los campos siguientes:
 [!DNL Assets] permite ordenar cronológicamente entradas de cronología, como anotaciones, versiones, flujos de trabajo y actividades.
 
 1. En la interfaz de usuario de Assets, seleccione un recurso para el que desee mostrar la línea de tiempo.
-1. Pulse o haga clic en el icono de navegación global y seleccione **[!UICONTROL Línea de tiempo]**.
+1. Pulse o haga clic en el icono de navegación global y seleccione **[!UICONTROL Cronología]**.
 
    ![chlimage_1-399](assets/chlimage_1-399.png)
 
@@ -86,6 +90,6 @@ Puede ordenar los resultados de la búsqueda según los campos siguientes:
 
    ![chlimage_1-400](assets/chlimage_1-400.png)
 
-1. Toque o haga clic en el icono **[!UICONTROL Sort]** situado junto a la etiqueta **[!UICONTROL Date]**. Según la selección, las anotaciones se muestran en el orden cronológico cronológico o inverso en el que se agregaron al recurso.
+1. Toque o haga clic en **[!UICONTROL Ordenar]** junto a **[!UICONTROL Fecha]** etiqueta. Según la selección, las anotaciones se muestran en el orden cronológico cronológico o inverso en el que se agregaron al recurso.
 
    ![chlimage_1-401](assets/chlimage_1-401.png)

@@ -1,29 +1,32 @@
 ---
 title: Renderización y entrega
-seo-title: Renderización y entrega
+seo-title: Rendering and Delivery
 description: Renderización y entrega
-seo-description: nulo
+seo-description: null
 uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: d826375d-0ce6-49fc-b264-bac39882983d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '609'
 ht-degree: 7%
 
 ---
 
-
 # Renderización y entrega{#rendering-and-delivery}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
 >Adobe recomienda utilizar el Editor de SPA para proyectos que requieren una representación del lado del cliente basada en el marco de aplicaciones de una sola página (por ejemplo, React). [Más información](/help/sites-developing/spa-overview.md).
 
-AEM contenido se puede procesar fácilmente mediante [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) para procesar [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) y otros formatos.
+AEM contenido puede procesarse fácilmente mediante [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) para procesar [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) y otros formatos.
 
 Estos procesadores listos para usar normalmente recorren el repositorio y devuelven contenido tal cual.
 
@@ -37,7 +40,7 @@ En el diagrama siguiente se muestra la renderización de los servicios de conten
 
 ## Solicitud de JSON {#requesting-json}
 
-Utilice **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.** jsonto para solicitar JSON.]
+Uso **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&quot; />.[&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.][&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.json** para solicitar JSON.]
 
 <table>
  <tbody>
@@ -51,7 +54,7 @@ Utilice **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.** jsonto p
   </tr>
   <tr>
    <td>DEPTH-INT</td>
-   <td><strong></strong><br /> <br /> Recursión OPTIONALdepth para la renderización de elementos secundarios como se utiliza en la renderización de Sling</td>
+   <td><strong>OPCIONAL</strong><br /> <br /> recursión de profundidad para procesar elementos secundarios como se utiliza en el procesamiento de Sling</td>
   </tr>
  </tbody>
 </table>
@@ -74,7 +77,7 @@ La tabla siguiente muestra las propiedades de Exportar configuraciones:
    <td><strong>Nombre</strong></td>
    <td><strong>Tipo</strong></td>
    <td><strong>Predeterminado (si, no establecido)</strong></td>
-   <td><strong>Value</strong></td>
+   <td><strong>Valor</strong></td>
    <td><strong>Descripción</strong></td>
   </tr>
   <tr>
@@ -110,7 +113,7 @@ La tabla siguiente muestra las propiedades de Exportar configuraciones:
    <td>Cadena[]</td>
    <td>incluir todo</td>
    <td>Nombres de propiedades</td>
-   <td><p>si excludePropertyPrefixes set<br /> esto incluye propiedades especificadas a pesar de que coinciden con el prefijo que se excluye,</p> <p>else (excluir propiedades ignoradas) solo incluye estas propiedades</p> </td>
+   <td><p>si excludePropertyPrefixes está establecido<br /> esto incluye propiedades especificadas a pesar de que coinciden con el prefijo que se excluye,</p> <p>else (excluir propiedades ignoradas) solo incluye estas propiedades</p> </td>
   </tr>
   <tr>
    <td>includeChildren</td>
@@ -156,16 +159,16 @@ La tabla siguiente muestra las propiedades:
    <td><strong>Descripción</strong></td>
   </tr>
   <tr>
-   <td>&lt;selector_to_inc&gt;</td>
+   <td>&lt;SELECTOR_TO_INC&gt;</td>
    <td>Cadena[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Para los siguientes tipos de recursos de Sling, no devuelva la exportación predeterminada de JavaScript de CaaS.<br /> Devolver una exportación json del cliente representando el recurso como; <br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
+   <td>Para los siguientes tipos de recursos de Sling, no devuelva la exportación predeterminada de JavaScript de CaaS.<br /> Devolver una exportación json del cliente renderizando el recurso como;<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
   </tr>
  </tbody>
 </table>
 
-### Configuraciones de exportación de servicios de contenido existentes {#existing-content-services-export-configs}
+### Configuraciones de exportación de los servicios de contenido existentes {#existing-content-services-export-configs}
 
 Los servicios de contenido incluyen dos configuraciones de exportación:
 
@@ -182,7 +185,7 @@ La configuración de exportación predeterminada de los servicios de contenido s
  <tbody>
   <tr>
    <td><strong>Nombre</strong></td>
-   <td><strong>Valor</strong></td>
+   <td><strong>Value</strong></td>
   </tr>
   <tr>
    <td>excludeProperties</td>
@@ -194,7 +197,7 @@ La configuración de exportación predeterminada de los servicios de contenido s
   </tr>
   <tr>
    <td>includeProperties</td>
-   <td>jcr:text,text<br /> jcr:title,title<br /> jcr:description,description<br /> jcr:lastModified,lastModified<br /> cq:tags,tags<br /> cq:lastModified,lastModified</td>
+   <td>jcr:text,text<br /> jcr:title,title<br /> jcr:description,description<br /> jcr:lastModified,lastModified<br /> cq:tags,etiquetas<br /> cq:lastModified,lastModified</td>
   </tr>
   <tr>
    <td>includeComponents</td>
@@ -232,4 +235,3 @@ Consulte los siguientes recursos para obtener más información sobre temas adic
 * [Desarrollo de modelos](/help/mobile/administer-mobile-apps.md)
 * [Creación de servicios de contenido](/help/mobile/develop-content-as-a-service.md)
 * [Administración de servicios de contenido](/help/mobile/developing-content-services.md)
-

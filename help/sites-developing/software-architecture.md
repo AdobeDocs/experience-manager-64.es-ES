@@ -1,8 +1,8 @@
 ---
 title: Arquitectura de software
-seo-title: Arquitectura de software
+seo-title: Software Architecture
 description: Prácticas recomendadas para diseñar el software
-seo-description: Prácticas recomendadas para diseñar el software
+seo-description: Best practices for architecting your software
 uuid: a557f6ca-c3f1-486e-a45e-6e1f986fab41
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,15 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 92971747-1c74-4917-b5a0-7b79b3ae1e68
 exl-id: 4c5896a4-d3f4-4278-9af3-538ab10cd210
-translation-type: tm+mt
-source-git-commit: b7d1a2435e33d4fdd1d030d81ff1ca1b65700fa6
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '622'
-ht-degree: 0%
+source-wordcount: '650'
+ht-degree: 1%
 
 ---
 
 # Arquitectura de software{#software-architecture}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Diseño para actualizaciones {#design-for-upgrades}
 
@@ -36,11 +39,11 @@ Al definir qué componentes se pueden incluir en cada parsys de la página, se p
 
 SOLID es un acrónimo que describe cinco principios arquitectónicos que deben ser respetados:
 
-* **** Principio de responsabilidad única: cada módulo, clase, método, etc. solo debe tener una responsabilidad.
-* **** Principio abierto/cerrado: los módulos deben abrirse para su extensión y cerrarse para su modificación.
-* **** Principio de sustitución de Liskov: los tipos deben reemplazarse por sus subtipos.
-* **** Principio de segmentación de interfaz: ningún cliente debe estar obligado a depender de métodos que no utilice.
-* **** Principio de inversión de dependencia: los módulos de alto nivel no deben depender de módulos de bajo nivel. Ambos deberían depender de las abstracciones. Las abstracciones no deben depender de los detalles. Los detalles deben depender de las abstracciones.
+* **S** Principio de responsabilidad única: cada módulo, clase, método, etc., solo debe tener una responsabilidad.
+* **O** Principio abierto/cerrado: los módulos deben estar abiertos para su extensión y cerrados para su modificación.
+* **L** Principio de sustitución de iskov: los tipos deben reemplazarse por sus subtipos.
+* **I** Principio de segmentación de la interfaz : ningún cliente debe estar obligado a depender de métodos que no utilice.
+* **D** Principio de inversión de dependencia: los módulos de alto nivel no deben depender de módulos de bajo nivel. Ambos deberían depender de las abstracciones. Las abstracciones no deben depender de los detalles. Los detalles deben depender de las abstracciones.
 
 La lucha por el cumplimiento de estos cinco principios debería dar lugar a un sistema que tenga una estricta separación de preocupaciones.
 
@@ -50,15 +53,15 @@ La lucha por el cumplimiento de estos cinco principios debería dar lugar a un s
 >
 >Este es solo un breve resumen presentado para la sensibilización y se le recomienda familiarizarse con estos conceptos en mayor profundidad.
 
-### Siga el Principio de solidez {#follow-the-robustness-principle}
+### Siga el principio de solidez {#follow-the-robustness-principle}
 
 El principio de la solidez dice que deberíamos ser conservadores en lo que enviamos, pero liberales en lo que aceptamos. En otras palabras, al enviar mensajes a un tercero, debemos cumplir todas las especificaciones, pero al recibir mensajes de un tercero, debemos aceptar mensajes no conformes siempre y cuando el significado del mensaje sea claro.
 
-### Implementar picos en sus propios módulos {#implement-spikes-in-their-own-modules}
+### Implementación de picos en sus propios módulos {#implement-spikes-in-their-own-modules}
 
 Los picos y el código de prueba son una parte integral de cualquier implementación de software de Agile, pero queremos asegurarnos de que no entren en nuestra base de código de producción sin el nivel apropiado de supervisión. Como resultado, se recomienda crear picos en su propio módulo.
 
-### Implementar scripts de migración de datos en su propio módulo {#implement-data-migration-scripts-in-their-own-module}
+### Implementar secuencias de comandos de migración de datos en su propio módulo {#implement-data-migration-scripts-in-their-own-module}
 
 Los scripts de migración de datos, mientras que el código de producción, generalmente se ejecutan una sola vez al inicio inicial de un sitio. Por lo tanto, tan pronto como el sitio está activo, se convierte en código muerto. Para garantizar que no generemos código de implementación que dependa de los scripts de migración, estos deben implementarse en su propio módulo. Esto también nos permite eliminar y retirar este código inmediatamente después del lanzamiento, eliminando el código muerto del sistema.
 

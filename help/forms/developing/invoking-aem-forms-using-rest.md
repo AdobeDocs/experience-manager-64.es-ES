@@ -1,5 +1,5 @@
 ---
-title: Invocación de AEM Forms mediante solicitudes REST
+title: Invocar AEM Forms mediante solicitudes REST
 seo-title: Invoking AEM Forms using REST Requests
 description: Invoque procesos creados en Workbench utilizando solicitudes REST.
 seo-description: Invoke processes created in Workbench using REST requests.
@@ -11,14 +11,18 @@ topic-tags: coding
 discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 role: Developer
 exl-id: 82770ac6-aafc-44b9-82fb-6f193bb3a128
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2492'
-ht-degree: 0%
+source-wordcount: '2528'
+ht-degree: 2%
 
 ---
 
-# Invocación de AEM Forms mediante solicitudes REST {#invoking-aem-forms-using-rest-requests}
+# Invocar AEM Forms mediante solicitudes REST {#invoking-aem-forms-using-rest-requests}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Los procesos creados en Workbench se pueden configurar para que pueda invocarlos mediante solicitudes de transferencia de estado representativo (REST). Las solicitudes REST se envían desde páginas de HTML. Es decir, puede invocar un proceso de Forms directamente desde una página web mediante una solicitud de REST. Por ejemplo, puede abrir una nueva instancia de una página web. A continuación, puede invocar un proceso de Forms y cargar un documento de PDF procesado con datos enviados en una solicitud de POST HTTP.
 
@@ -28,7 +32,7 @@ Al utilizar solicitudes REST, se recomienda no invocar los servicios de Forms di
 
 Cuando se invoca un servicio mediante REST, se le solicita un nombre de usuario y una contraseña para los formularios AEM. Sin embargo, si no desea especificar un nombre de usuario y una contraseña, puede desactivar la seguridad del servicio.
 
-Para invocar un servicio de Forms (un proceso se convierte en un servicio cuando se activa el proceso) mediante REST, configure un extremo REST. (Consulte &quot;Administración de puntos de conexión&quot; en [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63).)
+Para invocar un servicio de Forms (un proceso se convierte en un servicio cuando se activa el proceso) mediante REST, configure un extremo REST. (Consulte &quot;Administración de puntos de conexión&quot; en [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63_es).)
 
 Una vez configurado un extremo REST, puede invocar un servicio Forms utilizando un método de GET HTTP o un método de POST.
 
@@ -315,7 +319,7 @@ Cuando se invoca este proceso, realiza las siguientes acciones:
 
 **Invocación del proceso MyApplication/EncryptDocument desde Acrobat** {#invoke-process-acrobat}
 
-Puede invocar un proceso de Forms desde Acrobat mediante una solicitud de REST. Por ejemplo, puede invocar la función *MyApplication/EncryptDocument* proceso. Para invocar un proceso de Forms desde Acrobat, coloque un botón de envío en un archivo XDP en Designer. (Consulte [Ayuda de Designer](https://www.adobe.com/go/learn_aemforms_designer_63).)
+Puede invocar un proceso de Forms desde Acrobat mediante una solicitud de REST. Por ejemplo, puede invocar la función *MyApplication/EncryptDocument* proceso. Para invocar un proceso de Forms desde Acrobat, coloque un botón de envío en un archivo XDP en Designer. (Consulte [Ayuda de Designer](https://www.adobe.com/go/learn_aemforms_designer_63)).
 
 Especifique la URL para invocar el proceso en el *Enviar a URL* , como se muestra en la siguiente ilustración.
 

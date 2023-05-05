@@ -10,14 +10,18 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 exl-id: ba65e853-d69a-4341-93c3-5628c60c403b
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1073'
-ht-degree: 8%
+source-wordcount: '1109'
+ht-degree: 7%
 
 ---
 
 # Problemas conocidos {#known-issues}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Esta página contiene una lista de problemas conocidos que Adobe Experience Manager 6.4 publicó en abril de 2018. Para obtener más información sobre problemas conocidos, [póngase en contacto con el servicio de asistencia técnica](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=es).
 
@@ -141,6 +145,6 @@ Si utiliza Microsoft Edge como explorador:
 
 * El componente Gráfico de los formularios adaptables ocupa más espacio del que ocupa normalmente.
 * Se devuelve una excepción al guardar propiedades para formularios adaptables, fragmentos de formularios adaptables o comunicaciones interactivas en la interfaz de usuario de Forms Manager.
-* El número máximo especificado de caracteres para un cuadro de texto del formulario adaptable no se acepta en los dispositivos Android 6.0 Samsung. (Ref# CQ-4235205)
+* El número máximo especificado de caracteres para un cuadro de texto de formulario adaptable no se acepta en los dispositivos Android 6.0 Samsung. (Ref# CQ-4235205)
 * Cuando envía un formulario que contiene un campo de carga de HTML estándar desde un dispositivo iOS de Apple, a veces, el contenido del archivo no se envía y se recibe un archivo de 0 bytes en el otro extremo. Apple iOS 15.1 proporciona una solución para el problema.
 

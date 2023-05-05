@@ -1,5 +1,5 @@
 ---
-title: Cálculo de datos de formulario
+title: Calcular datos de formulario
 seo-title: Calculating Form Data
 description: Utilice el servicio Forms para calcular los valores que introduce un usuario en un formulario y mostrar los resultados. El servicio Forms calcula los valores mediante la API de Java y la API de servicio web.
 seo-description: Use the Forms service to calculate values that a user enters into a form and display the results. Forms service calculates the values using the Java API and Web Service API.
@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 role: Developer
 exl-id: 476b1c78-8332-4a79-93dc-a615ec58abbe
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1853'
-ht-degree: 0%
+source-wordcount: '1889'
+ht-degree: 2%
 
 ---
 
-# Cálculo de datos de formulario {#calculating-form-data}
+# Calcular datos de formulario {#calculating-form-data}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El servicio Forms puede calcular los valores que introduce un usuario en un formulario y mostrar los resultados. Para calcular los datos de formulario, debe realizar dos tareas. En primer lugar, se crea una secuencia de comandos de diseño de formulario que calcula los datos del formulario. Un diseño de formulario admite tres tipos de secuencias de comandos. Se ejecuta un tipo de script en el cliente, otro en el servidor y el tercer tipo se ejecuta tanto en el servidor como en el cliente. El tipo de script analizado en este tema se ejecuta en el servidor. Los cálculos del lado del servidor son compatibles con transformaciones de HTML, PDF y Guía de formulario (obsoletos).
 
@@ -41,7 +45,7 @@ En la tabla siguiente se describen los pasos de este diagrama.
 <table> 
  <thead>
   <tr> 
-   <th><p>Etapa</p></th> 
+   <th><p>Paso</p></th> 
    <th><p>Descripción</p></th> 
   </tr> 
  </thead>
@@ -120,7 +124,7 @@ Compruebe que el estado de procesamiento asociado al formulario enviado sea `1` 
 
 Después de comprobar que el estado de procesamiento asociado a un formulario enviado es `1`, debe volver a escribir los resultados en el explorador web del cliente. Cuando se muestra el formulario, el valor calculado aparece en los campos correspondientes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -128,7 +132,7 @@ Después de comprobar que el estado de procesamiento asociado a un formulario en
 
 [Inicio rápido de la API del servicio de Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Renderización de PDF forms interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Procesar formularios PDF interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Creación de aplicaciones web que procesen Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -168,7 +172,7 @@ Calcule los datos del formulario utilizando la API de Forms (Java):
    * Cree una matriz de bytes y rellénela con la secuencia de datos del formulario invocando la variable `InputStream` del objeto `read` y pasando la matriz de bytes como argumento.
    * Invocar el `javax.servlet.ServletOutputStream` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -222,6 +226,6 @@ Calcule los datos del formulario utilizando la API de Forms (servicio web):
    * Cree una matriz de bytes y rellénela invocando la variable `BLOB` del objeto `getBinaryData` método. Esta tarea asigna el contenido de la variable `FormsResult` a la matriz de bytes.
    * Invocar el `javax.servlet.http.HttpServletResponse` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

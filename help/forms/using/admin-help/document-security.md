@@ -11,16 +11,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 46847c9f-c66d-46fa-8ff5-a99d2462c099
 feature: Document Security
 exl-id: fa62a521-1a0b-4856-acc6-71c51ad9e527
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2524'
-ht-degree: 0%
+source-wordcount: '2560'
+ht-degree: 6%
 
 ---
 
 # Acerca de la seguridad de los documentos {#about-document-security}
 
-La seguridad de los documentos garantiza que solo los usuarios autorizados puedan utilizar sus documentos. Con la seguridad de los documentos, puede distribuir de forma segura cualquier información guardada en un formato compatible. Los formatos de archivo admitidos son:
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+La seguridad de los documentos garantiza que solo los usuarios autorizados puedan utilizar sus documentos. Con Document Security, puede distribuir de forma segura cualquier tipo de información guardada en un formato compatible. Los formatos de archivo admitidos son:
 
 * Archivos Adobe PDF
 * Archivos de Microsoft® Word, Excel y PowerPoint
@@ -29,13 +33,13 @@ Para obtener más información sobre cómo las políticas protegen los tipos de 
 
 Con la seguridad de los documentos, puede crear, almacenar y aplicar fácilmente configuraciones de confidencialidad predefinidas a sus documentos. Para evitar que la información se extienda más allá de su alcance, también puede supervisar y controlar cómo los destinatarios utilizan sus documentos después de distribuirlos.
 
-Puede proteger los documentos mediante políticas. Una *directiva* es una recopilación de información que incluye parámetros de confidencialidad y una lista de usuarios autorizados. La configuración de confidencialidad que especifique en una directiva determina cómo un destinatario puede utilizar un documento al que aplica la directiva. Por ejemplo, puede especificar si los destinatarios pueden imprimir o copiar texto, editar texto o agregar firmas y comentarios a documentos protegidos.
+Puede proteger los documentos mediante políticas. Una *directiva* es una recopilación de información que incluye parámetros de confidencialidad y una lista de usuarios autorizados. La configuración especificada en una política determina cómo puede el destinatario utilizar un documento al que se aplica la política. Por ejemplo, puede especificar si los destinatarios pueden imprimir o copiar texto, editarlo o agregar firmas y comentarios a documentos protegidos.
 
 Los usuarios de seguridad de documentos crean directivas a través de las páginas web del usuario final. Los administradores utilizan las páginas web de seguridad del documento para crear conjuntos de directivas que contengan directivas compartidas disponibles para todos los usuarios autorizados.
 
 Aunque las directivas se almacenan en seguridad de documentos, las aplica a los documentos a través de la aplicación cliente. La forma de aplicar las políticas a los documentos del PDF se describe detalladamente en *Ayuda de Acrobat*. La aplicación de políticas mediante otras aplicaciones, como Microsoft Office, está documentada en la *Ayuda de extensiones de Acrobat Reader DC* para la aplicación.
 
-Cuando aplica una directiva a un documento, la configuración de confidencialidad especificada en la directiva protege la información que contiene el documento. La configuración de confidencialidad también protege cualquier archivo (texto, audio o vídeo) de un documento PDF. Puede distribuir el documento protegido por políticas a los destinatarios autorizados por la directiva.
+Cuando aplica una política a un documento, la configuración de confidencialidad especificada en la política protege la información que contiene el documento. La configuración de confidencialidad también protege cualquier archivo (texto, audio o vídeo) de un documento PDF. Puede distribuir los documentos protegidos por una política a los destinatarios autorizados por esta.
 
 **Control y auditoría del acceso a los documentos**
 
@@ -47,7 +51,7 @@ A través de la seguridad de los documentos, puede supervisar los documentos pro
 
 La seguridad de los documentos consta de un servidor y una interfaz de usuario:
 
-**Servidor:** Componente central a través del cual la seguridad de los documentos realiza transacciones como la autenticación de usuarios, la administración en tiempo real de políticas y la aplicación de la confidencialidad. El servidor también proporciona un repositorio central para políticas, registros de auditoría y otra información relacionada.
+**Servidor:** Componente central a través del cual la seguridad de los documentos realiza transacciones como la autenticación de usuarios, la administración en tiempo real de políticas y la aplicación de la confidencialidad. El servidor también proporciona un repositorio central para directivas, registros de auditoría y otra información relacionada.
 
 **Páginas web:** Interfaz donde se crean políticas, se administran los documentos protegidos por políticas y se supervisan los eventos asociados a documentos protegidos por políticas. Los administradores también pueden configurar opciones globales como autenticación de usuarios, auditoría y mensajería para usuarios invitados y administrar cuentas de usuario invitadas.
 

@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 exl-id: ae6b4caa-5bd0-4a09-9ccf-077405ea3868
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1092'
-ht-degree: 2%
+source-wordcount: '1126'
+ht-degree: 3%
 
 ---
 
 # Estrategias de copia de seguridad para carpetas vigiladas {#backup-strategies-for-watched-folders}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Este contenido describe cómo las carpetas vigiladas se ven afectadas por diferentes escenarios de backup y recuperación, las limitaciones y los resultados de estos escenarios y cómo minimizar la pérdida de datos.
 
@@ -116,7 +120,7 @@ El siguiente texto describe la manipulación de archivos para cada vez:
 
 **T2:** La operación de servicio mueve el archivo1 a la carpeta de etapa para su manipulación.
 
-**T3:** La operación de servicio mueve el archivo2 a la carpeta de escenario para su manipulación. Coloca los resultados del archivo1 en la carpeta de salida y mueve el archivo1 a la carpeta de preservación.
+**T3:** La operación de servicio mueve el archivo2 a la carpeta de escenario para su manipulación. Coloca los resultados del archivo1 en la carpeta de salida y mueve el archivo1 a la carpeta de conservación.
 
 **T4:** La operación de servicio coloca file3 en la carpeta de etapa para su manipulación. Coloca los resultados de file2 en la carpeta de salida y coloca file2 en la carpeta preserve.
 

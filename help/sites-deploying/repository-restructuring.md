@@ -11,18 +11,22 @@ topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
 feature: Upgrading
 exl-id: 6ff5a23a-c9b5-49ca-87b2-ba01eaf48a9f
-source-git-commit: cda63b9ece88d8172fa4d9817e315c9cff88c224
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 0%
+source-wordcount: '573'
+ht-degree: 2%
 
 ---
 
 # Reestructuración de repositorios en AEM 6.4{#repository-restructuring-in-aem}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
 ## Introducción {#introduction}
 
-Antes de AEM 6.4, el código de cliente se implementaba en áreas impredecibles del JCR que estaban sujetas a cambios en las actualizaciones. Debido a esto, era común que las versiones formales de AEM sobrescribieran el código, la configuración o el contenido personalizados. Además, a veces los cambios de cliente se sobrescriben AEM código de producto o contenido, lo que rompe la funcionalidad del producto.
+Antes de AEM 6.4, el código de cliente se implementaba en áreas impredecibles del JCR que estaban sujetas a cambios en las actualizaciones. Debido a esto, era común que las versiones formales de AEM sobrescribieran el código, la configuración o el contenido personalizados. Además, a veces los cambios de los clientes se sobrescriben AEM código de producto o contenido, lo que rompe la funcionalidad del producto.
 
 Si se delinean claramente las jerarquías para AEM código de producto y código de cliente, estos conflictos se pueden evitar.
 
@@ -44,7 +48,7 @@ Al planificar una actualización a AEM 6.4, se debe hacer referencia a las sigui
 
 * [Reestructuración de repositorios común a todas las soluciones AEM](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md)
 * [Reestructuración de repositorios de AEM Sites](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md)
-* [Reestructuración de repositorios de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html)
+* [Reestructuración de repositorios de AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/repository-restructuring.html?lang=es)
 * [Reestructuración de repositorios de AEM Assets Dynamic Media](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md)
 * [Reestructuración de repositorios de AEM Forms](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md)
 * [Reestructuración de repositorios de AEM Communities](/help/sites-deploying/communities-repository-restructuring-in-aem-6-4.md)

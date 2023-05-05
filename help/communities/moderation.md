@@ -1,8 +1,8 @@
 ---
 title: Consola de moderación
-seo-title: Consola de moderación
+seo-title: Moderation Console
 description: Cómo acceder a la consola Moderación
-seo-description: Cómo acceder a la consola Moderación
+seo-description: How to access the Moderation console
 uuid: 920124b9-af6f-4622-adb6-b8e294c5607d
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,20 +11,24 @@ content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
 role: Admin
 exl-id: ded38cee-fbce-46cc-974f-38d3a293a55d
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 3%
+source-wordcount: '1883'
+ht-degree: 4%
 
 ---
 
 # Consola de moderación {#moderation-console}
 
-En AEM Communities, la [moderación masiva del contenido de la comunidad](moderate-ugc.md) es posible tanto desde los entornos de autor como de publicación por parte de los administradores y los moderadores de la comunidad (miembros de la comunidad de confianza asignados como moderadores).
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+En AEM Communities, de forma masiva [moderación del contenido de la comunidad](moderate-ugc.md) es posible desde los entornos de autor y publicación mediante administradores y moderadores de la comunidad (miembros de la comunidad de confianza asignados como moderadores).
 
 Los administradores y moderadores de la comunidad también pueden realizar [moderación en contexto](in-context.md) en el entorno de publicación.
 
-Una función de todos los [sitios de la comunidad](sites-console.md) es un elemento de menú `Administration`disponible para los usuarios que inician sesión con privilegios administrativos. El enlace `Administration`proporciona acceso a la consola Moderación .
+Una característica de todas [sitios de la comunidad](sites-console.md) es un `Administration`elemento de menú disponible para los usuarios que inician sesión con privilegios administrativos. La variable `Administration`proporciona acceso a la consola Moderación .
 
 Desde la consola Moderación , los administradores y los moderadores de la comunidad tendrán acceso a todo el contenido generado por el usuario (UGC) para el que tengan permiso de moderación. Si se permite moderar varios sitios, es posible ver los anuncios de todos los sitios o filtrarlos según los sitios de comunidades seleccionadas.
 
@@ -36,7 +40,7 @@ La consola Moderación admite:
 * Visualización de detalles de UGC
 * Visualización de los detalles del autor de UGC
 
-Solo se pueden realizar tareas de moderación cuando se inicia sesión como administrador o como miembro con ` [moderator permissions](in-context.md#identifyingtrustedmembers)`.
+Solo cuando se inicia sesión como administrador o como miembro con ` [moderator permissions](in-context.md#identifyingtrustedmembers)`, puede realizar tareas de moderación.
 
 ## Acceso al entorno de publicación {#publish-environment-access}
 
@@ -54,7 +58,7 @@ En el entorno de creación, para llegar a la consola Moderación
 
 * Desde la navegación global: **[!UICONTROL Navegación > Comunidades > Moderación]**
 
-Solo se pueden realizar tareas de moderación cuando se inicia sesión como administrador o como miembro con ` [moderator permissions](in-context.md#identifyingtrustedmembers)`. El único contenido de la comunidad que se muestra es el que el miembro que ha iniciado sesión puede moderar.
+Solo cuando se inicia sesión como administrador o como miembro con ` [moderator permissions](in-context.md#identifyingtrustedmembers)`, puede realizar tareas de moderación. El único contenido de la comunidad que se muestra es el que el miembro que ha iniciado sesión puede moderar.
 
 >[!NOTE]
 >
@@ -78,7 +82,7 @@ La barra de navegación superior es constante para todas las consolas. Para obte
 
 La barra de herramientas, situada debajo de la barra de navegación superior, proporciona el siguiente interruptor de alternancia en el lado izquierdo:
 
-* [El ](moderation.md#filter-rail) carril de filtro abre un carril que permite elegir las propiedades en las que filtrar el contenido.
+* [Carril del filtro](moderation.md#filter-rail) abre un carril que permite elegir las propiedades en las que filtrar el contenido.
 
 La barra de herramientas, situada debajo de la barra de navegación superior, proporciona el siguiente interruptor de alternancia en el lado izquierdo:
 
@@ -99,7 +103,7 @@ El área de contenido contiene información para el UGC publicado:
 * Ubicación del anuncio
 * Cuando se publicó
 * Número de respuestas a la publicación
-* [](moderate-ugc.md#sentiment) Opinión asociada a la publicación
+* [Opinión](moderate-ugc.md#sentiment) asociado con la publicación
 * Si se aprueba, se muestra una marca de verificación
 * Si hay un accesorio, se muestra un clip
 
@@ -113,11 +117,11 @@ El área de contenido contiene información para el UGC publicado:
 
 El icono del panel lateral abre el carril de filtro. El carril de filtro, que aparece a la izquierda del área de contenido, proporciona diferentes filtros, cada uno de los cuales tiene un efecto inmediato en el UGC al que se hace referencia y que aparece en el área de contenido.
 
-Los filtros dentro de cada categoría están **OR** unidos y los filtros en diferentes categorías están **AND** unidos.
+Los filtros dentro de cada categoría son **O** en conjunto, y los filtros en diferentes categorías son **Y** ed juntos.
 
-Por ejemplo, si marca **Pregunta** y **Respuesta**, verá contenido que puede ser una **Pregunta** *o* y una **Respuesta**.
+Por ejemplo, si marca ambas **Pregunta** y **Respuesta**, verá contenido que sea **Pregunta** *o* an **Respuesta**.
 
-Sin embargo, si marca **Pregunta** y **Pendiente**, solo verá contenido que sea una **Pregunta** y esté **Pendiente**.
+Sin embargo, si se marca **Pregunta** y **Pendiente**, solo verá contenido que sea **Pregunta** y es **Pendiente**.
 
 >[!NOTE]
 >
@@ -147,7 +151,7 @@ El sitio limita el UGC referenciado mostrado a los anuncios de los sitios de la 
 
 >[!NOTE]
 >
->Cuando un administrador accede a la consola de moderación masiva, se muestran todas las referencias a UGC, incluidos los sitios no creados con el [asistente de creación de sitios](sites-console.md), como los ejemplos de Geometrixx.
+>Cuando un administrador accede a la consola de moderación masiva, se muestran todas las referencias a UGC, incluidos los sitios que no se crean con la variable [asistente de creación de sitios](sites-console.md), como los ejemplos de Geometrixx.
 >
 >Cuando un miembro de la comunidad de confianza accede a la consola de moderación masiva en la publicación, solo se muestran las referencias a UGC creadas para sitios de la comunidad que el miembro está autorizado a moderar y pueden filtrarse con el filtro Sitio .
 
@@ -155,7 +159,7 @@ El sitio limita el UGC referenciado mostrado a los anuncios de los sitios de la 
 
 El tipo de contenido limita el UGC referenciado mostrado a los anuncios del tipo de recurso seleccionado. Se pueden seleccionar uno o más de los siguientes tipos. Todos los tipos se muestran si no se selecciona ninguno.
 
-* **Comentario**
+* **Comentar**
 * **Tema de foro**
 * **Respuesta del foro**
 * **Pregunta de P y R**
@@ -177,7 +181,7 @@ Para añadir recursos adicionales a los que filtrar:
 
 * En una instancia de autor
 * Iniciar sesión como administrador
-* Abra [Consola Web](http://localhost:4502/system/console/configMgr)
+* Apertura [Consola web](http://localhost:4502/system/console/configMgr)
 * Localizar `AEM Communities Moderation Dashboard Filters`
 * Seleccione la configuración que desea abrir en el modo de edición
 * Introduzca el ResourceType de un componente en el que filtrar
@@ -189,7 +193,7 @@ Para añadir recursos adicionales a los que filtrar:
 * Seleccione Guardar
 * Actualizar la consola Comunidades - Moderación
 
-El resultado es un nuevo filtro seleccionable para `Voting`en el grupo de filtros `Content Type`.
+El resultado es un nuevo filtro seleccionable para `Voting`en el `Content Type` grupo de filtros.
 
 Cuando se selecciona ese filtro, el contenido del tablero mostrará UGC que coincida con cualquiera de los Tipos de recursos introducidos.
 
@@ -207,7 +211,7 @@ El estado limita el UGC referenciado mostrado a las publicaciones del estado sel
 
 El marcado limita el UGC al que se hace referencia mostrado a las publicaciones que están marcadas u ocultas.
 
-Una vez marcado un fragmento de contenido, permanece marcado hasta que se desmarca ese fragmento de contenido seleccionando de nuevo el botón **[!UICONTROL Flag]**. Tenga en cuenta que no hay niveles de indicador, como importante o de seguimiento.
+Una vez marcado un fragmento de contenido, permanece marcado hasta que se desmarca ese único fragmento de contenido seleccionando la variable **[!UICONTROL Indicador]** de nuevo. Tenga en cuenta que no hay niveles de indicador, como importante o de seguimiento.
 
 ![chlimage_1-476](assets/chlimage_1-476.png)
 
@@ -225,21 +229,21 @@ Publicado en Último limita el UGC referenciado mostrado a los anuncios realizad
 
 #### Opinión {#sentiment}
 
-[](moderate-ugc.md#sentiment) La opinión limita el UGC referenciado mostrado a las publicaciones con un valor de opinión positivo, negativo o neutro.
+[Opinión](moderate-ugc.md#sentiment) limita el UGC referenciado mostrado a las publicaciones con un valor de opinión positivo, negativo o neutro.
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
 ## Acciones de moderación {#moderation-actions}
 
-[Las ](moderate-ugc.md#moderation-actions) acciones de moderación se pueden realizar en una o más selecciones realizadas en el área de contenido o al ver los detalles del contenido.
+[Acciones de moderación](moderate-ugc.md#moderation-actions) se puede realizar en una o más selecciones realizadas en el área de contenido o al ver los detalles del contenido.
 
-Para moderar las publicaciones de forma masiva, en el área de contenido, haga clic en el icono Seleccionar ( ![selector](assets/selecticon.png)) de una publicación, que aparece al pasar el ratón (escritorio) por encima o presionando y sosteniendo un dedo en la publicación (móvil). Al hacerlo, entrará al modo de selección múltiple y ahora puede seleccionar las publicaciones siguientes que se van a moderar por lotes simplemente haciendo clic en ellas. Utilice los botones mostrados en la barra de herramientas para realizar acciones de moderación en los anuncios seleccionados. Todas las acciones solicitarán confirmación.
+Para moderar las publicaciones de forma masiva, en el área de contenido, haga clic en Seleccionar ( ![selecticono](assets/selecticon.png)) en un anuncio, que aparece al pasar el ratón por encima con el ratón (escritorio) o presionando y sosteniendo un dedo sobre el anuncio (móvil). Al hacerlo, entrará al modo de selección múltiple y ahora puede seleccionar las publicaciones siguientes que se van a moderar por lotes simplemente haciendo clic en ellas. Utilice los botones mostrados en la barra de herramientas para realizar acciones de moderación en los anuncios seleccionados. Todas las acciones solicitarán confirmación.
 
 Para moderar una sola publicación en el área de contenido, pase el ratón sobre ella (escritorio) o presione y mantenga presionado un dedo sobre la publicación (móvil) para que aparezcan botones en la publicación. Cuando se trabaja con un solo detalle de contenido, solo una acción de eliminación solicitará confirmación.
 
 ### Moderación de varias publicaciones {#moderating-multiple-posts}
 
-Especifique el modo de selección masiva haciendo clic en el icono `Select` de una publicación:
+Especifique el modo de selección masiva haciendo clic en el botón `Select` en una publicación:
 
 ![icono de selección](assets/select-icon.png)
 
@@ -294,7 +298,7 @@ Cuando se trabaja con un solo anuncio, el icono Permitir aparecerá cuando el an
 
 ![chlimage_1-482](assets/chlimage_1-482.png)
 
-La acción de moderación **Denegar** solo está disponible para contenido moderado y no aparece en contenido no moderado excepto en modo de selección múltiple.
+La variable **Denegar** la acción de moderación solo está disponible para contenido moderado y no aparece en contenido no moderado excepto en modo de selección múltiple.
 
 El contenido que no está moderado siempre se aprueba.
 
@@ -306,7 +310,7 @@ El contenido que deja el estado pendiente nunca puede volver a un estado pendien
 
 ![chlimage_1-483](assets/chlimage_1-483.png)
 
-En el modo de selección única o masiva, puede seleccionar elementos y eliminarlos. La acción de eliminar genera un cuadro de diálogo de confirmación. Una vez eliminados, esos elementos desaparecen inmediatamente del área de contenido. **Una vez eliminado UGC, se elimina permanentemente del repositorio y no se puede recuperar más tarde.**
+En el modo de selección única o masivo, puede seleccionar elementos y eliminarlos. La acción de eliminar genera un cuadro de diálogo de confirmación. Una vez eliminados, esos elementos desaparecen inmediatamente del área de contenido. **Una vez eliminado UGC, se elimina permanentemente del repositorio y no se puede recuperar más tarde.**
 
 #### Cerrar {#close}
 
@@ -332,7 +336,7 @@ Por ejemplo:
 
 Al trabajar con una sola publicación, se pueden ver más detalles abriendo el UGC en modo de detalle.
 
-Para ello, pase el ratón sobre la publicación para mostrar el icono `View Detail` y selecciónelo para mostrar un panel que contenga más detalles de la publicación.
+Para ello, pase el ratón sobre la publicación para mostrar la variable `View Detail` y selecciónelo para mostrar un panel que contenga más detalles del anuncio.
 
 Para volver a la visualización del área de contenido de varios anuncios UGC, seleccione la X en la esquina superior derecha del panel de detalles de la vista.
 

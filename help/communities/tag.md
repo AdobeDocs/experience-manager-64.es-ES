@@ -1,38 +1,41 @@
 ---
-title: Aspectos básicos de etiquetas
-seo-title: Aspectos básicos de etiquetas
-description: Descripción general de la etiqueta
-seo-description: Descripción general de la etiqueta
+title: Aspectos básicos de las etiquetas
+seo-title: Tag Essentials
+description: Información general de etiquetas
+seo-description: Tag overview
 uuid: a5d52319-f821-4608-b0ab-abc8a1374343
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
-translation-type: tm+mt
-source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+exl-id: 863ee5e3-daa7-4f7d-8897-291d367cf29d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '267'
-ht-degree: 3%
+source-wordcount: '299'
+ht-degree: 6%
 
 ---
 
+# Aspectos básicos de las etiquetas {#tag-essentials}
 
-# Tag Essentials {#tag-essentials}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-Cuando los componentes de AEM Communities están configurados con etiquetado habilitado, los miembros de la comunidad pueden etiquetar el contenido que publican en el entorno de publicación.
+Cuando los componentes de AEM Communities se configuran con el etiquetado habilitado, los miembros de la comunidad pueden etiquetar el contenido que publican en el entorno de publicación.
 
-La infraestructura subyacente para las etiquetas aplicadas en el entorno de publicación es la misma que para las etiquetas aplicadas al contenido del entorno de creación, como páginas y recursos:
+La infraestructura subyacente para las etiquetas aplicadas en el entorno de publicación es la misma que para las etiquetas aplicadas al contenido en el entorno de creación, como páginas y recursos:
 
-* Consulte [Administración de etiquetas](../../help/sites-administering/tags.md) y [Etiquetado de contenido generado por el usuario](tag-ugc.md) (UGC) para obtener información sobre cómo crear y administrar etiquetas.
+* Consulte [Administración de etiquetas](../../help/sites-administering/tags.md) y [Etiquetado del contenido generado por el usuario](tag-ugc.md) (UGC) para obtener información sobre la creación y administración de etiquetas.
 
-* Consulte [Etiquetado para desarrolladores](../../help/sites-developing/tags.md) para obtener información sobre el [marco de etiquetado](../../help/sites-developing/framework.md), así como para incluir y ampliar etiquetas en [aplicaciones personalizadas](../../help/sites-developing/building.md).
+* Consulte [Etiquetado para desarrolladores](../../help/sites-developing/tags.md) para obtener información sobre la variable [marco de etiquetado](../../help/sites-developing/framework.md) , así como la inclusión y ampliación de etiquetas en [aplicaciones personalizadas](../../help/sites-developing/building.md).
 
-* Consulte [Uso de Social Tag Cloud](tagcloud.md) para obtener información sobre cómo agregar un componente `social tag cloud` a una página para resaltar las etiquetas aplicadas a UGC en el entorno de publicación.
+* Consulte [Uso de la nube de etiquetas social](tagcloud.md) para obtener información para los autores sobre cómo añadir un `social tag cloud` a una página para resaltar las etiquetas aplicadas a UGC en el entorno de publicación.
 
-* Consulte [Etiquetado de recursos de habilitación](tag-resources.md) para obtener información sobre cómo etiquetar recursos para catálogos.
+* Consulte [Etiquetado de recursos de habilitación](tag-resources.md) para obtener información sobre el etiquetado de recursos para catálogos.
 
-El etiquetado de UGC puede habilitarse al configurar un [sitio de comunidad](sites-console.md#tagging) o una de las siguientes características:
+El etiquetado de UGC puede estar habilitado al configurar un [sitio de la comunidad](sites-console.md#tagging) o una de las siguientes características:
 
 * [Blog](blog-feature.md)
 * [Calendario](calendar.md)
@@ -40,7 +43,7 @@ El etiquetado de UGC puede habilitarse al configurar un [sitio de comunidad](sit
 * [Foro](forum.md)
 * [P y R](working-with-qna.md)
 
-## Esenciales para el cliente {#essentials-for-client-side}
+## Elementos esenciales para el cliente {#essentials-for-client-side}
 
 ### Nube de etiquetas social {#social-tag-cloud}
 
@@ -68,16 +71,16 @@ El etiquetado de UGC puede habilitarse al configurar un [sitio de comunidad](sit
   </tr>
   <tr>
    <td><strong>propiedades</strong></td> 
-   <td>Consulte <a href="tagcloud.md">Uso de Social Tag Cloud</a></td> 
+   <td>Consulte <a href="tagcloud.md">Uso de la nube de etiquetas social</a></td> 
   </tr>
  </tbody>
 </table>
 
 * [Personalizaciones del lado del cliente](client-customize.md)
 
-## Esenciales para servidor {#essentials-for-server-side}
+## Elementos esenciales para el servidor {#essentials-for-server-side}
 
-* [API de nube de etiquetas de Social](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
+* [API de Social Tag Cloud](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
 * [Administrador de etiquetas de Social](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
@@ -85,6 +88,6 @@ El etiquetado de UGC puede habilitarse al configurar un [sitio de comunidad](sit
 
 ## Búsqueda de etiquetas {#tag-searching}
 
-A partir de [paquete de funciones 1](deploy-communities.md#latestfeaturepack) (FP1), la búsqueda de etiquetas se realiza mediante [títulos de etiquetas](../../help/sites-developing/framework.md#tag-characteristics).
+A partir de [paquete de características 1](deploy-communities.md#latestfeaturepack) (FP1), la búsqueda de etiquetas se realiza utilizando [títulos de etiquetas](../../help/sites-developing/framework.md#tag-characteristics).
 
-Antes de FP1, la búsqueda se realizaba utilizando [id. de etiqueta](../../help/sites-developing/framework.md#tagid).
+Antes de FP1, la búsqueda se realizaba mediante [id de etiqueta](../../help/sites-developing/framework.md#tagid).

@@ -1,5 +1,5 @@
 ---
-title: Creación y administración de conjuntos de políticas
+title: Crear y administrar conjuntos de directivas
 seo-title: Creating and managing policy sets
 description: Los conjuntos de políticas se utilizan para agrupar las políticas que tienen un propósito comercial común. Puede crear, editar y eliminar directivas en un conjunto de directivas.
 seo-description: Policy sets are used to group policies that have a common business purpose. You can create, edit and delete policies in a policy set.
@@ -11,14 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
 feature: Document Security
 exl-id: e17ab7de-9f4a-4456-be80-43ab9663940e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1295'
-ht-degree: 0%
+source-wordcount: '1331'
+ht-degree: 1%
 
 ---
 
-# Creación y administración de conjuntos de políticas {#creating-and-managing-policy-sets}
+# Crear y administrar conjuntos de directivas {#creating-and-managing-policy-sets}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Los conjuntos de políticas se utilizan para agrupar las políticas que tienen un propósito comercial común. Los conjuntos de políticas se pueden poner a disposición de un subconjunto de usuarios del sistema.
 
@@ -44,7 +48,7 @@ Al crear conjuntos de directivas, se asigna a los usuarios la función de public
 
 Tras la instalación de la seguridad del documento, se crea un conjunto de directivas predeterminado denominado *Conjunto de directivas globales*. El administrador que instaló el software o el coordinador del conjunto de directivas designado para este conjunto de directivas es el encargado de administrar este conjunto de directivas.
 
-## Crear un conjunto de directivas {#create-a-policy-set}
+## Cree un conjunto de políticas {#create-a-policy-set}
 
 Conjunto de directivas globales es el único conjunto de directivas predeterminado que se crea en el momento de la instalación. Puede crear conjuntos de directivas adicionales y agregar directivas, usuarios, coordinadores de conjuntos de políticas y editores de documentos. Después de crear un conjunto de directivas, puede crear directivas dentro del conjunto.
 

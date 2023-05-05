@@ -1,5 +1,5 @@
 ---
-title: Servicio de administración de documentos (obsoleto)Inicio rápido de la API de Java (SOAP)
+title: Inicio rápido (SOAP) de la API de Java servicio de Administración de documentos (obsoleto)
 seo-title: Document Management Service (Deprecated)Java API Quick Start(SOAP)
 description: Utilice la API de Java del servicio de administración de documentos para crear espacios de servicios de contenido, eliminar espacios de servicios de contenido, añadir contenido a servicios de contenido, recuperar contenido de los servicios de contenido, mover contenido de los servicios de contenido, enumerar contenido de los servicios de contenido, buscar contenido de los servicios de contenido y establecer permisos de los servicios de contenido.
 seo-description: Use the Document Management Service Java API to create Content Services spaces, delete Content Services spaces, Add content to Content Services, retrieve content from Content Services, move Content Services content, list Content Services content, search Content Services content, and set Content Services permissions.
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 role: Developer
 exl-id: 5ffd9600-03ec-4fd5-abb1-a8d9adefe6f3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 0%
+source-wordcount: '713'
+ht-degree: 3%
 
 ---
 
-# Inicio rápido de la API de Java (SOAP) del servicio de administración de documentos (obsoleto) {#document-management-service-deprecated-java-api-quick-start-soap}
+# Inicio rápido (SOAP) de la API de Java servicio de Administración de documentos (obsoleto) {#document-management-service-deprecated-java-api-quick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Los siguientes Inicio rápido están disponibles para el servicio de Gestión de documentos (obsoleto).
 

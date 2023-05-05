@@ -1,5 +1,5 @@
 ---
-title: Inicio rápido de la API de Java del servicio de salida (SOAP)
+title: Inicio rápido (SOAP) de la API de Java del servicio de salida
 seo-title: Output Service Java API Quick Start(SOAP)
 description: Utilice el servicio de salida Inicio rápido de la API de Java (SOAP) para crear un documento de PDF, crear un documento de PDF basado en el archivo XDP de la aplicación, crear un documento de PDF/A, pasar documentos al servicio de salida, pasar un documento ubicado en el repositorio de AEM Forms al servicio de salida, crear un documento de PDF basado en fragmentos, imprimir en un archivo, enviar un flujo de impresión a una impresora de red, crear varios archivos de PDF, crear reglas de búsqueda, transformar un documento de PDF.
 seo-description: Use the Output service Java API Quick Start (SOAP) to create a PDF document, create a PDF document based on application XDP file, create a PDF/A document, pass documents to the Output service, pass a document located in the AEM Forms repository to the Output service, create a PDF document based on fragments, printing to a file, sending a print stream to a network printer, create multiple PDF files, create search rules, transform a PDF document.
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: f4415aeb-5c1b-4087-b60f-b2ea952c52b5
 role: Developer
 exl-id: 56ec125c-b759-4e97-98c6-bae786a712b9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1321'
-ht-degree: 0%
+source-wordcount: '1357'
+ht-degree: 1%
 
 ---
 
-# Inicio rápido de la API de Java del servicio de salida (SOAP) {#output-service-java-api-quick-start-soap}
+# Inicio rápido (SOAP) de la API de Java del servicio de salida {#output-service-java-api-quick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El inicio rápido de la API de Java (SOAP) está disponible para el servicio de salida.
 

@@ -1,7 +1,7 @@
 ---
 title: Funciones remotas en el Generador de expresiones
 seo-title: Expression Builder
-description: El Generador de expresiones en la Gestión de correspondencia permite crear expresiones y funciones remotas.
+description: El generador de expresiones de Administración de correspondencia permite crear expresiones y funciones remotas.
 seo-description: Expression Builder in Correspondence Management lets you create expressions and remote functions.
 uuid: 998f7ec9-2645-431e-b483-c68d24ef49cb
 content-type: reference
@@ -10,39 +10,43 @@ topic-tags: correspondence-management
 discoiquuid: 4a864547-edbe-4d2d-a8ee-39bc65dffe88
 feature: Correspondence Management
 exl-id: cd565ec5-f453-4692-83f8-e1fb06dc28c7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 1%
+source-wordcount: '819'
+ht-degree: 94%
 
 ---
 
 # Funciones remotas en el Generador de expresiones {#remote-functions-in-expression-builder}
 
-Con el Generador de expresiones, puede crear expresiones o condiciones que realicen cálculos sobre los valores de datos proporcionados por el Diccionario de datos o por usuarios finales. Correspondence Management utiliza el resultado de la evaluación de expresiones para seleccionar recursos como texto, imágenes, listas y condiciones e insertarlos en la correspondencia según sea necesario.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-## Creación de expresiones y funciones remotas con el generador de expresiones {#creating-expressions-and-remote-functions-with-expression-builder}
+Con el generador de expresiones, puede crear expresiones o condiciones que realicen cálculos sobre los valores de datos proporcionados por el diccionario de datos o por usuarios finales. Administración de correspondencia utiliza el resultado de la evaluación de expresiones para seleccionar recursos como texto, imágenes, listas y condiciones e insertarlos en la correspondencia según sea necesario.
 
-El Generador de expresiones utiliza internamente bibliotecas JSP EL, por lo que la expresión se adhiere a la sintaxis JSPEL. Para obtener más información, consulte [Expresiones de ejemplo](#exampleexpressions).
+## Crear expresiones y funciones remotas con el generador de expresiones {#creating-expressions-and-remote-functions-with-expression-builder}
+
+El generador de expresiones utiliza internamente bibliotecas JSP EL, por lo que la expresión se adhiere a la sintaxis JSPEL. Para obtener más información, consulte [Expresiones de ejemplo](#exampleexpressions).
 
 ![Generador de expresiones](assets/expressionbuilder.png)
 
 ### Operadores {#operators}
 
-Los operadores que están disponibles para su uso en expresiones están disponibles en la barra superior del generador de expresiones.
+Los operadores que están disponibles para utilizarlos en expresiones están disponibles en la barra superior del generador de expresiones.
 
 ### Expresiones de ejemplo {#exampleexpressions}
 
-Estos son algunos ejemplos de JSP EL que puede utilizar con frecuencia en su solución de Gestión de Correspondencia:
+Estos son algunos ejemplos de JSP EL que puede utilizar con frecuencia en su solución de Administración de correspondencia:
 
 * Para agregar dos números: ${number1 + number2}
 * Para concatenar dos cadenas: ${str1} ${str2}
 * Para comparar dos números: ${age &lt; 18}
 
-Puede encontrar más información en la sección [Especificación JSP EL](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). El administrador de expresiones del lado del cliente no admite determinadas variables y funciones en la especificación JSP EL, específicamente:
+Puede encontrar más información en la sección [Especificación JSP EL](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). El administrador de expresiones del lado del cliente no admite determinadas variables y funciones en la especificación JSP EL, en concreto:
 
-* Índices de recopilación y claves de asignación (con el uso de [] ) no son compatibles con los nombres de variables para expresiones evaluadas en el lado del cliente.
-* Los siguientes son los tipos de parámetros o los tipos de funciones devueltos utilizados en las expresiones:
+* Los índices de recopilación y las claves de asignación (con el uso de la notación []) no son compatibles con los nombres de variables para expresiones evaluadas del lado del cliente.
+* Los siguientes son los tipos de parámetros o de funciones devueltos utilizados en las expresiones:
 
    * java.lang.String
    * java.lang.Character
@@ -53,7 +57,7 @@ Puede encontrar más información en la sección [Especificación JSP EL](https:
    * Int
    * java.util.list
    * java.lang.Short
-   * Corto
+   * corto
    * java.lang.Byte
    * byte
    * java.lang.Double
@@ -72,17 +76,17 @@ Las funciones remotas proporcionan la capacidad de usar lógica personalizada en
 
 ![remotefunction](assets/remotefunction.png)
 
-#### Adición de funciones remotas personalizadas {#adding-custom-remote-functions}
+#### Agregar funciones remotas personalizadas {#adding-custom-remote-functions}
 
 Puede crear un paquete personalizado para exportar sus propias funciones remotas para usarlas dentro de las expresiones. Para crear un paquete personalizado para exportar sus propias funciones remotas, realice las siguientes tareas. Muestra cómo escribir una función personalizada que pone en mayúsculas su cadena de entrada.
 
-1. Defina una interfaz para el servicio OSGi que contenga métodos que el Administrador de expresiones está exportando para su uso.
+1. Defina una interfaz para el servicio OSGi que contenga métodos que exporte el Administrador de expresiones para utilizarlos.
 1. Declare los métodos en la interfaz A y anótelos con la anotación @ServiceMethod (com.adobe.exm.expeval.ServiceMethod). El Administrador de expresiones ignora los métodos no anotados. La anotación ServiceMethod tiene los siguientes atributos opcionales que también se pueden especificar:
 
-   1. **Habilitado**: Determina si este método está habilitado. El Administrador de expresiones ignora los métodos desactivados.
-   1. **familyId**: Especifica la familia (grupo) del método. Si está vacío, el Administrador de expresiones supone que el método pertenece a la familia predeterminada. No hay un registro de familias (excepto el predeterminado) desde donde se eligen las funciones. El Administrador de expresiones crea dinámicamente el registro mediante una unión de todos los ID de familia especificados por todas las funciones exportadas por los distintos paquetes. Asegúrese de que el ID que especifican aquí sea razonablemente legible, ya que también se muestra en la interfaz de usuario de creación de expresiones.
-   1. **displayName**: Un nombre legible en lenguaje natural para la función . Este nombre se utiliza con fines de visualización en la interfaz de usuario de creación. Si está vacío, el Administrador de expresiones crea un nombre predeterminado con el prefijo y el nombre local de la función.
-   1. **Descripción**: Una descripción detallada de la función. Esta descripción se utiliza con fines de visualización en la interfaz de usuario de creación. Si está vacío, el Administrador de expresiones crea una descripción predeterminada utilizando el prefijo y el nombre local de la función.
+   1. **Habilitado**: determina si este método está habilitado. El Administrador de expresiones ignora los métodos desactivados.
+   1. **familyId**: especifica la familia (grupo) del método. Si está vacío, el Administrador de expresiones supone que el método pertenece a la familia predeterminada. No hay ningún registro de familias (excepto el predeterminado) desde donde se eligen las funciones. El Administrador de expresiones crea de manera dinámica el registro mediante una unión de todos los ID de familia especificados por todas las funciones exportadas por los distintos paquetes. Asegúrese de que el ID que especifican aquí sea legible, ya que también se mostrará en la interfaz de usuario de creación de expresiones.
+   1. **displayName**: un nombre legible en lenguaje natural para la función. Este nombre se utiliza con fines de visualización en la interfaz de usuario de creación. Si está vacío, el Administrador de expresiones creará un nombre predeterminado con el prefijo y el nombre local de la función.
+   1. **Descripción**: una descripción detallada de la función. Esta descripción se utiliza con fines de visualización en la interfaz de usuario de creación. Si está vacía, el Administrador de expresiones creará una descripción predeterminada con el prefijo y el nombre local de la función.
 
    ```java
    package mergeandfuse.com;
@@ -105,7 +109,7 @@ Puede crear un paquete personalizado para exportar sus propias funciones remotas
    * java.lang.Integer
    * Int
    * java.lang.Short
-   * Corto
+   * corto
    * java.lang.Byte
    * byte
    * java.lang.Double
@@ -154,9 +158,9 @@ public class RemoteFuntionImpl implements RemoteFunction {
 }
 ```
 
-A continuación se muestran archivos de muestra para utilizar:
+A continuación se muestran archivos de ejemplo para utilizar:
 
-* **GoodFunctions.jar.zip** es el archivo jar con paquete que contiene una definición de función remota de ejemplo. Descargue el archivo GoodFunctions.jar.zip y descomprima para obtener el archivo jar.
+* **GoodFunctions.jar.zip** es el archivo jar con paquete que contiene una definición de función remota de ejemplo. Descargue el archivo GoodFunctions.jar.zip y descomprímalo para obtener el archivo jar.
 * **GoodFunctions.zip** es el paquete de código fuente para definir una función remota personalizada y crear un paquete para ella.
 
 GoodFunctions.jar.zip

@@ -9,14 +9,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 exl-id: 73995327-d781-4501-ba14-3394dc8ea4fc
-source-git-commit: b46f0325ddbf68b65270c8e741e06469c584ae4d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2090'
+source-wordcount: '2126'
 ht-degree: 1%
 
 ---
 
 # Modelo SPA{#spa-blueprint}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Para permitir que el autor utilice el AEM SPA Editor para editar el contenido de un SPA, hay requisitos que el SPA debe cumplir, que se describen en este documento.
 
@@ -157,7 +161,7 @@ El contenedor obtiene dinámicamente los componentes secundarios del almacén de
 
 La variable `Page` amplía el `Container` componente. Un contenedor es un componente diseñado para contener y procesar componentes secundarios, incluidas páginas secundarias. Para ello, el contenedor se repite sobre el `:itemsOrder`, `:items`y `:children` propiedades de su modelo. La variable `Page` obtiene dinámicamente los componentes secundarios del almacén de la variable [Asignación de componentes](/help/sites-developing/spa-blueprint.md#componentmapping) biblioteca. La variable `Page` es responsable de crear instancias de componentes secundarios.
 
-### Cuadrícula interactiva {#responsive-grid}
+### Cuadrícula adaptable {#responsive-grid}
 
 El componente Cuadrícula interactiva es un contenedor. Contiene una variante específica del proveedor de modelos que representa sus columnas. La cuadrícula interactiva y sus columnas son responsables de decorar el elemento de HTML exterior del componente del proyecto con los nombres de clase específicos contenidos en el modelo.
 

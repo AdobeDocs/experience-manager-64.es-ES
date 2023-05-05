@@ -1,23 +1,27 @@
 ---
 title: Seleccionar dinámicamente un usuario o un grupo para los pasos de los flujos de trabajo centrados en AEM Forms
 seo-title: Dynamically select a user or group for AEM Forms-centric workflow steps
-description: Obtenga información sobre cómo seleccionar un usuario o grupo para un flujo de trabajo de AEM Forms durante la ejecución.
+description: Aprenda cómo seleccionar un usuario o un grupo para un flujo de trabajo de AEM Forms en tiempo de ejecución.
 seo-description: Learn how to select a user or group for an AEM Forms workflow at the runtime.
 uuid: 19dcbda4-61af-40b3-b10b-68a341373410
 content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 exl-id: c63e6e5c-c4c9-45b8-8401-87ee37a30c97
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '920'
-ht-degree: 68%
+source-wordcount: '956'
+ht-degree: 76%
 
 ---
 
 # Seleccionar dinámicamente un usuario o un grupo para los pasos de los flujos de trabajo centrados en AEM Forms {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
-Obtenga información sobre cómo seleccionar un usuario o grupo para un flujo de trabajo de AEM Forms durante la ejecución.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+Aprenda cómo seleccionar un usuario o un grupo para un flujo de trabajo de AEM Forms en tiempo de ejecución.
 
 En las organizaciones grandes, existen requisitos a la hora de seleccionar usuarios de forma dinámica para un proceso; por ejemplo, cuando se selecciona un agente de campo para servir a un cliente en función de la proximidad de ese agente al cliente. En este tipo de escenarios, el agente se selecciona dinámicamente.
 
@@ -116,9 +120,9 @@ function getAdobeSignRecipients() {
 
 ## Usar la interfaz de Java para elegir dinámicamente un usuario o un grupo {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-Puede usar la variable [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Interfaz de Java para elegir dinámicamente un usuario o un grupo para Acrobat Sign y para asignar pasos de tarea. Puede crear un paquete OSGi que use el [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Interfaz de Java e impleméntelo en el servidor de AEM Forms. Hace que la opción esté disponible para su selección en los componentes Asignar tarea y Acrobat Sign de AEM flujo de trabajo.
+Puede usar la variable [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Interfaz de Java para elegir dinámicamente un usuario o un grupo para Acrobat Sign y para asignar pasos de tarea. Puede crear un paquete OSGi que use la interfaz de Java [RecipientInfoSpecifier](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) e implementarlo en el servidor de AEM Forms. Hace que la opción esté disponible para su selección en los componentes Asignar tarea y Acrobat Sign de AEM flujo de trabajo.
 
-Debe [SDK de cliente de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) jar y [tarro de granito](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) para compilar el ejemplo de código que se muestra a continuación. Agregue estos archivos jar como dependencias externas al proyecto del paquete OSGi. Puede utilizar cualquier IDE de Java para crear un paquete OSGi. El siguiente procedimiento proporciona los pasos para utilizar Eclipse para crear un paquete OSGi:
+Necesitará los archivos jar del [AEM Forms Client SDK](https://helpx.adobe.com/es/aem-forms/kb/aem-forms-releases.html) y [granite](https://repo.adobe.com/nexus/content/groups/public/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) para compilar el código de ejemplo que se muestra a continuación. Agregue estos archivos jar como dependencias externas al proyecto del paquete OSGi. Puede utilizar cualquier IDE de Java para crear un paquete OSGi. El siguiente procedimiento proporciona los pasos para utilizar Eclipse para crear un paquete OSGi:
 
 1. Abra Eclipse IDE. Vaya a **[!UICONTROL Archivo]** > **[!UICONTROL Nuevo proyecto]**.
 1. En la pantalla Seleccionar un asistente, seleccione **[!UICONTROL Proyecto Maven]** y haga clic en **[!UICONTROL Siguiente]**.
@@ -230,7 +234,7 @@ Debe [SDK de cliente de AEM Forms](https://helpx.adobe.com/es/aem-forms/kb/aem-f
 
    `mvn clean install`
 
-1. Cargue el paquete en un servidor de AEM Forms. Puede utilizar AEM Administrador de paquetes para importar el paquete en el servidor de AEM Forms.
+1. Cargue el paquete en un servidor de AEM Forms. Puede utilizar el Administrador de paquetes de AEM para importar el paquete en un servidor de AEM Forms.
 
 Una vez importado el paquete, la opción de elegir la interfaz Java para seleccionar dinámicamente un usuario o un grupo está disponible en los pasos de Acrobat Sign y Asignar tarea.
 

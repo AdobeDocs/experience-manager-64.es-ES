@@ -8,14 +8,18 @@ content-type: reference
 exl-id: acb95a2b-0171-449e-97fa-f9a533f990de
 feature: Video
 role: User
-source-git-commit: f2b7ffa37bcb14e7be47c10ea9d3e39f89e1858d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '10401'
+source-wordcount: '10437'
 ht-degree: 4%
 
 ---
 
 # Vídeo {#video}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 En esta sección se describe cómo trabajar con vídeo en Dynamic Media.
 
@@ -181,7 +185,7 @@ Para el streaming de vídeo adaptable móvil y de escritorio, los vídeos utiliz
 
 La reproducción de vídeo se produce mediante el flujo continuo de vídeo HLS (HTTP Live Streaming) o la descarga progresiva de vídeo. En versiones anteriores de AEM, como 6.0, 6.1 y 6.2, los vídeos se transmitían por HTTP.
 
-Sin embargo, en AEM 6.3 y en adelante, los vídeos ahora se transmiten a través de HTTPS (es decir, flujo de vídeo HLS) porque la URL del servicio de puerta de enlace DM también utiliza HTTPS. Tenga en cuenta que este comportamiento predeterminado no afecta al cliente. Es decir, el flujo de vídeo siempre se producirá a través de HTTPS a menos que el explorador no lo admita. (véase la tabla siguiente). Por tanto,
+Sin embargo, en AEM 6.3 y en adelante, los vídeos ahora se transmiten a través de HTTPS (es decir, flujo de vídeo HLS) porque la URL del servicio de puerta de enlace DM también utiliza HTTPS. Tenga en cuenta que este comportamiento predeterminado no afecta al cliente. Es decir, el flujo de vídeo siempre se producirá a través de HTTPS a menos que el explorador no lo admita. (véase la tabla siguiente). Por lo tanto,
 
 * Si tiene un sitio web HTTPS con flujo de vídeo HTTPS, la transmisión está bien.
 * Si tiene un sitio web HTTP con flujo de vídeo HTTPS, la transmisión está bien y no hay problemas de contenido mixto en el navegador web.
@@ -318,10 +322,10 @@ En la tabla siguiente se describe cómo los resultados de la fórmula se traduce
 
 | Resultado de la fórmula | Proporción de aspecto |
 |--- |--- |
-| 1,33 | 4:3 |
-| 0,75 | 3:4 |
-| 1,78 | 16:9 |
-| 0,56 | 9:16 |
+| 1.33 | 4:3 |
+| 0.75 | 3:4 |
+| 1.78 | 16:9 |
+| 0.56 | 9:16 |
 
 Por ejemplo, un vídeo con una anchura de 1440 x una altura de 1080 tiene una relación de aspecto de 1440/1080 o 1,33. En este caso, se elige un ajuste preestablecido de codificación de vídeo con una relación de aspecto de 4:3 para codificar el archivo de vídeo.
 
@@ -363,8 +367,8 @@ La resolución y la velocidad de datos son dos factores integrados que determina
 
 | Resolución | Píxeles por fotograma |
 |--- |--- |
-| 320 x 240 | 76.800 |
-| 640 x 480 | 307.200 |
+| 320 x 240 | 76,800 |
+| 640 x 480 | 307,200 |
 
 El archivo de 640 x 480 tiene cuatro veces más píxeles por fotograma. Para lograr la misma velocidad de datos para estas dos resoluciones de ejemplo, se aplica cuatro veces la compresión al archivo de 640 x 480, lo que puede reducir la calidad del vídeo. Por lo tanto, una velocidad de datos de vídeo de 250 Kbps produce una visualización de alta calidad a una resolución de 320 x 240, pero no a una resolución de 640 x 480.
 
@@ -485,7 +489,7 @@ Para publicar en YouTube, necesita una cuenta de Google. Si tiene una cuenta de 
 1. En el **[!UICONTROL Nuevo proyecto]** , escriba un nombre de proyecto.
 
    Tenga en cuenta que el ID del proyecto se basa en el nombre del proyecto. Como tal, elija cuidadosamente el nombre del proyecto; no se puede cambiar una vez creada. Además, tendrá que volver a introducir el mismo ID de proyecto cuando configure YouTube en Adobe Experience Manager más adelante. Puede que desee escribir el ID del proyecto.
-1. Toque **[!UICONTROL Crear]**.
+1. Pulse **[!UICONTROL Crear]**.
 
 1. En el **[!UICONTROL Panel]**, en el **[!UICONTROL Introducción]** tarjeta, toque **[!UICONTROL Habilitar API y obtener credenciales como claves]**.
 1. Cerca de la parte superior del **[!UICONTROL Panel]** página, toque **[!UICONTROL Habilitar API]**.
@@ -494,13 +498,13 @@ Para publicar en YouTube, necesita una cuenta de Google. Si tiene una cuenta de 
 1. Para utilizar la API, es posible que necesite credenciales. Si es necesario, pulse **[!UICONTROL Crear credenciales]**.
 1. En el **[!UICONTROL ¿Desde dónde va a llamar a la API?]** lista desplegable, seleccione **[!UICONTROL Servidor web (por ejemplo, node.js, Tomcat)]**.
 1. En **[!UICONTROL ¿A qué datos accederá?]** select **[!UICONTROL Datos de usuario]**.
-1. Toque **[!UICONTROL ¿Qué credenciales necesito?]**.
+1. Toque **[!UICONTROL ¿Qué credenciales necesito?]** botón.
 1. En el **[!UICONTROL Creación de un ID de cliente de OAuth 2.0]** , escriba un nombre único.
 1. En el campo de texto debajo de **[!UICONTROL Orígenes autorizados de JavaScript]** introduzca la siguiente ruta, sustituya su propio dominio y número de puerto por la ruta y, a continuación, pulse **[!UICONTROL Entrar]** para agregar la ruta a la lista:
 
    `https://<servername.domain>:<port_number>`
 
-   Por ejemplo, `https://1a2b3c.mycompany.com:4321`
+   Por ejemplo, `https://1a2b3c.mycompany.com:4321`. 
 
    **Nota**: El ejemplo de ruta anterior está diseñado únicamente con fines ilustrativos.
 
@@ -508,7 +512,7 @@ Para publicar en YouTube, necesita una cuenta de Google. Si tiene una cuenta de 
 
    `https://<servername.domain>:<port#>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
-   Por ejemplo, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`
+   Por ejemplo, `https://1a2b3c.mycompany.com:4321/etc/cloudservices/youtube.youtubecredentialcallback.json`. 
 
    **Nota**: El ejemplo de ruta anterior está diseñado únicamente con fines ilustrativos.
 
@@ -524,7 +528,7 @@ Para publicar en YouTube, necesita una cuenta de Google. Si tiene una cuenta de 
 
    Necesitará este archivo json descargado cuando configure YouTube en Adobe Experience Manager más adelante.
 
-1. Puntee **[!UICONTROL Listo]**.
+1. Pulse **[!UICONTROL Listo]**.
 
    Ahora creará un canal de YouTube.
 
@@ -571,7 +575,7 @@ O bien, si desea utilizar las etiquetas predeterminadas en AEM, puede omitir est
 1. En la esquina superior izquierda de AEM, pulse el logotipo de AEM y, a continuación, en el carril izquierdo, pulse **[!UICONTROL Herramientas > Implementación > Cloud Services]**.
 1. En el **[!UICONTROL Servicios de terceros]** encabezado, en YouTube, toque **[!UICONTROL Configurar ahora]**.
 1. En el **[!UICONTROL Crear configuración]** , introduzca un título (obligatorio) y un nombre (opcional) en los campos correspondientes.
-1. Toque **[!UICONTROL Crear]**.
+1. Pulse **[!UICONTROL Crear]**.
 1. En el **[!UICONTROL Configuración de la cuenta de YouTube]** en el **[!UICONTROL Nombre de la aplicación]** , introduzca el ID del proyecto de Google.
 
    Ha especificado el ID del proyecto al configurar Google Cloud por primera vez.
@@ -581,7 +585,7 @@ O bien, si desea utilizar las etiquetas predeterminadas en AEM, puede omitir est
 1. Con un editor de texto sin formato, abra el archivo JSON que descargó y guardó anteriormente en la tarea Configuración de Google Cloud .
 1. Seleccione y copie todo el texto JSON.
 1. Vuelva a la **[!UICONTROL Configuración de la cuenta de YouTube]** para abrir el Navegador. En el campo **[!UICONTROL Configuración JSON]**, pegue el texto JSON.
-1. Toque **[!UICONTROL OK]**.
+1. Pulse **[!UICONTROL Aceptar]**.
 
    Ahora configurará los canales de YouTube en AEM.
 
@@ -590,7 +594,7 @@ O bien, si desea utilizar las etiquetas predeterminadas en AEM, puede omitir est
 
    Si lo desea, puede agregar una descripción.
 
-1. Toque **[!UICONTROL OK]**.
+1. Pulse **[!UICONTROL Aceptar]**.
 1. Se muestra la autenticación de YouTube/Google. Si aún no ha iniciado sesión en la cuenta de Google Cloud, omita este paso.
 
    * Introduzca el nombre de usuario y la contraseña de Google asociados al ID del proyecto de Google y el texto JSON anterior.
@@ -1009,7 +1013,7 @@ Consulte [Servicio de contenido estático (no de imagen)](https://experienceleag
 
    Consulte [Publicación de recursos.](publishing-dynamicmedia-assets.md)
 
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Para obtener una experiencia del visor de vídeo emergente, pulse **[!UICONTROL URL]**. En el cuadro de diálogo URL, seleccione y copie la dirección URL en el portapapeles y, a continuación, pase la dirección URL a un editor de texto sencillo. Añada la URL copiada del vídeo con la siguiente sintaxis:
 
@@ -1074,7 +1078,7 @@ Consulte [WebVTT: Formato de seguimiento de texto de vídeo web](https://dev.w3.
 
    Consulte [Carga de recursos](managing-assets-touch-ui.md#uploading-assets).
 
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    <table> 
      <tbody> 

@@ -1,65 +1,68 @@
 ---
-title: Descarga de componentes
-seo-title: Descarga de componentes
-description: La transferencia de componentes de comunidades resulta útil cuando una página web está diseñada como una aplicación de una sola página simple que modifica dinámicamente lo que se muestra en función de lo que seleccione el visitante del sitio
-seo-description: La transferencia de componentes de comunidades resulta útil cuando una página web está diseñada como una aplicación de una sola página simple que modifica dinámicamente lo que se muestra en función de lo que seleccione el visitante del sitio
+title: Carga de componentes
+seo-title: Component Sideloading
+description: La carga lateral de componentes de Communities resulta útil cuando una página web está diseñada como una aplicación de página simple y única que modifica dinámicamente lo que se muestra en función de lo que seleccione el visitante del sitio
+seo-description: Communities component sideloading is useful when a web page is designed as a simple, single page app that dynamically alters what is displayed depending on what is selected by the site visitor
 uuid: 8c9a5fde-26a3-4610-bc14-f8b665059015
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a9cb5294-e5ab-445b-b7c2-ffeecda91c50
-translation-type: tm+mt
-source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+exl-id: 12fdc503-29b6-4970-a883-c22162f7a9eb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '439'
-ht-degree: 0%
+source-wordcount: '441'
+ht-degree: 2%
 
 ---
 
+# Carga de componentes {#component-sideloading}
 
-# Descarga del componente {#component-sideloading}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Información general {#overview}
 
-La transferencia de componentes de comunidades resulta útil cuando una página web está diseñada como una aplicación de una sola página simple que modifica dinámicamente lo que se muestra en función de lo que seleccione el visitante del sitio.
+La carga lateral de componentes de Communities resulta útil cuando una página web está diseñada como una aplicación de página simple y única que modifica dinámicamente lo que se muestra en función de lo que seleccione el visitante del sitio.
 
-Esto se logra cuando los componentes de Comunidades no existen en la plantilla de página, sino que se agregan dinámicamente siguiendo la selección de un visitante del sitio.
+Esto se logra cuando los componentes de Communities no existen en la plantilla de página, sino que se añaden de forma dinámica tras la selección de un visitante del sitio.
 
-Dado que el marco de componentes sociales (SCF) tiene una presencia ligera, solo se registran los componentes de SCF que existen en el momento de la carga de página inicial. Para que un componente SCF agregado dinámicamente se registre después de cargar la página, se debe invocar SCF para &quot;transferir&quot; el componente.
+Dado que el marco de componentes sociales (SCF) tiene una presencia ligera, solo se registran los componentes de SCF que existen en el momento de la carga inicial de la página. Para que un componente SCF añadido dinámicamente se registre después de la carga de página, se debe invocar SCF para &quot;cargar&quot; el componente.
 
-Cuando una página está diseñada para transferir componentes de Communities, es posible almacenar en caché toda la página.
+Cuando una página está diseñada para cargar componentes de Communities, es posible almacenar en caché toda la página.
 
-Los pasos para agregar componentes SCF dinámicamente son:
+Los pasos para agregar componentes SCF de forma dinámica son:
 
 1. [Añadir el componente al DOM](#dynamically-add-component-to-dom)
 
-1. [Cargue el ](#sideload-by-invoking-scf) componente en el equipo mediante uno de los dos métodos siguientes:
+1. [Carga del componente](#sideload-by-invoking-scf) utilizando uno de estos dos métodos:
 
 * [Inclusión dinámica](#dynamic-inclusion)
-   * Boostrap de todos los componentes agregados dinámicamente
+   * Agrupar todos los componentes añadidos dinámicamente
 * [Carga dinámica](#dynamic-loading)
-   * Añadir un componente específico a petición
+   * Añadir un componente específico bajo demanda
 
 >[!NOTE]
 >
->No se admite la transferencia de [recursos no existentes](scf.md#add-or-include-a-communities-component).
+>Carga parcial de [recursos no existentes](scf.md#add-or-include-a-communities-component) no es compatible.
 
-## Añadir dinámicamente el componente a DOM {#dynamically-add-component-to-dom}
+## Añadir dinámicamente un componente a DOM {#dynamically-add-component-to-dom}
 
 Tanto si el componente se incluye dinámicamente como si se carga dinámicamente, primero debe agregarse al DOM.
 
-Al agregar el componente SCF, la etiqueta más común que se debe utilizar es la etiqueta DIV, pero también se pueden utilizar otras etiquetas. Dado que SCF solo examina el DOM cuando la página se carga inicialmente, esta adición al DOM pasará desapercibida hasta que se invoque SCF de forma explícita.
+Al añadir el componente SCF, la etiqueta más común que se debe utilizar es la etiqueta DIV, pero también se pueden utilizar otras etiquetas. Dado que SCF solo examina el DOM cuando la página se carga inicialmente, esta adición al DOM pasa desapercibida hasta que se invoque explícitamente SCF.
 
-Cualquiera que sea la etiqueta que se utilice, como mínimo, el elemento debe cumplir con el patrón de elementos raíz SCF normal al contener estos dos atributos:
+Sea cual sea la etiqueta utilizada, como mínimo, el elemento debe cumplir el patrón de elemento raíz SCF normal al contener estos dos atributos:
 
-* **data-component-**
-idRuta efectiva al componente agregado
+* **data-component-id**
+La ruta efectiva al componente añadido
 
-* **data-scf-**
-componentEl resourceType del componente
+* **data-scf-component**
+El resourceType del componente
 
-A continuación se muestra un ejemplo de un componente de comentarios agregado:
+A continuación se muestra un ejemplo de un componente de comentarios añadido:
 
 ```xml
 <div
@@ -70,22 +73,22 @@ A continuación se muestra un ejemplo de un componente de comentarios agregado:
 </div>
 ```
 
-## Carga en el sitio invocando SCF {#sideload-by-invoking-scf}
+## Carga secundaria mediante invocación de SCF {#sideload-by-invoking-scf}
 
 ### Inclusión dinámica {#dynamic-inclusion}
 
-La inclusión dinámica utiliza una solicitud de refuerzo que resulta en que SCF examine el DOM y ejecute todos los componentes de SCF que se encuentran en la página.
+La inclusión dinámica utiliza una solicitud de ampliación que hace que SCF examine el DOM y arranque todos los componentes SCF que se encuentran en la página.
 
-Para inicializar los componentes SCF en cualquier momento después de cargar la página, simplemente active un evento de JQuery como este:
+Para inicializar los componentes SCF en cualquier momento después de la carga de la página, simplemente active un evento JQuery de esta manera:
 
-$(documento).déclencheur(SCF.eventos.BOOTSTRAP_REQUEST);
+$(document).déclencheur(SCF.events.BOOTSTRAP_REQUEST);
 
 ### Carga dinámica {#dynamic-loading}
 
 La carga dinámica proporciona control sobre la carga de componentes SCF.
 
-En lugar de arrancar todos los componentes SCF que se encuentran en el DOM, es posible especificar un componente SCF específico para cargar con este método JavaScript:
+En lugar de arrancar todos los componentes SCF que se encuentran en el DOM, es posible especificar un componente SCF específico para cargar mediante este método JavaScript:
 
-SCF.addComponent(documento.getElementById(*someId*));
+SCF.addComponent(document.getElementById(*someId*);
 
-Donde *someId* es el valor del atributo **data-component-id**.
+Donde *someId* es el valor de la variable **data-component-id** atributo.

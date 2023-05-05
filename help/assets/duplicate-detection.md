@@ -5,24 +5,28 @@ contentOwner: AG
 feature: Asset Management,Asset Reports
 role: User,Admin
 exl-id: 138cf649-9e21-415e-9861-b07caacc85db
-source-git-commit: 8948bca63f1f5ec9d94ede2fb845ed01b4e23333
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '152'
-ht-degree: 0%
+source-wordcount: '188'
+ht-degree: 4%
 
 ---
 
 # Activación de la detección de duplicados {#enabling-duplicate-detection}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
 Si intenta cargar un recurso que existe en Adobe Experience Manager Assets, la función de detección de duplicados lo identificará como duplicado. La detección de duplicados está deshabilitada de forma predeterminada. Para habilitar la función, siga estos pasos:
 
-1. Abra la página **[!UICONTROL Configuración de la consola web de Adobe Experience Manager]** en `https://[server]:[port]/system/console/configMgr`.
-1. Edite la configuración del servlet **[!UICONTROL Day CQ DAM Create Asset]**.
-1. Seleccione la opción **[!UICONTROL detect duplicate]** y pulse o haga clic en **[!UICONTROL Save]**.
+1. Abra el **[!UICONTROL Configuración de la consola web de Adobe Experience Manager]** página en `https://[server]:[port]/system/console/configMgr`.
+1. Editar la configuración del servlet **[!UICONTROL Recurso de creación de DAM CQ de día]**.
+1. Seleccione el **[!UICONTROL detectar duplicado]** y pulse o haga clic en **[!UICONTROL Guardar]**.
 
    ![Seleccione la opción Detectar duplicado en el servlet](assets/chlimage_1-377.png)
 
-La función Detectar duplicado ahora está habilitada en [!DNL Experience Manager] Assets. Cuando un usuario intenta cargar un recurso que existe en AEM, el sistema comprueba si hay conflictos e lo indica. Los recursos se identifican utilizando el hash SHA-1 almacenado en `jcr:content/metadata/dam:sha1`, lo que significa que se detectan activos duplicados independientemente de los nombres de archivo.
+La función Detectar duplicado está ahora habilitada en [!DNL Experience Manager] Recursos. Cuando un usuario intenta cargar un recurso que existe en AEM, el sistema comprueba si hay conflictos e lo indica. Los recursos se identifican utilizando el hash SHA-1 almacenado en `jcr:content/metadata/dam:sha1`, lo que significa que los recursos duplicados se detectan independientemente de los nombres de archivo.
 
 >[!MORELIKETHIS]
 >

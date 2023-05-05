@@ -1,5 +1,5 @@
 ---
-title: Representación de Forms basada en fragmentos
+title: Procesar formularios basados en fragmentos
 seo-title: Rendering Forms Based on Fragments
 description: Utilice el servicio Forms para procesar formularios basados en fragmentos creados con Designer.
 seo-description: Use the Forms service to render forms that are based on fragments created using Designer.
@@ -12,32 +12,36 @@ topic-tags: operations
 discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 role: Developer
 exl-id: 49c4af9a-5797-468c-b3ad-f3140d445ff2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2195'
-ht-degree: 7%
+source-wordcount: '2231'
+ht-degree: 4%
 
 ---
 
-# Representación de Forms basada en fragmentos {#rendering-forms-based-on-fragments}
+# Procesar formularios basados en fragmentos {#rendering-forms-based-on-fragments}
 
-## Representación de Forms basada en fragmentos {#rendering-forms-based-on-fragments-inner}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+## Procesar formularios basados en fragmentos {#rendering-forms-based-on-fragments-inner}
 
 El servicio Forms puede procesar formularios basados en fragmentos creados con Designer. A *fragmento* es una parte reutilizable de un formulario y se guarda como un archivo XDP independiente que se puede insertar en varios diseños de formulario. Por ejemplo, un fragmento puede incluir un bloque de direcciones o texto legal.
 
-El uso de fragmentos simplifica y acelera la creación y el mantenimiento de una gran cantidad de formularios. Al crear un nuevo formulario, inserte una referencia al fragmento requerido y éste aparecerá en el formulario. La referencia de fragmento contiene un subformulario que señala al archivo XDP físico. Para obtener información sobre la creación de diseños de formulario basados en fragmentos, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
+El uso de fragmentos simplifica y acelera la creación y el mantenimiento de un gran número de formularios. Al crear un nuevo formulario, inserte una referencia al fragmento requerido y éste aparecerá en el formulario. La referencia de fragmento contiene un subformulario que señala al archivo XDP físico. Para obtener información sobre la creación de diseños de formulario basados en fragmentos, consulte [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
 
-Un fragmento puede incluir varios subformularios que se ajustan en un conjunto de subformularios de opciones. Los conjuntos de subformularios de opciones controlan la visualización de subformularios en función del flujo de datos de una conexión de datos. Se utilizan afirmaciones condicionales para determinar qué subformulario del conjunto aparece en el formulario entregado. Por ejemplo, cada subformulario de un conjunto puede incluir información de una ubicación geográfica concreta, y el subformulario que se muestra se puede determinar en función de la ubicación del usuario.
+Un fragmento puede incluir varios subformularios que se ajustan en un conjunto de subformularios de opciones. Los conjuntos de subformularios de opciones controlan la visualización de subformularios en función del flujo de datos de una conexión de datos. Se utilizan afirmaciones condicionales para determinar qué subformulario del conjunto aparece en el formulario enviado. Por ejemplo, cada subformulario de un conjunto puede incluir información de una ubicación geográfica concreta, y el subformulario que se muestra se puede determinar en función de la ubicación del usuario.
 
-A *fragmento de secuencia de comandos* contiene funciones o valores de JavaScript reutilizables que se almacenan por separado de cualquier objeto en particular, como un analizador de fechas o una invocación de servicio Web. Estos fragmentos incluyen un único objeto de secuencia de comandos que aparece como un elemento secundario de variables en la paleta Jerarquía. Los fragmentos no pueden crearse a partir de secuencias de comandos que sean propiedades de otros objetos, tales como secuencias de comandos de sucesos validate, calculate o initialize.
+A *fragmento de secuencia de comandos* contiene funciones o valores de JavaScript reutilizables que se almacenan por separado de cualquier objeto en particular, como un analizador de fechas o una invocación de servicio Web. Estos fragmentos incluyen un único objeto de secuencia de comandos que aparece como un elemento secundario de variables en la paleta Jerarquía. Los fragmentos no se pueden crear a partir de secuencias de comandos que sean propiedades de otros objetos, como secuencias de comandos de sucesos validate, calculate o initialize.
 
 Estas son las ventajas de utilizar fragmentos:
 
-* **Reutilización de contenido**: Puede utilizar fragmentos para reutilizar contenido en varios diseños de formulario. Cuando necesita utilizar parte del mismo contenido en varios formularios, es más rápido y sencillo utilizar un fragmento que copiar o volver a crear el contenido. El uso de fragmentos también garantiza que las partes de un diseño de formulario utilizadas con frecuencia tengan un contenido y un aspecto coherentes en todos los formularios de referencia.
+* **Reutilización de contenido**: Puede utilizar fragmentos para reutilizar contenido en varios diseños de formulario. Cuando necesita utilizar parte del mismo contenido en varios formularios, es más rápido y sencillo utilizar un fragmento que copiar o volver a crear el contenido. El uso de fragmentos también garantiza que el contenido y el aspecto de las partes de un diseño de formulario que se utilizan con frecuencia sean coherentes en todos los formularios de referencia.
 * **Actualizaciones globales**: Puede utilizar fragmentos para realizar cambios globales en varios formularios solo una vez, en un archivo. Puede cambiar el contenido, los objetos de secuencia de comandos, los enlaces de datos, la presentación o los estilos de un fragmento, y todos los formularios XDP que hagan referencia al fragmento reflejarán los cambios.
 * Por ejemplo, un elemento común en muchos formularios podría ser un bloque de direcciones que incluya un objeto de lista desplegable para el país. Si necesita actualizar los valores del objeto de lista desplegable, debe abrir muchos formularios para realizar los cambios. Si incluye el bloque de direcciones en un fragmento, solo necesita abrir un archivo de fragmento para realizar los cambios.
 * Para actualizar un fragmento en un formulario de PDF, debe volver a guardar el formulario en Designer.
-* **Creación de formularios compartidos**: Puede utilizar fragmentos para compartir la creación de formularios entre varios recursos. Los desarrolladores de formularios con conocimientos de secuencias de comandos u otras funciones avanzadas de Designer pueden desarrollar y compartir fragmentos que aprovechan las secuencias de comandos y las propiedades dinámicas. Los diseñadores de formularios pueden utilizar tales fragmentos para presentar diseños de formulario y garantizar que todas las partes de un formulario tengan un aspecto y una funcionalidad coherentes en los múltiples formularios diseñados por varias personas.
+* **Creación de formularios compartidos**: Puede utilizar fragmentos para compartir la creación de formularios entre varios recursos. Los desarrolladores de formularios con experiencia en secuencias de comandos u otras funciones avanzadas de Designer pueden desarrollar y compartir fragmentos que aprovechan las secuencias de comandos y las propiedades dinámicas. Los diseñadores de formularios pueden utilizar esos fragmentos para presentar diseños de formulario y garantizar que todas las partes de un formulario tengan un aspecto y una funcionalidad coherentes en los distintos formularios diseñados por varias personas.
 
 ### Montaje de un diseño de formulario ensamblado mediante fragmentos {#assembling-a-form-design-assembled-using-fragments}
 
@@ -87,7 +91,7 @@ Un formulario basado en fragmentos se puede procesar de la misma manera que los 
 
 Cuando el servicio Forms procesa un formulario, devuelve un flujo de datos de formulario que debe escribir en el explorador web del cliente. Cuando se escribe en el explorador web del cliente, el formulario es visible para el usuario.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Representar formularios en función de fragmentos mediante la API de Java](#render-forms-based-on-fragments-using-the-java-api)
 
@@ -99,7 +103,7 @@ Cuando el servicio Forms procesa un formulario, devuelve un flujo de datos de fo
 
 [Inicio rápido de la API del servicio de Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Renderización de PDF forms interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Procesar formularios PDF interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Creación de aplicaciones web que procesen Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -145,9 +149,9 @@ Representar un formulario basado en fragmentos utilizando la API de Forms (Java)
    * Crear una matriz de bytes rellenarla con la secuencia de datos del formulario invocando la variable `InputStream` del objeto `read`y pasando la matriz de bytes como argumento.
    * Invocar el `javax.servlet.ServletOutputStream` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Representación de Forms basada en fragmentos](#rendering-forms-based-on-fragments)
+[Procesar formularios basados en fragmentos](#rendering-forms-based-on-fragments)
 
 [Inicio rápido (modo SOAP): Representación de un formulario basado en fragmentos mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
 
@@ -201,8 +205,8 @@ Representar un formulario basado en fragmentos mediante la API de Forms (servici
    * Cree una matriz de bytes y rellénela invocando la variable `BLOB` del objeto `getBinaryData` método. Esta tarea asigna el contenido de la variable `FormsResult` a la matriz de bytes.
    * Invocar el `javax.servlet.http.HttpServletResponse` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Representación de Forms basada en fragmentos](#rendering-forms-based-on-fragments)
+[Procesar formularios basados en fragmentos](#rendering-forms-based-on-fragments)
 
 [Invocación de AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

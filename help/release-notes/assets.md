@@ -1,5 +1,5 @@
 ---
-title: Notas de versión de AEM Assets
+title: Notas de la versión de AEM Assets
 seo-title: AEM Assets
 description: Notas de la versión específicas de Adobe Experience Manager 6.4 Assets.
 seo-description: Release notes specific to Adobe Experience Manager 6.4 Assets.
@@ -10,14 +10,18 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 397b3267-1437-4263-963c-9d68ccc928ab
 exl-id: 3f2cb2f9-2a4e-4c5d-b937-b693f27e11da
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1641'
+source-wordcount: '1677'
 ht-degree: 2%
 
 ---
 
-# Notas de versión de AEM Assets {#aem-assets-release-notes}
+# Notas de la versión de AEM Assets {#aem-assets-release-notes}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Las funciones clave, los aspectos destacados y las mejoras realizadas en AEM 6.4 Assets se describen en estas notas de la versión. Para obtener información detallada, siga los vínculos proporcionados.
 
@@ -103,7 +107,7 @@ AEM 6.4 ofrece mejoras significativas en la creación de informes de activos:
 * **Mejoras en los informes**: Hay tres informes de OOTB disponibles: descargas, publicar y compartir vínculos.
 * **Restricciones basadas en DRM**: Una vez caducado un recurso con licencia, ya no estará disponible para su descarga desde Brand Portal.
 
-## Aplicación de escritorio de AEM {#aem-desktop-app}
+## aplicación de escritorio AEM {#aem-desktop-app}
 
 AEM aplicación de escritorio se ha actualizado a la versión 1.8, que es compatible con AEM 6.4. La lista completa de cambios para AEM aplicación de escritorio se proporciona en una [Notas de la versión de la aplicación de escritorio de AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html) documento.\
 A continuación se muestra una lista de AEM aspectos destacados de la aplicación de escritorio desde que se publicó AEM 6.3:

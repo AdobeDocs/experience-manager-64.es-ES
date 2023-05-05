@@ -1,5 +1,5 @@
 ---
-title: Componentes y servicios Java APIQuick Start (SOAP)
+title: Inicio rápido (SOAP) de la API de Java Componentes y servicios
 seo-title: Components and Services Java APIQuick Start(SOAP)
 description: Utilice el Inicio rápido de la API de Java de componentes y servicios para implementar un componente, establecer el contexto de ejecución de un servicio, desactivar la seguridad del servicio, iniciar un servicio, modificar los valores de configuración del servicio y eliminar componentes.
 seo-description: Use the Components and Services Java API Quick Start to deploy a component, set the execution context of a service, disable service security, start a service, modify service configuration values, and remove components.
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 role: Developer
 exl-id: 85c77bd4-e424-491f-8db2-73240732a6e4
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 0%
+source-wordcount: '505'
+ht-degree: 2%
 
 ---
 
 # Inicio rápido de la API de Java de componentes y servicios (SOAP) {#components-and-services-java-apiquick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El inicio rápido de la API de Java (SOAP) está disponible para componentes y servicios.
 

@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f9a3f897-90c6-4942-8a86-aae510298f2a
 exl-id: 6b431cbd-2cea-4ae2-ad26-587ba524d2f5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 0%
+source-wordcount: '217'
+ht-degree: 3%
 
 ---
 
 # Configuración de AEM formularios para recuperar previamente información de dominio {#configure-aem-forms-to-prefetchdomain-information}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Los usuarios pueden experimentar un tiempo de respuesta más lento si pertenecen a muchos grupos (por ejemplo, 500 o más) o si los grupos están anidados en profundidad (por ejemplo, 30 niveles). Si tiene este problema, puede configurar AEM formularios para recuperar previamente información de ciertos dominios.
 

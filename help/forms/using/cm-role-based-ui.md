@@ -8,15 +8,19 @@ uuid: 60808852-f63f-4c0a-badb-b0af93c995a8
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 342f111e-f15a-4f9a-8993-f90760363c02
-source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '521'
 ht-degree: 1%
 
 ---
 
 
 # NO PUBLICAR Interfaz de usuario basada en funciones en Gestión de Correspondencia {#do-not-publish-role-based-user-interface-in-correspondence-management}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 En AEM, el administrador puede proporcionar acceso basado en funciones a diferentes grupos de usuarios que realizan diversas acciones en distintos recursos. Por ejemplo, la funcionalidad para crear o editar diccionarios de datos solo podría estar disponible para los usuarios de un grupo de usuarios específico, mientras que otros usuarios solo podrían ver y utilizar los diccionarios de datos.
 
@@ -64,7 +68,7 @@ Para obtener más información sobre grupos, permisos, listas de control de acce
    >Los permisos especificados en una carpeta reemplazan a los permisos especificados en sus subcarpetas.
 
 1. Pulse Guardar.
-1. Texto del paso
-1. Texto del paso
-1. Texto del paso
+1. Texto de paso
+1. Texto de paso
+1. Texto de paso
 

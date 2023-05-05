@@ -1,8 +1,8 @@
 ---
 title: Trabajo con Dynamic Media
-seo-title: Trabajo con Dynamic Media
+seo-title: Working with Dynamic Media
 description: Aprenda a utilizar Dynamic Media para distribuir recursos para consumo en sitios web, móviles y sociales.
-seo-description: Aprenda a utilizar Dynamic Media para distribuir recursos para consumo en sitios web, móviles y sociales.
+seo-description: Learn how to use Dynamic Media to deliver assets for consumption on web, mobile, and social sites.
 uuid: 4dc0f436-d20e-4e8b-aeff-5515380fa44d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,20 +10,24 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 exl-id: f8a3936e-82b5-46c7-9614-b97162e27d6a
-feature: Administración de recursos,Representaciones
+feature: Asset Management,Renditions
 role: Admin,User
-source-git-commit: 2bbc7e2a6b3aa36a7c2803d12ba402a5739c9a5c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 28%
+source-wordcount: '452'
+ht-degree: 8%
 
 ---
 
 # Trabajo con Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) ayuda a proporcionar bajo demanda recursos de marketing y mercadotecnia de rico contenido visual, escalados automáticamente para el consumo en la Web, dispositivos móviles y redes sociales. Con un conjunto de recursos principales, Dynamic Media genera y ofrece diversas variaciones de contenido enriquecido en tiempo real a través de su red mundial, escalable y optimizada para el rendimiento.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-Dynamic Media proporciona experiencias de visualización interactivas, que incluyen zoom, giro de 360 grados y vídeo. Dynamic Media introduce de forma exclusiva los flujos de trabajo de la solución de administración de recursos digitales (Recursos) de Adobe Experience Manager para simplificar y agilizar el proceso de administración de campañas digitales.
+[Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) ayuda a ofrecer bajo demanda recursos de marketing y comercialización de rico contenido visual, escalados automáticamente para el consumo en sitios web, móviles y sociales. Con un conjunto de recursos principales, Dynamic Media genera y ofrece varias variaciones de contenido enriquecido en tiempo real a través de su red global, escalable y optimizada para el rendimiento.
+
+Dynamic Media proporciona experiencias de visualización interactivas, como zoom, giro de 360 grados y vídeo. Dynamic Media incorpora de forma exclusiva los flujos de trabajo de la solución de administración de recursos digitales (Assets) de Adobe Experience Manager para simplificar y optimizar el proceso de administración de campañas digitales.
 
 <!-- DEAD ARTICLE >[!NOTE]
 >
@@ -44,7 +48,7 @@ Las funciones solo de Dynamic Media incluyen lo siguiente:
 
 * [Conjuntos de giros](spin-sets.md)
 * [Vídeo](video.md)
-* [Envío de recursos de Dynamic Media](delivering-dynamic-media-assets.md)
+* [Entrega de recursos de Dynamic Media](delivering-dynamic-media-assets.md)
 * [Administración de recursos](managing-assets.md)
 * [Uso de las vistas rápidas para crear ventanas emergentes personalizadas](custom-pop-ups.md)
 
@@ -52,7 +56,7 @@ Consulte también [Configuración de Dynamic Media](administering-dynamic-media.
 
 >[!NOTE]
 >
->Para comprender las diferencias entre usar Dynamic Media e integrar Dynamic Media Classic con AEM, consulte [Integración de Dynamic Media Classic frente a Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
+>Para comprender las diferencias entre usar Dynamic Media e integrar Dynamic Media Classic con AEM, consulte [Integración de Dynamic Media Classic con Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
 
 ## Dynamic Media habilitado frente a Dynamic Media deshabilitado {#dynamic-media-on-versus-dynamic-media-off}
 
@@ -66,7 +70,7 @@ Al hacer clic en un recurso de imagen, la vista del recurso es diferente con Dyn
 
 ### Representaciones dinámicas {#dynamic-renditions}
 
-Las representaciones dinámicas, como los ajustes preestablecidos de imagen y visor (en **[!UICONTROL Dynamic]**), están disponibles cuando Dynamic Media está habilitado.
+Representaciones dinámicas, como ajustes preestablecidos de imágenes y visualizadores (en **[!UICONTROL Dinámica]**) están disponibles cuando Dynamic Media está habilitado.
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
@@ -84,7 +88,7 @@ Los recursos habilitados para Dynamic Media incluyen `pyramid.tiffs`.
 
 ### Cambio de vistas de recursos {#asset-views-change}
 
-Con Dynamic Media habilitado, puede acercar y alejar haciendo clic en los botones `+` y `-`. También puede tocar o hacer clic en para acercar cierta área. Revertir le lleva a la versión original y puede crear la imagen a pantalla completa haciendo clic en las flechas diagonales. Dynamic Media habilitado tiene este aspecto:
+Con Dynamic Media habilitado, puede hacer clic en el botón `+` y `-` botones. También puede tocar o hacer clic en para acercar cierta área. Revertir le lleva a la versión original y puede crear la imagen a pantalla completa haciendo clic en las flechas diagonales. Dynamic Media habilitado tiene este aspecto:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Gestor de trabajo y regulación
+title: Administrador de trabajo y regulación
 seo-title: Work Manager and throttling
 description: Este documento proporciona información básica sobre Work Manager y proporciona instrucciones sobre cómo configurar las opciones de regulación de Work Manager.
 seo-description: This document provides background information on Work Manager, and provides instructions on configuring Work Manager throttling options.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
 exl-id: 759cff3e-960a-4c38-a731-9fff21e739cf
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1026'
-ht-degree: 0%
+source-wordcount: '1062'
+ht-degree: 5%
 
 ---
 
-# Gestor de trabajo y regulación{#work-manager-and-throttling}
+# Administrador de trabajo y regulación{#work-manager-and-throttling}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 AEM formularios (y versiones anteriores) utilizaban colas JMS para ejecutar operaciones asincrónicamente. En AEM formularios, las colas de JMS se han sustituido por Work Manager. Este documento proporciona información básica sobre Work Manager y proporciona instrucciones sobre cómo configurar las opciones de regulación de Work Manager.
 
@@ -88,13 +92,13 @@ Puede configurar la regulación de Work Manager, de modo que los elementos de tr
 
 1. Inicie la consola de administración de WebLogic escribiendo `https://`*[nombre de host ]*`:`*[puerto]* `/console` en un explorador web.
 1. Escriba el nombre de usuario y la contraseña que creó para el dominio de WebLogic Server y haga clic en Registro en el Centro de cambios, haga clic en Bloquear y editar.
-1. En Estructura del dominio, haga clic en Entorno > Servidores y, en el panel derecho, haga clic en el nombre del servidor administrado.
-1. En la siguiente pantalla, haga clic en la ficha Configuración > Inicio del servidor .
+1. En Estructura de dominio, haga clic en Entorno > Servidores y, en el panel derecho, haga clic en el nombre del servidor administrado.
+1. En la siguiente pantalla, haga clic en la pestaña Configuración > y luego en la pestaña Inicio de servidor.
 1. En el cuadro Argumentos , anexe los argumentos que necesite al final del contenido actual. Por ejemplo, para deshabilitar el Monitor de estado, agregue:
 
    `-Dadobe.healthmonitor.enabled=false` deshabilita el Monitor de estado.
 
-1. Haga clic en Guardar y, a continuación, en Activar cambios.
+1. Haga clic en Guardar y luego en Activar cambios.
 1. Reinicie el servidor administrado por WebLogic.
 
 **Agregar opciones de Java a WebSphere**

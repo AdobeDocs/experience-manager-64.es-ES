@@ -1,5 +1,5 @@
 ---
-title: Importación y exportación de la configuración global
+title: Importar y exportar la configuración global
 seo-title: Importing and exporting global settings
 description: Puede importar y exportar definiciones de plantillas de búsqueda y configuración global para Workspace.
 seo-description: You can import and export search template definitions and global settings for Workspace.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 exl-id: 9eabafbe-2193-4799-9bdd-c2be42ead0b9
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 0%
+source-wordcount: '1229'
+ht-degree: 2%
 
 ---
 
-# Importación y exportación de la configuración global {#importing-and-exporting-global-settings}
+# Importar y exportar la configuración global {#importing-and-exporting-global-settings}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede importar y exportar definiciones de plantillas de búsqueda y configuración global para Workspace.
 

@@ -1,5 +1,5 @@
 ---
-title: Validación de documentos DDX
+title: Validar documentos DDX
 seo-title: Validating DDX Documents
 description: Valide un documento DDX mediante programación utilizando la API de Java y la API de servicio web.
 seo-description: Validate a DDX document programmatically using the Java API and the Web Service API.
@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 693859b0-a0c3-43f1-95c0-be48a90d7d8d
 role: Developer
 exl-id: 5be91b23-355b-4e50-b1f5-afed248bc8b5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1512'
-ht-degree: 0%
+source-wordcount: '1548'
+ht-degree: 3%
 
 ---
 
-# Validación de documentos DDX {#validating-ddx-documents}
+# Validar documentos DDX {#validating-ddx-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede validar mediante programación un documento DDX que utilice el servicio Assembler. Es decir, con la API de servicio de Assembler, puede determinar si un documento DDX es válido o no. Por ejemplo, si ha actualizado desde una versión anterior de AEM Forms y desea asegurarse de que el documento DDX sea válido, puede validarlo mediante la API de servicio de Assembler.
 
@@ -78,11 +82,11 @@ Si la validación falla, se genera una excepción y el archivo de registro conti
 
 El servicio Assembler devuelve los resultados de validación que puede escribir en un archivo de registro XML. La cantidad de detalle que el servicio Assembler escribe en el archivo de registro depende de la opción de tiempo de ejecución que haya establecido.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Validación de un documento DDX mediante la API de Java](#validate-a-ddx-document-using-the-java-api)
 
-[Validación de un documento DDX mediante la API de servicio web](#validate-a-ddx-document-using-the-web-service-api)
+[Validar un documento DDX mediante la API de servicio web](#validate-a-ddx-document-using-the-web-service-api)
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -134,9 +138,9 @@ Valide un documento DDX utilizando la API del servicio Assembler (Java):
    >
    >Si el documento DDX no es válido, `OperationException` se lanza. Dentro de la sentencia catch, puede invocar la variable `OperationException` del objeto `getJobLog` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Validación de documentos DDX](#validating-ddx-documents)
+[Validar documentos DDX](#validating-ddx-documents)
 
 [Inicio rápido (modo SOAP): Validación de documentos DDX mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api) (modo SOAP)
 
@@ -144,7 +148,7 @@ Valide un documento DDX utilizando la API del servicio Assembler (Java):
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Validación de un documento DDX mediante la API de servicio web {#validate-a-ddx-document-using-the-web-service-api}
+## Validar un documento DDX mediante la API de servicio web {#validate-a-ddx-document-using-the-web-service-api}
 
 Valide un documento DDX utilizando la API del servicio Assembler (servicio web):
 
@@ -205,8 +209,8 @@ Valide un documento DDX utilizando la API del servicio Assembler (servicio web):
    >
    >Si el documento DDX no es válido, `OperationException` se lanza. Dentro de la sentencia catch, puede obtener el valor de la variable `OperationException` del objeto `jobLog` miembro.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Validación de documentos DDX](#validating-ddx-documents)
+[Validar documentos DDX](#validating-ddx-documents)
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

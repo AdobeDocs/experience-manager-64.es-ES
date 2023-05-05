@@ -1,5 +1,5 @@
 ---
-title: Configuración de mensajes de validación
+title: Configurar mensajes de validación
 seo-title: Configuring validation messages
 description: Aprenda a especificar cómo se muestran los mensajes de validación y su ubicación en relación con el formulario devuelto en el explorador web.
 seo-description: Learn how to specify how validation messages are displayed and their location relative to the form returned in the web browser.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5f2f8129-e45e-4f3f-ae30-c09330d0e152
 exl-id: 2016ac85-12a1-42cb-bc03-fced94947010
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 2%
+source-wordcount: '386'
+ht-degree: 6%
 
 ---
 
-# Configuración de mensajes de validación {#configuring-validation-messages}
+# Configurar mensajes de validación {#configuring-validation-messages}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 En el caso de los formularios procesados como HTML, los errores de validación de formularios que se producen se muestran al usuario. Puede personalizar el modo en que se muestran los mensajes de validación. Dependiendo de dónde se muestren los mensajes de validación, también puede controlar la ubicación del mensaje en el formulario y el tamaño del borde del marco.
 

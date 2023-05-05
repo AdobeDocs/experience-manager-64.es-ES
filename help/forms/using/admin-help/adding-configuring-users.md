@@ -1,5 +1,5 @@
 ---
-title: Adición y configuración de usuarios
+title: Agregar y configurar usuarios
 seo-title: Adding and configuring users
 description: La configuración Administración de usuarios de la consola de administración permite crear o eliminar usuarios y configurar otras opciones de usuario.
 seo-description: The User Management settings in the administration console allow you to create or delete users  and configure other user settings.
@@ -8,16 +8,20 @@ contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 exl-id: c81dfb71-8901-49fd-b448-a7afdbae24fd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 0%
+source-wordcount: '1775'
+ht-degree: 1%
 
 ---
 
-# Adición y configuración de usuarios {#adding-and-configuring-users}
+# Agregar y configurar usuarios {#adding-and-configuring-users}
 
-La información de usuarios y grupos se mantiene en un sistema de almacenamiento de terceros, como un directorio LDAP. La Administración de usuarios no escribe en el sistema de almacenamiento de terceros. En su lugar, Administración de usuarios sincroniza la información de usuarios y grupos con su propia base de datos
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+La información de usuarios y grupos se mantiene en un sistema de almacenamiento de terceros, como un directorio LDAP. Administración de usuarios no escribe en el sistema de almacenamiento de terceros. En su lugar, Administración de usuarios sincroniza la información de usuarios y grupos con su propia base de datos
 
 ## Crear un usuario {#create-a-user}
 
@@ -169,7 +173,7 @@ Si un usuario sin los formularios de AEM y los permisos de CQ necesarios intenta
    ***nota **: Flex Workspace está en desuso para AEM versión de formularios.*
 
 * administrador de formularios
-* Informes de procesos
+* Informes de procesos 
 
 CQ proporciona un mecanismo para anular el jsp de controlador 404 predeterminado.
 

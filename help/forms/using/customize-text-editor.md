@@ -1,5 +1,5 @@
 ---
-title: Personalizar editor de texto
+title: Personalizar el editor de texto
 seo-title: Customize text editor
 description: Aprenda a personalizar el editor de texto.
 seo-description: Learn how to customize text editor.
@@ -10,51 +10,55 @@ topic-tags: correspondence-management
 discoiquuid: a80254a2-245c-48fa-b460-958eeda085af
 feature: Correspondence Management
 exl-id: 5e9f8e0f-209e-4613-b230-2b826b46ba6b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '605'
-ht-degree: 1%
+source-wordcount: '641'
+ht-degree: 95%
 
 ---
 
-# Personalizar editor de texto {#customize-text-editor}
+# Personalizar el editor de texto {#customize-text-editor}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Información general {#overview}
 
 Puede personalizar el editor de texto, en Administrar recursos y Crear interfaz de usuario de correspondencia, para agregar más fuentes y tamaños de fuente. Estas fuentes incluyen fuentes inglesas y no inglesas, como las japonesas.
 
-Puede personalizar para cambiar lo siguiente en la configuración de fuente:
+Puede personalizarlo para cambiar lo siguiente en la configuración de la fuente:
 
 * Familia de fuentes y tamaño
-* Propiedades como altura y espaciado entre letras
-* Valores predeterminados de familia de fuentes y tamaño, altura, espaciado entre letras y formato de fecha
-* Sangría de viñetas
+* Propiedades como la altura y el espaciado entre letras
+* Valores predeterminados de la familia de fuentes y el formato de tamaño, altura, espaciado entre letras y fecha
+* Sangrías de viñetas
 
-Para ello, debe:
+Para hacer esto, deberá:
 
-1. [Personalizar fuentes editando el archivo tbxeditor-config.xml en CRX](#customizefonts)
+1. [Personalizar fuentes al editar el archivo tbxeditor-config.xml en CRX](#customizefonts)
 1. [Agregar fuentes personalizadas al equipo cliente](#addcustomfonts)
 
-## Personalizar fuentes editando el archivo tbxeditor-config.xml en CRX {#customizefonts}
+## Personalizar fuentes al editar el archivo tbxeditor-config.xml en CRX {#customizefonts}
 
-Para personalizar fuentes editando el archivo tbxeditor-config.xml, haga lo siguiente:
+Para personalizar fuentes al editar el archivo tbxeditor-config.xml, haga lo siguiente:
 
 1. Vaya a `https://[server]:[port]/[ContextPath]/crx/de` e inicie sesión como administrador.
-1. En la carpeta de aplicaciones, cree una carpeta denominada config con una ruta/estructura similar a la carpeta de configuración, que se encuentra en libs/fd/cm/config, siguiendo los pasos siguientes:
+1. En la carpeta de aplicaciones, cree una carpeta denominada config con una ruta/estructura similar a la carpeta de configuración, que se encuentra en libs/fd/cm/config, para ello, siga los siguientes pasos:
 
-   1. Haga clic con el botón derecho en la carpeta de elementos de la siguiente ruta y seleccione **Nodo de superposición**:
+   1. Haga clic con el botón derecho en la carpeta Elementos en la siguiente ruta y seleccione **Nodo de superposición**:
 
       `/libs/fd/cm/config`
 
       ![Nodo de superposición](assets/1-4.png)
 
-   1. Asegúrese de que el cuadro de diálogo Nodo de superposición tiene los siguientes valores:
+   1. Asegúrese de que el cuadro de diálogo Nodo de superposición tenga los siguientes valores:
 
       **Ruta:** /libs/fd/cm/config
 
       **Ubicación:** /apps/
 
-      **Coincidir tipos de nodo:** Seleccionado
+      **Tipos de nodos coincidentes:** Seleccionado
 
       ![Nodo de superposición](assets/2-2.png)
 
@@ -62,7 +66,7 @@ Para personalizar fuentes editando el archivo tbxeditor-config.xml, haga lo sigu
 
    1. Haga clic en **Guardar todo**.
 
-1. Cree una copia del archivo tbxeditor-config.xml en la carpeta de configuración recién creada, siguiendo los pasos siguientes:
+1. Cree una copia del archivo tbxeditor-config.xml en la carpeta de configuración recién creada, para ello, siga estos pasos:
 
    1. Haga clic con el botón derecho en el archivo tbxeditor-config.xml en libs/fd/cm/config y seleccione **Copiar**.
    1. Haga clic con el botón derecho en la siguiente carpeta y seleccione **Pegar:**
@@ -71,9 +75,9 @@ Para personalizar fuentes editando el archivo tbxeditor-config.xml, haga lo sigu
 
    1. El nombre del archivo pegado, de forma predeterminada, es `copy of tbxeditor-config.xml.` Cambie el nombre del archivo a `tbxeditor-config.xml` y haga clic en **Guardar todo**.
 
-1. Abra el archivo tbxeditor-config.xml en apps/fd/cm/config y luego realice los cambios necesarios.
+1. Abra el archivo tbxeditor-config.xml en apps/fd/cm/config y realice los cambios necesarios.
 
-   1. Haga doble clic en el archivo tbxeditor-config.xml en apps/fd/cm/config. Se abrirá el archivo .
+   1. Haga doble clic en el archivo tbxeditor-config.xml en apps/fd/cm/config. Se abrirá el archivo.
 
       ```xml
       <editorConfig>
@@ -160,34 +164,34 @@ Para personalizar fuentes editando el archivo tbxeditor-config.xml, haga lo sigu
       </editorConfig>
       ```
 
-   1. Realice los cambios necesarios en el archivo para cambiar lo siguiente en la configuración de fuente:
+   1. Realice los cambios necesarios en el archivo para cambiar lo siguiente en la configuración de la fuente:
 
       * Agregar o quitar la familia y el tamaño de fuente
-      * Propiedades como altura y espaciado entre letras
-      * Valores predeterminados de familia de fuentes y tamaño, altura, espaciado entre letras y formato de fecha
-      * Sangría de viñetas
+      * Propiedades como la altura y el espaciado entre letras
+      * Valores predeterminados de la familia de fuentes y el formato de tamaño, altura, espaciado entre letras y fecha
+      * Sangrías de viñetas
 
-      Por ejemplo, para añadir una fuente japonesa denominada Sazanami Mincho Medium, debe introducir lo siguiente en el archivo XML: `<font>Sazanami Mincho Medium</font>`. También necesita tener esta fuente instalada en el equipo cliente para acceder y trabajar con la personalización de fuentes. Para obtener más información, consulte [Agregar fuentes personalizadas al equipo cliente](#addcustomfonts).
+      Por ejemplo, para agregar una fuente japonesa denominada Sazanami Mincho Medium, debe incluir la siguiente entrada en el archivo XML: `<font>Sazanami Mincho Medium</font>`. También necesitará tener esta fuente instalada en el equipo cliente para acceder y trabajar con la personalización de fuentes. Para obtener más información, consulte [Agregar fuentes personalizadas al equipo cliente](#addcustomfonts).
 
-      También puede cambiar los valores predeterminados de varios aspectos del texto y, al eliminar las entradas, eliminar las fuentes del editor de texto.
+      También puede cambiar los valores predeterminados de varios aspectos del texto y, al quitar las entradas, quitar las fuentes del editor de texto.
 
    1. Haga clic en **Guardar todo**.
 
 
 ## Agregar fuentes personalizadas al equipo cliente {#addcustomfonts}
 
-Cuando accede a una fuente en el editor de texto de Gestión de Correspondencia, debe estar presente en el equipo cliente que está utilizando para acceder a Gestión de Correspondencia. Para poder utilizar una fuente personalizada en el editor de texto, primero debe instalar la misma en el equipo cliente.
+Cuando accede a una fuente en el editor de texto de Administración de correspondencia, debe estar presente en el equipo cliente que utilice para acceder a Administración de correspondencia. Para poder utilizar una fuente personalizada en el editor de texto, primero debe instalar la misma en el equipo cliente.
 
 Para obtener más información sobre la instalación de fuentes, consulte lo siguiente:
 
-* [Instalar o desinstalar fuentes en Windows](https://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts)
-* [Conceptos básicos de Mac: Libro de fuentes](https://support.apple.com/en-us/HT201749)
+* [Instalar o desinstalar fuentes en Windows](https://windows.microsoft.com/es-es/windows-vista/install-or-uninstall-fonts)
+* [Conceptos básicos de Mac: Libro de fuentes](https://support.apple.com/es-es/HT201749)
 
-## Acceso a las personalizaciones de fuente {#access-font-customizations}
+## Acceder a las personalizaciones de fuente {#access-font-customizations}
 
-Después de realizar cambios en las fuentes en el archivo tbxeditor-config.xml en CRX e instalar las fuentes requeridas en el equipo cliente utilizado para acceder a AEM Forms, los cambios aparecen en el editor de texto.
+Después de realizar cambios en las fuentes en el archivo tbxeditor-config.xml en CRX e instalar las fuentes requeridas en el equipo cliente utilizado para acceder a AEM Forms, los cambios aparecerán en el editor de texto.
 
-Por ejemplo, la fuente Sazanami Mincho Medium añadida en la variable [Personalizar fuentes editando el archivo tbxeditor-config.xml en CRX](#customizefonts) El procedimiento aparece en la interfaz de usuario del editor de texto de la siguiente manera:
+Por ejemplo, la fuente Sazanami Mincho Medium agregada en el procedimiento [Personalizar fuentes al editar el archivo tbxeditor-config.xml en CRX](#customizefonts), aparece en la interfaz de usuario del editor de texto de la siguiente manera:
 
 ![sazanamiminchointext](assets/sazanamiminchointext.png)
 

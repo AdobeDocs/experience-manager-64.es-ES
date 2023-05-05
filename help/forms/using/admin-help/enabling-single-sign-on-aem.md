@@ -1,5 +1,5 @@
 ---
-title: Activación del inicio de sesión único en AEM formularios
+title: Activar el inicio de sesión único en AEM Forms
 seo-title: Enabling single sign-on in AEM forms
 description: Aprenda a habilitar el inicio de sesión único (SSO) mediante encabezados HTTP y SPNEGO.
 seo-description: Learn how to enable single sign-on (SSO) using HTTP headers and SPNEGO.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
 exl-id: ac56a1db-593e-4996-84ec-c9e6d1256059
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1520'
-ht-degree: 0%
+source-wordcount: '1556'
+ht-degree: 1%
 
 ---
 
-# Activación del inicio de sesión único en AEM formularios{#enabling-single-sign-on-in-aem-forms}
+# Activar el inicio de sesión único en AEM Forms{#enabling-single-sign-on-in-aem-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 AEM formularios ofrece dos maneras de habilitar el inicio de sesión único (SSO): encabezados HTTP y SPNEGO.
 

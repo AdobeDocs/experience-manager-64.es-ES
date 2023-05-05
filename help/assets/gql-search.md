@@ -1,20 +1,24 @@
 ---
 title: Búsqueda de texto completo de GQL
-description: Explore la función de búsqueda de texto completo de GQL en  [!DNL Experience Manager] Assets. Utilícelo para buscar recursos basados en metadatos específicos, como título, descripción y nombre del autor.
+description: Explore la función de búsqueda de texto completo de GQL en [!DNL Experience Manager] Recursos. Utilícelo para buscar recursos basados en metadatos específicos, como título, descripción y nombre del autor.
 contentOwner: AG
 feature: Search,Metadata
 role: User
 exl-id: e819501c-4ac3-447f-944c-67adc42e8c61
-source-git-commit: cc9b6d147a93688e5f96620d50f8fc8b002e2d0d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '873'
+source-wordcount: '909'
 ht-degree: 2%
 
 ---
 
 # Búsqueda de texto completo de GQL {#gql-full-text-search}
 
-Explore la función de búsqueda de texto completo de GQL en [!DNL Experience Manager] Assets. Utilícelo para buscar recursos basados en metadatos específicos, como título, descripción y nombre del autor.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+Explore la función de búsqueda de texto completo de GQL en [!DNL Experience Manager] Recursos. Utilícelo para buscar recursos basados en metadatos específicos, como título, descripción y nombre del autor.
 
 La función de búsqueda de texto completo de GQL permite buscar recursos en función de metadatos específicos, como título, descripción, autor, etc.
 
@@ -24,12 +28,12 @@ Por ejemplo, para buscar recursos que tengan el título &quot;Target&quot;, siga
 
 ## Búsqueda de recursos {#searching-assets}
 
-1. En la barra de herramientas de la interfaz de usuario de Assets, toque o haga clic en el icono **[!UICONTROL Buscar]** para mostrar el cuadro Omnisearch.
+1. En la barra de herramientas de la interfaz de usuario de Assets, toque o haga clic en el **[!UICONTROL Buscar]** para mostrar el cuadro Omnisearch .
 
    ![](assets/do-not-localize/chlimage_1.png)
 
 1. Con el cursor en el cuadro Omnisearch, pulse Enter.
-1. Toque o haga clic en el icono de navegación global para mostrar el panel **[!UICONTROL Filtros]**.
+1. Toque o haga clic en el icono de navegación global para mostrar el **[!UICONTROL Filtros]** panel.
 1. En el cuadro Omni Search, especifique el valor &quot;Target&quot;. Para limitar la búsqueda a una carpeta específica, toque o haga clic en el icono Examinar del panel Filtros y seleccione la carpeta. En este caso, la coincidencia solo se busca dentro de la carpeta y en las subcarpetas debajo de ella.
 
    >[!NOTE]
@@ -38,7 +42,7 @@ Por ejemplo, para buscar recursos que tengan el título &quot;Target&quot;, siga
 
    ![gql_search](assets/gql_search.png)
 
-1. Pulse **[!UICONTROL Enter]**. La interfaz de usuario [!DNL Assets] solo muestra los recursos cuyo título coincide exactamente con &quot;Target&quot;.
+1. Press **[!UICONTROL Entrar]**. La variable [!DNL Assets] la interfaz de usuario de solo muestra los recursos cuyo título coincide exactamente con &quot;Target&quot;.
 
 La función de búsqueda de texto completo de GQL permite buscar recursos en función de lo siguiente:
 
@@ -63,19 +67,19 @@ La función de búsqueda de texto completo de GQL permite buscar recursos en fun
 | [!UICONTROL Propietario del copyright] | copyright:&quot;Adobe Systems&quot; |
 | [!UICONTROL Colaborador] | colaborador:John |
 | [!UICONTROL Condiciones de uso] | usageterms:&quot;CopyRights Reserved&quot; |
-| [!UICONTROL Creado] | creado:YYYY-MM-DDTHH:MM:SS.000+05:30...AAAA-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Creado] | created:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Fecha de caducidad] | caduca:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Tiempo de activación] | en tiempo:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Tiempo de activación] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
 | [!UICONTROL Tiempo de inactividad] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30..AAAA-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Intervalo de tiempo]  (caduca dateontime, offtime) | campo de faceta: límite inferior..Upperbound |
-| [!UICONTROL Ruta] | /content/dam/&lt;nombre de carpeta> |
+| [!UICONTROL Intervalo de tiempo] (caduca dateontime, offtime) | campo de faceta: límite inferior..Upperbound |
+| [!UICONTROL Ruta] | /content/dam/&lt;folder name=&quot;&quot;> |
 | [!UICONTROL Título del PDF] | pdftitle:&quot;Documento de Adobe&quot; |
 | [!UICONTROL Asunto] | asunto: &quot;Formación&quot; |
 | [!UICONTROL Etiquetas] | etiquetas: &quot;Ubicación Y Viaje&quot; |
 | [!UICONTROL Tipo] | tipo: &quot;image\png&quot; |
 | [!UICONTROL Anchura de la imagen] | ancho:límite inferior..Upperbound |
 | [!UICONTROL Altura de la imagen] | height:lowerbound..Upperbound |
-| [!UICONTROL Person] | person:John |
+| [!UICONTROL Persona] | person:John |
 
 A continuación se muestran algunos ejemplos de formatos de búsqueda para consultas complejas:
 
@@ -124,13 +128,13 @@ La búsqueda de texto completo también admite operadores como -, ^, etc. Para b
 Puede mejorar la relevancia de las palabras clave para recursos concretos para ayudar a impulsar las búsquedas basadas en palabras clave. En otras palabras, las imágenes para las que promociona palabras clave específicas aparecen en la parte superior de los resultados de búsqueda cuando realiza una búsqueda basada en estas palabras clave.
 
 1. En la interfaz de usuario de Assets, abra la página de propiedades del recurso para el que desea promocionar una palabra clave.
-1. Cambie a la pestaña **[!UICONTROL Avanzado]** y toque o haga clic en **[!UICONTROL Agregar]** en **[!UICONTROL Elevar para palabras clave de búsqueda]**.
+1. Cambie a la **[!UICONTROL Avanzadas]** tabulación y toque o haga clic **[!UICONTROL Agregar]** under **[!UICONTROL Elevar para palabras clave de búsqueda]**.
 
    ![elevate_for_search](assets/elevate_for_search.png)
 
-1. En el cuadro **[!UICONTROL Buscar promoción]**, especifique una palabra clave para la que desee impulsar la búsqueda de la imagen y, a continuación, toque o haga clic en **[!UICONTROL Agregar]**. Si es necesario, especifique varias palabras clave del mismo modo.
+1. En el **[!UICONTROL Buscar en Promote]** especifique la palabra clave para la que desea impulsar la búsqueda de la imagen y, a continuación, toque o haga clic en **[!UICONTROL Agregar]**. Si es necesario, especifique varias palabras clave del mismo modo.
 
    ![add_search_word](assets/add_search_word.png)
 
-1. Toque o haga clic en **[!UICONTROL Guardar y cerrar]**.
+1. Toque o haga clic **[!UICONTROL Guardar y cerrar]**.
 1. Busque la palabra clave mediante el cuadro Omnisearch . El recurso para el que promocionó esta palabra clave aparece entre los principales resultados de búsqueda.

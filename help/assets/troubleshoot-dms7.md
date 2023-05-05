@@ -9,14 +9,18 @@ exl-id: d8cc94b0-eacf-4e76-bd50-7934bbc28c92
 feature: Troubleshooting
 role: Admin,User
 mini-toc-levels: 3
-source-git-commit: 48e75239b9934ebe6c3c0d4f76b7990372646f23
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1431'
 ht-degree: 1%
 
 ---
 
 # Solución de problemas de Dynamic Media: modo Scene7 {#troubleshooting-dynamic-media-scene-mode}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 En el siguiente documento se describe la solución de problemas para Dynamic Media que se está ejecutando **dynamic_media_scene7** ejecutar modo.
 

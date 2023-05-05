@@ -1,5 +1,5 @@
 ---
-title: Mejora del rendimiento del servidor de aplicaciones
+title: Mejorar el rendimiento del servidor de aplicaciones
 seo-title: Enhancing application server performance
 description: Este documento describe la configuración opcional que puede configurar para mejorar el rendimiento del servidor de aplicaciones de formularios AEM.
 seo-description: This document describes optional settings that you can configure to improve the performance of your AEM forms application server.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 exl-id: 88f692de-f88b-4459-97e9-73506bf87525
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1863'
-ht-degree: 0%
+source-wordcount: '1899'
+ht-degree: 2%
 
 ---
 
-# Mejora del rendimiento del servidor de aplicaciones{#enhancing-application-server-performance}
+# Mejorar el rendimiento del servidor de aplicaciones{#enhancing-application-server-performance}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Este contenido describe la configuración opcional que puede configurar para mejorar el rendimiento del servidor de aplicaciones de formularios AEM.
 
@@ -45,7 +49,7 @@ Cuando el administrador del servidor de aplicaciones determina la configuración
    * Aumento de capacidad
    * Tamaño de caché de instrucciones
 
-1. Haga clic en Guardar y, a continuación, en Activar cambios.
+1. Haga clic en Guardar y luego en Activar cambios.
 1. Reinicie el servidor administrado por WebLogic.
 
 ### Configuración del grupo de conexiones para WebLogic para SQLServer {#configure-connection-pool-settings-for-weblogic-for-sqlserver}
@@ -59,7 +63,7 @@ Cuando el administrador del servidor de aplicaciones determina la configuración
    * Aumento de capacidad
    * Tamaño de caché de instrucciones
 
-1. Haga clic en Guardar y, a continuación, en Activar cambios.
+1. Haga clic en Guardar y luego en Activar cambios.
 1. Reinicie el servidor administrado por WebLogic.
 
 ### Configuración del grupo de conexiones para WebSphere para DB2 {#configure-connection-pool-settings-for-websphere-for-db2}

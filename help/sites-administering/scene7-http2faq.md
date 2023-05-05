@@ -6,16 +6,20 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 2da4c0b3-119e-436e-9f03-f794283e9a37
-source-git-commit: 0120fe1303aa3b7f5aa7db39eaf40ff127f2e338
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '784'
-ht-degree: 2%
+source-wordcount: '820'
+ht-degree: 3%
 
 ---
 
 # Preguntas frecuentes sobre la entrega de contenido HTTP2{#http-delivery-of-content-faq}
 
-Adobe se complace en anunciar la disponibilidad de la entrega HTTP/2 de contenido. Al utilizar HTTP/2 notará un aumento general del rendimiento.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+Adobe se complace en anunciar la disponibilidad de la entrega HTTP/2 de contenido. Al utilizar HTTP/2, observará un aumento general del rendimiento.
 
 ## ¿Qué es HTTP/2? {#what-is-http}
 
@@ -44,26 +48,26 @@ Para utilizar HTTP/2, debe cumplir los siguientes requisitos:
 
 * Utilice HTTPS seguro para sus solicitudes de medios enriquecidos.
 * Utilice la CDN (red de entrega de contenido) incluida en la Adobe como parte de su licencia de Dynamic Media Classic.
-* Utilice un dominio dedicado (es decir, `images.company.com` o `mycompany.scene7.com`), no un dominio genérico de Dynamic Media Classic (es decir, `s7d1.scene7.com`, `s7d2.scene7.com` o `s7d13.scene7.com`).
+* Usar un dominio dedicado (es decir, `images.company.com` o `mycompany.scene7.com`), no un dominio Dynamic Media Classic genérico (es decir, `s7d1.scene7.com`, `s7d2.scene7.com`o `s7d13.scene7.com`).
 
-   Para encontrar sus dominios, inicie sesión en su cuenta mediante la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app). A continuación, pulse **[!UICONTROL Configuración > Configuración de la aplicación > Configuración general]**. Busque el campo denominado **Published Server Name**. Si está utilizando un dominio genérico de Dynamic Media, puede solicitar pasar a su propio dominio personalizado como parte de esta transición.
+   Para encontrar los dominios, inicie sesión en la cuenta mediante la variable [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app). A continuación, toque **[!UICONTROL Configuración > Configuración de la aplicación > Configuración general]**. Busque el campo etiquetado **Nombre del servidor publicado**. Si está utilizando un dominio genérico de Dynamic Media, puede solicitar pasar a su propio dominio personalizado como parte de esta transición.
 
-## ¿Cuál es el proceso para activar HTTP/2 en mi cuenta de Dynamic Media Classic? {#what-is-the-process-for-enabling-http-for-my-scene-account}
+## ¿Cuál es el proceso para habilitar HTTP/2 para mi cuenta de Dynamic Media Classic? {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
-1. Debe [utilizar el Admin Console para crear un caso de soporte](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) y solicitar cambiar a HTTP/2; no se realiza automáticamente.
+1. Debe [utilice el Admin Console para crear un caso de asistencia](https://helpx.adobe.com/es/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) y solicitar cambiar a HTTP/2; no se realiza automáticamente.
 1. Proporcione la siguiente información en su caso de asistencia:
 
    * Nombre de contacto principal, correo electrónico y número de teléfono.
    * Todos los dominios que se van a transferir a HTTP2. Es decir, `images.company.com` o `mycompany.scene7.com`.
 
-      Para encontrar sus dominios, inicie sesión en su cuenta mediante la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app). A continuación, pulse **[!UICONTROL Configuración > Configuración de la aplicación > Configuración general]**. Busque el campo denominado **[!UICONTROL Nombre del servidor publicado.]**
-   Haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Configuracióngeneral]**. Busque el campo denominado **[!UICONTROL Published Server Name]**.
+      Para encontrar los dominios, inicie sesión en la cuenta mediante la variable [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app). A continuación, toque **[!UICONTROL Configuración > Configuración de la aplicación > Configuración general]**. Busque el campo etiquetado **[!UICONTROL Nombre del servidor publicado.]**
+   Haga clic en **[!UICONTROL Ajustes > Ajustes de aplicación > Configuracióngeneral]**. Busque el campo etiquetado **[!UICONTROL Nombre del servidor publicado]**.
 
    * Compruebe que utiliza HTTPS seguro para solicitudes de medios enriquecidos.
    * Compruebe que está utilizando la CDN a través de la Adobe y que no se administra con una relación directa.
-   * Compruebe que está utilizando un dominio dedicado. Es decir, `images.company.com` o `mycompany.scene7.com`, no es un dominio genérico de Dynamic Media como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
+   * Compruebe que está utilizando un dominio dedicado. Es decir, `images.company.com` o `mycompany.scene7.com`, no un dominio genérico de Dynamic Media como `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-      Para encontrar sus dominios, inicie sesión en su cuenta mediante la [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app). A continuación, pulse **[!UICONTROL Configuración > Configuración de la aplicación > Configuración general]**. Busque el campo denominado **[!UICONTROL Nombre del servidor publicado.]** Si está utilizando un dominio genérico de Dynamic Media, puede solicitar pasar a su propio dominio personalizado como parte de esta transición.
+      Para encontrar los dominios, inicie sesión en la cuenta mediante la variable [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app). A continuación, toque **[!UICONTROL Configuración > Configuración de la aplicación > Configuración general]**. Busque el campo etiquetado **[!UICONTROL Nombre del servidor publicado.]** Si está utilizando un dominio genérico de Dynamic Media, puede solicitar pasar a su propio dominio personalizado como parte de esta transición.
    1. La asistencia técnica le añade a la lista de espera de clientes HTTP/2 en función del orden en que se enviaron las solicitudes.
    1. Cuando el Adobe esté listo para gestionar su solicitud, el equipo de asistencia se pondrá en contacto con usted para coordinar la transición y establecer una fecha objetivo.
    1. Se le notificará una vez finalizada y podrá verificar que la transición a HTTP2 se ha realizado correctamente.
@@ -86,4 +90,4 @@ El contenido no almacenado en caché llega directamente a los servidores de orig
 
 ## ¿Cómo se puede verificar si una URL o un sitio web está activado con HTTP/2? {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
-Debe descargar una externsión para utilizarla con el explorador web. Para Firefox y Chrome hay una extensión llamada **[!UICONTROL HTTP/2 e indicador SPDY]**. Los navegadores solo admiten HTTP/2 de forma segura, por lo que es necesario llamar a una dirección URL con HTTPS para verificarlo. Si se admite HTTP/2, esto se indica con la extensión en forma de símbolo de Flash azul y con el encabezado &quot;X-Firefox-Spdy&quot; : &quot;h2&quot;.
+Debe descargar una externsión para utilizarla con el explorador web. Para Firefox y Chrome hay una extensión llamada **[!UICONTROL Indicador HTTP/2 y SPDY]**. Los navegadores solo admiten HTTP/2 de forma segura, por lo que es necesario llamar a una dirección URL con HTTPS para verificarlo. Si se admite HTTP/2, esto se indica con la extensión en forma de símbolo de Flash azul y con el encabezado &quot;X-Firefox-Spdy&quot; : &quot;h2&quot;.

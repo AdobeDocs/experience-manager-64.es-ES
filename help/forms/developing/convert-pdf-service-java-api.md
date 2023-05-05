@@ -1,5 +1,5 @@
 ---
-title: Convertir QuickStart (SOAP) de la API de Java del servicio de PDF
+title: Inicio rápido (SOAP) de la API de Java del servicio Convertir PDF
 seo-title: Convert PDF Service Java API QuickStart(SOAP)
 description: Utilice la API de Java del servicio Convertir PDF para convertir un documento PDF a archivos PostScript y JPEG.
 seo-description: Use the Convert PDF service Java API to convert a PDF document to PostScript and JPEG files.
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: bdd9bb56-14f6-448b-be4a-7c11f670e901
 role: Developer
 exl-id: af0cb623-c29c-4b9e-9ffd-736047a45b8d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 0%
+source-wordcount: '300'
+ht-degree: 5%
 
 ---
 
 # Convertir inicio rápido de la API de Java del servicio PDF (SOAP) {#convert-pdf-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Las siguientes opciones de inicio rápido están disponibles para la API del servicio Convertir PDF.
 

@@ -10,14 +10,18 @@ topic-tags: testing
 content-type: reference
 discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
 exl-id: 80442184-212a-424d-b320-5b301a54f974
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1895'
-ht-degree: 1%
+source-wordcount: '1931'
+ht-degree: 2%
 
 ---
 
 # Día duro{#tough-day}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Qué es el día duro 2 {#what-is-tough-day}
 
@@ -53,7 +57,7 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 >
 >El Día 2 no tiene un paso de limpieza. Como resultado, se recomienda ejecutar el Día duro 2 en una instancia de ensayo clonada y no en la instancia de producción principal. La instancia de ensayo debe dejarse de lado después de las pruebas.
 
-### Ayuda {#getting-help}
+### Obtención de ayuda {#getting-help}
 
 El Día difícil 2 ofrece una amplia gama de opciones de ayuda a las que se puede acceder desde la línea de comandos. Por ejemplo:
 
@@ -71,7 +75,7 @@ En la tabla siguiente, puede encontrar los parámetros de ayuda relevantes.
    <td><strong>Ejemplo</strong></td> 
   </tr> 
   <tr> 
-   <td>--ayuda</td> 
+   <td>--help</td> 
    <td>Imprime la información global, por ejemplo: las acciones disponibles, los grupos predefinidos, los modos de ejecución y los parámetros globales.</td> 
    <td> </td> 
   </tr> 

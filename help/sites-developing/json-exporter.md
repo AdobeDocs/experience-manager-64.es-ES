@@ -10,14 +10,18 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 exl-id: ead4306a-6337-4dae-8839-14fada0ae0e5
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 33%
+source-wordcount: '477'
+ht-degree: 32%
 
 ---
 
 # Exportador JSON para servicios de contenido{#json-exporter-for-content-services}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Los servicios de contenido de AEM están diseñados para generalizar la descripción y la entrega de contenido desde o hacia AEM, más allá del enfoque en las páginas web.
 
@@ -81,9 +85,9 @@ La página puede contener un solo fragmento de contenido o varios componentes de
 
 Consulte también lo siguiente:
 
-* API de HTTP de Assets
+* API HTTP de Recursos
 
-   * [API de HTTP de Assets](/help/assets/mac-api-assets.md)
+   * [API HTTP de Recursos](/help/assets/mac-api-assets.md)
 
 * Modelos Sling:
 

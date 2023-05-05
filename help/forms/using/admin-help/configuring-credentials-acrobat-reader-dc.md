@@ -1,5 +1,5 @@
 ---
-title: Configuración de credenciales para usarlas con extensiones de Acrobat Reader DC
+title: Configurar credenciales para usarlas con extensiones de Acrobat Reader DC
 seo-title: Configuring credentials for use with Acrobat Reader DC extensions
 description: Obtenga información sobre cómo configurar credenciales para usarlas con extensiones de Acrobat Reader DC.
 seo-description: Learn how to configure credentials for use with Acrobat Reader DC extensions.
@@ -10,20 +10,24 @@ geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5bb32fb1-4b6e-412f-aa16-f60db9dcaba1
 exl-id: 40c2e205-0115-4ebe-ab24-66c8ee0663fa
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 0%
+source-wordcount: '591'
+ht-degree: 6%
 
 ---
 
-# Configuración de credenciales para usarlas con extensiones de Acrobat Reader DC{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
+# Configurar credenciales para usarlas con extensiones de Acrobat Reader DC{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Para aplicar derechos de uso a documentos de PDF, configure AEM formularios con una credencial válida para extensiones de Acrobat Reader DC. Es posible que se haya configurado una credencial durante la instalación de AEM formularios. Si no configuró las credenciales de las extensiones de Acrobat Reader DC mientras ejecuta Configuration Manager o si necesita importar una credencial nueva o de reemplazo, puede hacerlo usando las páginas Administración de almacén de confianza .
 
 Si está utilizando una credencial de evaluación, sustitúyala por una credencial de producción al pasar al entorno de producción. Para actualizar una credencial de caducada o de evaluaciones, primero elimine la credencial de extensiones de Acrobat Reader DC antigua.
 
-Para obtener información sobre cómo obtener una credencial, consulte [Preparación para instalar AEM formularios (un solo servidor)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
+Para obtener información sobre cómo obtener una credencial, consulte [Preparación para instalar AEM formularios (un solo servidor)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_es).
 
 El almacén de confianza puede contener más de una credencial de extensiones de Acrobat Reader DC. Debe designar una de esas credenciales como credencial predeterminada de Extensiones de Reader. La credencial predeterminada se utiliza cuando un usuario de Workbench no puede determinar qué credencial utilizar durante la creación del proceso. Estas reglas se aplican a las credenciales predeterminadas:
 

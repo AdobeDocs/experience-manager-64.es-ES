@@ -1,5 +1,5 @@
 ---
-title: Revisión de los derechos de uso de un archivo de PDF
+title: Revisar los derechos de uso de un archivo PDF
 seo-title: Review the usage rights of a PDF file
 description: Obtenga información sobre cómo revisar los derechos de uso de un archivo PDF.
 seo-description: Learn how to review the usage rights of a PDF file.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2777706c-d42b-4921-a8f4-720b7c0fa45e
 exl-id: 50f96633-bb20-4d55-adf9-3c3d314be4c5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '116'
-ht-degree: 0%
+source-wordcount: '152'
+ht-degree: 15%
 
 ---
 
-# Revisión de los derechos de uso de un archivo de PDF {#review-the-usage-rights-of-a-pdf-file}
+# Revisar los derechos de uso de un archivo PDF {#review-the-usage-rights-of-a-pdf-file}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Cuando se carga un archivo de PDF en la aplicación web de extensiones de Acrobat Reader DC, se puede ver esta información: para ver si se ha ampliado el Reader, si se han aplicado derechos de uso y sus fechas de caducidad.
 

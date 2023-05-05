@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 role: Developer
 exl-id: b03acdb5-e951-49d6-b63f-2df273fcb4c7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '6214'
-ht-degree: 0%
+source-wordcount: '6250'
+ht-degree: 1%
 
 ---
 
 # Administración de usuarios {#managing-users}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 **Acerca de la administración de usuarios**
 
@@ -53,7 +57,7 @@ La siguiente tabla describe cada paso del proceso de autenticación.
 <table> 
  <thead> 
   <tr> 
-   <th><p>Etapa</p></th> 
+   <th><p>Paso</p></th> 
    <th><p>Descripción</p></th> 
   </tr> 
  </thead> 
@@ -146,7 +150,7 @@ Después de definir la información de usuario, puede agregarlo a AEM Forms. Par
 
 Puede verificar que el usuario se agregó para asegurarse de que no se produjeron problemas. Busque el nuevo usuario utilizando el valor del identificador de usuario.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Agregar usuarios mediante la API de Java](users.md#add-users-using-the-java-api)
 
@@ -199,7 +203,7 @@ Agregue usuarios mediante la API del servicio Directory Manager (Java):
    * Establezca el valor del identificador de usuario invocando la variable `PrincipalSearchFilter` del objeto `setUserId` método. Pase un valor de cadena que represente el valor del identificador de usuario.
    * Invocar el `DirectoryManagerServiceClient` del objeto `findPrincipals` y pase el `PrincipalSearchFilter` objeto. Este método devuelve un `java.util.List` instancia, donde cada elemento es un `User` objeto. Iterar a través de la variable `java.util.List` para localizar el usuario.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](users.md#summary-of-steps)
 
@@ -259,7 +263,7 @@ Agregue usuarios mediante la API del servicio Directory Manager (servicio Web):
    * Establezca el valor del identificador de usuario asignando un valor de cadena que represente el valor del identificador de usuario al valor `PrincipalSearchFilter` del objeto `userId` campo .
    * Invocar el `DirectoryManagerServiceClient` del objeto `findPrincipals` y pase el `PrincipalSearchFilter` objeto. Este método devuelve un `MyArrayOfUser` objeto de colección, donde cada elemento es un `User` objeto. Iterar a través de la variable `MyArrayOfUser` colección para localizar al usuario.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](users.md#summary-of-steps)
 
@@ -296,7 +300,7 @@ Puede especificar el usuario que desea eliminar utilizando el valor de identific
 
 Para eliminar un usuario, invoque la función `DirectoryManagerServiceClient` del objeto `deleteLocalUser` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Eliminar usuarios mediante la API de Java](users.md#delete-users-using-the-java-api)
 
@@ -330,7 +334,7 @@ Eliminar usuarios mediante la API del servicio Directory Manager (Java):
 
    Invocar el `DirectoryManagerServiceClient` del objeto `deleteLocalUser` y pase el valor de la variable `User` del objeto `oid` campo . Invocar el `User` del objeto `getOid` método. Utilice la variable `User` objeto recuperado del `java.util.List` instancia.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](users.md#summary-of-steps)
 
@@ -373,7 +377,7 @@ Eliminar usuarios mediante la API del servicio Directory Manager (servicio Web):
 
    Elimine el usuario pasando el `User` del objeto `oid` valor de campo a la variable `DirectoryManagerServiceClient` del objeto `deleteLocalUser` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](users.md#summary-of-steps)
 
@@ -428,7 +432,7 @@ Después de determinar que el grupo no existe en el dominio, cree el grupo y esp
 
 Después de crear un grupo, puede realizar una acción utilizando el grupo . Por ejemplo, puede agregar un usuario al grupo. Para agregar un usuario a un grupo, recupere el valor de identificador único del usuario y del grupo. Pase estos valores a la variable `addPrincipalToLocalGroup` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Creación de grupos mediante la API de Java](users.md#create-groups-using-the-java-api)
 
@@ -476,7 +480,7 @@ Cree un grupo utilizando la API del servicio Directory Manager (Java):
    * Invocar el `DirectoryManagerServiceClient` del objeto `findPrincipals` y pase el `PrincipalSearchFilter` objeto. Este método devuelve un `java.util.List` instancia, donde cada elemento es un `User` objeto. Iterar a través de la variable `java.util.List` para localizar el usuario.
    * Agregue un usuario al grupo invocando la variable `DirectoryManagerServiceClient` del objeto `addPrincipalToLocalGroup` método. Pasa el valor devuelto de la variable `User` del objeto `getOid` método. Pasa el valor devuelto de la variable `Group` objetos `getOid` (utilice el método `Group` que representa el nuevo grupo).
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](users.md#summary-of-steps)
 
@@ -519,7 +523,7 @@ Para poder realizar una operación de servicio de Directory Manager mediante pro
 
 Una vez creado el cliente de servicio, puede invocar las operaciones de administración de usuarios o grupos. El cliente de servicio permite asignar, eliminar y consultar dominios, usuarios y grupos. Tenga en cuenta que es posible añadir una entidad de seguridad de directorio o una entidad de seguridad local a un grupo local, pero no es posible añadir una entidad de seguridad local a un grupo de directorios.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Administración de usuarios y grupos mediante la API de Java](users.md#managing-users-and-groups-using-the-java-api)
 
@@ -555,7 +559,7 @@ Para administrar mediante programación usuarios, grupos y dominios que utilizan
 
    Para eliminar un grupo local, invoque la función `DirectoryManagerServiceClient` del objeto `deleteLocalGroup` y pase el identificador del grupo.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](users.md#summary-of-steps)
 
@@ -592,7 +596,7 @@ Para administrar mediante programación usuarios, grupos y dominios mediante la 
 
    Para eliminar un grupo local, invoque la función `DirectoryManagerServiceService` del objeto `deleteLocalGroup` y pase el identificador del grupo.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](users.md#summary-of-steps)
 
@@ -600,7 +604,7 @@ Para administrar mediante programación usuarios, grupos y dominios mediante la 
 
 ## Administración de funciones y permisos {#managing-roles-and-permissions}
 
-En este tema se describe cómo puede utilizar la API de servicio de Administrador de autorización (Java) para asignar, eliminar y determinar funciones y permisos mediante programación.
+En este tema se describe cómo puede utilizar la API de servicio de Administrador de autorización (Java) para asignar, quitar y determinar funciones y permisos mediante programación.
 
 En AEM Forms, una *función* es un grupo de permisos para acceder a uno o más recursos de nivel de sistema. Estos permisos se crean mediante Administración de usuarios y los componentes del servicio los aplican. Por ejemplo, un administrador podría asignar la función &quot;Autor de conjuntos de políticas&quot; a un grupo de usuarios. El Rights Management permitiría entonces a los usuarios de ese grupo con esa función crear conjuntos de políticas a través de la consola de administración.
 
@@ -628,7 +632,7 @@ Antes de poder realizar mediante programación una operación User Management Au
 
 Una vez creado el cliente de servicio, puede invocar la función o las operaciones de permiso. El cliente de servicio permite asignar, quitar y determinar funciones y permisos.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Administración de funciones y permisos mediante la API de Java](users.md#managing-roles-and-permissions-using-the-java-api)
 
@@ -665,7 +669,7 @@ Para administrar funciones y permisos mediante la API de servicio de Administrad
    * Una matriz de `java.lang.String` objetos que contienen los identificadores principales.
 
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](users.md#summary-of-steps)
 
@@ -713,7 +717,7 @@ Administre las funciones y los permisos mediante la API de servicio de Administr
    * Una matriz de `string` objetos que contienen los identificadores principales.
 
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](users.md#summary-of-steps)
 
@@ -738,7 +742,7 @@ En la tabla siguiente se describen los pasos de este diagrama
 <table> 
  <thead> 
   <tr> 
-   <th><p>Etapa</p></th> 
+   <th><p>Paso</p></th> 
    <th><p>Descripción</p></th> 
   </tr> 
  </thead> 
@@ -787,7 +791,7 @@ Una vez creado el cliente de servicio, puede invocar la operación de autenticac
 
 Una vez que haya autenticado al usuario, puede crear un contexto basado en el usuario autenticado. A continuación, puede utilizar el contenido para invocar otros servicios de AEM Forms. Por ejemplo, puede utilizar el contexto para crear un `EncryptionServiceClient` y cifrar un documento PDF con una contraseña. Asegúrese de que el usuario autenticado tiene la función denominada `Services User` que es necesario para invocar un servicio de AEM Forms.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -845,7 +849,7 @@ Autentique a un usuario mediante la API de servicio de Authentication Manager (s
    * Una matriz de bytes (un `byte[]` ) que contiene la contraseña del usuario. Puede obtener la variable `byte[]` mediante la conversión de `string` objeto que contiene la contraseña de un `byte[]` empleando la lógica mostrada en el ejemplo siguiente.
    * El valor devuelto será un `AuthResult` , que puede utilizarse para recuperar información sobre el usuario. En el ejemplo siguiente, la información del usuario se recupera obteniendo primero la variable `AuthResult` del objeto `authenticatedUser` y obtener posteriormente el resultado `User` del objeto `canonicalName` y `domainName` campos.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
@@ -864,7 +868,7 @@ En la tabla siguiente se describen los pasos de este diagrama
 <table> 
  <thead> 
   <tr> 
-   <th><p>Etapa</p></th> 
+   <th><p>Paso</p></th> 
    <th><p>Descripción</p></th> 
   </tr> 
  </thead> 
@@ -908,7 +912,7 @@ Para poder sincronizar usuarios mediante programación, debe crear una `UserMana
 
 **Especifique el dominio de empresa**
 
-Antes de realizar una operación de sincronización utilizando la API de administración de usuarios, debe especificar el dominio de empresa al que pertenecen los usuarios. Puede especificar uno o varios dominios de empresa. Para poder realizar una operación de sincronización mediante programación, debe configurar un dominio de empresa mediante la Consola de administración. (Consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63).)
+Antes de realizar una operación de sincronización utilizando la API de administración de usuarios, debe especificar el dominio de empresa al que pertenecen los usuarios. Puede especificar uno o varios dominios de empresa. Para poder realizar una operación de sincronización mediante programación, debe configurar un dominio de empresa mediante la Consola de administración. (Consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63_es).)
 
 **Invocar la operación de sincronización**
 
@@ -918,7 +922,7 @@ Después de especificar uno o varios dominios de empresa, puede realizar la oper
 
 Después de realizar una operación de sincronización mediante programación, puede determinar si la operación ha finalizado.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -952,7 +956,7 @@ Sincronizar usuarios mediante la API de administración de usuarios (Java):
 
    A continuación, invoque el `Context` del objeto `initPrincipal` y pase el `AuthResult`.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Sincronización programática de usuarios](users.md#programmatically-synchronizing-users)
 

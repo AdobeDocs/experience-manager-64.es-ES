@@ -1,5 +1,5 @@
 ---
-title: Inicio rápido (SOAP) de la API Java del Registro de extremos
+title: Inicio rápido (SOAP) de la API de Java Registro de extremos
 seo-title: Endpoint Registry Java API QuickStart(SOAP)
 description: Utilice la API Java del Registro de Extremos para agregar un extremo EJB, agregar un extremo SOAP, agregar un extremo de carpeta Watched, agregar un extremo de correo electrónico, agregar un extremo remoto, agregar un extremo de TaskManager, modificar un extremo, eliminar un extremo y recuperar información del conector de extremo.
 seo-description: Use the Endpoint Registry Java API to add an EJB endpoint, add a SOAP endpoint, add a Watched folder endpoint, add an Email endpoint, add a remoting endpoint, add a TaskManager endpoint, modify an endpoint, remove an endpoint, and retrieve endpoint connector information.
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 role: Developer
 exl-id: 70816a79-a200-4afa-8602-bf3c414665ea
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '580'
-ht-degree: 0%
+source-wordcount: '616'
+ht-degree: 2%
 
 ---
 
 # Inicio rápido de la API de Java del Registro de extremos (SOAP) {#endpoint-registry-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El inicio rápido de la API de Java (SOAP) está disponible para el Registro de extremos.
 

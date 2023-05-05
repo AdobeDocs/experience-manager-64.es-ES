@@ -1,5 +1,5 @@
 ---
-title: Agrupación de varios fragmentos XDP
+title: Agrupar varios fragmentos XDP
 seo-title: Assembling Multiple XDP Fragments
 description: Ensamble varios fragmentos XDP en un único documento XDP con la API de Java y la API de servicio web.
 seo-description: Assemble multiple XDP fragments into a single XDP document using the Java API and Web Service API.
@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 0ed1f69d-c212-4d47-a572-ae030f2983fc
 role: Developer
 exl-id: be9db93d-97e1-4d4e-8d07-1c58a4a1a44c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1887'
-ht-degree: 0%
+source-wordcount: '1923'
+ht-degree: 1%
 
 ---
 
-# Agrupación de varios fragmentos XDP {#assembling-multiple-xdp-fragments}
+# Agrupar varios fragmentos XDP {#assembling-multiple-xdp-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede ensamblar varios fragmentos XDP en un solo documento XDP. Por ejemplo, considere los fragmentos XDP donde cada archivo XDP contiene uno o más subformularios utilizados para crear un formulario de mantenimiento. La siguiente ilustración muestra la vista Esquema (representa el archivo tuc018_template_flowed.xdp utilizado en la *Agrupación de varios fragmentos XDP* inicio rápido):
 
@@ -141,7 +145,7 @@ Para ensamblar varios archivos XDP, llame a la función `invokeDDX` operación. 
 
 Un documento XDP montado se devuelve dentro de un objeto de colección. Iterar a través del objeto de colección y guardar el documento XDP como un archivo XDP. También puede pasar el documento XDP a otro servicio de AEM Forms, como Output.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Agrupación de varios fragmentos XDP mediante la API de Java](assembling-multiple-xdp-fragments.md#assemble-multiple-xdp-fragments-using-the-java-api)
 
@@ -205,9 +209,9 @@ Ensamble varios fragmentos XDP utilizando la API de servicio de Assembler (Java)
    * Iterar a través de la variable `java.util.Map` hasta que encuentre el resultado `com.adobe.idp.Document` objeto.
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` método para extraer el documento XDP ensamblado.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Agrupación de varios fragmentos XDP](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
+[Agrupar varios fragmentos XDP](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
 
 [Inicio rápido (modo SOAP): Agrupación de varios fragmentos XDP mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
@@ -288,8 +292,8 @@ Ensamble varios fragmentos XDP utilizando la API del servicio Assembler (servici
    * Iterar a través de la variable `Map` para obtener cada documento resultante. A continuación, cree el `value` a `BLOB`.
    * Extraiga los datos binarios que representan el documento del PDF accediendo a su `BLOB` del objeto `MTOM` propiedad. Esto devuelve una matriz de bytes que puede escribir en un archivo XDP.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Agrupación de varios fragmentos XDP](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
+[Agrupar varios fragmentos XDP](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

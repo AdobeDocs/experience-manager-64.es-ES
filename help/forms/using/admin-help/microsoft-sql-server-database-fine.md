@@ -1,5 +1,5 @@
 ---
-title: "Base de datos de Microsoft SQL Server: Ajuste de la configuración"
+title: "Base de datos de Microsoft SQL Server: Ajustar la configuración"
 seo-title: "Microsoft SQL Server database: Fine-tuning the configuration"
 description: Aprenda cómo puede ajustar la configuración de la base de datos de Microsoft SQL Server.
 seo-description: Learn how you can fine tune the configuration of your Microsoft SQL Server database.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.4/FORMS, SG_AEMFORMS
 discoiquuid: 70559a94-42ea-411a-a32f-5f38bc17ff96
 exl-id: 5392027c-eb5a-49c4-bf9b-fe7d399ae0a1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 0%
+source-wordcount: '330'
+ht-degree: 6%
 
 ---
 
-# Base de datos de Microsoft SQL Server: Ajuste de la configuración {#microsoft-sql-server-database-fine-tuning-the-configuration}
+# Base de datos de Microsoft SQL Server: Ajustar la configuración {#microsoft-sql-server-database-fine-tuning-the-configuration}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Debe cambiar la configuración predeterminada al usar Microsoft SQL Server. Haga clic con el botón derecho en el servidor local de Oracle Enterprise Manager para acceder al cuadro de diálogo de propiedades.
 

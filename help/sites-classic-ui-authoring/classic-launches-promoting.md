@@ -1,8 +1,8 @@
 ---
 title: Promoción de lanzamientos
-seo-title: Promoción de lanzamientos
-description: Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo. Cuando se promociona una página de lanzamiento, la página correspondiente de las páginas de origen se reemplaza con el contenido de la página promocionada.
-seo-description: Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo. Cuando se promociona una página de lanzamiento, la página correspondiente de las páginas de origen se reemplaza con el contenido de la página promocionada.
+seo-title: Promoting Launches
+description: Debe promocionar páginas de lanzamiento para volver a mover el contenido al origen (producción) antes de publicarlo. Cuando se promociona una página de lanzamiento, la página correspondiente de las páginas de origen se reemplaza con el contenido de la página promocionada.
+seo-description: You need to promote launch pages to move the content back into the source (production) before publishing. When a launch page is promoted, the corresponding page of the source pages is replaced with the content of the promoted page.
 uuid: 91f1c6ac-8c4e-4459-aaab-feaa32befc45
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,18 +10,21 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 8d38c6f7-8fea-4d27-992d-03b604b9541f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 793c44fa-9dd1-45f2-b1ab-219b436fcb54
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 95%
+source-wordcount: '350'
+ht-degree: 17%
 
 ---
 
-
 # Promoción de lanzamientos{#promoting-launches}
 
-Debe promocionar las páginas de lanzamiento para devolver el contenido al origen (producción) antes de publicarlo. Cuando se promociona una página de lanzamiento, la página correspondiente de las páginas de origen se reemplaza con el contenido de la página promocionada. Las siguientes opciones están disponibles para promocionar una página de lanzamiento:
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+Debe promocionar páginas de lanzamiento para volver a mover el contenido al origen (producción) antes de publicarlo. Cuando se promociona una página de lanzamiento, la página correspondiente de las páginas de origen se reemplaza con el contenido de la página promocionada. Las siguientes opciones están disponibles al promocionar una página de lanzamiento:
 
 * Promocionar solo la página actual o todo el lanzamiento.
 * Promocionar las páginas secundarias de la página actual.
@@ -29,29 +32,28 @@ Debe promocionar las páginas de lanzamiento para devolver el contenido al orige
 
 ## Promocionar páginas de lanzamiento {#promoting-launch-pages}
 
-Para promocionar páginas, realice los pasos siguientes al editar la página de lanzamiento que desee promocionar:
+Para promocionar páginas, realice los pasos siguientes mientras edita la página de lanzamiento que desee promocionar:
 
-1. En la ficha **Página** de la barra de tareas, haga clic en **Promocionar lanzamiento**.
-1. Especifique las páginas que desee promocionar:
+1. En el **Página** en la barra de tareas, haga clic en **Promocionar lanzamiento**.
+1. Especifique las páginas que desea promocionar:
 
-   * (Predeterminado) Para promocionar solo la página actual, seleccione **Promocionar cambios de página en la versión de producción**.
-   * Si también desea promocionar las páginas secundarias de la página actual, seleccione **Incluir páginas secundarias**.
-   * Para promocionar todas las páginas del lanzamiento, seleccione **Promocionar lanzamiento completo en la versión de producción**.
+   * (Predeterminado) Para promocionar solo la página actual, seleccione **Promocionar Cambios De Página A La Versión De Producción**.
+   * Para promocionar también las páginas secundarias de la página actual, seleccione **Incluir páginas secundarias**.
+   * Para promocionar todas las páginas del lanzamiento, seleccione **Promocionar lanzamiento completo a la versión de producción**.
 
-1. Para añadir las páginas de la producción a un paquete de flujo de trabajo, seleccione **Añadir al paquete del flujo de trabajo** y, a continuación, seleccione el paquete del flujo de trabajo.
+1. Para añadir las páginas de producción a un paquete de flujo de trabajo, seleccione **Agregar Al Paquete De Flujo De Trabajo** y, a continuación, seleccione el paquete de flujo de trabajo.
 1. Haga clic en **Promocionar**.
 
 ## Procesamiento de páginas promocionadas mediante el flujo de trabajo de AEM {#processing-promoted-pages-using-aem-workflow}
 
-Utilice modelos de flujo de trabajo para realizar procesamientos masivos de páginas de lanzamiento promocionadas:
+Utilice modelos de flujo de trabajo para realizar un procesamiento masivo de páginas de lanzamiento promocionadas:
 
 1. Cree un paquete de flujo de trabajo.
-1. Cuando los creadores promocionan páginas de lanzamiento, las guardan en el paquete de flujo de trabajo.
-1. Inicie un modelo de flujo de trabajo con el paquete como carga útil.
+1. Cuando los autores promocionan páginas de Launch, las almacenan en el paquete de flujo de trabajo.
+1. Inicie un modelo de flujo de trabajo utilizando el paquete como carga útil.
 
-Para iniciar un flujo de trabajo automáticamente cuando se promocionen páginas, [configure un lanzador de flujos de trabajo](/help/sites-administering/workflows-starting.md#workflows-launchers) para el nodo del paquete.
+Para iniciar un flujo de trabajo automáticamente cuando se promocionan páginas, [configuración de un lanzador de flujo de trabajo](/help/sites-administering/workflows-starting.md#workflows-launchers) para el nodo del paquete.
 
-Por ejemplo, puede generar solicitudes de activación de páginas automáticamente cuando los creadores promocionan páginas de lanzamiento. Configure un lanzador de flujo de trabajo para iniciar el flujo de trabajo de activación de solicitud cuando se modifique el nodo de paquete.
+Por ejemplo, puede generar automáticamente solicitudes de activación de página cuando los autores promocionan páginas de lanzamiento. Configure un iniciador de flujo de trabajo para iniciar el flujo de trabajo de activación de solicitud cuando se modifique el nodo del paquete.
 
 ![chlimage_1-136](assets/chlimage_1-136.png)
-

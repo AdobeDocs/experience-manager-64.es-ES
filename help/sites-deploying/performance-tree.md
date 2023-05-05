@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: dfc6a660-e6b3-4395-a555-f4cf8f3fed91
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 5%
+source-wordcount: '1224'
+ht-degree: 6%
 
 ---
 
 # Árbol de rendimiento{#performance-tree}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Ámbito {#scope}
 
@@ -56,9 +60,9 @@ El análisis comienza en el paso 0. El objetivo es determinar qué entidad (Disp
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Etapa</strong></td> 
+   <td><strong>Paso</strong></td> 
    <td><strong>Título</strong></td> 
-   <td><strong>Medios</strong></td> 
+   <td><strong>Recursos</strong></td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 0</strong></td> 
@@ -241,7 +245,7 @@ El análisis comienza en el paso 0. El objetivo es determinar qué entidad (Disp
    <td>Hacer que las solicitudes se almacenen en caché</td> 
    <td> 
     <ol> 
-     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html">Configuración general de Dispatcher</a></li> 
+     <li><a href="https://helpx.adobe.com/es/experience-manager/dispatcher/using/dispatcher.html">Configuración general de Dispatcher</a></li> 
      <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">Configuración de la caché de Dispatcher</a></li> 
     </ol> <p>Cómo mejorar la proporción de caché; hacer que las solicitudes se puedan almacenar en caché (prácticas recomendadas de Dispatcher)</p> <p>Además, tenga en cuenta los siguientes ajustes para optimizar las configuraciones de almacenamiento en caché<br /> </p> 
     <ol> 
@@ -259,7 +263,7 @@ El análisis comienza en el paso 0. El objetivo es determinar qué entidad (Disp
   <tr> 
    <td><strong>Etapa 35</strong></td> 
    <td>Configurar Dispatcher</td> 
-   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html">Configuración de Dispatcher</a><br /> </td> 
+   <td><a href="https://helpx.adobe.com/es/experience-manager/dispatcher/using/dispatcher-configuration.html">Configuración de Dispatcher</a><br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Etapa 36</strong></td> 

@@ -1,5 +1,5 @@
 ---
-title: Configuración del mensaje del día
+title: Configurar el mensaje del día
 seo-title: Setting the message of the day
 description: El mensaje del día le permite establecer un mensaje para que se muestre en la página de bienvenida de la interfaz de usuario de Workspace.
 seo-description: The message of the day let you set a message to be displayed on the Welcome page in the Workspace user interface.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c2b3a412-70c2-4257-bfb4-1430bb1f8891
 exl-id: 7ddd5a4d-2b46-4408-b241-81e16cfead3c
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '174'
-ht-degree: 1%
+source-wordcount: '210'
+ht-degree: 10%
 
 ---
 
-# Configuración del mensaje del día {#setting-the-message-of-the-day}
+# Configurar el mensaje del día {#setting-the-message-of-the-day}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede configurar un mensaje para que se muestre en la página de bienvenida de la interfaz de usuario de Workspace.
 

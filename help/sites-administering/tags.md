@@ -1,8 +1,8 @@
 ---
 title: Administración de etiquetas
-seo-title: Administración de etiquetas
+seo-title: Administering Tags
 description: Obtenga información sobre cómo administrar Etiquetas en AEM.
-seo-description: Obtenga información sobre cómo administrar Etiquetas en AEM.
+seo-description: Learn how to administer Tags in AEM.
 uuid: 77e1280a-feea-4edd-94b6-4fb825566c42
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,18 @@ topic-tags: content
 content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: 5c78edf8-148f-41a3-8b11-c1dada34090e
-source-git-commit: 2208d23985ebd913b6aa9dee3bf16ce7529a8fa6
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 5%
+source-wordcount: '1791'
+ht-degree: 1%
 
 ---
 
 # Administración de etiquetas{#administering-tags}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Las etiquetas son un método rápido y fácil de clasificar contenido dentro de un sitio web. Se pueden considerar como palabras clave o etiquetas (metadatos) que permiten encontrar el contenido más rápidamente como resultado de una búsqueda.
 
@@ -25,7 +29,7 @@ En Adobe Experience Manager (AEM), una etiqueta puede ser una propiedad de
 
 * un nodo de contenido para una página (consulte [Uso de etiquetas](/help/sites-authoring/tags.md))
 
-* un nodo de metadatos para un recurso (consulte [Administración de metadatos para recursos digitales](/help/assets/metadata.md))
+* un nodo de metadatos para un recurso (consulte [Administración de metadatos de recursos digitales](/help/assets/metadata.md))
 
 Además de las páginas y los recursos, las etiquetas se utilizan para las funciones de AEM Communities
 
@@ -37,26 +41,26 @@ Además de las páginas y los recursos, las etiquetas se utilizan para las funci
 
 Algunas de las características de las etiquetas de AEM incluyen:
 
-* Las etiquetas se pueden agrupar en varios espacios de nombres. Tales jerarquías permiten la construcción de taxonomías. Estas taxonomías son globales a lo largo de AEM.
+* Las etiquetas se pueden agrupar en varios espacios de nombres. Estas jerarquías permiten crear taxonomías. Estas taxonomías son globales a lo largo de AEM.
 * La restricción principal para las etiquetas recién creadas es que deben ser únicas dentro de un espacio de nombres específico.
 * El título de una etiqueta no debe incluir caracteres de separación de ruta de etiqueta (tampoco se mostrarán si están presentes)
 
    * dos puntos (:): delimita la etiqueta del espacio de nombres
    * barra diagonal (/): delimita las subetiquetas
 
-* Los autores y los visitantes del sitio pueden aplicar etiquetas. Independientemente del creador, todas las formas de etiquetas están disponibles para selección, tanto durante la asignación a una página como durante la búsqueda.
-* Los miembros del grupo &quot;administradores de etiquetas&quot; y los miembros que tengan derechos de modificación a `/content/cq:tags` pueden crear etiquetas y modificar su taxonomía.
+* Los autores y los visitantes del sitio pueden aplicar etiquetas. Independientemente de su creador, todas las formas de etiquetas están disponibles para su selección, tanto al asignarlas a una página como al realizar búsquedas.
+* Los miembros del grupo &quot;administradores de etiquetas&quot; y los miembros que tengan derechos de modificación para `/content/cq:tags`.
 
    * Una etiqueta que contiene etiquetas secundarias se denomina etiqueta contenedora
    * Una etiqueta que no es una etiqueta contenedora se denomina etiqueta hoja
    * Un espacio de nombres de etiqueta es una etiqueta de hoja o una etiqueta de contenedor
 
-* Las etiquetas las utiliza el [componente de búsqueda](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) para facilitar la búsqueda de contenido.
-* Las etiquetas las utiliza el [componente teaser](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html), que supervisa la nube de etiquetas de un usuario para proporcionar contenido de destino.
+* Las etiquetas las usa el [Componente de búsqueda](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) para facilitar la búsqueda de contenido.
+* Las etiquetas las usa el [Componente teaser](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html), que supervisa la nube de etiquetas de un usuario para proporcionar contenido segmentado.
 * Si el etiquetado es un aspecto importante del contenido
 
    * asegúrese de empaquetar etiquetas con las páginas que las utilizan
-   * asegúrese de [permisos de etiqueta](#setting-tag-permissions) habilitar acceso de lectura
+   * asegúrese de [permisos de etiquetas](#setting-tag-permissions) habilitar acceso de lectura
 
 ## Consola de etiquetado {#tagging-console}
 
@@ -71,31 +75,31 @@ Para acceder a la consola Etiquetado :
 * desde la navegación global
 
    * select **`Tools`**
-   * seleccione **`General`**
-   * seleccione **`Tagging`**
+   * select **`General`**
+   * select **`Tagging`**
 
 ![managing_tags_usingthetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsole.png)
 
 ### Creación de un área de nombres {#creating-a-namespace}
 
-Para crear un nuevo espacio de nombres, seleccione el icono **`Create Namespace`**.
+Para crear un nuevo área de nombres, seleccione la opción **`Create Namespace`** icono.
 
-El área de nombres es en sí misma una etiqueta y no necesita contener ninguna subetiqueta. Sin embargo, para seguir creando una taxonomía, [cree subetiquetas](#creating-tags), que a su vez pueden ser etiquetas de hoja o de contenedor.
+El área de nombres es en sí misma una etiqueta y no necesita contener ninguna subetiqueta. Sin embargo, para seguir creando una taxonomía, [crear subetiquetas](#creating-tags), que a su vez pueden ser etiquetas de hoja o de contenedor.
 
 ![chlimage_1-183](assets/chlimage_1-183.png) ![creating_tags_andnamespaces](assets/creating_tags_andnamespaces.png)
 
 * **Título**
-* (obligatorio) *Un título de visualización para el espacio de nombres.
+*(obligatorio) *Un título de visualización para el área de nombres.
 
 * **Nombre**
-* (opcional) *Un nombre para el área de nombres. Si no se especifica, se crea un nombre de nodo válido desde el Título. Consulte [TagID](/help/sites-developing/framework.md#tagid).
+*(opcional) *Un nombre para el área de nombres. Si no se especifica, se crea un nombre de nodo válido desde el Título. Consulte [TagID](/help/sites-developing/framework.md#tagid).
 
 * **Descripción**
-* (opcional) *Una descripción del área de nombres.
+*(opcional) *Una descripción del área de nombres.
 
 Una vez introducida la información requerida
 
-* seleccione **Crear**
+* select **Crear**
 
 ### Operaciones con etiquetas {#operations-on-tags}
 
@@ -113,7 +117,7 @@ Si se selecciona un área de nombres u otra etiqueta, está disponible la siguie
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
-Cuando la ventana del explorador no es lo suficientemente ancha como para mostrar todos los iconos, los iconos situados más a la derecha se agrupan en un icono **`... More`**, que mostrará una lista desplegable de los iconos de operación ocultos cuando se seleccionen.
+Cuando la ventana del explorador no es lo suficientemente ancha como para mostrar todos los iconos, los iconos que se encuentran más a la derecha se agrupan bajo una **`... More`** , que muestra una lista desplegable de los iconos de operación ocultos cuando se seleccionan.
 
 ![chlimage_1-185](assets/chlimage_1-185.png)
 
@@ -129,7 +133,7 @@ Para seleccionar la etiqueta para las operaciones y para seleccionar varias opci
 
 ![chlimage_1-188](assets/chlimage_1-188.png)
 
-Cuando se selecciona un espacio de nombres u otra etiqueta, la selección del icono **`View Properties`** da como resultado la visualización de información sobre el `name`, la hora de la última edición y el número de referencias. Si se publica, se muestra la hora de la última publicación y el id del editor. Esta información aparecerá en una columna a la izquierda de las columnas de etiquetas.
+Cuando se selecciona un espacio de nombres u otra etiqueta, se selecciona la variable **`View Properties`** el icono de muestra la información sobre `name`, hora de la última edición y número de referencias. Si se publica, se muestra la hora de la última publicación y el id del editor. Esta información aparecerá en una columna a la izquierda de las columnas de etiquetas.
 
 ![chlimage_1-189](assets/chlimage_1-189.png)
 
@@ -137,7 +141,7 @@ Cuando se selecciona un espacio de nombres u otra etiqueta, la selección del ic
 
 ![chlimage_1-190](assets/chlimage_1-190.png)
 
-Cuando se selecciona un área de nombres u otra etiqueta, al seleccionar el icono **`References`**se identificará el contenido al que se ha aplicado la etiqueta.
+Cuando se selecciona un área de nombres u otra etiqueta, se selecciona el **`References`**el icono identificará el contenido al que se ha aplicado la etiqueta.
 
 La visualización inicial es un recuento de etiquetas aplicadas.
 
@@ -153,28 +157,28 @@ La ruta a la referencia se muestra como información del objeto al pasar el rat�
 
 ![chlimage_1-193](assets/chlimage_1-193.png)
 
-Cuando se selecciona un espacio de nombres u otra etiqueta (seleccionando el icono junto al título), se puede crear una etiqueta secundaria para la etiqueta actual seleccionando el icono **`Create Tag`**.
+Cuando se selecciona un área de nombres u otra etiqueta (seleccionando el icono junto al título), se puede crear una etiqueta secundaria para la etiqueta actual seleccionando la etiqueta **`Create Tag`** icono.
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
 * **Título**
-* (obligatorio) *Un título para mostrar para la etiqueta.
+*(obligatorio) *Un título que se muestra para la etiqueta.
 
 * **Nombre**
-* (opcional) *Un nombre para la etiqueta. Si no se especifica, se crea un nombre de nodo válido desde el Título. Consulte [TagID](/help/sites-developing/framework.md#tagid).
+*(opcional) *Un nombre para la etiqueta. Si no se especifica, se crea un nombre de nodo válido desde el Título. Consulte [TagID](/help/sites-developing/framework.md#tagid).
 
 * **Descripción**
-* (opcional) *Una descripción de la etiqueta.
+*(opcional) *Una descripción de la etiqueta.
 
 Una vez introducida la información requerida
 
-* seleccione **Crear**
+* select **Crear**
 
-### Edición de tags {#editing-tags}
+### Edición de etiquetas {#editing-tags}
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
-Cuando se selecciona un espacio de nombres u otra etiqueta, es posible modificar el Título, la Descripción y proporcionar las localizaciones del Título seleccionando el icono **`Edit`**.
+Cuando se selecciona un espacio de nombres u otra etiqueta, es posible modificar el Título, la Descripción y proporcionar las localizaciones del Título seleccionando el **`Edit`**icono.
 
 Después de realizar las ediciones, seleccione **Guardar**.
 
@@ -182,47 +186,47 @@ Para obtener más información sobre cómo agregar traducciones de idioma, consu
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
-### Movimiento de tags {#moving-tags}
+### Desplazamiento de etiquetas {#moving-tags}
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
-Cuando se selecciona un espacio de nombres u otra etiqueta, la selección del icono **`Move`** permitirá a los administradores y desarrolladores de etiquetas limpiar la taxonomía moviendo la etiqueta a una nueva ubicación o cambiando su nombre. Cuando la etiqueta seleccionada es una etiqueta contenedora, al mover la etiqueta también se moverán todas las etiquetas secundarias.
+Cuando se selecciona un espacio de nombres u otra etiqueta, se selecciona la variable **`Move`** permitirá a los administradores y desarrolladores de etiquetas limpiar la taxonomía moviendo la etiqueta a una nueva ubicación o cambiando su nombre. Cuando la etiqueta seleccionada es una etiqueta contenedora, al mover la etiqueta también se moverán todas las etiquetas secundarias.
 
 >[!NOTE]
 >
->Se recomienda que los autores solo puedan [editar](#editing-tags) la `title` etiqueta de la etiqueta, no mover ni cambiar el nombre de las etiquetas.
+>Se recomienda que solo se permita a los autores [editar](#editing-tags) la etiqueta `title`, no para mover ni cambiar el nombre de las etiquetas.
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
 * **Ruta**
 
-   *(solo lectura)* La ruta actual a la etiqueta seleccionada.
+   *(solo lectura)* Ruta actual a la etiqueta seleccionada.
 
-* **Desplácese**
-a la nueva ruta en la que se moverá la etiqueta .
+* **Mover a**
+Vaya a la nueva ruta en la que desea mover la etiqueta .
 
-* **Cambiar nombre**
-aMuestra inicialmente el 
-`name`de la etiqueta . Se puede introducir un nuevo `name`.
+* **Cambiar nombre a**
+Muestra inicialmente el 
+`name`de la etiqueta . Un nuevo `name`puede introducirse.
 
-* seleccione **Guardar**
+* select **Guardar**
 
-### Combinación de tags {#merging-tags}
+### Combinación de etiquetas {#merging-tags}
 
 ![chlimage_1-199](assets/chlimage_1-199.png)
 
 Se pueden combinar etiquetas cuando una taxonomía tiene duplicados. Cuando la etiqueta A se combina con la etiqueta B, todas las páginas etiquetadas con la etiqueta A se etiquetarán con la etiqueta B y la etiqueta A ya no estará disponible para los autores.
 
-Cuando se selecciona un espacio de nombres u otra etiqueta, al seleccionar el icono **`Merge`**se abrirá un panel en el que se puede seleccionar la ruta de acceso en la que se va a combinar.
+Cuando se selecciona un área de nombres u otra etiqueta, se selecciona el **`Merge`**se abrirá un panel en el que se puede seleccionar la ruta en la que se va a combinar.
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
 * **Ruta**
 
-   *(readonly)* La ruta de la etiqueta seleccionada para combinarse en otra etiqueta.
+   *(solo lectura)* Ruta de la etiqueta seleccionada para combinarse en otra etiqueta.
 
-* **Combine**
-enExaminar para seleccionar la ruta de la etiqueta en la que desea combinar.
+* **Combinar en**
+Busque para seleccionar la ruta de la etiqueta en la que desea combinar.
 
 >[!NOTE]
 >
@@ -234,21 +238,21 @@ enExaminar para seleccionar la ruta de la etiqueta en la que desea combinar.
 
 ![chlimage_1-201](assets/chlimage_1-201.png)
 
-Cuando se selecciona un espacio de nombres u otra etiqueta, se selecciona el icono **`Publish`**para activar la etiqueta en el entorno de publicación. De forma similar al contenido de la página, solo se publica la etiqueta seleccionada, independientemente de si es una etiqueta contenedora o no.
+Cuando se selecciona un área de nombres u otra etiqueta, se selecciona el **`Publish`**icono para activar la etiqueta en el entorno de publicación. De forma similar al contenido de la página, solo se publica la etiqueta seleccionada, independientemente de si es una etiqueta contenedora o no.
 
-Para publicar una taxonomía (un área de nombres y subetiquetas), la práctica recomendada es crear un [paquete](/help/sites-administering/package-manager.md) del área de nombres (consulte [Nodo raíz de taxonomía](/help/sites-developing/framework.md#taxonomy-root-node)). Asegúrese de [aplicar permisos](#setting-tag-permissions) al espacio de nombres antes de crear el paquete.
+Para publicar una taxonomía (un área de nombres y subetiquetas), la práctica recomendada es crear una [paquete](/help/sites-administering/package-manager.md) del espacio de nombres (consulte [Nodo raíz de taxonomía](/help/sites-developing/framework.md#taxonomy-root-node)). Asegúrese de [aplicar permisos](#setting-tag-permissions) al espacio de nombres antes de crear el paquete.
 
 ### Cancelación de la publicación de etiquetas {#unpublishing-tags}
 
 ![chlimage_1-202](assets/chlimage_1-202.png)
 
-Cuando se selecciona un espacio de nombres u otra etiqueta, al seleccionar el icono **`Unpublish`**se desactiva la etiqueta en el entorno de creación y se elimina del entorno de publicación. De forma similar a la operación `Delete`, si la etiqueta seleccionada es una etiqueta contenedora, todas las etiquetas secundarias se desactivarán en el entorno de creación y se eliminarán del entorno de publicación.
+Cuando se selecciona un área de nombres u otra etiqueta, se selecciona el **`Unpublish`**desactivará la etiqueta en el entorno de creación y la eliminará del entorno de publicación. Similar a la variable `Delete`, si la etiqueta seleccionada es una etiqueta contenedora, todas las etiquetas secundarias se desactivarán en el entorno de creación y se eliminarán del entorno de publicación.
 
-### Eliminación de tags {#deleting-tags}
+### Eliminación de etiquetas {#deleting-tags}
 
 ![chlimage_1-203](assets/chlimage_1-203.png)
 
-Cuando se selecciona un espacio de nombres u otra etiqueta, al seleccionar el icono **`Delete`**se elimina permanentemente la etiqueta del entorno de creación. Si la etiqueta se publicó, también se elimina del entorno de publicación. Si la etiqueta seleccionada es una etiqueta contenedora, también se eliminarán todas sus etiquetas secundarias.
+Cuando se selecciona un área de nombres u otra etiqueta, se selecciona el **`Delete`**el icono elimina permanentemente la etiqueta del entorno de creación. Si la etiqueta se publicó, también se elimina del entorno de publicación. Si la etiqueta seleccionada es una etiqueta contenedora, también se eliminarán todas sus etiquetas secundarias.
 
 ## Configuración de permisos de etiquetas {#setting-tag-permissions}
 
@@ -257,15 +261,15 @@ Los permisos de etiquetas son [&#39;secure (de forma predeterminada)&#39;](/help
 * en instancia de autor
 
    * iniciar sesión con privilegios administrativos
-   * acceda a la [Consola de seguridad](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
+   * acceda al [Consola de seguridad](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
 
       * por ejemplo, vaya a http://localhost:4502/useradmin
-   * en el panel izquierdo, seleccione el grupo (o usuario) para el que se va a conceder [permiso de lectura](/help/sites-administering/security.md#permissions)
+   * en el panel izquierdo, seleccione el grupo (o usuario) para el que [leer permiso](/help/sites-administering/security.md#permissions) se concederá
    * en el panel derecho, busque **Ruta **al área de nombres de la etiqueta
 
       * por ejemplo, `/content/cq:tags/mycommunity`
-   * seleccione `checkbox`en la columna **Read**
-   * seleccione **Guardar**
+   * seleccione `checkbox`en el **Lectura** column
+   * select **Guardar**
 
 
 
@@ -273,23 +277,23 @@ Los permisos de etiquetas son [&#39;secure (de forma predeterminada)&#39;](/help
 
 * garantizar que todas las instancias de publicación tengan los mismos permisos
 
-   * un método es [crear un paquete](/help/sites-administering/package-manager.md#package-manager) del espacio de nombres en author
+   * un enfoque es [crear un paquete](/help/sites-administering/package-manager.md#package-manager) del espacio de nombres en el autor
 
-      * en la pestaña `Advanced`, para `AC Handling` seleccione `Overwrite`
+      * en `Advanced` para `AC Handling` select `Overwrite`
    * replicar el paquete
 
-      * elija `Replicate` en el gestor de paquetes
+      * elija `Replicate` del gestor de paquetes
 
 
-## Administración de tags en distintos idiomas {#managing-tags-in-different-languages}
+## Administración de etiquetas en diferentes idiomas {#managing-tags-in-different-languages}
 
-La propiedad `title`de una etiqueta puede traducirse a varios idiomas. Una vez traducida, la etiqueta apropiada `title`puede mostrarse según el idioma del usuario o el idioma de la página.
+La variable `title`La propiedad de una etiqueta puede traducirse a varios idiomas. Una vez traducida, la etiqueta apropiada `title`se pueden mostrar según el idioma del usuario o el idioma de la página.
 
-### Definición de títulos de tags en varios idiomas {#defining-tag-titles-in-multiple-languages}
+### Definición de títulos de etiquetas en varios idiomas {#defining-tag-titles-in-multiple-languages}
 
-A continuación se describe cómo traducir el `title`de la etiqueta **Animals** de inglés a alemán y francés.
+A continuación se describe cómo traducir la variable `title`de la etiqueta **Animales** de inglés a alemán y francés.
 
-Para empezar, seleccione la etiqueta en el espacio de nombres **Stock Photography** y seleccione el icono **`Edit`**(consulte la sección [Edición de etiquetas](#editing-tags)).
+Para empezar, seleccione la etiqueta en la sección **Fotografía de archivo** espacio de nombres y selección del **`Edit`**icono (consulte [Edición de etiquetas](#editing-tags) ).
 
 El panel Editar etiqueta presenta la capacidad de elegir los idiomas en los que se localizará el título de la etiqueta.
 
@@ -299,7 +303,7 @@ Una vez introducidas todas las traducciones, seleccione **Guardar **para salir d
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
-En general, el idioma elegido para la etiqueta se toma del idioma de la página, cuando está disponible. Cuando se utiliza la [ `tag` utilidad](/help/sites-developing/building.md#tagging-on-the-client-side) en otros casos (por ejemplo, en formularios o en cuadros de diálogo), el idioma de la etiqueta depende del contexto.
+En general, el idioma elegido para la etiqueta se toma del idioma de la página, cuando está disponible. Cuando la variable [ `tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) se utiliza en otros casos (por ejemplo, en formularios o en cuadros de diálogo), el idioma de la etiqueta depende del contexto.
 
 En lugar de utilizar la configuración de idioma de la página, la consola Etiquetado utiliza la configuración de idioma del usuario. En la consola Etiquetado, para la etiqueta &quot;Animals&quot;, se mostraba &quot;Animaux&quot; para un usuario que establecía el idioma en francés en sus propiedades de usuario.
 
@@ -309,7 +313,7 @@ Para agregar un nuevo idioma al cuadro de diálogo, consulte [Adición de un nue
 >
 >La nube de etiquetas y las palabras clave meta del componente de página estándar utilizan la etiqueta localizada `titles`en función del idioma de la página, si está disponible.
 
-## Medios {#resources}
+## Recursos {#resources}
 
 * [Etiquetado para desarrolladores](/help/sites-developing/tags.md)
 

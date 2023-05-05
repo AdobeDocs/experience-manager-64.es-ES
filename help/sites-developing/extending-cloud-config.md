@@ -6,14 +6,18 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: d2b8503e-8ac1-4617-ad76-b05d1e80a6b6
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '564'
-ht-degree: 3%
+source-wordcount: '600'
+ht-degree: 5%
 
 ---
 
 # Configuraciones de Cloud Service{#cloud-service-configurations}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Las configuraciones están diseñadas para proporcionar la lógica y estructura para almacenar configuraciones de servicio.
 
@@ -175,7 +179,7 @@ A continuación, la propiedad se cifrará automáticamente (utilizando la variab
    <td>Ruta de referencia a un componente que se incluirá automáticamente en la página.<br /> Se utiliza para funciones adicionales e inclusiones de JS.<br /> Esto incluye el componente en la página donde<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> se incluye (normalmente antes de <code>body</code> ).<br /> En caso de que el de Analytics y Target lo use para incluir funcionalidades adicionales, como llamadas de JavaScript para rastrear el comportamiento de los visitantes.</td> 
   </tr> 
   <tr> 
-   <td>Descripción</td> 
+   <td>description</td> 
    <td>Descripción breve del servicio.<br /> </td> 
   </tr> 
   <tr> 
@@ -214,7 +218,7 @@ A continuación, la propiedad se cifrará automáticamente (utilizando la variab
 Estos servicios se proporcionan de forma predeterminada:
 
 * [Fragmentos de rastreador](/help/sites-administering/external-providers.md) (Google, WebTrends, etc.)
-* [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
+* [API de Rest](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&amp;Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
 * [Dynamic Media](/help/sites-administering/marketing-cloud.md#integrating-with-scene)
 

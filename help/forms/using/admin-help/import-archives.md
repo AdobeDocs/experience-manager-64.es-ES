@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archiv
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
 exl-id: 12183806-5e00-46e8-bf25-5379a07a56a4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1454'
-ht-degree: 0%
+source-wordcount: '1490'
+ht-degree: 1%
 
 ---
 
 # Importar y administrar archivos {#import-and-manage-archives}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Utilice la pestaña de archivos para importar y administrar las LCA creadas en Workbench.
 

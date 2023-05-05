@@ -1,5 +1,5 @@
 ---
-title: Uso del repositorio de AEM Forms
+title: Trabajar con el repositorio de AEM Forms
 seo-title: Working with AEM Forms Repository
 description: Administre el repositorio de AEM Forms para crear carpetas, escribir, enumerar, leer, actualizar recursos y buscar recursos mediante la API de Java y la API de servicio web. Además, aprenda a crear relaciones de recursos, bloquear y eliminar recursos.
 seo-description: Manage AEM Forms repository to create folders, write, list, read, update resources, and search resources using the Java API and Web Service API. In addition, learn how to create resource relationships, lock and delete resources.
@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: e006c32b-edff-40f2-8c0a-228008dcf03a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '9110'
-ht-degree: 0%
+source-wordcount: '9146'
+ht-degree: 1%
 
 ---
 
-# Uso del repositorio de AEM Forms {#working-with-aem-forms-repository}
+# Trabajar con el repositorio de AEM Forms {#working-with-aem-forms-repository}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 **Acerca del Servicio de Repositorio**
 
@@ -113,7 +117,7 @@ Invoque el método del servicio Repositorio para crear la recopilación de recur
 
 Invoque el método del servicio Repositorio para escribir la recopilación de recursos, especificando el URI de la carpeta de destino.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Creación de carpetas mediante la API de Java](aem-forms-repository.md#create-folders-using-the-java-api)
 
@@ -160,7 +164,7 @@ Cree una carpeta utilizando la API de servicio del repositorio (Java):
 
    El método devuelve una instancia de la `com.adobe.repository.infomodel.bean.Resource` objeto. Por ejemplo, puede recuperar el valor de identificador del nuevo recurso invocando la variable `com.adobe.repository.infomodel.bean.Resource` del objeto `getId` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Creación de carpetas](aem-forms-repository.md#creating-folders)
 
@@ -200,7 +204,7 @@ Cree una carpeta utilizando la API de servicio del repositorio (servicio web):
    * La variable `ResourceCollection` que representa la carpeta.
    * Pass `null` para los otros dos parámetros.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Creación de carpetas](aem-forms-repository.md#creating-folders)
 
@@ -253,7 +257,7 @@ Invoque el método del servicio Repositorio para crear contenido de recursos y a
 
 Invoque el método del servicio Repositorio para escribir el recurso, especificando el URI de la carpeta de destino.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Escribir recursos mediante la API de Java](aem-forms-repository.md#write-resources-using-the-java-api)
 
@@ -306,7 +310,7 @@ Escriba un recurso utilizando la API de servicio del repositorio (Java):
 
    Invocar el `ResourceRepositoryClient` del objeto `writeResource` y pase el URI de la carpeta, así como el `Resource` objeto.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Escribir recursos](aem-forms-repository.md#writing-resources)
 
@@ -355,7 +359,7 @@ Escriba un recurso utilizando la API de servicio del repositorio (servicio web):
 
    Invocar el `RepositoryServiceService` del objeto `writeResource` y pase el URI de la carpeta, así como el `Resource` objeto. Pass `null` para los otros dos parámetros.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Escribir recursos](aem-forms-repository.md#writing-resources)
 
@@ -398,7 +402,7 @@ Cree una cadena que contenga la ruta de la carpeta que contiene los recursos. La
 
 Invoque el método Repository service para recuperar la lista de recursos, especificando la ruta de la carpeta de destino.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Enumerar recursos mediante la API de Java](aem-forms-repository.md#list-resources-using-the-java-api)
 
@@ -432,7 +436,7 @@ Enumerar recursos utilizando la API de servicio de Repositorio (Java):
 
    El método devuelve un valor `java.util.List` de `com.adobe.repository.infomodel.bean.Resource` objetos que son el origen de un `com.adobe.repository.infomodel.bean.Relation` de tipo `Relation.TYPE_MEMBER_OF` y tengan el URI de recopilación de recursos como destino. Puede iterar a través de esta `List` para recuperar cada uno de los recursos. En este ejemplo, se muestra el nombre y la descripción de cada recurso.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Listing Resources](aem-forms-repository.md#listing-resources).
 
@@ -465,7 +469,7 @@ Enumerar recursos utilizando la API de servicio del Repositorio (servicio web):
 
    El método devuelve una matriz de objetos que se pueden convertir en `Resource` objetos. Puede iterar a través de la matriz de objetos para recuperar cada uno de los recursos relacionados. En este ejemplo, se muestra el nombre y la descripción de cada recurso.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Listing Resources](aem-forms-repository.md#listing-resources).
 
@@ -515,7 +519,7 @@ Cree una cadena que contenga el URI del recurso que se va a leer. La sintaxis in
 
 Invoque el método del servicio Repositorio para leer el recurso, especificando el URI.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Leer recursos mediante la API de Java](aem-forms-repository.md#read-resources-using-the-java-api)
 
@@ -547,7 +551,7 @@ Lea un recurso utilizando la API de servicio del repositorio (Java):
 
    Invocar el `ResourceRepositoryClient` del objeto `readResource` y pase el URI del recurso como parámetro. Este método devuelve un `Resource` que representa el recurso.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Leer recursos](aem-forms-repository.md#reading-resources)
 
@@ -578,7 +582,7 @@ Lea un recurso utilizando la API de servicio del repositorio (servicio web):
 
    Invocar el `RepositoryServiceService` del objeto `readResource` y pase el URI del recurso como el primer parámetro. Pass `null` para los otros dos parámetros.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Leer recursos](aem-forms-repository.md#reading-resources)
 
@@ -625,7 +629,7 @@ Lea el recurso . Para obtener más información, consulte [Leer recursos](aem-fo
 
 Defina la nueva información en el recurso e invoque el método del servicio Repositorio para actualizar el recurso, especificando el URI, el recurso actualizado y cómo se debe actualizar la información de la versión.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Actualización de recursos mediante la API de Java](aem-forms-repository.md#update-resources-using-the-java-api)
 
@@ -663,7 +667,7 @@ Actualice un recurso utilizando la API de servicio del repositorio (Java):
    * La variable `Resource` que contiene la información actualizada del recurso.
    * A `boolean` que indica si se debe actualizar la versión principal o secundaria. En este ejemplo, un valor de `true` se transfiere para indicar que la versión principal se va a incrementar.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Actualización de recursos](aem-forms-repository.md#updating-resources)
 
@@ -701,7 +705,7 @@ Actualice un recurso mediante la API del repositorio (servicio web):
    * A `boolean` que indica si se debe actualizar la versión principal o secundaria. En este ejemplo, un valor de `true` se transfiere para indicar que la versión principal se va a incrementar.
    * Pass `null` para los dos parámetros restantes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Actualización de recursos](aem-forms-repository.md#updating-resources)
 
@@ -774,7 +778,7 @@ Busque los recursos utilizando la carpeta , la consulta y el orden de clasificac
 
 Repita la lista de recursos devueltos y extraiga la información para un procesamiento posterior.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Buscar recursos mediante la API de Java](aem-forms-repository.md#search-for-resources-using-the-java-api)
 
@@ -843,7 +847,7 @@ Busque un recurso utilizando la API de servicio del repositorio (Java):
 
    Para recuperar los recursos contenidos en el resultado de la búsqueda, repita el `List` y convertir cada objeto en un `Resource` para extraer su información. En este ejemplo, se muestra el nombre de cada recurso.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Búsqueda de recursos](aem-forms-repository.md#searching-for-resources)
 
@@ -894,7 +898,7 @@ Cree cadenas que contengan los URI del recurso que desea relacionar. La sintaxis
 
 Invoque el método del servicio Repositorio para crear y especificar el tipo de relación.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Creación de recursos de relación mediante la API de Java](aem-forms-repository.md#create-relationship-resources-using-the-java-api)
 
@@ -939,7 +943,7 @@ Cree recursos de relación utilizando la API Java del servicio Repositorio, real
 
    La variable `getRelated` el método devuelve un `java.util.List` de `Resource` objetos a través de los cuales se puede iterar para recuperar cada uno de los recursos relacionados, moldeando los objetos contenidos en la variable `List` a `Resource` como usted lo hace. En este ejemplo, `testResource2` se espera que esté en la lista de recursos devueltos.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Creación de Relaciones de Recursos](aem-forms-repository.md#creating-resource-relationships)
 
@@ -988,7 +992,7 @@ Cree recursos de relación utilizando la API del repositorio (servicio web):
 
    La variable `getRelated` devuelve una matriz de objetos que se pueden convertir en `Resource` objetos a través de los cuales puede iterar para recuperar cada uno de los recursos relacionados. En este ejemplo, `testResource2` se espera que esté en la lista de recursos devueltos.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Creación de Relaciones de Recursos](aem-forms-repository.md#creating-resource-relationships)
 
@@ -1043,7 +1047,7 @@ Invoque el método del servicio Repositorio para recuperar los bloqueos del recu
 
 Invoque el método del servicio Repositorio para desbloquear el recurso, especificando el URI.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Bloqueo de recursos mediante la API de Java](aem-forms-repository.md#lock-resources-using-the-java-api)
 
@@ -1091,7 +1095,7 @@ Bloqueo de recursos mediante la API de servicio del Repositorio (Java):
 
    Invocar el `ResourceRepositoryClient` del objeto `unlockResource` y pase el URI del recurso como parámetro. Para obtener más información, consulte la [Referencia de la API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Bloqueo de recursos](aem-forms-repository.md#locking-resources)
 
@@ -1136,7 +1140,7 @@ Bloqueo de recursos mediante la API de servicio del Repositorio (servicio web):
 
    Invocar el `RepositoryServiceService` del objeto `unlockResource` y pase el URI del recurso como el primer parámetro y `null` para el segundo parámetro.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Bloqueo de recursos](aem-forms-repository.md#locking-resources)
 
@@ -1185,7 +1189,7 @@ Cree una cadena que contenga el URI del recurso que se va a eliminar. La sintaxi
 
 Invoque el método del servicio Repositorio para eliminar el recurso, especificando el URI.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Eliminación de recursos mediante la API de Java](aem-forms-repository.md#delete-resources-using-the-java-api-soap)
 
@@ -1217,7 +1221,7 @@ Elimine un recurso mediante la API del repositorio (Java):
 
    Invocar el `ResourceRepositoryClient` del objeto `deleteResource` y pase el URI del recurso como parámetro.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Eliminación de recursos](aem-forms-repository.md#deleting-resources)
 
@@ -1248,7 +1252,7 @@ Elimine un recurso mediante la API del repositorio (servicio web):
 
    Invocar el `RepositoryServiceService` del objeto `deleteResources` método y pasar una `System.String` matriz que contiene el URI del recurso como el primer parámetro. Pass `null` para el segundo parámetro.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Eliminación de recursos](aem-forms-repository.md#deleting-resources)
 

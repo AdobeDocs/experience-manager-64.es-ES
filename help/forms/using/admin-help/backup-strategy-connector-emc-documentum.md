@@ -1,5 +1,5 @@
 ---
-title: Estrategia de Backup para Usuarios de Connector para Documentum de EMC
+title: Estrategia de copia de seguridad para usuarios de Connector para Documentum de EMC
 seo-title: Backup strategy for Connector for EMC Documentum users
 description: Consulte cómo crear una estrategia de backup para los usuarios de Documentum de EMC en Connector.
 seo-description: Check how to create a backup strategy for Connector for EMC Documentum users.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e83b1a59-a730-4d22-9d58-1c9c38e5d534
 exl-id: 933c3903-2040-41f4-b803-4d672ce9a2dc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '156'
-ht-degree: 0%
+source-wordcount: '192'
+ht-degree: 12%
 
 ---
 
-# Estrategia de Backup para Usuarios de Connector para Documentum de EMC {#backup-strategy-for-connector-for-emc-documentum-users}
+# Estrategia de copia de seguridad para usuarios de Connector para Documentum de EMC {#backup-strategy-for-connector-for-emc-documentum-users}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Si tiene instalado Connector para Documentum de EMC, además de las instrucciones de este capítulo, su estrategia de backup y recuperación debe incluir backup (o recuperación) del equipo en el que está instalado el sistema ECM correspondiente. (Consulte la documentación de Documentum de ECM).
 

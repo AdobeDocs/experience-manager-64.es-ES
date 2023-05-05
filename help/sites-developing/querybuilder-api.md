@@ -4,14 +4,18 @@ seo-title: Query Builder API
 description: La funcionalidad del Generador de consultas de Asset Share se expone a través de una API de Java y una API de REST.
 seo-description: The functionality of the Asset Share Query Builder is exposed through a Java API and a REST API.
 exl-id: ff305c6d-c11e-4e1c-b262-4802b4f54592
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2312'
+source-wordcount: '2348'
 ht-degree: 0%
 
 ---
 
 # API del Generador de consultas{#query-builder-api}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 La funcionalidad de la variable [Generador de consultas de uso compartido de recursos](/help/assets/assets-finder-editor.md) se expone a través de una API de Java y una API de REST. En esta sección se describen estas API.
 
@@ -301,7 +305,7 @@ property.value=Triangle
 p.hits=full
 ```
 
-Uso de
+Uso
 
 ```
 p.hits=selective

@@ -1,5 +1,5 @@
 ---
-title: Sincronización de directorios
+title: Sincronizar directorios
 seo-title: Synchronizing directories
 description: Obtenga información sobre cómo sincronizar la base de datos de Administración de usuarios con los cambios realizados en los servidores de directorios de origen mediante la sincronización manual o programada.
 seo-description: Learn how to synchronize the User Management database with changes to the source directory servers using manual or scheduled synchronization.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
 exl-id: d6b2f389-bff4-481d-93bf-87f56114a91b
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '980'
-ht-degree: 0%
+source-wordcount: '1016'
+ht-degree: 1%
 
 ---
 
-# Sincronización de directorios {#synchronizing-directories}
+# Sincronizar directorios {#synchronizing-directories}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Para sincronizar dominios, puede elegir realizar una sincronización manual o programada. A *sincronización manual* sincroniza los dominios seleccionados. A *sincronización programada* sincroniza todos los dominios.
 

@@ -1,5 +1,5 @@
 ---
-title: Creación y administración de políticas
+title: Crear y administrar directivas
 seo-title: Creating and managing policies
 description: Una directiva es un conjunto de configuraciones de confidencialidad y usuarios que pueden acceder a un documento al que se aplica la directiva. Puede crear y administrar varios tipos de políticas mediante AEM formularios.
 seo-description: A policy is a set of confidentiality settings and users who can access a document to which the policy is applied. You can create and manage various types of policies using AEM forms.
@@ -11,14 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: fa054d30-c7dc-4b64-acf1-cbcbe8827df5
 feature: Document Security
 exl-id: a4e69794-ea83-4cb6-a3da-cef0ceb6892a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4718'
-ht-degree: 0%
+source-wordcount: '4754'
+ht-degree: 1%
 
 ---
 
-# Creación y administración de políticas {#creating-and-managing-policies}
+# Crear y administrar directivas {#creating-and-managing-policies}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 A *directiva* define un conjunto de configuraciones de confidencialidad y usuarios que pueden acceder a un documento al que se aplica la política. A *conjunto de directivas* se usa para agrupar un conjunto de directivas que tienen un propósito comercial común. Estos conjuntos de políticas se ponen a disposición de un subconjunto de usuarios del sistema. Para obtener más información sobre las directivas, consulte [Políticas y documentos protegidos por políticas](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
 
@@ -283,7 +287,7 @@ El área Configuración avanzada inmodificable contiene las siguientes opciones 
 **Algoritmo de codificación y longitud de clave:** Se utiliza para proteger los documentos. Puede elegir entre estas opciones:
 
 * AES de 128 bits
-* AES de 256 bits. Solo Acrobat 9.0 y versiones posteriores admiten esta opción. Para utilizar el cifrado AES 256 para archivos PDF, obtenga e instale los archivos de la Extensión de cifrado de Java (JCE) de directivas de jurisdicción de fuerza ilimitada (Unlimited Strength Jurisdiction. Estos archivos reemplazan los archivos local_policy.jar y US_export_policy.jar en la [JAVE_HOME]carpeta /lib/security. Por ejemplo, si está utilizando Sun JDK 1.6, copie los archivos descargados en el [raíz de dep]/Java/jdk1.6.0_26/lib/security . Puede descargar estos archivos desde [Descargas de Java SE](https://java.sun.com/javase/downloads/index.jsp).
+* AES de 256 bits. Solo Acrobat 9.0 y versiones posteriores admiten esta opción. Para utilizar el cifrado AES 256 en archivos PDF, obtenga e instale los archivos de política de jurisdicción de fuerza ilimitada de la Extensión de criptografía de Java (JCE). Estos archivos reemplazan los archivos local_policy.jar y US_export_policy.jar en la [JAVE_HOME]carpeta /lib/security. Por ejemplo, si está utilizando Sun JDK 1.6, copie los archivos descargados en el [raíz de dep]/Java/jdk1.6.0_26/lib/security . Puede descargar estos archivos desde [Descargas de Java SE](https://java.sun.com/javase/downloads/index.jsp).
 * Sin cifrado. Actualmente, Acrobat 9.0 y las versiones posteriores admiten esta opción. Si selecciona esta opción, las opciones de Restricciones del documento se desactivan. Esta opción puede resultar útil si desea utilizar la seguridad del documento para la auditoría de documentos o el control de versiones, pero no desea cifrar el documento.
 
 **Restricciones de documentos:** Seleccione los componentes del documento del PDF que desea codificar. Otras aplicaciones cliente cifran todo el documento, pero no los archivos vinculados o incrustados. Puede elegir entre estas opciones:

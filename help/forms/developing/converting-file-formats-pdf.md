@@ -11,18 +11,22 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 79091a75-2669-453f-9560-e58bfffa3487
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '7872'
+source-wordcount: '7908'
 ht-degree: 0%
 
 ---
 
 # Conversión entre formatos de archivo y PDF {#converting-between-file-formatsand-pdf}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
 **Acerca del servicio Generar PDF**
 
-El servicio Generate PDF convierte los formatos de archivo nativos a PDF. También convierte el PDF a otros formatos de archivo y optimiza el tamaño de los documentos del PDF.
+El servicio Generate PDF convierte los formatos de archivo nativos a PDF. También convierte PDF a otros formatos de archivo y optimiza el tamaño de los documentos PDF.
 
 El servicio Generate PDF utiliza aplicaciones nativas para convertir los siguientes formatos de archivo al PDF. A menos que se indique lo contrario, solo se admiten las versiones en alemán, francés, inglés y japonés de estas aplicaciones. *Solo Windows* indica que solo es compatible con Windows Server® 2003 y Windows Server 2008.
 
@@ -58,7 +62,7 @@ El servicio Generate PDF convierte los siguientes formatos de archivo basados en
 
 El servicio Generar PDF convierte el PDF a los siguientes formatos de archivo (solo Windows):
 
-* Encapsulated PostScript (EPS)
+* PostScript encapsulado (EPS)
 * HTML3.2
 * HTML 4.01 con CSS 1.0
 * DOC (formato Microsoft Word)
@@ -128,7 +132,7 @@ Después de crear el cliente de servicio Generar PDF, puede invocar la variable 
 
 Una vez convertido el archivo en un documento PDF, puede recuperar los resultados. Por ejemplo, después de convertir un archivo de Word en un documento PDF, puede recuperar y guardar el documento PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Convertir documentos de Word en documentos de PDF mediante la API de Java](converting-file-formats-pdf.md#convert-word-documents-to-pdf-documents-using-the-java-api)
 
@@ -185,7 +189,7 @@ Convierta un documento de Microsoft Word en un documento de PDF mediante la API 
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` método para extraer el documento de registro.
 
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](converting-file-formats-pdf.md#summary-of-steps)
 
@@ -249,7 +253,7 @@ Convierta un documento de Microsoft Word en un documento de PDF mediante la API 
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en un archivo de PDF invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](converting-file-formats-pdf.md#summary-of-steps)
 
@@ -295,7 +299,7 @@ Después de crear el cliente de servicio, puede invocar la operación de creaci�
 
 Una vez que el contenido del HTML se convierte en un documento de PDF, puede recuperar los resultados y guardar el documento de PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Conversión de contenido de HTML en un documento de PDF mediante la API de Java](converting-file-formats-pdf.md#convert-html-content-to-a-pdf-document-using-the-java-api)
 
@@ -340,7 +344,7 @@ Convierta un documento de HTML en un documento de PDF mediante la API Generar PD
    * Invocar el `HtmlToPdfResult` del objeto `getCreatedDocument` método. Esto devuelve un `com.adobe.idp.Document` objeto.
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` para extraer el documento del PDF del objeto creado en el paso anterior.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Conversión de documentos del HTML a documentos del PDF](converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents)
 
@@ -399,7 +403,7 @@ Convierta el contenido del HTML en un documento del PDF mediante la API de gener
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en un archivo de PDF invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Conversión de documentos del HTML a documentos del PDF](converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents)
 
@@ -445,7 +449,7 @@ Después de crear el cliente de servicio, puede invocar la operación de exporta
 
 Guarde el archivo convertido. Por ejemplo, si convierte un documento PDF en un archivo RTF, guarde el documento convertido en un archivo RTF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Conversión de un documento PDF en un archivo RTF mediante la API de Java](converting-file-formats-pdf.md#convert-a-pdf-document-to-a-rtf-file-using-the-java-api)
 
@@ -493,7 +497,7 @@ Convierta un documento PDF en un archivo RTF usando la API Generar PDF (Java):
    * Invocar el `ExportPDFResult` del objeto `getConvertedDocument` método. Esto devuelve un `com.adobe.idp.Document` objeto.
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` para extraer el nuevo documento.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](converting-file-formats-pdf.md#summary-of-steps)
 
@@ -554,7 +558,7 @@ Convierta un documento PDF en un archivo RTF usando la API Generar PDF (servicio
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en un archivo RTF invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](converting-file-formats-pdf.md#summary-of-steps)
 

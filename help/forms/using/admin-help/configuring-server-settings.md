@@ -1,5 +1,5 @@
 ---
-title: Configuración del servidor
+title: Configurar el servidor
 seo-title: Configuring Server Settings
 description: La página Configuración del servidor proporciona acceso al correo electrónico, la notificación de tareas y la configuración de notificación del administrador.
 seo-description: The Server Settings page provides access to email, task notification and administrator notification settings.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 7933efeb-618a-4c38-8e5e-593be8ebb00c
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2625'
-ht-degree: 0%
+source-wordcount: '2661'
+ht-degree: 1%
 
 ---
 
-# Configuración del servidor {#configuring-server-settings}
+# Configurar el servidor {#configuring-server-settings}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 La página Configuración del servidor proporciona acceso a varias configuraciones para el flujo de trabajo de formularios:
 

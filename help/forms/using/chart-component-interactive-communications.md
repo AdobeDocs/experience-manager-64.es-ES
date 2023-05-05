@@ -1,5 +1,5 @@
 ---
-title: Uso de gráficos en Interactive Communications
+title: Usar gráficos en comunicaciones interactivas
 seo-title: Chart component in Interactive Communications
 description: Mediante gráficos de una comunicación interactiva, puede condensar grandes cantidades de información en un formato visual fácil de analizar y comprender
 seo-description: AEM Forms provides a chart component that you can use to create charts in your Interactive Communication. This document explains basic and agent configurations of the chart component.
@@ -10,18 +10,22 @@ topic-tags: interactive-communications
 discoiquuid: 16c7e698-258d-4e63-9828-f538dc7d3294
 feature: Interactive Communication
 exl-id: 99077042-cba9-4429-b1e0-830739de5939
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2390'
-ht-degree: 0%
+source-wordcount: '2426'
+ht-degree: 31%
 
 ---
 
-# Uso de gráficos en Interactive Communications {#using-charts-in-interactive-communications}
+# Usar gráficos en comunicaciones interactivas {#using-charts-in-interactive-communications}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Mediante gráficos de una comunicación interactiva, puede condensar grandes cantidades de información en un formato visual fácil de analizar y comprender
 
-Un gráfico o un gráfico es una representación visual de los datos. Condensa grandes cantidades de información en un formato visual fácil de entender, lo que permite a los destinatarios de la comunicación interactiva visualizar, interpretar y analizar mejor los datos complejos.
+Un gráfico es una representación visual de los datos. Condensa grandes cantidades de información en un formato visual fácil de entender, lo que permite a los destinatarios de la comunicación interactiva visualizar, interpretar y analizar mejor los datos complejos.
 
 Mientras crea una comunicación interactiva, puede agregar gráficos para representar visualmente los datos bidimensionales del modelo de datos de formulario de la comunicación interactiva. El componente Gráfico permite añadir y configurar los siguientes tipos de gráficos:
 
@@ -49,10 +53,10 @@ Complete los siguientes pasos para agregar un gráfico a una comunicación inter
 
    La barra lateral Propiedades aparece con las propiedades básicas del gráfico enfocado.
 
-   ![Propiedades básicas de un gráfico de tipo de línea en el canal de impresión](assets/chart_basicproperties.png)
+   ![Propiedades básicas de un gráfico de tipo línea en el canal Imprimir](assets/chart_basicproperties.png)
    **Figura:** *Propiedades básicas de un gráfico de tipo de línea en el canal de impresión*
 
-   ![Propiedades básicas de un gráfico de tipo de línea en el canal web](assets/basicpropertieswebchannel.png)
+   ![Propiedades básicas de un gráfico de tipo línea en el canal Web](assets/basicpropertieswebchannel.png)
    **Figura:** *Propiedades básicas de un gráfico de tipo de línea en el canal web*
 
 1. Configure las propiedades básicas del gráfico para el canal de impresión y el canal web. Aparte de las propiedades comunes, existen propiedades específicas para la impresión y el canal web y el tipo de gráfico.
@@ -82,11 +86,11 @@ Complete los siguientes pasos para agregar un gráfico a una comunicación inter
 
 1. Vuelva a realizar otros cambios en la Comunicación interactiva.
 
-## Ejemplo 1: Salida de gráfico en impresión y web {#chartoutputprintweb}
+## Ejemplo 1: Salida de gráfico en imprimir y web {#chartoutputprintweb}
 
 En la ficha Básico , se define el tipo de gráfico, las propiedades del modelo de datos del formulario de origen que contienen datos, las etiquetas que se van a trazar en el eje x y el eje y del gráfico y, opcionalmente, la función estadística para calcular los valores para trazar en el gráfico.
 
-Comprendamos en detalle la información mínima requerida en las propiedades básicas, con la ayuda de un extracto de tarjeta de crédito generado mediante una Comunicación interactiva. Tenga en cuenta que desea generar un gráfico para mostrar la cantidad de gastos diferentes en el estado. Desea utilizar diferentes tipos de gráficos para la impresión y la salida web de la comunicación interactiva.
+Comprendamos en detalle la información mínima requerida en las propiedades básicas, con la ayuda de un extracto de tarjeta de crédito generado mediante una Comunicación interactiva. Imagine que quiere generar un gráfico para mostrar la cantidad de gastos diferentes en la instrucción. Quiere utilizar diferentes tipos de gráficos para la impresión y la salida web de la comunicación interactiva.
 
 Para lograr esto, debe especificar:
 
@@ -107,22 +111,22 @@ Para lograr esto, debe especificar:
 
 **A.** Se establece la propiedad Radio interior del anillo **B.** Mostrar la propiedad Leyenda está seleccionada y la propiedad Posición de Leyenda está establecida a la derecha **C.** La información del objeto muestra el detalle del elemento al pasar el ratón sobre él: La información del objeto está establecida en ${x}: ${y}
 
-## Ejemplo 2: Aplicación de las funciones Suma y Frecuencia en un gráfico de líneas {#applicationsumfrequency}
+## Ejemplo 2: Aplicar las funciones Suma y Frecuencia en un gráfico de líneas {#applicationsumfrequency}
 
-Al aplicar funciones en un gráfico, se pueden representar datos que el modelo de datos de formulario no proporciona directamente. En este ejemplo, utilizamos un ejemplo de extracto de tarjetas de crédito para comprender cómo se pueden aplicar las funciones Suma y Frecuencia al gráfico.
+Al aplicar funciones en un gráfico, se pueden representar datos que el modelo de datos de formulario no proporciona directamente. En este ejemplo, utilizamos un ejemplo de instrucción de un extracto de tarjetas de crédito para comprender cómo se pueden aplicar las funciones Suma y Frecuencia al gráfico.
 
 ![Gráfico de líneas sin función con tres transacciones &quot;Bed and Breakfast&quot;](assets/creditcarddatalinechartcopy.png)
 **Figura:** *Gráfico de líneas sin función con tres transacciones &quot;Bed and Breakfast&quot;*
 
-### Función Sum {#sum-function}
+### Función Suma {#sum-function}
 
-Puede aplicar la función sum para agregar valores de varias instancias de la misma propiedad de datos y mostrarlos solo una vez. Por ejemplo, en el gráfico siguiente, la función Suma se aplica en el eje Y para sumar la cantidad de las tres transacciones de Bed and Breakfast (99,45 dólares, 78 dólares y 12 dólares) y mostrar solo una transacción (189,45 dólares).
+Puede aplicar la función Suma para agregar valores de varias instancias de la misma propiedad de datos y mostrarlos solo una vez. Por ejemplo, en el gráfico siguiente, la función Suma se aplica en el eje Y para sumar la cantidad de las tres transacciones de Bed and Breakfast (99,45 dólares, 78 dólares y 12 dólares) y mostrar solo una transacción (189,45 dólares).
 
-La función Sum puede hacer que el gráfico sea más útil cuando desea recopilar y mostrar la suma para muchas instancias de la misma propiedad de datos.
+La función Suma puede hacer que el gráfico sea más útil cuando desea recopilar y mostrar la suma para muchas instancias de la misma propiedad de datos.
 
 ![creditcardchartsumfunctioncopy](assets/creditcardchartsumfunctioncopy.png)
 
-### Función de frecuencia {#frequency-function}
+### Función Frecuencia {#frequency-function}
 
 La función Frequency devuelve el número de valores en los ejes X o Y para un valor determinado en el otro eje. Con la aplicación de la función Frequency en el eje y (Amount/TransAmount), el gráfico muestra que ha habido tres ocurrencias de transacciones de Bed and Breakfast y una ocurrencia del resto de tipos de transacciones.
 
@@ -162,11 +166,11 @@ En la ficha Básico , puede configurar las siguientes propiedades:
 
 >[!NOTE]
 >
->Puede controlar la anchura del gráfico en el canal web mediante la capa de estilo o aplicando un tema.
+>Puede controlar la anchura del gráfico en el canal Web mediante la capa de estilo o al aplicar una temática.
 
 **Información del objeto (solo canal web)** Especifica el formato en el que aparece la información de objeto al pasar el ratón sobre un punto de datos del gráfico en el canal web. El valor predeterminado es \${x}(\${y}). Según el tipo de gráfico, cuando señala el ratón sobre un punto, barra o fracción del gráfico, las variables \${x} y \${y} se sustituyen de forma dinámica por los valores correspondientes del eje x y del eje y y y se muestran en la información del objeto.
 
-Para desactivar la información del objeto, deje el campo Información del objeto en blanco. Esta opción no se aplica a los gráficos de líneas y áreas. Por ejemplo, consulte [Ejemplo 1: Salida de gráfico en impresión y web](#chartoutputprintweb).
+Para deshabilitar la información del objeto, deje en blanco el campo Información del objeto. Esta opción no se aplica a los gráficos de líneas y áreas. Por ejemplo, consulte [Ejemplo 1: Salida de gráfico en imprimir y web](#chartoutputprintweb).
 
 **Clase CSS (solo canal web)** Especifique el nombre de una clase CSS en el campo de clase CSS para aplicar estilo personalizado al gráfico.
 
@@ -184,7 +188,7 @@ Para desactivar la información del objeto, deje el campo Información del objet
 
 * **Color de área**: disponible para gráficos de área para especificar el valor hexadecimal del color para el área bajo la línea del gráfico.
 
-## Uso de funciones en el gráfico {#usefunction}
+## Usar funciones en el gráfico {#usefunction}
 
 Puede configurar un gráfico para que utilice funciones estadísticas a fin de calcular los valores a partir de los datos de origen para trazar en el gráfico. Al aplicar funciones en un gráfico, se pueden representar datos que el modelo de datos de formulario no proporciona directamente.
 
@@ -198,11 +202,11 @@ Aunque el componente Gráfico incluye algunas funciones integradas, puede escrib
 
 ### Funciones predeterminadas {#default-functions}
 
-Las siguientes funciones están disponibles de forma predeterminada con el componente Gráfico :
+Las siguientes funciones están disponibles de forma predeterminada con el componente Gráfico:
 
-**Media (media)** Devuelve el promedio de los valores del eje X o Y para un valor determinado del otro eje.
+**Media (media)** Devuelve la media de los valores del eje X o Y para un valor determinado del otro eje.
 
-**Sum** Devuelve la suma de todos los valores del eje X o Y para un valor determinado del otro eje.
+**Suma** Devuelve la suma de todos los valores del eje X o Y para un valor determinado del otro eje.
 
 **Máximo** Devuelve el máximo de los valores del eje X o Y para un valor determinado del otro eje.
 
@@ -216,9 +220,9 @@ Las siguientes funciones están disponibles de forma predeterminada con el compo
 
 **Modo** Devuelve el valor con la mayoría de las incidencias en el eje X o Y para un valor determinado en el otro eje
 
-### Funciones personalizadas en el canal web {#custom-functions-in-web-channel}
+### Funciones personalizadas en el canal Web {#custom-functions-in-web-channel}
 
-Además de utilizar las funciones predeterminadas en los gráficos, puede escribir funciones personalizadas en JavaScript™ y ponerlas a disposición en la lista de funciones del componente Gráfico para el canal web.
+Además de utilizar las funciones predeterminadas en los gráficos, puede escribir funciones personalizadas en JavaScript™ y ponerlas a disposición en la lista de funciones del componente Gráfico para el canal Web.
 
 Una función toma una matriz o valores y un nombre de categoría como entradas y devuelve un valor. Por ejemplo:
 
@@ -234,15 +238,15 @@ Multiply(valueArray, category) {
 
 Una vez que haya escrito una función personalizada, haga lo siguiente para que esté disponible para usarla en la configuración del gráfico:
 
-1. Añada la función personalizada en la biblioteca de cliente asociada a la comunicación interactiva correspondiente. Para obtener más información, consulte [Configuración de la acción Enviar](/help/forms/using/configuring-submit-actions.md) y [Uso de bibliotecas del lado del cliente](/help/sites-developing/clientlibs.md).
+1. Agregue la función personalizada en la biblioteca de cliente asociada a la comunicación interactiva correspondiente. Para obtener más información, consulte [Configurar la acción Enviar](/help/forms/using/configuring-submit-actions.md) y [Usar bibliotecas del lado del cliente](/help/sites-developing/clientlibs.md).
 
-1. Para mostrar la función personalizada en la lista desplegable Función, en CRXDe Lite, cree un `nt:unstructured` en la carpeta apps con las siguientes propiedades:
+1. Para mostrar la función personalizada en la lista desplegable Función, en CRXDe Lite, cree un nodo `nt:unstructured` en la carpeta apps con las siguientes propiedades:
 
-   * Agregar propiedad `guideComponentType` con valor como `fd/af/reducer`. (mandatory)
-   * Agregar propiedad `value` a un nombre completo de la función personalizada JavaScript™. (obligatorio) y establezca su valor en el nombre de la función personalizada, como Multiply.
-   * Agregar propiedad `jcr:description` con el valor que desea mostrar como nombre de la función personalizada que aparece en la lista desplegable Función. Por ejemplo, **Multiplicar**.
-   * Agregar propiedad `qtip` con valor que será una breve descripción de la función personalizada. Aparece como información de objeto al pasar el puntero sobre el nombre de función en la variable **Función** lista desplegable.
+   * Agregar propiedad `guideComponentType` con valor como `fd/af/reducer`. (obligatorio)
+   * Agregue la propiedad `value` a un nombre completo de la función personalizada JavaScript™. (obligatorio) y establezca su valor en el nombre de la función personalizada, como Multiplicar.
+   * Agregue la propiedad `jcr:description` con el valor que desea mostrar como nombre de la función personalizada que aparece en la lista desplegable Función. Por ejemplo, **Multiplicar**.
+   * Agregue la propiedad `qtip` con valor que será una breve descripción de la función personalizada. Aparece como información del objeto al pasar el puntero sobre el nombre de la función en la lista desplegable **Función**.
 
 1. Haga clic en **Guardar todo** para guardar la configuración.
 
-La función ahora está disponible para su uso en el gráfico.
+La función ahora está disponible para usarla en el gráfico.

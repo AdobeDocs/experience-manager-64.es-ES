@@ -1,5 +1,5 @@
 ---
-title: Agrupación de Portfolio PDF
+title: Agrupar portfolios PDF
 seo-title: Assembling PDF Portfolios
 description: Ensamble un portafolio de PDF para combinar varios documentos de varios tipos, incluidos archivos de palabra, archivos de imagen y documentos de PDF. Puede ensamblar un portafolio de PDF mediante una API de Java y una API de servicio web.
 seo-description: Assemble a PDF portfolio to combine several documents of various types, including word file, image files, and PDF documents. You can assemble a PDF portfolio using a Java API and a Web Service API.
@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 role: Developer
 exl-id: 767d89bc-d243-46a1-a954-9977f4906566
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1814'
-ht-degree: 0%
+source-wordcount: '1850'
+ht-degree: 1%
 
 ---
 
-# Agrupación de Portfolio PDF {#assembling-pdf-portfolios}
+# Agrupar portfolios PDF {#assembling-pdf-portfolios}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede ensamblar un Portfolio PDF mediante el JRE del ensamblador y la API de servicio web. Un portafolio puede combinar varios documentos de distintos tipos, incluidos archivos de palabra, archivos de imagen (por ejemplo, un archivo jpeg) y documentos PDF. El diseño del portafolio se puede establecer en distintos estilos, como el *Cuadrícula con vista previa*, el *En una imagen* diseño o par *Revolver*.
 
@@ -119,7 +123,7 @@ Para montar un Portfolio de PDF, llame a la función `invokeDDX` operación. El 
 
 Se devuelve un Portfolio PDF dentro de un objeto de colección. Itere a través del objeto de colección y guarde el Portfolio del PDF como un archivo del PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Montaje de un Portfolio de PDF mediante la API de Java](#assemble-a-pdf-portfolio-using-the-java-api)
 
@@ -182,7 +186,7 @@ Ensamble un Portfolio PDF mediante la API de servicio del ensamblador (Java):
    * Iterar a través de la variable `java.util.Map` hasta que encuentre el resultado `com.adobe.idp.Document` objeto.
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` para extraer el Portfolio del PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido (modo SOAP): Agrupación de Portfolio PDF mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
 
@@ -259,7 +263,7 @@ Ensamble un Portfolio PDF mediante la API del servicio Assembler (servicio web):
    * Iterar a través de la variable `Map` para obtener cada documento resultante. A continuación, cree el `value` a `BLOB`.
    * Extraiga los datos binarios que representan el documento del PDF accediendo a su `BLOB` del objeto `MTOM` propiedad. Esto devuelve una matriz de bytes que puede escribir en un archivo PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 

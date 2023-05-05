@@ -1,7 +1,7 @@
 ---
-title: Cambio del logotipo de la organización para la promoción de la marca
+title: Cambiar el logotipo de la organización para la promoción de la marca
 seo-title: Changing the organization logo for branding
-description: Para personalizar el espacio de trabajo de AEM Forms, proporcione el logotipo de su organización personalizando el logotipo predeterminado.
+description: Para personalizar la marca de AEM Forms Workspace, proporcione el logotipo de su organización al personalizar el logotipo predeterminado.
 seo-description: To brand AEM Forms workspace provide the logo of your organization by customizing the default logo.
 uuid: f0c340ee-2e54-4bb0-9c30-383cc1bbadb8
 contentOwner: robhagat
@@ -10,18 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2c651302-f4ef-4211-b897-f5942ed0ffb1
 exl-id: 890e98af-0491-4b59-9a9b-6c245db54f0f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 0%
+source-wordcount: '170'
+ht-degree: 83%
 
 ---
 
-# Cambio del logotipo de la organización para la promoción de la marca {#changing-the-organization-logo-for-branding}
+# Cambiar el logotipo de la organización para la promoción de la marca {#changing-the-organization-logo-for-branding}
 
-El logotipo de la organización se muestra en la esquina superior izquierda del espacio de trabajo de AEM Forms. Para actualizar el logotipo, siga la [Pasos genéricos de la personalización del espacio de trabajo de AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization) y luego los siguientes pasos.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-1. Cree un logotipo y asigne un nombre al archivo como `NewWorkspace.png`. Coloque el archivo de imagen en la carpeta /apps/ws/images utilizando un cliente WebDAV.
+El logotipo de la organización se muestra en la esquina superior izquierda de AEM Forms Workspace. Para actualizar el logotipo, siga los [Pasos genéricos de la personalización de AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization) y luego los siguientes pasos.
+
+1. Cree un logotipo y asigne un nombre al archivo como `NewWorkspace.png`. Coloque el archivo de imagen en la carpeta /apps/ws/images mediante un cliente WebDAV.
 
    >[!NOTE]
    >
@@ -29,9 +33,9 @@ El logotipo de la organización se muestra en la esquina superior izquierda del 
 
    >[!NOTE]
    >
-   >Para obtener más información sobre el acceso a WebDAV, consulte [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   >Para obtener más información sobre el acceso a WebDAV, consulte [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/es/crx/current/how_to/webdav_access.html).
 
-1. Haga referencia a la nueva imagen del logotipo en la hoja de estilo en /apps/ws/css/newStyle.css añadiendo el siguiente estilo.
+1. Haga referencia a la nueva imagen del logotipo en la hoja de estilo en /apps/ws/css/newStyle.css al agregar el siguiente estilo.
 
    ```css
    #logo {

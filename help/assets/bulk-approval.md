@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Collaboration, Collections
 role: User
 exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 24%
+source-wordcount: '847'
+ht-degree: 23%
 
 ---
 
 # Revisar recursos y colecciones de carpetas {#review-folder-assets-and-collections}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Configure flujos de trabajo de revisión para recursos dentro de una carpeta o una colección y compártalos con revisores o socios creativos para buscar comentarios.
 
@@ -31,17 +35,17 @@ Una vez que el revisor completa la revisión (aprueba o rechaza los recursos), r
 
    ![chlimage_1-403](assets/chlimage_1-403.png)
 
-1. (Opcional) En la lista **[!UICONTROL Proyecto]**, seleccione el proyecto al que desea asociar la tarea de revisión. De forma predeterminada, la opción **[!UICONTROL None]** está seleccionada. Si no desea asociar ningún proyecto con la tarea de revisión, conserve esta selección.
+1. (Opcional) Desde la **[!UICONTROL Proyecto]** , seleccione el proyecto al que desea asociar la tarea de revisión. De forma predeterminada, la variable **[!UICONTROL Ninguna]** está seleccionada. Si no desea asociar ningún proyecto con la tarea de revisión, conserve esta selección.
 
    >[!NOTE]
    >
-   >En la lista **[!UICONTROL Proyectos]** solo están visibles los proyectos para los que tiene permisos de nivel de Editor (o superiores).
+   >En la sección **[!UICONTROL Proyectos]** lista.
 
-1. Introduzca un nombre para la tarea de revisión y seleccione un aprobador en la lista **[!UICONTROL Asignar a]**.
+1. Introduzca un nombre para la tarea de revisión y seleccione un aprobador de la lista **[!UICONTROL Asignar a]** lista.
 
    >[!NOTE]
    >
-   >Los miembros o grupos del proyecto seleccionado están disponibles como aprobadores en la lista **[!UICONTROL Asignar a]**.
+   >Los miembros o grupos del proyecto seleccionado están disponibles como aprobadores en el **[!UICONTROL Asignar a]** lista.
 
 1. Introduzca una descripción, la prioridad de la tarea y la fecha de vencimiento de la tarea de revisión.
 
@@ -52,7 +56,7 @@ Una vez que el revisor completa la revisión (aprueba o rechaza los recursos), r
    ![review_name](assets/review_name.png)
 
 1. Pulse o haga clic en **[!UICONTROL Enviar]** y, a continuación, pulse o haga clic en **[!UICONTROL Listo]** para cerrar el mensaje de confirmación. Se envía una notificación para la nueva tarea al aprobador.
-1. Inicie sesión en [!DNL Experience Manager] Assets as a Approver y vaya a la interfaz de usuario de Assets. Para aprobar los recursos, pulse o haga clic en el icono **[!UICONTROL Notifications]** y, a continuación, seleccione la tarea de revisión en la lista.
+1. Iniciar sesión en [!DNL Experience Manager] Assets como aprobador y vaya a la interfaz de usuario de Assets. Para aprobar recursos, toque o haga clic en el botón **[!UICONTROL Notificaciones]** y, a continuación, seleccione la tarea de revisión de la lista.
 
    ![notificación](assets/notification.png)
 
@@ -61,7 +65,7 @@ Una vez que el revisor completa la revisión (aprueba o rechaza los recursos), r
 
    ![review_task](assets/review_task.png)
 
-1. Toque o haga clic en el icono **[!UICONTROL Completar]** de la barra de herramientas. En el cuadro de diálogo, introduzca un comentario y pulse o haga clic en **[!UICONTROL Completar]** para confirmar.
+1. Toque o haga clic en el botón **[!UICONTROL Completar]** de la barra de herramientas. En el cuadro de diálogo, introduzca un comentario y pulse o haga clic en  **[!UICONTROL Completar]** para confirmar.
 1. Vaya a la interfaz de usuario de Assets y abra la carpeta . Los iconos de estado de aprobación de los recursos aparecen en las vistas Tarjeta y Lista.
 
    **Vista de tarjeta**
@@ -79,30 +83,30 @@ Una vez que el revisor completa la revisión (aprueba o rechaza los recursos), r
 
    ![chlimage_1-405](assets/chlimage_1-405.png)
 
-1. (Opcional) En la lista **[!UICONTROL Proyecto]**, seleccione el proyecto al que desea asociar la tarea de revisión. De forma predeterminada, la opción **[!UICONTROL None]** está seleccionada. Si no desea asociar ningún proyecto con la tarea de revisión, conserve esta selección.
+1. (Opcional) Desde la **[!UICONTROL Proyecto]** , seleccione el proyecto al que desea asociar la tarea de revisión. De forma predeterminada, la variable **[!UICONTROL Ninguna]** está seleccionada. Si no desea asociar ningún proyecto con la tarea de revisión, conserve esta selección.
 
    >[!NOTE]
    >
-   >En la lista **[!UICONTROL Proyectos]** solo están visibles los proyectos para los que tiene permisos de nivel de Editor (o superiores).
+   >En la sección **[!UICONTROL Proyectos]** lista.
 
-1. Introduzca un nombre para la tarea de revisión y seleccione un aprobador en la lista **[!UICONTROL Asignar a]**.
+1. Introduzca un nombre para la tarea de revisión y seleccione un aprobador de la lista **[!UICONTROL Asignar a]** lista.
 
    >[!NOTE]
    >
-   >Los miembros o grupos del proyecto seleccionado están disponibles como aprobadores en la lista **[!UICONTROL Asignar a]**.
+   >Los miembros o grupos del proyecto seleccionado están disponibles como aprobadores en el **[!UICONTROL Asignar a]** lista.
 
 1. Introduzca una descripción, la prioridad de la tarea y la fecha de vencimiento de la tarea de revisión.
 
    ![task_details-collection](assets/task_details-collection.png)
 
 1. Pulse o haga clic en **[!UICONTROL Enviar]** y, a continuación, pulse o haga clic en **[!UICONTROL Listo]** para cerrar el mensaje de confirmación. Se envía una notificación para la nueva tarea al aprobador.
-1. Inicie sesión en [!DNL Experience Manager] Assets as a Approver y vaya a la consola de Assets. Para aprobar los recursos, pulse o haga clic en el icono **[!UICONTROL Notifications]** y, a continuación, seleccione la tarea de revisión en la lista.
+1. Iniciar sesión en [!DNL Experience Manager] Assets como Aprobador y vaya a la consola Recursos . Para aprobar recursos, toque o haga clic en el botón **[!UICONTROL Notificaciones]** y, a continuación, seleccione la tarea de revisión de la lista.
 1. En la página **[!UICONTROL Revisar tarea]**, examine los detalles de la tarea de revisión y, a continuación, pulse o haga clic en **[!UICONTROL Revisar]**.
-1. Todos los recursos de la colección están visibles en la página de revisión. Seleccione los recursos y pulse o haga clic en el icono **[!UICONTROL Aprobar/Rechazar]** para aprobar o rechazar los recursos, según corresponda.
+1. Todos los recursos de la colección están visibles en la página de revisión. Seleccione los recursos y toque o haga clic en el botón **[!UICONTROL Aprobar/Rechazar]** para aprobar o rechazar los recursos, según corresponda.
 
    ![review_task_collection](assets/review_task_collection.png)
 
-1. Toque o haga clic en el icono **[!UICONTROL Completar]** de la barra de herramientas. En el cuadro de diálogo, introduzca un comentario y pulse o haga clic en **[!UICONTROL Completar]** para confirmar.
+1. Toque o haga clic en el botón **[!UICONTROL Completar]** de la barra de herramientas. En el cuadro de diálogo, introduzca un comentario y pulse o haga clic en **[!UICONTROL Completar]** para confirmar.
 1. Vaya a la consola Colecciones y abra la colección. Los iconos de estado de aprobación de los recursos aparecen en las vistas Tarjeta y Lista.
 
    **Vista de tarjeta**

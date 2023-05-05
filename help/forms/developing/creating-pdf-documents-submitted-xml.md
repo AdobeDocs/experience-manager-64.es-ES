@@ -1,5 +1,5 @@
 ---
-title: Creación de documentos de PDF con datos XML enviados
+title: Crear documentos PDF con datos XML enviados
 seo-title: Creating PDF Documents with SubmittedXML Data
 description: Utilice el servicio Forms para recuperar los datos de formulario que el usuario ha introducido en un formulario interactivo. Pase los datos del formulario a otra operación de servicio de AEM Forms y cree un documento de PDF con los datos.
 seo-description: Use the Forms service to retrieve the form data that the user entered into an interactive form. Pass the form data to another AEM Forms service operation and create a PDF document using the data.
@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 62490230-a24e-419d-95bb-c0bb04a03f96
 role: Developer
 exl-id: a0d6e4a6-751f-4cab-842b-08719b899060
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 0%
+source-wordcount: '1342'
+ht-degree: 1%
 
 ---
 
 # Creación de documentos de PDF con datos XML enviados {#creating-pdf-documents-with-submittedxml-data}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Creación de documentos de PDF con datos XML enviados {#creating-pdf-documents-with-submitted-xml-data}
 
@@ -74,7 +78,7 @@ Utilice el servicio Output para crear un documento PDF no interactivo basado en 
 
 Utilice la API de servicio de gestión de documentos para almacenar un documento de PDF en Content Services (obsoleto).
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -146,7 +150,7 @@ Cree un documento PDF con los datos XML enviados mediante la API de Forms, salid
 
    La variable `storeContent` el método devuelve un `CRCResult` objeto que describe el contenido. Uso de un `CRCResult` , puede, por ejemplo, obtener el valor de identificador único del contenido. Para realizar esta tarea, invoque la función `CRCResult` del objeto `getNodeUuid` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

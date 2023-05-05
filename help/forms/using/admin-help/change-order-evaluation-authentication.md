@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5434df9c-ecf6-450a-aa7e-d9ab69b66fe6
 exl-id: cac16c50-a85d-4e40-a590-8a0a52be893c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 0%
+source-wordcount: '183'
+ht-degree: 12%
 
 ---
 
 # Cambiar el orden de evaluación para la autenticación {#change-the-order-of-evaluation-for-authentication}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Si ha configurado varios proveedores de autenticación, puede cambiar el orden en que AEM formularios los evalúa para la autenticación. El orden de los proveedores de autenticación enumerados en el archivo config.xml determina el orden de evaluación para la autenticación.
 

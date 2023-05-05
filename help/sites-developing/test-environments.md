@@ -1,43 +1,46 @@
 ---
-title: ¿Qué Entornos de prueba son necesarios?
-seo-title: ¿Qué Entornos de prueba son necesarios?
+title: ¿Qué entornos de prueba son necesarios?
+seo-title: Which Test Environments are needed?
 description: Se deben considerar varios entornos como parte de las pruebas
-seo-description: Se deben considerar varios entornos como parte de las pruebas
+seo-description: Several environments should be considered as part of testing
 uuid: bb725e50-edae-4c20-8107-d1c8df2e60e2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: testing
 content-type: reference
 discoiquuid: db528b9b-3407-462d-8254-20b3cc2c3ccf
-translation-type: tm+mt
-source-git-commit: 2c46d0630690737ef7b7f944cdea5b3d393c92e5
+exl-id: c3c7c007-4814-4bd1-987e-534df4575a4a
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 0%
+source-wordcount: '216'
+ht-degree: 3%
 
 ---
 
+# ¿Qué entornos de prueba se necesitarán?{#which-test-environments-will-be-needed}
 
-# ¿Qué Entornos de prueba serán necesarios?{#which-test-environments-will-be-needed}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-Para definir qué configuraciones se deben probar, debe tener en cuenta lo siguiente:
+Para definir qué configuraciones de prueba, debe tener en cuenta lo siguiente:
 
-**Desarrollo** : para unidades y ciertas pruebas de integración.
+**Desarrollo** - Para la unidad y ciertas pruebas de integración.
 
-**Prueba** : para la mayoría de las pruebas.
+**Pruebas** - Para la mayoría de las pruebas.
 
-**Activo** : para pruebas de resistencia y rendimiento finales. También para pruebas de aceptación con el cliente.
+**Activo** - Para las pruebas de rendimiento y de estrés finales. También para pruebas de aceptación con el cliente.
 
-También tendrá que decidir qué instancias necesitará donde (normalmente al menos una de cada uno para todos los niveles de prueba):
+También deberá decidir qué instancias necesitará donde (normalmente al menos una de cada uno para todos los niveles de prueba):
 
 **Autor** : Esta instancia permite a los autores introducir y publicar contenido.
 
-**Publicar** : Esta instancia presenta el sitio web en su forma publicada para el acceso desde visitantes.
+**Publicación** - Esta instancia presenta el sitio web en su formulario publicado para el acceso de los visitantes.
 
-Debe probarse junto con el despachante.
+Debe probarse junto con Dispatcher.
 
-Por último, se debe considerar el hardware real: cualquier prueba de rendimiento debe realizarse en un sistema lo más cerca posible de la configuración del entorno final activo. Por este motivo, también se recomienda dividir el lanzamiento del proyecto en:
+Finalmente, debe considerarse el hardware real - cualquier prueba de rendimiento debe realizarse en un sistema lo más cerca posible de la configuración del entorno en directo final. Por este motivo, también se recomienda dividir el lanzamiento del proyecto en:
 
-**Lanzamiento**  suave: disponibilidad reducida; que permite tiempo para pruebas de rendimiento, ajuste y optimización en condiciones realistas en el entorno de producción.
+**Lanzamiento en software** - Menor disponibilidad; que permite tiempo para pruebas de rendimiento, ajustes y optimización en condiciones realistas en el entorno de producción.
 
-**Inicio**  duro: disponibilidad completa.
+**Lanzamiento en disco** - Disponibilidad completa.

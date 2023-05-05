@@ -2,22 +2,25 @@
 title: PhoneGap
 seo-title: PhoneGap
 description: PhoneGap
-seo-description: 'Siga esta página para empezar a crear contenido para Adobe PhoneGap Enterprise en AEM.  '
+seo-description: Follow this page to get started with authoring for Adobe PhoneGap Enterprise in AEM.
 uuid: 256a9f66-4c66-434c-be79-01be3c02d688
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 33eeb203-1e4b-4112-ab08-f13b9e0b82bb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 5%
+source-wordcount: '237'
+ht-degree: 7%
 
 ---
 
-
 # PhoneGap{#phonegap}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
@@ -33,7 +36,7 @@ El inicio de una nueva experiencia de aplicación de AEM Mobile requiere una coh
 
 ## Creación de aplicaciones PhoneGap {#authoring-phonegap-applications}
 
-Un ***Autor de AEM* (o *experto en marketing*)**puede utilizar las plantillas y los componentes listos para usar para agregar y editar páginas, arrastrar y soltar componentes y agregar medios de todo tipo desde DAM, incluidas imágenes, vídeos y fragmentos de texto (fragmentos de contenido).
+Un ***Autor de AEM* (o *Especialista en marketing*)**puede utilizar las plantillas y los componentes listos para usar para añadir y editar páginas, arrastrar y soltar componentes y añadir medios de todo tipo desde DAM, incluidas imágenes, vídeos y fragmentos de texto (fragmentos de contenido).
 
 Consulte los siguientes recursos para empezar:
 
@@ -45,7 +48,7 @@ Consulte los siguientes recursos para empezar:
 * [Creación de una nueva aplicación de AEM Mobile mediante el asistente de creación](/help/mobile/phonegap-create-new-app.md)
 * [Importar una aplicación híbrida existente](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-Para obtener más información sobre **Content Services**, consulte [Información general de Content Services](/help/mobile/develop-content-as-a-service.md) para empezar.
+Para obtener más información sobre **Servicios de contenido**, consulte [Información general de los servicios de contenido](/help/mobile/develop-content-as-a-service.md) para empezar.
 
 ## Recursos adicionales {#additional-resources}
 
@@ -53,4 +56,3 @@ Para obtener más información sobre las funciones y responsabilidades de un adm
 
 * [Desarrollo para Adobe PhoneGap Enterprise con AEM](/help/mobile/developing-in-phonegap.md)
 * [Administración de contenido para Adobe PhoneGap Enterprise con AEM](/help/mobile/administer-phonegap.md)
-

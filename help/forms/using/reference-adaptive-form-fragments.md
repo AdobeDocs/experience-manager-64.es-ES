@@ -1,25 +1,29 @@
 ---
-title: Referencia a fragmentos de formulario adaptables
+title: Fragmentos de formularios adaptables de referencia
 seo-title: Reference adaptive form fragments
-description: AEM Forms proporciona fragmentos de formulario adaptables que puede utilizar como recursos para crear un formulario rápidamente.
+description: AEM Forms proporciona fragmentos de formulario adaptable que puede utilizar como recursos para crear un formulario rápidamente.
 seo-description: AEM Forms provides adaptive form fragments that you can use as assets to create a form quickly.
 uuid: af3ab863-e895-4fac-84f4-0a77a66f5094
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43dc10c2-8cfc-4ca3-8ccb-9b3f268663b7
 exl-id: cceea4d1-8fc2-4118-b22e-91f27e69c7e4
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 69%
+source-wordcount: '450'
+ht-degree: 87%
 
 ---
 
-# Referencia a fragmentos de formulario adaptables {#reference-adaptive-form-fragments}
+# Fragmentos de formularios adaptables de referencia {#reference-adaptive-form-fragments}
 
-[Fragmento de formulario adaptable](/help/forms/using/adaptive-form-fragments.md) es un grupo de campos o un panel que contiene un grupo de campos que puede utilizar al crear un formulario. Permite crear un formulario de forma fácil y rápida. Puede arrastrar y soltar un fragmento de formulario adaptable en un formulario mediante el navegador de recursos de la barra lateral y editarlo en el editor de formularios.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-Para los autores de formularios adaptables, los fragmentos de referencia se proporcionan en la variable [Paquete de complementos de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es). Este paquete incluye los siguientes fragmentos:
+[Un fragmento de formulario adaptable](/help/forms/using/adaptive-form-fragments.md) es un grupo de campos o un panel que contiene un grupo de campos que puede utilizar durante la creación de un formulario. Permite crear un formulario de forma fácil y rápida. Puede arrastrar y colocar un fragmento de formulario adaptable en un formulario mediante el Explorador de recursos de la barra lateral y editarlo en el Editor de formularios.
+
+Los fragmentos de referencia se proporcionan en el [paquete de complementos de AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=es) para los autores de formularios adaptables. Este paquete incluye los siguientes fragmentos:
 
 * Dirección
 * Información de contacto

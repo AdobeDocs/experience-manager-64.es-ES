@@ -1,5 +1,5 @@
 ---
-title: Personalización de plantillas de búsqueda
+title: Personalizar plantillas de búsqueda
 seo-title: Customizing search templates
 description: Puede crear plantillas de búsqueda para usarlas en Workspace para buscar instancias de procesos en las páginas Tareas pendientes y Seguimiento. También puede editar o eliminar las plantillas de búsqueda existentes.
 seo-description: You can create search templates to be used in Workspace to search for instances of processes from the To Do and Tracking pages. You can also edit or delete existing search templates.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 exl-id: 5230222b-53f8-414c-aaa1-848d6e9369e8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '856'
-ht-degree: 0%
+source-wordcount: '892'
+ht-degree: 1%
 
 ---
 
-# Personalización de plantillas de búsqueda {#customizing-search-templates}
+# Personalizar plantillas de búsqueda {#customizing-search-templates}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede crear plantillas de búsqueda para usarlas en Workspace para buscar instancias de procesos en las páginas Tareas pendientes y Seguimiento. También puede editar o eliminar las plantillas de búsqueda existentes.
 

@@ -9,22 +9,26 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 role: Admin
 exl-id: 65c13bc8-da82-4c4b-b014-341ce1b59b71
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1033'
-ht-degree: 86%
+source-wordcount: '1069'
+ht-degree: 88%
 
 ---
 
 # Flujos de trabajo centrados en Forms en OSGi | Gestión de datos de usuario {#forms-centric-workflows-on-osgi-handling-user-data}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Los flujos de trabajo de AEM centrados en Forms le permiten automatizar procesos empresariales reales centrados en Forms. Los flujos de trabajo constan de una serie de pasos que se ejecutan en el orden especificado en el modelo de flujo de trabajo asociado. Cada paso realiza una acción específica, como asignar una tarea a un usuario o enviar un mensaje de correo electrónico. Los flujos de trabajo pueden interactuar con los recursos del repositorio, las cuentas de usuario y los servicios. Por lo tanto, los flujos de trabajo pueden coordinar actividades complejas que implican cualquiera de los aspectos de Experience Manager.
 
 Un flujo de trabajo centrado en Forms se puede activar o iniciar mediante cualquiera de los siguientes métodos:
 
 * El envío de una solicitud desde la bandeja de entrada AEM;
-* Envío de una aplicación desde una aplicación de AEM Forms
-* Envío de un formulario adaptable
+* El envío de una aplicación desde la aplicación de AEM Forms
+* Enviar un formulario adaptable
 * El uso de una carpeta inspeccionada;
 * El envío de una comunicación interactiva o una carta.
 
@@ -70,16 +74,16 @@ Las ubicaciones de repositorio predeterminadas donde se encuentran la carga úti
  </tbody> 
 </table>
 
-## Acceso y eliminación de datos de usuario {#access-and-delete-user-data}
+## Acceder y eliminar datos de usuario {#access-and-delete-user-data}
 
 Puede acceder a los datos de usuario de una instancia de flujo de trabajo del repositorio y eliminarlos. Para ello, debe conocer el ID de instancia de la instancia de flujo de trabajo asociada al usuario. Puede encontrar el ID de instancia de una instancia de flujo de trabajo utilizando el nombre de usuario del usuario que inició la instancia de flujo de trabajo o que es el usuario asignado actual de la instancia de flujo de trabajo.
 
 Sin embargo, no puede identificar flujos de trabajo asociados a un iniciador (o los resultados pueden ser ambiguos) en los siguientes casos:
 
 * **Flujos de trabajo activados a través de una carpeta inspeccionada**: una instancia de flujo de trabajo no se puede identificar por su iniciador si el flujo de trabajo se activa mediante una carpeta inspeccionada. En este caso, la información del usuario se codifica en los datos almacenados.
-* **Flujo de trabajo iniciado desde la instancia de AEM de publicación**: Todas las instancias de flujo de trabajo se crean mediante un usuario de servicio cuando se envían formularios adaptables, comunicaciones interactivas o cartas desde AEM instancia de publicación. En estos casos, el nombre de usuario del usuario que ha iniciado sesión no se captura en los datos de la instancia de flujo de trabajo.
+* **Flujos de trabajo iniciados desde una instancia de publicación de AEM**: todas las instancias de flujo de trabajo se crean mediante un usuario de servicio cuando se envían formularios adaptables y comunicaciones o cartas interactivas desde una instancia de publicación de AEM. En estos casos, el nombre de usuario del usuario que ha iniciado sesión no se captura en los datos de la instancia de flujo de trabajo.
 
-### Acceso a los datos de usuario {#access}
+### Acceder a los datos de usuario {#access}
 
 Para identificar y acceder a los datos de usuario almacenados en una instancia de flujo de trabajo, realice los siguientes pasos:
 
@@ -125,7 +129,7 @@ Para identificar y acceder a los datos de usuario almacenados en una instancia d
 >
 >La aplicación de AEM Forms también almacena datos en modo sin conexión. Es posible que los datos de una instancia de flujo de trabajo se almacenen localmente en dispositivos individuales y se envíen al servidor de Forms cuando la aplicación se sincroniza con el servidor.
 
-### Eliminación de los datos de usuario {#delete-user-data}
+### Eliminar los datos de usuario {#delete-user-data}
 
 Es necesario ser administrador de AEM para eliminar los datos de usuario de las instancias de flujo de trabajo mediante los siguientes pasos:
 

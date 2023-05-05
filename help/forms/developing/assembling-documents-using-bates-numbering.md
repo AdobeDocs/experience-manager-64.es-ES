@@ -1,5 +1,5 @@
 ---
-title: Montaje de Documentos Utilizando Numeración Bates
+title: Agrupar documentos mediante la numeración Bates
 seo-title: Assembling Documents Using Bates Numbering
 description: Utilice la numeración Bates para ensamblar documentos de PDF mediante la API de Java y Web Service.
 seo-description: Use Bates numbering to assemble PDF documents using the Java and Web Service API.
@@ -12,16 +12,20 @@ topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
 role: Developer
 exl-id: 902fc62b-262e-4eb4-b580-dbfbf4344fa6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1908'
-ht-degree: 0%
+source-wordcount: '1944'
+ht-degree: 4%
 
 ---
 
-# Montaje de Documentos Utilizando Numeración Bates {#assembling-documents-using-bates-numbering}
+# Agrupar documentos mediante la numeración Bates {#assembling-documents-using-bates-numbering}
 
-Puede ensamblar documentos PDF que contengan identificadores de página únicos mediante la numeración Bates. *Numeración de Bates* es un método para aplicar identificadores únicos a un lote de documentos relacionados. A cada página del documento (o conjunto de documentos) se le asigna un número Bates que identifica de forma exclusiva la página. Por ejemplo, los documentos de fabricación que contienen información de lista de materiales y están asociados con la producción de un conjunto pueden contener un identificador. Un número Bates contiene un valor numérico incrementado secuencialmente y un prefijo y sufijo opcionales. El prefijo + sufijo numérico + se denomina *patrón de barras*.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+Puede ensamblar documentos PDF que contengan identificadores de página únicos mediante la numeración Bates. *Numeración de Bates* es un método para aplicar identificadores únicos a un lote de documentos relacionados. A cada página del documento (o conjunto de documentos) se le asigna un número Bates que identifica de forma exclusiva la página. Por ejemplo, los documentos de fabricación que contienen información de listas de materiales y están asociados con la producción de un conjunto pueden contener un identificador. Un número Bates contiene un valor numérico incrementado secuencialmente y un prefijo y sufijo opcionales. El prefijo + sufijo numérico + se denomina *patrón de barras*.
 
 La siguiente ilustración muestra un documento PDF que contiene un identificador único ubicado en el encabezado del documento.
 
@@ -114,7 +118,7 @@ El servicio Assembler devuelve un objeto de colección que contiene los resultad
 >
 >Si invoca el objeto `invokeDDX` operación. Esta operación se utiliza al pasar dos o más documentos de PDF de entrada al servicio Assembler. Sin embargo, si solo pasa un documento de PDF de entrada al servicio Assembler, debe invocar la variable `invokeOneDocument` operación. Para obtener información sobre el uso de esta operación, consulte [Montaje de documentos de PDF cifrados](/help/forms/developing/assembling-encrypted-pdf-documents.md).
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -173,7 +177,7 @@ Ensamble un documento de PDF que utilice identificadores de página únicos (num
    * Iterar a través de la variable `java.util.Map` hasta que encuentre la variable `com.adobe.idp.Document` objeto.
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` método para extraer el documento PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido (modo SOAP): Montaje de un documento PDF con numeración de fechas mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
 
@@ -250,6 +254,6 @@ Ensamble un documento de PDF que utilice identificadores de página únicos (num
    * Iterar a través de la variable `Map` hasta que encuentre la clave que coincida con el nombre del documento resultante. A continuación, cree el `value` a `BLOB`.
    * Extraiga los datos binarios que representan el documento del PDF accediendo a su `BLOB` del objeto `MTOM` propiedad. Esto devuelve una matriz de bytes que puede escribir en un archivo PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

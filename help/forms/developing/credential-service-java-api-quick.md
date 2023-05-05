@@ -1,5 +1,5 @@
 ---
-title: Inicio rápido de la API de Java del servicio de credenciales (SOAP)
+title: Inicio rápido (SOAP) de la API de Java del servicio de credenciales
 seo-title: Credential Service Java API QuickStart(SOAP)
 description: Utilice la API Java del servicio Credential para importar y eliminar credenciales.
 seo-description: Use the Credential Service Java API to import and delete credentials.
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: b624e255-ae71-4d9c-8554-d48f3e77b799
 role: Developer
 exl-id: a81b2360-9d17-46c7-9443-51b366b0724a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 0%
+source-wordcount: '260'
+ht-degree: 5%
 
 ---
 
 # Inicio rápido de la API de Java del servicio Credential (SOAP) {#credential-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El inicio rápido de la API de Java (SOAP) está disponible para el servicio Credential.
 

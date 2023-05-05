@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 68799110-8183-40fe-be4f-2a7c7a7b3018
 feature: Commerce Integration Framework
 exl-id: 3c046e16-5f54-4a16-aa5b-256b679808fa
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '756'
-ht-degree: 3%
+source-wordcount: '792'
+ht-degree: 2%
 
 ---
 
-# comercio electrónico{#ecommerce}
+# eCommerce{#ecommerce}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 * [Conceptos ](/help/sites-administering/concepts.md)
 * [Administración (genérica)](/help/sites-administering/generic.md)
@@ -35,7 +39,7 @@ Adobe proporciona dos versiones de Commerce Integration Framework:
 | Front-end | AEM páginas procesadas del lado del servidor | Aplicación de página mixta (renderización híbrida) |
 | Catálogo de productos | - Importador de productos, editor, almacenamiento en caché en AEM <br>- Catálogos regulares con páginas AEM o proxy | - Sin importación de productos <br>- Plantillas genéricas <br>- Datos bajo demanda a través del conector |
 | Escalabilidad | - Puede admitir hasta unos pocos millones de productos (depende del caso de uso) <br> - Almacenamiento en caché en Dispatcher | - Sin limitación de volumen <br>- Almacenamiento en caché en Dispatcher o CDN |
-| Modelo de datos estandarizado | No | Sí, esquema de Magento GraphQL |
+| Modelo de datos estandarizado | No | Sí, esquema de GraphQL de Magento |
 | Disponibilidad | Sí:<br> - Commerce Cloud SAP (extensión actualizada para admitir AEM 6.4 e Hybris 5 (predeterminado) y mantiene la compatibilidad con Hybris 4 <br>- Commerce Cloud de Salesforce (conector de código abierto compatible con AEM 6.4) | Sí, a través de código abierto a través de GitHub. <br> Magento Commerce (admite Magento 2.3.2 (predeterminado) y compatible con Magento 2.3.1). |
 | Cuándo se usa | Casos de uso limitados: Para situaciones en las que sea necesario importar catálogos estáticos pequeños | Solución preferida en la mayoría de los casos de uso |
 

@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: 1dc43962-dffe-4062-838f-737b3100ad28
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '10791'
-ht-degree: 1%
+source-wordcount: '10827'
+ht-degree: 2%
 
 ---
 
 # Administración programática de puntos de conexión {#programmatically-managing-endpoints}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 **Acerca del servicio de registro de extremo**
 
@@ -108,7 +112,7 @@ Después de establecer los atributos de extremo de EJB, puede crear un extremo d
 
 Después de crear un nuevo extremo, debe habilitarlo. Después de habilitar el extremo, se puede utilizar para invocar el servicio. Después de habilitar el punto final, puede verlo en la consola de administración.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Añadir un extremo EJB mediante la API de Java](programmatically-endpoints.md#adding-an-ejb-endpoint-using-the-java-api)
 
@@ -146,7 +150,7 @@ Añada un punto final de EJB mediante la API de Java:
 
    Habilitar el extremo invocando el `EndpointRegistryClient` método enable del objeto y pasar el `Endpoint` objeto devuelto por el `createEndpoint` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](programmatically-endpoints.md#summary-of-steps)
 
@@ -213,7 +217,7 @@ Después de establecer los atributos de extremo SOAP, puede crear un extremo SOA
 
 Después de crear un nuevo extremo, debe habilitarlo. Cuando el extremo está habilitado, se puede utilizar para invocar el servicio. Después de habilitar el punto final, puede verlo en la consola de administración.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Añadir un extremo SOAP mediante la API de Java](programmatically-endpoints.md#add-a-soap-endpoint-using-the-java-api)
 
@@ -251,7 +255,7 @@ Agregue un extremo SOAP a un servicio mediante la API de Java:
 
    Habilitar el extremo invocando el `EndpointRegistryClient` método enable del objeto y pase el `Endpoint` objeto devuelto por el `createEndpoint` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](programmatically-endpoints.md#summary-of-steps)
 
@@ -322,7 +326,7 @@ Debe especificar valores de configuración para un extremo de carpeta vigilada a
 La siguiente lista especifica los valores de configuración que se establecen al agregar mediante programación un extremo de carpeta vigilada a un servicio:
 
 * **url**: Especifica la ubicación de la carpeta vigilada. En un entorno agrupado, este valor debe apuntar a una carpeta de red compartida a la que se pueda acceder desde todos los equipos del clúster.
-* **asincrónico**: Identifica el tipo de invocación como asíncrono o sincrónico. Los procesos transitorios y sincrónicos solo se pueden invocar sincrónicamente. El valor predeterminado es true. Se recomienda asíncrono.
+* **asincrónico**: Identifica el tipo de invocación como asíncrono o sincrónico. Los procesos transitorios y sincrónicos solo se pueden invocar sincrónicamente. El valor predeterminado es True. Se recomienda asíncrono.
 * **cronExpression**: Utilizado por quartz para programar el sondeo del directorio de entrada.
 * **purgeDuration**: Es un atributo obligatorio. Los archivos y carpetas de la carpeta de resultados se depuran cuando son anteriores a este valor. Este valor se mide en días. Este atributo es útil para garantizar que la carpeta de resultados no esté llena. El valor de -1 días indica que nunca se eliminará la carpeta de resultados. El valor predeterminado es -1.
 * **repeatInterval**: Intervalo, en segundos, para analizar la carpeta vigilada para obtener información. A menos que la restricción esté habilitada, este valor debe ser mayor que el tiempo para procesar un trabajo promedio; de lo contrario, el sistema podría sobrecargarse. El valor predeterminado es 5.
@@ -331,14 +335,14 @@ La siguiente lista especifica los valores de configuración que se establecen al
 * **userName**: El nombre de usuario que se utiliza al invocar un servicio de destino desde la carpeta vigilada. Este valor es obligatorio. El valor predeterminado es SuperAdmin.
 * **domainName**: El dominio del usuario. Este valor es obligatorio. El valor predeterminado es DefaultDom.
 * **batchSize**: Número de archivos o carpetas que se van a recoger por análisis. Utilice este valor para evitar una sobrecarga en el sistema; el análisis de demasiados archivos al mismo tiempo puede provocar un bloqueo. El valor predeterminado es 2.
-* **waitTime**: Tiempo, en milisegundos, que se debe esperar antes de analizar una carpeta o archivo después de la creación. Por ejemplo, si el tiempo de espera es de 36 000 000 milisegundos (una hora) y el archivo se creó hace un minuto, este archivo se selecciona después de que hayan transcurrido 59 minutos o más. Este atributo es útil para garantizar que un archivo o carpeta se copie completamente en la carpeta de entrada. Por ejemplo, si tiene un archivo grande para procesar y el archivo tarda diez minutos en descargarse, establezca el tiempo de espera en 10&amp;ast;60 &amp;ast;1000 milisegundos. Esta configuración evita que la carpeta vigilada analice el archivo si no ha estado esperando durante diez minutos. El valor predeterminado es 0.
+* **waitTime**: Tiempo, en milisegundos, que se debe esperar antes de analizar una carpeta o archivo después de la creación. Por ejemplo, si el tiempo de espera es de 36 000 000 milisegundos (una hora) y el archivo se creó hace un minuto, este archivo se selecciona después de que hayan transcurrido 59 minutos o más. Este atributo es útil para garantizar que un archivo o carpeta se copie completamente en la carpeta de entrada. Por ejemplo, si tiene un archivo grande para procesar y tarda diez minutos en descargarse, establezca el tiempo de espera en 10&amp;ast;60 &amp;ast;1000 milisegundos. Esta configuración evita que la carpeta vigilada analice el archivo si no ha estado esperando durante diez minutos. El valor predeterminado es 0.
 * **excludeFilePattern**: Patrón que utiliza una carpeta vigilada para determinar qué archivos y carpetas analizar y recoger. Los archivos o carpetas que tengan este patrón no se analizarán para su procesamiento. Esta configuración es útil cuando la entrada es una carpeta que contiene varios archivos. El contenido de la carpeta se puede copiar en una carpeta que tenga un nombre que la carpeta vigilada vaya a recoger. Este paso evita que la carpeta vigilada recoja una carpeta para procesarla antes de que la carpeta se copie completamente en la carpeta de entrada. Por ejemplo, si el valor excludeFilePattern es `data*`, todos los archivos y carpetas que coinciden con `data*` no se recogen. Esto incluye archivos y carpetas con nombre `data1`, `data2`, etc. Además, el patrón se puede complementar con patrones comodín para especificar patrones de archivo. La carpeta vigilada modifica la expresión regular para admitir patrones comodín como `*.*` y `*.pdf`. Estas expresiones regulares no admiten estos patrones comodín.
 * **includeFilePattern**: Patrón que utiliza la carpeta vigilada para determinar qué carpetas y archivos analizar y recoger. Por ejemplo, si este valor es `*`, todos los archivos y carpetas que coinciden con `input*` son recogidos. Esto incluye archivos y carpetas con nombre `input1`, `input2`, etc. El valor predeterminado es `*`. Este valor indica todos los archivos y carpetas. Además, el patrón se puede complementar con patrones comodín para especificar patrones de archivo. La carpeta vigilada modifica la expresión regular para admitir patrones comodín como `*.*` y `*.pdf`. Estas expresiones regulares no admiten estos patrones comodín. Este valor es obligatorio.
 * **resultFolderName**: La carpeta en la que se almacenan los resultados guardados. Esta ubicación puede ser una ruta de directorio absoluta o relativa. Si los resultados no aparecen en esta carpeta, compruebe la carpeta de errores. Los archivos de solo lectura no se procesan y se guardan en la carpeta de errores. El valor predeterminado es `result/%Y/%M/%D/`. Esta es la carpeta de resultados dentro de la carpeta vigilada.
 * **preserveFolderName**: Ubicación en la que se almacenan los archivos después de realizar el análisis y la recogida con éxito. Esta ubicación puede ser absoluta, relativa o nula. El valor predeterminado es `preserve/%Y/%M/%D/`.
 * **failureFolderName**: Carpeta donde se guardan los archivos de error. Esta ubicación siempre es relativa a la carpeta vigilada. Los archivos de solo lectura no se procesan y se guardan en la carpeta de errores. El valor predeterminado es `failure/%Y/%M/%D/`.
-* **preserveOnFailure**: Preservar archivos de entrada en caso de que no se ejecute la operación en un servicio. El valor predeterminado es true.
-* **overwriteDuplicateFilename**: Cuando se establece en true, los archivos de la carpeta de resultados y de la carpeta de preservación se sobrescriben. Cuando se establece en false, los archivos y carpetas que tienen un sufijo de índice numérico se utilizan para el nombre. El valor predeterminado es false.
+* **preserveOnFailure**: Preservar archivos de entrada en caso de que no se ejecute la operación en un servicio. El valor predeterminado es True.
+* **overwriteDuplicateFilename**: Cuando se establece en true, los archivos de la carpeta de resultados y de la carpeta de preservación se sobrescriben. Cuando se establece en false, los archivos y carpetas que tienen un sufijo de índice numérico se utilizan para el nombre. El valor predeterminado es False.
 
 **Definir valores de parámetros de entrada**
 
@@ -381,7 +385,7 @@ Después de establecer los atributos del extremo, los valores de configuración 
 
 Después de crear un extremo de carpeta vigilada, debe habilitarlo. Cuando el extremo está habilitado, se puede utilizar para invocar el servicio. Después de habilitar el punto final, puede verlo en la consola de administración.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Añadir un extremo de carpeta vigilada mediante la API de Java](programmatically-endpoints.md#add-a-watched-folder-endpoint-using-the-java-api)
 
@@ -451,7 +455,7 @@ Agregue un extremo de carpeta vigilada mediante la API Java de AEM Forms:
 
    Habilitar el extremo invocando el `EndpointRegistryClient` del objeto `enable` y pasando el `Endpoint` objeto devuelto por el `createEndpoint` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](programmatically-endpoints.md#summary-of-steps)
 
@@ -626,7 +630,7 @@ Después de establecer los atributos de extremo de correo electrónico y los val
 
 Después de crear un extremo de correo electrónico, debe habilitarlo. Cuando el extremo está habilitado, se puede utilizar para invocar el servicio. Después de habilitar el punto final, puede verlo en la consola de administración.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Añadir un extremo de correo electrónico mediante la API de Java](programmatically-endpoints.md#add-an-email-endpoint-using-the-java-api)
 
@@ -696,7 +700,7 @@ Añada un extremo de correo electrónico mediante la API de Java:
 
    Habilitar el extremo invocando el `EndpointRegistryClient` del objeto `enable` y pasando el `Endpoint` objeto devuelto por el `createEndpoint` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](programmatically-endpoints.md#summary-of-steps)
 
@@ -811,7 +815,7 @@ Después de establecer los atributos de extremo Remoting, puede crear un extremo
 
 Después de crear un nuevo extremo, debe habilitarlo. Cuando un extremo Remoting está habilitado, permite que un cliente de Flex invoque el servicio.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Añadir un extremo de Remoting mediante la API de Java](programmatically-endpoints.md#add-a-remoting-endpoint-using-the-java-api)
 
@@ -849,7 +853,7 @@ Añada un punto final de Remoting utilizando la API de Java:
 
    Habilitar el extremo invocando el `EndpointRegistryClient` del objeto `enable` y pasando el `Endpoint` objeto devuelto por el `createEndpoint` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](programmatically-endpoints.md#summary-of-steps)
 
@@ -922,7 +926,7 @@ Después de establecer los atributos de extremo de TaskManager, puede crear un e
 
 Después de crear un nuevo extremo, debe habilitarlo. Cuando el punto final está habilitado, se puede utilizar para invocar el servicio desde Workspace. Después de habilitar el punto final, puede verlo en la consola de administración.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Añadir un extremo de TaskManager mediante la API de Java](programmatically-endpoints.md#add-a-taskmanager-endpoint-using-the-java-api)
 
@@ -970,7 +974,7 @@ Agregue un extremo de TaskManager usando la API de Java:
 
    Habilitar el extremo invocando el `EndpointRegistryClient` del objeto `enable` y pasando el `Endpoint` objeto devuelto por el `createEndpoint` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](programmatically-endpoints.md#summary-of-steps)
 
@@ -1034,7 +1038,7 @@ Al modificar un extremo, especifique nuevos valores de configuración. Por ejemp
 >
 >No puede modificar el servicio que invoca el extremo. Si intenta modificar el servicio, se produce una excepción. Para modificar el servicio asociado a un punto final determinado, elimine el punto final y cree uno nuevo. (Consulte [Eliminación de extremos](programmatically-endpoints.md#removing-endpoints).)
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Modificación de un extremo mediante la API de Java](programmatically-endpoints.md#modifying-an-endpoint-using-the-java-api)
 
@@ -1072,7 +1076,7 @@ Modifique un punto final utilizando la API de Java:
    * Invocar el `EndpointRegistryClient` del objeto `modifyEndpoint` y pase el `ModifyEndpointInfo` objeto.
 
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](programmatically-endpoints.md#summary-of-steps)
 
@@ -1128,7 +1132,7 @@ Puede recuperar un punto final recuperando una lista de puntos finales. A contin
 
 Después de crear un nuevo extremo, debe habilitarlo. Cuando el extremo está habilitado, se puede utilizar para invocar el servicio. Después de habilitar el punto final, puede verlo en la consola de administración.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Eliminación de un extremo mediante la API de Java](programmatically-endpoints.md#removing-an-endpoint-using-the-java-api)
 
@@ -1160,7 +1164,7 @@ Elimine un punto final utilizando la API de Java:
 
    Elimine el punto final invocando la variable `EndpointRegistryClient` del objeto `remove` y pasando el `EndPoint` que representa el punto final que se va a quitar.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](programmatically-endpoints.md#summary-of-steps)
 
@@ -1225,7 +1229,7 @@ Especifique el tipo de conector desde el que desea recuperar información. Exist
 
 Después de especificar el tipo de conector, puede recuperar información sobre el conector, como el valor de configuración admitido. Por ejemplo, para cualquier conector, puede determinar qué valores de configuración son obligatorios y cuáles son opcionales.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Recuperar información del conector de extremo mediante la API de Java](programmatically-endpoints.md#retrieve-endpoint-connector-information-using-the-java-api)
 
@@ -1255,7 +1259,7 @@ Recupere la información del conector de extremo mediante la API de Java:
    * Recupere los valores de configuración asociados dentro de este extremo invocando la variable `Endpoint` del objeto `getConfigParameters` método. Este método devuelve una matriz de `ConfigParameter` objetos.
    * Recupere información sobre cada valor de configuración recuperando cada elemento dentro de la matriz. Cada elemento es un `ConfigParameter` objeto. Por ejemplo, puede determinar si el valor de configuración es obligatorio u opcional invocando la variable `ConfigParameter` del objeto `isRequired` método. Si el valor de configuración es obligatorio, este método devuelve `true`.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](programmatically-endpoints.md#summary-of-steps)
 

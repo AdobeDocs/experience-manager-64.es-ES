@@ -1,5 +1,5 @@
 ---
-title: Inicio rápido de la API de Java del servicio DocConverter (SOAP)
+title: Inicio rápido (SOAP) de la API de Java del servicio DocConverter
 seo-title: DocConverter Service Java API QuickStart(SOAP)
 description: Utilice la API Java del servicio DocConverter para determinar la conformidad con el PDF/A y para convertir un documento en un documento de PDF/A.
 seo-description: Use the DocConverter Service Java API to determine PDF/A compliance and to convert a document to a PDF/A document.
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: ea4b26c8-b9cf-42c2-b4da-2884336014a9
 role: Developer
 exl-id: 0a418016-f61a-485d-a87a-a3d48651e0d7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 0%
+source-wordcount: '305'
+ht-degree: 4%
 
 ---
 
 # Inicio rápido de la API de Java del servicio DocConverter (SOAP) {#docconverter-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El inicio rápido de la API de Java (SOAP) está disponible para el servicio DocConverter.
 

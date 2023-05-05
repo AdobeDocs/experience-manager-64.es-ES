@@ -1,5 +1,5 @@
 ---
-title: Explicación de los procesos de AEM Forms
+title: Explicar los procesos de AEM Forms
 seo-title: Understanding AEM Forms Processes
 description: Aprenda a utilizar los procesos empresariales de AEM Forms para automatizar operaciones. Active los procesos para crear un servicio de modo que pueda invocarlo como otros servicios. Los procesos pueden durar poco o durar mucho tiempo.
 seo-description: Learn how to use AEM Forms business processes to automate operations. Activate the processes to create a service so that you can invoke it like other services. Processes can be short-lived or long-lived.
@@ -11,14 +11,18 @@ topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 role: Developer
 exl-id: 0ae0ddbf-ded6-4494-bf94-bf6cf7f1fd46
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '818'
-ht-degree: 0%
+source-wordcount: '854'
+ht-degree: 3%
 
 ---
 
-# Explicación de los procesos de AEM Forms {#understanding-aem-forms-processes}
+# Explicar los procesos de AEM Forms {#understanding-aem-forms-processes}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Un caso de uso común es el de un conjunto de servicios de AEM Forms que funcionan en un solo documento. Puede enviar una solicitud al contenedor de servicios creando un proceso mediante Workbench. Un proceso representa un proceso empresarial que está automatizando. Para obtener información sobre la creación de procesos, consulte [Uso de Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
 

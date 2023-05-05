@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: ad80505f-116e-43f1-8d93-ffe6e8b1ac46
 feature: Commerce Integration Framework
 exl-id: 614815ef-6fe3-4b06-9c56-bc9fee127825
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2912'
-ht-degree: 5%
+source-wordcount: '2948'
+ht-degree: 3%
 
 ---
 
 # Administración del comercio electrónico genérico{#administering-generic-ecommerce}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 La solución genérica AEM proporciona métodos para administrar la información de comercio que se encuentra en el repositorio (en lugar de utilizar un motor de comercio electrónico externo). Esto incluye:
 
@@ -377,7 +381,7 @@ Puede verlas en la consola web en los eventos OSGI ( `/system/console/events`), 
 >
 >Lea también [Gestión de eventos en AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/). [](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)
 
-### Imagen con vínculos Añadir a carro {#image-with-add-to-cart-links}
+### La imagen con vínculos Añadir a carro {#image-with-add-to-cart-links}
 
 El componente Imagen con vínculos Agregar al carro de compras le permite agregar rápidamente un producto al carro de compras creando un punto interactivo vinculado a un producto en una imagen.
 
@@ -457,9 +461,9 @@ Puede configurar el aspecto del cuadro de diálogo al hacer clic en el punto int
 
 Para generar un catálogo:
 
-1.  Abra la consola Sitios (por ejemplo, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
+1. Abra la consola Sitios (por ejemplo, [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
 1. Desplácese hasta la ubicación en la que desee crear la nueva página.
-1. Para abrir la lista de opciones, utilice el icono **Crear**:
+1. Para abrir la lista de opciones, utilice el **Crear** icono:
 
    ![](do-not-localize/chlimage_1-23.png)
 
@@ -598,7 +602,7 @@ Para desplegar un catálogo:
 
    Especifique la variable **Tipo de promoción**, **Tipo de descuento**, **Valor de descuento** y cualquier otro campo según sea necesario.
 
-1. Haga clic en **Aceptar** para guardar.
+1. Haga clic en **OK** para guardar.
 
 1. Ahora puede activar la promoción para que los compradores la vean en la instancia de publicación.
 
@@ -614,7 +618,7 @@ Para desplegar un catálogo:
 1. Haga clic en **Crear**. La nueva página de cupones se mostrará en el panel derecho.
 
 1. Abra la nueva página de cupones con un doble clic y, a continuación, haga clic en **Editar** para configurar la información según sea necesario.
-1. Haga clic en **Aceptar** para guardar.
+1. Haga clic en **OK** para guardar.
 
 1. Ahora puede activar el vale, de modo que los compradores puedan utilizarlo en sus carros en la instancia de publicación.
 

@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 role: Developer
 exl-id: 859a2b57-df90-4030-9061-c454d07cb753
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 0%
+source-wordcount: '680'
+ht-degree: 3%
 
 ---
 
 # Inicio rápido de la API del servicio de repositorio {#repository-service-api-quick-starts}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Los siguientes Inicio rápido están disponibles para el servicio Repositorio de AEM Forms.
 
@@ -60,7 +64,7 @@ La ruta a un recurso ubicado en el repositorio de AEM Forms es:
 
 >[!NOTE]
 >
->Applications/FormsApplication no existe de forma predeterminada. Para continuar con los inicios rápidos, cree esta aplicación utilizando Workbench. Para obtener información sobre la creación de una aplicación mediante Workbench, consulte [Introducción al diseño de procesos](http://www.adobe.com/go/learn_aemforms_workbench_64).
+>Applications/FormsApplication no existe de forma predeterminada. Para continuar con los inicios rápidos, cree esta aplicación utilizando Workbench. Para obtener información sobre la creación de una aplicación mediante Workbench, consulte [Introducción al diseño de procesos](http://www.adobe.com/go/learn_aemforms_workbench_64_es).
 
 ## Inicio rápido (modo SOAP): Creación de una carpeta mediante la API de Java {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 

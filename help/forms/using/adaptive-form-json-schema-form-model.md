@@ -1,5 +1,5 @@
 ---
-title: Creación de formularios adaptables mediante el esquema JSON
+title: Crear formularios adaptables mediante el esquema JSON
 seo-title: Creating adaptive forms using JSON Schema
 description: Los formularios adaptables pueden utilizar el esquema JSON como modelo de formulario, lo que le permite aprovechar los esquemas JSON existentes para crear formularios adaptables.
 seo-description: Adaptive forms can use JSON schema as form model, allowing you to leverage existing JSON schemas to create adaptive forms.
@@ -9,20 +9,24 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcda96ff-6c7d-46c4-a9e8-7e0fb245cde9
 feature: Adaptive Forms
 exl-id: 42c41625-7441-479c-bd07-7e96e867cc0a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1207'
-ht-degree: 63%
+source-wordcount: '1243'
+ht-degree: 75%
 
 ---
 
-# Creación de formularios adaptables mediante el esquema JSON {#creating-adaptive-forms-using-json-schema}
+# Crear formularios adaptables mediante el esquema JSON {#creating-adaptive-forms-using-json-schema}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Requisitos previos {#prerequisites}
 
 La creación de un formulario adaptable utilizando un esquema JSON como modelo de formulario requiere una comprensión básica del esquema JSON. Se recomienda leer el siguiente contenido antes de este artículo.
 
-* [Creación de un formulario adaptable](/help/forms/using/creating-adaptive-form.md)
+* [Crear un formulario adaptable](/help/forms/using/creating-adaptive-form.md)
 * [Esquema JSON](https://json-schema.org/)
 
 ## Usar un esquema JSON como modelo de formulario  {#using-a-json-schema-as-form-model}
@@ -35,9 +39,9 @@ Las características clave del uso de un esquema JSON son:
 * Puede rellenar previamente el formulario utilizando un JSON que cumpla con el esquema asociado.
 * En el envío, los datos especificados por el usuario se envían como JSON, que se adhiere al esquema asociado.
 
-Un esquema JSON consta de tipos de elementos simples y complejos. Los elementos tienen atributos que agregan reglas al elemento. Cuando estos elementos y atributos se arrastran a un formulario adaptable, se asignan automáticamente al componente de formulario adaptable correspondiente.
+Un esquema JSON consta de tipos de elementos simples y complejos. Los elementos tienen atributos que agregan reglas al elemento. Cuando estos elementos y atributos se arrastran a un formulario adaptable, se asignan automáticamente al componente del formulario adaptable correspondiente.
 
-Esta asignación de elementos JSON con componentes de formulario adaptables es la siguiente:
+Esta asignación de elementos JSON con componentes del formulario adaptable se produce de la siguiente forma:
 
 <table> 
  <tbody> 
@@ -319,7 +323,7 @@ El ejemplo anterior define un registro de cliente en el que cada cliente tiene u
 
 ## Preconfigurar campos en la definición del esquema JSON {#pre-configuring-fields-in-json-schema-definition}
 
-Puede usar la variable **aem:afProperties** para preconfigurar el campo Esquema JSON para asignarlo a un componente de formulario adaptable personalizado. A continuación se muestra un ejemplo:
+Puede usar la propiedad **aem:afProperties** para preconfigurar el campo del esquema JSON y asignarlo a un componente de formulario adaptable personalizado. A continuación se muestra un ejemplo:
 
 ```
 {
@@ -339,9 +343,9 @@ Puede usar la variable **aem:afProperties** para preconfigurar el campo Esquema 
 }
 ```
 
-## Límite de valores aceptables para un componente de formulario adaptable {#limit-acceptable-values-for-an-adaptive-form-component}
+## Limitar los valores aceptables para un componente de formulario adaptable {#limit-acceptable-values-for-an-adaptive-form-component}
 
-Puede añadir las siguientes restricciones a los elementos del esquema JSON para limitar los valores aceptables para un componente de formulario adaptable:
+Puede agregar las siguientes restricciones a los elementos del esquema JSON para limitar los valores aceptables para un componente de formulario adaptable:
 
 <table> 
  <tbody> 
@@ -419,7 +423,7 @@ Puede añadir las siguientes restricciones a los elementos del esquema JSON para
    <td><p>Especifica la secuencia de caracteres. Un componente acepta los caracteres si se ajustan al patrón especificado.</p> <p>La propiedad pattern se asigna al patrón de validación del componente de formulario adaptable correspondiente.</p> </td> 
    <td> 
     <ul> 
-     <li>Todos los componentes de formularios adaptables asignados a un esquema XSD </li> 
+     <li>Todos los componentes de formulario adaptable asignados a un esquema XSD </li> 
     </ul> </td> 
   </tr> 
   <tr> 

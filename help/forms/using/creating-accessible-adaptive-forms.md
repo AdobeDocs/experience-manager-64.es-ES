@@ -1,7 +1,7 @@
 ---
-title: Creación de formularios adaptables accesibles
+title: Crear formularios adaptables accesibles
 seo-title: Creating accessible adaptive forms
-description: AEM Forms proporciona herramientas y para crear formularios adaptables accesibles, y ayuda a cumplir con los estándares de accesibilidad.
+description: AEM Forms proporciona herramientas y permite crear formularios adaptables accesibles y ayuda a cumplir con los estándares de accesibilidad.
 seo-description: AEM Forms provides you tools and to create accessible adaptive forms and helps comply with accessibility standards.
 uuid: eceb3282-0b90-4e0a-8b89-137d27029747
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -9,20 +9,24 @@ topic-tags: author
 discoiquuid: 96d9ad52-074b-4084-b818-abce79282776
 feature: Adaptive Forms
 exl-id: adad26fa-b27a-4bd7-806c-4ddfbaae7a37
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 79%
+source-wordcount: '939'
+ht-degree: 93%
 
 ---
 
-# Creación de formularios adaptables accesibles {#creating-accessible-adaptive-forms}
+# Crear formularios adaptables accesibles {#creating-accessible-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Introducción {#introduction}
 
 Un formulario accesible es un formulario que todos pueden utilizar, incluidos los usuarios con necesidades especiales. Adobe Experience Manager (AEM) incluye una serie de funciones y capacidades que mejoran la facilidad de uso de los formularios adaptables para los usuarios con diferentes capacidades. La solución también ayuda a los autores de formularios a crear formularios adaptables accesibles.
 
-Crear la accesibilidad en formularios adaptables no solo permite la mayor audiencia posible para el contenido, sino que también es un requisito al proporcionar documentos en áreas geográficas en las que se exige el cumplimiento de los estándares de accesibilidad. AEM Forms ayuda a los desarrolladores de formularios a cumplir con los estándares de accesibilidad.
+La creación de accesibilidad en los formularios adaptables no solo permite la mayor audiencia posible de contenido, sino que también es un requisito al proporcionar documentos en zonas geográficas en las que se exige el cumplimiento de los estándares de accesibilidad. AEM Forms ayuda a los desarrolladores de formularios a cumplir con los estándares de accesibilidad.
 
 Durante la creación de un formulario adaptable, el autor debe tener en cuenta los siguientes puntos para crear un formulario adaptable accesible:
 
@@ -82,7 +86,7 @@ Los usuarios con deficiencias visuales dependen del alto contraste entre el text
 
 Se recomienda utilizar la fuente y los colores de fondo predeterminados, contenido en color negro sobre fondo blanco. Si cambia los colores predeterminados, elija un color de primer plano oscuro en un color de fondo claro o viceversa.
 
-Consulte [Creación de temas personalizados para formularios adaptables](/help/forms/using/creating-custom-adaptive-form-themes.md), para obtener más información sobre cómo cambiar el contraste de color y el tema para los formularios adaptables.
+Consulte [Crear temáticas personalizados para formularios adaptables](/help/forms/using/creating-custom-adaptive-form-themes.md), para obtener más información sobre cómo cambiar el contraste de color y la temática para los formularios adaptables.
 
 ## Asegúrese de que los controles del formulario son accesibles mediante el teclado {#ensure-that-form-controls-are-keyboard-accessible}
 

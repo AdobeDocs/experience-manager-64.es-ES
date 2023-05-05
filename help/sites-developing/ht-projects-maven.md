@@ -2,14 +2,18 @@
 title: Cómo crear AEM proyectos con Apache Maven
 description: Este documento describe cómo configurar un proyecto AEM basado en Apache Maven
 exl-id: 6ae0e387-468b-4cea-9e3f-0816d67b7621
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '147'
-ht-degree: 10%
+source-wordcount: '183'
+ht-degree: 12%
 
 ---
 
 # Cómo crear AEM proyectos con Apache Maven {#how-to-build-aem-projects-using-apache-maven}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 AEM 6.4 se adhiere a las prácticas recomendadas más recientes para la gestión de paquetes y la estructura de proyectos, tal como se han aplicado en el último tipo de archivo del proyecto AEM para las implementaciones locales y AMS.
 

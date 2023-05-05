@@ -9,16 +9,20 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 exl-id: 3a666efe-1592-4425-82f5-c4d9343f65da
 feature: Image Presets
 role: Admin,User
-source-git-commit: 78e187855845046071bc7f22cd7d491d48568336
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3835'
+source-wordcount: '3871'
 ht-degree: 8%
 
 ---
 
 # Administración de ajustes preestablecidos de imagen de Dynamic Media {#managing-image-presets}
 
-Los ajustes preestablecidos de imagen permiten a AEM Assets entregar de forma dinámica imágenes con tamaños diferentes, en formatos diferentes o con otras propiedades de imagen generadas de forma dinámica. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y diseño para mostrar las imágenes. Al crear un ajuste preestablecido de imagen, se elige un tamaño para la entrega de imágenes. También puede elegir los comandos de formato para que el aspecto de la imagen se optimice cuando la imagen se entregue para su visualización.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+Los ajustes preestablecidos de imagen permiten a AEM Assets entregar de forma dinámica imágenes con tamaños diferentes, en formatos diferentes o con otras propiedades de imagen generadas de forma dinámica. Cada ajuste preestablecido de imagen representa una colección predefinida de comandos de tamaño y formato para mostrar imágenes. Al crear un ajuste preestablecido de imagen, se elige un tamaño para la entrega de imágenes. También puede elegir los comandos de formato para que el aspecto de la imagen se optimice cuando la imagen se entregue para su visualización.
 
 Los administradores pueden crear ajustes preestablecidos para exportar recursos. Los usuarios pueden elegir un ajuste preestablecido cuando exportan imágenes, lo que también les permite cambiar el formato de las imágenes según las especificaciones del administrador.
 
@@ -115,12 +119,12 @@ Toque en Adobe Experience Manager, en la esquina superior izquierda, vaya a **[!
    <td>Lista de tipos de mime de documento que se consideran documentos PDF o Illustrator.<br/> </td>
   </tr> 
   <tr> 
-   <td>Ancho máximo</td>
+   <td>Anchura máxima</td>
    <td>2048</td>
    <td>Ancho máximo de la representación de vista previa generada, en píxeles.<br/> </td>
   </tr> 
   <tr> 
-   <td>Alto máximo</td>
+   <td>Altura máxima</td>
    <td>2048</td>
    <td>Altura máxima de la representación de vista previa generada, en píxeles.<br/> </td>
   </tr> 
@@ -250,7 +254,7 @@ Si tiene intención de admitir la ingesta de archivos INDD para poder generar un
 
 1. En AEM, pulse el logotipo de AEM para acceder a la consola de navegación global.
 1. Toque . **[!UICONTROL Herramientas]** y, a continuación, vaya a **[!UICONTROL Assets > Ajustes preestablecidos de imagen]**.
-1. Toque **[!UICONTROL Crear]**.
+1. Pulse **[!UICONTROL Crear]**.
 
    ![chlimage_1-496](assets/chlimage_1-496.png)
 
@@ -506,4 +510,4 @@ Si está ejecutando Dynamic Media en modo Scene7, los ajustes preestablecidos de
 
 1. En AEM, pulse el logotipo de AEM para acceder a la consola de navegación global.
 1. Toque . **[!UICONTROL Herramientas]** y, a continuación, vaya a **[!UICONTROL Assets > Ajustes preestablecidos de imagen]**.
-1. Seleccione un ajuste preestablecido y, a continuación, pulse **[!UICONTROL Eliminar]**. Dynamic Media confirma que desea eliminarlo. Toque **[!UICONTROL Eliminar]**.
+1. Seleccione un ajuste preestablecido y, a continuación, pulse **[!UICONTROL Eliminar]**. Dynamic Media confirma que desea eliminarlo. Pulse **[!UICONTROL Eliminar]**.

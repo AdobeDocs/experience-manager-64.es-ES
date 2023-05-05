@@ -1,5 +1,5 @@
 ---
-title: Copia de seguridad de los datos de AEM formularios
+title: Copia de seguridad de los datos de AEM Forms
 seo-title: Backing up the AEM forms data
 description: En este documento se describen los pasos necesarios para completar una copia de seguridad en línea o en caliente de la base de datos de formularios AEM, los directorios raíz de GDS y de almacenamiento de contenido.
 seo-description: This document describes the steps that are required to complete a hot, or online, backup of the AEM forms database, the GDS, and Content Storage Root directories.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 52187196-b091-4683-85ae-cc7c250dee54
 exl-id: d86cf58f-6595-4f37-977f-09437a7f89f9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1540'
-ht-degree: 0%
+source-wordcount: '1576'
+ht-degree: 1%
 
 ---
 
-# Copia de seguridad de los datos de AEM formularios {#backing-up-the-aem-forms-data}
+# Copia de seguridad de los datos de AEM Forms {#backing-up-the-aem-forms-data}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 En esta sección se describen los pasos necesarios para completar una copia de seguridad en línea o en caliente de la base de datos de formularios AEM, los directorios raíz de GDS y de almacenamiento de contenido.
 
@@ -124,7 +128,7 @@ Puede utilizar la consola de administración o la opción de línea de comandos 
 
 Para utilizar la Consola de administración para sacar AEM formularios del modo de copia de seguridad segura (modo de instantánea), realice las siguientes tareas.
 
-1. Inicie sesión en la Consola de administración.
+1. Inicie sesión en la consola de administración.
 1. Haga clic en Configuración > Configuración del sistema principal > Utilidades de copia de seguridad.
 1. Desmarque Operar en modo de copia de seguridad segura y haga clic en Aceptar.
 
@@ -137,7 +141,7 @@ Puede utilizar la interfaz de la línea de comandos para quitar AEM formularios 
 
    >[!NOTE]
    >
-   >Debe configurar el directorio JAVA_HOME como se describe en el capítulo correspondiente para su servidor de aplicaciones en [Preparación para la instalación de AEM formularios](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
+   >Debe configurar el directorio JAVA_HOME como se describe en el capítulo correspondiente para su servidor de aplicaciones en [Preparación para la instalación de AEM formularios](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_es)*.*
 
 1. Ejecute el siguiente comando en una sola línea:
 

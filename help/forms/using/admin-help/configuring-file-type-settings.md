@@ -1,5 +1,5 @@
 ---
-title: Configuración de la configuración del tipo de archivo
+title: Configurar el tipo de archivo
 seo-title: Configuring file type settings
 description: Obtenga información sobre cómo configurar opciones de tipo de archivo.
 seo-description: Learn how to configure file type settings.
@@ -10,14 +10,18 @@ content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: PDF Generator
 exl-id: a86ba10c-0d62-4dae-b8d5-8b24156c30b8
-source-git-commit: 251000ec9a67e5175c708d558c3c71a2061a1c9e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '6135'
-ht-degree: 2%
+source-wordcount: '6171'
+ht-degree: 1%
 
 ---
 
-# Configuración de la configuración del tipo de archivo {#configuring-file-type-settings}
+# Configurar el tipo de archivo {#configuring-file-type-settings}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 En Generador de PDF, puede configurar la configuración de la aplicación para los tipos de archivo admitidos. En Windows, puede configurar la configuración de la aplicación para cada tipo de archivo admitido. En UNIX y Linux, puede configurar la configuración de la aplicación para HTML a PDF y OpenOffice.
 
@@ -50,7 +54,7 @@ Cree o edite una configuración de tipo de archivo para especificar cómo gestio
 
 1. Complete la información requerida en estas secciones:
 
-[Importación y exportación de archivos de configuración de PDF Generator](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+[Importar y exportar archivos de configuración del generador de PDF](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
 
 [Configuración de exportación de Adobe PDF (solo Windows)](#adobe-pdf-export-settings-windows-only)
 

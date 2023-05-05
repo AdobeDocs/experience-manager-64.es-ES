@@ -1,5 +1,5 @@
 ---
-title: Reconocimiento de certificados válidos y caducados en documentos de PDF
+title: Reconocer certificados válidos y caducados en documentos PDF
 seo-title: Recognizing valid and expired certificates in PDF documents
 description: Obtenga información sobre cómo reconocer certificados válidos y caducados en documentos de PDF.
 seo-description: Learn how to recognize valid and expired certificates in PDF documents.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 4559218a-65ba-4577-ad26-7721e28971bc
 exl-id: 6e2c109c-381f-455d-bd1d-b08c37c0bd67
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '198'
-ht-degree: 0%
+source-wordcount: '234'
+ht-degree: 10%
 
 ---
 
-# Reconocimiento de certificados válidos y caducados en documentos de PDF {#recognizing-valid-and-expired-certificates-in-pdf-documents}
+# Reconocer certificados válidos y caducados en documentos PDF {#recognizing-valid-and-expired-certificates-in-pdf-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Cuando se abre en Adobe Reader un documento de PDF que tiene derechos de uso aplicados por las extensiones de Reader, aparece una barra de estado que describe los derechos de uso específicos activados en el documento de PDF.
 

@@ -8,14 +8,18 @@ content-type: reference
 exl-id: b0f0c6e4-77c8-40db-a9f4-699d1a633571
 feature: Configuration,Scene7 Mode
 role: Admin,User,Developer
-source-git-commit: a045c70f8cbfa03295c4fcbfbb2df1831c3f7292
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '5619'
+source-wordcount: '5655'
 ht-degree: 3%
 
 ---
 
 # Configuración de Dynamic Media: modo Scene7 {#configuring-dynamic-media-scene-mode}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Si utiliza la configuración de Adobe Experience Manager para diferentes entornos, como desarrollo, ensayo y producción en directo, debe configurar los Cloud Services de Dynamic Media para cada entorno.
 
@@ -33,7 +37,7 @@ Con la nueva arquitectura, Experience Manager es responsable de los recursos pri
 
 ## Habilitar Dynamic Media en modo Scene7 {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media está desactivado de forma predeterminada. ](https://www.adobe.com/marketing-cloud/enterprise-content-management/dynamic-media.html) Para aprovechar las funciones de Dynamic Media, debe activarlas.
+[Dynamic Media](https://www.adobe.com/marketing-cloud/enterprise-content-management/dynamic-media.html) está desactivado de forma predeterminada. Para aprovechar las funciones de Dynamic Media, debe activarlas.
 
 >[!WARNING]
 >
@@ -105,9 +109,9 @@ Cambie la contraseña antes de configurar los Cloud Services de Dynamic Media. D
    >
    >Una vez activado un recurso, las actualizaciones se publican inmediatamente en S7 Delivery.
 
-   ![dynamic mediaconfiguration2update](assets/dynamicmediaconfiguration2updated.png)
+   ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
-1. Toque **[!UICONTROL Guardar]**.
+1. Pulse **[!UICONTROL Guardar]**.
 1. Para previsualizar de forma segura el contenido de Dynamic Media antes de publicarlo, debe &quot;lista de permitidos&quot; la instancia de autor de Experience Manager para conectarse a Dynamic Media:
 
    * Abra el [aplicación de escritorio de Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), luego inicie sesión en su cuenta. Adobe proporcionó las credenciales y los detalles de inicio de sesión en el momento del aprovisionamiento. Si no dispone de esta información, póngase en contacto con el servicio de asistencia técnica.
@@ -115,7 +119,7 @@ Cambie la contraseña antes de configurar los Cloud Services de Dynamic Media. D
    * En la página Publicación del servidor de imágenes , en la lista desplegable Contexto de publicación , seleccione **[!UICONTROL Probar servicio de imágenes]**.
    * Para el filtro de direcciones de cliente, pulse **[!UICONTROL Agregar]**.
    * Para activar la dirección, seleccione la casilla de verificación. Introduzca la dirección IP de la instancia de Autor del Experience Manager (no la IP de Dispatcher).
-   * Toque **[!UICONTROL Guardar]**.
+   * Pulse **[!UICONTROL Guardar]**.
 
 Ya ha finalizado con la configuración básica; está listo para usar el modo Dynamic Media - Scene7 .
 
@@ -201,7 +205,7 @@ La administración de color de Dynamic Media le permite colorear los recursos co
    * [!UICONTROL Espacio de color predeterminado del RGB] - Nombre del perfil de color del RGB predeterminado
    * [!UICONTROL Interpretación de la conversión de color] - Especifica la interpretación. Los valores aceptables son `perceptual`, `relative` `colometric`, `saturation`y `absolute colometric`. Recomendaciones de Adobe `relative` como predeterminado.
 
-1. Toque **[!UICONTROL Guardar]**.
+1. Pulse **[!UICONTROL Guardar]**.
 
 Por ejemplo, puede establecer el **[!UICONTROL espacio de color predeterminado RGB]** en `sRGB` y el **[!UICONTROL espacio de color predeterminado CMYK]** en `WebCoated`.
 
@@ -239,7 +243,7 @@ Consulte [Carga de recursos](managing-assets-touch-ui.md#uploading-assets).
    * haga doble clic en el botón **[!UICONTROL enabled]** campo . De forma predeterminada, todos los tipos de MIME de recursos están habilitados (se establece en **[!UICONTROL true]**), lo que significa que los recursos se sincronizan con Dynamic Media para su procesamiento. Si desea excluir el procesamiento de este tipo de MIME de recurso, cambie esta configuración a **[!UICONTROL false]**.
    * doble clic **[!UICONTROL jobParam]** para abrir el campo de texto asociado. Consulte [Tipos Mime Admitidos](assets-formats.md#supported-mime-types) para obtener una lista de los valores de parámetro de procesamiento permitidos que puede utilizar para un tipo de MIME determinado.
 
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Repita los pasos del 3 al 4 para editar más tipos de mime.
    * En la barra de menús de la página CRXDE Lite, pulse **[!UICONTROL Guardar todo]**.
@@ -339,7 +343,7 @@ Hay dos elementos disponibles para su definición, **[!UICONTROL Coincidencia]**
    * Toque **[!UICONTROL Agregar]** para agregar otra convención de nombres para un elemento.
    * Toque **[!UICONTROL Eliminar]** para eliminar una convención de nombres para un elemento.
 
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Toque **[!UICONTROL Guardar como]** y escriba un nombre para el ajuste preestablecido.
    * Toque **[!UICONTROL Guardar]** si está editando un ajuste preestablecido existente.
@@ -365,7 +369,7 @@ Se puede utilizar el método de campo de formulario para definir un ajuste prees
 1. En el panel Lista de ajustes preestablecidos, pulse **[!UICONTROL Agregar]** para activar los campos de definición en la variable **[!UICONTROL Detalles]** en el lado derecho de la pantalla.
 1. En el **[!UICONTROL Detalles]** , en el **[!UICONTROL Nombre de ajuste preestablecido]** , escriba un nombre para el ajuste preestablecido.
 1. En el **[!UICONTROL Tipo de conjunto de lotes]** menú desplegable, seleccione un tipo de ajuste preestablecido.
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * Si está utilizando una convención de nombres predeterminada que configuró anteriormente en **[!UICONTROL Configuración de la aplicación]** > **[!UICONTROL Ajustes preestablecidos de conjunto de lotes]** > **[!UICONTROL Nombre predeterminado]**, expandir **[!UICONTROL Convenciones de nomenclatura de recursos]**, y luego en el **[!UICONTROL Asignación de nombres a archivos]** lista desplegable, toque **[!UICONTROL Predeterminado]**.
    * Para definir una nueva convención de nombres al configurar el ajuste preestablecido, **[!UICONTROL Convenciones de nomenclatura de recursos]**, y luego en el **[!UICONTROL Asignación de nombres a archivos]** lista desplegable, toque **[!UICONTROL Personalizado]**.
@@ -520,7 +524,7 @@ La cola Flujo de trabajo de tránsito de Granite se utiliza para la variable **[
 
 ![imagen_1](assets/chlimage_1.jpeg)
 
-1. Toque **[!UICONTROL Guardar]**.
+1. Pulse **[!UICONTROL Guardar]**.
 
 #### Actualización de la cola de Granite Workflow {#updating-the-granite-workflow-queue}
 
@@ -542,7 +546,7 @@ La cola Granite Workflow se utiliza para flujos de trabajo no transitorios. En D
 
    ![Chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-1. Toque **[!UICONTROL Guardar]**.
+1. Pulse **[!UICONTROL Guardar]**.
 
 #### Actualización de la conexión de carga de Scene7 {#updating-the-scene-upload-connection}
 
@@ -550,7 +554,7 @@ La configuración de conexión de carga de Scene7 sincroniza Experience Manager 
 
 **Para actualizar la conexión de carga de Scene7:**
 
-1. Vaya a `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
+1. Navegue hasta `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. En el [!UICONTROL Número de conexiones] o [!UICONTROL Tiempo de espera de trabajo activo] , cambie el número como desee.
 
    La variable **[!UICONTROL Número de conexiones]** el ajuste controla el número máximo de conexiones HTTP permitidas para el Experience Manager de carga de Dynamic Media; normalmente, el valor predefinido de diez conexiones es suficiente.
@@ -561,7 +565,7 @@ La configuración de conexión de carga de Scene7 sincroniza Experience Manager 
 
    ![Chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. Toque **[!UICONTROL Guardar]**.
+1. Pulse **[!UICONTROL Guardar]**.
 
 ### (Opcional) Filtrado de recursos para replicación {#optional-filtering-assets-for-replication}
 
@@ -579,7 +583,7 @@ Si utiliza Dynamic Media para imágenes, vídeos o ambos, puede usar los filtros
  <tbody> 
   <tr> 
    <td> </td> 
-   <td><strong>Filtro</strong></td> 
+   <td><strong>Filter</strong></td> 
    <td><strong>Tipo MIME</strong></td> 
    <td><strong>Representaciones</strong></td> 
   </tr> 

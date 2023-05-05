@@ -2,17 +2,21 @@
 title: Agregar mapas de imagen
 description: Aprenda a añadir mapas de imagen hipervinculados a los recursos de imagen.
 contentOwner: AG
-feature: Administración de activos
+feature: Asset Management
 role: User,Admin
 exl-id: d6b04891-12d3-4255-a156-2e9000474fd1
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 0%
+source-wordcount: '324'
+ht-degree: 2%
 
 ---
 
 # Agregar mapas de imagen {#adding-image-maps}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Aprenda a añadir mapas de imagen hipervinculados a los recursos de imagen.
 
@@ -20,18 +24,18 @@ Los mapas de imagen le permiten agregar una o más áreas hipervinculadas que fu
 
 1. Realice una de las siguientes acciones para abrir **[!UICONTROL Editor de imágenes in situ]**:
 
-   * Mediante Acciones rápidas, pulse el icono **[!UICONTROL Editar]** que aparece en un recurso en la vista **[!UICONTROL Tarjeta]**. En la vista de lista, seleccione el recurso y pulse el icono **Editar** en la barra de herramientas.
+   * Con las Acciones rápidas, pulse el botón **[!UICONTROL Editar]** que aparece en un recurso de la sección **[!UICONTROL Tarjeta]** vista. En la vista de lista, seleccione el recurso y pulse el botón **Editar** en la barra de herramientas.
 
       >[!NOTE]
       >
-      >Acciones rápidas no está disponible en la vista **[!UICONTROL Lista]**.
+      >Las Acciones rápidas no están disponibles en la **[!UICONTROL Lista]** vista.
 
-   * En la vista **[!UICONTROL Card]** o **[!UICONTROL List]**, seleccione el recurso y pulse el icono **[!UICONTROL Edit]** en la barra de herramientas.
-   * Pulse el icono **[!UICONTROL Editar]** de la página de recursos.
+   * En el **[!UICONTROL Tarjeta]** o **[!UICONTROL Lista]** vista, seleccione el recurso y pulse el botón **[!UICONTROL Editar]** en la barra de herramientas.
+   * Toque . **[!UICONTROL Editar]** de la página de recursos.
 
       ![chlimage_1-420](assets/chlimage_1-420.png)
 
-1. Para insertar un mapa de imagen, pulse el icono **[!UICONTROL Iniciar mapa]** de la barra de herramientas.
+1. Para insertar un mapa de imagen, pulse el botón **[!UICONTROL Inicio]** de la barra de herramientas.
 
    ![chlimage_1-421](assets/chlimage_1-421.png)
 
@@ -39,15 +43,15 @@ Los mapas de imagen le permiten agregar una o más áreas hipervinculadas que fu
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. Pulse el punto interactivo e introduzca la URL y el texto alternativo. En la lista **[!UICONTROL Target]**, especifique dónde desea que se muestre el mapa de imagen, por ejemplo, la misma ficha, una nueva ficha o un iFrame. Por ejemplo, introduzca `https://www.adobe.com` como URL, `Adobe website` como texto alternativo y especifique **[!UICONTROL Nueva pestaña]** en la lista **[!UICONTROL Destino]** para que el mapa de imagen se abra en una nueva ficha.
+1. Pulse el punto interactivo e introduzca la URL y el texto alternativo. En el **[!UICONTROL Target]** , especifique dónde desea que se muestre el mapa de imagen, por ejemplo, la misma ficha, una nueva ficha o un iFrame. Por ejemplo, introduzca `https://www.adobe.com` como URL, `Adobe website` como texto alternativo, y especifique **[!UICONTROL Nueva ficha]** de la variable **[!UICONTROL Target]** para que el mapa de imagen se abra en una pestaña nueva.
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 
-1. Pulse el icono **[!UICONTROL Confirm]** y, a continuación, pulse el icono **[!UICONTROL Finish]** de la barra de herramientas para guardar los cambios.
+1. Toque . **[!UICONTROL Confirmar]** y, a continuación, pulse el botón **[!UICONTROL Finalizar]** de la barra de herramientas para guardar los cambios.
 
    ![chlimage_1-424](assets/chlimage_1-424.png)
 
-   Para eliminar el mapa de imagen, pulse el punto interactivo y pulse el icono **[!UICONTROL Eliminar]**.
+   Para eliminar el mapa de imagen, pulse el punto interactivo y pulse el botón **[!UICONTROL Eliminar]** icono.
 
    ![chlimage_1-425](assets/chlimage_1-425.png)
 
@@ -55,4 +59,4 @@ Los mapas de imagen le permiten agregar una o más áreas hipervinculadas que fu
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   Si la opción Dynamic Media está activada, vaya al editor de recursos y pulse el icono **[!UICONTROL Map]** para ver todos los mapas de imágenes aplicados.
+   Si la opción Dynamic Media está activada, vaya al editor de recursos y toque la **[!UICONTROL Mapa]** para ver todos los mapas de imagen aplicados.

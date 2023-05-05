@@ -1,5 +1,5 @@
 ---
-title: Configuración de extensiones de Acrobat Reader DC para la captura de datos
+title: Configurar extensiones de Acrobat Reader DC para capturar datos
 seo-title: Configuring Acrobat Reader DC extensions for data capture
 description: Obtenga información sobre cómo configurar extensiones de Acrobat Reader DC para la captura de datos.
 seo-description: Learn how to configure Acrobat Reader DC extensions for data capture.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8f8367fe-a8e9-46ee-a980-1633be02932d
 exl-id: 3609ad29-f5b4-4426-8bbc-7c2e38f9b140
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 0%
+source-wordcount: '343'
+ht-degree: 6%
 
 ---
 
-# Configuración de extensiones de Acrobat Reader DC para la captura de datos {#configuring-acrobat-reader-dc-extensions-for-data-capture}
+# Configurar extensiones de Acrobat Reader DC para capturar datos {#configuring-acrobat-reader-dc-extensions-for-data-capture}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Si los usuarios de la instalación de los formularios AEM utilizan la funcionalidad de captura de datos de Content Services (obsoleto), se recomienda crear una función con acceso de solo lectura para estos usuarios.
 

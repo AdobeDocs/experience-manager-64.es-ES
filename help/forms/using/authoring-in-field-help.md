@@ -1,7 +1,7 @@
 ---
-title: Creación de ayuda en contexto para campos de formulario
+title: Crear ayuda en contexto para campos de formulario
 seo-title: Authoring in-context help for form fields
-description: AEM Forms le permite añadir ayuda en contexto a los paneles y campos de formulario adaptables, como texto o medios enriquecidos, incluidos vídeos.
+description: AEM Forms le permite agregar ayuda en contexto a los campos y paneles de los formularios adaptables, como texto o medios enriquecidos, incluidos vídeos.
 seo-description: AEM Forms allows you to add in-context help to adaptive form fields and panels, as text or rich media, including videos.
 uuid: 07427ddd-9d35-41f6-a807-0e418aade199
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -9,18 +9,22 @@ topic-tags: author
 discoiquuid: 893a72c7-d68f-464f-9765-ec2272189e58
 feature: Adaptive Forms
 exl-id: 0c761c0c-fbe4-4129-8a90-c4ef1127a762
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 89%
+source-wordcount: '402'
+ht-degree: 93%
 
 ---
 
-# Creación de ayuda en contexto para campos de formulario {#authoring-in-context-help-for-form-fields}
+# Crear ayuda en contexto para campos de formulario {#authoring-in-context-help-for-form-fields}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Introducción {#introduction}
 
-Hay situaciones en las que los usuarios finales que rellenan un formulario no están seguros de cómo rellenar los detalles de un campo de formulario concreto. Para solucionar estos problemas, los formularios adaptables permiten agregar texto o ayuda en contexto enriquecida a un campo de formulario. Esto contribuye a mejorar la experiencia de rellenado de los formularios y evita cualquier tipo de ambigüedad a los usuarios finales.
+Hay situaciones en las que los usuarios finales que rellenan un formulario no están seguros de cómo rellenar los detalles de un campo de formulario concreto. Para solucionar estos problemas, los formularios adaptables proporcionan asistencia para agregar texto o ayuda en contexto enriquecida en un campo de formulario. Esto contribuye a mejorar la experiencia de rellenado de los formularios y evita cualquier tipo de ambigüedad a los usuarios finales.
 
 En este artículo se explica cómo los autores de formularios pueden agregar ayuda en contexto durante la creación de formularios adaptables.
 

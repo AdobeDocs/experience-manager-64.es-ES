@@ -1,8 +1,8 @@
 ---
 title: Consola web
-seo-title: Consola web
+seo-title: Web Console
 description: Aprenda a utilizar la consola web de AEM.
-seo-description: Aprenda a utilizar la consola web de AEM.
+seo-description: Learn how to use the AEM web console.
 uuid: 7856b2b3-4216-421d-a315-cd9a55936362
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,18 +10,21 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: a8a3267d-2af5-4cca-b76d-66de62d93f69
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 2%
+source-wordcount: '754'
+ht-degree: 3%
 
 ---
 
-
 # Consola web{#web-console}
 
-La consola web de AEM se basa en la [Consola de administración web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix es un esfuerzo comunitario para implementar la plataforma de servicio OSGi R4, que incluye el marco de OSGi y los servicios estándar.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+La consola web de AEM se basa en la variable [Consola de administración web Apache Felix](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix es un esfuerzo comunitario para implementar la plataforma de servicio OSGi R4, que incluye el marco de OSGi y los servicios estándar.
 
 >[!NOTE]
 >
@@ -43,17 +46,17 @@ Se puede acceder a la consola desde `../system/console`; por ejemplo:
 
 ## Configuración {#configuration}
 
-La pestaña **Configuration** se utiliza para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar AEM parámetros del sistema.
+La variable **Configuración** se utiliza para configurar los paquetes OSGi y, por lo tanto, es el mecanismo subyacente para configurar AEM parámetros del sistema.
 
 >[!NOTE]
 >
->Consulte [Configuración de OSGi con la Consola Web](/help/sites-deploying/configuring-osgi.md) para obtener más información.
+>Consulte [Configuración de OSGi con la consola web](/help/sites-deploying/configuring-osgi.md) para obtener más información.
 
-Se puede acceder a la pestaña **Configuration** desde:
+La variable **Configuración** se puede acceder a través de:
 
 * El menú desplegable:
 
-   **los paquetes >**
+   **OSGi >**
 
 * La URL; por ejemplo:
 
@@ -65,14 +68,14 @@ Se mostrará una lista de configuraciones:
 
 Hay dos tipos de configuraciones disponibles en las listas desplegables de esta pantalla:
 
-* ****
-ConfiguracionesPermite actualizar las configuraciones existentes. Tienen una identidad persistente (PID) y pueden ser:
+* **Configuraciones**
+Permite actualizar las configuraciones existentes. Tienen una identidad persistente (PID) y pueden ser:
 
    * estándar e integral para AEM; son obligatorios, si se eliminan, los valores vuelven a la configuración predeterminada.
    * instancias creadas a partir de Configuraciones de fábrica; el usuario crea estas instancias, la eliminación elimina la instancia.
 
-* ****
-Configuraciones de fábricaPermite crear una instancia del objeto de funcionalidad requerido.
+* **Configuraciones de fábrica**
+Permite crear una instancia del objeto de funcionalidad requerido.
 
    Se le asignará una identidad persistente y, a continuación, se incluirá en la lista desplegable Configuraciones .
 
@@ -106,11 +109,11 @@ A continuación, puede actualizar los parámetros según sea necesario y:
 
 ## Paquetes {#bundles}
 
-La pestaña **Bundles** es el mecanismo para instalar los paquetes OSGi requeridos para AEM. Se puede acceder a la pestaña mediante cualquiera de los métodos siguientes:
+La variable **Paquetes** es el mecanismo para instalar los paquetes OSGi necesarios para AEM. Se puede acceder a la pestaña mediante cualquiera de los métodos siguientes:
 
 * El menú desplegable:
 
-   **los paquetes >**
+   **OSGi >**
 
 * La URL; por ejemplo:
 
@@ -124,7 +127,7 @@ Con esta ficha puede:
 
 * **Instalar o actualizar**
 
-   Puede **Examinar** para encontrar el archivo que contiene su paquete y especificar si debe **Iniciar** inmediatamente y en qué **Nivel de inicio**.
+   Puede **Examinar** para buscar el archivo que contiene el paquete y especificar si debe **Inicio** inmediatamente y **Nivel de inicio**.
 
 * **Volver a cargar**
 
@@ -154,11 +157,11 @@ Con esta ficha puede:
 
 >[!NOTE]
 >
->Después de **Actualizar** se recomienda realizar **Actualizar paquetes**.
+>Después **Actualizar** se recomienda realizar un **Actualizar paquetes**.
 
 ## Componentes {#components}
 
-La pestaña **Components** le permite activar o desactivar los distintos componentes. Puede acceder a ella desde:
+La variable **Componentes** le permite activar o desactivar los distintos componentes. Puede acceder a ella desde:
 
 * El menú desplegable:
 
@@ -181,4 +184,3 @@ Al hacer clic en el nombre de un componente en particular, se mostrará más inf
 >Habilitar o deshabilitar un componente solo se aplicará hasta que se reinicie AEM/CRX.
 >
 >El estado de inicio se define dentro del descriptor de componente, que se genera durante el desarrollo y se almacena en el paquete en el momento de la creación del paquete.
-

@@ -1,5 +1,5 @@
 ---
-title: Inicio rápido (SOAP) de Document Security Service JavaAPI
+title: Inicio rápido (SOAP) de la API de Java del servicio Seguridad de los documentos
 seo-title: Document Security Service JavaAPI Quick Start(SOAP)
 description: Utilice la API de Java del servicio de administración de derechos para crear una directiva, modificar una directiva, eliminarla, aplicar una directiva a un documento de PDF, quitar una directiva de un documento de PDF, revocar un documento, restablecer el acceso a un documento revocado, inspeccionar documentos de PDF protegidos por políticas, crear una marca de agua, modificar una marca de agua, buscar eventos y quitar una directiva de un documento de Word.
 seo-description: Use the Rights management service Java API to create a policy, modify a policy, delete a policy, apply a policy to a PDF document, remove a policy from  a PDF document, revoke a document, reinstate access to a revoked document, inspect policy protected PDF documents, create a watermark, modify a watermark, search for events, and remove a policy from a Word document.
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 role: Developer
 exl-id: 982223c2-aa4a-4013-8136-0155a99f5eff
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1124'
-ht-degree: 0%
+source-wordcount: '1160'
+ht-degree: 1%
 
 ---
 
 # Inicio rápido de la API de Java del servicio de seguridad de documentos (SOAP) {#document-security-service-javaapi-quick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El inicio rápido de la API de Java (SOAP) está disponible para el servicio de Rights Management:
 

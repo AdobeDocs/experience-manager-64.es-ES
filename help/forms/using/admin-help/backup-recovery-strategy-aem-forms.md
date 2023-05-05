@@ -1,5 +1,5 @@
 ---
-title: Estrategia de backup y recuperación para formularios AEM
+title: Estrategia de copia de seguridad y recuperación para AEM Forms
 seo-title: Backup and recovery strategy for AEM forms
 description: Aprenda a implementar una estrategia para realizar copias de seguridad de los datos y garantizar que se mantengan sincronizados con los datos de los formularios AEM.
 seo-description: Learn how to implement a strategy to back up data and ensuring that it remains in sync with the AEM forms data.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
 exl-id: ee5b0a82-5dd8-4ea6-885c-6154fd41ef4c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 0%
+source-wordcount: '1527'
+ht-degree: 1%
 
 ---
 
-# Estrategia de backup y recuperación para formularios AEM{#backup-and-recovery-strategy-for-aem-forms}
+# Estrategia de copia de seguridad y recuperación para AEM Forms{#backup-and-recovery-strategy-for-aem-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Si la implementación de AEM forms almacena datos personalizados adicionales en una base de datos diferente, usted es el responsable de implementar una estrategia para realizar una copia de seguridad de estos datos y garantizar que se mantengan sincronizados con los datos de AEM forms. Además, la aplicación debe diseñarse para que sea lo suficientemente robusta como para gestionar un escenario en el que las bases de datos adicionales no estén sincronizadas. Es muy recomendable que cualquier operación de base de datos que se realice se realice en el contexto de una transacción para ayudar a mantener un estado coherente.
 

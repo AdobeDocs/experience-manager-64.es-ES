@@ -1,26 +1,29 @@
 ---
 title: Métodos abreviados de teclado al editar páginas
-seo-title: Métodos abreviados de teclado al editar páginas
+seo-title: Keyboard Shortcuts when Editing Pages
 description: Hay varios métodos abreviados del teclado disponibles mediante AEM, incluidos algunos para la edición de páginas
-seo-description: Hay varios métodos abreviados del teclado disponibles mediante AEM, incluidos algunos para la edición de páginas
+seo-description: Various keyboard shortcuts are available throughout AEM, including some for page editing
 uuid: bf9428fc-73b5-499f-b9ed-62fa72272126
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
-translation-type: tm+mt
-source-git-commit: 02d043aaa51389aff658c287e11fe639b74fdcd0
+exl-id: 15734120-16b2-4c51-a387-d3d4508eb0b7
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '238'
-ht-degree: 91%
+source-wordcount: '257'
+ht-degree: 72%
 
 ---
 
-
 # Métodos abreviados de teclado al editar páginas{#keyboard-shortcuts-when-editing-pages}
 
-Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se emplean en la edición de páginas y otros son para [el uso de las consolas](/help/sites-authoring/keyboard-shortcuts.md).
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se aplican al editar páginas, otros a la variable [uso de consolas](/help/sites-authoring/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -28,7 +31,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 
 ## Editar métodos abreviados de teclado {#editing-keyboard-shortcuts}
 
-| Ubicación | Método abreviado | Descripción |
+| Lugar de residencia | Acceso directo | Descripción |
 |---|---|---|
 | Cualquier modo de ventana de edición | `Ctrl-Shift-m` | Alternar entre **Vista preliminar** y el [modo](/help/sites-authoring/author-environment-tools.md#page-modes)</a> seleccionado actualmente (p. ej., **Editar**, **Diseño**, etc.).* |
 | Modo de **edición** | `Ctrl-z` | [Deshacer el último cambio](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
@@ -44,7 +47,7 @@ Hay varios métodos abreviados del teclado disponibles mediante AEM. Algunos se 
 
 >[!NOTE]
 >
->&amp;ast; Una vez que el usuario inicio interactuar con la página en el modo de Previsualización, el acceso directo `Ctrl-Shift-m` ya no está disponible. El usuario debe hacer clic en la barra superior del editor o volver al modo de edición para que el método abreviado vuelva a estar disponible.
+>&amp;ast; Una vez que el usuario empiece a interactuar con la página en el modo de vista previa, la variable `Ctrl-Shift-m` el acceso directo ya no está disponible. El usuario debe hacer clic en la barra superior del editor o volver al modo de edición para que el método abreviado vuelva a estar disponible.
 
 También hay varios métodos abreviados del teclado disponibles para los usuarios de escritorio que usan las [consolas](/help/sites-authoring/keyboard-shortcuts.md).
 

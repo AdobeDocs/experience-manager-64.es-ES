@@ -1,8 +1,8 @@
 ---
 title: Etiquetado del contenido generado por el usuario
-seo-title: Etiquetado del contenido generado por el usuario
+seo-title: Tagging User Generated Content
 description: El etiquetado del contenido generado por el usuario (UGC) es la forma en que los miembros de la comunidad pueden ayudar a otros miembros a buscar contenido
-seo-description: El etiquetado del contenido generado por el usuario (UGC) es la forma en que los miembros de la comunidad pueden ayudar a otros miembros a buscar contenido
+seo-description: Tagging of user generated content (UGC) is how community members can help other members search for content
 uuid: ce125d7c-6fc1-44c7-9f67-eca6f599d8e3
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
 role: Admin
 exl-id: 834df392-df38-498c-9e2a-489484e20e0a
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '248'
-ht-degree: 3%
+source-wordcount: '263'
+ht-degree: 6%
 
 ---
 
 # Etiquetado del contenido generado por el usuario {#tagging-user-generated-content}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Información general {#overview}
 
@@ -40,11 +44,11 @@ Las funciones de AEM Communities que se pueden configurar para permitir el etiqu
 
 ## Administración de etiquetas {#administering-tags}
 
-Consulte [Administración de etiquetas](../../help/sites-administering/tags.md#tagging-console) para crear y administrar espacios de nombres y taxonomías de etiquetas.
+Consulte [Administración de etiquetas](../../help/sites-administering/tags.md#tagging-console) para crear y administrar áreas de nombres y taxonomías de etiquetas.
 
-Consulte [Tag Essentials](tag.md) para obtener información sobre el desarrollador.
+Consulte [Aspectos básicos de las etiquetas](tag.md) para obtener información del desarrollador.
 
-Consulte [Uso de Social Tag Cloud](tagcloud.md) para agregar un componente de Social Tag Cloud a una página para facilitar la búsqueda de UGC publicado con las etiquetas aplicadas.
+Consulte [Uso de la nube de etiquetas social](tagcloud.md) para agregar un componente de Social Tag Cloud a una página para facilitar la búsqueda de UGC publicado con las etiquetas aplicadas.
 
 ### Permisos de etiquetas {#tag-permissions}
 

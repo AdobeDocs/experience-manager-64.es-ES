@@ -1,8 +1,8 @@
 ---
 title: Creación del etiquetado en una aplicación AEM
-seo-title: Creación del etiquetado en una aplicación AEM
+seo-title: Building Tagging into an AEM Application
 description: Trabajo mediante programación con etiquetas o ampliación de etiquetas dentro de una aplicación AEM personalizada
-seo-description: Trabajo mediante programación con etiquetas o ampliación de etiquetas dentro de una aplicación AEM personalizada
+seo-description: Programmatically work with tags or extending tags within a custom AEM application
 uuid: 0549552e-0d51-4162-b418-babf4ceee046
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,19 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 feature: Tagging
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: b3b0f505-3d7d-493d-a37b-abc8a365f95b
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
 
-
 # Creación del etiquetado en una aplicación AEM{#building-tagging-into-an-aem-application}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Con el fin de trabajar mediante programación con etiquetas o ampliar las etiquetas dentro de una aplicación de AEM personalizada, esta página describe el uso de la variable
 
@@ -31,20 +34,20 @@ que interactúa con el
 
 Para obtener información relacionada con el etiquetado, consulte :
 
-* [Administración de ](/help/sites-administering/tags.md) etiquetas para obtener información sobre cómo crear y administrar las etiquetas, así como sobre las etiquetas de contenido que se han aplicado.
-* [Uso de ](/help/sites-authoring/tags.md) etiquetas para obtener información sobre el etiquetado de contenido.
+* [Administración de etiquetas](/help/sites-administering/tags.md) para obtener información sobre la creación y administración de etiquetas, así como sobre las etiquetas de contenido que se han aplicado.
+* [Uso de etiquetas](/help/sites-authoring/tags.md) para obtener información sobre el etiquetado de contenido.
 
 ## Información general sobre la API de etiquetado {#overview-of-the-tagging-api}
 
-La implementación del [marco de etiquetado](/help/sites-developing/framework.md) en AEM permite la administración de etiquetas y contenido de etiquetas mediante la API de JCR . TagManager garantiza que las etiquetas introducidas como valores en la propiedad de matriz de cadenas `cq:tags` no se dupliquen, elimina los TagID que apuntan a etiquetas no existentes y actualiza los TagID para etiquetas combinadas o movidas. TagManager utiliza un oyente de observación JCR que revierte cualquier cambio incorrecto. Las clases principales se encuentran en el paquete [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html):
+La aplicación del [marco de etiquetado](/help/sites-developing/framework.md) en AEM permite la administración de etiquetas y contenido de etiquetas mediante la API de JCR . TagManager garantiza que las etiquetas introducidas como valores en la variable `cq:tags` la propiedad matriz de cadenas no está duplicada, elimina los TagID que apuntan a etiquetas no existentes y actualiza los TagID para etiquetas combinadas o movidas. TagManager utiliza un oyente de observación JCR que revierte cualquier cambio incorrecto. Las clases principales se encuentran en la [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) paquete:
 
-* JcrTagManagerFactory - devuelve una implementación basada en JCR de `TagManager`. Es la implementación de referencia de la API de etiquetado.
+* JcrTagManagerFactory: devuelve una implementación basada en JCR de una `TagManager`. Es la implementación de referencia de la API de etiquetado.
 * `TagManager` : permite resolver y crear etiquetas por rutas y nombres.
 * `Tag` - define el objeto tag .
 
 ### Obtención de un TagManager basado en JCR {#getting-a-jcr-based-tagmanager}
 
-Para recuperar una instancia de TagManager, debe tener un JCR `Session` y llamar a `getTagManager(Session)`:
+Para recuperar una instancia de TagManager, debe tener un JCR `Session` y para llamar a `getTagManager(Session)`:
 
 ```java
 @Reference
@@ -53,7 +56,7 @@ JcrTagManagerFactory jcrTagManagerFactory;
 TagManager tagManager = jcrTagManagerFactory.getTagManager(session);
 ```
 
-En el contexto típico de Sling, también puede adaptarse a un `TagManager` desde el `ResourceResolver`:
+En el contexto típico de Sling, también puede adaptarse a un `TagManager` de la variable `ResourceResolver`:
 
 ```java
 TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
@@ -61,7 +64,7 @@ TagManager tagManager = resourceResolver.adaptTo(TagManager.class);
 
 ### Recuperación de un objeto Tag {#retrieving-a-tag-object}
 
-Se puede recuperar un `Tag` mediante el `TagManager` resolviendo una etiqueta existente o creando una nueva:
+A `Tag` se puede recuperar mediante la variable `TagManager`, resolviendo una etiqueta existente o creando una nueva:
 
 ```java
 Tag tag = tagManager.resolve("my/tag"); // for existing tags
@@ -69,7 +72,7 @@ Tag tag = tagManager.resolve("my/tag"); // for existing tags
 Tag tag = tagManager.createTag("my/tag"); // for new tags
 ```
 
-Para la implementación basada en JCR, que asigna `Tags` a JCR `Nodes`, puede utilizar directamente el mecanismo `adaptTo` de Sling si dispone del recurso (por ejemplo, `/content/cq:tags/default/my/tag`):
+Para la implementación basada en JCR, que asigna `Tags` en JCR `Nodes`, puede utilizar directamente el `adaptTo` mecanismo si tiene el recurso (p. ej., `/content/cq:tags/default/my/tag`):
 
 ```java
 Tag tag = resource.adaptTo(Tag.class);
@@ -84,7 +87,7 @@ Resource node = tag.adaptTo(Resource.class);
 
 >[!NOTE]
 >
->No es posible la adaptación directa de `Node` a `Tag` porque `Node` no implementa el método Sling `Adaptable.adaptTo(Class)`.
+>Adaptación directa desde `Node` a `Tag` no es posible, porque `Node` no implementa el Sling `Adaptable.adaptTo(Class)` método.
 
 ### Obtención y configuración de etiquetas {#getting-and-setting-tags}
 
@@ -96,7 +99,7 @@ Tag[] tags = tagManager.getTags(resource);
 tagManager.setTags(resource, tags);
 ```
 
-### Búsqueda de tags {#searching-for-tags}
+### Búsqueda de etiquetas {#searching-for-tags}
 
 ```java
 // Searching for the Resource objects that are tagged with the tag object:
@@ -111,11 +114,11 @@ long count = tag.getCount();
 
 >[!NOTE]
 >
->El `RangeIterator` válido para usar es:
+>El `RangeIterator` para usar es:
 >
 >`com.day.cq.commons.RangeIterator`
 
-### Eliminación de tags {#deleting-tags}
+### Eliminación de etiquetas {#deleting-tags}
 
 ```java
 tagManager.deleteTag(tag);
@@ -135,7 +138,7 @@ replicator.replicate(session, replicationActionType, tagPath);
 
 ## El recolector de residuos de etiquetas {#the-tag-garbage-collector}
 
-El recolector de residuos de etiquetas es un servicio de fondo que limpia las etiquetas que están ocultas y que no se utilizan. Las etiquetas ocultas y no utilizadas son etiquetas debajo de `/content/cq:tags` que tienen una propiedad `cq:movedTo` y no se utilizan en un nodo de contenido; tienen un recuento de cero. Al utilizar este proceso de eliminación diferido, el nodo de contenido (es decir, la propiedad `cq:tags` ) no tiene que actualizarse como parte de la operación de mover o de combinar. Las referencias de la propiedad `cq:tags` se actualizan automáticamente cuando se actualiza la propiedad `cq:tags`, por ejemplo, a través del cuadro de diálogo de propiedades de la página.
+El recolector de residuos de etiquetas es un servicio de fondo que limpia las etiquetas que están ocultas y que no se utilizan. Las etiquetas ocultas y no utilizadas son las siguientes `/content/cq:tags` que tienen un `cq:movedTo` y no se utilizan en un nodo de contenido: tienen un recuento de cero. Al utilizar este proceso de eliminación diferido, el nodo de contenido (es decir, el `cq:tags` ) no tiene que actualizarse como parte de la operación move o merge . Las referencias en la variable `cq:tags` se actualiza automáticamente cuando `cq:tags` se actualiza, por ejemplo, a través del cuadro de diálogo de propiedades de página.
 
 El recolector de residuos de etiquetas se ejecuta de forma predeterminada una vez al día. Esto se puede configurar en:
 
@@ -143,21 +146,21 @@ El recolector de residuos de etiquetas se ejecuta de forma predeterminada una ve
 http://localhost:4502/system/console/configMgr/com.day.cq.tagging.impl.TagGarbageCollector
 ```
 
-## Búsqueda de etiquetas y listado de etiquetas {#tag-search-and-tag-listing}
+## Búsqueda de etiquetas y Lista de etiquetas {#tag-search-and-tag-listing}
 
 La búsqueda de etiquetas y la lista de etiquetas funcionan de la siguiente manera:
 
-* La búsqueda de TagID busca las etiquetas que tienen la propiedad `cq:movedTo` establecida en TagID y sigue los `cq:movedTo` TagIDs.
+* La búsqueda de TagID busca las etiquetas que tienen la propiedad `cq:movedTo` se establece en TagID y realiza el seguimiento de la variable `cq:movedTo` TagID.
 
-* La búsqueda de Título de etiqueta solo busca las etiquetas que no tienen una propiedad `cq:movedTo`.
+* La búsqueda de Título de etiqueta solo busca las etiquetas que no tienen un `cq:movedTo` propiedad.
 
 ## Etiquetas en diferentes idiomas {#tags-in-different-languages}
 
-Como se describe en la documentación para la administración de etiquetas, en la sección [Administración de etiquetas en diferentes idiomas](/help/sites-administering/tags.md#managing-tags-in-different-languages), se puede definir una etiqueta `title`en diferentes idiomas. A continuación, se agrega una propiedad que distingue entre idiomas al nodo de etiqueta . Esta propiedad tiene el formato `jcr:title.<locale>`, por ejemplo: `jcr:title.fr` para la traducción al francés. `<locale>` debe ser una cadena de configuración regional ISO en minúscula y utilizar &quot;_&quot; en lugar de &quot;-&quot;, por ejemplo:  `de_ch`.
+Como se describe en la documentación para la administración de etiquetas, en la sección [Administración de etiquetas en diferentes idiomas](/help/sites-administering/tags.md#managing-tags-in-different-languages), una etiqueta `title`puede definirse en diferentes idiomas. A continuación, se agrega una propiedad que distingue entre idiomas al nodo de etiqueta . Esta propiedad tiene el formato `jcr:title.<locale>`, p. ej. `jcr:title.fr` para la traducción al francés. `<locale>` debe ser una cadena de configuración regional ISO en minúscula y utilizar &quot;_&quot; en lugar de &quot;-&quot;, por ejemplo: `de_ch`.
 
-Cuando se agrega la etiqueta **Animals** a la página **Products**, el valor `stockphotography:animals` se agrega a la propiedad `cq:tags` del nodo /content/geometrixx/en/products/jcr:content. Se hace referencia a la traducción desde el nodo tag .
+Cuando la variable **Animales** se agrega a la variable **Productos** page, el valor `stockphotography:animals` se añade a la propiedad `cq:tags` del nodo /content/geometrixx/en/products/jcr:content. Se hace referencia a la traducción desde el nodo tag .
 
-La API del lado del servidor ha localizado los métodos relacionados con `title`:
+La API del lado del servidor se ha localizado `title`Métodos relacionados:
 
 * [com.day.cq.tagging.Tag](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/Tag.html)
 
@@ -183,21 +186,20 @@ En AEM, el idioma se puede obtener desde el idioma de la página o desde el idio
 
    * `slingRequest.getLocale()`
 
-`currentPage` y  `slingRequest` están disponibles en un JSP a través de la  [&lt;cq:definedobjects>](/help/sites-developing/taglib.md) etiqueta .
+`currentPage` y `slingRequest` están disponibles en un JSP a través de la variable [&lt;cq:definedobjects>](/help/sites-developing/taglib.md) etiqueta.
 
-Para el etiquetado, la localización depende del contexto, ya que la etiqueta `titles`se puede mostrar en el idioma de la página, en el idioma del usuario o en cualquier otro idioma.
+Para el etiquetado, la localización depende del contexto como etiqueta `titles`se puede mostrar en el idioma de la página, en el idioma del usuario o en cualquier otro idioma.
 
 ### Adición de un nuevo idioma al cuadro de diálogo Editar etiqueta {#adding-a-new-language-to-the-edit-tag-dialog}
 
-El siguiente procedimiento describe cómo añadir un nuevo idioma (finés) al cuadro de diálogo **Tag Edit**:
+El siguiente procedimiento describe cómo agregar un nuevo idioma (finés) al **Edición de etiquetas** diálogo:
 
-1. En **CRXDE**, edite la propiedad de varios valores `languages` del nodo `/content/cq:tags`.
+1. En **CRXDE**, editar la propiedad de varios valores `languages` del nodo `/content/cq:tags`.
 
-1. Añada `fi_fi`, que representa la configuración regional finlandesa, y guarde los cambios.
+1. Agregar `fi_fi` - que representa la configuración regional finlandesa - y guarde los cambios.
 
-El nuevo idioma (finés) ya está disponible en el cuadro de diálogo de etiquetas de las propiedades de página y en el cuadro de diálogo **Editar etiqueta** al editar una etiqueta en la consola **Etiquetado**.
+El nuevo idioma (finés) ya está disponible en el cuadro de diálogo de etiquetas de las propiedades de página y en la **Editar etiqueta** al editar una etiqueta en el **Etiquetado** consola.
 
 >[!NOTE]
 >
->El nuevo idioma debe ser uno de los idiomas AEM reconocidos, es decir, debe estar disponible como nodo debajo de `/libs/wcm/core/resources/languages`.
-
+>El nuevo idioma debe ser uno de los idiomas AEM reconocidos, es decir, debe estar disponible como nodo a continuación `/libs/wcm/core/resources/languages`.

@@ -10,14 +10,18 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 454854f8-6053-406c-888d-f427777bf570
 exl-id: 10c40e33-e62f-451f-b5d4-e34081f4340e
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '634'
 ht-degree: 64%
 
 ---
 
 # Integración con Adobe Target{#integrating-with-adobe-target}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Como parte de Adobe Marketing Cloud, [Adobe Target](http://www.adobe.com/ro/solutions/testing-targeting/testandtarget.html) permite aumentar la relevancia del contenido mediante el direccionamiento y efectuando mediciones en todos los canales. Los especialistas en marketing utilizan Adobe Target para diseñar y ejecutar pruebas en línea, crear segmentos de audiencia sobre la marcha (basados en el comportamiento) y automatizar el direccionamiento del contenido y las experiencias en línea. AEM ha adoptado el flujo de trabajo de objetivos que se utiliza en Adobe Target Standard. Si usa Target, estará familiarizado con el entorno de edición de segmentación en AEM.
 
@@ -69,8 +73,8 @@ Cuando se complete la integración, puede [crear contenido de destino](/help/sit
 La integración de AEM con Adobe Target requiere conocimientos de Adobe Target, administración de actividades de AEM y administración AEM audiencias. Debe estar familiarizado con la siguiente información:
 
 * Adobe Target (consulte la [documentación de Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=es)).
-* Consola AEM actividades (consulte [Administración de actividades](/help/sites-authoring/activitylib.md)).
-* Audiencias AEM (Consulte [Administración de audiencias](/help/sites-authoring/managing-audiences.md)).
+* Consola de AEM Activities (consulte [Administración de actividades](/help/sites-authoring/activitylib.md)).
+* AEM Audiences (consulte [Administración de audiencias](/help/sites-authoring/managing-audiences.md)).
 
 >[!NOTE]
 >

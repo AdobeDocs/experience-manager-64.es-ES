@@ -1,18 +1,22 @@
 ---
 title: Mejoras en la experiencia del usuario en Assets
-description: Este artículo describe las mejoras de la experiencia del usuario en los recursos  [!DNL Experience Manager] 6.4.
+description: Este artículo describe las mejoras de la experiencia del usuario en [!DNL Experience Manager] 6.4 Activos.
 contentOwner: AG
 feature: Release Information
 role: Leader,User
 exl-id: 65029113-987e-46eb-86eb-8028233031f9
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 1%
+source-wordcount: '677'
+ht-degree: 2%
 
 ---
 
 # Mejoras en la experiencia del usuario en Assets {#user-experience-enhancements-in-assets}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 [!DNL Experience Manager] 6.4 Recursos incluye varias mejoras de uso que proporcionan una experiencia de usuario optimizada y mejoran la productividad. El aumento en la velocidad con la que puede crear/administrar su contenido de lanzamiento al mercado mejora la velocidad de contenido del negocio.
 
@@ -22,7 +26,7 @@ Puede personalizar las distintas vistas: de tarjeta, de lista y de columna. Por 
 
 ## Carga diferida {#lazy-loading}
 
-Al buscar recursos en [!DNL Experience Manager] 6.4 Assets, se muestran hasta 200 recursos a la vez. Puede desplazarse por los resultados con mayor rapidez, lo que resulta especialmente útil cuando explora una larga lista de resultados. Como se carga un número significativo de recursos a la vez, la experiencia de navegación es fluida.
+Al examinar o buscar recursos en [!DNL Experience Manager] 6.4 Recursos, se muestran hasta 200 recursos a la vez. Puede desplazarse por los resultados con mayor rapidez, lo que resulta especialmente útil cuando explora una larga lista de resultados. Como se carga un número significativo de recursos a la vez, la experiencia de navegación es fluida.
 
 Si toca o hace clic en un recurso para revisar su página de detalles, puede regresar a la página de resultados con solo pulsar o hacer clic en el botón Atrás de la barra de herramientas.
 
@@ -32,11 +36,11 @@ Según el dispositivo que utilice y la cantidad de detalles que necesite, puede 
 
 Para cambiar el tamaño de las miniaturas en la vista de tarjeta, siga estos pasos:
 
-1. Pulse o haga clic en el icono Diseño de la barra de herramientas y, a continuación, elija la opción **[!UICONTROL Ver configuración]**.
+1. Toque o haga clic en el icono Diseño de la barra de herramientas y, a continuación, elija la **[!UICONTROL Configuración de vista]** .
 
    ![view_settings](assets/view_settings.png)
 
-1. En el cuadro de diálogo **[!UICONTROL Ver configuración]**, seleccione el tamaño de miniatura deseado y, a continuación, pulse o haga clic en **[!UICONTROL Actualizar]**.
+1. En el **[!UICONTROL Configuración de vista]** , seleccione el tamaño de la miniatura que desee y, a continuación, toque o haga clic en **[!UICONTROL Actualizar]**.
 
    ![view_settings_dialog](assets/view_settings_dialog.png)
 
@@ -54,13 +58,13 @@ En la vista Lista, la primera columna ahora muestra los nombres de archivo de lo
 
 ![list_view](assets/list_view.png)
 
-Puede elegir configurar la cantidad de detalle que desea mostrar. Toque o haga clic en el icono Diseño, elija la opción **[!UICONTROL Ver configuración]** y especifique las columnas que desee mostrar en el cuadro de diálogo **[!UICONTROL Ver configuración]**.
+Puede elegir configurar la cantidad de detalle que desea mostrar. Toque o haga clic en el icono Diseño y seleccione la opción **[!UICONTROL Configuración de vista]** y especifique las columnas que desea que se muestren en la **[!UICONTROL Configuración de vista]** diálogo.
 
 ![view_settings_dialoglistview](assets/view_settings_dialoglistview.png)
 
 ## Mejoras en la vista de columna {#column-view-improvements}
 
-Además de las vistas Tarjeta y Lista, ahora puede navegar a la página de detalles de un recurso desde la vista Columna. Seleccione un recurso en la vista Columna y, a continuación, pulse o haga clic en **[!UICONTROL Más detalles]** en la instantánea del recurso.
+Además de las vistas Tarjeta y Lista, ahora puede navegar a la página de detalles de un recurso desde la vista Columna. Seleccione un recurso en la vista Columna y, a continuación, toque o haga clic en **[!UICONTROL Más detalles]** en la instantánea de recursos.
 
 ![more_details](assets/more_details.png)
 
@@ -68,7 +72,7 @@ Además de las vistas Tarjeta y Lista, ahora puede navegar a la página de detal
 
 [!DNL Experience Manager] 6.4 Recursos incluye una vista de árbol que le permite examinar cómodamente la jerarquía de recursos y desplazarse hasta el recurso o la carpeta deseados.
 
-Para abrir la vista de árbol, pulse o haga clic en el icono de navegación global en `Assets UI` y seleccione **[!UICONTROL Árbol de contenido]** en el menú.
+Para abrir la vista de árbol, pulse o haga clic en el icono de navegación global en el `Assets UI`y elija **[!UICONTROL Árbol de contenido]** del menú .
 
 ![content_tree](assets/content_tree.png)
 
@@ -87,8 +91,8 @@ En función del diseño que elija, puede abrir la página de detalles de un recu
 | **Ver** | **Cómo abrir la página de detalles del recurso** |
 |---|---|
 | [!UICONTROL Vista de tarjeta] | Toque o haga clic en el mosaico de recursos. |
-| [!UICONTROL Vista de lista  ] | Toque o haga clic en la entrada de fila del recurso en la lista. |
-| [!UICONTROL Vista de columna] | Toque o haga clic en el botón **[!UICONTROL Más detalles]** de la instantánea del recurso. |
+| [!UICONTROL Vista de lista] | Toque o haga clic en la entrada de fila del recurso en la lista. |
+| [!UICONTROL Vista de columna] | Toque o haga clic en el botón **[!UICONTROL Más detalles]** de la instantánea de recursos. |
 
 Utilice los botones Anterior/Siguiente para moverse de un recurso a otro.
 

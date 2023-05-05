@@ -12,14 +12,18 @@ discoiquuid: d4636434-98a6-4cf7-bb92-4338da17c893
 legacypath: /deploy/platform/data-store-config
 feature: Configuring
 exl-id: 89b8e8a7-103b-472e-8c29-3b6e5b7273b1
-source-git-commit: 28bfeff17c8f753f4f0d3f23a0e3843f159060cc
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3406'
-ht-degree: 1%
+source-wordcount: '3442'
+ht-degree: 2%
 
 ---
 
 # Configuración de almacenes de nodos y almacenes de datos en AEM 6{#configuring-node-stores-and-data-stores-in-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Introducción {#introduction}
 

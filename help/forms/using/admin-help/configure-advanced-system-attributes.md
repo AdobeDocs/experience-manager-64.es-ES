@@ -1,5 +1,5 @@
 ---
-title: Configuración de atributos de sistema avanzados
+title: Configurar atributos de sistema avanzados
 seo-title: Configure advanced system attributes
 description: Utilice la página Configurar Atributos del sistema avanzados para modificar ciertas opciones del archivo de configuración sin necesidad de exportar, editar e importar el archivo.
 seo-description: Use the Configure Advanced System Attributes page to modify certain settings in the configuration file without the need to export, edit, and import the file.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 533ad3f7-3905-420d-8bb9-8ae8f14fb28e
 exl-id: f47c543d-6136-482b-915f-b4e13f83fa69
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 1%
+source-wordcount: '511'
+ht-degree: 4%
 
 ---
 
-# Configuración de atributos de sistema avanzados {#configure-advanced-system-attributes}
+# Configurar atributos de sistema avanzados {#configure-advanced-system-attributes}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Utilice la página Configurar Atributos del sistema avanzados para modificar ciertas opciones del archivo de configuración sin necesidad de exportar, editar e importar el archivo. (Consulte [Importación y exportación del archivo de configuración](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 

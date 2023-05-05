@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9f58a6c4-3190-49d4-800c-4a55dca7c296
 exl-id: 33d63ec9-b100-48b4-b84d-a9de82c24f86
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 0%
+source-wordcount: '255'
+ht-degree: 6%
 
 ---
 
 # Hacer que las fuentes estén disponibles {#make-fonts-available}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Asegúrese de que las fuentes utilizadas en un formulario están disponibles para su uso en el servidor de aplicaciones J2EE que aloja AEM formularios. Por ejemplo, considere el siguiente escenario. Un diseñador de formularios agrega una fuente al directorio de fuentes que utiliza Designer y crea un formulario que utiliza esa fuente en un equipo independiente. Para que el servicio Output use la fuente, colóquela en el directorio fuentes del cliente. Si el directorio de fuentes del cliente no existe, cree un directorio en el servidor de aplicaciones J2EE que hospede AEM formularios.
 

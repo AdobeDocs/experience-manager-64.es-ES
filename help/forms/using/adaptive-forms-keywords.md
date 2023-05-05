@@ -1,5 +1,5 @@
 ---
-title: Palabras clave de formularios adaptables
+title: Palabras clave en formularios adaptables
 seo-title: Adaptive forms keywords
 description: Estas palabras reservadas no se pueden usar como identificadores en los formularios adaptables.
 seo-description: You cannnot use these reserved words as identifiers in your adaptive forms.
@@ -9,16 +9,20 @@ topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 feature: Adaptive Forms
 exl-id: 45578c86-6ec8-4f9c-92d9-e2f28f989fd3
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 64%
+source-wordcount: '244'
+ht-degree: 88%
 
 ---
 
-# Palabras clave de formularios adaptables {#adaptive-forms-keywords}
+# Palabras clave en formularios adaptables {#adaptive-forms-keywords}
 
-Las palabras clave de los formularios adaptables son identificadores predefinidos y reservados que tienen un significado especial para los formularios adaptables. Estas palabras clave no se pueden usar como identificadores en los formularios adaptables. En la tabla siguiente se enumeran todas las palabras clave que son identificadores reservados para formularios adaptables.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+Las palabras clave de los formularios adaptables son identificadores reservados y predefinidos que tienen un significado especial en los formularios adaptables. Estas palabras clave no se pueden usar como identificadores en formularios adaptables. En la siguiente tabla se enumeran todas las palabras clave que son identificadores reservados en formularios adaptables.
 
 <table> 
  <tbody>
@@ -240,4 +244,4 @@ Las palabras clave de los formularios adaptables son identificadores predefinido
  </tbody>
 </table>
 
-Aparte de las palabras clave enumeradas anteriormente, evite utilizar nombres que sean similares a [API de JavaScript de formularios adaptables](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Además de las palabras clave enumeradas anteriormente, evite utilizar nombres que sean similares a las [API de JavaScript utilizadas en los formularios adaptables](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=es).

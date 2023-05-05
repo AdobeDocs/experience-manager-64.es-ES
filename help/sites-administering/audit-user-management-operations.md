@@ -1,9 +1,9 @@
 ---
 title: Cómo auditar las operaciones de administración de usuarios en AEM
-seo-title: Cómo auditar las operaciones de administración de usuarios en AEM
+seo-title: How to Audit User Management Operations in AEM
 description: Obtenga información sobre cómo auditar las operaciones de administración de usuarios en AEM.
 feature: Operations
-seo-description: Obtenga información sobre cómo auditar las operaciones de administración de usuarios en AEM.
+seo-description: Learn how to audit User Management Operations in AEM.
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,15 +11,18 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 437fa139-2dde-41a0-9649-6bb110039618
 exl-id: f987c4f5-64dd-491b-aafe-cb98acf0b1eb
-translation-type: tm+mt
-source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 1%
+source-wordcount: '338'
+ht-degree: 3%
 
 ---
 
 # Cómo auditar las operaciones de administración de usuarios en AEM{#how-to-audit-user-management-operations-in-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Introducción {#introduction}
 
@@ -31,22 +34,22 @@ La mejora permite auditar acciones CRUD (Crear, Leer, Actualizar, Eliminar) en p
 * Un usuario que se está agregando a un grupo
 * Cambios de permisos de un usuario o grupo existente
 
-De forma predeterminada, las entradas se escriben en el archivo `error.log`. Para facilitar la monitorización, se recomienda que se redirijan a un archivo de registro independiente. Más información sobre cómo hacerlo en el párrafo siguiente.
+De forma predeterminada, las entradas se escriben en la variable `error.log` archivo. Para facilitar la monitorización, se recomienda que se redirijan a un archivo de registro independiente. Más información sobre cómo hacerlo en el párrafo siguiente.
 
-## Redireccionar el resultado a un archivo de registro independiente {#redirecting-the-output-to-a-separate-log-file}
+## Redireccionar la salida a un archivo de registro independiente {#redirecting-the-output-to-a-separate-log-file}
 
-Para redirigir la salida de registro a un archivo de registro independiente, deberá crear una nueva configuración **Apache Sling Logger**. En el siguiente ejemplo, utilizaremos `useraudit.log` como nombre del archivo independiente.
+Para redirigir la salida de registro a un archivo de registro independiente, debe crear un nuevo **Registrador de Apache Sling** configuración. Usaremos `useraudit.log` como el nombre del archivo independiente en el ejemplo siguiente.
 
-1. Vaya a la consola web navegando a `https://<serveraddress>:<serverport>/system/console/configMgr`
-1. Busque la **Configuración del registrador de Sling de Apache**. A continuación, pulse el &quot;+&quot; en el lado derecho de la entrada para crear una nueva configuración de fábrica.
+1. Vaya a la consola web navegando hasta `https://<serveraddress>:<serverport>/system/console/configMgr`
+1. Buscar **Configuración del registrador de Apache Sling**. A continuación, pulse el &quot;+&quot; en el lado derecho de la entrada para crear una nueva configuración de fábrica.
 1. Cree la siguiente configuración:
 
-   * **Nivel de registro:** información
+   * **Nivel de registro:** Información
    * **Archivo de registro:** logs/useraudit.log
-   * **Patrón de mensaje: predeterminado de** nivel
+   * **Patrón de mensaje:** nivel predeterminado
    * **Registrador:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   Para introducir ambos registros en el campo **Logger**, debe introducir el nombre del primero y, a continuación, crear otro campo pulsando el botón &quot;+&quot; e introduciendo el nombre del segundo registrador.
+   Para introducir ambos registros en la variable **Registrador** , debe introducir el nombre del primero y, a continuación, crear otro campo pulsando el botón &quot;+&quot; e introduciendo el nombre del segundo registrador.
 
 ## Ejemplo de salida {#example-output}
 

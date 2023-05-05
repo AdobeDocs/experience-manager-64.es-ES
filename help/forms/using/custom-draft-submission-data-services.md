@@ -1,7 +1,7 @@
 ---
-title: Personalización de los servicios de datos Borrador y Envío
+title: Personalizar los servicios de datos Borradores y envíos
 seo-title: Customizing Draft and Submission data services
-description: AEM Forms, de forma predeterminada, almacena formularios adaptables en borrador y enviados en un nodo predeterminado en la instancia de publicación. Sin embargo, puede configurar los servicios de datos de borrador y envío de AEM Forms para personalizar el almacenamiento de formularios adaptables en borrador y enviados.
+description: AEM Forms, de forma predeterminada, almacena los borradores de formularios adaptables y los formularios enviados en un nodo predeterminado en la instancia de publicación. Sin embargo, puede configurar los servicios de datos de borrador y envío de AEM Forms para personalizar el almacenamiento de formularios adaptables en Borradores y Enviados.
 seo-description: AEM Forms, by default, stores draft and submitted adaptive forms in a default node on the Publish instance. However, you can configure the draft and submission data services of AEM Forms to customize the storage of draft and submitted adaptive forms.
 uuid: c3ec1708-3b11-4142-93f0-1cffb6643f34
 content-type: reference
@@ -9,35 +9,39 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 602fd6a9-9a65-411c-8475-a4082a3fdee0
 exl-id: c6243a1f-8f8f-48dc-af3b-b165f451ce73
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 0%
+source-wordcount: '312'
+ht-degree: 91%
 
 ---
 
-# Personalización de los servicios de datos Borrador y Envío {#customizing-draft-and-submission-data-services}
+# Personalizar los servicios de datos Borradores y envíos {#customizing-draft-and-submission-data-services}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Información general {#overview}
 
-AEM Forms permite a los usuarios guardar un formulario adaptable como borrador. La funcionalidad de borrador proporciona a los usuarios la opción de mantener un formulario de trabajo en curso. Un usuario puede completar y enviar el formulario en cualquier momento desde cualquier dispositivo.
+AEM Forms permite a los usuarios guardar un formulario adaptable como borrador. La funcionalidad Borrador proporciona a los usuarios la opción de mantener un formulario de trabajo en curso. Un usuario puede completar y enviar el formulario en cualquier momento desde cualquier dispositivo.
 
-De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío en la instancia Publicar en la `/content/forms/fp` nodo .
+De forma predeterminada, AEM Forms almacena los datos de usuario asociados con el borrador y el envío en la instancia de publicación en el nodo `/content/forms/fp`.
 
-Sin embargo, los componentes del portal de AEM Forms proporcionan servicios de datos que le permiten personalizar la implementación del almacenamiento de datos de usuario para borradores y envíos. Por ejemplo, puede almacenar los datos en un almacén de datos implementado actualmente en su organización.
+Sin embargo, los componentes del portal de AEM Forms proporcionan servicios de datos que le permiten personalizar la implementación del almacenamiento de datos de usuario para borradores y envíos. Por ejemplo, puede almacenar los datos en un repositorio de datos implementado en su organización actualmente.
 
-Para personalizar el almacenamiento de los datos de usuario, debe implementar la variable [Borrador de datos](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) y [Datos de envío](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p) servicios.
+Para personalizar el almacenamiento de los datos de usuario, debe implementar los servicios [Borrador de datos](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) y [Datos de envío](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p).
 
 ## Requisitos previos {#prerequisites}
 
-* Habilitar [Componentes del portal de Forms](/help/forms/using/enabling-forms-portal-components.md)
-* Cree un [página del portal de formularios](/help/forms/using/creating-form-portal-page.md)
+* Habilitar [componentes del portal de formularios](/help/forms/using/enabling-forms-portal-components.md)
+* Crear una [página del portal de formularios](/help/forms/using/creating-form-portal-page.md)
 * Habilitar [formularios adaptables para el portal de formularios](/help/forms/using/draft-submission-component.md)
-* Más información [detalles de implementación del almacenamiento personalizado](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* Más información sobre los [detalles de implementación del almacenamiento personalizado](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
-## Borrador del servicio de datos {#draft-data-service}
+## Servicio Datos de borrador {#draft-data-service}
 
-Para personalizar el almacenamiento de los datos de borrador del usuario, debe proporcionar implementación para todos los métodos del `DraftAFDataService` interfaz.
+Para personalizar el almacenamiento de los datos de borrador del usuario, debe proporcionar implementación para todos los métodos de la `DraftAFDataService` interfaz.
 
 En el siguiente ejemplo de código de la interfaz se proporciona una descripción de los métodos y sus argumentos:
 
@@ -82,9 +86,9 @@ public interface DraftAFDataService {
 }
 ```
 
-## Servicio de envío de datos {#submission-data-service}
+## Servicio Envío de datos {#submission-data-service}
 
-Para personalizar el almacenamiento de los datos de envío de los usuarios, debe proporcionar implementación para todos los métodos del `SubmittedAFDataService` interfaz.
+Para personalizar el almacenamiento de los datos de envío de los usuarios, debe proporcionar implementación para todos los métodos de la `SubmittedAFDataService` interfaz.
 
 En el siguiente ejemplo de código de la interfaz se proporciona una descripción de los métodos y sus argumentos:
 

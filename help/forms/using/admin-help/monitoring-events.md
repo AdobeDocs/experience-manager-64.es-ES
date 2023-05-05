@@ -1,5 +1,5 @@
 ---
-title: Supervisión de eventos
+title: Supervisar eventos
 seo-title: Monitoring events
 description: Cuando la capacidad de auditoría está habilitada, la seguridad de los documentos permite supervisar ciertos tipos de eventos. Puede buscar y ordenar fácilmente la lista de eventos mediante la seguridad del documento.
 seo-description: When the auditing capability is enabled, document security enables you to monitor certain types of events. You can easily search and sort the events list using the document security.
@@ -11,14 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 379957bf-0634-4182-b269-1b010da4c90f
 feature: Document Security
 exl-id: 0c4a846f-4e31-435b-a6f6-d0b7c4cd1259
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 0%
+source-wordcount: '994'
+ht-degree: 1%
 
 ---
 
-# Supervisión de eventos {#monitoring-events}
+# Supervisar eventos {#monitoring-events}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Cuando la capacidad de auditoría está habilitada, la seguridad de los documentos permite supervisar ciertos tipos de eventos. Los eventos que puede ver dependen de su función:
 
@@ -64,7 +68,7 @@ Puede buscar eventos en la página Eventos mediante una combinación de criterio
 
 **Eventos relacionados con mis documentos:** Los usuarios pueden encontrar todos los eventos relacionados con sus propios documentos protegidos por políticas. Los usuarios ven los eventos generados por cada persona que manejó sus documentos.
 
-**Coordinadores de conjuntos de políticas:** Puede ver eventos auditados, incluidos eventos de documentos y políticas, para documentos protegidos por políticas de sus conjuntos de políticas. Las opciones disponibles son:
+**Coordinadores de conjuntos de políticas:** Puede ver eventos auditados, incluidos eventos de documentos y políticas, para documentos protegidos por políticas de sus conjuntos de políticas. Estas opciones están disponibles:
 
 **Documentar eventos donde soy un coordinador de conjuntos de políticas:** Los coordinadores de conjuntos de políticas que tienen el permiso ver evento pueden encontrar eventos relacionados con documentos que protegen las políticas de sus conjuntos de políticas.
 

@@ -1,5 +1,5 @@
 ---
-title: Representar Forms por valor
+title: Procesar formularios por valor
 seo-title: Rendering Forms By Value
 description: Utilice la API de Forms (Java) para procesar un formulario por valor mediante la API de Java y la API de servicio web.
 seo-description: Use the Forms API (Java) to render a form by value using the Java API and Web Service API.
@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: ddbb2b82-4c57-4845-a5be-2435902d312b
 role: Developer
 exl-id: 50c34781-45e3-4255-a997-44f694527c92
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1821'
-ht-degree: 0%
+source-wordcount: '1857'
+ht-degree: 1%
 
 ---
 
-# Representar Forms por valor {#rendering-forms-by-value}
+# Procesar formularios por valor {#rendering-forms-by-value}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Normalmente, un diseño de formulario creado en Designer se pasa por referencia al servicio Forms. Los diseños de formulario pueden ser grandes y, como resultado, es más eficaz pasarlos por referencia para evitar tener que calcular los bytes de diseño de formulario por valor. El servicio Forms también puede almacenar en caché el diseño de formulario para que, cuando se almacena en caché, no tenga que leer continuamente el diseño de formulario.
 
@@ -83,7 +87,7 @@ Para procesar un formulario por valor, pase un `com.adobe.idp.Document` instanci
 
 Cuando el servicio Forms procesa un formulario por valor, devuelve un flujo de datos de formulario que debe escribir en el explorador web del cliente. Cuando se escribe en el explorador web del cliente, el formulario es visible para el usuario.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Representar un formulario por valor utilizando la API de Java](#render-a-form-by-value-using-the-java-api)
 
@@ -140,9 +144,9 @@ Representar un formulario por valor utilizando la API de Forms (Java):
    * Rellene la matriz de bytes con la secuencia de datos del formulario invocando la variable `InputStream` del objeto `read`y pasando la matriz de bytes como argumento.
    * Invocar el `javax.servlet.ServletOutputStream` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Representar Forms por valor](/help/forms/developing/rendering-forms.md)
+[Procesar formularios por valor](/help/forms/developing/rendering-forms.md)
 
 [Inicio rápido (modo SOAP): Renderización por valor utilizando la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
@@ -197,8 +201,8 @@ Representar un formulario por valor utilizando la API de Forms (servicio web):
    * Cree una matriz de bytes y rellénela invocando la variable `BLOB` del objeto `getBinaryData` método. Esta tarea asigna el contenido de la variable `FormsResult` a la matriz de bytes.
    * Invocar el `javax.servlet.http.HttpServletResponse` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Representar Forms por valor](#rendering-forms-by-value)
+[Procesar formularios por valor](#rendering-forms-by-value)
 
 [Invocación de AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

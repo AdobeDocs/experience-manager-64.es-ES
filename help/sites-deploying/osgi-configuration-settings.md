@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 feature: Configuring
 exl-id: 5c07c773-53a3-41fd-860a-da0cb14f8bc6
-source-git-commit: 904c7acc63dac5c92a5d1754380d075727e6a28a
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3460'
+source-wordcount: '3496'
 ht-degree: 0%
 
 ---
 
 # Ajustes de configuración de OSGi{#osgi-configuration-settings}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 [OSGi](https://www.osgi.org/) es un elemento fundamental de la pila tecnológica de AEM. Se utiliza para controlar los paquetes compuestos de AEM y su configuración.
 
@@ -368,7 +372,7 @@ Para los usuarios seleccionados, el nombre de usuario extraído de la solicitud 
 `admin` aparece a ambos lados del mapa, se ignorará la asignación. Tenga en cuenta que el carácter &quot;=&quot; debe omitirse con un &quot;\&quot; inicial.
 
 * **Formato**
-Indica el formato en el que se proporciona el ID de usuario. Uso de:
+Indica el formato en el que se proporciona el ID de usuario. Uso:
 
    * `Basic` si el ID de usuario está codificado en el formato de autenticación básica HTTP
    * `AsIs` si el ID de usuario se proporciona en formato de texto sin formato o cualquier valor aplicado de expresión regular debe usarse tal cual o cualquier expresión regular

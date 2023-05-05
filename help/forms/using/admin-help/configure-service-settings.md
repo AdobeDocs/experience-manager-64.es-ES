@@ -1,5 +1,5 @@
 ---
-title: Configuración de los ajustes del servicio
+title: Configurar los ajustes del servicio
 seo-title: Configure service settings
 description: Obtenga información sobre cómo configurar los ajustes del servicio.
 seo-description: Learn how to configure service settings.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: be1f8c59-b5d8-4d87-af7b-1034d73e7e83
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '10683'
-ht-degree: 0%
+source-wordcount: '10719'
+ht-degree: 4%
 
 ---
 
-# Configuración de los ajustes del servicio {#configure-service-settings}
+# Configurar los ajustes del servicio {#configure-service-settings}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede utilizar la página Administración de servicios para configurar las opciones de cada uno de los servicios que forman parte de AEM formularios. La configuración disponible varía en función del servicio que se esté configurando.
 
@@ -110,7 +114,7 @@ El valor predeterminado de esta configuración es `/LiveCycleES/ConnectorforIBMF
 
 ## Convertir la configuración del servicio PDF {#convert-pdf-service-settings}
 
-El servicio Convertir PDF ( `ConvertPdfService`) convierte los documentos de PDF a PostScript y a varios formatos de imagen (JPEG, JPEG 2000, PNG y TIFF). La conversión de un documento PDF a PostScript es útil para la impresión desatendida basada en servidor en cualquier impresora PostScript. La conversión de un documento de PDF en un archivo de TIFF de varias páginas es práctica cuando se archivan documentos en sistemas de administración de contenido que no admiten documentos de PDF.
+El servicio Convertir PDF ( `ConvertPdfService`) convierte los documentos de PDF a PostScript y a varios formatos de imagen (JPEG, JPEG 2000, PNG y TIFF). Convertir un documento PDF a PostScript es útil para la impresión desatendida basada en servidor en cualquier impresora PostScript. La conversión de un documento de PDF en un archivo de TIFF de varias páginas es práctica cuando se archivan documentos en sistemas de administración de contenido que no admiten documentos de PDF.
 
 Los siguientes ajustes están disponibles para el servicio Convertir PDF.
 
@@ -254,9 +258,9 @@ Los siguientes ajustes están disponibles para el servicio Generar PDF.
 
 **Configuración del tipo de archivo:** Nombre de la configuración preconfigurada de tipo de archivo que se aplicará a un trabajo de conversión si esta configuración no se especifica como parte de los parámetros de invocación de API. La configuración del tipo de archivo se configura en la consola de administración haciendo clic en Servicios > Generador de PDF > Configuración del tipo de archivo.
 
-**Usar Acrobat WebCapture (solo Windows):** Cuando esta configuración es verdadera, el servicio Generate PDF utiliza Acrobat X Pro para todas las conversiones de HTML a PDF. Esto puede mejorar la calidad de los archivos PDF producidos desde el HTML, aunque el rendimiento puede ser ligeramente inferior. El valor predeterminado es false.
+**Usar Acrobat WebCapture (solo Windows):** Cuando esta configuración es verdadera, el servicio Generate PDF utiliza Acrobat X Pro para todas las conversiones de HTML a PDF. Esto puede mejorar la calidad de los archivos PDF producidos desde el HTML, aunque el rendimiento puede ser ligeramente inferior. El valor predeterminado es False.
 
-**Usar la conversión de imágenes de Acrobat (solo Windows):** Cuando esta configuración es verdadera, el servicio Generar PDF utiliza Acrobat X Pro para todas las conversiones de imagen a PDF. Esta configuración solo es útil si el mecanismo de conversión de Java puro predeterminado no puede convertir correctamente una proporción significativa de las imágenes de entrada. El valor predeterminado es false.
+**Usar la conversión de imágenes de Acrobat (solo Windows):** Cuando esta configuración es verdadera, el servicio Generar PDF utiliza Acrobat X Pro para todas las conversiones de imagen a PDF. Esta configuración solo es útil si el mecanismo de conversión de Java puro predeterminado no puede convertir correctamente una proporción significativa de las imágenes de entrada. El valor predeterminado es False.
 
 **Active Conversiones de AutoCAD basadas en Acrobat (solo Windows):** Cuando esta configuración es verdadera, el servicio Generar PDF utiliza Acrobat X Pro para todas las conversiones de DWG a PDF. Esta configuración solo es útil si AutoCAD no está instalado en el servidor o si el mecanismo de conversión de AutoCAD no puede convertir archivos correctamente.
 
@@ -545,29 +549,29 @@ Los siguientes ajustes están disponibles para el servicio de firma.
 
 **URL del servicio web remoto HSM:** Especifique esta opción cuando AEM formularios esté instalado en Windows de 64 bits y utilice dispositivos HSM para firmar.
 
-**Certificación Para Incluir Cambios En La Carga Del Formulario:** Cuando se selecciona esta opción, el estado del formulario XFA se certifica además de la plantilla XFA. Tenga en cuenta que habilitar esta opción puede tener un impacto negativo en el rendimiento. El valor predeterminado es true.
+**Certificación Para Incluir Cambios En La Carga Del Formulario:** Cuando se selecciona esta opción, el estado del formulario XFA se certifica además de la plantilla XFA. Tenga en cuenta que habilitar esta opción puede tener un impacto negativo en el rendimiento. El valor predeterminado es True.
 
-**Ejecutar secuencias de comandos JavaScript del documento:** Especifica si se ejecutarán las secuencias de comandos de JavaScript de documento durante las operaciones de firma. El valor predeterminado es false.
+**Ejecutar secuencias de comandos JavaScript del documento:** Especifica si se ejecutarán las secuencias de comandos de JavaScript de documento durante las operaciones de firma. El valor predeterminado es False.
 
-**Procesar documentos con compatibilidad con Acrobat 9:** Especifica si se desea habilitar la compatibilidad con Acrobat 9. Por ejemplo, cuando se selecciona esta opción, la certificación visible en los PDF dinámicos está activada. El valor predeterminado es false.
+**Procesar documentos con compatibilidad con Acrobat 9:** Especifica si se desea habilitar la compatibilidad con Acrobat 9. Por ejemplo, cuando se selecciona esta opción, la certificación visible en los PDF dinámicos está activada. El valor predeterminado es False.
 
-**Incrustar información de revocación al firmar:** Especifica si la información de revocación está incrustada al firmar el documento del PDF. El valor predeterminado es false.
+**Incrustar información de revocación al firmar:** Especifica si la información de revocación está incrustada al firmar el documento del PDF. El valor predeterminado es False.
 
-**Incrustar información de revocación al certificar:** Especifica si la información de revocación está incrustada al certificar el documento del PDF. El valor predeterminado es false.
+**Incrustar información de revocación al certificar:** Especifica si la información de revocación está incrustada al certificar el documento del PDF. El valor predeterminado es False.
 
-**Aplique la incrustación de información de revocación para todos los certificados durante la firma o certificación:** Especifica si se produce un error en una operación de firma o certificación si no está incrustada la información de revocación válida para todos los certificados. Tenga en cuenta que si un certificado no contiene ninguna CRL o información de OCSP, se considera válido aunque no se recupere ninguna información de revocación. El valor predeterminado es false.
+**Aplique la incrustación de información de revocación para todos los certificados durante la firma o certificación:** Especifica si se produce un error en una operación de firma o certificación si no está incrustada la información de revocación válida para todos los certificados. Tenga en cuenta que si un certificado no contiene ninguna CRL o información de OCSP, se considera válido aunque no se recupere ninguna información de revocación. El valor predeterminado es False.
 
 **Orden de comprobación de revocación:** Especifica el orden de la comprobación de revocación cuando es posible realizar la comprobación mediante los mecanismos Lista de revocación de certificados (CRL) y Protocolo de estado de certificado en línea (OCSP). El valor predeterminado es OCSPFFirst.
 
 **Tamaño Máximo De La Información De Archivo De Revocación:** El tamaño máximo de la información de archivo de revocación en kilobytes. AEM formularios intentan almacenar la mayor cantidad de información de revocación posible sin superar el límite. El valor predeterminado es 10 KB.
 
-**Firmas De Soporte Creadas A Partir De Compilaciones Previas Al Lanzamiento De Productos De Adobe:** Cuando se selecciona esta opción, la firma creada con la versión previa al lanzamiento de los productos de Adobe se validará correctamente. El valor predeterminado es false.
+**Firmas De Soporte Creadas A Partir De Compilaciones Previas Al Lanzamiento De Productos De Adobe:** Cuando se selecciona esta opción, la firma creada con la versión previa al lanzamiento de los productos de Adobe se validará correctamente. El valor predeterminado es False.
 
 **Opción de tiempo de verificación:** Especifica la hora de verificación del certificado de un firmante. El valor predeterminado es Tiempo seguro distinto de la hora actual.
 
-**Utilice la información de revocación archivada en la firma durante la validación:** Especifica si la información de revocación archivada con la firma se utiliza para la comprobación de revocación. El valor predeterminado es true.
+**Utilice la información de revocación archivada en la firma durante la validación:** Especifica si la información de revocación archivada con la firma se utiliza para la comprobación de revocación. El valor predeterminado es True.
 
-**Utilice La Información De Validación Almacenada En El Documento Para La Validación De Firmas:** Cuando se selecciona esta opción, la información de validación (incluida la información de revocación y marca de tiempo) incrustada en el documento se utiliza para validar firmas. El valor predeterminado es true.
+**Utilice La Información De Validación Almacenada En El Documento Para La Validación De Firmas:** Cuando se selecciona esta opción, la información de validación (incluida la información de revocación y marca de tiempo) incrustada en el documento se utiliza para validar firmas. El valor predeterminado es True.
 
 **Máximo de sesiones de verificación anidadas permitidas:** Número máximo de sesiones de verificación anidadas permitidas. AEM formularios utiliza este valor para evitar un bucle infinito al verificar los certificados de firmante de OCSP o CRL cuando el certificado OCSP o CRL no está configurado correctamente. El valor predeterminado es 10.
 
@@ -593,21 +597,21 @@ Los siguientes ajustes están disponibles para el servicio de firma.
 
 ### Opciones de validación de ruta {#path-validation-options}
 
-**Requerir directiva explícita:** Especifica si la ruta de acceso debe ser válida al menos para una de las directivas de certificado que está asociada al anclaje de confianza del certificado del firmante. El valor predeterminado es false.
+**Requerir directiva explícita:** Especifica si la ruta de acceso debe ser válida al menos para una de las directivas de certificado que está asociada al anclaje de confianza del certificado del firmante. El valor predeterminado es False.
 
-**Inhibir CUALQUIER Política:** Especifica si el identificador de objeto de directiva (OID) debe procesarse si está incluido en un certificado. El valor predeterminado es false.
+**Inhibir CUALQUIER Política:** Especifica si el identificador de objeto de directiva (OID) debe procesarse si está incluido en un certificado. El valor predeterminado es False.
 
-**Inhibir la asignación de políticas:** Especifica si se permite la asignación de directivas en la ruta de certificación. El valor predeterminado es false.
+**Inhibir la asignación de políticas:** Especifica si se permite la asignación de directivas en la ruta de certificación. El valor predeterminado es False.
 
-**Comprobar todas las rutas:** Especifica si todas las rutas deben validarse o si la validación debe detenerse después de encontrar la primera ruta válida. Seleccione true o false. El valor predeterminado es false.
+**Comprobar todas las rutas:** Especifica si todas las rutas deben validarse o si la validación debe detenerse después de encontrar la primera ruta válida. Seleccione true o false. El valor predeterminado es False.
 
 **Servidor LDAP:** El servidor LDAP utilizado para buscar certificados para la validación de rutas. No hay ningún valor predeterminado.
 
-**Siga los URI del certificado AIA:** Especifica si los identificadores de recursos uniformes (URI) en el certificado AIA se procesan durante la detección de rutas. El valor predeterminado es false.
+**Siga los URI del certificado AIA:** Especifica si los identificadores de recursos uniformes (URI) en el certificado AIA se procesan durante la detección de rutas. El valor predeterminado es False.
 
-**Extensión de restricciones básicas requerida en los certificados de CA:** Especifica si la extensión del certificado de restricciones básicas de la entidad emisora de certificados (CA) debe estar presente para los certificados de CA. Algunos certificados raíz certificados (7 y anteriores) alemanes no son compatibles con RFC 3280 y no contienen la extensión de restricción básica. Si se sabe que el certificado EE de un usuario encadena hasta una raíz alemana de este tipo, anule la selección de esta casilla de verificación. El valor predeterminado es true.
+**Extensión de restricciones básicas requerida en los certificados de CA:** Especifica si la extensión del certificado de restricciones básicas de la entidad emisora de certificados (CA) debe estar presente para los certificados de CA. Algunos certificados raíz certificados (7 y anteriores) alemanes no son compatibles con RFC 3280 y no contienen la extensión de restricción básica. Si se sabe que el certificado EE de un usuario encadena hasta una raíz alemana de este tipo, anule la selección de esta casilla de verificación. El valor predeterminado es True.
 
-**Requerir firma de certificado válida durante la creación de cadenas:** Especifica si el generador de cadenas requiere firmas válidas en los certificados utilizados para crear cadenas. Cuando se selecciona esta casilla de verificación, el generador de cadenas no genera cadenas con firmas RSA no válidas en certificados. Considere la cadena CA > ICA > EE donde la firma de la CA en un ICA no es válida. Si este ajuste es cierto, la construcción de la cadena se detendrá en el ICA, y la CA no estará incluida en la cadena. Si esta configuración es falsa, se genera la cadena completa de 3 certificados. Esta configuración no afecta a las firmas DSA. El valor predeterminado es false.
+**Requerir firma de certificado válida durante la creación de cadenas:** Especifica si el generador de cadenas requiere firmas válidas en los certificados utilizados para crear cadenas. Cuando se selecciona esta casilla de verificación, el generador de cadenas no genera cadenas con firmas RSA no válidas en certificados. Considere la cadena CA > ICA > EE donde la firma de la CA en un ICA no es válida. Si este ajuste es cierto, la construcción de la cadena se detendrá en el ICA, y la CA no estará incluida en la cadena. Si esta configuración es falsa, se genera la cadena completa de 3 certificados. Esta configuración no afecta a las firmas DSA. El valor predeterminado es False.
 
 ### Opciones del proveedor de marcas de hora {#timestamp-provider-options}
 
@@ -621,9 +625,9 @@ Los siguientes ajustes están disponibles para el servicio de firma.
 
 **Estilo de comprobación de revocación:** Especifica el estilo de comprobación de revocación utilizado para determinar el estado de confianza del certificado del proveedor de marcas de tiempo a partir de su estado de revocación observado. El valor predeterminado es BestEffort.
 
-**Enviar cadena nonce:** Especifica si se envía un nonce con la solicitud del proveedor de marca de tiempo. Una cadena nonce puede ser una marca de tiempo, un contador de visitas de una página web o un marcador especial destinado a limitar o impedir la reproducción o reproducción no autorizadas de un archivo. El valor predeterminado es true.
+**Enviar cadena nonce:** Especifica si se envía un nonce con la solicitud del proveedor de marca de tiempo. Una cadena nonce puede ser una marca de tiempo, un contador de visitas de una página web o un marcador especial destinado a limitar o impedir la reproducción o reproducción no autorizadas de un archivo. El valor predeterminado es True.
 
-**Usar marcas de hora caducadas durante la validación:** Cuando se selecciona esta opción, se pueden utilizar marcas de tiempo caducadas para recuperar los tiempos de validación de las firmas. El valor predeterminado es true.
+**Usar marcas de hora caducadas durante la validación:** Cuando se selecciona esta opción, se pueden utilizar marcas de tiempo caducadas para recuperar los tiempos de validación de las firmas. El valor predeterminado es True.
 
 **Tamaño de respuesta de TSP:** Tamaño estimado, en bytes, de la respuesta TSP. Este valor debe representar el tamaño máximo de la respuesta de marca de tiempo que podría devolver el proveedor de marca de tiempo configurado. No cambie esto a menos que esté absolutamente seguro. El valor mínimo es 60B y el valor máximo es 10240B. El valor predeterminado es 4096B.
 
@@ -631,7 +635,7 @@ Los siguientes ajustes están disponibles para el servicio de firma.
 
 ### Opciones de lista de revocación de certificados {#certificate-revocation-list-options}
 
-**Consulte primero el URI local:** Especifica si se debe dar preferencia a la ubicación CRL proporcionada en la URI local o la búsqueda CRL sobre cualquier ubicación especificada dentro de un certificado para comprobar la revocación. El valor predeterminado es false.
+**Consulte primero el URI local:** Especifica si se debe dar preferencia a la ubicación CRL proporcionada en la URI local o la búsqueda CRL sobre cualquier ubicación especificada dentro de un certificado para comprobar la revocación. El valor predeterminado es False.
 
 **URI local para la búsqueda de CRL:** URL del proveedor CRL local. Este valor solo se consulta si la configuración Consultar URI local Primero está establecida en true. No hay ningún valor predeterminado.
 
@@ -639,11 +643,11 @@ Los siguientes ajustes están disponibles para el servicio de firma.
 
 **Servidor LDAP para búsqueda de CRL:** El servidor LDAP utilizado para obtener las CRL (como www.ldap.com). Todas las consultas basadas en DN para listas CRL se dirigirán a este servidor. No hay ningún valor predeterminado.
 
-**Ir en línea:** Especifica si desea conectarse para obtener una CRL. Si es false, solo se consultan las CRL almacenadas en caché (en el disco local o las incrustadas con la firma). El valor predeterminado es true.
+**Ir en línea:** Especifica si desea conectarse para obtener una CRL. Si es false, solo se consultan las CRL almacenadas en caché (en el disco local o las incrustadas con la firma). El valor predeterminado es True.
 
-**Omitir fechas de validez:** Especifica si se ignorarán los tiempos thisUpdate y nextUpdate de la respuesta, lo que evita que estos tiempos tengan un efecto negativo en la validez de la respuesta. El valor predeterminado es false.
+**Omitir fechas de validez:** Especifica si se ignorarán los tiempos thisUpdate y nextUpdate de la respuesta, lo que evita que estos tiempos tengan un efecto negativo en la validez de la respuesta. El valor predeterminado es False.
 
-**Requerir extensión AKI en CRL:** Especifica si la extensión del identificador de clave de autoridad debe incluirse en una CRL. El valor predeterminado es false.
+**Requerir extensión AKI en CRL:** Especifica si la extensión del identificador de clave de autoridad debe incluirse en una CRL. El valor predeterminado es False.
 
 ### Opciones del protocolo de estado de certificado en línea {#online-certificate-status-protocol-options}
 
@@ -653,31 +657,31 @@ Los siguientes ajustes están disponibles para el servicio de firma.
 
 **Estilo de comprobación de revocación:** Especifica el estilo de comprobación de revocación que se utiliza al verificar el certificado del servidor OCSP. El valor predeterminado es CheckIfAvailable.
 
-**Enviar cadena nonce:** Especifica si se envía un nonce con la solicitud OCSP. Una cadena nonce puede ser una marca de tiempo, un contador de visitas de una página web o un marcador especial destinado a limitar o impedir la reproducción o reproducción no autorizadas de un archivo. El valor predeterminado es true.
+**Enviar cadena nonce:** Especifica si se envía un nonce con la solicitud OCSP. Una cadena nonce puede ser una marca de tiempo, un contador de visitas de una página web o un marcador especial destinado a limitar o impedir la reproducción o reproducción no autorizadas de un archivo. El valor predeterminado es True.
 
 **Tiempo máximo de desfase del reloj:** Mínimo permitido de sesgo, en minutos, entre el tiempo de respuesta y el tiempo local. El valor mínimo es 0 y el valor máximo es 2147483647m. El valor predeterminado es 5m.
 
 **Tiempo de frescura de la respuesta:** Tiempo máximo, en minutos, para el cual una respuesta OCSP preconstruida se considera válida. El valor mínimo es 1m y el valor máximo permitido es 2147483647. El valor predeterminado es 525600 (un año).
 
-**Firmar solicitud OCSP:** Especifica si se debe firmar la solicitud OCSP. El valor predeterminado es false.
+**Firmar solicitud OCSP:** Especifica si se debe firmar la solicitud OCSP. El valor predeterminado es False.
 
 **Alias de Credencial del Signer de Solicitud:** Especifica el alias de credencial que se utiliza para firmar la solicitud OCSP si la firma está habilitada. Solo se utiliza si la firma de la solicitud OCSP está habilitada. No hay ningún valor predeterminado.
 
-**Ir en línea:** Especifica si se va a conectar para realizar la comprobación de revocación. El valor predeterminado es true.
+**Ir en línea:** Especifica si se va a conectar para realizar la comprobación de revocación. El valor predeterminado es True.
 
-**Ignore los tiempos thisUpdate y nextUpdate de la respuesta:** Especifica si se ignorarán los tiempos thisUpdate y nextUpdate de la respuesta, lo que evita que estos tiempos tengan un efecto negativo en la validez de la respuesta. El valor predeterminado es false.
+**Ignore los tiempos thisUpdate y nextUpdate de la respuesta:** Especifica si se ignorarán los tiempos thisUpdate y nextUpdate de la respuesta, lo que evita que estos tiempos tengan un efecto negativo en la validez de la respuesta. El valor predeterminado es False.
 
-**Permitir extensión OCSPNoCheck:** Especifica si la extensión OCSPNoCheck está permitida en el certificado de firma de respuesta. El valor predeterminado es true.
+**Permitir extensión OCSPNoCheck:** Especifica si la extensión OCSPNoCheck está permitida en el certificado de firma de respuesta. El valor predeterminado es True.
 
-**Requerir extensión OCSP ISIS-MTT CertHash:** Especifica si se debe incluir una extensión hash de clave pública de certificado en las respuestas OCSP. El valor predeterminado es false.
+**Requerir extensión OCSP ISIS-MTT CertHash:** Especifica si se debe incluir una extensión hash de clave pública de certificado en las respuestas OCSP. El valor predeterminado es False.
 
 ### Opciones de administración de errores para la depuración {#error-handling-options-for-debugging}
 
-**Purgue la caché del certificado en la siguiente llamada de API:** Especifica si se purga la caché de certificados cuando se llama a la siguiente operación del servicio de firma. Después de llamar a la operación, esta opción se establece en false. El valor predeterminado es false.
+**Purgue la caché del certificado en la siguiente llamada de API:** Especifica si se purga la caché de certificados cuando se llama a la siguiente operación del servicio de firma. Después de llamar a la operación, esta opción se establece en false. El valor predeterminado es False.
 
-**Purgue la caché de CRL en la siguiente llamada de API:** Especifica si se purga la caché de CRL cuando se llama a la siguiente operación del servicio de firma. Después de llamar a la operación, esta opción se establece en false. El valor predeterminado es false.
+**Purgue la caché de CRL en la siguiente llamada de API:** Especifica si se purga la caché de CRL cuando se llama a la siguiente operación del servicio de firma. Después de llamar a la operación, esta opción se establece en false. El valor predeterminado es False.
 
-**Purgue la caché de OCSP en la siguiente llamada de API:** Especifica si se purga la caché de OCSP cuando se llama a la siguiente operación del servicio de firma. Después de llamar a la operación, esta opción se establece en false. El valor predeterminado es false.
+**Purgue la caché de OCSP en la siguiente llamada de API:** Especifica si se purga la caché de OCSP cuando se llama a la siguiente operación del servicio de firma. Después de llamar a la operación, esta opción se establece en false. El valor predeterminado es False.
 
 ## Configuración del servicio de carpetas vigiladas {#watched-folder-service-settings}
 
@@ -697,9 +701,9 @@ Las siguientes opciones de configuración están disponibles para el servicio Ca
 
 **Tamaño del lote:** El valor predeterminado del número de archivos o carpetas que se procesan por análisis. El valor predeterminado es 2.
 
-La configuración Intervalo de repetición y Tamaño de lote determinan cuántos archivos ha visto la carpeta en cada análisis. Watched Folder utiliza un grupo de subprocesos de Quartz para analizar la carpeta de entrada. El grupo de subprocesos se comparte con otros servicios. Si el intervalo de análisis es pequeño, los subprocesos analizan la carpeta de entrada con frecuencia. Si los archivos se sueltan con frecuencia en la carpeta vigilada, mantenga el intervalo de análisis reducido. Si los archivos se pierden con poca frecuencia, utilice un intervalo de exploración mayor para que los demás servicios puedan utilizar los subprocesos.
+La configuración Intervalo de repetición y Tamaño de lote determinan cuántos archivos ha visto la carpeta en cada análisis. La carpeta inspeccionada utiliza un grupo de hilos de Quartz para analizar la carpeta de entrada. El grupo de subprocesos se comparte con otros servicios. Si el intervalo de análisis es pequeño, los subprocesos analizan la carpeta de entrada con frecuencia. Si los archivos se sueltan con frecuencia en la carpeta vigilada, mantenga el intervalo de análisis reducido. Si los archivos se pierden con poca frecuencia, utilice un intervalo de exploración mayor para que los demás servicios puedan utilizar los subprocesos.
 
-Si hay un gran volumen de archivos que se están perdiendo, aumente el tamaño del lote. Por ejemplo, si el servicio invocado por el extremo de carpeta vigilada puede procesar 700 archivos por minuto y los usuarios colocan los archivos en la carpeta de entrada a la misma velocidad, al establecer el tamaño del lote en 350 y el intervalo de repetición en 30 segundos, se ayudará al rendimiento de la carpeta vigilada sin incurrir en el coste de digitalizar la carpeta vigilada con demasiada frecuencia.
+Si se pierde un gran volumen de archivos, aumente el tamaño del lote. Por ejemplo, si el servicio invocado por el extremo de carpeta vigilada puede procesar 700 archivos por minuto y los usuarios colocan los archivos en la carpeta de entrada a la misma velocidad, al establecer el tamaño del lote en 350 y el intervalo de repetición en 30 segundos, se ayudará al rendimiento de la carpeta vigilada sin incurrir en el coste de digitalizar la carpeta vigilada con demasiada frecuencia.
 
 Cuando se sueltan los archivos en la carpeta vigilada, se enumeran los archivos de entrada, lo que puede reducir el rendimiento si se realiza la digitalización cada segundo. El aumento del intervalo de análisis puede mejorar el rendimiento. Si el volumen de archivos que se van a perder es pequeño, ajuste el tamaño del lote y el intervalo de repetición en consecuencia. Por ejemplo, si se pierden 10 archivos cada segundo, intente establecer el intervalo de repetición en 1 segundo y el tamaño del lote en 10.
 
@@ -713,8 +717,8 @@ En una configuración de clúster, el tamaño del lote de un extremo de carpeta 
 
 **Carpeta de resultados:** El nombre predeterminado de la carpeta de resultados. Esta carpeta se utiliza para copiar los archivos de resultados en . Este valor puede ser una ruta vacía, relativa o absoluta con el siguiente patrón de archivo.
 
-* %F = prefijo de nombre de archivo
-* %E = extensión de nombre de archivo
+* %F = prefijo del nombre de archivo
+* %E = extensión del nombre de archivo
 * %Y = año (completo)
 * %y = año (dos últimos dígitos)
 * %M = mes
@@ -726,15 +730,15 @@ En una configuración de clúster, el tamaño del lote de un extremo de carpeta 
 * %s = segundo
 * %l = milisegundo
 * %R = número aleatorio (de 0 a 9)
-* %P = id. de proceso o trabajo
+* %P = ID del proceso o trabajo
 
 Por ejemplo, si es las 8 p. m. del 17 de julio de 2009 y especifica `C:/Test/WF0/failure/%Y/%M/%D/%H/`, la carpeta de resultados es `C:/Test/WF0/failure/2009/07/17/20`.
 
-Si la ruta no es absoluta sino relativa, la carpeta se crea dentro de la carpeta vigilada. Para obtener más información sobre los patrones de archivo, consulte [Acerca de los patrones de archivo](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
+Si la ruta no es absoluta sino relativa, la carpeta se creará dentro de la carpeta vigilada. Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-file-patterns).
 
 >[!NOTE]
 >
->Cuanto menor sea el tamaño de las carpetas resultantes, mejor será el rendimiento de la carpeta vigilada. Por ejemplo, si la carga estimada de la carpeta vigilada es de 1000 archivos cada hora, pruebe un patrón como `result/%Y%M%D%H` para que se cree una nueva subcarpeta cada hora. Si la carga es más pequeña (por ejemplo, 1000 archivos por día), puede utilizar un patrón como `result/%Y%M%D`.
+>Cuanto menor sea el tamaño de las carpetas resultantes, mejor será el rendimiento de la carpeta vigilada. Por ejemplo, si la carga estimada de la carpeta vigilada es de 1000 archivos cada hora, pruebe un patrón como `result/%Y%M%D%H` para que se cree una nueva subcarpeta cada hora. Si la carga es menor (por ejemplo, 1000 archivos por día), puede utilizar un patrón como `result/%Y%M%D`.
 
 **Carpeta de ensayo:** El nombre predeterminado de la carpeta de escenario dentro de la carpeta vigilada.
 

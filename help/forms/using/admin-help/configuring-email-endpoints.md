@@ -1,5 +1,5 @@
 ---
-title: Configuración de extremos de correo electrónico
+title: Configurar extremos de correo electrónico
 seo-title: Configuring email endpoints
 description: Obtenga información sobre cómo configurar los extremos de los correos electrónicos.
 seo-description: Learn how to configure email endpoints.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: f24d9260-31e8-4bdf-8b80-c17cdd2d0747
-source-git-commit: bf9b94e8af72ad7b0a2c1d867fa35acfa31e6c1c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3757'
-ht-degree: 0%
+source-wordcount: '3793'
+ht-degree: 1%
 
 ---
 
-# Configuración de extremos de correo electrónico {#configuring-email-endpoints}
+# Configurar extremos de correo electrónico {#configuring-email-endpoints}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Los extremos de correo electrónico permiten a los usuarios invocar un servicio enviando uno o varios documentos (como archivos adjuntos de correo electrónico) a una cuenta de correo electrónico especificada. La bandeja de entrada de correo electrónico actúa como punto de recopilación de los archivos adjuntos. El servicio supervisa la bandeja de entrada y procesa los archivos adjuntos. Los resultados de la conversión se reenvían al usuario definido en el extremo.
 

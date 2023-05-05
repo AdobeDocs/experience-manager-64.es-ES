@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Search,Metadata
 role: User
 exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 2%
+source-wordcount: '585'
+ht-degree: 3%
 
 ---
 
-# Buscar recursos en [!DNL Experience Manager] {#search-assets-in-aem}
+# Búsqueda de recursos en [!DNL Experience Manager] {#search-assets-in-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Obtenga información sobre cómo encontrar los recursos necesarios en [!DNL Experience Manager] mediante el panel Filtros y cómo utilizar los recursos que aparecen en la búsqueda.
 
@@ -23,7 +27,7 @@ El panel Filtros ofrece varias opciones para buscar recursos y carpetas de varia
 Puede buscar en función de las siguientes opciones (predicados):
 
 * Tipo de archivo
-* Tamaño de archivo
+* Tamaño del archivo
 * Nombre del campo
 * Fecha de última modificación
 * Estado
@@ -33,9 +37,9 @@ Puede buscar en función de las siguientes opciones (predicados):
 
 <!-- TBD keystroke 65 article and port applicable changes here. This content goes. -->
 
-Puede personalizar el panel Filtros y agregar o eliminar predicados de búsqueda mediante [facetas de búsqueda](search-facets.md). Para mostrar el panel Filtros , realice estos pasos:
+Puede personalizar el panel Filtros y añadir o eliminar predicados de búsqueda mediante [facetas de búsqueda](search-facets.md). Para mostrar el panel Filtros , realice estos pasos:
 
-1. En la interfaz de usuario de Assets, pulse o haga clic en ![search_icon](assets/search_icon.png) en la barra de herramientas para mostrar el cuadro Omnisearch.
+1. En la interfaz de usuario de Assets, toque o haga clic en ![search_icon](assets/search_icon.png) en la barra de herramientas para mostrar el cuadro Omnisearch .
 1. Escriba el término de búsqueda y pulse Intro. Como alternativa, simplemente pulse Intro sin introducir ningún término de búsqueda. No introduzca ningún espacio inicial, de lo contrario la búsqueda no funcionará.
 
 1. Toque o haga clic en el icono de navegación global. Se muestra el panel Filtros .
@@ -50,7 +54,7 @@ Puede personalizar el panel Filtros y agregar o eliminar predicados de búsqueda
 
 El panel Filtros ayuda a añadir más granularidad a la experiencia de búsqueda y hace que la funcionalidad de búsqueda sea más versátil. Puede desplazarse fácilmente hasta el nivel de detalle deseado.
 
-Por ejemplo, si está buscando una imagen, utilice el predicado **[!UICONTROL Tipo de archivo]** para elegir si desea una imagen de mapa de bits o una imagen vectorial.
+Por ejemplo, si está buscando una imagen, utilice la variable **[!UICONTROL Tipo de archivo]** predicado para elegir si desea una imagen de mapa de bits o una imagen vectorial.
 
 ![image_type](assets/image_type.png)
 
@@ -64,7 +68,7 @@ Del mismo modo, al buscar documentos, puede especificar el formato, por ejemplo 
 
 ## Buscar según el tamaño del archivo {#search-based-on-file-size}
 
-Utilice el predicado **Tamaño de archivo** para buscar recursos en función de su tamaño. Puede especificar los límites inferior y superior del intervalo de tamaño para limitar la búsqueda. También puede especificar la unidad de medida, por ejemplo Kilobytes, Megabytes, etc.
+Utilice la variable **Tamaño del archivo** predicar para buscar recursos en función de su tamaño. Puede especificar los límites inferior y superior del intervalo de tamaño para limitar la búsqueda. También puede especificar la unidad de medida, por ejemplo Kilobytes, Megabytes, etc.
 
 ![unit_of_measure](assets/unit_of_measure.png)
 
@@ -80,13 +84,13 @@ También puede utilizar las siguientes opciones para lograr un nivel de granular
 
 ## Búsqueda basada en el estado {#search-based-on-status}
 
-Utilice el predicado **Status** para buscar recursos en función de varios tipos de estado, como Publicar, Aprobación, Cierre de compra y Caducidad.
+Utilice la variable **Estado** predicado para buscar recursos en función de varios tipos de estado, como Publicar, Aprobación, Cierre de compra y Caducidad.
 
-![estado](assets/status.png)
+![status](assets/status.png)
 
 Por ejemplo, al supervisar la publicación de recursos, puede utilizar la opción adecuada para buscar qué recursos se publican.
 
-![instancias de publicación](assets/publish.png)
+![publicación](assets/publish.png)
 
 Cuando supervise el estado de revisión de los activos, utilice la opción adecuada para encontrar qué activos están aprobados o qué activos están pendientes de aprobación.
 
@@ -94,7 +98,7 @@ Cuando supervise el estado de revisión de los activos, utilice la opción adecu
 
 ## Búsqueda basada en datos de perspectivas {#search-based-on-insights-data}
 
-Utilice el predicado **Insights** para buscar recursos en función de las estadísticas de uso que obtengan de varias aplicaciones Creative. Los datos de uso se agrupan en las siguientes categorías:
+Utilice la variable **Perspectivas** predicado para buscar recursos en función de sus estadísticas de uso obtenidas de varias aplicaciones de Creative. Los datos de uso se agrupan en las siguientes categorías:
 
 * Puntuación de uso
 * Impresiones

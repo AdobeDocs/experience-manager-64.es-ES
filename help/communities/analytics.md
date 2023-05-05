@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
 role: Admin
 exl-id: cb2f61df-73bb-47f7-86ce-feda4772c8d0
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2764'
+source-wordcount: '2800'
 ht-degree: 4%
 
 ---
 
 # Funciones de Configuración de Analytics para Communities {#analytics-configuration-for-communities-features}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Información general {#overview}
 
@@ -74,7 +78,7 @@ Para configurar las funciones de Analytics for Communities, es necesario que tra
 
    (Debe incluir privilegios de acceso al servicio web)
 
-* Contraseña
+* Una contraseña
 
    La contraseña de inicio de sesión del usuario autorizado
 
@@ -102,7 +106,7 @@ Al iniciar sesión en [Adobe Marketing Cloud](https://experienceleague.adobe.com
    * **`event1`** hasta **`event7`** enabled
    * Tipo **`Counter`**
 
-      * not **`Counter (no subrelations)`**
+      * no **`Counter (no subrelations)`**
    * Puede cambiar el propósito de los eventos existentes (cambiar su nombre) o crear otros nuevos para utilizarlos en las funciones de Communities
 
 
@@ -110,11 +114,11 @@ Al iniciar sesión en [Adobe Marketing Cloud](https://experienceleague.adobe.com
 
    * Consola de informes de vídeo
 
-      * Enable `Video Core`
+      * Habilitar `Video Core`
       * Seleccione Guardar
    * Consola de medición de Video Core
 
-      * Seleccione `Use Solution Variables`
+      * Seleccionar `Use Solution Variables`
       * Seleccione Guardar
 
 
@@ -186,7 +190,7 @@ En el cuadro de diálogo Crear configuración , los valores que se introducen id
 
 * **[!UICONTROL Plantilla]**
 
-   Seleccione `Adobe Analytics Configuration`
+   Seleccionar `Adobe Analytics Configuration`
 
 * Seleccione **[!UICONTROL Crear]**
    * Inicia la página de configuración y se abre `Analytics Settings` cuadro de diálogo
@@ -267,7 +271,7 @@ Después de configurar correctamente la conexión básica a Adobe Analytics, es 
 
 * **[!UICONTROL Plantilla]**
 
-   Seleccione `Adobe Analytics Framework`
+   Seleccionar `Adobe Analytics Framework`
 
 * Seleccione **[!UICONTROL Crear]**
 
@@ -339,8 +343,20 @@ Para que el seguimiento y la importación de Analytics funcionen correctamente e
 
 ```xml
 # present in default sitepage.hbs
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 # only one scf-js-site-title class should be included
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 # this example sets it to be hidden as it serves no visual purpose
+
+>[!CAUTION]
+>
+>AEM 6.4 has reached the end of extended support and this documentation is no longer updated. For further details, see our [technical support periods](https://helpx.adobe.com/support/programs/eol-matrix.html). Find the supported versions [here](https://experienceleague.adobe.com/docs/).
 <div
     class="navbar-brand scf-js-site-title"
     href="{{siteUrl}}.html"
@@ -392,12 +408,12 @@ A continuación, se muestra un ejemplo de asignaciones predeterminadas después 
 |------------------------|------------------------|-----------|--------------|------------|-----------|---------|----------|--------------|---------|----------|
 |  | **eVar1** | **eVar2** | **eVar3** | **eVar4** | **eVar5** | **eVar6** | **eVar7** | **eVar8** | **eVar9** | **eVar10** |
 | event1Resource Play | (a) | - | - | - | - | - | - | - | i) | - |
-| event2SCFView | a) | (b) | c) | (d) | (e) | (f) | (g) | (h) | i) | j) |
-| event3SCFCreate (Post) | - | b) | c) | d) | e) | f) | g) | h) | i) | j) |
-| event4SCFFollow | - | b) | c) | d) | e) | f) | g) | h) | i) | j) |
-| event5SCFVoteUp | - | b) | c) | d) | e) | f) | g) | h) | i) | j) |
-| event6SCFVoteDown | - | b) | c) | d) | e) | f) | g) | h) | i) | j) |
-| event7SCFRate | - | b) | c) | d) | e) | f) | g) | h) | i) | j) |
+| event2SCFView | (a) | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
+| event3SCFCreate (Post) | - | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
+| event4SCFFollow | - | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
+| event5SCFVoteUp | - | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
+| event6SCFVoteDown | - | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
+| event7SCFRate | - | (b) | (c) | (d) | e) | f) | g) | (h) | i) | j) |
 
 **Ejemplos de valores de eVar:**
 
@@ -545,7 +561,7 @@ El tema del foro es actualmente el único ejemplo de esta personalización:
 
 Adobe Analytics proporciona API que le permiten acceder, exportar y eliminar datos de usuario. Para obtener más información, consulte [Envío de solicitudes de acceso y eliminación](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html).
 
-## Medios {#resources}
+## Recursos {#resources}
 
 * Adobe Marketing Cloud: [Ayuda y referencia de Analytics](https://experienceleague.adobe.com/docs/analytics/landing/home.html)
 * AEM: [Integración con Adobe Analytics](../../help/sites-administering/adobeanalytics.md)

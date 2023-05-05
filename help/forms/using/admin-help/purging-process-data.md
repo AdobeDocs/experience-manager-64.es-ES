@@ -1,5 +1,5 @@
 ---
-title: Depuración de datos de procesos
+title: Depurar datos de procesos
 seo-title: Purging process data
 description: Los datos de proceso que se generan cuando se invoca un proceso de larga duración pueden llegar a ser demasiado grandes, lo que reduce el rendimiento de AEM formularios y el uso de espacio en disco innecesario. Consulte cómo puede depurar datos de proceso.
 seo-description: Process data that is generated when a long-lived process is invoked can become too large, resulting in lower AEM forms performance and the use of unnecessary disk space. See how you can purge process data.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 3157bb92-4b07-40f2-be4c-8f5807f9a380
 exl-id: ecedde63-abbb-4e69-901e-1e4b7a59f539
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 0%
+source-wordcount: '230'
+ht-degree: 8%
 
 ---
 
-# Depuración de datos de procesos {#purging-process-data}
+# Depurar datos de procesos {#purging-process-data}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Los datos de proceso que se generan cuando se invoca un proceso de larga duración pueden llegar a ser demasiado grandes, lo que reduce el rendimiento de AEM formularios y el uso de espacio en disco innecesario. Se recomienda depurar los datos del proceso cuando los registros ya no sean necesarios. AEM formularios ofrece varios medios para depurar datos de proceso:
 

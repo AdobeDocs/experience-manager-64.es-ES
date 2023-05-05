@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: grdp, introduction
 discoiquuid: 93e71efe-c1c6-4d83-9b57-6c70f7bc0b80
 exl-id: 46ad04b1-a660-4cdd-8649-5cdb00dbcae3
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 60%
+source-wordcount: '959'
+ht-degree: 59%
 
 ---
 
 # Preparación de Adobe Experience Manager para la protección de datos y las normas de privacidad de datos {#aem-readiness-for-data-protection-and-data-privacy-regulations}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 >[!WARNING]
 >
@@ -37,7 +41,7 @@ Adobe proporciona documentación y procedimientos (con API cuando están disponi
 >
 >Los datos de otro servicio bajo demanda de Adobe, junto con cualquier solicitud de privacidad relacionada, requerirán que se realicen acciones en ese servicio.
 >
->Para obtener más información, consulte el [Centro de privacidad de Adobe](https://www.adobe.com/privacy.html).
+>Para obtener más información, consulte el [Centro de privacidad de Adobe](https://www.adobe.com/es/privacy.html).
 
 ## Introducción {#introduction}
 
@@ -118,17 +122,17 @@ Para obtener más información, consulte:
 
 * [Flujo de trabajo de privacidad de datos de Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=es)
 
-## AEM Communities {#aem-communities}
+## Comunidades AEM {#aem-communities}
 
 AEM Communities otorga a los interesados el derecho a su portabilidad de datos, el derecho de acceso y el derecho a ser olvidados mediante [API integradas](/help/communities/user-ugc-management-service.md). Estas API permiten la eliminación masiva y la exportación masiva de contenido generado por el usuario, y desactivan las cuentas de usuario identificadas mediante sus ID autorizables. Sin embargo, es posible eliminar permanentemente la cuenta de usuario eliminando el nodo de usuario en el CRXDE Lite, lo que responde a la necesidad de una exclusión sencilla del sistema.
 
 Además, AEM Communities ofrece privacidad por diseño gracias a su consola de moderación masiva, que permite a los miembros privilegiados encontrar y eliminar las contribuciones y los detalles de los usuarios. La consola de administración de miembros permite limitar hasta el punto de prohibir un colaborador. Además, autoriza a los interesados a eliminar las contribuciones que hayan escrito.
 
-## AEM Forms {#aem-forms}
+## AEM Forms {#aem-forms}
 
 AEM Forms incluye componentes y flujos de trabajo que capturan, procesan y almacenan datos para organizar procesos empresariales y transacciones digitales completas. Los distintos componentes utilizan diferentes almacenes de datos y permiten la integración con almacenes de datos personalizados. En la siguiente documentación se explican los procedimientos y las directrices para acceder y gestionar los datos de usuario con el fin de admitir los flujos de trabajo de protección de datos y privacidad (por ejemplo, RGPD o CCPA) de un componente.
 
-* [Forms Portal](/help/forms/using/forms-portal-handling-user-data.md)
+* [Portal de Forms ](/help/forms/using/forms-portal-handling-user-data.md)
 * [Administración de correspondencia](/help/forms/using/correspondence-management-handling-user-data.md)
 * [Integración con Acrobat Sign](/help/forms/using/integration-adobe-sign-handling-user-data.md)
 * [Flujos de trabajo centrados en Forms en OSGi](/help/forms/using/forms-workflow-osgi-handling-user-data.md)

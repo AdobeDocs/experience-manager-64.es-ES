@@ -7,10 +7,11 @@ breadcrumb-title: Notas de la versión
 user-guide-description: Obtenga información sobre las últimas funciones nuevas de AEM 6.4 en las notas de la versión.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '87'
-ht-degree: 37%
+ht-degree: 19%
 
 ---
 
@@ -21,11 +22,11 @@ ht-degree: 37%
 + [Notas de la versión generales](release-notes.md)
 + [Notas de la versión de Service Pack](sp-release-notes.md)
 + [Notas de la versión del paquete de correcciones acumulativas de ](cfp-release-notes.md)
-+ [Notas de versión de AEM Sites](sites.md)
-+ [Notas de versión de AEM Assets](assets.md)
++ [Notas de la versión de AEM Sites](sites.md)
++ [Notas de la versión de AEM Assets](assets.md)
 + [Notas de la versión de AEM Forms](forms.md)
 + [Instalador de parches JEE de AEM Forms](jee-patch-installer-64.md)
-+ [Notas de versión de AEM Communities](communities-release-notes.md)
++ [Notas de la versión de AEM Communities](communities-release-notes.md)
 + [Funciones en desuso y eliminadas](deprecated-removed-features.md)
 + [Problemas conocidos](known-issues.md)
 + [Base de AEM y repositorio](wcm-platform.md)

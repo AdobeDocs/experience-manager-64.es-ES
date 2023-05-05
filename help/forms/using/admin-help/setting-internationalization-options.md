@@ -1,5 +1,5 @@
 ---
-title: Configuración de las opciones de internacionalización
+title: Configurar las opciones de internacionalización
 seo-title: Setting internationalization options
 description: Aprenda a especificar la configuración regional utilizada para procesar formularios y a especificar el conjunto de caracteres utilizado para codificar el flujo de salida.
 seo-description: Learn how to specify the locale used to render forms and how to specify the character set used to encode the output stream.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e845d13f-bef2-442d-af9a-4f92d7616a46
 exl-id: 1fb51e4a-e0e8-4a58-8877-98337fe29fac
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 1%
+source-wordcount: '258'
+ht-degree: 6%
 
 ---
 
-# Configuración de las opciones de internacionalización{#setting-internationalization-options}
+# Configurar las opciones de internacionalización{#setting-internationalization-options}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Especificar la configuración regional utilizada para procesar formularios {#specify-the-locale-used-to-render-forms}
 

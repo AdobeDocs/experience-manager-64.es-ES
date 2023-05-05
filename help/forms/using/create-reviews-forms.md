@@ -10,14 +10,18 @@ topic-tags: forms-manager
 discoiquuid: 43fd720f-2a5a-47fb-b9d9-d19f866cd0a0
 feature: Adaptive Forms
 exl-id: ff113288-a69a-4083-82a6-4c65c5062411
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 97%
+source-wordcount: '695'
+ht-degree: 93%
 
 ---
 
 # Creación y administración de revisiones para recursos de formularios {#creating-and-managing-reviews-for-assets-in-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Revisión {#review}
 
@@ -85,7 +89,7 @@ Esta sección describe lo que sucede cuando se modifica o finaliza una revisión
 
 1. Si se quita un revisor:
 
-   ![Eliminación de un revisor](assets/removeduser.png)
+   ![Quitar un revisor](assets/removeduser.png)
    **Figura:** *Eliminación de un revisor*
 
    1. Si la tarea asignada está incompleta, finaliza.
@@ -93,7 +97,7 @@ Esta sección describe lo que sucede cuando se modifica o finaliza una revisión
 
 1. Si se agrega un revisor:
 
-   ![Adición de un revisor](assets/addedreviewer.png)
+   ![Agregar un revisor](assets/addedreviewer.png)
    **Figura:** *Adición de un revisor*
 
    1. Se crea una tarea de revisión y se asigna al revisor que se acaba de agregar.

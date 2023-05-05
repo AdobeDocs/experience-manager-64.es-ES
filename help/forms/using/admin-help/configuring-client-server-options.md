@@ -1,5 +1,5 @@
 ---
-title: Configuración de las opciones de cliente y servidor
+title: Configurar las opciones de cliente y servidor
 seo-title: Configuring client and server optionsn
 description: Obtenga información sobre cómo configurar las distintas opciones de cliente y servidor, como los ajustes de configuración del servidor, las funciones de seguridad de documentos y la auditoría de eventos.
 seo-description: Learn how you can configure the various client and server options, such as server configuration settings, document security roles, and event auditing.
@@ -11,14 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: Document Security
 exl-id: 571c1391-dc60-4bed-b4f9-482a508e4bd4
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '10250'
+source-wordcount: '10286'
 ht-degree: 0%
 
 ---
 
 # Configuración del servidor de seguridad de documentos {#configure-the-document-security-server}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 1. En la consola de administración, haga clic en Servicios > seguridad del documento > Configuración > Configuración del servidor.
 1. Configure los ajustes y haga clic en Aceptar.

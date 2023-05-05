@@ -1,24 +1,27 @@
 ---
-title: 'Autenticación de IMS de Adobe y compatibilidad con Admin Console para AEM Managed Services '
-seo-title: 'Autenticación de IMS de Adobe y compatibilidad con Admin Console para AEM Managed Services '
+title: Autenticación de IMS de Adobe y compatibilidad con Admin Console para AEM Managed Services
+seo-title: Adobe IMS Authentication and Admin Console Support for AEM Managed Services
 description: Aprenda a utilizar el Admin Console en AEM.
-seo-description: Aprenda a utilizar el Admin Console en AEM.
+seo-description: Learn how to use the Admin Console in AEM.
 uuid: 3f5b32c7-cf62-41a4-be34-3f71bbf224eb
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
-translation-type: tm+mt
-source-git-commit: e672f4edf87bd4d3af985e2ea598feb4e26d1553
+exl-id: 38bbad03-aead-43d3-a28c-cc716955ddfb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1769'
+source-wordcount: '1785'
 ht-degree: 18%
 
 ---
 
+# Autenticación de IMS de Adobe y compatibilidad con Admin Console para AEM Managed Services {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
 
-# Compatibilidad de Admin Console y autenticación de IMS de Adobe para AEM Managed Services {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
@@ -26,7 +29,7 @@ ht-degree: 18%
 
 ## Introducción {#introduction}
 
-AEM 6.4.3.0 incorpora compatibilidad con Admin Console para instancias de AEM y autenticación basada en IMS de Adobe (Identity Management System) para clientes de **AEM Managed Services**.
+AEM 6.4.3.0 incorpora compatibilidad con Admin Console para instancias de AEM y autenticación basada en Adobe IMS (Identity Management System) para **AEM Managed Services** clientes.
 
 AEM incorporación al Admin Console permitirá a AEM clientes de Managed Services administrar todos los usuarios Experience Cloud en una consola. Los usuarios y grupos se pueden asignar a perfiles de producto asociados con instancias de AEM, lo que les permite iniciar sesión en una instancia específica.
 
@@ -52,9 +55,9 @@ El flujo de inicio de sesión del usuario se muestra a continuación; se redirig
 
 ### Incorporación de organizaciones a Admin Console {#onboarding-organizations-to-admin-console}
 
-La incorporación del cliente al Admin Console es un requisito previo para utilizar IMS de Adobe para AEM autenticación.
+La incorporación del cliente a Admin Console es un requisito previo para utilizar Adobe IMS para la autenticación AEM.
 
-Como primer paso, los clientes deben tener una organización aprovisionada en Adobe IMS. Los clientes de Adobe Enterprise están representados como organizaciones de IMS en [Adobe Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html).
+Como primer paso, los clientes deben tener una organización aprovisionada en Adobe IMS. Los clientes de Adobe Enterprise están representados como organizaciones de IMS en la variable [Adobe Admin Console](https://helpx.adobe.com/es/enterprise/using/admin-console.html).
 
 AEM los clientes de Managed Services ya deben disponer de una organización aprovisionada y, como parte del aprovisionamiento de IMS, las instancias de cliente estarán disponibles en el Admin Console para administrar los derechos de usuario y el acceso.
 
@@ -72,9 +75,9 @@ Una vez que un cliente existe como una organización de IMS y AMS se ha realizad
 
 >[!NOTE]
 >
->Para obtener más información sobre los fundamentos de Identity Management de Adobe, incluida la configuración de IDP, consulte el artículo [esta página.](https://helpx.adobe.com/es/enterprise/using/set-up-identity.html)
+>Para obtener más información sobre los conceptos básicos de Identity Management de Adobe, incluida la configuración de IDP, consulte el artículo [esta página.](https://helpx.adobe.com/es/enterprise/using/set-up-identity.html)
 >
->Para obtener más información sobre Enterprise Administration and Admin Console, consulte el artículo [esta página](https://helpx.adobe.com/es/enterprise/managing/user-guide.html).
+>Para obtener más información sobre Enterprise Administration y el Admin Console, consulte el artículo [esta página](https://helpx.adobe.com/es/enterprise/managing/user-guide.html).
 
 ### Incorporación de usuarios al Admin Console {#onboarding-users-to-the-admin-console}
 
@@ -127,12 +130,12 @@ Puede encontrar más información sobre las nuevas funciones de grupo aquí:
 >Para obtener más información sobre la herramienta de sincronización de usuarios, consulte la [página de documentación](https://adobe-apiplatform.github.io/user-sync.py/es/).
 >
 >
->La herramienta de sincronización de usuarios debe registrarse como cliente de Adobe I/O UMAPI mediante el procedimiento descrito [aquí](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
+>La herramienta de sincronización de usuarios debe registrarse como cliente de Adobe I/O UMAPI mediante el procedimiento descrito [here](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->La documentación de la consola Adobe I/O se encuentra [aquí](https://www.adobe.io/apis/cloudplatform/console.html).
+>La documentación de la Consola de Adobe I/O se encuentra [here](https://www.adobe.io/apis/cloudplatform/console.html).
 >
 >
->La API de administración de usuarios que utiliza la herramienta de sincronización de usuarios se cubre en esta [ubicación](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
+>La API de administración de usuarios que utiliza la herramienta de sincronización de usuarios se explica en esta [ubicación](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
 
 >[!NOTE]
 >
@@ -162,7 +165,7 @@ Los usuarios y grupos agregados bajo este perfil de producto pueden iniciar sesi
 
 ![screen_shot_2018-09-17at105623pm](assets/screen_shot_2018-09-17at105623pm.png)
 
-### Iniciando sesión en AEM {#logging-into-aem}
+### Iniciar sesión en AEM {#logging-into-aem}
 
 #### Inicio de sesión de administrador local {#local-admin-login}
 
@@ -172,7 +175,7 @@ AEM seguir admitiendo los inicios de sesión locales para los usuarios administr
 
 #### Inicio de sesión basado en IMS {#ims-based-login}
 
-Para otros usuarios, el inicio de sesión basado en IMS se puede utilizar una vez que IMS esté configurado en la instancia. El usuario primero hará clic en el botón **Iniciar sesión con Adobe** como se muestra a continuación:
+Para otros usuarios, el inicio de sesión basado en IMS se puede utilizar una vez que IMS esté configurado en la instancia. El usuario primero debe hacer clic en el botón **Iniciar sesión con Adobe** como se muestra a continuación:
 
 ![image2018-9-18_0-10-32](assets/image2018-9-18_0-10-32.png)
 
@@ -204,7 +207,7 @@ El control de acceso y los permisos se seguirán administrando en AEM, esto se p
 
 En el ejemplo siguiente, se añaden grupos sincronizados al grupo local *Dam_Users* como ejemplo.
 
-En este caso, también se ha asignado un usuario a algunos grupos del Admin Console. ( Tenga en cuenta que los usuarios y grupos pueden sincronizarse desde LDAP con la herramienta de sincronización de usuarios o crearse localmente, consulte la sección **Incorporación de usuarios al Admin Console** anterior).
+En este caso, también se ha asignado un usuario a algunos grupos del Admin Console. ( Tenga en cuenta que los usuarios y grupos pueden sincronizarse desde LDAP utilizando la herramienta de sincronización de usuarios o crearse localmente, consulte la sección **Incorporación de usuarios al Admin Console** arriba).
 
 >[!NOTE]
 >
@@ -227,4 +230,3 @@ En AEM, los grupos de usuarios sincronizados con IMS se pueden agregar como miem
 Como se muestra a continuación, el grupo *AEM-GRP_008* hereda los permisos y privilegios de los usuarios de DAM. Esta es una forma eficaz de administrar permisos para grupos sincronizados y se utiliza comúnmente también en métodos de autenticación basados en LDAP.
 
 ![screen_shot_2018-09-17at10505pm](assets/screen_shot_2018-09-17at110505pm.png)
-

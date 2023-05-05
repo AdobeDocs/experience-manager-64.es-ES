@@ -8,10 +8,11 @@ breadcrumb-title: Guía de creación
 user-guide-description: Aprenda conceptos clave para crear contenido en AEM.
 feature: Authoring
 role: User
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '285'
-ht-degree: 87%
+ht-degree: 67%
 
 ---
 
@@ -28,7 +29,7 @@ ht-degree: 87%
    + [Configuración del entorno de cuenta](user-properties.md)
    + [Su bandeja de entrada](inbox.md)
    + [Métodos abreviados de teclado para consolas](keyboard-shortcuts.md)
-   + [Seleccionar la IU](select-ui.md)
+   + [Selección de la IU](select-ui.md)
 + Creación {#authoring}
    + [Herramientas y entorno de creación](author-environment-tools.md)
    + [Anotaciones al editar una página](annotations.md)
@@ -55,14 +56,14 @@ ht-degree: 87%
    + [Diseño adaptable](responsive-layout.md)
    + [Perspectiva de contenido](content-insights.md)
    + [Crear contenido accesible (Conformidad con WCAG 2.0)](creating-accessible-content.md)
-   + [Scaffolding](scaffolding.md)
-   + [Configurar componentes en modo Diseño](default-components-designmode.md)
+   + [Andamiaje](scaffolding.md)
+   + [Configuración de componentes en modo de diseño](default-components-designmode.md)
    + [Componentes de base](default-components-foundation.md)
 + Proyectos {#projects}
    + [Proyectos](projects.md)
    + [Administración de proyectos](touch-ui-managing-projects.md)
    + [Uso de tareas](task-content.md)
-   + [Creative Project e integración PIM](managing-product-information.md)
+   + [Integración de proyectos y PIM creativos](managing-product-information.md)
    + [Uso de flujos de trabajo de proyecto](projects-with-workflows.md)
 + Lanzamientos {#launches}
    + [Lanzamientos](launches.md)
@@ -76,7 +77,7 @@ ht-degree: 87%
    + [Uso de flujos de trabajo de proyecto](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/projects/projects-with-workflows.html)
 + Rendimiento de la página {#page-performance}
    + [Perspectiva de contenido](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/content-insights.html)
-   + [Analizar el rendimiento de la página](ci-analyze.md)
+   + [Análisis del rendimiento de la página](ci-analyze.md)
    + [Visualización de datos de análisis de la página](pa-using.md)
 + Personalización {#personalization}
    + [Personalización](personalization.md)
@@ -89,8 +90,8 @@ ht-degree: 87%
    + [Creación y administración de ofertas](offerlib.md)
    + [Información acerca de la segmentación](segmentation-overview.md)
 + AEM y Adobe Campaign {#aem-adobe-campaign}
-   + [Trabajo con Adobe Campaign](adobe-campaign.md)
+   + [Uso de Adobe Campaign](adobe-campaign.md)
    + [Trabajo con Adobe Campaign Classic y Adobe Campaign Standard](campaign.md)
-   + [Targeting de Adobe Campaign](target-adobe-campaign.md)
-   + [Crear formularios de Adobe Campaign en AEM](adobe-campaign-forms.md)
+   + [Segmentación de Adobe Campaign](target-adobe-campaign.md)
+   + [Creación de Adobe Campaign Forms en AEM](adobe-campaign-forms.md)
    + [Componentes de Adobe Campaign](adobe-campaign-components.md)

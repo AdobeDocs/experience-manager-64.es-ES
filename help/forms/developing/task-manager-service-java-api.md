@@ -1,5 +1,5 @@
 ---
-title: Inicio rápido (SOAP) de la API de Java del servicio del Administrador de tareas
+title: Inicio rápido (SOAP) de la API de Java del servicio Administrador de tareas
 seo-title: Task Manager Service Java API QuickStart(SOAP)
 description: Utilice el servicio Administrador de tareas para asignar tareas, bloquear tareas, recuperar tareas asignadas a usuarios, recuperar datos de formulario de tareas, modificar datos de formulario, recuperar archivos adjuntos y recuperar información de tareas.
 seo-description: Use the Task Manager service to assign tasks, lock tasks, retrieve tasks assigned to users, retrieve form data from tasks, modify form data, retrieve file attachments, and retrieve task information.
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 role: Developer
 exl-id: 302b38e9-71fc-4e83-af01-856d7bd9af40
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 0%
+source-wordcount: '560'
+ht-degree: 2%
 
 ---
 
 # Inicio rápido de la API de Java (SOAP) del servicio del administrador de tareas {#task-manager-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Las siguientes opciones de inicio rápido están disponibles para el servicio Administrador de tareas.
 

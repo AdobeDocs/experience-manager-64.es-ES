@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 180f0448-d507-4b6d-bb8a-d12a434e1250
 exl-id: e24f4123-bed3-4096-b3fb-22deb1c1e9b9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '251'
-ht-degree: 0%
+source-wordcount: '287'
+ht-degree: 6%
 
 ---
 
 # Especificar fuentes para incrustar{#specify-fonts-to-embed}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede especificar qué fuentes se incrustan siempre o nunca se incrustan en los formularios utilizados por Output. La incrustación de fuentes aumenta el tamaño de archivo de los formularios. Incruste fuentes inusuales que los usuarios probablemente no tengan en sus sistemas y no incruste fuentes comunes que tendrán instaladas.
 

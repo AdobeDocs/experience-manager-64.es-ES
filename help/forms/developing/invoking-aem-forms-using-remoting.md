@@ -1,5 +1,5 @@
 ---
-title: Invocación de AEM Forms mediante Remoting
+title: Invocar AEM Forms mediante Remoting
 seo-title: Invoking AEM Forms using Remoting
 description: Utilice Remoting para invocar un proceso de AEM Forms e invocar procesos creados en Workbench. Puede invocar un proceso AEM Forms desde una aplicación cliente creada con Flex.
 seo-description: Use Remoting to invoke an AEM Forms process to invoke processes created in Workbench. You can invoke a AEM Forms process from a client application built with Flex.
@@ -11,14 +11,18 @@ topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 role: Developer
 exl-id: de8ba694-0b68-4442-bd50-5ba6d845749c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4621'
+source-wordcount: '4657'
 ht-degree: 0%
 
 ---
 
-# Invocación de AEM Forms mediante Remoting {#invoking-aem-forms-using-remoting}
+# Invocar AEM Forms mediante Remoting {#invoking-aem-forms-using-remoting}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Los procesos creados en Workbench se pueden invocar mediante Remoting. Es decir, puede invocar un proceso AEM Forms desde una aplicación cliente creada con Flex. Esta función se basa en los servicios de datos.
 
@@ -52,7 +56,7 @@ Cuando se invoca este proceso, realiza las siguientes acciones:
 >
 >Para obtener información sobre el uso de Remoting para invocar un proceso de larga duración, consulte [Invocación de procesos de larga vida centrados en el ser humano](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión del archivo de biblioteca Flex de AEM Forms](invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)
 
@@ -68,7 +72,7 @@ Cuando se invoca este proceso, realiza las siguientes acciones:
 
 [Creación de una aplicación cliente creada con Flex que invoca un proceso prolongado centrado en el ser humano](/help/forms/developing/invoking-human-centric-long-lived.md#creating-a-client-application-built-with-flex-that-invokes-a-human-centric-long-lived-process)
 
-[Creación de aplicaciones de Flash Builder que realizan autenticación SSO mediante tokens HTTP](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)
+[Crear aplicaciones de Flash Builder que realizan autenticación SSO mediante tokens HTTP](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)
 
 Para obtener información sobre cómo mostrar datos de proceso en un control de gráfico de Flex, consulte [Visualización de datos de proceso de AEM Forms en gráficos de Flex](https://www.adobe.com/devnet/livecycle/articles/populating_flexcontrols.html).
 
@@ -84,7 +88,7 @@ Para invocar mediante programación procesos de AEM Forms mediante Remoting, agr
 
    donde &lt;*install_directory*> es el directorio donde está instalado AEM Forms.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante AEM Forms Remoting (obsoleto para formularios AEM)](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
@@ -173,7 +177,7 @@ El inicio rápido de Remoting utiliza el servlet de carga de Remoting para pasar
 
 Una aplicación cliente recibe un objeto de tipo `mx.rpc.livecycle.DocumentReference` para una operación de servicio que devuelve un `com.adobe.idp.Document` como parámetro de salida. Dado que una aplicación cliente trata de objetos de ActionScript y no de Java, no puede devolver un objeto Document basado en Java a un cliente de Flex. En su lugar, el servidor genera una dirección URL para el documento y la devuelve al cliente. La variable `DocumentReference` del objeto `referenceType` la propiedad especifica si el contenido está en la variable `DocumentReference` o debe recuperarse de una dirección URL en la `DocumentReference.url` propiedad. La variable `DocumentReference.contentType` especifica el tipo de documento.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante AEM Forms Remoting (obsoleto para formularios AEM)](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
@@ -527,7 +531,7 @@ Por lo tanto, llame a la función `RemoteObject.logout` en una aplicación clien
 
 Puede iniciar una aplicación cliente creada con Flex y utilizar el servicio de inicio de sesión centralizado para cerrar la sesión. Como parte del proceso de cierre de sesión, se elimina la cookie de autenticación. Si se realiza una solicitud remota sin una cookie, o con una cookie no válida, la sesión del usuario se invalida. Esta acción es en efecto un cierre de sesión. La próxima vez que la aplicación cliente intente conectarse a un servicio de AEM Forms, se solicitará al usuario que inicie sesión.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante AEM Forms Remoting (obsoleto para formularios AEM)](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
@@ -870,7 +874,7 @@ si AEM Forms está configurado para permitir que solo se carguen documentos segu
  </mx:Application>
 ```
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante AEM Forms Remoting (obsoleto para formularios AEM)](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
@@ -1255,7 +1259,7 @@ Este inicio rápido contiene una hoja de estilos denominada* bank.css*. El sigui
  }
 ```
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante AEM Forms Remoting (obsoleto para formularios AEM)](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 

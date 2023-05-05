@@ -1,5 +1,5 @@
 ---
-title: Configuración del almacenamiento en caché para salida
+title: Configurar el almacenamiento en caché para la salida
 seo-title: Configuring caching for Output
 description: El servicio Output almacena en caché los diseños de formulario, los fragmentos y las imágenes. Aprenda a configurar el almacenamiento en caché para la salida.
 seo-description: The Output service caches the form designs, fragments and images. Learn how to configure the caching for output.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e5398abd-f62c-485d-9f4b-a316c0de2b6b
 exl-id: e9c823d4-b70d-4c90-a232-56b69208271b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1440'
-ht-degree: 0%
+source-wordcount: '1476'
+ht-degree: 1%
 
 ---
 
-# Configuración del almacenamiento en caché para salida  {#configuring-caching-for-output}
+# Configurar el almacenamiento en caché para la salida  {#configuring-caching-for-output}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El servicio Output combina los datos de formulario XML con un diseño de formulario creado en Designer para crear una secuencia de salida de documento en varios formatos.
 
@@ -102,9 +106,9 @@ Cuando el servicio Output recibe una solicitud de renderización, recupera el di
 
 El servicio Output siempre almacena en caché los diseños de formulario en el disco. Si los diseños de formulario se almacenan en el servidor, esos archivos se consideran la caché del disco. El servicio Output también almacena en caché los diseños de formulario en la memoria, según la configuración de la variable **En caché de plantilla de memoria** . Si cambia cualquiera de estos ajustes, reinicie el servicio Output para que el cambio surta efecto. Para reiniciar este servicio, utilice Workbench o consulte [Iniciar o detener los servicios asociados con AEM módulos de formularios](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) para obtener instrucciones.
 
-**Tamaño de caché de configuración de plantilla:** El número máximo de objetos de configuración de plantilla que se deben mantener en la memoria. El valor predeterminado es 100. Se recomienda establecer este valor bueno o igual al valor Tamaño de caché de plantilla . Esta configuración no afecta a la caché del disco.
+**Tamaño de caché de configuración de plantilla:** El número máximo de objetos de configuración de plantilla que se deben mantener en la memoria. El valor predeterminado es 100. Se recomienda establecer este valor bueno o igual al valor Tamaño de caché de plantilla . Esta configuración no afecta a la caché del disco.
 
-**Tamaño de caché de plantilla:** El número máximo de objetos de contenido de plantilla que se deben mantener en la memoria. El valor predeterminado es 100. Esta configuración no afecta a la caché del disco.
+**Tamaño de caché de plantilla:** El número máximo de objetos de contenido de plantilla que se deben mantener en la memoria. El valor predeterminado es 100. Esta configuración no afecta a la caché del disco.
 
 **Habilitado:** De forma predeterminada, esta casilla de verificación está seleccionada, lo que significa que las plantillas de formulario se almacenan en la memoria caché. Cuando no se selecciona esta opción, las plantillas de formulario se almacenan en la caché solo en el disco.
 

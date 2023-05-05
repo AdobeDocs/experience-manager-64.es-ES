@@ -10,14 +10,18 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 5d607b9f-584b-4ffc-ab0b-d0318dc69dec
 exl-id: 04520447-6ea8-4190-8dc3-46bb23f74c0c
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 3%
+source-wordcount: '778'
+ht-degree: 10%
 
 ---
 
 # Componente de página SPA{#spa-page-component}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 En un SPA, el componente de página no proporciona los elementos de HTML de sus componentes secundarios, sino que lo delega en el marco de SPA. Este documento explica cómo esto hace que el componente de página sea único de un SPA.
 
@@ -29,7 +33,7 @@ En un SPA, el componente de página no proporciona los elementos de HTML de sus 
 
 ## Introducción {#introduction}
 
-El componente de página de una SPA no proporciona los elementos HTML de sus componentes secundarios a través de un archivo JSP o HTL y objetos de recurso. Esta operación se delega en el marco SPA. La representación de los componentes secundarios se obtiene como una estructura de datos JSON (es decir, el modelo). A continuación, los componentes SPA se añaden a la página según el modelo JSON proporcionado. Como tal, la composición del cuerpo inicial del componente de página difiere de las contrapartidas del HTML procesado previamente.
+El componente de página de una SPA no proporciona los elementos HTML de sus componentes secundarios a través de un archivo JSP o HTL y objetos de recurso. Esta operación se delega al marco de trabajo de las SPA. La representación de los componentes secundarios se obtiene como una estructura de datos JSON (es decir, el modelo). A continuación, los componentes SPA se añaden a la página según el modelo JSON proporcionado. Como tal, la composición del cuerpo inicial del componente de página difiere de las contrapartidas del HTML procesado previamente.
 
 ## Administración de modelos de página {#page-model-management}
 
@@ -44,7 +48,7 @@ No olvide limitar la inclusión del `cq.authoring.pagemodel.messaging` al contex
 
 ## Tipo de datos de comunicación {#communication-data-type}
 
-El tipo de datos de comunicación se establece como un elemento HTML dentro del componente Página AEM mediante el uso del `data-cq-datatype` atributo. Cuando el tipo de datos de comunicación se establece en JSON, las solicitudes de GET llegan a los extremos del modelo Sling de un componente. Una vez que se produce una actualización en el editor de páginas, la representación JSON del componente actualizado se envía a la biblioteca del modelo de página. A continuación, la biblioteca del modelo de página advierte del SPA de las actualizaciones.
+El tipo de datos de comunicación se establece como un elemento HTML dentro del componente Página AEM mediante el uso del `data-cq-datatype` atributo. Cuando el tipo de datos de comunicación se establece en JSON, las solicitudes de GET llegan a los extremos del modelo Sling de un componente. Una vez que se produce una actualización de estado en el editor de páginas, la representación JSON del componente actualizado se envía a la biblioteca del Modelo de página. A continuación, la biblioteca del modelo de página advierte del SPA de las actualizaciones.
 
 **Componente de página SPA -`body.html`**
 

@@ -1,7 +1,7 @@
 ---
-title: Estilo en línea de los componentes de formulario adaptables
+title: Aplicar estilos dentro de la línea a los componentes de un formulario adaptable
 seo-title: Inline CSS properties for adaptive form components
-description: Aunque puede aplicar estilos personalizados en un formulario adaptable, también puede aplicar propiedades CSS en línea en componentes individuales de un formulario adaptable.
+description: Aunque puede aplicar estilos personalizados a un formulario adaptable, también puede aplicar propiedades CSS en línea a los componentes individuales de un formulario adaptable.
 seo-description: While you can apply custom styles on an adaptive form, you can also apply inline CSS properties on individual components of an adaptive form.
 uuid: ab948f02-3b41-4304-955b-6dd51d27088e
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -9,16 +9,20 @@ topic-tags: author
 discoiquuid: 91a41bc1-3fa3-4467-b3f8-5570ba7757c0
 feature: Adaptive Forms
 exl-id: 8e7ba9d2-207f-419b-bcd5-74ba9b14ab92
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '526'
-ht-degree: 71%
+source-wordcount: '562'
+ht-degree: 93%
 
 ---
 
-# Estilo en línea de los componentes de formulario adaptables {#inline-styling-of-adaptive-form-components}
+# Aplicar estilos dentro de la línea a los componentes de un formulario adaptable {#inline-styling-of-adaptive-form-components}
 
-Puede definir el aspecto y el estilo generales de un formulario adaptable especificando los estilos utilizando [editor de temas](/help/forms/using/themes.md). Además, puede aplicar estilos CSS en línea a componentes de formulario adaptables individuales y previsualizar los cambios sobre la marcha. Los estilos en línea reemplazan el estilo proporcionado en el tema.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+Puede definir el aspecto y el estilo generales de un formulario adaptable especificando los estilos mediante el [Editor de temas](/help/forms/using/themes.md). Además, puede aplicar estilos CSS en línea a componentes de formulario adaptable individuales y previsualizar los cambios sobre la marcha. Los estilos en línea reemplazan el estilo proporcionado en el tema.
 
 ## Aplicar propiedades CSS en línea {#apply-inline-css-properties}
 
@@ -29,9 +33,9 @@ Para añadir estilos en línea a un componente:
 
    También puede seleccionar componentes en el árbol de jerarquía del formulario de la barra lateral. El árbol de jerarquía del formulario está disponible como Objetos del formulario en la barra lateral.
 
-   También puede seleccionar un componente de la barra lateral. En el modo Estilo, puede ver los componentes que aparecen en Objetos de formulario. Sin embargo, la lista Objetos de formulario de la barra lateral muestra componentes como los campos y los paneles. Los campos y los paneles son componentes genéricos que pueden contener otros componentes como, por ejemplo, cuadros de texto y botones de opción.
+   También puede seleccionar un componente en la barra lateral. En el modo Estilo, puede ver los componentes que aparecen en Objetos de formulario. Sin embargo, la lista Objetos de formulario de la barra lateral muestra componentes como los campos y los paneles. Los campos y los paneles son componentes genéricos que pueden contener otros componentes como, por ejemplo, cuadros de texto y botones de opción.
 
-   Al seleccionar un componente de la barra lateral, se ven todos los subcomponentes enumerados y las propiedades del componente seleccionado. Puede seleccionar un subcomponente específico y aplicarle un estilo.
+   Cuando seleccione un componente en la barra lateral, verá una lista de todos los subcomponentes y las propiedades del componente seleccionado. Puede seleccionar un subcomponente específico y aplicarle un estilo.
 
 1. Haga clic en una de las pestañas de la barra lateral para especificar las propiedades CSS. Puede especificar propiedades como las siguientes:
 
@@ -67,13 +71,13 @@ Observe el cambio en el estilo del cuadro de texto después de aplicar las sigui
    <td><p>Campo</p> </td> 
    <td><p>border</p> </td> 
    <td><p>Border width =2px</p> <p>Border style=Solid</p> <p>Border color=#1111</p> </td> 
-   <td><p>Crea un borde ancho negro de 2 píxeles alrededor del campo</p> </td> 
+   <td><p>Crea un borde ancho negro de 2 píxeles alrededor del campo</p> </td> 
   </tr> 
   <tr> 
    <td><p>Cuadro de texto</p> </td> 
    <td><p>background-color</p> </td> 
    <td><p>#6495ED</p> </td> 
-   <td><p>Cambia el color de fondo a CornflowerBlue (#6495ED)</p> <p>Nota: Puede especificar un nombre de color o su código hexadecimal en el campo de valor.</p> </td> 
+   <td><p>Cambia el color de fondo a CornflowerBlue (#6495ED)</p> <p>Nota: Puede especificar un nombre de color o su código hexadecimal en el campo del valor.</p> </td> 
   </tr> 
   <tr> 
    <td><p>Etiqueta</p> </td> 

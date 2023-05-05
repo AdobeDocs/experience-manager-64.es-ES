@@ -1,8 +1,8 @@
 ---
 title: Compatibilidad con versiones anteriores en AEM 6.4
-seo-title: Compatibilidad con versiones anteriores en AEM 6.4
+seo-title: Backward Compatibility in AEM 6.4
 description: Obtenga información sobre cómo mantener las aplicaciones y configuraciones compatibles con AEM 6.4
-seo-description: Obtenga información sobre cómo mantener las aplicaciones y configuraciones compatibles con AEM 6.4
+seo-description: Learn how to keep your apps and configurations compatible with AEM 6.4
 uuid: 2fa8525e-7f3b-4096-ac85-01c2c76bc9ac
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,22 +10,25 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: 5e76fe09-4d37-4c8c-8baf-97e75689bd26
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 5798100a-e03a-43f8-9189-ae51c06e192b
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 1%
+source-wordcount: '522'
+ht-degree: 2%
 
 ---
 
-
 # Compatibilidad con versiones anteriores en AEM 6.4{#backward-compatibility-in-aem}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Información general {#overview}
 
 >[!NOTE]
 >
->Para obtener una lista de los cambios de contenido y configuración que no están dentro del ámbito del paquete de compatibilidad, consulte [Reestructuración del repositorio en AEM 6.4](/help/sites-deploying/repository-restructuring.md).
+>Para obtener una lista de los cambios de contenido y configuración que no están dentro del ámbito del paquete de compatibilidad, consulte [Reestructuración de repositorios en AEM 6.4](/help/sites-deploying/repository-restructuring.md).
 
 En AEM 6.4, todas las características se han desarrollado teniendo en cuenta la compatibilidad con versiones anteriores.
 
@@ -63,7 +66,7 @@ El modo heredado es para clientes que tienen interfaces personalizadas basadas e
 
 ## Configuración {#how-to-set-up}
 
-El paquete de compatibilidad de AEM 6.3 se puede instalar como paquete mediante el Administrador de paquetes. Puede descargar el [AEM paquete de compatibilidad 6.3 del sitio Distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63).
+El paquete de compatibilidad de AEM 6.3 se puede instalar como paquete mediante el Administrador de paquetes. Puede descargar el [Paquete de compatibilidad AEM 6.3 de la distribución de software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/compatpack/aem-compat-cq64-to-cq63) sitio.
 
 Una vez instalado el paquete de compatibilidad, el enrutamiento se puede habilitar o deshabilitar utilizando un conmutador en la configuración OSGI como se muestra a continuación:
 

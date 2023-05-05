@@ -1,5 +1,5 @@
 ---
-title: Aprovisionamiento de usuarios justo a tiempo
+title: Aprovisionar usuarios justo a tiempo
 seo-title: Just-in-time user provisioning
 description: Utilice el aprovisionamiento justo a tiempo para añadir usuarios a Administración de usuarios después de una autenticación correcta y asignar dinámicamente funciones y grupos relevantes al nuevo usuario.
 seo-description: Use just-in-time provisioning to add users to User Management after successfull authentication and dynamically assign relevant roles and groups to the new user.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
 exl-id: 8c205d1d-d17e-4810-8ef9-a8bdcd9aa1c2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 0%
+source-wordcount: '609'
+ht-degree: 2%
 
 ---
 
-# Aprovisionamiento de usuarios justo a tiempo {#just-in-time-user-provisioning}
+# Aprovisionar usuarios justo a tiempo {#just-in-time-user-provisioning}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 AEM formularios admite el aprovisionamiento puntual de usuarios que aún no existen en Administración de usuarios. Con el aprovisionamiento justo a tiempo, los usuarios se agregan automáticamente a Administración de usuarios después de autenticar sus credenciales correctamente. Además, las funciones y los grupos relevantes se asignan de forma dinámica al nuevo usuario.
 

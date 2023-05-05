@@ -1,5 +1,5 @@
 ---
-title: Configuración de proveedores de autenticación
+title: Configurar proveedores de autenticación
 seo-title: Configuring authentication providers
 description: Agregue, edite o elimine proveedores de autenticación, cambie la configuración de autenticación y lea acerca del aprovisionamiento justo a tiempo de los usuarios.
 seo-description: Add, edit, or delete authentication providers, change authentication settings, and read about just-in-time provisioning of users.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 31dd8db3-ddac-429e-82f8-8c5dc4ffc186
 exl-id: 1b5ead0a-cf33-4422-bdca-2bd6aebbc98d
-source-git-commit: bf9b94e8af72ad7b0a2c1d867fa35acfa31e6c1c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1576'
-ht-degree: 0%
+source-wordcount: '1612'
+ht-degree: 1%
 
 ---
 
-# Configuración de proveedores de autenticación {#configuring-authentication-providers}
+# Configurar proveedores de autenticación {#configuring-authentication-providers}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Los dominios híbridos requieren al menos un proveedor de autenticación y los dominios empresariales requieren al menos un proveedor de autenticación o un proveedor de directorios.
 

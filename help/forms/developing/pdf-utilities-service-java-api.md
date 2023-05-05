@@ -1,5 +1,5 @@
 ---
-title: PDF Utilities Service APIQuick Start (SOAP)
+title: Inicio rápido (SOAP) de la API de Java del servicio Utilidades PDF
 seo-title: PDF Utilities Service Java APIQuick Start(SOAP)
 description: Utilice el servicio PDF Utilities para convertir un documento PDF en un documento XDP, convertir un documento XDP en un documento PDF, recuperar las propiedades del documento PDF, configurar el estilo de guardado para un documento PDF y sanear los documentos PDF.
 seo-description: Use the PDF Utilities service to convert a PDF document to an XDP document, convert an XDP document to a PDF document, retrieve PDF document properties, setting the save style for a PDF document, and sanitize PDF documents.
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 4ec4c674-d7d3-4988-9d77-78d274970672
 role: Developer
 exl-id: 0ada2e06-9a88-4262-8970-7b2aa52a8434
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '458'
-ht-degree: 0%
+source-wordcount: '494'
+ht-degree: 3%
 
 ---
 
 # Inicio rápido de la API de Java del servicio de utilidades de PDF (SOAP) {#pdf-utilities-service-java-apiquick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Los siguientes Quick Starts están disponibles para el servicio PDF Utilities.
 

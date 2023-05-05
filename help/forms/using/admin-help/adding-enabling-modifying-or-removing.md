@@ -1,5 +1,5 @@
 ---
-title: Adición, activación, modificación o eliminación de puntos finales
+title: Agregar, activar, modificar o eliminar puntos finales
 seo-title: Adding, enabling, modifying, or removing endpoints
 description: Aprenda a añadir, habilitar, modificar y eliminar puntos finales.
 seo-description: Learn how to add, enable, modify and remove endpoints.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7d0d4f96-fc72-4e2b-a2cc-5741b0a30f74
 exl-id: 8aed1439-aa39-4f75-909b-6a7ad7840a08
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '371'
-ht-degree: 0%
+source-wordcount: '407'
+ht-degree: 5%
 
 ---
 
-# Adición, activación, modificación o eliminación de puntos finales {#adding-enabling-modifying-or-removing-endpoints}
+# Agregar, activar, modificar o eliminar puntos finales {#adding-enabling-modifying-or-removing-endpoints}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Añadir un extremo a un servicio {#add-an-endpoint-to-a-service}
 
@@ -36,7 +40,7 @@ Los puntos de conexión solo se pueden agregar a servicios. Un punto final no pu
 
 [Configuración de extremo de correo electrónico](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
 
-[Configuración de los extremos del Administrador de tareas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
+[Configurar los extremos del Administrador de tareas](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
 
 [Configuración de extremo remoto](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
 

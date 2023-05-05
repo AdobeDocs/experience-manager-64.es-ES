@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 89441336-babc-4d1f-9053-d1566cd42d22
 exl-id: 7b266170-c7e2-42e7-8ee0-153e1e73a901
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 0%
+source-wordcount: '444'
+ht-degree: 4%
 
 ---
 
 # Sugerencias para minimizar el crecimiento de las bases de datos {#tips-for-minimizing-database-growth}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Los procesos de larga duración almacenan datos de proceso en la base de datos de AEM forms. El crecimiento de la base de datos de formularios AEM se puede minimizar utilizando algunas estrategias sencillas de diseño de procesos y configuración de productos.
 

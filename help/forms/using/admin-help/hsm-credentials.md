@@ -1,5 +1,5 @@
 ---
-title: Administración de credenciales HSM
+title: Administrar credenciales HSM
 seo-title: Managing HSM credentials
 description: Obtenga información sobre cómo administrar las credenciales de HSM.
 seo-description: Learn how to manage HSM credentials.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e5f17ba8-8aab-4449-811a-20ad33de1c6f
 exl-id: f38057d7-b500-448a-8664-a45374d4cfea
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1304'
-ht-degree: 0%
+source-wordcount: '1340'
+ht-degree: 5%
 
 ---
 
-# Administración de credenciales HSM {#managing-hsm-credentials}
+# Administrar credenciales HSM {#managing-hsm-credentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Desde la página Administración de almacén de confianza, puede administrar las credenciales del Módulo de seguridad de hardware (HSM). Un HSM es un dispositivo PKCS#11 de terceros que puede utilizar para generar y almacenar claves privadas de forma segura. El HSM protege físicamente el acceso a las claves privadas y su uso.
 
@@ -33,7 +37,7 @@ AEM formularios Digital Signatures puede utilizar credenciales almacenadas en un
 
 1. En la consola de administración, haga clic en Configuración > Administración de almacén de confianza > Credenciales de HSM y, a continuación, haga clic en Agregar.
 1. En el cuadro Nombre de perfil, escriba una cadena utilizada para identificar el alias. Este valor se utiliza como propiedad para algunas operaciones de firmas digitales, como la operación Firmar campo de firma .
-1. En el cuadro Biblioteca PKCS11, escriba la ruta completa de su biblioteca de cliente HSM en el servidor. Por ejemplo, `c:\Program Files\LunaSA\cryptoki.dll`. En un entorno agrupado, esta ruta debe ser idéntica para todos los servidores del clúster.
+1. En el cuadro Biblioteca PKCS11, escriba la ruta completa de su biblioteca de cliente HSM en el servidor. Por ejemplo, `c:\Program Files\LunaSA\cryptoki.dll`. En un entorno en clúster, esta ruta debe ser idéntica para todos los servidores del clúster.
 1. Haga clic en Probar conectividad HSM. Si AEM formularios pueden conectarse al dispositivo HSM, aparece un mensaje que indica que el HSM está disponible. Haga clic en Siguiente.
 1. Utilice el Nombre del token, el ID de ranura o el Índice de lista de ranuras para identificar dónde se almacenan las credenciales en el HSM.
 
@@ -48,7 +52,7 @@ AEM formularios Digital Signatures puede utilizar credenciales almacenadas en un
 
 1. En la consola de administración, haga clic en Configuración > Administración de almacén de confianza > Credenciales de HSM y, a continuación, haga clic en Agregar.
 1. En el cuadro Nombre de perfil, escriba una cadena utilizada para identificar el alias. Este valor se utiliza como propiedad para algunas operaciones de firmas digitales, como la operación Firmar campo de firma .
-1. En el cuadro Biblioteca PKCS11, escriba la ruta completa de su biblioteca de cliente HSM en el servidor. Por ejemplo, `c:\Program Files\LunaSA\cryptoki.dll`. En un entorno agrupado, esta ruta debe ser idéntica para todos los servidores del clúster.
+1. En el cuadro Biblioteca PKCS11, escriba la ruta completa de su biblioteca de cliente HSM en el servidor. Por ejemplo, `c:\Program Files\LunaSA\cryptoki.dll`. En un entorno en clúster, esta ruta debe ser idéntica para todos los servidores del clúster.
 1. Active la casilla de verificación Creación de perfiles sin conexión . Haga clic en Siguiente.
 1. En la lista de dispositivos HSM, seleccione el fabricante del dispositivo HSM en el que se almacena la credencial.
 1. En la lista Tipo de ranura, seleccione Id. de ranura, Índice de ranura o Nombre de token y especifique un valor en el cuadro Información de ranura. AEM formularios utiliza esta configuración para determinar dónde se almacenan las credenciales en el HSM.

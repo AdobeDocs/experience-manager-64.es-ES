@@ -10,14 +10,18 @@ topic-tags: adaptive_forms, develop
 discoiquuid: 2daf95b6-bf72-4191-bdb7-e17e76b166f3
 feature: Adaptive Forms
 exl-id: d7406206-d63a-48da-bb95-e62db0f2c8a5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1253'
-ht-degree: 1%
+source-wordcount: '1289'
+ht-degree: 2%
 
 ---
 
 # Automatizar las pruebas de formularios adaptables {#automate-testing-of-adaptive-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Información general {#overview}
 
@@ -108,7 +112,7 @@ El siguiente ejemplo lo acompaña durante la creación de un grupo de pruebas pa
   <tr> 
    <td>Propiedad</td> 
    <td>Tipo</td> 
-   <td>Valor</td> 
+   <td>Valor </td> 
   </tr> 
   <tr> 
    <td><p>categorías</p> </td> 

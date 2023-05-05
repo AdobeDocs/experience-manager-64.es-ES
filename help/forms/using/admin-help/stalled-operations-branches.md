@@ -1,5 +1,5 @@
 ---
-title: Trabajo con operaciones y ramas estancadas
+title: Trabajar con operaciones y ramas estancadas
 seo-title: Working with stalled operations and branches
 description: La página Operaciones interrumpidas y la página Ramas interrumpidas muestran los procesos que se han estancado.
 seo-description: The Stalled Operations page and the Stalled Branches page show the processes that have stalled.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8c2567f3-7220-436a-b9f2-2824a98c1ccc
 exl-id: 04a832d5-1ab5-4db3-b185-57fba21eb839
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 0%
+source-wordcount: '743'
+ht-degree: 2%
 
 ---
 
-# Trabajo con operaciones y ramas estancadas {#working-with-stalled-operations-and-branches}
+# Trabajar con operaciones y ramas estancadas {#working-with-stalled-operations-and-branches}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 La página Operaciones interrumpidas y la página Ramas interrumpidas muestran los procesos que se han estancado. Un proceso puede paralizarse cuando se produce un error durante o después de la ejecución de una operación o debido a una operación de paralización deliberada en el proceso:
 

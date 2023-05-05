@@ -11,14 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a6fe91ab-3aa0-4b3d-87c0-6cf69a2c4cc4
 role: Developer
 exl-id: da303186-8f36-4fc8-a2db-b38a0b200c39
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '626'
-ht-degree: 0%
+source-wordcount: '662'
+ht-degree: 3%
 
 ---
 
-# Validación de un documento DDX mediante la API de servicio web {#validate-a-ddx-document-using-theweb-service-api}
+# Validar un documento DDX mediante la API de servicio web {#validate-a-ddx-document-using-theweb-service-api}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Valide un documento DDX utilizando la API del servicio Assembler (servicio web):
 
@@ -79,8 +83,8 @@ Valide un documento DDX utilizando la API del servicio Assembler (servicio web):
    >
    >Si el documento DDX no es válido, `OperationException` se lanza. Dentro de la sentencia catch, puede obtener el valor de la variable `OperationException` del objeto `jobLog` miembro.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Validación de documentos DDX](/help/forms/developing/validating-ddx-documents.md#validating-ddx-documents)
+[Validar documentos DDX](/help/forms/developing/validating-ddx-documents.md#validating-ddx-documents)
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

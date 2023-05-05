@@ -10,33 +10,37 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 0e842725-57be-4a16-b972-f5677eaad8cb
 exl-id: dcd54a52-f610-4c68-8547-39562c062d84
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '977'
-ht-degree: 95%
+source-wordcount: '1013'
+ht-degree: 55%
 
 ---
 
 # Administrar audiencias{#managing-audiences}
 
-La consola Audiencias permite crear, organizar y administrar las audiencias de la cuenta de Adobe Target o administrar segmentos de ContextHub o Client Context:
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-* Añadir audiencias: audiencias de Adobe Target o segmentos de ContextHub.
+La consola de audiencias permite crear, organizar y administrar audiencias para la cuenta de Adobe Target o administrar segmentos para ContextHub o Client Context:
+
+* Agregar audiencias: audiencias de Adobe Target o segmentos de ContextHub.
 * Administre audiencias.
 
-Una audiencia, denominada *segmento* en ContextHub y Client Context, es una clase de visitantes definida por criterios específicos que luego determinan quién ve una actividad segmentada. Al segmentar una actividad, puede seleccionar la audiencia directamente en el proceso de segmentación o crear una nueva en la consola de audiencias.
+Una audiencia, denominada *segmento* en ContextHub y Client Context, es una clase de visitantes definida por criterios específicos que luego determinan quién ve una actividad segmentada. Cuando segmenta una actividad, puede seleccionar audiencias directamente en el proceso de segmentación o crear otras nuevas en la consola de audiencias.
 
-En la consola de audiencias, las audiencias se organizan según la marca.
+En la consola de audiencias, las audiencias se organizan por marca.
 
-Las audiencias están disponibles en el modo Segmentación del [contenido de destino de creación](/help/sites-authoring/content-targeting-touch.md), donde también puede crear audiencias (debe crear las audiencias de Adobe Target en la consola Audiencias). Las audiencias creadas en el modo Segmentación aparecen en la consola de audiencias.
+Las audiencias están disponibles en el modo Segmentación del [contenido de destino de creación](/help/sites-authoring/content-targeting-touch.md), donde también puede crear audiencias (debe crear las audiencias de Adobe Target en la consola Audiencias). Las audiencias que crea en el modo Segmentación aparecen en la consola de audiencias.
 
-Las audiencias se muestran con una etiqueta que describe qué tipo de audiencia está definida:
+Las audiencias se muestran con una etiqueta que describe qué tipo de audiencia se define:
 
 * CH: segmento de ContextHub
-* CC: segmento del contexto del cliente
+* CC: segmento de Client Context
 * AT: audiencia de Adobe Target
 
-## Crear un segmento de ContextHub en la consola de audiencias {#creating-a-contexthub-segment-in-the-audiences-console}
+## Creación de un segmento de ContextHub en la consola de audiencias {#creating-a-contexthub-segment-in-the-audiences-console}
 
 Puede crear un segmento de ContextHub en la consola de audiencias o durante el proceso de segmentación.
 
@@ -53,13 +57,13 @@ Para crear un segmento de ContextHub en la consola de audiencias:
    >
    >Puede ordenar la lista modificada pulsando o haciendo clic en **Modificado** para clasificar en orden descendente y ver las audiencias recién creadas.
 
-Para obtener más información sobre cómo crear segmentos con ContextHub, consulte la documentación de [Configurar la segmentación con ContextHub](/help/sites-administering/segmentation.md).
+Para obtener más información sobre la creación de segmentos con ContextHub, consulte la [Configuración de la segmentación con ContextHub](/help/sites-administering/segmentation.md) documentación.
 
-## Crear una audiencia de Adobe Target mediante la consola de audiencias {#creating-an-adobe-target-audience-using-the-audience-console}
+## Creación de una audiencia de Adobe Target mediante la consola de audiencias {#creating-an-adobe-target-audience-using-the-audience-console}
 
 Puede crear audiencias de Adobe Target directamente en AEM mediante la consola de audiencias.
 
-Las audiencias se definen mediante reglas que determinan quién se incluye o excluye de una actividad de destino. Una definición de audiencia puede incluir varias reglas y cada regla puede incluir varios parámetros.
+Las audiencias están definidas por reglas que determinan quién se incluye en una actividad de Target. Una definición de audiencia puede incluir varias reglas y cada regla puede incluir varios parámetros.
 
 Al utilizar más de una regla, estas reglas se combinan según el operador boolean AND, lo que significa que cualquier posible miembro de la audiencia debe cumplir todas las condiciones que se detallaron para ser incluido en la actividad. Por ejemplo, si define una regla de sistema operativo AND una regla de explorador, solo se incluyen en la actividad los visitantes que usan el sistema operativo definido y el explorador definido.
 
@@ -77,12 +81,12 @@ Para crear una audiencia de Adobe Target:
 
    ![chlimage_1-300](assets/chlimage_1-300.png)
 
-1. En el cuadro de diálogo **Configuración de Adobe Target**, seleccione la configuración de destino y haga clic o pulse **Aceptar**.
-1. En el área de la Regla n.º 1, haga clic o pulse el tipo de atributo e introduzca la información de atributo en los campos que están disponibles. Cuando termine, seleccione la marca de verificación situada a la derecha del atributo para guardarlo. Consulte [Atributos y sus opciones](#attributes-and-their-options) para obtener más información acerca de todos los atributos.
+1. En el **Configuración de Adobe Target** , seleccione la configuración de destino y pulse o haga clic en **OK**.
+1. En el área Regla n.º 1, pulse o haga clic en el tipo de atributo e introduzca la información de atributo en los campos disponibles. Cuando termine, seleccione la marca de verificación a la derecha del atributo para guardarlo. Consulte [Atributos y sus opciones](#attributes-and-their-options) para obtener información sobre todos los atributos.
 1. Haga clic en **Agregar regla** para añadir otra regla. Escriba tantas reglas como sea necesario. Las reglas se combinan con el operador boolean AND, lo que significa que la audiencia debe cumplir todos los requisitos de cada regla para poder optar a una actividad.
 1. Haga clic o pulse **Siguiente**.
-1. Especifique un nombre para la audiencia y haga clic o pulse **Guardar**.
-1. Haga clic o pulse en **Guardar**. La audiencia se enumera en la lista de audiencias.
+1. Escriba un nombre para la audiencia y toque o haga clic en **Guardar**.
+1. Haga clic o pulse en **Guardar**. La audiencia se muestra en la lista de audiencias.
 
 ### Atributos y sus opciones {#attributes-and-their-options}
 
@@ -98,14 +102,14 @@ Puede crear reglas de segmentación para cada uno de los atributos siguientes:
 | **Perfil del visitante** | Segmente a los visitantes que cumplan parámetros de perfil específicos. | Consulte [Documentación del perfil del visitante](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html?lang=es) en Adobe Target. |
 | **Fuentes de tráfico** | Segmente a los visitantes en función del motor de búsqueda o de la página de aterrizaje que les lleve a su sitio. | Consulte [Documentación de fuentes de tráfico](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=es) en Adobe Target. |
 
-## Modificar una audiencia en la consola de audiencias {#modifying-an-audience-in-the-audiences-console}
+## Modificación de una audiencia en la consola de audiencias {#modifying-an-audience-in-the-audiences-console}
 
 >[!NOTE]
 >
->Solo puede editar las audiencias de Adobe Target que se crearon en la misma instancia de AEM en la cual realizó las modificaciones. Las audiencias de destino que se crearon en diferentes entornos de AEM no se pueden editar.
+>Solo puede editar las audiencias de Adobe Target que se crearon en la misma instancia de AEM en la que está editando. Las audiencias de destino creadas en entornos de AEM diferentes no se pueden editar.
 
-Puede editar cualquier audiencia de ContextHub o Client Context desde la consola de audiencias. Asimismo, también puede editar audiencias de Adobe Target, pero solo aquellos que se hayan creado en AEM:
+Puede editar cualquier audiencia de ContextHub o Client Context desde la consola de audiencias. También puede editar las audiencias de Adobe Target, pero solo las que se crearon en AEM:
 
 1. En la consola de navegación, haga clic o pulse **Personalización**. Haga clic o pulse en **Audiencias**.
-1. Haga clic o pulse el icono que está al lado del segmento de ContextHub o Client Context que desea editar, y haga clic o pulse **Editar**.
-1. Haga los cambios necesarios en el editor de segmentos. Consulte la documentación de [Client Context](/help/sites-administering/campaign-segmentation.md) o [ContextHub](/help/sites-administering/contexthub-config.md).
+1. Toque o haga clic en el icono situado junto al segmento de ContextHub o Client Context que desee editar y haga clic o pulse **Editar**.
+1. Haga los cambios necesarios en el editor de segmentos. Consulte [ClientContext](/help/sites-administering/campaign-segmentation.md) o [ContextHub](/help/sites-administering/contexthub-config.md) documentación.

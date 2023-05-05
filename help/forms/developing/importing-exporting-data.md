@@ -1,5 +1,5 @@
 ---
-title: Importación y exportación de datos
+title: Importar y exportar datos
 seo-title: Importing and Exporting Data
 description: Utilice el servicio de integración de datos de formulario para importar datos en un formulario de PDF y exportar datos desde un formulario de PDF mediante la API de Java y la API del servicio web.
 seo-description: Use the Form Data Integration service to import data into a PDF form and export data from a PDF form using the Java API and Web Service API.
@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 role: Developer
 exl-id: e9d10d35-6a8d-497d-83f7-67ee6c22baed
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2764'
-ht-degree: 0%
+source-wordcount: '2800'
+ht-degree: 1%
 
 ---
 
-# Importación y exportación de datos {#importing-and-exporting-data}
+# Importar y exportar datos {#importing-and-exporting-data}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Acerca del servicio de integración de datos de formulario {#about-the-form-data-integration-service}
 
@@ -131,7 +135,7 @@ Después de hacer referencia a un formulario de PDF y a un origen de datos XML v
 
 Después de importar los datos en un formulario, puede guardarlo como archivo PDF. Una vez guardado como archivo PDF, un usuario puede abrir el formulario en Adobe Reader o Acrobat y ver el formulario con los datos importados.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Importar datos de formulario mediante la API de Java](importing-exporting-data.md#import-form-data-using-the-java-api)
 
@@ -182,7 +186,7 @@ Importe datos de formulario mediante la API de integración de datos de formular
    * Cree un `java.io.File` y asegúrese de que la extensión de archivo es &quot;.PDF&quot;.
    * Invocar el `Document` del objeto `copyToFile` para copiar el contenido del `Document` al archivo (asegúrese de usar la variable `Document` objeto devuelto por el `importData` método).
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](importing-exporting-data.md#summary-of-steps)
 
@@ -249,7 +253,7 @@ Importe datos de formulario mediante la API de integración de datos de formular
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en un archivo de PDF invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](importing-exporting-data.md#summary-of-steps)
 
@@ -301,7 +305,7 @@ Después de hacer referencia a un formulario de PDF que contiene datos de formul
 
 Después de exportar los datos del formulario, puede guardarlos como un archivo XML. Una vez guardado como archivo XML, puede abrir el archivo XML en un visor XML para ver los datos del formulario.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Exportación de datos de formulario mediante la API de Java](importing-exporting-data.md#export-form-data-using-the-java-api)
 
@@ -342,7 +346,7 @@ Exporte datos de formulario mediante la API de integración de datos de formular
    * Cree un `java.io.File` y asegúrese de que la extensión de archivo es XML.
    * Invocar el `Document` del objeto `copyToFile` para copiar el contenido del `Document` al archivo (asegúrese de usar la variable `Document` objeto devuelto por el `exportData` método).
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](importing-exporting-data.md#summary-of-steps)
 
@@ -394,7 +398,7 @@ Exporte datos de formulario mediante la API de integración de datos de formular
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en un archivo XML invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](importing-exporting-data.md#summary-of-steps)
 

@@ -1,5 +1,5 @@
 ---
-title: Renderización de PDF forms interactivos
+title: Procesar formularios PDF interactivos
 seo-title: Rendering Interactive PDF Forms
 description: Utilice el servicio Forms para procesar PDF forms interactivos en dispositivos cliente, normalmente exploradores web, para recopilar información de los usuarios. Puede utilizar el servicio Forms para procesar formularios interactivos mediante la API de Java y la API del servicio web.
 seo-description: Use the Forms service to render interactive PDF forms to client devices, typically web browsers, to collect information from users. You can use Forms service to render interactive forms using the Java API and Web Service API.
@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 role: Developer
 exl-id: 0bca3af9-78df-44e6-96ef-62bda24d0025
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2473'
-ht-degree: 0%
+source-wordcount: '2509'
+ht-degree: 1%
 
 ---
 
-# Renderización de PDF forms interactivos {#rendering-interactive-pdf-forms}
+# Procesar formularios PDF interactivos {#rendering-interactive-pdf-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El servicio Forms procesa PDF forms interactivos en dispositivos cliente, normalmente exploradores web, para recopilar información de los usuarios. Una vez procesado un formulario interactivo, el usuario puede introducir datos en los campos del formulario y hacer clic en un botón de envío ubicado en el formulario para enviar información al servicio de Forms. Adobe Reader o Acrobat deben estar instalados en el equipo que aloje el explorador web del cliente para que pueda verse un formulario de PDF interactivo.
 
@@ -38,7 +42,7 @@ En la tabla siguiente se describen los pasos de este diagrama.
 <table> 
  <thead> 
   <tr> 
-   <th><p>Etapa</p></th> 
+   <th><p>Paso</p></th> 
    <th><p>Descripción</p></th> 
   </tr> 
  </thead> 

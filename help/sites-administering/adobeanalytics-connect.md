@@ -1,5 +1,5 @@
 ---
-title: Conexión a Adobe Analytics y creación de módulos
+title: Conectarse a Adobe Analytics y crear marcos
 seo-title: Connecting to Adobe Analytics and Creating Frameworks
 description: Obtenga información sobre cómo conectar AEM al SiteCatalyst y crear marcos.
 seo-description: Learn about connecting AEM to SiteCatalyst and creating frameworks.
@@ -10,19 +10,23 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 88dbfd34-1f8d-47a2-893d-20faf1a80f95
 exl-id: 654387e3-d837-4bde-a9e4-962862ad69e9
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1534'
-ht-degree: 8%
+source-wordcount: '1570'
+ht-degree: 10%
 
 ---
 
-# Conexión a Adobe Analytics y creación de módulos{#connecting-to-adobe-analytics-and-creating-frameworks}
+# Conectarse a Adobe Analytics y crear marcos{#connecting-to-adobe-analytics-and-creating-frameworks}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Para rastrear datos web de sus páginas AEM en Adobe Analytics, cree una configuración de Adobe Analytics Cloud Services y un marco de trabajo de Adobe Analytics:
 
 * **Configuración de Adobe Analytics:** La información sobre su cuenta de Adobe Analytics. La configuración de Adobe Analytics permite AEM conectarse a Adobe Analytics. Cree una configuración de Adobe Analytics para cada cuenta que utilice.
-* **Adobe Analytics Framework:** Conjunto de asignaciones entre las propiedades de los grupos de informes de Adobe Analytics y las variables de CQ. Utilice un marco para configurar el modo en que los datos del sitio web rellenan los informes de Adobe Analytics. Los módulos están asociados a una configuración de Adobe Analytics. Puede crear varios marcos para cada configuración.
+* **Adobe Analytics Framework:** Conjunto de asignaciones entre las propiedades de los grupos de informes de Adobe Analytics y las variables de CQ. Utilice un marco para configurar el modo en que los datos del sitio web rellenan los informes de Adobe Analytics. Los módulos están asociados a una configuración de Adobe Analytics. Puede crear varios marcos de trabajo para cada configuración.
 
 Cuando se asocia una página web con un marco, el marco realiza un seguimiento de dicha página y de los descendientes de dicha página. Las vistas de página se pueden recuperar de Adobe Analytics y mostrar en la consola Sitios .
 
@@ -94,7 +98,7 @@ Utilice la variable [Consola web para configurar el paquete OSGi](/help/sites-de
 >
 >Debido a los cambios de seguridad de la API de Adobe Analytics, ya no es posible utilizar la versión de Activity Map incluida en AEM.
 >
->La variable [Complemento Activity Map proporcionado por Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) debe usarse ahora.
+>La variable [Complemento Activity Map proporcionado por Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=es) debe usarse ahora.
 
 ## Creación de un marco de Adobe Analytics {#creating-a-adobe-analytics-framework}
 
@@ -122,7 +126,7 @@ Para el ID de grupo de informes (RSID) que utilice, puede controlar qué instanc
 
    Y haga clic en **Crear**.
 
-   El marco se abre para su edición.
+   El marco de trabajo se abrirá para editarlo.
 
 5. En el **Grupos de informes** sección del pod lateral (lado derecho del panel principal), haga clic en **Agregar elemento**. A continuación, utilice la lista desplegable para seleccionar la ID del grupo de informes (por ejemplo, `geometrixxauth`) con la que interactuará el marco.
 

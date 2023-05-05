@@ -8,14 +8,18 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d2695f71-5126-477c-ae6b-a964fb55728b
 exl-id: 7fbdd976-5a70-4af4-b449-7c2d6bcfd915
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 0%
+source-wordcount: '1659'
+ht-degree: 8%
 
 ---
 
 # Recorrido por el sitio de referencia de autoservicio para empleados {#employee-self-service-reference-site-walkthrough}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Requisitos previos {#prerequisite}
 
@@ -29,7 +33,7 @@ El sitio de referencia de autoservicio para empleados muestra cómo puede aprove
 
 >[!NOTE]
 >
->Los casos de uso de autoservicio para empleados están disponibles en los sitios de referencia de We.Finance y We.Gov. Los ejemplos, imágenes y descripciones utilizados en los tutoriales utilizan el sitio de referencia We.Finance . Sin embargo, puede ejecutar estos casos de uso y revisar los artefactos utilizando We.Gov también. Para ello, debe reemplazar **we-finance** con **we-gov** en las URL mencionadas.
+>Los casos de uso de autoservicio para empleados están disponibles en los sitios de referencia de We.Finance y We.Gov. Los ejemplos, imágenes y descripciones utilizados en los tutoriales utilizan el sitio de referencia We.Finance. Sin embargo, puede ejecutar estos casos de uso y revisar los artefactos también mediante We.Gov. Para ello, debe reemplazar **we-finance** con **we-gov** en las URL mencionadas.
 
 ## Recorrido por el cuestionario sobre conflictos de interés {#conflict-of-interest-questionnaire-walkthrough}
 
@@ -59,7 +63,7 @@ El portal de organización y el panel de empleados son páginas de AEM Sites. El
 
 El formulario adaptable utiliza reglas para mostrar y ocultar información en función de la respuesta proporcionada en la pestaña Preguntas . Además, el formulario utiliza el componente Scribble para firmar en la ficha Declaración. Consulte el formulario adaptable en `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/self-service/conflict-of-interest.html`.
 
-**Véalo usted mismo**
+**Puede verlo usted mismo**
 
 Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` e inicie sesión utilizando `srose/srose` como nombre de usuario/contraseña para Sarah. Haga clic en **[!UICONTROL Empleado]** para acceder al tablero y, a continuación, haga clic en **[!UICONTROL Aplicar]** sobre el cuestionario sobre el conflicto de intereses. Revisar y enviar el cuestionario.
 
@@ -79,9 +83,9 @@ La acción de envío del cuestionario Conflict of Interest déclencheur un flujo
 
 ![employee-self-service-reference-site](assets/employee-self-service-reference-site.png)
 
-**Véalo usted mismo**
+**Puede verlo usted mismo**
 
-Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e inicie sesión utilizando `grios/password` como nombre de usuario/contraseña para Gloria Rios. Abra la tarea creada para el cuestionario Conflict of Interest y apruebe.
+Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e inicie sesión con como nombre de usuario/contraseña para Gloria Rios. `grios/password` Abra la tarea creada para el cuestionario Conflict of Interest y apruebe.
 
 ## Recorrido por la aplicación de tarjetas corporativas {#corporate-card-application-walkthrough}
 
@@ -108,7 +112,7 @@ El portal de organización y el panel de empleados son páginas de AEM Sites. El
 El formulario adaptable para la aplicación de tarjetas corporativas es un formulario adaptable sencillo, de una página y adaptable. Utiliza componentes básicos de formulario adaptable, como texto, teléfono, cuadro numérico y paso numérico. Revise el formulario adaptable en:\
 `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/self-service/corporate-card.html`.
 
-**Véalo usted mismo**
+**Puede verlo usted mismo**
 
 Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` e inicie sesión utilizando `srose/srose` como nombre de usuario/contraseña para Sarah. Haga clic en **[!UICONTROL Empleado]** para acceder al tablero y, a continuación, haga clic en **[!UICONTROL Aplicar]** en la aplicación de tarjeta corporativa. Complete los detalles y envíe la solicitud.
 
@@ -128,9 +132,9 @@ El flujo de trabajo de envío en la aplicación de tarjeta corporativa déclench
 
 ![corporate-card-workflow-model](assets/corporate-card-workflow-model.png)
 
-**Véalo usted mismo**
+**Puede verlo usted mismo**
 
-Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e inicie sesión utilizando `grios/password` como nombre de usuario/contraseña para Gloria Rios. Abra la tarea creada para la aplicación de tarjeta corporativa y agréguela.
+Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e inicie sesión con como nombre de usuario/contraseña para Gloria Rios. `grios/password` Abra la tarea creada para la aplicación de tarjeta corporativa y agréguela.
 
 ## Recorrido para el envío de informes de gastos {#expense-report-submission-walkthrough}
 
@@ -158,7 +162,7 @@ El portal de organización y el panel de empleados son páginas de AEM Sites. El
 
 Las pestañas Nombre del informe y Detalles del informe del formulario adaptable son componentes de Panel . El panel Detalles del informe contiene el panel Gastos. Es un panel repetible que permite agregar varios gastos en el informe. Consulte el formulario adaptable y sus configuraciones en `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/expense-report.html`.
 
-**Véalo usted mismo**
+**Puede verlo usted mismo**
 
 Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` e inicie sesión utilizando `srose/srose` como nombre de usuario/contraseña para Sarah. Haga clic en **[!UICONTROL Empleado]** para acceder al tablero y, a continuación, haga clic en **[!UICONTROL Aplicar]** en la aplicación Informe de gastos. Complete los detalles y envíe la solicitud.
 
@@ -178,9 +182,9 @@ El flujo de trabajo de envío de la aplicación Informe de gastos déclencheur u
 
 ![corporate-card-cost-report-workflow-model](assets/corporate-card-expense-report-workflow-model.png)
 
-**Véalo usted mismo**
+**Puede verlo usted mismo**
 
-Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e inicie sesión utilizando `grios/password` como nombre de usuario/contraseña para Gloria Rios. Abra la tarea creada para la aplicación Informe de gastos y agréguela.
+Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e inicie sesión con como nombre de usuario/contraseña para Gloria Rios. `grios/password` Abra la tarea creada para la aplicación Informe de gastos y agréguela.
 
 ## Salir del tutorial de la aplicación {#leave-application-walkthrough}
 
@@ -214,7 +218,7 @@ Puede revisar el formulario adaptable y el Modelo de datos de formulario en las 
 
 `https://[authorHost]:[authorPort]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/db`
 
-**Véalo usted mismo**
+**Puede verlo usted mismo**
 
 Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/self-service-forms.html` e inicie sesión utilizando `srose/srose` como nombre de usuario/contraseña para Sarah. Haga clic en **[!UICONTROL Empleado]** para acceder al tablero y, a continuación, haga clic en **[!UICONTROL Aplicar]** al salir de la aplicación. Complete los detalles y envíe la solicitud.
 
@@ -234,6 +238,6 @@ El flujo de trabajo de envío en la aplicación de salida déclencheur un flujo 
 
 ![corporate-card-allow-application-workflow-model](assets/corporate-card-leave-application-workflow-model.png)
 
-**Véalo usted mismo**
+**Puede verlo usted mismo**
 
-Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e inicie sesión utilizando `grios/password` como nombre de usuario/contraseña para Gloria Rios. Abra la tarea creada para salir de la aplicación y aprobarla.
+Vaya a `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` e inicie sesión con como nombre de usuario/contraseña para Gloria Rios. `grios/password` Abra la tarea creada para salir de la aplicación y aprobarla.

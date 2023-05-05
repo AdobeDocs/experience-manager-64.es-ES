@@ -1,5 +1,5 @@
 ---
-title: Representación de Forms HTML con barras de herramientas personalizadas
+title: Procesar formularios HTML con barras de herramientas personalizadas
 seo-title: Rendering HTML Forms with CustomToolbars
 description: Utilice el servicio Forms para personalizar una barra de herramientas que se procese con un formulario de HTML. Puede procesar un formulario de HTML con una barra de herramientas personalizada mediante la API de Java y una API de servicio web.
 seo-description: Use the Forms service to customize a toolbar that is rendered with an HTML form. You can render an HTML Form with a custom toolbar using the Java API and a Web Service API.
@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 role: Developer
 exl-id: f4711d21-59d3-482e-8059-9ef7c6008d21
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2331'
-ht-degree: 0%
+source-wordcount: '2367'
+ht-degree: 1%
 
 ---
 
-# Representación de Forms HTML con barras de herramientas personalizadas {#rendering-html-forms-with-customtoolbars}
+# Procesar formularios HTML con barras de herramientas personalizadas {#rendering-html-forms-with-customtoolbars}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Representación de Forms HTML con barras de herramientas personalizadas {#rendering-html-forms-with-custom-toolbars}
 
@@ -189,7 +193,7 @@ La renderización de un formulario de HTML también requiere valores, como valor
 
 Cuando el servicio Forms procesa un formulario de HTML, devuelve un flujo de datos de formulario que debe escribir en el explorador web del cliente para que el formulario de HTML sea visible para los usuarios.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Representar un formulario de HTML con una barra de herramientas personalizada mediante la API de Java](#render-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
@@ -201,9 +205,9 @@ Cuando el servicio Forms procesa un formulario de HTML, devuelve un flujo de dat
 
 [Inicio rápido de la API del servicio de Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Renderización de PDF forms interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Procesar formularios PDF interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Representación de Forms como HTML](/help/forms/developing/rendering-forms-html.md)
+[Procesar formularios como HTML](/help/forms/developing/rendering-forms-html.md)
 
 [Creación de aplicaciones web que procesen Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -255,7 +259,7 @@ Representar un formulario de HTML que contenga una barra de herramientas persona
    * Cree una matriz de bytes y rellénela con la secuencia de datos del formulario invocando la variable `InputStream` del objeto `read` y pasando la matriz de bytes como argumento.
    * Invocar el `javax.servlet.ServletOutputStream` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido (modo SOAP): Representación de un formulario de HTML con una barra de herramientas personalizada mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
@@ -317,6 +321,6 @@ Representar un formulario de HTML que contenga una barra de herramientas persona
    * Cree una matriz de bytes y rellénela invocando la variable `BLOB` del objeto `getBinaryData` método. Esta tarea asigna el contenido de la variable `FormsResult` a la matriz de bytes.
    * Invocar el `javax.servlet.http.HttpServletResponse` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

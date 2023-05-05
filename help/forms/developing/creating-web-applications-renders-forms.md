@@ -1,5 +1,5 @@
 ---
-title: Creación de aplicaciones web que procesen Forms
+title: Crear aplicaciones web que procesen Forms
 seo-title: Creating Web Applications thatRenders Forms
 description: Cree una aplicación basada en web que utilice servlets de Java para invocar el servicio Forms y procesar formularios. El servlet de Java sirve como vínculo entre el servicio de Forms que devuelve un formulario y un explorador web cliente.
 seo-description: Create a web-based application that uses Java servlets to invoke the Forms service and render forms. The Java servlet serves as the link between the Forms service that returns a form and a client web browser.
@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 role: Developer
 exl-id: f77796ff-f5c9-455f-8616-fa590db7fdbe
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1871'
-ht-degree: 0%
+source-wordcount: '1907'
+ht-degree: 1%
 
 ---
 
 # Creación de aplicaciones web que procesen Forms {#creating-web-applications-thatrenders-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Creación de aplicaciones web que procesen Forms {#creating-web-applications-that-renders-forms}
 

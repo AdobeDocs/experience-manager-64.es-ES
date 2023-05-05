@@ -1,5 +1,5 @@
 ---
-title: Configuración del conector para IBM FileNet
+title: Configurar el conector para IBM FileNet
 seo-title: Configuring Connector for IBM FileNet
 description: Aprenda a configurar el conector para IBM FileNet para permitir la comunicación entre AEM formularios y IBM FileNet.
 seo-description: Learn how to configure the Connector for IBM FileNet to enable communication between AEM forms and IBM FileNet.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
 exl-id: 3a3d59c2-6811-4513-8384-aa77fdc38686
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '735'
-ht-degree: 1%
+source-wordcount: '771'
+ht-degree: 3%
 
 ---
 
-# Configuración del conector para IBM FileNet {#configuring-connector-for-ibm-filenet}
+# Configurar el conector para IBM FileNet {#configuring-connector-for-ibm-filenet}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El conector para IBM FileNet permite la comunicación entre AEM formularios y IBM FileNet. Para obtener más información, consulte &quot;Conectores para ECM&quot; en [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_63).
 

@@ -1,5 +1,5 @@
 ---
-title: Configuración de ubicaciones para Forms
+title: Configurar ubicaciones para Forms
 seo-title: Configuring locations for Forms
 description: Obtenga información sobre cómo configurar la ubicación para Forms.
 seo-description: Learn how to configure location for Forms.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 3d2b7cfb-228c-4cc2-8fcd-d500f0010010
 exl-id: 283ef073-b71d-4b48-882f-15f05581c1de
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '804'
-ht-degree: 1%
+source-wordcount: '840'
+ht-degree: 3%
 
 ---
 
-# Configuración de ubicaciones para Forms {#configuring-locations-for-forms}
+# Configurar ubicaciones para Forms {#configuring-locations-for-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede especificar la dirección URL, el URI y las ubicaciones de archivo de atributos como la raíz web, la ubicación de los formularios que se van a recuperar, el archivo del PDF semilla que se utiliza en las transformaciones PDFForm y la ubicación de la caché.
 

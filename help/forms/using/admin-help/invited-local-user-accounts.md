@@ -1,5 +1,5 @@
 ---
-title: Administración de cuentas de usuario invitadas y locales
+title: Administrar cuentas de usuario invitadas y locales
 seo-title: Managing invited and local user accounts
 description: Con la seguridad de los documentos, puede buscar, ver, editar, bloquear, desbloquear y eliminar cuentas de usuario locales e invitadas.
 seo-description: Using document security, you can search for, view, edit, lock, unlock, and delete invited and local user accounts.
@@ -11,14 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 65720eed-ab06-463f-9567-2fdc468b6219
 feature: Document Security
 exl-id: b83e1059-aada-4b89-b587-288d525ab0c2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1196'
-ht-degree: 0%
+source-wordcount: '1232'
+ht-degree: 1%
 
 ---
 
-# Administración de cuentas de usuario invitadas y locales {#managing-invited-and-local-user-accounts}
+# Administrar cuentas de usuario invitadas y locales {#managing-invited-and-local-user-accounts}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Utilice la página Usuarios invitados y locales para administrar los usuarios invitados y locales. Esta página solo se muestra si se cumplen los siguientes requisitos:
 

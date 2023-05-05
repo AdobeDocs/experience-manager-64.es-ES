@@ -1,36 +1,39 @@
 ---
-title: Creación de una plantilla de página AEM personalizada con componentes de formulario de Adobe Campaign
-seo-title: Creación de una plantilla de página AEM personalizada con componentes de formulario de Adobe Campaign
-description: Creación de una plantilla de página personalizada que utilice componentes de Adobe Campaign Form
-seo-description: Creación de una plantilla de página personalizada que utilice componentes de Adobe Campaign Form
+title: Creación de plantillas de página AEM personalizadas con componentes de formulario de Adobe Campaign
+seo-title: Creating Custom AEM Page Template with Adobe Campaign Form Components
+description: Cree una plantilla de página personalizada que use componentes de Adobe Campaign Form
+seo-description: Build a custom page template that uses Adobe Campaign Form components
 uuid: 8162ace2-b661-4c39-b0fb-288e1c035b9c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: c3f6eed4-bbda-454a-88ce-c7f2041d4217
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: e70c9d23-5a4d-4137-82ad-3f3237f468c0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 3%
+source-wordcount: '274'
+ht-degree: 2%
 
 ---
 
+# Creación de plantillas de página AEM personalizadas con componentes de formulario de Adobe Campaign{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-# Creación de una plantilla de página AEM personalizada con componentes de formulario de Adobe Campaign{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-En esta página se explica cómo crear una plantilla de página personalizada que utilice los componentes [Formulario de Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) examinando cómo se implementa la plantilla de Geometrixx externa ( `/apps/geometrixx-outdoors/components/page_campaign_profile`) y se señala la información importante que puede necesitar al crear su propia plantilla personalizada.
+Esta página explica cómo crear una plantilla de página personalizada que use [Formulario de Adobe Campaign](/help/sites-authoring/adobe-campaign-components.md) componentes examinando la plantilla de Geometrixx exterior ( `/apps/geometrixx-outdoors/components/page_campaign_profile`) está implementada y señala a la información importante que puede necesitar al crear su propia plantilla personalizada.
 
 >[!NOTE]
 >
->[Los ejemplos de correo electrónico y formularios solo están disponibles en Geometrixx](/help/sites-developing/we-retail.md). Descargue el contenido de ejemplo de Geometrixx de Uso compartido de paquetes.
+>[Los ejemplos de correo electrónico y formulario solo están disponibles en Geometrixx](/help/sites-developing/we-retail.md). Descargue el contenido de muestra de Package Share.
 
-Para crear una plantilla de página AEM personalizada con componentes de Adobe Campaign Form, asegúrese de que dispone de lo siguiente:
+Para crear una plantilla de página de AEM personalizada con los componentes de formulario de Adobe Campaign, asegúrese de que tiene lo siguiente:
 
 1. **Correcto resourceSuperType**
 
-   Asegúrese de que el componente de página hereda de `mcm/campaign/components/profile`.
+   Asegúrese de que el componente de página se hereda de `mcm/campaign/components/profile`.
 
    Esto es necesario para que los servlets obtengan y guarden información
 
@@ -41,16 +44,16 @@ Para crear una plantilla de página AEM personalizada con componentes de Adobe C
 
 1. **Configuración de ClientContext**
 
-   Al consultar la configuración clientcontext ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`), verá la siguiente configuración:
+   Cuando observe la configuración de clientcontext ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`) puede ver los siguientes ajustes:
 
-   * El ClientContext apunta a `/etc/clientcontext/campaign`
-   * También hay un nodo *config* adicional.
+   * El ClientContext señala a `/etc/clientcontext/campaign`
+   * También hay que pagar un suplemento *config* nodo .
 
    ![chlimage_1-202](assets/chlimage_1-202.png)
 
 1. **head.jsp (/apps/geometrixx-outdoors/components/page_campaign_profile/head.jsp)**
 
-   En **head.jsp**, verá las siguientes líneas que utilizan **clientcontext-config** y **cloudservice-link**:
+   En **head.jsp**, verá las siguientes líneas que utilizan la variable **clientcontext-config** y **cloudservice-lock**:
 
    ```
    <cq:include path="config" resourceType="cq/personalization/components/clientcontext_optimized/config"/>
@@ -66,21 +69,20 @@ Para crear una plantilla de página AEM personalizada con componentes de Adobe C
    <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
    ```
 
-1. **Propiedades de la página de campaña**
+1. **Propiedades de la página de Campaign**
 
-   Para poder seleccionar una plantilla de Adobe Campaign, las propiedades de página se amplían con la ficha **Campaña**:
+   Para poder seleccionar una plantilla de Adobe Campaign, las propiedades de página se amplían con la variable **Campaign** pestaña:
 
    `/apps/geometrixx-outdoors/components/page_campaign_profile/dialog/items/tabs/items/campaign`
 
    ![chlimage_1-203](assets/chlimage_1-203.png)
 
-1. **Configuración** de plantilla.
+1. **Configuración de plantilla**.
 
-   En la plantilla ( `/apps/geometrixx-outdoors/templates/campaign_profile/jcr:content`) se ven los siguientes valores predeterminados:
+   En la plantilla ( `/apps/geometrixx-outdoors/templates/campaign_profile/jcr:content`), verá los siguientes valores predeterminados:
 
-   | **acMapping** | mapRecipient (para Adobe Campaign 6.1), perfil (para Adobe Campaign Standard) |
+   | **acMapping** | mapRecipient (para Adobe Campaign 6.1), profile (para Adobe Campaign Standard) |
    |---|---|
-   | **acTemplateId** | mail |
+   | **acTemplateId** | correo |
 
    ![chlimage_1-204](assets/chlimage_1-204.png)
-

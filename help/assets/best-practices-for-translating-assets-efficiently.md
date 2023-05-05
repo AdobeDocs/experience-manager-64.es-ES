@@ -5,18 +5,22 @@ contentOwner: AG
 feature: Translation
 role: User,Admin
 exl-id: 15162b80-ddef-4ec0-9db6-36695c93ebb1
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 1%
+source-wordcount: '534'
+ht-degree: 2%
 
 ---
 
 # Prácticas recomendadas para traducir recursos de forma eficaz {#best-practices-for-translating-assets-efficiently}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
 Adobe Experience Manager Assets admite flujos de trabajo multilingües para traducir binarios, metadatos y etiquetas para recursos digitales a varias configuraciones regionales y administrar los recursos traducidos. Para obtener más información, consulte [Recursos multilingües](multilingual-assets.md).
 
-Para una administración eficiente de los recursos y garantizar que las distintas versiones traducidas permanezcan sincronizadas, cree [copias de idioma](preparing-assets-for-translation.md) de los recursos antes de ejecutar los flujos de trabajo de traducción.
+Para una administración eficiente de los recursos y garantizar que las distintas versiones traducidas permanezcan sincronizadas, cree [copias de idioma](preparing-assets-for-translation.md) de los recursos antes de ejecutar flujos de trabajo de traducción.
 
 Una copia de idioma de un recurso o de un grupo de recursos es un elemento del mismo nivel de idioma (o una versión de los recursos en un idioma distinto) con una jerarquía de contenido similar.
 
@@ -28,22 +32,22 @@ El almacén de datos de archivos y el almacén de datos Amazon S3 proporcionan u
 
 También puede realizar algunos cambios en la configuración de un par de flujos de trabajo y del marco de integración de la traducción para racionalizar aún más el proceso.
 
-1. Realice una de las acciones siguientes:
+1. Realice una de las siguientes acciones:
 
    * [Configuración del almacén de datos de archivos](/help/sites-deploying/data-store-config.md)
    * [Configuración del almacén de datos de Amazon S3](/help/sites-deploying/data-store-config.md)
 
-1. Desactive el flujo de trabajo [DAM MetaData Writeback](/help/sites-administering/workflow-offloader.md#disable-offloading)
+1. Desactive el [Reescritura de metadatos DAM](/help/sites-administering/workflow-offloader.md#disable-offloading) flujo de trabajo
 
-   Como su nombre indica, el flujo de trabajo *DAM Metadata Writeback* reescribe los metadatos en el archivo binario. Como los metadatos cambian después de la traducción, volver a escribirlos en el archivo binario genera un binario diferente para una copia de idioma.
+   Como sugiere el nombre, la variable *Reescritura de metadatos DAM* workflow reescribe los metadatos en el archivo binario. Como los metadatos cambian después de la traducción, volver a escribirlos en el archivo binario genera un binario diferente para una copia de idioma.
 
    >[!NOTE]
    >
-   >Al desactivar el flujo de trabajo *DAM MetaData Writeback*, se desactiva XMP reescritura de metadatos en los binarios de recursos. Por lo tanto, los cambios futuros en los metadatos ya no se guardan en los recursos. Evalúe las consecuencias antes de desactivar este flujo de trabajo.
+   >Desactivación de la función *Reescritura de metadatos DAM* el flujo de trabajo desactiva XMP reescritura de metadatos en los binarios de recursos. Por lo tanto, los cambios futuros en los metadatos ya no se guardan en los recursos. Evalúe las consecuencias antes de desactivar este flujo de trabajo.
 
-1. Habilite el flujo de trabajo *Set last modified date* .
+1. Active la variable *Establecer fecha de última modificación* flujo de trabajo.
 
-   El flujo de trabajo *DAM MetaData Writeback* configura la última fecha de modificación de un recurso. Dado que deshabilita este flujo de trabajo en el paso 2, [!DNL Experience Manager Assets] ya no puede mantener actualizada la última fecha de modificación de los recursos. Por lo tanto, habilite el flujo de trabajo *Set last modified date* para garantizar que las fechas de las últimas modificaciones de los recursos estén actualizadas. Los recursos con fechas de última modificación obsoletas pueden causar errores.
+   La variable *Reescritura de metadatos DAM* workflow configura la última fecha de modificación de un recurso. Dado que desactiva este flujo de trabajo en el paso 2, [!DNL Experience Manager Assets] ya no puede mantener actualizada la última fecha de modificación de los recursos. Por lo tanto, habilite la variable *Establecer fecha de última modificación* flujo de trabajo para garantizar que las fechas de las últimas modificaciones de los recursos estén actualizadas. Los recursos con fechas de última modificación obsoletas pueden causar errores.
 
-1. [Configure el ](/help/sites-administering/tc-tic.md) marco de integración de traducción para detener la traducción de binarios de recursos. Anule la selección de la opción &quot;Traducir recursos&quot; en la pestaña Activos para detener la traducción de los binarios de recursos.
-1. Traduzca metadatos/etiquetas de recursos mediante [Flujos de trabajo de recursos multilingües](multilingual-assets.md).
+1. [Configuración del marco de integración de traducción](/help/sites-administering/tc-tic.md) para dejar de traducir binarios de recursos. Anule la selección de la opción &quot;Traducir recursos&quot; en la pestaña Activos para detener la traducción de los binarios de recursos.
+1. Traducción de metadatos/etiquetas de recursos mediante [Flujos de trabajo de recursos multilingües](multilingual-assets.md).

@@ -1,5 +1,5 @@
 ---
-title: Introducción al trabajo con el Generador de PDF
+title: Introducción al trabajo con el generador de PDF
 seo-title: Introduction to working with PDF Generator
 description: Aprenda a convertir varios formatos de archivo a PDF.
 seo-description: Learn how to convert various file formats to PDF.
@@ -11,16 +11,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 207c6335-f700-48f1-814b-992692534f6c
 feature: PDF Generator
 exl-id: 217f0f80-fce6-4671-9853-633691d447f5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 0%
+source-wordcount: '177'
+ht-degree: 20%
 
 ---
 
-# Introducción al trabajo con el Generador de PDF {#introduction-to-working-with-pdf-generator}
+# Introducción al trabajo con el generador de PDF {#introduction-to-working-with-pdf-generator}
 
-PDF Generator convierte varios formatos de archivo a PDF. También convierte el PDF a otros formatos de archivo y optimiza el tamaño de los documentos del PDF. Para obtener una lista de los formatos de archivo compatibles, consulte &quot;Generación de servicio de PDF&quot; en [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_63).
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+PDF Generator convierte varios formatos de archivo a PDF. También convierte PDF a otros formatos de archivo y optimiza el tamaño de los documentos PDF. Para obtener una lista de los formatos de archivo compatibles, consulte &quot;Generación de servicio de PDF&quot; en [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_63).
 
 **Envío de archivos al Generador de PDF para su procesamiento**
 

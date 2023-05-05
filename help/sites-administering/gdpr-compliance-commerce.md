@@ -1,52 +1,54 @@
 ---
 title: Comercio AEM - Preparación para el RGPD
-seo-title: Comercio AEM - Preparación para el RGPD
-description: '"Comercio AEM - Preparación para el RGPD"'
-seo-description: nulo
+seo-title: AEM Commerce - GDPR Readiness
+description: "Comercio AEM - Preparación para el RGPD"
+seo-description: null
 uuid: 7ca26587-8cce-4c75-8629-e0e5cfb8166c
 contentOwner: carlino
 discoiquuid: c637964a-dfcb-41fe-9c92-934620fe2cb3
 feature: Commerce Integration Framework
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: c5002812-cbc6-4b3e-85be-3446630b4e8a
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '317'
-ht-degree: 1%
+source-wordcount: '345'
+ht-degree: 2%
 
 ---
 
+# Comercio AEM - Preparación para el RGPD{#aem-commerce-gdpr-readiness}
 
-# AEM Commerce - Preparación para el RGPD{#aem-commerce-gdpr-readiness}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 >[!IMPORTANT]
 >
 >El RGPD se utiliza como ejemplo en las secciones siguientes, pero los detalles cubiertos son aplicables a todas las normas de protección de datos y privacidad; como el RGPD, la CCPA, etc.
 
-El Reglamento general de protección de datos de la Unión Europea sobre derechos de privacidad de datos entrará en vigor en mayo de 2018. Para obtener más información, consulte la página [RGPD en el Centro de privacidad de Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+El Reglamento general de protección de datos de la Unión Europea sobre derechos de privacidad de datos entrará en vigor en mayo de 2018. Para obtener más información, consulte [Página del RGPD en el Centro de privacidad de Adobe](https://www.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
->Consulte [AEM Preparación para el RGPD](/help/managing/data-protection-and-privacy.md) para obtener más información.
+>Consulte [Preparación AEM RGPD](/help/managing/data-protection-and-privacy.md) para obtener más información.
 
 ![screen_shot_2018-03-22at11606](assets/screen_shot_2018-03-22at111606.jpg)
 
 En nuestras integraciones de Commerce integradas, AEM es la capa de experiencia, que consume servicios y envía datos de vuelta a la plataforma de comercio de clientes que se ejecuta en modo remoto.
 
-En algunas plataformas de comercio, almacenamos información de perfil ( `/home/users`) y tokens de comercio (para iniciar sesión en la plataforma de comercio) en AEM. Para estos casos de uso, lea [Gestión de solicitudes de RGPD para la Plataforma AEM](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
+Para algunas plataformas de comercio, almacenamos información de perfil ( `/home/users`) y tokens de comercio (para iniciar sesión en la plataforma de comercio) en AEM. Para estos casos de uso, lea [Gestión de solicitudes de RGPD para la plataforma AEM](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 
 ![screen_shot_2018-03-22at11621](assets/screen_shot_2018-03-22at111621.jpg)
 
 ## Gestión de solicitudes de RGPD para AEM comercio {#handling-gdpr-requests-for-aem-commerce}
 
-Para la integración del Commerce Cloud de Salesforce, AEM Commerce no almacena ninguna información relevante del RGPD. Debe reenviar la solicitud a [Salesforce Cloud](https://documentation.demandware.com/).
+Para la integración del Commerce Cloud de Salesforce, AEM Commerce no almacena ninguna información relevante del RGPD. Debe reenviar la solicitud al [Salesforce Cloud](https://documentation.demandware.com/).
 
-Para las integraciones de hybris e IBM WebSphere, hay algunos datos en AEM. Debe utilizar las [AEM instrucciones del RGPD de la plataforma](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md) y tener en cuenta estas preguntas:
+Para las integraciones de hybris y IBM WebSphere, hay algunos datos en AEM. Debe usar la variable [Instrucciones del RGPD de AEM Platform](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md) y considere estas preguntas:
 
 1. **¿Dónde se almacenan o utilizan mis datos?** La información de perfil de usuario en caché, como nombre, identificador de usuario de comercio, token, contraseña, datos de dirección, etc., se muestra desde AEM.
 1. **¿Con quién comparto los datos del RGPD cubiertos?** Cualquier actualización de los datos relevantes del RGPD en AEM comercio no se almacena (excepto la información de perfil relevante, como se mencionó anteriormente) sino que se reenvía como proxy a la plataforma de comercio.
-1. **¿Cómo puedo eliminar mis datos** de usuario? Elimine el perfil de usuario en AEM e invoque la eliminación del usuario en la plataforma de comercio.
+1. **Eliminar mis datos de usuario**? Elimine el perfil de usuario en AEM e invoque la eliminación del usuario en la plataforma de comercio.
 
 >[!NOTE]
 >
->Consulte la [wiki de hybris](https://wiki.hybris.com/) o la [documentación de Websphere Commerce](https://www-01.ibm.com/support/docview.wss?uid=swg27036450) si es necesario.
-
+>Eche un vistazo a la [wiki hibris](https://wiki.hybris.com/) o [Documentación de Websphere Commerce](https://www-01.ibm.com/support/docview.wss?uid=swg27036450) si es necesario.

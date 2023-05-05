@@ -1,7 +1,7 @@
 ---
-title: Creación de un diseño de barra de herramientas personalizado
+title: Crear un diseño de barra de herramientas personalizado
 seo-title: Creating custom toolbar layout
-description: Puede especificar una presentación de barra de herramientas para el formulario. La presentación de la barra de herramientas define los comandos y la presentación de la barra de herramientas del formulario.
+description: Puede especificar un diseño de la barra de herramientas para el formulario. El diseño de la barra de herramientas define los comandos y el diseño de la barra de herramientas del formulario.
 seo-description: You can specify a toolbar layout for the form. The toolbar layout defines the commands and the layout of the toolbar on the form.
 uuid: da60342c-f802-4264-9da4-c333df9359c2
 content-type: reference
@@ -9,20 +9,24 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: c69bb229-d680-4a55-9b2d-cd5ad0f83a9e
 exl-id: 1b273437-8d71-4224-bdcd-0ae522ae8913
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '527'
-ht-degree: 0%
+source-wordcount: '563'
+ht-degree: 91%
 
 ---
 
-# Creación de un diseño de barra de herramientas personalizado {#creating-custom-toolbar-layout}
+# Crear un diseño de barra de herramientas personalizado {#creating-custom-toolbar-layout}
 
-## Diseños de la barra de herramientas {#layout}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-Cuando se crea un formulario adaptable, se puede especificar una presentación de barra de herramientas para el formulario. La presentación de la barra de herramientas define los comandos y la presentación de la barra de herramientas del formulario.
+## Diseños de barra de herramientas {#layout}
 
-El diseño de la barra de herramientas se basa en gran medida en el procesamiento del lado del cliente impulsado por código CSS y JavaScript complejo. Organizar y optimizar el servicio de este código puede ser un problema complicado. Para ayudar a resolver este problema, AEM proporciona carpetas de biblioteca del lado del cliente, que le permiten almacenar el código del lado del cliente en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente. A continuación, el sistema de biblioteca del lado del cliente se encarga de producir los vínculos correctos en la página web final para cargar el código correcto. Para obtener información detallada, consulte [Cómo funcionan las bibliotecas del lado del cliente en AEM.](/help/sites-developing/clientlibs.md)
+Cuando se crea un formulario adaptable, se puede especificar un diseño de la barra de herramientas para el formulario. El diseño de la barra de herramientas define los comandos y el diseño de la barra de herramientas del formulario.
+
+El diseño de la barra de herramientas se basa en gran medida en el procesamiento del lado del cliente impulsado por código complejo CSS y JavaScript. Organizar y optimizar el servicio de este código puede ser un problema complicado. Para ayudar a resolver este problema, AEM proporciona carpetas de biblioteca del lado del cliente, que le permiten almacenar el código del lado del cliente en el repositorio, organizarlo en categorías y definir cuándo y cómo se debe servir cada categoría de código al cliente. A continuación, el sistema de biblioteca del lado del cliente se encarga de producir los vínculos correctos en la página web final para cargar el código correcto. Para obtener información detallada, consulte [Cómo funcionan las bibliotecas del lado del cliente en AEM.](/help/sites-developing/clientlibs.md)
 
 ![Diseño de muestra de la barra de herramientas](assets/default_toolbar_layout.png)
 **Figura:** *Diseño de muestra de la barra de herramientas*
@@ -32,20 +36,20 @@ Los formularios adaptables proporcionan un conjunto de diseños integrados:
 ![Diseños de la barra de herramientas disponibles para usar ](assets/toolbar1.png)
 **Figura:** *Diseños de la barra de herramientas disponibles para usar*
 
-Además, puede crear un diseño de barra de herramientas personalizado.
+Además, puede crear un diseño personalizado de la barra de herramientas.
 
-El siguiente procedimiento detalla los pasos para crear una barra de herramientas personalizada que muestre tres acciones en la barra de herramientas y las demás acciones en una lista desplegable de la barra de herramientas.
+El siguiente procedimiento detalla los pasos para crear una barra de herramientas personalizada que muestre tres acciones en la barra y las demás acciones en una lista desplegable.
 
-El paquete de contenido adjunto contiene todo el código que se describe a continuación. Después de instalar el paquete de contenido, abra `/content/forms/af/CustomLayoutDemo.html` para ver la demostración de diseño de la barra de herramientas personalizada.
+El paquete de contenido adjunto contiene todo el código que se describe a continuación. Después de instalar el paquete de contenido, abra `/content/forms/af/CustomLayoutDemo.html` para ver la demostración del diseño de la barra de herramientas personalizada.
 
 CustomToolbarLayoutDemo.zip
 
 [Obtener archivo](assets/customtoolbarlayoutdemo.zip)
-Mostrar diseño de barra de herramientas personalizado
+Diseño personalizado de la barra de herramientas 
 
-## Creación de un diseño de barra de herramientas personalizado {#layout-1}
+## Crear un diseño personalizado de la barra de herramientas {#layout-1}
 
-1. Cree una carpeta para mantener los diseños personalizados de la barra de herramientas. Por ejemplo:
+1. Cree una carpeta para guardar los diseños personalizados. Por ejemplo:
 
    `/apps/customlayout/toolbar`.
 
@@ -53,25 +57,25 @@ Mostrar diseño de barra de herramientas personalizado
 
    `/libs/fd/af/layouts/toolbar`
 
-   Por ejemplo, copie el `mobileFixedToolbarLayout` desde el nodo `/libs/fd/af/layouts/toolbar` a la `/apps/customlayout/toolbar` carpeta.
+   Por ejemplo, copie el nodo `mobileFixedToolbarLayout` desde la carpeta `/libs/fd/af/layouts/toolbar` a la carpeta `/apps/customlayout/toolbar`.
 
-   Además, copie toolbarCommon.jsp en el `/apps/customlayout/toolbar` carpeta.
+   Además, copie toolbarCommon.jsp en la carpeta `/apps/customlayout/toolbar`.
 
    >[!NOTE]
    >
-   >La carpeta que cree para mantener los diseños personalizados se puede crear con la variable `apps` carpeta.
+   >La carpeta que cree para mantener los diseños personalizados se puede crear con la carpeta `apps`.
 
 1. Cambie el nombre del nodo copiado. `mobileFixedToolbarLayout`, a `customToolbarLayout.`
 
    Además, proporcione una descripción relevante para el nodo. Por ejemplo, cambie jcr:description del nodo a **Diseño personalizado para la barra de herramientas**.
 
-   La variable `guideComponentType` la propiedad del nodo determina el tipo de diseño. En este caso, el tipo de diseño es la barra de herramientas, por lo que aparece en la lista desplegable de selección de diseño de la barra de herramientas.
+   La propiedad `guideComponentType` del nodo determina el tipo de diseño. En este caso, el tipo de diseño es la barra de herramientas, por lo que aparece en la lista desplegable de selección de diseño de la barra de herramientas.
 
    ![Un nodo con una descripción relevante](assets/toolbar3.png)
 
    Un nodo con una descripción relevante
 
-   El nuevo diseño personalizado de la barra de herramientas se muestra en la sección **Barra de herramientas de formulario adaptable** configuración del cuadro de diálogo.
+   El nuevo diseño personalizado de la barra de herramientas se muestra en la configuración del cuadro de diálogo **Barra de herramientas de formulario adaptable**.
 
    ![Lista de diseños de barra de herramientas disponibles](assets/toolbar4.png)
 
@@ -79,11 +83,11 @@ Mostrar diseño de barra de herramientas personalizado
 
    >[!NOTE]
    >
-   >La descripción actualizada en el paso anterior se muestra en la lista desplegable Diseño .
+   >La descripción actualizada en el paso anterior se muestra en la lista desplegable Diseño.
 
-1. Seleccione este diseño de barra de herramientas personalizado y haga clic en Aceptar.
+1. Seleccione este diseño personalizado de la barra de herramientas y haga clic en Aceptar.
 
-   Agregue clientlib (javascript y css) en la variable `/etc/customlayout` e incluya la referencia de la clientlib en la variable `customToolbarLayout.jsp`.
+   Agregue clientlib (javascript y css) en el nodo `/etc/customlayout` e incluya la referencia de clientlib en la `customToolbarLayout.jsp`.
 
    ![Ruta del archivo customToolbarLayout.css](assets/toolbar_3.png)
 
@@ -105,7 +109,7 @@ Mostrar diseño de barra de herramientas personalizado
 
    >[!NOTE]
    >
-   >Añada la clase de guía para el diseño. El estilo predeterminado de la barra de herramientas se define con respecto a la clase de guía.
+   >Agregue la clase de guía para el diseño. El estilo predeterminado de la barra de herramientas se define con respecto a la clase de guía.
 
    Muestra `toolBarCommon.jsp`:
 
@@ -226,7 +230,7 @@ Mostrar diseño de barra de herramientas personalizado
 
 >[!NOTE]
 >
->La descripción actualizada en el paso anterior se muestra en la lista desplegable Diseño .
+>La descripción actualizada en el paso anterior se muestra en la lista desplegable Diseño.
 
-![Vista de escritorio de la barra de herramientas de diseño personalizado](assets/toolbar_1.png)
+![Vista de escritorio del diseño personalizado de la barra de herramientas ](assets/toolbar_1.png)
 **Figura:** *Vista de escritorio de la barra de herramientas de diseño personalizado*

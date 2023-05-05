@@ -1,5 +1,5 @@
 ---
-title: Backup y recuperación del repositorio de Documentum de EMC
+title: Copia de seguridad y recuperación del repositorio de Documentum de EMC
 seo-title: Backing up and recovering the EMC Documentum repository
 description: Este documento describe las tareas necesarias para realizar backup y recuperar el repositorio de Documentum de EMC configurado para su entorno de formularios AEM.
 seo-description: This document describes the tasks required to back up and recover the EMC Documentum repository configured for your AEM forms environment.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 exl-id: 89d7b2e1-1d88-4392-89d3-484a98f07121
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 1%
+source-wordcount: '869'
+ht-degree: 3%
 
 ---
 
-# Backup y recuperación del repositorio de Documentum de EMC {#backing-up-and-recovering-the-emc-documentum-repository}
+# Copia de seguridad y recuperación del repositorio de Documentum de EMC {#backing-up-and-recovering-the-emc-documentum-repository}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 En esta sección se describen las tareas necesarias para realizar backup y recuperar el repositorio de Documentum de EMC configurado para su entorno de formularios AEM.
 
@@ -208,7 +212,7 @@ En esta sección se describe la instalación y configuración del software NetWo
 
       *[NetWorker_database_module_root]* `-s`*&lt;networker_server_name>* `-U`*[username ]*`-P`*[password]* `-l incr -R`*&lt;database_name>*
 
-      donde:
+      Donde:
 
       `[NetWorker_database_module_root]` es el directorio de instalación del módulo NetWorker. Por ejemplo, el directorio de instalación predeterminado para NetWorker Module for SQL Server es C:\Program Files\Legato\nsr\bin\nsrsqlsv.
 

@@ -1,5 +1,5 @@
 ---
-title: Configuración de extremos de carpeta vigilados
+title: Configurar extremos de carpetas vigiladas
 seo-title: Configuring watched folder endpoints
 description: Obtenga información sobre cómo configurar los extremos de las carpetas vigiladas.
 seo-description: Learn how to configure watched folder endpoints.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 761e7909-43ba-4642-bcfc-8d76f139b9a3
 exl-id: bce7eee6-17c6-4eaf-b679-b47e611bed87
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '7163'
-ht-degree: 0%
+source-wordcount: '7199'
+ht-degree: 20%
 
 ---
 
-# Configuración de extremos de carpeta vigilados {#configuring-watched-folder-endpoints}
+# Configurar extremos de carpetas vigiladas {#configuring-watched-folder-endpoints}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Un administrador puede configurar una carpeta de red, conocida como *carpeta vigilada*, de modo que cuando un usuario coloca un archivo (como un archivo PDF) en la carpeta vigilada, se invoque una operación de servicio configurada y manipule el archivo. Una vez que el servicio realiza la operación especificada, guarda el archivo modificado en una carpeta de salida especificada.
 
@@ -50,7 +54,7 @@ En Windows, si el servidor de aplicaciones se está ejecutando como un servicio,
 
 Las carpetas vigiladas se pueden encadenar juntas para que un documento resultante de una carpeta vigilada sea el documento de entrada de la siguiente carpeta vigilada. Cada carpeta vigilada puede invocar un servicio diferente. Al configurar las carpetas vigiladas de esta manera, se pueden invocar varios servicios. Por ejemplo, una carpeta vigilada podría convertir archivos PDF a Adobe PostScript® y una segunda carpeta vigilada podría convertir los archivos PostScript a formato PDF/A. Para ello, simplemente configure la variable *result* carpeta de la carpeta vigilada definida por el primer punto final para señalar al *input* carpeta de la carpeta vigilada definida por su segundo punto final.
 
-El resultado de la primera conversión iría a \path\result. La entrada para la segunda conversión sería \path\result y el resultado de la segunda conversión iría a \path\result\result  (o el directorio que defina en el cuadro Carpeta de resultados para la segunda conversión).
+El resultado de la primera conversión iría a \path\result. La entrada para la segunda conversión sería \path\result y el resultado de la segunda conversión iría a \path\result\result (o el directorio que defina en el cuadro Carpeta de resultados para la segunda conversión).
 
 ## Interacción de los usuarios con las carpetas vigiladas {#how-users-interact-with-watched-folders}
 
@@ -120,7 +124,7 @@ Utilice los siguientes ajustes para configurar un punto final de carpeta vigilad
 
 **Ruta:** (Obligatorio) Especifica la ubicación de la carpeta vigilada. En un entorno agrupado, esta configuración debe apuntar a una carpeta de red compartida a la que se pueda acceder desde todos los equipos del clúster.
 
-**Asíncrono:** Identifica el tipo de invocación como asíncrono o sincrónico. El valor predeterminado es asíncrono. Se recomienda asincrónico para procesos de larga duración, mientras que sincrónico para procesos transitorios o de corta duración.
+**Asíncrono:** Identifica el tipo de invocación como asíncrono o sincrónico. El valor predeterminado es asíncrono. Se recomienda asincrónico para procesos de larga duración y sincrónico para procesos transitorios o de corta duración.
 
 **Expresión Cron:** Introduzca una expresión cron si la carpeta vigilada debe programarse utilizando una expresión cron. Cuando se configura esta opción, se ignora el intervalo de repetición.
 
@@ -128,7 +132,7 @@ Utilice los siguientes ajustes para configurar un punto final de carpeta vigilad
 
 **Recuento de repetición:** Número de veces que la carpeta vigilada explora la carpeta o el directorio. Un valor de -1 indica escaneo indefinido. El valor predeterminado es -1.
 
-**Acelerador:** Cuando se selecciona esta opción, limita el número de trabajos de carpeta observados que AEM los procesos de formularios en un momento determinado. El número máximo de trabajos viene determinado por el valor Tamaño de lote . (Consulte Acerca de la regulación).
+**Acelerador:** Cuando se selecciona esta opción, limita el número de trabajos de carpeta observados que AEM los procesos de formularios en un momento determinado. El número máximo de trabajos viene determinado por el valor Tamaño del lote. (Consulte Acerca de la restricción.)
 
 **Nombre de usuario:** (Obligatorio) El nombre de usuario que se utiliza al invocar un servicio de destino desde la carpeta de visualización. El valor predeterminado es SuperAdmin.
 
@@ -136,52 +140,52 @@ Utilice los siguientes ajustes para configurar un punto final de carpeta vigilad
 
 **Tamaño del lote:** Número de archivos o carpetas que se van a recoger por análisis. Utilizar para evitar sobrecargas en el sistema; el análisis de demasiados archivos al mismo tiempo puede provocar un bloqueo. El valor predeterminado es 2.
 
-La configuración Intervalo de repetición y Tamaño de lote determinan cuántos archivos ha visto la carpeta en cada análisis. Watched Folder utiliza un grupo de subprocesos de Quartz para analizar la carpeta de entrada. El grupo de subprocesos se comparte con otros servicios. Si el intervalo de análisis es pequeño, los subprocesos analizarán la carpeta de entrada con frecuencia. Si los archivos se sueltan con frecuencia en la carpeta vigilada, debe reducir el intervalo de análisis. Si los archivos se pierden con poca frecuencia, utilice un intervalo de exploración mayor para que los demás servicios puedan utilizar los subprocesos.
+La configuración Intervalo de repetición y Tamaño de lote determinan cuántos archivos ha visto la carpeta en cada análisis. La carpeta inspeccionada utiliza un grupo de hilos de Quartz para analizar la carpeta de entrada. El grupo de subprocesos se comparte con otros servicios. Si el intervalo de análisis es pequeño, los subprocesos analizarán la carpeta de entrada con frecuencia. Si los archivos se pierden con frecuencia en la carpeta vigilada, deberá reducir el intervalo de análisis. Si los archivos se pierden con poca frecuencia, utilice un intervalo de exploración mayor para que los demás servicios puedan utilizar los subprocesos.
 
-Si hay un gran volumen de archivos que se están perdiendo, aumente el tamaño del lote. Por ejemplo, si el servicio invocado por el extremo de carpeta vigilada puede procesar 700 archivos por minuto y los usuarios colocan los archivos en la carpeta de entrada a la misma velocidad, al establecer el tamaño del lote en 350 y el intervalo de repetición en 30 segundos, se ayudará al rendimiento de la carpeta vigilada sin incurrir en el coste de digitalizar la carpeta vigilada con demasiada frecuencia.
+Si se pierde un gran volumen de archivos, aumente el tamaño del lote. Por ejemplo, si el servicio invocado por el extremo de carpeta vigilada puede procesar 700 archivos por minuto y los usuarios colocan los archivos en la carpeta de entrada a la misma velocidad, al establecer el tamaño del lote en 350 y el intervalo de repetición en 30 segundos, se ayudará al rendimiento de la carpeta vigilada sin incurrir en el coste de digitalizar la carpeta vigilada con demasiada frecuencia.
 
 Cuando se sueltan los archivos en la carpeta vigilada, se enumeran los archivos de entrada, lo que puede reducir el rendimiento si se realiza la digitalización cada segundo. El aumento del intervalo de análisis puede mejorar el rendimiento. Si el volumen de archivos que se van a perder es pequeño, ajuste el tamaño del lote y el intervalo de repetición en consecuencia. Por ejemplo, si se pierden 10 archivos cada segundo, intente establecer el intervalo de repetición en 1 segundo y el tamaño del lote en 10.
 
 **Tiempo de espera:** Tiempo, en milisegundos, que debe esperarse antes de analizar una carpeta o archivo después de crearlo. Por ejemplo, si el tiempo de espera es de 3 600 000 milisegundos (una hora) y el archivo se creó hace un minuto, el archivo se recopilará después de que hayan transcurrido 59 minutos o más. El valor predeterminado es 0.
 
-Esta configuración es útil para asegurarse de que un archivo o carpeta se copia completamente en la carpeta de entrada. Por ejemplo, si tiene un archivo grande para procesar y el archivo tarda diez minutos en descargarse, establezca el tiempo de espera en 10&amp;ast;60 &amp;ast;1000 milisegundos. Esto evita que la carpeta vigilada analice el archivo si no tiene diez minutos de antigüedad.
+Esta configuración es útil para asegurarse de que un archivo o carpeta se copia completamente en la carpeta de entrada. Por ejemplo, si tiene un archivo grande para procesar y tarda diez minutos en descargarse, establezca el tiempo de espera en 10&amp;ast;60 &amp;ast;1000 milisegundos. Esto evita que la carpeta vigilada analice el archivo si no tiene diez minutos de antigüedad.
 
 **Patrón de exclusión de archivo:** Punto y coma **;** lista delimitada de patrones que utiliza una carpeta vigilada para determinar qué archivos y carpetas se deben analizar y recoger. No se analizará ningún archivo o carpeta con este patrón para su procesamiento.
 
 Esta configuración es útil cuando la entrada es una carpeta con varios archivos. El contenido de la carpeta se puede copiar en una carpeta con un nombre que recoge la carpeta vigilada. Esto evita que la carpeta vigilada recoja una carpeta para procesarla antes de que la carpeta se copie completamente en la carpeta de entrada.
 
-Puede utilizar patrones de archivo para excluir:
+Puede usar patrones de archivo para excluir:
 
 * Archivos con extensiones de nombre de archivo específicas; por ejemplo, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* Archivos con nombres específicos; por ejemplo, datos.&amp;ast; excluiría archivos y carpetas con nombre *data1*, *data2*, etc.
+* Archivos con nombres específicos; por ejemplo, data.&amp;ast; excluiría archivos y carpetas con nombre *data1*, *data2*, etc.
 * Archivos con expresiones compuestas en el nombre y la extensión, como en estos ejemplos:
 
-   * Datos[0-9][0-9][0-9].[dD][aA][tT]
+   * Data[0-9][0-9][0-9].[dD][aA][tT]
    * &amp;ast;.[dD][Aa][Tt]
    * &amp;ast;.[Xx][Mm][Ll]
 
-Para obtener más información sobre los patrones de archivo, consulte [Acerca de los patrones de archivo](configuring-watched-folder-endpoints.md#about-file-patterns).
+Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](configuring-watched-folder-endpoints.md#about-file-patterns).
 
-**Patrón de archivo de inclusión:** (Obligatorio) Punto y coma **;** lista delimitada de patrones que utiliza la carpeta vigilada para determinar qué carpetas y archivos analizar y recoger. Por ejemplo, si el Patrón de archivo de inclusión es input&amp;ast;, todos los archivos y carpetas que coincidan con input&amp;ast; son recogidos. Esto incluye archivos y carpetas llamados input1, input2, etc.
+**Patrón de archivo de inclusión:** (Obligatorio) Punto y coma **;** lista delimitada de patrones que utiliza la carpeta vigilada para determinar qué carpetas y archivos analizar y recoger. Por ejemplo, si el Patrón de archivo de inclusión es input&amp;ast;, todos los archivos y carpetas que coincidan con input&amp;ast; se recogerán. Esto incluye archivos y carpetas llamados input1, input2, etc.
 
 El valor predeterminado es &amp;ast; e indica todos los archivos y carpetas.
 
 Puede utilizar patrones de archivo para incluir:
 
 * Archivos con extensiones de nombre de archivo específicas; por ejemplo, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf.
-* Archivos con nombres específicos; por ejemplo, datos.&amp;ast; incluiría archivos y carpetas con nombre *data1*, *data2*, etc.
+* Archivos con nombres específicos; por ejemplo, data.&amp;ast; incluiría archivos y carpetas con nombre *data1*, *data2*, etc.
 * Archivos con expresiones compuestas en el nombre y la extensión, como en estos ejemplos:
 
-   * Datos[0-9][0-9][0-9].[dD][aA][tT]
+   * Data[0-9][0-9][0-9].[dD][aA][tT]
    * &amp;ast;.[dD][Aa][Tt]
    * &amp;ast;.[Xx][Mm][Ll]
 
-Para obtener más información sobre los patrones de archivo, consulte [Acerca de los patrones de archivo](configuring-watched-folder-endpoints.md#about-file-patterns).
+Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](configuring-watched-folder-endpoints.md#about-file-patterns).
 
 **Carpeta de resultados:** La carpeta en la que se almacenan los resultados guardados. Si los resultados no aparecen en esta carpeta, compruebe la carpeta de errores. Los archivos de solo lectura no se procesan y se guardan en la carpeta de errores. Este valor puede ser una ruta absoluta o relativa con los siguientes patrones de archivo:
 
-* %F = prefijo de nombre de archivo
-* %E = extensión de nombre de archivo
+* %F = prefijo del nombre de archivo
+* %E = extensión del nombre de archivo
 * %Y = año (completo)
 * %y = año (dos últimos dígitos)
 * %M = mes
@@ -193,29 +197,29 @@ Para obtener más información sobre los patrones de archivo, consulte [Acerca d
 * %s = segundo
 * %l = milisegundo
 * %R = número aleatorio (entre 0 y 9)
-* %P = id. de proceso o trabajo
+* %P = ID del proceso o trabajo
 
 Por ejemplo, si es las 8 p. m. del 17 de julio de 2009 y especifica `C:/Test/WF0/failure/%Y/%M/%D/%H/`, la carpeta de resultados es `C:/Test/WF0/failure/2009/07/17/20`.
 
-Si la ruta no es absoluta sino relativa, la carpeta se creará dentro de la carpeta vigilada. El valor predeterminado es result/%Y/%M/%D/, que es la carpeta Result dentro de la carpeta observada. Para obtener más información sobre los patrones de archivo, consulte [Acerca de los patrones de archivo](configuring-watched-folder-endpoints.md#about-file-patterns).
+Si la ruta no es absoluta sino relativa, la carpeta se creará dentro de la carpeta vigilada. El valor predeterminado es result/%Y/%M/%D/, que es la carpeta de resultados dentro de la carpeta vigilada. Para obtener más información sobre los patrones de archivo, consulte [Información sobre los patrones de archivo](configuring-watched-folder-endpoints.md#about-file-patterns).
 
 >[!NOTE]
 >
->Cuanto menor sea el tamaño de las carpetas resultantes, mejor será el rendimiento de la carpeta vigilada. Por ejemplo, si la carga estimada de la carpeta vigilada es de 1000 archivos cada hora, pruebe un patrón como `result/%Y%M%D%H` para que se cree una nueva subcarpeta cada hora. Si la carga es más pequeña (por ejemplo, 1000 archivos por día), puede utilizar un patrón como `result/%Y%M%D`.
+>Cuanto menor sea el tamaño de las carpetas resultantes, mejor será el rendimiento de la carpeta vigilada. Por ejemplo, si la carga estimada de la carpeta vigilada es de 1000 archivos cada hora, pruebe un patrón como `result/%Y%M%D%H` para que se cree una nueva subcarpeta cada hora. Si la carga es menor (por ejemplo, 1000 archivos por día), puede utilizar un patrón como `result/%Y%M%D`.
 
-**Conservar carpeta:** Ubicación en la que se almacenan los archivos después de escanearlos y recogerlos correctamente. La ruta puede ser absoluta, relativa o nula. Puede utilizar patrones de archivo, tal como se describe para la carpeta de resultados. El valor predeterminado es preserve/%Y/%M/%D/.
+**Conservar carpeta:** Ubicación en la que se almacenan los archivos después de escanearlos y recogerlos correctamente. La ruta puede ser absoluta, relativa o nula. Puede utilizar patrones de archivo, tal como se describe para la carpeta Resultados. El valor predeterminado es preserve/%Y/%M/%D/.
 
-**Carpeta de errores:** Carpeta donde se guardan los archivos de error. Esta ubicación siempre es relativa a la carpeta vigilada. Puede utilizar patrones de archivo, tal como se describe para la carpeta de resultados.
+**Carpeta de errores:** Carpeta donde se guardan los archivos de error. Esta ubicación siempre es relativa a la carpeta vigilada. Puede utilizar patrones de archivo, tal como se describe para la carpeta Resultados.
 
 Los archivos de solo lectura no se procesan y se guardan en la carpeta de errores.
 
-El valor predeterminado es error/%Y/%M/%D/.
+El valor predeterminado es failure/%Y/%M/%D/.
 
-**Conservar En Caso De Fallo:** Preservar archivos de entrada en caso de que no se ejecute la operación en un servicio. El valor predeterminado es true.
+**Conservar En Caso De Fallo:** Preservar archivos de entrada en caso de que no se ejecute la operación en un servicio. El valor predeterminado es True.
 
 **Sobrescribir nombres de archivo duplicados:** Cuando se establece en True, los archivos de la carpeta de resultados y de la carpeta de preservación se sobrescriben. Cuando se establece en False, se utilizan archivos y carpetas con un sufijo de índice numérico para el nombre. El valor predeterminado es False.
 
-**Duración de la purga:** (Obligatorio) Los archivos y carpetas de la carpeta de resultados se depuran cuando son anteriores a este valor. Este valor se mide en días. Esta configuración es útil para garantizar que la carpeta de resultados no esté llena.
+**Duración de la purga:** (Obligatorio) Los archivos y carpetas de la carpeta de resultados se depuran cuando son anteriores a este valor. Este valor se mide en días. Esta configuración es útil para garantizar que la carpeta de resultados no se llene.
 
 El valor de -1 días indica que nunca se eliminará la carpeta de resultados. El valor predeterminado es -1.
 
@@ -240,10 +244,10 @@ El resultado Carpeta vigilada puede ser un solo documento, una lista de document
 Los administradores pueden especificar el tipo de archivo que puede invocar un servicio. Se pueden establecer varios patrones de archivo para cada carpeta vigilada. Un patrón de archivo puede ser una de las siguientes propiedades de archivo:
 
 * Archivos con extensiones de nombre de archivo específicas; por ejemplo, &amp;ast;.dat, &amp;ast;.xml, &amp;ast;.pdf,;
-* Archivos con nombres específicos; por ejemplo, datos.&amp;ast;
+* Archivos con nombres específicos; por ejemplo, data.&amp;ast;
 * Archivos con expresiones compuestas en el nombre y la extensión, como en estos ejemplos:
 
-   * Datos[0-9][0-9][0-9].[dD][aA][tT]
+   * Data[0-9][0-9][0-9].[dD][aA][tT]
    * &amp;ast;.[dD][Aa][Tt]
    * &amp;ast;.[Xx][Mm][Ll]
 
@@ -251,12 +255,12 @@ El administrador puede definir el patrón de archivo de la carpeta de salida en 
 
 * %Y = año (completo)
 * %y = año (dos últimos dígitos)
-* %M = mes,
-* %D = día del mes,
-* %d = día del año,
-* %h = hora,
-* %m = minuto,
-* %s = segundo,
+* %M = mes
+* %D = día del mes
+* %d = día del año
+* %h = hora
+* %m = minuto
+* %s = segundo
 * %R = número aleatorio entre 0 y 9
 * %J = Nombre del trabajo
 
@@ -271,19 +275,19 @@ Si el patrón de asignación de parámetros de salida termina con &quot;File.sep
 
 ## Acerca de la restricción {#about-throttling}
 
-Cuando la restricción está habilitada para un extremo de carpeta de inspección, limita el número de trabajos de carpeta observados que se pueden procesar en un momento dado. El número máximo de trabajos está determinado por el valor Tamaño de lote , también configurable en el extremo Carpeta vigilada . Los documentos entrantes en el directorio de entrada de la carpeta vigilada no se sondearán cuando se alcance el límite de regulación. Los documentos también permanecerán en el directorio de entrada hasta que se hayan completado otros trabajos de carpeta observados y se realice otro intento de encuesta. En el caso del procesamiento sincrónico, todos los trabajos procesados en una sola encuesta se contabilizarán en el límite de regulación, aunque los trabajos se procesen consecutivamente en un solo subproceso.
+Cuando la restricción está habilitada para un extremo de carpeta de inspección, limita el número de trabajos de carpeta observados que se pueden procesar en un momento dado. El número máximo de trabajos está determinado por el valor Tamaño del lote, también configurable en el punto final de la carpeta inspeccionada. Los documentos entrantes en el directorio de entrada de la carpeta vigilada no se sondearán cuando se alcance el límite de regulación. Los documentos también permanecerán en el directorio de entrada hasta que se hayan completado otros trabajos de carpeta observados y se realice otro intento de encuesta. En el caso del procesamiento sincrónico, todos los trabajos procesados en una sola encuesta se contabilizarán en el límite de regulación, aunque los trabajos se procesen consecutivamente en un solo subproceso.
 
 >[!NOTE]
 >
->La restricción no se escala con un clúster. Cuando la restricción está habilitada, el clúster en su conjunto no procesará más del número de trabajos especificado en Tamaño de lote en un momento dado. Este límite es para todo el clúster y no es específico de cada nodo del clúster. Por ejemplo, con un tamaño de lote de 2, se podía alcanzar el límite de regulación con un solo nodo procesando dos trabajos, y ningún otro nodo sondearía el directorio de entrada hasta que se complete uno de los trabajos.
+>La restricción no se escala con un grupo. Cuando la restricción está habilitada, el grupo en su conjunto no procesará más del número de trabajos especificado en Tamaño de lote en un momento dado. Este límite es para todo el grupo y no es específico de cada nodo del grupo. Por ejemplo, con un tamaño de lote de 2, se podía alcanzar el límite de restricción con un solo nodo procesando dos trabajos, y ningún otro nodo encuestaría el directorio de entrada hasta que se complete uno de los trabajos.
 
-### Cómo funciona la restricción {#how-throttling-works}
+### Funcionamiento de la restricción {#how-throttling-works}
 
 La carpeta vigilada explora la carpeta de entrada en cada intervalo de repetición, recoge el número de archivos especificados en el tamaño del lote e invoca el servicio de destino para cada uno de estos archivos. Por ejemplo, si el tamaño del lote es de cuatro, en cada análisis, la carpeta vigilada recogerá cuatro archivos, creará cuatro solicitudes de invocación e invocará el servicio de destino. Antes de que se completen estas solicitudes, si se invoca la carpeta vigilada, se reiniciarán cuatro trabajos, independientemente de si se han completado los cuatro trabajos anteriores.
 
-La restricción impide que la carpeta vigilada invoque nuevos trabajos cuando los trabajos anteriores no se completan. La carpeta vigilada detectará los trabajos en curso y procesará los nuevos trabajos en función del tamaño del lote menos los trabajos en curso. Por ejemplo, en la segunda invocación, si el número de trabajos completados es solo tres y un trabajo sigue en curso, la Carpeta vigilada invoca solo tres trabajos más.
+La restricción impide que la carpeta inspeccionada invoque nuevos trabajos cuando los trabajos anteriores no se completan. La carpeta vigilada detectará los trabajos en curso y procesará los nuevos trabajos en función del tamaño del lote menos los trabajos en curso. Por ejemplo, en la segunda invocación, si el número de trabajos completados es solo tres y un trabajo sigue en curso, la carpeta inspeccionada invoca solo tres trabajos más.
 
-* La carpeta vigilada depende del número de archivos presentes en la carpeta de escenario para averiguar cuántos trabajos hay en curso. Si los archivos permanecen sin procesar en la carpeta de ensayo, la carpeta vigilada no invocará más trabajos. Por ejemplo, si el tamaño del lote es de cuatro y hay tres trabajos estancados, la carpeta vigilada solo invocará un trabajo en invocaciones posteriores. Existen varios escenarios que pueden hacer que los archivos permanezcan sin procesar en la carpeta de escenario. Cuando los trabajos están estancados, el administrador puede finalizar el proceso en la página de administración del flujo de trabajo de formularios para que la carpeta vigilada mueva los archivos fuera de la carpeta del escenario.
+* La carpeta inspeccionada depende del número de archivos presentes en la carpeta de fase para averiguar cuántos trabajos hay en curso. Si los archivos permanecen sin procesar en la carpeta de ensayo, la carpeta vigilada no invocará más trabajos. Por ejemplo, si el tamaño del lote es de cuatro y hay tres trabajos estancados, la carpeta vigilada solo invocará un trabajo en invocaciones posteriores. Existen varios escenarios que pueden hacer que los archivos permanezcan sin procesar en la carpeta de fase. Cuando los trabajos están estancados, el administrador puede finalizar el proceso en la página de administración del flujo de trabajo de formularios para que la carpeta vigilada mueva los archivos fuera de la carpeta del escenario.
 * Si el servidor de formularios se desactiva antes de que la carpeta vigilada pueda invocar los trabajos, el administrador puede sacar los archivos de la carpeta del escenario. Para obtener más información, consulte [Puntos de error y recuperación](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 * Si el servidor de formularios se está ejecutando pero la carpeta vigilada no se está ejecutando cuando el servicio Administrador de trabajos vuelve a llamarse, lo que ocurre cuando los servicios no se inician en la secuencia ordenada, el administrador puede sacar los archivos de la carpeta del escenario. Para obtener más información, consulte [Puntos de error y recuperación](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
@@ -325,36 +329,36 @@ En el caso de invocaciones asíncronas, cuando falla un nodo, el programador de 
 
 ## Puntos de error y recuperación {#failure-points-and-recovery}
 
-En cada evento de encuesta, la carpeta vigilada bloquea la carpeta de entrada, mueve los archivos que coinciden con el patrón de archivo de inclusión a la carpeta de escenario y, a continuación, desbloquea la carpeta de entrada. El bloqueo es necesario para que dos subprocesos no recojan el mismo conjunto de archivos y los procesen dos veces. Las posibilidades de que esto ocurra aumentan con un intervalo de repetición pequeño y un tamaño de lote grande. Después de mover los archivos a la carpeta de escenario, la carpeta de entrada se desbloquea para que otros subprocesos puedan analizar la carpeta. Este paso ayuda a proporcionar un alto rendimiento, ya que otros subprocesos pueden analizar mientras un subproceso está procesando los archivos.
+En cada evento de encuesta, la carpeta inspeccionada bloquea la carpeta de entrada, mueve los archivos que coinciden con el patrón de archivo de inclusión a la carpeta de fase y, a continuación, desbloquea la carpeta de entrada. El bloqueo es necesario para que dos subprocesos no recojan el mismo conjunto de archivos y los procesen dos veces. Las posibilidades de que esto ocurra aumentan con un intervalo de repetición pequeño y un tamaño de lote grande. Tras mover los archivos a la carpeta de fase, la carpeta de entrada se desbloquea para que otros hilos puedan analizar la carpeta. Este paso ayuda a proporcionar un alto rendimiento, ya que otros hilos pueden analizar mientras uno procesa los archivos.
 
-Una vez que los archivos se mueven a la carpeta de escenario, las solicitudes de invocación se crean para cada archivo y se invoca el servicio de destino. Puede haber casos en los que Carpeta vigilada no pueda recuperar los archivos de la carpeta de escenario:
+Una vez que los archivos se mueven a la carpeta de fase, las solicitudes de invocación se crean para cada archivo y se invoca el servicio de destino. Puede haber casos en los que la carpeta inspeccionada no pueda recuperar los archivos de la carpeta de fase:
 
-* Si el servidor se apaga antes de que la Carpeta vigilada pueda crear la solicitud de invocación, los archivos de la carpeta de escenario permanecen en la carpeta de escenario y no se recuperan.
-* Si la carpeta vigilada ha creado correctamente la solicitud de invocación para cada uno de los archivos de la carpeta de ensayo y el servidor se bloquea, hay dos comportamientos basados en el tipo de invocación:
+* Si el servidor se apaga antes de que la carpeta inspeccionada pueda crear la solicitud de invocación, los archivos de la carpeta de fase permanecen en la carpeta de fase y no se recuperan.
+* Si la carpeta inspeccionada ha creado correctamente la solicitud de invocación para cada uno de los archivos de la carpeta de fase y el servidor se bloquea, hay dos comportamientos basados en el tipo de invocación:
 
 **Sincrónica:** Si la carpeta Watched está configurada para invocar el servicio sincrónicamente, todos los archivos de la carpeta stage permanecen sin procesar en la carpeta stage.
 
-**Asíncrono:** En este caso, la carpeta vigilada depende del servicio Administrador de trabajos. Si el servicio del administrador de trabajos vuelve a llamar a la carpeta vigilada, los archivos de la carpeta de etapa se mueven a la carpeta de preservación o de error en función de los resultados de la invocación. Si el servicio Administrador de trabajos no vuelve a llamar a la carpeta vigilada, los archivos permanecerán sin procesar en la carpeta de escenario. Esta situación ocurre cuando la carpeta vigilada no se está ejecutando cuando el administrador de trabajos vuelve a llamar.
+**Asíncrono:** En este caso, la carpeta vigilada depende del servicio Administrador de trabajos. Si el servicio Administrador de trabajos vuelve a llamar a la carpeta inspeccionada, los archivos de la carpeta de fase se mueven a la carpeta de conservación o de errores en función de los resultados de la invocación. Si el servicio Administrador de trabajos no vuelve a llamar a la carpeta inspeccionada, los archivos permanecerán sin procesar en la carpeta de fase. Esta situación ocurre cuando la carpeta inspeccionada no se está ejecutando cuando el administrador de trabajos vuelve a llamar.
 
 ### Recuperación de archivos de origen no procesados en la carpeta de escenario {#recovering-unprocessed-source-files-in-the-stage-folder}
 
-Cuando la carpeta vigilada no puede procesar los archivos de origen en la carpeta de escenario, puede recuperar los archivos sin procesar.
+Cuando la carpeta inspeccionada no puede procesar los archivos de origen en la carpeta de fase, puede recuperar los archivos sin procesar.
 
-1. Reinicie el servidor de aplicaciones o el nodo .
-1. (Opcional) Impida que la carpeta vigilada procese nuevos archivos de entrada. Si omite este paso, será mucho más difícil determinar qué archivos no se procesan en la carpeta de escenario. Para evitar que la carpeta vigilada procese nuevos archivos de entrada, realice una de las siguientes tareas:
+1. Reinicie el servidor de la aplicación o el nodo.
+1. (Opcional) Impida que la carpeta vigilada procese nuevos archivos de entrada. Si omite este paso, será mucho más difícil determinar qué archivos no se procesan en la carpeta de fase. Para evitar que la carpeta inspeccionada procese nuevos archivos de entrada, realice una de las siguientes tareas:
 
    * En Aplicaciones y servicios, cambie el parámetro Incluir patrón de archivo para el extremo de la carpeta vigilada a algo que no coincida con ninguno de los nuevos archivos de entrada (por ejemplo, introduzca `NOMATCH`).
    * Suspenda el proceso que está creando nuevos archivos de entrada.
-   Espere hasta que AEM formularios recupere y procese todos los archivos. La mayoría de los archivos deben recuperarse y los nuevos archivos de entrada deben procesarse correctamente. El tiempo que espera para que la carpeta vigilada se recupere y procese los archivos dependerá de la duración de la operación que se invoque y del número de archivos que se recuperarán.
+   Espere hasta que AEM formularios recupere y procese todos los archivos. La mayoría de los archivos deben recuperarse y los nuevos archivos de entrada deben procesarse correctamente. El tiempo que espera para que la carpeta inspeccionada se recupere y procese los archivos dependerá de la duración de la operación que se invoque y del número de archivos que se recuperarán.
 
-1. Determine qué archivos no se pueden procesar. Si ha esperado una cantidad de tiempo adecuada y ha completado el paso anterior, y aún quedan archivos sin procesar en la carpeta de escenario, vaya al paso siguiente.
+1. Determine qué archivos no se pueden procesar. Si ha esperado una cantidad de tiempo adecuada y ha completado el paso anterior, y todavía quedan archivos sin procesar en la carpeta de fase, vaya al paso siguiente.
 
    >[!NOTE]
    >
-   >Puede consultar la marca de fecha y hora de los archivos en el directorio de escenarios. Según el número de archivos y el tiempo de procesamiento normal, puede determinar qué archivos son lo suficientemente antiguos como para que se consideren atascados.
+   >Puede consultar la marca de fecha y hora de los archivos en el directorio de fase. Según el número de archivos y el tiempo de procesamiento normal, puede determinar qué archivos son lo suficientemente antiguos como para que se consideren atascados.
 
-1. Copie los archivos sin procesar del directorio de etapa al directorio de entrada.
-1. Si ha impedido que la carpeta vigilada procese nuevos archivos de entrada en el paso 2, cambie el Patrón de archivo de inclusión a su valor anterior o vuelva a habilitar el proceso que ha deshabilitado.
+1. Copie los archivos sin procesar del directorio de fase al directorio de entrada.
+1. Si ha impedido que la carpeta inspeccionada procese nuevos archivos de entrada en el paso 2, cambie el patrón de archivo de inclusión a su valor anterior o vuelva a habilitar el proceso que ha deshabilitado.
 
 ## Consideraciones de seguridad para carpetas vigiladas {#security-considerations-for-watched-folders}
 

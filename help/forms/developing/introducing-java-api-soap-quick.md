@@ -11,14 +11,18 @@ topic-tags: development-tools, develop
 discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
 role: Developer
 exl-id: 8a3f2eb9-d686-49d4-baa4-c0921622d01a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 0%
+source-wordcount: '574'
+ht-degree: 2%
 
 ---
 
 # Introducción al inicio rápido de la API de Java {#introducing-java-api-quickstart}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Adobe Inicio rápido de la API de AEM Forms puede ayudarle a acelerar sus esfuerzos para desarrollar programas que interactúen con los servicios de AEM Forms. *Inicio rápido* son programas completos que puede copiar y pegar en sus propios proyectos y usar como punto de partida. Puede ejecutar un Inicio rápido para ver cómo se comporta y modificarlo según sus necesidades.
 

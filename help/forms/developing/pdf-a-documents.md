@@ -1,5 +1,5 @@
 ---
-title: Uso de documentos de PDF/A
+title: Trabajar con documentos PDF/A
 seo-title: Working with PDF/A Documents
 description: Utilice el servicio DocConverter para determinar si un documento de PDF es un documento de PDF/A y convertir los documentos de PDF en documentos de PDF/A.
 seo-description: Use the  DocConverter service to determine if a PDF document is a PDF/A document and convert PDF documents to PDF/A documents.
@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 1e6cc554-aef1-463c-906b-634b80a27917
 role: Developer
 exl-id: fbf6c225-5351-4589-97d3-9faf9c5939bc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2358'
-ht-degree: 1%
+source-wordcount: '2394'
+ht-degree: 3%
 
 ---
 
-# Uso de documentos de PDF/A {#working-with-pdf-a-documents}
+# Trabajar con documentos PDF/A {#working-with-pdf-a-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 **Acerca del servicio DocConverter**
 
@@ -88,7 +92,7 @@ Después de crear el cliente de servicio DocConverter, haga referencia al docume
 
 Puede guardar el documento PDF/A como archivo PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Convertir documentos a documentos de PDF/A mediante la API de Java](pdf-a-documents.md#convert-documents-to-pdf-a-documents-using-the-java-api)
 
@@ -138,9 +142,9 @@ Convierta un documento de PDF en un documento de PDF/A mediante la API de Java:
    * Cree un `java.io.File` que representa el archivo PDF/A. Asegúrese de que la extensión del nombre de archivo es .pdf.
    * Rellene el archivo con datos de PDF/A invocando la variable `com.adobe.idp.Document` del objeto `copyToFile` y pasando el `java.io.File` objeto.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Uso de documentos de PDF/A](pdf-a-documents.md#working-with-pdf-a-documents)
+[Trabajar con documentos PDF/A](pdf-a-documents.md#working-with-pdf-a-documents)
 
 [Inicio rápido (modo SOAP): Conversión de un documento en un documento de PDF/A mediante la API de Java](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
@@ -192,9 +196,9 @@ Convierta un documento PDF en un documento PDF/A mediante la API DocConverter (s
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en un archivo de PDF invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Uso de documentos de PDF/A](pdf-a-documents.md#working-with-pdf-a-documents)
+[Trabajar con documentos PDF/A](pdf-a-documents.md#working-with-pdf-a-documents)
 
 [Invocación de AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
@@ -248,7 +252,7 @@ Puede establecer una opción en tiempo de ejecución que determine la cantidad d
 
 Después de crear el cliente de servicio DocConverter, hacer referencia al documento del PDF y establecer las opciones de tiempo de ejecución, puede determinar si el documento del PDF es un documento compatible con el PDF/A.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Determinar la conformidad del PDF/A mediante la API de Java](pdf-a-documents.md#determine-pdf-a-compliancy-using-the-java-api)
 
@@ -291,9 +295,9 @@ Determinar la conformidad del PDF/A mediante la API de Java:
 
    La variable `isPDFA` el método devuelve un `PDFAValidationResult` que contiene los resultados de esta operación.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Uso de documentos de PDF/A](pdf-a-documents.md#working-with-pdf-a-documents)
+[Trabajar con documentos PDF/A](pdf-a-documents.md#working-with-pdf-a-documents)
 
 [Inicio rápido (modo SOAP): Determinación de la conformidad PDF/A mediante la API de Java](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
 
@@ -338,9 +342,9 @@ Determine la conformidad de PDF/A mediante la API de servicio web:
 
    La variable `isPDFA` el método devuelve un `PDFAValidationResult` que contiene los resultados de esta operación.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Uso de documentos de PDF/A](pdf-a-documents.md#working-with-pdf-a-documents)
+[Trabajar con documentos PDF/A](pdf-a-documents.md#working-with-pdf-a-documents)
 
 [Invocación de AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 

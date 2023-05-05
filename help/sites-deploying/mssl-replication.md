@@ -1,8 +1,8 @@
 ---
 title: Replicar usando SSL mutuo
-seo-title: Replicar usando SSL mutuo
-description: 'Obtenga información sobre cómo configurar AEM para que un agente de replicación en la instancia de autor utilice SSL mutuo (MSSL) para conectarse con la instancia de publicación. Con MSSL, el agente de replicación y el servicio HTTP de la instancia de publicación utilizan certificados para autenticarse entre sí. '
-seo-description: 'Obtenga información sobre cómo configurar AEM para que un agente de replicación en la instancia de autor utilice SSL mutuo (MSSL) para conectarse con la instancia de publicación. Con MSSL, el agente de replicación y el servicio HTTP de la instancia de publicación utilizan certificados para autenticarse entre sí. '
+seo-title: Replicating Using Mutual SSL
+description: Obtenga información sobre cómo configurar AEM para que un agente de replicación en la instancia de autor utilice SSL mutuo (MSSL) para conectarse con la instancia de publicación. Con MSSL, el agente de replicación y el servicio HTTP de la instancia de publicación utilizan certificados para autenticarse entre sí.
+seo-description: Learn how to configure AEM so that a replication agent on the author instance uses mutual SSL (MSSL) to connect with the publish instance. Using MSSL, the replication agent and the HTTP service on the publish instance use certificates to authenticate each other.
 uuid: f4bc5e61-a58c-4fd2-9a24-b31e0c032c15
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,19 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 8eba690a-797a-4ba9-b178-11f8c011239f
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1445'
 ht-degree: 3%
 
 ---
 
-
 # Replicar usando SSL mutuo{#replicating-using-mutual-ssl}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Configure AEM para que un agente de replicación en la instancia de autor utilice SSL mutuo (MSSL) para conectarse con la instancia de publicación. Con MSSL, el agente de replicación y el servicio HTTP de la instancia de publicación utilizan certificados para autenticarse entre sí.
 
@@ -48,9 +51,9 @@ Se requiere una clave privada y un certificado público para las instancias de a
 
 ### Formato JKS {#jks-format}
 
-Genere una clave privada y un certificado en formato JKS. La clave privada se almacena en un archivo KeyStore y el certificado se almacena en un archivo TrustStore. Utilice [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) para crear ambos.
+Genere una clave privada y un certificado en formato JKS. La clave privada se almacena en un archivo KeyStore y el certificado se almacena en un archivo TrustStore. Uso [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) para crear ambos.
 
-Realice los siguientes pasos utilizando Java `keytool` para crear la clave privada y la credencial:
+Siga estos pasos utilizando Java `keytool` para crear la clave privada y la credencial:
 
 1. Genere un par de clave pública-privada en un KeyStore.
 1. Cree u obtenga el certificado:
@@ -62,7 +65,7 @@ Realice los siguientes pasos utilizando Java `keytool` para crear la clave priva
 
 Utilice el siguiente procedimiento para crear una clave privada y un certificado autofirmado para las instancias de autor y publicación. Utilice valores diferentes para las opciones de comando según corresponda.
 
-1. Abra una ventana o terminal de línea de comandos. Para crear el par de clave pública-privada, introduzca el siguiente comando, utilizando los valores de opción de la siguiente tabla:
+1. Abra una ventana de línea de comandos o un terminal. Para crear el par de clave pública-privada, introduzca el siguiente comando, utilizando los valores de opción de la siguiente tabla:
 
    ```shell
    keytool -genkeypair -keyalg RSA -validity 3650 -alias alias -keystore keystorename.keystore  -keypass key_password -storepass  store_password -dname "CN=Host Name, OU=Group Name, O=Company Name,L=City Name, S=State, C=Country_ Code"
@@ -70,7 +73,7 @@ Utilice el siguiente procedimiento para crear una clave privada y un certificado
 
    | Opción | Autor | Publicación |
    |---|---|---|
-   | -alias | author | instancias de publicación |
+   | -alias | autor | publicación |
    | -keystore | author.keystore | publish.keystore |
 
 1. Para exportar el certificado, introduzca el siguiente comando utilizando valores de opción de la siguiente tabla:
@@ -81,15 +84,15 @@ Utilice el siguiente procedimiento para crear una clave privada y un certificado
 
    | Opción | Autor | Publicación |
    |---|---|---|
-   | -alias | author | instancias de publicación |
+   | -alias | autor | publicación |
    | -file | author.cer | publish.cer |
    | -keystore | author.keystore | publish.keystore |
 
-### pkcs#12 Formato {#pkcs-format}
+### formato pkcs#12 {#pkcs-format}
 
-Genere una clave privada y un certificado en formato pkcs#12. Utilice [openSSL](https://www.openssl.org/) para generarlos. Utilice el siguiente procedimiento para generar una clave privada y una solicitud de certificado. Para obtener el certificado, firme la solicitud con la clave privada (certificado autofirmado) o envíe la solicitud a una entidad emisora de certificados. A continuación, genere el archivo pkcs#12 que contiene la clave privada y el certificado.
+Genere una clave privada y un certificado en formato pkcs#12. Uso [openSSL](https://www.openssl.org/) para generarlos. Utilice el siguiente procedimiento para generar una clave privada y una solicitud de certificado. Para obtener el certificado, firme la solicitud con la clave privada (certificado autofirmado) o envíe la solicitud a una entidad emisora de certificados. A continuación, genere el archivo pkcs#12 que contiene la clave privada y el certificado.
 
-1. Abra una ventana o terminal de línea de comandos. Para crear la clave privada, introduzca el siguiente comando, utilizando los valores de opción de la siguiente tabla:
+1. Abra una ventana de línea de comandos o un terminal. Para crear la clave privada, introduzca el siguiente comando, utilizando los valores de opción de la siguiente tabla:
 
    ```shell
    openssl genrsa -out keyname.key 2048
@@ -135,9 +138,9 @@ Genere una clave privada y un certificado en formato pkcs#12. Utilice [openSSL](
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
    | -en | author.cer | publish.cer |
-   | -name | author | instancias de publicación |
+   | -name | autor | publicación |
 
-## Instale la clave privada y TrustStore en Author {#install-the-private-key-and-truststore-on-author}
+## Instalar Private Key y TrustStore en Author {#install-the-private-key-and-truststore-on-author}
 
 Instale los siguientes elementos en la instancia de autor:
 
@@ -146,7 +149,7 @@ Instale los siguientes elementos en la instancia de autor:
 
 Para realizar el siguiente procedimiento, debe iniciar sesión como administrador de la instancia de autor.
 
-### Instale la clave privada del autor {#install-the-author-private-key}
+### Instalación de la clave privada del autor {#install-the-author-private-key}
 
 1. Abra la página Administración de usuarios para la instancia de autor. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Para abrir las propiedades de su cuenta de usuario, toque o haga clic en su nombre de usuario.
@@ -189,7 +192,7 @@ Instale los siguientes elementos en la instancia de publicación:
 
 Para realizar el siguiente procedimiento, debe iniciar sesión como administrador de la instancia de publicación.
 
-### Instalar la clave privada de publicación {#install-the-publish-private-key}
+### Instalación de la clave privada de publicación {#install-the-publish-private-key}
 
 1. Abra la página Administración de usuarios para la instancia de publicación. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Para abrir las propiedades de su cuenta de usuario, toque o haga clic en su nombre de usuario.
@@ -200,7 +203,7 @@ Para realizar el siguiente procedimiento, debe iniciar sesión como administrado
 1. Introduzca un alias y la contraseña para el almacén de claves. Introduzca el alias y la contraseña de la clave privada y haga clic en Enviar.
 1. Cierre el cuadro de diálogo Administración de KeyStore.
 
-### Instale el certificado de autor {#install-the-author-certificate}
+### Instalación del certificado de autor {#install-the-author-certificate}
 
 1. Abra la página Administración de usuarios para la instancia de publicación. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Busque la cuenta de usuario que utiliza para ejecutar solicitudes de replicación y toque o haga clic en el nombre de usuario.
@@ -216,16 +219,16 @@ Configure las propiedades del servicio HTTP basado en Apache Felix Jetty en la i
 
 En la tabla siguiente se enumeran las propiedades de OSGi que debe configurar si utiliza la consola web.
 
-| Nombre de propiedad en la consola web | Nombre de propiedad OSGi | Value |
+| Nombre de propiedad en la consola web | Nombre de propiedad OSGi | Valor |
 |---|---|---|
-| Habilitar HTTPS | org.apache.felix.https.enable | verdadero |
-| Habilitar HTTPS para utilizar Granite KeyStore | org.apache.felix.https.use.granite.keystore | verdadero |
+| Habilitar HTTPS | org.apache.felix.https.enable | true |
+| Habilitar HTTPS para utilizar Granite KeyStore | org.apache.felix.https.use.granite.keystore | true |
 | Puerto HTTPS | org.osgi.service.http.port.secure | 8443 (u otro puerto deseado) |
 | Certificado de cliente | org.apache.felix.https.clientcertificate | &quot;Certificado de cliente deseado&quot; |
 
 ## Configurar el agente de replicación en el autor {#configure-the-replication-agent-on-author}
 
-Configure el agente de replicación en la instancia de autor para que utilice el protocolo HTTPS al conectarse a la instancia de publicación. Para obtener información completa sobre la configuración de agentes de replicación, consulte [Configuración de agentes de replicación](/help/sites-deploying/replication.md#configuring-your-replication-agents).
+Configure el agente de replicación en la instancia de autor para que utilice el protocolo HTTPS al conectarse a la instancia de publicación. Para obtener información completa sobre la configuración de agentes de replicación, consulte [Configuración de los agentes de replicación](/help/sites-deploying/replication.md#configuring-your-replication-agents).
 
 Para habilitar MSSL, configure las propiedades en la ficha Transporte según la siguiente tabla:
 
@@ -244,7 +247,7 @@ Para habilitar MSSL, configure las propiedades en la ficha Transporte según la 
    <td>Sin valor</td> 
   </tr> 
   <tr> 
-   <td>Contraseña</td> 
+   <td>Una contraseña</td> 
    <td>Sin valor</td> 
   </tr> 
   <tr> 
@@ -295,4 +298,3 @@ Después de configurar el agente de replicación, pruebe la conexión para deter
 29.08.2014 14:02:46 - Replication (TEST) of /content successful.
 Replication test succeeded
 ```
-

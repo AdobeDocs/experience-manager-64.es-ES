@@ -1,5 +1,5 @@
 ---
-title: APIuick Start (SOAP) del servicio de Forms con códigos de barras
+title: Inicio rápido (SOAP) de la API de Java Servicio de formularios con códigos de barras
 seo-title: Barcoded Forms Service Java APIQuick Start(SOAP)
 description: Utilice el servicio Forms con códigos de barras para descodificar los datos de formulario con códigos de barras mediante el inicio rápido de la API de Java.
 seo-description: Use the Barcoded Forms service to decode barcoded form data using the Java API Quick Start.
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 245b9cc4-5837-4a22-b5f4-a1d4c5d66918
 role: Developer
 exl-id: fbeefa4e-966d-43b5-ae59-9548fe520cc2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '225'
-ht-degree: 0%
+source-wordcount: '261'
+ht-degree: 5%
 
 ---
 
 # Inicio rápido de la API de Java del servicio de Forms con códigos de barras (SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El inicio rápido de la API de Java (SOAP) está disponible para el servicio de Forms con códigos de barras:
 

@@ -1,7 +1,7 @@
 ---
-title: Administrar aplicaciones y tareas de Forms en Bandeja de entrada AEM
+title: Administrar aplicaciones y tareas de Forms en Bandeja de entrada de AEM
 seo-title: Manage Forms applications and tasks in AEM Inbox
-description: Bandeja de entrada AEM le permite iniciar flujos de trabajo centrados en Forms enviando aplicaciones y administrando tareas.
+description: Bandeja de entrada de AEM le permite iniciar flujos de trabajo centrados en Forms enviando aplicaciones y administrando tareas.
 seo-description: AEM Inbox allows you to launch Forms-centric workflows through submitting applications and manage tasks.
 uuid: 5173558a-542a-4130-8bb6-5ac555ecc507
 contentOwner: vishgupt
@@ -9,18 +9,22 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: document_services, publish
 discoiquuid: c1515c58-7d9a-4a36-9390-f6d6b980b801
 exl-id: 7076807a-40ad-4f3b-beb0-70c1577a8ee7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '920'
+source-wordcount: '956'
 ht-degree: 91%
 
 ---
 
-# Administrar aplicaciones y tareas de Forms en Bandeja de entrada AEM {#manage-forms-applications-and-tasks-in-aem-inbox}
+# Administrar aplicaciones y tareas de Forms en Bandeja de entrada de AEM {#manage-forms-applications-and-tasks-in-aem-inbox}
 
-Una de las muchas formas de iniciar o activar un flujo de trabajo centrado en Forms es mediante las aplicaciones en Bandeja de entrada AEM. Debe crear una aplicación de flujo de trabajo para que un flujo de trabajo de Forms esté disponible como aplicación en la bandeja de entrada. Para obtener más información sobre la aplicación de flujo de trabajo y otras formas de iniciar flujos de trabajo de Forms, consulte [Iniciar un flujo de trabajo centrado en Forms en OSGi](/help/forms/using/aem-forms-workflow.md#launch).
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-Además, Bandeja de entrada AEM consolida las notificaciones y tareas de varios componentes de AEM, incluidos los flujos de trabajo de Forms. Cuando se activa un flujo de trabajo de Forms que contiene una Etapa de tarea de asignación, la aplicación asociada aparece como una tarea en la bandeja de entrada del usuario asignado. Si el usuario asignado es un grupo, la tarea aparece en la bandeja de entrada de todos los miembros del grupo hasta que un individuo solicite o delegue la tarea.
+Una de las muchas formas de iniciar o activar un flujo de trabajo centrado en Forms es mediante las aplicaciones en Bandeja de entrada de AEM. Debe crear una aplicación de flujo de trabajo para que un flujo de trabajo de Forms esté disponible como aplicación en la bandeja de entrada. Para obtener más información sobre la aplicación de flujo de trabajo y otras formas de iniciar flujos de trabajo de Forms, consulte [Iniciar un flujo de trabajo centrado en Forms en OSGi](/help/forms/using/aem-forms-workflow.md#launch).
+
+Además, Bandeja de entrada de AEM consolida las notificaciones y tareas de varios componentes de AEM, incluidos los flujos de trabajo de Forms. Cuando se activa un flujo de trabajo de Forms que contiene una Etapa de tarea de asignación, la aplicación asociada aparece como una tarea en la bandeja de entrada del usuario asignado. Si el usuario asignado es un grupo, la tarea aparece en la bandeja de entrada de todos los miembros del grupo hasta que un individuo solicite o delegue la tarea.
 
 La interfaz de usuario de la bandeja de entrada ofrece vistas de lista y calendario para ver las tareas. También puede configurar la configuración de vista. Puede filtrar las tareas en función de varios parámetros. Para obtener más información sobre las vistas y los filtros, consulte [Su bandeja de entrada](/help/sites-authoring/inbox.md).
 
@@ -28,7 +32,7 @@ En resumen, la bandeja de entrada le permite crear una nueva aplicación y admin
 
 >[!NOTE]
 >
->Debe ser miembro del grupo de usuarios del flujo de trabajo para poder utilizar AEM Bandeja de entrada.
+>Debe ser miembro del grupo workflow-users para poder utilizar la Bandeja de entrada AEM.
 
 ## Crear aplicación {#create-application}
 
@@ -102,9 +106,9 @@ A medida que realiza una acción sobre la tarea, esta continúa en el flujo de t
 
 ### Ver tareas completadas {#view-completed-tasks}
 
-La Bandeja de entrada AEM solo muestra las tareas activas. Las tareas completadas no aparecen en la lista. Con todo, puede utilizar los filtros de la bandeja de entrada para filtrar las tareas según varios parámetros, como el tipo de tarea, el estado, las fechas de inicio y finalización, etc. Para ver las tareas completadas:
+La Bandeja de entrada de AEM solo muestra las tareas activas. Las tareas completadas no aparecen en la lista. Con todo, puede utilizar los filtros de la bandeja de entrada para filtrar las tareas según varios parámetros, como el tipo de tarea, el estado, las fechas de inicio y finalización, etc. Para ver las tareas completadas:
 
-1. En Bandeja de entrada AEM, pulse ![toggle-side-panel1](assets/toggle-side-panel1.png) para abrir el selector de filtros.
+1. En Bandeja de entrada de AEM, pulse ![toggle-side-panel1](assets/toggle-side-panel1.png) para abrir el selector de filtros.
 1. Pulse el acordeón **[!UICONTROL Estado de la tarea]** y seleccione **[!UICONTROL Completar]**. Se mostrarán todas las tareas completadas.
 
    ![filter-1](assets/filter-1.png)

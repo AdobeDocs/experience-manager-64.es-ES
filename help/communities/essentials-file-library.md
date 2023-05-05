@@ -1,28 +1,31 @@
 ---
 title: Elementos esenciales de la biblioteca de archivos
-seo-title: Elementos esenciales de la biblioteca de archivos
+seo-title: File Library Essentials
 description: Uso de la función de biblioteca de archivos
-seo-description: Uso de la función de biblioteca de archivos
+seo-description: Working with the file library feature
 uuid: 0630f13e-97b4-4f93-9dce-07f559287c29
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 9019b967-fff8-4dda-bc5a-fd4a3e14a4ef
-translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+exl-id: 0e9d508e-d7dc-478a-99c0-c6885bcdcb81
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 2%
+source-wordcount: '292'
+ht-degree: 5%
 
 ---
 
+# Elementos esenciales de la biblioteca de archivos {#file-library-essentials}
 
-# File Library Essentials {#file-library-essentials}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Esta página proporciona la información esencial para trabajar con la función de biblioteca de archivos.
 
-## Esenciales para el cliente {#essentials-for-client-side}
+## Elementos esenciales para el cliente {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -48,38 +51,37 @@ Esta página proporciona la información esencial para trabajar con la función 
   </tr>
   <tr>
    <td><strong> propiedades</strong></td> 
-   <td>Consulte <a href="file-library.md">Función de biblioteca de archivos</a></td> 
+   <td>Consulte <a href="file-library.md">Función de la biblioteca de archivos</a></td> 
   </tr>
  </tbody>
 </table>
 
 * [Personalizaciones del lado del cliente](client-customize.md)
 
-## Esenciales para servidor {#essentials-for-server-side}
+## Elementos esenciales para el servidor {#essentials-for-server-side}
 
-* [API de la biblioteca de archivos](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
+* [API de biblioteca de archivos](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
 
-* [Extremos de la biblioteca de archivos](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
+* [Puntos finales de la biblioteca de archivos](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
 ### Función Biblioteca del archivo {#file-library-function}
 
-Una estructura de sitio de comunidad que incluye la [función de biblioteca de archivos](functions.md#file-library-function), incluye un componente `file library` configurado.
+Una estructura de sitio de la comunidad que incluye el [Función Biblioteca de archivos](functions.md#file-library-function), incluye un `file library` componente.
 
-### Acceso a los comentarios publicados para bibliotecas de archivos (UGC) {#accessing-comments-posted-for-file-libraries-ugc}
+### Acceso a los comentarios anunciados para bibliotecas de archivos (UGC) {#accessing-comments-posted-for-file-libraries-ugc}
 
-La UGC debe moderarse utilizando uno de los métodos estándar de moderación.\
+UGC debe moderarse utilizando uno de los métodos estándar de moderación.\
 Consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-A partir de AEM comunidades 6.1, el uso de un [almacén común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
+A partir del AEM 6.1 Comunidades, se utilizará un [tienda común](working-with-srp.md) para UGC incluye acceso programático a UGC independientemente de la opción de almacenamiento elegida (como ASRP, MSRP o JSRP).
 
 **La ubicación y el formato del UGC en el repositorio están sujetos a cambios sin previo aviso**.
 
 Consulte:
 
-* [Descripción general](srp.md)  del proveedor de recursos de almacenamiento: introducción y uso del repositorio
-* [Elementos esenciales](srp-and-ugc.md)  de SRP y UGC: métodos y ejemplos de utilidad SRP
-* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) : directrices de codificación
-* [Refactorización](socialutils.md)  de SocialUtils: asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales
-
+* [Información general del proveedor de recursos de almacenamiento](srp.md) : introducción y descripción general del uso del repositorio
+* [Elementos esenciales de SRP y UGC](srp-and-ugc.md) - Métodos y ejemplos de utilidad SRP
+* [Acceso a UGC con SRP](accessing-ugc-with-srp.md) - Directrices de codificación
+* [Refactorización de SocialUtils](socialutils.md) : asignación de métodos de utilidad obsoletos a métodos de utilidad SRP actuales

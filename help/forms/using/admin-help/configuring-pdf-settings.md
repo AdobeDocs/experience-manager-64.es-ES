@@ -1,5 +1,5 @@
 ---
-title: Configuración de Adobe PDF
+title: Configurar Adobe PDF
 seo-title: Configuring Adobe PDF settings
 description: Obtenga información sobre cómo configurar Adobe PDF.
 seo-description: Learn how to configure Adobe PDF settings.
@@ -11,14 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: ab018b6d-0233-4439-bb75-58c5421d769a
 feature: PDF Generator
 exl-id: f6bca66b-265a-413c-b2c7-299d97e2ce18
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '7265'
+source-wordcount: '7301'
 ht-degree: 0%
 
 ---
 
-# Configuración de Adobe PDF{#configuring-adobe-pdf-settings}
+# Configurar Adobe PDF{#configuring-adobe-pdf-settings}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 La página Configuración de Adobe PDF muestra la configuración de conversión que puede especificar para las fuentes. Puede usar cualquiera de los ajustes predefinidos del PDF o crear los suyos propios. La configuración del PDF determina con precisión cómo se convierten los archivos y su estructura y características de PDF resultantes. La configuración de Adobe PDF se conocía anteriormente como parámetros de Distiller® u opciones de trabajo.
 
@@ -341,7 +345,7 @@ Si seleccionó Ninguno en el Archivo de configuración, el área Políticas de a
 
 Independientemente de la opción de compatibilidad seleccionada, las imágenes en escala de grises no cambian. Esto generalmente reduce el tamaño y aumenta la velocidad de visualización de los archivos PDF porque se necesita menos información para describir imágenes RGB que para describir imágenes CMYK. Como el RGB es el espacio de color nativo que se utiliza en los monitores, no es necesario realizar ninguna conversión de color durante la visualización, lo que contribuye a una visualización rápida en línea. Se recomienda esta opción si el archivo PDF se utiliza en línea o con impresoras de baja resolución.
 
-**Interpretación del documento:** Método para asignar colores entre espacios de color. El resultado de cualquier método en particular depende de los perfiles de los espacios de color. Por ejemplo, algunos perfiles producen resultados idénticos con métodos diferentes. Las opciones disponibles son:
+**Interpretación del documento:** Método para asignar colores entre espacios de color. El resultado de cualquier método en particular depende de los perfiles de los espacios de color. Por ejemplo, algunos perfiles producen resultados idénticos con métodos diferentes. Estas opciones están disponibles:
 
 >[!NOTE]
 >
@@ -359,7 +363,7 @@ Independientemente de la opción de compatibilidad seleccionada, las imágenes e
 
 ### Espacios de trabajo {#working-spaces}
 
-Para todos los valores de la lista en Políticas de administración de color, que no sean Dejar el color sin cambiar, seleccione entre las listas del área de trabajo para especificar qué perfiles ICC se utilizan para definir y calibrar los espacios de color de escala de grises, RGB y CMYK en los archivos PDF destilados. Las opciones disponibles son:
+Para todos los valores de la lista en Políticas de administración de color, que no sean Dejar el color sin cambiar, seleccione entre las listas del área de trabajo para especificar qué perfiles ICC se utilizan para definir y calibrar los espacios de color de escala de grises, RGB y CMYK en los archivos PDF destilados. Estas opciones están disponibles:
 
 **Gris:** Define el espacio de color de todas las imágenes en escala de grises de los archivos. Esta opción solo está disponible si elige Etiquetar todo para la administración de color o Etiquetar solo imágenes para la administración de color. El perfil ICC predeterminado para imágenes grises es Gray Gamma 2.2. También puede seleccionar Ninguno para evitar que las imágenes en escala de grises se conviertan.
 

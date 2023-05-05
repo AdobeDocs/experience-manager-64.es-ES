@@ -1,5 +1,5 @@
 ---
-title: Asignación de derechos de uso
+title: Asignar derechos de uso
 seo-title: Assigning Usage Rights
 description: Utilice la API de cliente Java y la API de servicio web de Acrobat Reader DC Extensions para aplicar y eliminar los derechos de uso de los documentos del PDF.
 seo-description: Use the Acrobat Reader DC extensions Java Client API and Web Service API to apply and remove usage rights from PDF documents.
@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 role: Developer
 exl-id: c7805d8a-eb6a-4908-9662-936920ffa67a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3912'
-ht-degree: 0%
+source-wordcount: '3948'
+ht-degree: 2%
 
 ---
 
-# Asignación de derechos de uso {#assigning-usage-rights}
+# Asignar derechos de uso {#assigning-usage-rights}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Acerca del servicio de extensiones de Acrobat Reader DC {#about-the-acrobat-reader-dc-extensions-service}
 
@@ -36,7 +40,7 @@ Puede realizar estas tareas mediante el servicio de extensiones de Acrobat Reade
 
 ## Aplicación de derechos de uso a documentos de PDF {#applying-usage-rights-to-pdf-documents}
 
-Puede aplicar derechos de uso a documentos de PDF mediante la API de cliente Java y el servicio web de Acrobat Reader DC Extensions. Los derechos de uso pertenecen a funciones que están disponibles de forma predeterminada en Acrobat pero no en Adobe Reader, como la capacidad de agregar comentarios a un formulario o de rellenar los campos del formulario y guardar el formulario. Los documentos del PDF que tienen derechos de uso aplicados se denominan documentos habilitados para derechos. Un usuario que abre un documento con derechos activados en Adobe Reader puede realizar operaciones que estén habilitadas para ese documento específico.
+Puede aplicar derechos de uso a documentos de PDF mediante la API de cliente Java y el servicio web de Acrobat Reader DC Extensions. Los derechos de uso pertenecen a una funcionalidad que está disponible de forma predeterminada en Acrobat pero no en Adobe Reader, como la capacidad de agregar comentarios a un formulario o rellenar los campos del formulario y guardarlo. Los documentos PDF a los que se les han aplicado derechos de uso se denominan “documentos con derechos activados”. Un usuario que abre un documento con derechos activados en Adobe Reader puede realizar las operaciones que están habilitadas para ese documento específico.
 
 >[!NOTE]
 >
@@ -85,7 +89,7 @@ Para aplicar derechos de uso a un documento de PDF, se hace referencia al alias 
 
 Una vez que el servicio de extensiones de Acrobat Reader DC aplique derechos de uso a un documento de PDF, puede guardar el documento de PDF habilitado para derechos como un archivo de PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Aplicación de derechos de uso mediante la API de Java](assigning-usage-rights.md#apply-usage-rights-using-the-java-api)
 
@@ -140,7 +144,7 @@ Aplique derechos de uso a un documento de PDF utilizando la API de extensiones d
    * Cree un `java.io.File` y asegúrese de que la extensión de archivo es .pdf.
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` para copiar el contenido del `com.adobe.idp.Document` al archivo (asegúrese de usar la variable `com.adobe.idp.Document` objeto devuelto por el `applyUsageRights` método).
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Aplicación de derechos de uso a documentos de PDF](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
@@ -209,7 +213,7 @@ Aplique derechos de uso a un documento de PDF mediante la API de extensiones de 
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en un archivo de PDF invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Aplicación de derechos de uso a documentos de PDF](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
@@ -255,7 +259,7 @@ Después de recuperar un documento de PDF habilitado para derechos, puede elimin
 
 Puede guardar el documento del PDF que ya no contiene derechos de uso como archivo del PDF. Una vez guardado como archivo de PDF, el documento de PDF se puede ver en Adobe Reader o Acrobat.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Eliminación de los derechos de uso mediante la API de Java](assigning-usage-rights.md#remove-usage-rights-using-the-java-api)
 
@@ -295,7 +299,7 @@ Elimine los derechos de uso de un documento de PDF habilitado para derechos medi
    * Cree un `java.io.File` y asegúrese de que la extensión de archivo es .PDF.
    * Invocar el `Document` del objeto `copyToFile` para copiar el contenido del `Document` al archivo (asegúrese de usar la variable `Document` objeto devuelto por el `removeUsageRights` método).
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Eliminación de derechos de uso de documentos de PDF](assigning-usage-rights.md#removing-usage-rights-from-pdf-documents)
 
@@ -348,7 +352,7 @@ Elimine los derechos de uso de un documento PDF habilitado para derechos mediant
    * Cree una matriz de bytes que almacene el contenido de datos del `BLOB` objeto devuelto por el `removeUsageRights` método. Rellene la matriz de bytes obteniendo el valor de la variable `BLOB` del objeto `MTOM` miembro de datos.
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Eliminación de derechos de uso de documentos de PDF](assigning-usage-rights.md#removing-usage-rights-from-pdf-documents)
 
@@ -395,7 +399,7 @@ Después de recuperar un documento de PDF habilitado para derechos, puede obtene
 * Los derechos de uso establecidos para este documento de PDF con derechos activados.
 * Número de veces que se ha utilizado la credencial.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Eliminación de los derechos de uso mediante la API de Java](assigning-usage-rights.md#remove-usage-rights-using-the-java-api)
 
@@ -430,7 +434,7 @@ Recupere información de credenciales utilizando la API de extensiones de Acroba
    * Recupere la fecha después de la cual la credencial ya no es válida invocando la variable `GetUsageRightsResult` del objeto `getNotAfter` método. Este método devuelve un `java.util.Date` que representa la fecha después de la cual la credencial ya no es válida.
    * Recupere el mensaje que se muestra en Adobe Reader cuando se abre el documento del PDF con derechos activados invocando el `GetUsageRightsResult` del objeto `getMessage` método. Este método devuelve un valor de cadena que representa el mensaje.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Recuperación de información Credencial](assigning-usage-rights.md#retrieving-credential-information)
 
@@ -480,7 +484,7 @@ Recupere información de credenciales mediante la API de extensiones de Acrobat 
    * Recupere el mensaje que se muestra cuando se abre el documento del PDF con derechos activados en Adobe Reader obteniendo el valor de `GetUsageRightsResult` del objeto `message` miembro de datos. El tipo de datos de este miembro de datos es una cadena.
    * Recupere el número de veces que se utiliza la credencial obteniendo el valor de la variable `GetUsageRightsResult` del objeto `useCount` miembro de datos. El tipo de datos de este miembro de datos es un número entero.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Recuperación de información Credencial](assigning-usage-rights.md#retrieving-credential-information)
 

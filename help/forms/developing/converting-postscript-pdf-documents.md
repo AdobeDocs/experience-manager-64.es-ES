@@ -1,5 +1,5 @@
 ---
-title: Conversión de Postscript a documentos de PDF
+title: Convertir documentos Postscript a PDF
 seo-title: Converting Postscript to PDF Documents
 description: Utilice el servicio Distiller para convertir archivos de PostScript®, PostScript encapsulado (EPS) y PRN a archivos de PDF compactos, fiables y más seguros a través de una red. El servicio Distiller convierte grandes volúmenes de documentos impresos en documentos electrónicos, como facturas y estados de cuentas utilizando la API de Java y la API de Web Service.
 seo-description: Use the Distiller service to convert PostScript®, Encapsulated PostScript (EPS), and PRN files to compact, reliable, and more secure PDF files over a network. The Distiller service converts large volumes of print documents to electronic documents, such as invoices and statements using the Java API and Web Service API.
@@ -11,18 +11,22 @@ topic-tags: operations
 discoiquuid: 06ad343a-f74d-41f5-b3c8-b85bb723ceeb
 role: Developer
 exl-id: 8bfbeef8-d211-4e87-8cd5-adccb21a6e05
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1311'
-ht-degree: 0%
+source-wordcount: '1347'
+ht-degree: 4%
 
 ---
 
-# Conversión de Postscript a documentos de PDF {#converting-postscript-to-pdf-documents}
+# Convertir documentos Postscript a PDF {#converting-postscript-to-pdf-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Acerca del servicio Distiller {#about-the-distiller-service}
 
-El servicio Distiller® convierte archivos de PostScript®, PostScript encapsulado (EPS) y PRN en archivos PDF compactos, confiables y más seguros a través de una red. El servicio Distiller se utiliza con frecuencia para convertir grandes volúmenes de documentos impresos en documentos electrónicos, como facturas y estados de cuentas. La conversión de documentos a PDF también permite a las empresas enviar a sus clientes una versión en papel y una versión electrónica de un documento.
+El servicio Distiller® convierte archivos de PostScript®, PostScript encapsulado (EPS) y PRN en archivos PDF compactos, confiables y más seguros a través de una red. El servicio Distiller se utiliza con frecuencia para convertir grandes volúmenes de documentos impresos en documentos electrónicos, como facturas e instrucciones. La conversión de documentos a PDF también permite a las empresas enviar a sus clientes una versión en papel y otra electrónica de un documento.
 
 >[!NOTE]
 >
@@ -70,7 +74,7 @@ Después de crear el cliente de servicio, puede invocar la operación de creaci�
 
 Puede guardar el documento del PDF como un archivo del PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Convertir un archivo PostScript a PDF mediante la API de Java](converting-postscript-pdf-documents.md#convert-a-postscript-file-to-pdf-using-the-java-api)
 
@@ -126,7 +130,7 @@ Convierta un archivo PostScript a un documento de PDF mediante la API de servici
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` método para extraer el documento de registro.
 
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](converting-postscript-pdf-documents.md#summary-of-steps)
 
@@ -189,7 +193,7 @@ Convierta un archivo PostScript a un documento de PDF mediante la API de servici
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en un archivo de PDF invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](converting-postscript-pdf-documents.md#summary-of-steps)
 

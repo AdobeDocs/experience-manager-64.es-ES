@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: e23de3c3-f8a0-459f-801e-a0942fb1c6aa
 role: Developer
 exl-id: fe19e9b3-d662-4df2-b372-5006b794cde8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1670'
-ht-degree: 0%
+source-wordcount: '1706'
+ht-degree: 1%
 
 ---
 
 # Pasar documentos al servicio de Forms {#passing-documents-to-the-formsservice}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El servicio AEM Forms procesa PDF forms interactivos en dispositivos cliente, normalmente exploradores web, para recopilar información de los usuarios. Un formulario PDF interactivo se basa en un diseño de formulario que normalmente se guarda como archivo XDP y se crea en Designer. Desde AEM Forms, puede pasar un `com.adobe.idp.Document` objeto que contiene el diseño de formulario al servicio Forms. A continuación, el servicio Forms procesa el diseño de formulario ubicado en la variable `com.adobe.idp.Document` objeto.
 
@@ -65,7 +69,7 @@ Para procesar un formulario interactivo, pase el `com.adobe.idp.Document` instan
 
 Según el tipo de aplicación cliente, puede escribir el formulario en un explorador web cliente o guardarlo como archivo PDF. Una aplicación basada en Web suele escribir el formulario en un explorador Web. Sin embargo, una aplicación de escritorio generalmente guarda el formulario como un archivo PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -119,7 +123,7 @@ Pase un documento obtenido de Content Services (desaprobada) mediante el servici
    * Cree una matriz de bytes y rellénela con la secuencia de datos del formulario invocando la variable `InputStream` del objeto `read` método. Pase la matriz de bytes como argumento.
    * Invocar el `javax.servlet.ServletOutputStream` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido (modo SOAP): Pasar documentos al servicio de Forms mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
@@ -195,6 +199,6 @@ Pase un documento obtenido de Content Services (desaprobada) mediante el servici
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en un archivo de PDF invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

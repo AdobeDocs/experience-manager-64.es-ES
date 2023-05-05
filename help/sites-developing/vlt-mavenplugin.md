@@ -2,14 +2,18 @@
 title: Complemento Maven del paquete de contenido de Adobe
 description: Utilice el complemento Maven del paquete de contenido para implementar aplicaciones AEM
 exl-id: 106a677b-7c89-4fbc-bb96-eaa3dfa71b58
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '157'
-ht-degree: 9%
+source-wordcount: '193'
+ht-degree: 11%
 
 ---
 
 # Complemento Maven del paquete de contenido de Adobe {#adobe-content-package-maven-plugin}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Utilice el complemento Maven del paquete de contenido de Adobe para integrar las tareas de implementación y administración de paquetes en sus proyectos de Maven.
 

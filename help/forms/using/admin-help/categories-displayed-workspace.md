@@ -1,5 +1,5 @@
 ---
-title: Administración de las categorías mostradas en Workspace
+title: Administrar las categorías mostradas en Workspace
 seo-title: Managing the categories displayed in Workspace
 description: En Workspace, los procesos que un usuario puede iniciar se muestran en categorías en el panel de navegación izquierdo. Descubra cómo puede administrar estas categorías que se muestran en Workspace.
 seo-description: In Workspace, the processes that a user can start are displayed in categories in the left navigation pane. Learn how you can manage these categories displayed in Workspace.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0d1536a2-10ac-4031-bd7f-264b02d0d75f
 exl-id: 5a2bd0ea-2c5e-4e0c-aff1-dba06be6a5b7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 0%
+source-wordcount: '517'
+ht-degree: 3%
 
 ---
 
-# Administración de las categorías mostradas en Workspace {#managing-the-categories-displayed-in-workspace}
+# Administrar las categorías mostradas en Workspace {#managing-the-categories-displayed-in-workspace}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 En Workspace, los procesos que un usuario puede iniciar se muestran en categorías en el panel de navegación izquierdo. Puede configurar las categorías en la consola de administración o los diseñadores de procesos pueden configurarlas en Workbench. Cuando los diseñadores de procesos crean procesos, los asignan a categorías.
 

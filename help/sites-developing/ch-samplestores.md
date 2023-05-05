@@ -1,50 +1,53 @@
 ---
-title: Ejemplos de candidatos de la tienda ContextHub
-seo-title: Ejemplos de candidatos de la tienda ContextHub
-description: ContextHub proporciona varios candidatos de almacén de muestra que puede utilizar en sus soluciones
-seo-description: ContextHub proporciona varios candidatos de almacén de muestra que puede utilizar en sus soluciones
+title: Ejemplos de candidatos a la tienda de ContextHub
+seo-title: Sample ContextHub Store Candidates
+description: ContextHub proporciona varios candidatos de tienda de muestras que puede usar en sus soluciones
+seo-description: ContextHub provides several sample store candidates that you can use in your solutions
 uuid: feccd813-6077-4e87-a96e-d451114e5527
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 7f813b59-d904-49b6-994c-be3badf74464
-translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+exl-id: 776ceb9f-f835-4dbb-9100-f456a36b6dcd
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 1%
+source-wordcount: '509'
+ht-degree: 2%
 
 ---
 
-
 # Ejemplos de candidatos a la tienda de ContextHub{#sample-contexthub-store-candidates}
 
-ContextHub proporciona varios candidatos de almacén de muestra que puede utilizar en sus soluciones. Se proporciona la siguiente información para cada muestra:
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-* Dónde encontrar el código fuente para poder abrirlo con fines de aprendizaje.
-* Cómo configurar las tiendas que se crean a partir de los candidatos de la tienda.
-* Cómo se estructuran los datos del almacén para que pueda acceder a ellos.
+ContextHub proporciona varios candidatos de tienda de muestras que puede usar en sus soluciones. Se proporciona la siguiente información para cada muestra:
+
+* Dónde encontrar el código fuente para que pueda abrirlo con fines de aprendizaje.
+* Cómo configurar las tiendas que crea a partir de los candidatos de la tienda.
+* Cómo se estructura el almacén de datos para que pueda acceder a él.
 
 >[!WARNING]
 >
->Los candidatos del almacén de muestra se proporcionan como configuraciones de referencia para ayudarle a crear su propia configuración dedicada para su proyecto y, como tal, no debe utilizarse directamente.
+>Los candidatos del almacén de muestras se proporcionan como configuraciones de referencia para ayudarle a crear su propia configuración dedicada para su proyecto y, como tales, no se deben utilizar directamente.
 
-## ejemplo de aem.segmentation > Candidato de tienda {#aem-segmentation-sample-store-candidate}
+## aem.segmentation Ejemplo Store Candidate {#aem-segmentation-sample-store-candidate}
 
-Almacenar para segmentos de ContextHub resueltos y sin resolver. Recupera automáticamente segmentos desde el Administrador de segmentos de ContextHub.
+Almacenar para segmentos de ContextHub resueltos y no resueltos. Recupera automáticamente los segmentos desde el Administrador de segmentos de ContextHub.
 
 ### Ubicación de origen {#source-location-segmentation}
 
 `/libs/settings/cloudsettings/legacy/contexthub/segmentation`
 
-### Implementación básica {#base-implementation-segmentation}
+### Implementación de base {#base-implementation-segmentation}
 
-El candidato del almacén de segmentación de aem se extiende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+El candidato al almacén de segmentación de aem se amplía [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configuración {#configuration-segmentation}
 
-Al crear una tienda aem.segmentation, no es necesario proporcionar una configuración detallada. La configuración predeterminada especifica la ubicación de las definiciones de segmentos de ContextHub.
+Al crear un almacén de segmentación de aem, no es necesario proporcionar una configuración detallada. La configuración predeterminada especifica la ubicación de las definiciones de segmento de ContextHub.
 
 ```xml
 {
@@ -56,21 +59,21 @@ Al crear una tienda aem.segmentation, no es necesario proporcionar una configura
 }
 ```
 
-## contexthub.geolocation Ejemplo de candidato de tienda {#contexthub-geolocation-sample-store-candidate}
+## contexthub.geolocation Muestra de candidato para tienda {#contexthub-geolocation-sample-store-candidate}
 
-El candidato al almacén de muestras de contexthub.geolocation utiliza Google Maps para obtener y almacenar información sobre la ubicación del cliente.
+El candidato al almacén de muestras contexthub.geolocation utiliza Google Maps para obtener y almacenar información sobre la ubicación del cliente.
 
 ### Ubicación de origen {#source-location-geolocation}
 
 `/libs/settings/cloudsettings/legacy/contexthub/geolocation`
 
-### Implementación básica {#base-implementation-geolocation}
+### Implementación de base {#base-implementation-geolocation}
 
-El candidato del almacén contexthub.geolocation amplía [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+El candidato al almacén contexthub.geolocation se extiende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configuración {#configuration-geolocation}
 
-La configuración predeterminada especifica información sobre el servicio Google y las coordenadas iniciales de latitud y longitud.
+La configuración predeterminada especifica información sobre el servicio Google y las coordenadas de latitud y longitud iniciales.
 
 ```xml
 {
@@ -112,19 +115,19 @@ El almacén utiliza un árbol de datos similar al siguiente ejemplo:
 
 >[!NOTE]
 >
->Una política de seguridad introducida en Chrome 50.x requiere que todas las llamadas relacionadas con la geolocalización se realicen a través de una conexión segura. Por lo tanto, AEM fuerza el uso de https para llamadas de API de geolocalización si AEM también se está ejecutando sobre https. De lo contrario, se utiliza http para cumplir con la política del mismo origen. Consulte [esta entrada de blog de Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) para obtener más información sobre el cambio en Chrome.
+>Una directiva de seguridad introducida en Chrome 50.x requiere que todas las llamadas relacionadas con la geolocalización se realicen a través de una conexión segura. Por lo tanto, AEM fuerza el uso de https para llamadas a la API de geolocalización si AEM también se está ejecutando sobre https. De lo contrario, se utiliza http para cumplir con la política del mismo origen. Consulte [esta publicación de blog de Google](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) para obtener más información sobre el cambio en Chrome.
 
-## contexthub.surferinfo Ejemplo de candidato de tienda {#contexthub-surferinfo-sample-store-candidate}
+## contexthub.surferinfo Ejemplo de reserva candidata {#contexthub-surferinfo-sample-store-candidate}
 
-Almacena información sobre el entorno del cliente actual, como el dispositivo, la ventana, el explorador, la fecha y la hora.
+Almacena información sobre el entorno de cliente actual, como el dispositivo, la ventana, el explorador, la fecha y la hora.
 
 ### Ubicación de origen {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
-### Implementación básica {#base-implementation-surferinfo}
+### Implementación de base {#base-implementation-surferinfo}
 
-El candidato del almacén contexthub.datetime extiende [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+El candidato del almacén contexthub.datetime se extiende [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configuración {#configuration-surferinfo}
 
@@ -181,21 +184,21 @@ Las tiendas que utilizan este candidato de almacén tienen un árbol de datos si
 }
 ```
 
-## granite.emulators Ejemplo de Candidato de tienda {#granite-emulators-sample-store-candidate}
+## granite.emulators Muestra Store Candidate {#granite-emulators-sample-store-candidate}
 
-El candidato de almacén de muestras granite.emulators almacena información sobre los dispositivos cliente.
+El ejemplo de granite.emulators almacena información sobre los dispositivos cliente.
 
 ### Ubicación de origen {#source-location-emulators}
 
 `/libs/settings/cloudsettings/legacy/contexthub/emulators`
 
-### Implementación básica {#base-implementation-emulators}
+### Implementación de base {#base-implementation-emulators}
 
-El candidato del almacén contexthub.geolocation amplía [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+El candidato al almacén contexthub.geolocation se extiende [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
 
 ### Configuración {#configuration-emulators}
 
-La configuración predeterminada incluye una matriz denominada `defaultEmulators` que contiene información sobre diferentes dispositivos. Cuando cree una tienda, proporcione diferentes perfiles de dispositivo en la propiedad Configuración de detalles según sea necesario, utilizando el formato que se ilustra en el siguiente ejemplo:
+La configuración predeterminada incluye una matriz denominada `defaultEmulators` que contiene información sobre diferentes dispositivos. Cuando cree una tienda, proporcione distintos perfiles de dispositivo en la propiedad Configuración de detalles según sea necesario, utilizando el formato que se muestra en el siguiente ejemplo:
 
 ```xml
 {
@@ -242,7 +245,7 @@ La configuración predeterminada incluye una matriz denominada `defaultEmulators
 
 ### Elementos de datos {#data-items-emulators}
 
-El árbol de datos del almacén es similar al siguiente ejemplo:
+El árbol de datos de almacenamiento es similar al siguiente ejemplo:
 
 ```xml
 {
@@ -314,7 +317,7 @@ El árbol de datos del almacén es similar al siguiente ejemplo:
 }
 ```
 
-## granite.perfil Ejemplo de candidato de tienda {#granite-profile-sample-store-candidate}
+## Candidate de tienda de muestras de granite.profile {#granite-profile-sample-store-candidate}
 
 Almacena información sobre el usuario actual.
 
@@ -322,9 +325,9 @@ Almacena información sobre el usuario actual.
 
 `/libs/settings/cloudsettings/legacy/contexthub/profile`
 
-### Implementación básica {#base-implementation-profile}
+### Implementación de base {#base-implementation-profile}
 
-El candidato del almacén contexthub.datetime extiende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+El candidato del almacén contexthub.datetime se extiende [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
 
 ### Configuración {#configuration-profile}
 

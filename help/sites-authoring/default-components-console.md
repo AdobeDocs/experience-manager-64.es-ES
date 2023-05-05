@@ -1,34 +1,37 @@
 ---
-title: La consola Componentes
-seo-title: La consola Componentes
-description: La consola Componentes
-seo-description: nulo
+title: Consola Componentes
+seo-title: Components Console
+description: Consola Componentes
+seo-description: null
 uuid: 308b7fa1-9525-43f3-8c15-1076485b3f8c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8774c38a-abd2-4dc2-868e-d6760c96f3f6
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: fa583a06-e75c-41de-a977-7e459ab8bca9
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 93%
+source-wordcount: '296'
+ht-degree: 47%
 
 ---
 
+# Consola Componentes{#components-console}
 
-# La consola Componentes{#components-console}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 La consola Componentes permite examinar todos los componentes definidos para la instancia y ver información clave de cada componente.
 
-Se puede acceder a ella desde **Tools** -> **General** -> **Components**. En la consola, están disponibles la vista de tarjeta y la vista de lista. Como no hay una estructura de árbol para los componentes, la vista de columna no está disponible.
+Se puede acceder desde **Herramientas** -> **General** -> **Componentes**. En la consola, están disponibles la vista de tarjeta y la vista de lista. Como no hay una estructura de árbol para los componentes, la vista de columna no está disponible.
 
 ![chlimage_1-301](assets/chlimage_1-301.png)
 
 >[!NOTE]
 >
->La consola Componentes muestra todos los componentes en el sistema. El [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser) muestra los componentes disponibles para los autores y oculta cualquier grupo de componentes que comience con un punto ( `.`).
+>La consola Componentes muestra todos los componentes del sistema. El [navegador de componentes](/help/sites-authoring/author-environment-tools.md#components-browser) muestra los componentes disponibles para los autores y oculta cualquier grupo de componentes que comience con un punto ( `.`).
 
 ## Búsqueda {#search-features}
 
@@ -38,7 +41,7 @@ Con el icono **Solo contenido** (parte superior izquierda) podrá abrir el panel
 
 ## Detalles de los componentes {#component-details}
 
-Para ver los detalles de un componente específico, toque o haga clic en el recurso necesario. Encontrará lo siguiente en tres fichas:
+Para ver los detalles sobre un componente específico, toque o haga clic en el recurso requerido. Hay tres pestañas que proporcionan:
 
 * **Propiedades**
 
@@ -47,12 +50,12 @@ Para ver los detalles de un componente específico, toque o haga clic en el recu
    En la pestaña Propiedades puede:
 
    * Consulte las propiedades generales del componente.
-   * Ver cómo [se ha definido el icono o la abreviatura](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) para el componente.
+   * Ver cómo se usa la variable [se ha definido un icono o una abreviatura](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) para el componente.
 
-      * Si hace clic en el origen del icono, se le dirigirá a dicho componente.
-   * Ver el **tipo de recurso** y el **supertipo de recurso** (si está definido) para el componente.
+      * Al hacer clic en el origen del icono, se le dirigirá a ese componente.
+   * Consulte la **Tipo de recurso** y **Supertipo de recurso** (si se define) para el componente.
 
-      * Si hace clic en el supertipo de recurso, se le dirigirá a dicho componente.
+      * Al hacer clic en el supertipo de recurso, se le dirigirá a ese componente.
    >[!NOTE]
    >
    >Debido a que `/apps` no se puede editar en el tiempo de ejecución, la consola Componentes es de solo lectura.
@@ -71,7 +74,6 @@ Para ver los detalles de un componente específico, toque o haga clic en el recu
 
 * **Documentación**
 
-   Si el desarrollador ha proporcionado [documentación del componente](/help/sites-developing/developing-components.md#documenting-your-component), esta aparecerá en la pestaña **Documentación**. Si no hay documentación disponible, no se mostrará la pestaña **Documentación.**
+   Si el desarrollador ha proporcionado [documentación del componente](/help/sites-developing/developing-components.md#documenting-your-component), aparecerá en el **Documentación** pestaña . Si no hay documentación disponible, no se mostrará la pestaña **Documentación.**
 
    ![chlimage_1-305](assets/chlimage_1-305.png)
-

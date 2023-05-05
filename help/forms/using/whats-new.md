@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 436aa424-d05e-4f3d-90ac-5ff3b05ddba8
 exl-id: 21b8ed83-9c0c-41ee-9fbb-56ccebaee132
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2002'
-ht-degree: 2%
+source-wordcount: '2038'
+ht-degree: 10%
 
 ---
 
 # Resumen de las nuevas funciones | AEM 6.4 Forms {#new-features-summary-aem-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Resumen de las nuevas funciones y mejoras de AEM 6.4 Forms.
 
@@ -65,11 +69,11 @@ Para obtener más información, consulte [Canal de impresión y canal web](/help
 
 ### Utilizar temas para aplicar estilo al canal web de la comunicación interactiva {#use-themes-to-style-web-channel-of-interactive-communication}
 
-La comunicación interactiva admite temas. Puede crear temas y aplicarlos a la comunicación interactiva. Un tema contiene detalles de estilo para componentes y paneles. Puede reutilizar un tema en diferentes comunicaciones interactivas para que tengan un aspecto y una marca comunes y coherentes.
+La comunicación interactiva admite temas. Puede crear temas y aplicarlos a la comunicación interactiva. Un tema contiene los detalles del estilo de los componentes y los paneles. Puede reutilizar un tema en diferentes comunicaciones interactivas para que tengan un aspecto y una marca comunes y coherentes.
 
 AEM Forms incluye un tema para comunicaciones interactivas. Con un tema, también puede personalizar el aspecto de una comunicación interactiva en un dispositivo.
 
-Para obtener más información, consulte [Temas en AEM Forms](/help/forms/using/themes.md).
+Para obtener más información, consulte [Temáticas en AEM Forms](/help/forms/using/themes.md).
 
 ### Interfaz de agente mejorada {#enhanced-agent-interface}
 
@@ -83,7 +87,7 @@ La comunicación interactiva admite gráficos en la web y el canal de impresión
 
 ![chart-2](assets/chart-2.png) ![gráfico](assets/chart.png)
 
-Para obtener más información, consulte [Uso de gráficos en Interactive Communications](/help/forms/using/chart-component-interactive-communications.md).
+Para obtener más información, consulte [Usar gráficos en comunicaciones interactivas](/help/forms/using/chart-component-interactive-communications.md).
 
 ### Conectores de datos listos para usar para rellenar previamente los documentos {#out-of-the-box-data-connectors-to-prefill-documents}
 
@@ -91,7 +95,7 @@ La comunicación interactiva proporciona integración de datos con herramientas 
 
 ![fdm_ad](assets/fdm_ad.png)
 
-Para obtener más información, consulte [Uso del modelo de datos de formulario](/help/forms/using/using-form-data-model.md).
+Para obtener más información, consulte [Usar el modelo de datos de formulario](/help/forms/using/using-form-data-model.md).
 
 ### Editor de fragmentos de documento mejorado {#enhanced-document-fragment-editor}
 
@@ -111,7 +115,7 @@ Para obtener más información, consulte:
 
 De forma predeterminada, los recursos de letras de versiones anteriores de AEM Forms no son compatibles con esta versión. Si desea seguir utilizando las letras de AEM 6.3 Forms y AEM 6.2 Forms, debe instalar el paquete de compatibilidad.
 
-## Integración de datos de  {#data-integration}
+## Integración de datos {#data-integration}
 
 ![](do-not-localize/data-integeration-1.png)
 
@@ -177,7 +181,7 @@ A continuación se presentan las mejoras en los flujos de trabajo AEM centrados 
 * Paso del flujo de trabajo para enviar correos electrónicos. Por ejemplo, puede utilizar el paso de correo electrónico para enviar un documento de registro al finalizar un flujo de trabajo.
 * Paso del flujo de trabajo para utilizar los servicios del modelo de datos de formulario en un modelo de flujo de trabajo. Este paso le permite invocar servicios de integración de datos sin escribir código personalizado. Por ejemplo, puede invocar un servicio de GET para obtener los detalles de los empleados de los archivos de base de datos sin escribir ningún código personalizado.
 
-## Aplicación de AEM Forms {#aem-forms-app}
+## Aplicación de AEM Forms {#aem-forms-app}
 
 ![aem-forms-app](assets/aem-forms-app.png)
 
@@ -188,18 +192,18 @@ A continuación se muestran las mejoras en la aplicación AEM Forms:
 * Los formularios adaptables con fragmentos habilitados para la carga diferida son compatibles con la aplicación AEM Forms.
 * Los formularios adaptables con modelo de datos de formulario se admiten en la aplicación AEM Forms.
 
-## Document Security {#document-security}
+## Seguridad de los documentos {#document-security}
 
 ![aem-forms-document-security-](assets/aem-forms-document-security-.png)
 
-Con la seguridad de los documentos, puede distribuir de forma segura cualquier información guardada en un formato compatible. La seguridad de los documentos garantiza que solo los usuarios autorizados puedan utilizar sus documentos. A continuación se indican los principales cambios en la seguridad de los documentos:
+Con Document Security, puede distribuir de forma segura cualquier tipo de información guardada en un formato compatible. La seguridad de los documentos garantiza que solo los usuarios autorizados puedan utilizar sus documentos. A continuación se indican los principales cambios en la seguridad de los documentos:
 
 * La seguridad del documento proporciona un [Biblioteca de protección portátil (PPL)](/help/forms/using/document-security-offerings.md) para proteger un documento localmente, sin enviarlo al servidor de AEM Forms. Solo las credenciales de seguridad y los detalles de la directiva viajan a través de la red al servidor de AEM Forms. AEM 6.4 Forms ha introducido la biblioteca de protección portátil (PPL) en un formato de paquete OSGi. Ahora, puede instalar directamente la biblioteca PPL en un servidor AEM Forms y utilizar las capacidades de AEM y PPL en conjunto.
 * El SDK C++ y la biblioteca PPL C++ de seguridad de documentos se pueden compilar con Microsoft Visual Studio 2013. La versión admitida anteriormente era Microsoft Visual Studio 2010.
 
 ## Plataformas compatibles {#supported-platforms}
 
-AEM Forms se puede configurar utilizando cualquier combinación de sistemas operativos admitidos, servidores de aplicaciones, bases de datos, controladores de base de datos, JDK, servidores LDAP y servidores de correo electrónico. Los siguientes son los cambios principales en las plataformas admitidas:
+AEM Forms se puede configurar mediante cualquier combinación de sistemas operativos admitidos, servidores de aplicaciones, bases de datos, controladores de base de datos, JDK, servidores LDAP y servidores de correo electrónico. A continuación se indican los cambios más importantes en las plataformas compatibles:
 
 <table> 
  <tbody> 
@@ -238,15 +242,15 @@ AEM Forms se puede configurar utilizando cualquier combinación de sistemas oper
    <td>Bases de datos</td> 
    <td> 
     <ul> 
-     <li>Microsoft SQL Server 2016</li> 
+     <li>Servidor Microsoft SQL 2016</li> 
      <li>MySQL 5.7.19 y posteriores</li> 
      <li>IBM DB2 11.1</li> 
      <li>Arquitectura de varios inquilinos de oracle</li> 
     </ul> </td> 
    <td> 
     <ul> 
-     <li>Microsoft SQL Server 2012<br /> </li> 
-     <li>Microsoft SQL Server 2014</li> 
+     <li>Servidor Microsoft SQL 2012<br /> </li> 
+     <li>Servidor Microsoft SQL 2014</li> 
      <li>MySQL 5.5</li> 
      <li>IBM DB2 10.5<br /> </li> 
     </ul> </td> 
@@ -281,18 +285,18 @@ AEM Forms se puede configurar utilizando cualquier combinación de sistemas oper
    <td> 
     <ul> 
      <li>Conector para Microsoft Sharepoint 2016</li> 
-     <li>Connector for EMC Documentum 7.3</li> 
+     <li>Connector para EMC Documentum 7.3</li> 
     </ul> </td> 
    <td> 
     <ul> 
      <li>Conector para Microsoft Sharepoint 2007</li> 
      <li>Conector para Microsoft Sharepoint 2010</li> 
      <li>Conector para IBM Filenet 5.0</li> 
-     <li>Connector for EMC Documentum 6.7</li> 
+     <li>Connector para EMC Documentum 6.7</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Navegadores</td> 
+   <td>Exploradores</td> 
    <td> 
     <ul> 
      <li>Apple Safari 11.x en macOS</li> 
@@ -304,7 +308,7 @@ AEM Forms se puede configurar utilizando cualquier combinación de sistemas oper
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>aplicación AEM Forms<br /> </td> 
+   <td>Aplicación de AEM Forms<br /> </td> 
    <td> 
     <ul> 
      <li>Android 4.4 o superior</li> 

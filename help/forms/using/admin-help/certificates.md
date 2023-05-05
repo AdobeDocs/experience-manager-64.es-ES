@@ -1,5 +1,5 @@
 ---
-title: Administración de certificados
+title: Administrar certificados
 seo-title: Managing certificates
 description: Obtenga información sobre cómo importar y exportar un certificado y editar su configuración de confianza.
 seo-description: Learn how to import and export a certificate and edit its trust settings.
@@ -10,16 +10,20 @@ geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9fd531c0-5206-4be0-a450-13e0dc806068
 exl-id: b8d4f35b-dc9c-4e0a-b855-f49275d4ac1f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '641'
-ht-degree: 0%
+source-wordcount: '677'
+ht-degree: 10%
 
 ---
 
-# Administración de certificados {#managing-certificates}
+# Administrar certificados {#managing-certificates}
 
-Con la Administración de almacén de confianza, puede importar, editar y eliminar certificados en los que confía en el servidor para validar firmas digitales y autenticación de certificados. Puede importar y exportar cualquier número de certificados. Una vez importado un certificado, puede editar la configuración de confianza y el tipo de almacén de confianza. Tenga en cuenta las siguientes opciones al combinar tipos de almacén de confianza:
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+Con la administración de almacén de confianza, puede importar, editar y eliminar certificados en los que confía en el servidor para validar firmas digitales y autenticación de certificados. Puede importar y exportar cualquier número de certificados. Una vez importado un certificado, puede editar la configuración de confianza y el tipo de almacén de confianza. Tenga en cuenta las siguientes opciones al combinar tipos de almacén de confianza:
 
 * **Confianza para la autenticación de certificados con CA:** Para la validación de CRL, seleccione también Confiar en la identidad.
 * **Confianza para la autenticación de certificados con ICA:** Seleccione solo Confiar en la identidad. No se debe confiar en un ICA para la autenticación de certificado. Si confía en el ICA para la autenticación de certificados, el ICA se convierte en una CA para la construcción de rutas. Si el ICA es de confianza tanto para la autenticación de certificado como para la identidad, el certificado de proveedor de CA se ignora porque el ICA se convierte en la CA.

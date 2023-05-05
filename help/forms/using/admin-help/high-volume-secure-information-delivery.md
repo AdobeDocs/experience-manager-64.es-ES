@@ -1,5 +1,5 @@
 ---
-title: Entrega de información segura de gran volumen
+title: Entregar información segura de gran volumen
 seo-title: High-volume secure information delivery
 description: La seguridad de los documentos admite la asociación de licencias a usuarios, en lugar de a documentos en entornos de producción masiva.
 seo-description: Document security supports the association of licenses to users, rather than to the documents in mass production environments.
@@ -11,14 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b76d7d93-23a5-4c08-81f5-a56267b1556a
 feature: Document Security
 exl-id: 78fc7c4a-a634-4628-927a-c9622bdc13fc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 0%
+source-wordcount: '360'
+ht-degree: 6%
 
 ---
 
-# Entrega de información segura de gran volumen {#high-volume-secure-information-delivery}
+# Entregar información segura de gran volumen {#high-volume-secure-information-delivery}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 En un entorno de producción masiva, como uno que genera facturas mensuales seguras para una empresa de telecomunicaciones, la creación de licencias específicas para cada documento puede convertirse en un proceso intensivo en recursos. En estos casos, la seguridad de los documentos permite la asociación de licencias a los usuarios, no a los documentos. La licencia generada para un usuario se utiliza para todos los documentos protegidos para ese usuario.
 

@@ -1,5 +1,5 @@
 ---
-title: Uso de formularios con códigos de barras
+title: Trabajar con formularios con códigos de barras
 seo-title: Working with barcoded forms
 description: Descodificar datos de un formulario de PDF o una imagen que contiene un código de barras mediante la API de Java y la API de servicio web.
 seo-description: Decode data from a PDF form or an image that contains a barcode using the Java API and Web Service API.
@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 role: Developer
 exl-id: 9d459939-a311-4770-84db-f2a4b7869072
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 0%
+source-wordcount: '1942'
+ht-degree: 1%
 
 ---
 
-# Uso de formularios con códigos de barras {#working-with-barcoded-forms}
+# Trabajar con formularios con códigos de barras {#working-with-barcoded-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Acerca del servicio de formularios con códigos de barras {#about-the-barcoded-forms-service}
 
@@ -97,7 +101,7 @@ Puede procesar los datos convertidos para satisfacer los requisitos empresariale
 >
 >El servicio de códigos de barras no descodifica los datos del código de barras cuando los parámetros delimitador de línea y delimitador de campo tienen el mismo valor
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Descodificar datos de formulario codificados mediante la API de Java](barcoded-forms.md#decode-barcoded-form-data-using-the-java-api)
 
@@ -162,7 +166,7 @@ Descodificar datos de formulario utilizando la API de formularios con códigos d
    * Para cada elemento de la lista, convierta la variable `org.w3c.dom.Document` a `com.adobe.idp.Document` objeto. (La lógica de la aplicación que convierte un `org.w3c.dom.Document` en un `com.adobe.idp.Document` se muestra en los datos de formulario codificados con barras Decoding utilizando el ejemplo de la API de Java).
    * Guarde los datos XML como un archivo XML invocando la variable `com.adobe.idp.Document` del objeto `copyToFile`y pasando un objeto File que representa el archivo XML.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido (modo SOAP): Descodificación de datos de formulario codificados mediante la API de Java](/help/forms/developing/barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
@@ -230,6 +234,6 @@ Descodificar datos de formulario utilizando la API de formularios con códigos d
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en un archivo de PDF invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

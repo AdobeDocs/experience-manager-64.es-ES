@@ -1,5 +1,5 @@
 ---
-title: Control del acceso a documentos protegidos por políticas
+title: Controlar el acceso a documentos protegidos por directivas
 seo-title: Controlling access to policy-protected documents
 description: Consulte cómo puede ver, administrar y controlar el acceso a los documentos protegidos por políticas.
 seo-description: See how you can view, manage and control the access to your policy-protected documents.
@@ -11,14 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
 feature: Document Security
 exl-id: 64431958-c802-42d1-a2e3-5e85e15bfad6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2169'
+source-wordcount: '2205'
 ht-degree: 0%
 
 ---
 
-# Control del acceso a documentos protegidos por políticas {#controlling-access-to-policy-protected-documents}
+# Controlar el acceso a documentos protegidos por directivas {#controlling-access-to-policy-protected-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede controlar la forma en que los destinatarios utilizan los documentos protegidos por políticas independientemente de la cantidad de documentos que los distribuya.
 

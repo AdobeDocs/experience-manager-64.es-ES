@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
 exl-id: 5bbb51d8-db91-458a-bfdd-e3f874ef1723
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1049'
-ht-degree: 1%
+source-wordcount: '1085'
+ht-degree: 2%
 
 ---
 
 # Configuración de SSL para el servidor WebLogic {#configuring-ssl-for-weblogic-server}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Para configurar SSL en el servidor WebLogic, necesita una credencial SSL para la autenticación. Puede utilizar la herramienta de teclas Java para realizar las siguientes tareas y crear una credencial:
 
@@ -211,4 +215,4 @@ Configure WebLogic para que utilice el almacén de claves de identidad personali
    Si la verificación del nombre de host no está deshabilitada, el nombre común (CN) debe contener el nombre de host del servidor.
 
 1. En Centro de cambios, haga clic en Bloquear y editar para modificar las selecciones y los valores.
-1. Reinicie el servidor de aplicaciones.
+1. Reinicie el servidor de la aplicación.

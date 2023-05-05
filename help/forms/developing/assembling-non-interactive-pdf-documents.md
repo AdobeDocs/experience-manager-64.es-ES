@@ -1,5 +1,5 @@
 ---
-title: Montaje de documentos de PDF no interactivos
+title: Agrupar documentos PDF no interactivos
 seo-title: Assembling Non-Interactive PDF Documents
 description: Utilice un formulario de PDF no interactivo como entrada para ensamblar un documento de PDF no interactivo mediante la API de Java y la API de servicio web.
 seo-description: Use a non-interactive PDF form as input to assemble a non-interactive PDF document using the Java API and Web Service API.
@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 8a75c201-bd88-4809-be08-69de94656489
 role: Developer
 exl-id: d4e40d68-781d-4fc8-8557-bf36462ca1d9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1775'
-ht-degree: 0%
+source-wordcount: '1811'
+ht-degree: 1%
 
 ---
 
-# Montaje de documentos de PDF no interactivos {#assembling-non-interactive-pdf-documents}
+# Agrupar documentos PDF no interactivos {#assembling-non-interactive-pdf-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Se puede ensamblar un documento de PDF no interactivo cuando se utiliza un formulario de PDF interactivo como entrada. Es decir, supongamos que tiene un formulario que los usuarios pueden utilizar para introducir datos en sus campos. Puede pasar ese formulario al servicio Assembler, lo que hace que el servicio Assembler devuelva un documento PDF que impide que los usuarios introduzcan datos en sus campos. Este documento es un formulario de PDF no interactivo. Por ejemplo, la siguiente ilustración muestra una aplicación hipotecaria que representa un formulario interactivo.
 
@@ -105,7 +109,7 @@ Después de crear el cliente de servicio Assembler, hacer referencia al document
 
 Si solo se pasa un documento PDF al servicio Assembler, el servicio Assembler devuelve un documento único en lugar de un objeto de colección. Es decir, al invocar la variable `invokeOneDocument` , se devuelve un solo documento. Dado que el documento DDX al que se hace referencia en esta sección contiene instrucciones para crear un documento PDF no interactivo, el servicio Assembler devuelve un documento PDF no interactivo que se puede guardar como archivo PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -223,6 +227,6 @@ Ensamble un documento de PDF no interactivo mediante la API del servicio Assembl
 
 * &quot;Inicio rápido (MTOM): Montaje de un documento PDF no interactivo mediante la API de servicio web&quot;.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

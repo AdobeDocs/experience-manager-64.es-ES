@@ -1,23 +1,26 @@
 ---
 title: Content Services
-seo-title: Servicios de contenido
-description: Servicios de contenido
-seo-description: nulo
+seo-title: Content Services
+description: Content Services
+seo-description: null
 uuid: 7bd09c91-3931-400b-bdfc-b064b9ca9668
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: e900d93e-f7cd-4a0d-a866-7fc6c7882797
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '304'
-ht-degree: 3%
+source-wordcount: '337'
+ht-degree: 7%
 
 ---
 
-
 # Content Services{#content-services}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
@@ -35,7 +38,7 @@ Content Services introduce varias construcciones de AEM nuevas que permiten a un
 
 Estas construcciones son necesarias para mantener la flexibilidad y permitir una futura expansión al proporcionar una capa de abstracción entre el contenido administrado AEM y las aplicaciones móviles que consumen el contenido. Esto permite que AEM Content Services funcione como una capa de abstracción entre los requisitos de contenido de la aplicación nativa y el repositorio de contenido de AEM.
 
-Content Services puede entregar el contenido como recursos, HTML empaquetado (HTML/CSS/JS) o como contenido independiente del canal.
+Los servicios de contenido pueden entregar el contenido como recursos, como HTML empaquetado (HTML/CSS/JS) o como contenido independiente del canal.
 
 >[!CAUTION]
 >
@@ -45,7 +48,7 @@ Content Services puede entregar el contenido como recursos, HTML empaquetado (HT
 >
 >Consulte **[Administración de servicios de contenido](/help/mobile/developing-content-services.md)** para obtener más información.
 >
->Consulte la [Documentación del explorador de configuración](/help/sites-administering/configurations.md) para obtener más información.
+>Consulte la documentación del [](/help/sites-administering/configurations.md)Explorador de configuración para obtener más información.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
@@ -53,4 +56,3 @@ Una vez que haya establecido el indicador de servicios de contenido y habilitado
 
 * Modelos en el repositorio
 * Renderización y entrega
-

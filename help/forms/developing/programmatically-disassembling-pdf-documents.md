@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 8e38a597-5d22-4d83-95fe-4494fb04e4a3
 role: Developer
 exl-id: 3f757392-96a0-4f20-91d0-7fbccb1bf171
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1747'
-ht-degree: 0%
+source-wordcount: '1783'
+ht-degree: 2%
 
 ---
 
 # Desmontaje programático de documentos PDF {#programmatically-disassembling-pdf-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede desmontar un documento PDF pasándolo al servicio Assembler. Normalmente, esta tarea resulta útil cuando el documento del PDF se creó originalmente a partir de muchos documentos individuales, como una colección de instrucciones. En la siguiente ilustración, el DocA se divide en varios documentos resultantes, donde el primer marcador de nivel 1 de una página identifica el inicio de un nuevo documento resultante.
 
@@ -105,7 +109,7 @@ Después de crear el cliente de servicio Assembler, hacer referencia al document
 
 Todos los documentos PDF desmontados se devuelven dentro de un objeto de colección. Itere a través del objeto de colección y guarde cada documento de PDF como archivo de PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -164,7 +168,7 @@ Desmonte un documento de PDF utilizando la API de servicio del ensamblador (Java
    * Iterar a través de la variable `java.util.Map` hasta que encuentre el resultado `com.adobe.idp.Document` objeto.
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` método para extraer el documento PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Desmontaje programático de documentos PDF](#programmatically-disassembling-pdf-documents)
 
@@ -174,7 +178,7 @@ Desmonte un documento de PDF utilizando la API de servicio del ensamblador (Java
 
 [Configuración de las propiedades de conexión](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Desmontaje de un documento de PDF mediante la API de servicio web {#disassemble-a-pdf-document-using-the-web-service-api}
+## Desagrupar de un documento PDF mediante la API de servicio web {#disassemble-a-pdf-document-using-the-web-service-api}
 
 Desmonte un documento del PDF utilizando la API del servicio Assembler (servicio Web):
 
@@ -243,7 +247,7 @@ Desmonte un documento del PDF utilizando la API del servicio Assembler (servicio
    * Iterar a través de la variable `Map` para obtener cada documento resultante. A continuación, cree el `value` a `BLOB`.
    * Extraiga los datos binarios que representan el documento del PDF accediendo a su `BLOB` del objeto `MTOM` propiedad. Esto devuelve una matriz de bytes que puede escribir en un archivo PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Desmontaje programático de documentos PDF](#programmatically-disassembling-pdf-documents)
 

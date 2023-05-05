@@ -1,7 +1,7 @@
 ---
 title: API para invocar el servicio del modelo de datos de formulario desde formularios adaptables
 seo-title: API to invoke form data model service from adaptive forms
-description: Explica la API de invokeWebServices que puede utilizar para invocar servicios web escritos en WSDL desde un campo de formulario adaptable.
+description: Explica la API de invokeWebServices que puede utilizar para invocar servicios web escritos en WSDL desde un campo de un formulario adaptable.
 seo-description: Explains the invokeWebServices API that you can use to invoke web services written in WSDL from within an adaptive form field.
 uuid: 40561086-e69d-4e6a-9543-1eb2f54cd836
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -9,24 +9,28 @@ topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 feature: Adaptive Forms
 exl-id: 0653b0e4-a697-472a-8093-5ed48ede3c75
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 48%
+source-wordcount: '387'
+ht-degree: 70%
 
 ---
 
 # API para invocar el servicio del modelo de datos de formulario desde formularios adaptables {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
 ## Información general {#overview}
 
-AEM Forms permite a los autores de formularios simplificar y mejorar aún más la experiencia de cumplimentación de formularios invocando los servicios configurados en un modelo de datos de formulario desde un campo de formulario adaptable. Para invocar un servicio del modelo de datos, puede crear una regla en el Editor visual o especificar un JavaScript utilizando la API `guidelib.dataIntegrationUtils.executeOperation` en el Editor de código del [Editor de reglas](/help/forms/using/rule-editor.md).
+AEM Forms permite a los autores de formularios simplificar y mejorar aún más la experiencia de rellenado de formularios invocando los servicios configurados en un modelo de datos de formulario desde un campo de un formulario adaptable. Para invocar un servicio del modelo de datos, puede crear una regla en el Editor visual o especificar un JavaScript utilizando la API `guidelib.dataIntegrationUtils.executeOperation` en el Editor de código del [Editor de reglas](/help/forms/using/rule-editor.md).
 
 Este documento explica cómo escribir un JavaScript usando la API `guidelib.dataIntegrationUtils.executeOperation` para invocar un servicio.
 
 ## Uso de la API {#using-the-api}
 
-La variable `guidelib.dataIntegrationUtils.executeOperation` API invoca un servicio desde un campo de formulario adaptable. La sintaxis de la API es la siguiente:
+La API `guidelib.dataIntegrationUtils.executeOperation` invoca un servicio desde un campo de formulario adaptable. La sintaxis de la API es la siguiente:
 
 ```
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs)
@@ -36,7 +40,7 @@ La API requiere los siguientes parámetros.
 
 | Parámetro | Descripción |
 |---|---|
-| `operationInfo` | Estructura para especificar el identificador del modelo de datos de formulario, el título de la operación y el nombre de la operación |
+| `operationInfo` | La estructura para especificar el identificador del modelo de datos de formulario, el título y el nombre de la operación. |
 | `inputs` | Estructura para especificar objetos de formulario cuyos valores se introducen en la operación de servicio |
 | `outputs` | Estructura para especificar los objetos de formulario que se rellenarán con los valores devueltos por la operación de servicio |
 

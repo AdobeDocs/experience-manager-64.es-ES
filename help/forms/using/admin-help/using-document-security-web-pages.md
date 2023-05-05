@@ -1,5 +1,5 @@
 ---
-title: Uso de las páginas web de seguridad del documento
+title: Usar las páginas web de seguridad de los documentos
 seo-title: Using the document security webpages
 description: Descubra cómo puede iniciar sesión, navegar y utilizar las páginas web de seguridad del documento.
 seo-description: Learn how you can login, navigate and use the document security web pages.
@@ -11,14 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 feature: Document Security
 exl-id: f93d496e-6bd3-462a-b57a-80085647a636
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 0%
+source-wordcount: '971'
+ht-degree: 1%
 
 ---
 
-# Uso de las páginas web de seguridad del documento {#using-the-document-security-webpages}
+# Usar las páginas web de seguridad de los documentos {#using-the-document-security-webpages}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Los usuarios y administradores utilizan las páginas web de seguridad de documentos para crear y administrar políticas, administrar documentos protegidos por políticas y supervisar eventos asociados con documentos protegidos por políticas. Los administradores también utilizan las páginas web para crear conjuntos de directivas y designar coordinadores de conjuntos de directivas, configurar la configuración predeterminada de seguridad de documentos, administrar el registro y las cuentas de usuarios invitados y supervisar y administrar eventos relacionados con servidores, políticas, usuarios y documentos.
 

@@ -4,14 +4,18 @@ seo-title: Developing AEM Components
 description: AEM componentes se utilizan para guardar, dar formato y procesar el contenido disponible en las páginas web.
 seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
 exl-id: d3c1559a-1a7a-46ed-a935-9ad226cdea33
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3475'
-ht-degree: 2%
+source-wordcount: '3511'
+ht-degree: 3%
 
 ---
 
 # Desarrollo de componentes AEM{#developing-aem-components}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 AEM componentes se utilizan para guardar, dar formato y procesar el contenido disponible en las páginas web.
 
@@ -135,7 +139,7 @@ Para obtener más información, consulte:
 
    * Proporciona una interfaz de usuario uniforme en todas las soluciones de la nube
    * [Conceptos de la IU AEM táctil: IU de Coral](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Guía de Coral UI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+   * [Guía de Coral UI](https://helpx.adobe.com/es/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
 * Interfaz de usuario de Granite
 
@@ -263,7 +267,7 @@ Para insertar lógica en el campo, debe:
 1. Marque el campo con una clase CSS determinada (la variable *gancho*).
 1. Defina, en la biblioteca de cliente, un oyente JS conectado a ese nombre de clase CSS (esto garantiza que la lógica personalizada tenga ámbitos únicamente en el campo y no afecte a otros campos del mismo tipo).
 
-Para conseguirlo, debe conocer la biblioteca de widgets subyacente con la que desea interactuar. Consulte la [Documentación de Coral UI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) para identificar a qué evento desea reaccionar. Esto es muy similar al proceso que tenía que realizar con ExtJS en el pasado: busque la página de documentación de un widget determinado y, a continuación, compruebe los detalles de su API de evento.
+Para conseguirlo, debe conocer la biblioteca de widgets subyacente con la que desea interactuar. Consulte la [Documentación de Coral UI](https://helpx.adobe.com/es/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) para identificar a qué evento desea reaccionar. Esto es muy similar al proceso que tenía que realizar con ExtJS en el pasado: busque la página de documentación de un widget determinado y, a continuación, compruebe los detalles de su API de evento.
 
 Para ver un ejemplo, consulte:
 

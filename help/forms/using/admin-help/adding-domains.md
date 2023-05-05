@@ -1,5 +1,5 @@
 ---
-title: Adición de dominios
+title: Agregar dominios
 seo-title: Adding domains
 description: Obtenga información sobre cómo agregar un dominio empresarial, local o híbrido mediante la configuración de Administración de dominios y consideraciones generales para nombres de dominio e ID.
 seo-description: Learn how to add an enterprise, local, or hybrid domain using Domain Management settings and general considerations for domain names and IDs.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d4004ffe-c981-487d-b803-dc4492ae5998
 exl-id: f2bafa0c-072c-4599-92bc-4eaafece5b4f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 0%
+source-wordcount: '958'
+ht-degree: 1%
 
 ---
 
-# Adición de dominios {#adding-domains}
+# Agregar dominios {#adding-domains}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Añadir un dominio de empresa {#add-an-enterprise-domain}
 

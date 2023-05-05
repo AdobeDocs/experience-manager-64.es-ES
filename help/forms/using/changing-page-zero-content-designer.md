@@ -9,14 +9,18 @@ topic-tags: develop
 discoiquuid: f458054e-885c-4c7a-afcd-ad1e4465e0c1
 feature: Adaptive Forms
 exl-id: 0ae34ddd-9a8d-48df-af2d-80c3fe6abd62
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '243'
-ht-degree: 74%
+source-wordcount: '279'
+ht-degree: 67%
 
 ---
 
 # Cambiar el contenido de la página cero en Designer {#changing-page-zero-content-in-designer}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El contenido Página cero se muestra de forma predeterminada cuando un visor que no es de Adobe PDF, como el visor predeterminado del PDF en Chrome o Firefox, no puede leer el contenido del formulario PDF/XFA. A continuación, se muestra el mensaje predeterminado de la página cero.
 

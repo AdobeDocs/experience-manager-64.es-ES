@@ -1,5 +1,5 @@
 ---
-title: Estrategia para backup y restore en un entorno en cluster
+title: Estrategia de copia de seguridad y restauración en un entorno en clúster
 seo-title: Strategy for backup and restore in a clustered environment
 description: Si la implementación de AEM forms almacena datos personalizados adicionales en una base de datos diferente, debe implementar una estrategia para realizar una copia de seguridad de estos datos, asegurándose de que se mantengan sincronizados con los datos de AEM forms.
 seo-description: If your AEM forms implementation stores additional custom data in a different database, you must implement a strategy to back up this data ensuring that it remains in sync with the AEM forms data.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c332985b-4556-4056-961a-fce2356da88d
 exl-id: 432221c9-4b78-4d0d-bf22-b56810bf4256
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1476'
-ht-degree: 0%
+source-wordcount: '1512'
+ht-degree: 1%
 
 ---
 
-# Estrategia para backup y restore en un entorno en cluster {#strategy-for-backup-and-restore-in-a-clustered-environment}
+# Estrategia de copia de seguridad y restauración en un entorno en clúster {#strategy-for-backup-and-restore-in-a-clustered-environment}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >

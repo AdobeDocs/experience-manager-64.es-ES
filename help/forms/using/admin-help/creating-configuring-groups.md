@@ -1,5 +1,5 @@
 ---
-title: Creación y configuración de grupos
+title: Crear y configurar grupos
 seo-title: Creating and configuring groups
 description: Obtenga información sobre cómo crear grupos de forma manual o dinámica, editar un grupo, ver detalles de un grupo o eliminarlo.
 seo-description: Learn how to create groups manually or dynamically, edit a group, view details about a group, or delete a group.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2058b501-65ce-4ad3-8e1b-b2eab896f70f
 exl-id: 21f5cca3-46e2-4aa2-9703-ac51e8eecd40
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1571'
-ht-degree: 0%
+source-wordcount: '1607'
+ht-degree: 1%
 
 ---
 
-# Creación y configuración de grupos{#creating-and-configuring-groups}
+# Crear y configurar grupos{#creating-and-configuring-groups}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 La creación de grupos de usuarios permite asignar funciones al grupo en lugar de a usuarios individuales.
 

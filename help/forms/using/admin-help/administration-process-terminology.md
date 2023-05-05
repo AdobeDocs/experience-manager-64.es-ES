@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f9b40e1f-956d-498b-92e4-4fe21e23fc4a
 exl-id: 86f8d51c-a479-4940-b3c2-4b54a67f7450
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 0%
+source-wordcount: '216'
+ht-degree: 11%
 
 ---
 
 # Acerca de la administración y la terminología de los procesos {#about-administration-and-process-terminology}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Para administrar el flujo de trabajo de los formularios de forma eficaz, debe comprender los siguientes términos y la jerarquía de los elementos:
 

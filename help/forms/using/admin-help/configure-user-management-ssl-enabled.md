@@ -1,5 +1,5 @@
 ---
-title: Configuración de la administración de usuarios para un servidor LDAP habilitado para SSL
+title: Configurar la administración de usuarios para un servidor LDAP habilitado para SSL
 seo-title: Configure User Management for an SSL-enabled LDAP server
 description: Aprenda a configurar la Administración de usuarios para un servidor LDAP habilitado para SSL para permitir que la sincronización funcione correctamente en LDAPS.
 seo-description: Learn how  to configure User Management for an SSL-enabled LDAP server to enable synchronization to work properly over LDAPS.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e6e7e2fa-579d-4b36-8598-6ced469a94b1
 exl-id: 9ed22c75-bce7-4d26-a4cd-a58e41e5068e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 0%
+source-wordcount: '314'
+ht-degree: 7%
 
 ---
 
-# Configuración de la administración de usuarios para un servidor LDAP habilitado para SSL {#configure-user-management-for-an-ssl-enabled-ldap-server}
+# Configurar la administración de usuarios para un servidor LDAP habilitado para SSL {#configure-user-management-for-an-ssl-enabled-ldap-server}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Para que la sincronización funcione correctamente en LDAPS, los certificados LDAP emitidos por la autoridad de certificación (CA) deben estar presentes en el entorno de ejecución Java (JRE) del servidor de aplicaciones. Importe el certificado en el archivo JRE cacerts del servidor de aplicaciones, que suele estar en la *[JAVA_HOME]* directorio /jre/lib/security/cacerts.
 

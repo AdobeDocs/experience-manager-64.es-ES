@@ -11,14 +11,18 @@ topic-tags: development-tools, coding
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 role: Developer
 exl-id: 92351e2d-1928-4bc4-aaff-d557ee09d1ee
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 0%
+source-wordcount: '967'
+ht-degree: 3%
 
 ---
 
 # Contenedor de servicio {#service-container}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Los servicios de AEM Forms ubicados en el contenedor de servicios (incluidos servicios estándar como el servicio de cifrado, procesos de larga duración y de corta duración) se pueden invocar mediante varios proveedores, como un proveedor de EJB. Un proveedor de EJB permite que los servicios de AEM Forms se invoquen a través de RMI/IIOP. Un proveedor de servicios web expone los servicios como servicios web (generación WSDL) utilizando estándares como SOAP/HTTP y SOAP/JMS.
 
@@ -82,16 +86,16 @@ El contenedor de servicio proporciona la siguiente funcionalidad:
    1. El servicio realiza la operación especificada en la solicitud de invocación.
    1. El contenedor de servicio devuelve una respuesta de invocación a la aplicación cliente.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Explicación de los procesos de AEM Forms](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)
+[Explicar los procesos de AEM Forms](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)
 
 [Invocación de AEM Forms mediante AEM Forms Remoting (obsoleto para formularios AEM)](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)
 
 [Invocación de AEM Forms mediante la API de Java](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
-[Invocación de AEM Forms mediante servicios web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)
+[Invocar AEM Forms mediante servicios web](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)
 
 [Invocación de procesos de larga vida centrados en el ser humano](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)
 
-[Invocación de AEM Forms mediante solicitudes REST](/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests)
+[Invocar AEM Forms mediante solicitudes REST](/help/forms/developing/invoking-aem-forms-using-rest.md#invoking-aem-forms-using-rest-requests)

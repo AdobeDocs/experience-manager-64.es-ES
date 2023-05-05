@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8e1b2f7c-2609-474b-a1b2-fa820df74ae3
 exl-id: 642f5ee3-c991-4238-9b82-f0e19a6d8e2d
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1213'
-ht-degree: 0%
+source-wordcount: '1249'
+ht-degree: 1%
 
 ---
 
 # Ver estadísticas relacionadas con Work Manager {#view-statistics-related-to-work-manager}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 La ficha Administrador de trabajo muestra las estadísticas relacionadas con los elementos del Administrador de trabajo. Estos elementos de trabajo se encuentran en distintos estados según su ubicación en el proceso. (Consulte [Estado (solo para las categorías Predeterminado, Flujo de trabajo o Eventos)](view-statistics-related-manager.md#status-for-default-workflow-or-events-categories-only).) Puede filtrar la información para ver solo un subconjunto de los elementos utilizando las distintas opciones disponibles (por ejemplo, Estado o Categoría). Puede ordenar los elementos de trabajo o trabajo resultantes (en orden ascendente o descendente) haciendo clic en uno de los encabezados de columna. Además, puede administrar los elementos de trabajo utilizando las herramientas de operación que se muestran encima de la lista de elementos de trabajo.
 

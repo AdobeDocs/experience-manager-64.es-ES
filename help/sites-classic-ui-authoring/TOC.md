@@ -8,10 +8,11 @@ breadcrumb-title: Guía de creación con la interfaz de usuario clásica
 user-guide-description: Esta guía explica los conceptos de creación en AEM en la interfaz de usuario clásica.
 feature: Authoring
 role: User
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+hide: true
+source-git-commit: b61797a9096c0473658d6aabfb584a53e42095b7
 workflow-type: tm+mt
 source-wordcount: '265'
-ht-degree: 80%
+ht-degree: 35%
 
 ---
 
@@ -21,17 +22,17 @@ ht-degree: 80%
 + [Descripción general de la guía de creación de IU clásica](home.md)
 + Introducción a la creación de IU clásica {#introduction}
    + [Primeros pasos de creación](classic-page-author-first-steps.md)
-   + [Crear en la IU clásica](classicui.md)
+   + [Creación en la IU clásica](classicui.md)
    + [Uso del entorno de creación](author-env.md)
    + [Gestión básica](author-env-basic-handling.md)
    + [Configuración del entorno de cuenta](author-env-user-props.md)
-   + [Seleccionar la IU](author-env-select-ui.md)
+   + [Selección de la IU](author-env-select-ui.md)
    + [Búsqueda](author-env-search.md)
    + [Su bandeja de entrada](author-env-inbox.md)
    + [Métodos abreviados de teclado para consolas](author-env-keyboard-shortcuts.md)
 + Creación {#authoring}
    + [Creación de páginas](classic-page-author.md)
-   + [Creación: Entorno y herramientas](classic-page-author-env-tools.md)
+   + [Creación: entorno y herramientas](classic-page-author-env-tools.md)
    + [Crear y organizar páginas](classic-page-author-manage-pages.md)
    + [Edición del contenido de una página](classic-page-author-edit-content.md)
    + [Editor de texto enriquecido](classic-page-author-rich-text-editor.md)
@@ -48,8 +49,8 @@ ht-degree: 80%
    + [Diseño adaptable](classic-page-author-responsive-layout.md)
    + [Uso de versiones de página  ](classic-page-author-work-with-versions.md)
    + [Uso de etiquetas](classic-feature-tags.md)
-   + [Scaffolding](classic-feature-scaffolding.md)
-   + [Configurar componentes en modo Diseño](classic-page-author-design-mode.md)
+   + [Andamiaje](classic-feature-scaffolding.md)
+   + [Configuración de componentes en modo de diseño](classic-page-author-design-mode.md)
    + [Componentes](classic-page-author-default-components.md)
 + Flujos de trabajo {#workflows}
    + [Participación en flujos de trabajo](classic-workflows-participating.md)
@@ -62,25 +63,25 @@ ht-degree: 80%
    + [Promoción de lanzamientos](classic-launches-promoting.md)
 + Personalización {#personalization}
    + [Información acerca de la segmentación](classic-personalization-campaigns-segmentation.md)
-   + [Administración de campañas](classic-personalization-campaigns.md)
+   + [Campaign Management](classic-personalization-campaigns.md)
    + [Teasers y estrategias](classic-personalization-campaigns-teasers-strategy.md)
    + [Páginas de destino](classic-personalization-campaigns-landingpage.md)
    + [Ofertas de Target](classic-personalization-campaigns-target-offers.md)
-   + [Trabajo con Marketing Campaign Manager](classic-personalization-campaigns-mktg-manager.md)
+   + [Uso del administrador de campañas de marketing](classic-personalization-campaigns-mktg-manager.md)
    + [Marketing por correo electrónico](classic-personalization-campaigns-email.md)
    + [Seguimiento de correos electrónicos devueltos](classic-personalization-campaigns-email-tracking-bounces.md)
    + [Configuración de la campaña](classic-personalization-campaigns-setting-up-your.md)
-   + [Publicar un mensaje de correo electrónico para los proveedores de servicios de correo electrónico](classic-personalization-campaigns-email-newsletters.md)
-   + [Crear una página de aterrizaje del boletín eficaz](classic-personalization-campaigns-email-landingpage.md)
+   + [Publicación de un correo electrónico para los proveedores de servicios de correo electrónico](classic-personalization-campaigns-email-newsletters.md)
+   + [Creación de una página de aterrizaje del boletín eficaz](classic-personalization-campaigns-email-landingpage.md)
    + [Administración de suscripciones](classic-personalization-campaigns-email-subscriptions.md)
 + Adobe Campaign {#campaign}
-   + [Trabajo con Adobe Campaign 6.1 y Adobe Campaign Standard](classic-personalization-ac-campaign.md)
-   + [Trabajo con Adobe Campaign](classic-personalization-ac.md)
+   + [Uso de Adobe Campaign 6.1 y Adobe Campaign Standard](classic-personalization-ac-campaign.md)
+   + [Uso de Adobe Campaign](classic-personalization-ac.md)
    + [Componentes de Adobe Campaign](classic-personalization-ac-components.md)
-   + [Targeting de Adobe Campaign](classic-personalization-ac-target.md)
+   + [Segmentación de Adobe Campaign](classic-personalization-ac-target.md)
 + Creación de recursos en la IU clásica {#assets}
    + [Uso de recursos](classicui-assets.md)
-   + [Envío de recursos de Dynamic Media](dynamic-media-assets-delivering.md)
+   + [Entrega de recursos de Dynamic Media](dynamic-media-assets-delivering.md)
    + [Adición de recursos de Dynamic Media a las páginas](dynamic-media-assets-adding-to-page.md)
    + [Adición de funciones de Dynamic Media Classic (Scene7) a la página](manage-assets-classic-s7.md)
    + [Trabajo con Dynamic Media](dynamic-media-assets.md)

@@ -1,43 +1,46 @@
 ---
 title: Administración de instancias de flujo de trabajo
-seo-title: Administración de instancias de flujo de trabajo
+seo-title: Administering Workflow Instances
 description: Obtenga información sobre cómo administrar instancias de flujo de trabajo.
-seo-description: Obtenga información sobre cómo administrar instancias de flujo de trabajo.
+seo-description: Lear how to administer Workflow Instances.
 uuid: 81e53ef5-fe62-4ed4-b2d4-132aa986d5aa
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 70d4117b-5e49-46e4-a0b8-f56cf985536e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '827'
-ht-degree: 0%
+source-wordcount: '854'
+ht-degree: 80%
 
 ---
 
-
 # Administración de instancias de flujo de trabajo{#administering-workflow-instances}
 
-La consola de flujo de trabajo proporciona varias herramientas para administrar instancias de flujo de trabajo a fin de asegurarse de que se ejecutan según lo esperado.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+La consola de flujo de trabajo proporciona varias herramientas para administrar instancias de flujo de trabajo a fin de garantizar que se ejecuten según lo esperado.
 
 >[!NOTE]
 >
->La [consola JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) proporciona operaciones de mantenimiento de flujo de trabajo adicionales.
+>La variable [Consola JMX](/help/sites-administering/jmx-console.md#workflow-maintenance) proporciona operaciones de mantenimiento de flujo de trabajo adicionales.
 
-Hay una serie de consolas disponibles para administrar sus flujos de trabajo. Utilice la [navegación global](/help/sites-authoring/basic-handling.md#global-navigation) para abrir el panel **Herramientas** y, a continuación, seleccione **Flujo de trabajo**:
+Hay una serie de consolas disponibles para administrar los flujos de trabajo. Utilice la variable [navegación global](/help/sites-authoring/basic-handling.md#global-navigation) para abrir el panel **Herramientas** y, a continuación, seleccione **Flujo de trabajo**:
 
 * **Modelos**: Administrar definiciones de flujo de trabajo
-* **Instancias**: Vista y administración de instancias de flujo de trabajo en ejecución
-* **Lanzadores**: Administrar cómo se deben iniciar los flujos de trabajo
-* **Archivo**: Historial de vistas de flujos de trabajo que se completaron correctamente
-* **Errores**: Historial de vistas de flujos de trabajo que se completaron con errores
+* **Instancias**: Ver y administrar la ejecución de instancias de flujo de trabajo
+* **Lanzadores**: Administrar el lanzamiento de los flujos de trabajo
+* **Archivo**: Ver el historial de los flujos de trabajo que finalizaron correctamente
+* **Errores**: Ver el historial de los flujos de trabajo que finalizaron con errores
 
-## Monitoreo del estado de las instancias de flujo de trabajo {#monitoring-the-status-of-workflow-instances}
+## Monitorización del estado de las instancias de flujo de trabajo {#monitoring-the-status-of-workflow-instances}
 
-1. Mediante Navegación, seleccione **Herramientas** y luego **Flujo de trabajo**.
-1. Seleccione **Instancias** para mostrar la lista de las instancias de flujo de trabajo que están en curso.
+1. Uso de la selección Navegación **Herramientas**, luego **Flujo de trabajo**.
+1. Seleccione **Instancias** para mostrar la lista de instancias de flujo de trabajo en progreso.
 
    ![wf-96](assets/wf-96.png)
 
@@ -47,74 +50,74 @@ Hay una serie de consolas disponibles para administrar sus flujos de trabajo. Ut
 
 ## Suspender, reanudar y finalizar una instancia de flujo de trabajo {#suspending-resuming-and-terminating-a-workflow-instance}
 
-1. Mediante Navegación, seleccione **Herramientas** y luego **Flujo de trabajo**.
-1. Seleccione **Instancias** para mostrar la lista de las instancias de flujo de trabajo que están en curso.
+1. Uso de la selección Navegación **Herramientas**, luego **Flujo de trabajo**.
+1. Seleccione **Instancias** para mostrar la lista de instancias de flujo de trabajo en progreso.
 
    ![wf-96-1](assets/wf-96-1.png)
 
-1. Seleccione un elemento específico y, a continuación, utilice **Terminar**, **Suspender** o **Reanudar**, según corresponda; se requiere confirmación y/o más detalles:
+1. Seleccione un elemento específico y, a continuación, utilice **Finalizar**, **Suspender** o **Reanudar**, según proceda; confirmación o más detalles:
 
    ![wf-97-1](assets/wf-97-1.png)
 
-## Visualización de Flujos de trabajo archivados {#viewing-archived-workflows}
+## Visualización de flujos de trabajo archivados {#viewing-archived-workflows}
 
-1. Mediante Navegación, seleccione **Herramientas** y luego **Flujo de trabajo**.
-1. Seleccione **Archivar** para mostrar la lista de instancias de flujo de trabajo que se completaron correctamente.
+1. Uso de la selección Navegación **Herramientas**, luego **Flujo de trabajo**.
+1. Seleccione **Archivo** para mostrar la lista de instancias de flujo de trabajo que se completaron correctamente.
 
    ![wf-98](assets/wf-98.png)
 
    >[!NOTE]
    >
-   >El estado de anulación se considera una finalización exitosa, ya que se produce como resultado de la acción del usuario; por ejemplo:
+   >El estado de anulación se considera una terminación satisfactoria, ya que ocurre como resultado de la acción del usuario; por ejemplo:
    >
-   >* uso de la acción **Terminar**
-   >* cuando se elimina (forzosamente) una página que está sujeta a un flujo de trabajo, se cierra el flujo de trabajo
+   >* uso de la acción **Finalizar**
+   >* cuando se elimina una página sujeta a un flujo de trabajo, este se cierra y el flujo de trabajo finaliza
 
 
 1. Seleccione un elemento específico y luego **Abrir historial** para ver más detalles:
 
    ![wf-99](assets/wf-99.png)
 
-## Corrección de errores de instancia de flujo de trabajo {#fixing-workflow-instance-failures}
+## Corrección de errores de instancias de flujo de trabajo {#fixing-workflow-instance-failures}
 
-Cuando un flujo de trabajo falla, AEM proporciona la consola **Errores** para permitirle investigar y tomar las medidas adecuadas una vez que se haya manejado la causa original:
+Cuando falla un flujo de trabajo, AEM proporciona la consola **Errores** para que pueda investigar y tomar las medidas adecuadas una vez que se haya manejado la causa original:
 
-* **Detalles**
-de errorAbre una ventana para mostrar la variable 
-**Mensaje** de error,  **** Pila de  **errores y Pila** de errores.
+* **Detalles del error**
+Abre una ventana para mostrar el 
+**Mensaje de error**, **Paso** y **Pila de errores**.
 
-* **Abrir**
-historialMuestra detalles del historial de flujo de trabajo.
+* **Abrir historial**
+Muestra detalles del historial del flujo de trabajo.
 
-* **Reintentar** PasoEjecuta de nuevo la instancia del componente Paso de secuencia de comandos. Utilice el comando Reintentar etapa después de haber corregido la causa del error original. Por ejemplo, vuelva a intentar el paso después de corregir un error en el script que ejecuta el paso de proceso.
-* **** FinalizarFinalice el flujo de trabajo si el error ha provocado una situación irreconsiderable para el flujo de trabajo. Por ejemplo, el flujo de trabajo puede basarse en condiciones ambientales como la información del repositorio que ya no son válidas para la instancia de flujo de trabajo.
-* **Terminar y** reintentarSimilar a  **** Terminar, excepto que una nueva instancia de flujo de trabajo se inicia usando la carga útil, el título y la descripción originales.
+* **Paso de reintento** Ejecuta de nuevo la instancia del componente Paso de script. Utilice el comando Paso de reintento después de haber corregido la causa del error original. Por ejemplo, vuelva a intentar el paso después de corregir un error en el script que ejecuta el Paso de proceso.
+* **Finalizar** Finalice el flujo de trabajo si el error ha provocado una situación irreconsiderable para el flujo de trabajo. Por ejemplo, el flujo de trabajo puede depender de condiciones ambientales como la información del repositorio que ya no son válidas para la instancia de flujo de trabajo.
+* **Finalizar y reintentar** Similar a **Finalizar**, excepto que se inicia una nueva instancia de flujo de trabajo utilizando la carga útil, el título y la descripción originales.
 
-Para investigar los errores y, a continuación, reanudar o finalizar el flujo de trabajo posteriormente, siga estos pasos:
+Para investigar los errores y luego reanudar o finalizar el flujo de trabajo más tarde, siga estos pasos:
 
-1. Mediante Navegación, seleccione **Herramientas** y luego **Flujo de trabajo**.
+1. Mediante la Navegación, seleccione **Herramientas** y, luego, **Flujo de trabajo**.
 1. Seleccione **Errores** para mostrar la lista de instancias de flujo de trabajo que no se completaron correctamente.
-1. Seleccione un elemento específico y, a continuación, la acción adecuada:
+1. Seleccione un elemento específico y luego la acción apropiada:
 
    ![wf-47](assets/wf-47.png)
 
 ## Depuración regular de instancias de flujo de trabajo {#regular-purging-of-workflow-instances}
 
-Al minimizar el número de instancias de flujo de trabajo, aumenta el rendimiento del motor de flujos de trabajo, de modo que puede depurar regularmente instancias de flujo de trabajo completadas o en ejecución desde el repositorio.
+Al minimizar el número de instancias de flujo de trabajo, aumenta el rendimiento del motor de flujo de trabajo, por lo que puede depurar con regularidad las instancias de flujo de trabajo completadas o en ejecución desde el repositorio.
 
-Configure **Configuración de purga de flujo de trabajo de granito de Adobe** para purgar instancias de flujo de trabajo según su edad y estado. También puede depurar instancias de flujo de trabajo de todos los modelos o de un modelo específico.
+Configure **Configuración de depuración del flujo de trabajo de Adobe Granite** para depurar instancias de flujo de trabajo según su antigüedad y estado. También puede depurar instancias de flujo de trabajo de todos los modelos o de uno específico.
 
-También puede crear varias configuraciones del servicio para depurar instancias de flujo de trabajo que cumplan diferentes criterios. Por ejemplo, cree una configuración que purgue las instancias de un modelo de flujo de trabajo concreto cuando se estén ejecutando durante mucho más tiempo del esperado. Cree otra configuración que purgue todos los flujos de trabajo completados después de un determinado número de días para minimizar el tamaño del repositorio.
+También puede crear varias configuraciones del servicio para depurar instancias de flujo de trabajo que cumplan distintos criterios. Por ejemplo, cree una configuración que depure las instancias de un modelo de flujo de trabajo concreto cuando se ejecuten durante mucho más tiempo del esperado. Cree otra configuración que depure todos los flujos de trabajo completados después de un determinado número de días para minimizar el tamaño del repositorio.
 
-Para configurar el servicio, puede utilizar la [Consola Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [agregar una configuración OSGi al repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). En la tabla siguiente se describen las propiedades necesarias para cada método.
+Para configurar el servicio, puede utilizar la variable [Consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [añadir una configuración OSGi al repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). En la tabla siguiente se describen las propiedades que necesita para cualquiera de los métodos.
 
 >[!NOTE]
 >
->Para agregar la configuración al repositorio, el PID de servicio es:
+>Para añadir la configuración al repositorio, el PID de servicio es este:
 >
 >`com.adobe.granite.workflow.purge.Scheduler`
 >
->Dado que el servicio es un servicio de fábrica, el nombre del nodo `sling:OsgiConfig` requiere un sufijo de identificador, por ejemplo:
+>Como el servicio es un servicio de fábrica, el nombre del nodo `sling:OsgiConfig` requiere un sufijo de identificador, por ejemplo:
 >
 >`com.adobe.granite.workflow.purge.Scheduler-myidentifier`
 
@@ -133,20 +136,20 @@ Para configurar el servicio, puede utilizar la [Consola Web](/help/sites-deployi
   <tr> 
    <td>Estado de flujo de trabajo</td> 
    <td>scheduledpurge.workflowStatus</td> 
-   <td><p>Estado de las instancias de flujo de trabajo que se van a purgar. Los siguientes valores son válidos:</p> 
+   <td><p>El estado de las instancias de flujo de trabajo que se van a purgar. Los siguientes valores son válidos:</p> 
     <ul> 
-     <li>COMPLETADO: Las instancias de flujo de trabajo completadas se purgan.</li> 
-     <li>EJECUTANDO: Se purgan las instancias de flujo de trabajo en ejecución.</li> 
+     <li>COMPLETADO: las instancias de flujo de trabajo completadas se depuran.</li> 
+     <li>EN EJECUCIÓN: las instancias de flujo de trabajo en ejecución se depuran.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Modelos que purgar</td> 
+   <td>Modelos para purgar</td> 
    <td>scheduledpurge.modelIds</td> 
-   <td><p>ID de los modelos de flujo de trabajo que se van a purgar. El ID es la ruta al nodo del modelo, por ejemplo:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> No especifique ningún valor para depurar instancias de todos los modelos de flujo de trabajo.</p> <p>Para especificar varios modelos, haga clic en el botón + en la consola web. </p> </td> 
+   <td><p>El ID de los modelos de flujo de trabajo que se van a depurar. El ID es la ruta al nodo del modelo, por ejemplo:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> No especifique ningún valor para depurar instancias de todos los modelos de flujo de trabajo.</p> <p>Para especificar varios modelos, haga clic en el botón + de la consola web. </p> </td> 
   </tr> 
   <tr> 
    <td>Edad del flujo de trabajo</td> 
-   <td>scheduledpurge.daysold</td> 
+   <td>scheduledpurge.daysell</td> 
    <td>La antigüedad de las instancias de flujo de trabajo que se van a purgar, en días.</td> 
   </tr> 
  </tbody> 
@@ -154,15 +157,14 @@ Para configurar el servicio, puede utilizar la [Consola Web](/help/sites-deployi
 
 ## Configuración del tamaño máximo de la bandeja de entrada {#setting-the-maximum-size-of-the-inbox}
 
-Puede configurar el tamaño máximo de la bandeja de entrada configurando el **Servicio de flujo de trabajo de granito de Adobe**, utilizando la [Consola Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [agregando una configuración OSGi al repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). En la tabla siguiente se describe la propiedad que se configura para cualquier método.
+Puede configurar el tamaño máximo de la bandeja de entrada configurando la variable **Servicio de flujo de trabajo de Adobe Granite**, usando la variable [Consola web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) o [añadir una configuración OSGi al repositorio](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). En la tabla siguiente se describe la propiedad que se configura para cualquiera de los métodos.
 
 >[!NOTE]
 >
->Para agregar la configuración al repositorio, el PID de servicio es:
+>Para añadir la configuración al repositorio, el PID de servicio es este:
 >
 >`com.adobe.granite.workflow.core.WorkflowSessionFactory`.
 
 | Nombre de propiedad (consola web) | Nombre de propiedad OSGi |
 |---|---|
-| Tamaño máximo de Consulta de la bandeja de entrada | granite.workflow.inboxQuerySize |
-
+| Tamaño máximo de consulta de la bandeja de entrada | granite.workflow.inboxQuerySize |

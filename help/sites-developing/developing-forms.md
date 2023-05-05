@@ -10,14 +10,18 @@ topic-tags: components
 content-type: reference
 discoiquuid: 0ef6a3b1-e7ce-4268-a5be-a565646ecc29
 exl-id: 6d52babc-9477-4528-9c25-35cb729f5d78
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1941'
-ht-degree: 18%
+source-wordcount: '1977'
+ht-degree: 1%
 
 ---
 
 # Desarrollo de Forms (IU clásica){#developing-forms-classic-ui}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 La estructura básica de un formulario es:
 
@@ -47,7 +51,7 @@ El componente de inicio de formulario proporciona un campo para la variable **Ru
 
 La Ruta de carga es la ruta a las propiedades del nodo que se utiliza para cargar valores predefinidos en varios campos del formulario.
 
-Se trata de un campo opcional que especifica la ruta a un nodo en el repositorio. Cuando este nodo cuenta con propiedades que coinciden con los nombres de campo, los campos apropiados del formulario se cargan previamente con el valor de estas propiedades. Si no existe coincidencia, el campo contiene el valor predeterminado.
+Se trata de un campo opcional que especifica la ruta a un nodo en el repositorio. Cuando este nodo tiene propiedades que coinciden con los nombres de campo, los campos correspondientes del formulario se cargan previamente con el valor de esas propiedades. Si no existe coincidencia, el campo contiene el valor predeterminado.
 
 >[!NOTE]
 >
@@ -73,7 +77,7 @@ La variable **Ruta de carga de elementos** se puede utilizar para acceder a una 
 
 1. Añadir una nueva propiedad (por ejemplo, `myList`) de tipo cadena de varios valores ( `String[]`) para que contenga la lista de elementos desplegables. El contenido también se puede importar mediante un script, como con un script JSP o cURL en un script shell.
 
-1. Utilice la ruta completa en el campo **Ruta de carga de elementos**:
+1. Utilice la ruta completa en la variable **Ruta de carga de elementos** campo:
 
    por ejemplo, `/etc/designs/geometrixx/formlistvalues/myList`
 
@@ -106,7 +110,7 @@ Esta sección explica cómo desarrollar su propia acción de formulario para inc
 
 Puede añadir su propia acción en `/apps` de la siguiente manera:
 
-1. Crear un nodo de tipo `sling:Folder`. Especifique un nombre que refleje la acción que se va a implementar.
+1. Cree un nodo de tipo `sling:Folder`. Especifique un nombre que refleje la acción que se va a implementar.
 
    Por ejemplo:
 
@@ -116,7 +120,7 @@ Puede añadir su propia acción en `/apps` de la siguiente manera:
 
    * `sling:resourceType` - se configura como `foundation/components/form/action`
    * `componentGroup` - definir como `.hidden`
-   * De forma opcional:
+   * Opcionalmente:
 
       * `jcr:title` - especifique un título de su elección; esto se mostrará en la lista de selección desplegable. Si no se configura, se muestra el nombre del nodo
       * `jcr:description` - introduzca una descripción de su elección
@@ -207,7 +211,7 @@ Las restricciones pueden imponerse en dos niveles:
 
 Puede añadir sus propias restricciones para un campo individual (en `/apps`) como se indica a continuación:
 
-1. Crear un nodo de tipo `sling:Folder`. Especifique un nombre que refleje la restricción que se va a implementar.
+1. Cree un nodo de tipo `sling:Folder`. Especifique un nombre que refleje la restricción que se va a implementar.
 
    Por ejemplo:
 
@@ -217,7 +221,7 @@ Puede añadir sus propias restricciones para un campo individual (en `/apps`) co
 
    * `sling:resourceType` - se configura como `foundation/components/form/constraint`
    * `constraintMessage` : un mensaje personalizado que se muestra si el campo no es válido, según la restricción, cuando se envía el formulario
-   * De forma opcional:
+   * Opcionalmente:
 
       * `jcr:title` - especifique un título de su elección, que se mostrará en la lista de selección. Si no se configura, se muestra el nombre del nodo
       * `hint` : información adicional, para el usuario, sobre cómo utilizar el campo
@@ -257,28 +261,28 @@ A continuación, puede definir:
 
 Puede configurar el formulario para que muestre u oculte los componentes de formulario según el valor de otros campos del formulario.
 
-Cambiar la visibilidad de un campo de formulario resulta útil cuando el campo es necesario sólo en condiciones concretas. Por ejemplo, en un formulario de recopilación de información, se pregunta al usuario si desea que la información del producto se le envíe por correo electrónico. Al seleccionar Sí, aparece el campo de texto para que el cliente pueda escribir su dirección de correo electrónico.
+Cambiar la visibilidad de un campo de formulario resulta útil cuando el campo solo es necesario en condiciones específicas. Por ejemplo, en un formulario de comentarios, una pregunta pregunta pregunta a los clientes si desean que la información del producto se les envíe por correo electrónico. Al seleccionar sí, aparece un campo de texto que permite al cliente escribir su dirección de correo electrónico.
 
 Utilice la variable **Editar Mostrar/ocultar reglas** para especificar las condiciones en las que se muestra u oculta un componente de formulario.
 
 ![showhideeditor](assets/showhideeditor.png)
 
-Utilice los campos en la parte superior del cuadro de diálogo para especificar la siguiente información:
+Utilice los campos de la parte superior del cuadro de diálogo para especificar la siguiente información:
 
 * Si va a especificar condiciones para ocultar o mostrar el componente.
 * Si alguna o todas las condiciones deben ser verdaderas para mostrar u ocultar el componente.
 
-Aparecen una o varias condiciones bajo estos campos. Una condición compara el valor de otro componente del formulario (en el mismo formulario) con un valor. Si el valor real del campo se ajusta a la condición, la condición evalúa en verdadero. Las condiciones incluyen la siguiente información:
+Aparecen una o más condiciones debajo de estos campos. Una condición compara el valor de otro componente de formulario (en el mismo formulario) con un valor. Si el valor real del campo cumple la condición, la condición se evalúa como verdadera. Las condiciones incluyen la siguiente información:
 
-* Título del campo de formulario que se va a probar.
-* Operador.
-* Valor frente al que se comprar el valor del campo.
+* Título del campo de formulario que se prueba.
+* Un operador.
+* Se compara un valor con el valor del campo.
 
 Por ejemplo, un componente Grupo de opciones con el título `Receive email notifications?`* * * contiene `Yes` y `No` botones de opción. Un componente Campo de texto con el título de `Email Address` utiliza la siguiente condición para que sea visible si `Yes` está seleccionada:
 
 ![showhidecondition](assets/showhidecondition.png)
 
-En Javascript, las condiciones utilizan el valor de la propiedad Nombre del elemento para hacer referencia a campos. En el ejemplo anterior, la propiedad Nombre de elemento del componente Grupo de opciones es `contact`. El siguiente código es el código Javascript equivalente para ese ejemplo:
+En JavaScript, las condiciones utilizan el valor de la propiedad Nombre de elemento para hacer referencia a los campos. En el ejemplo anterior, la propiedad Nombre de elemento del componente Grupo de opciones es `contact`. El siguiente código es el código Javascript equivalente para ese ejemplo:
 
 `((contact == "Yes"))`
 
@@ -318,9 +322,9 @@ En Javascript, las condiciones utilizan el valor de la propiedad Nombre del elem
 
 #### Gestión de referencias de componentes rotas {#handling-broken-component-references}
 
-Las condiciones de la función de mostrar y ocultar utilizan el valor de la propiedad Nombre de elemento para hacer referencia a otros componentes del formulario. La configuración Mostrar/Ocultar no es válida cuando cualquiera de las condiciones hace referencia a un componente que se elimina o cuya propiedad Nombre de elemento ha cambiado. Cuando se produce esta situación, se deben actualizar manualmente las condiciones o se producirá un error cuando se cargue el formulario.
+Las condiciones de visualización u ocultación utilizan el valor de la propiedad Nombre de elemento para hacer referencia a otros componentes del formulario. La configuración Mostrar/Ocultar no es válida cuando cualquiera de las condiciones hace referencia a un componente que se elimina o cuya propiedad Nombre de elemento ha cambiado. Cuando se produce esta situación, es necesario actualizar manualmente las condiciones o se produce un error cuando se carga el formulario.
 
-Cuando la configuración de Mostrar/Ocultar no es válida, la configuración se proporciona solamente como código JavaScript. Edite el código para corregir los problemas. El código utilizará la propiedad Nombre de elemento utilizada originalmente para hacer referencia a los componentes.
+Cuando la configuración de Mostrar/Ocultar no es válida, la configuración se proporciona solamente como código JavaScript. Edite el código para corregir los problemas. El código utiliza la propiedad Nombre de elemento que se utilizó originalmente para hacer referencia a los componentes.
 
 ### Desarrollo de secuencias de comandos para su uso con Forms {#developing-scripts-for-use-with-forms}
 
@@ -331,4 +335,4 @@ Puede utilizarlo para acciones como llamar a un servicio antes de que se envíe 
 * Definición del tipo de recurso de validación
 * Incluya una secuencia de comandos para la validación:
 
-   * En JSP, llame al servicio web y cree un objeto `com.day.cq.wcm.foundation.forms.ValidationInfo` que contenga sus mensajes de error. Si hay errores, los datos del formulario no se publicarán.
+   * En su JSP, llame al servicio web y cree un `com.day.cq.wcm.foundation.forms.ValidationInfo` que contiene los mensajes de error. Si hay errores, los datos del formulario no se publicarán.

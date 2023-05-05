@@ -1,5 +1,5 @@
 ---
-title: Configuración de la salida del formulario
+title: Configurar la salida del formulario
 seo-title: Configuring form output
 description: Obtenga información sobre cómo configurar la salida del formulario.
 seo-description: Learn how to configure form output.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
 exl-id: b19cae88-a549-41ba-b4a6-4b065a995296
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '228'
-ht-degree: 3%
+source-wordcount: '264'
+ht-degree: 10%
 
 ---
 
-# Configuración de la salida del formulario{#configuring-form-output}
+# Configurar la salida del formulario{#configuring-form-output}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Especifique el tipo de salida de HTML devuelta al explorador web {#specify-the-type-of-html-output-returned-to-the-web-browser}
 
@@ -44,7 +48,7 @@ ht-degree: 3%
 
 ## Configuración de la invocación de secuencias de comandos personalizadas antes del envío del formulario {#configuring-invocation-of-custom-scripts-before-form-submit}
 
-Siga estos pasos para habilitar la función:
+Siga los siguientes pasos para habilitar la función:
 
 1. Inicie sesión en la consola de administración.
 1. Vaya a **Servicios** > **formularios**.

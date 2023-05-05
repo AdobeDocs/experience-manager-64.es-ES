@@ -10,14 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 619de2e4-d7bd-4ca6-9763-1efa8b2dec05
 exl-id: ba604611-03cb-4f97-8ff6-1a559b52263b
-source-git-commit: bbc13d64a33d9033e04fb4f37d60bcfe223be337
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2848'
-ht-degree: 2%
+source-wordcount: '2884'
+ht-degree: 5%
 
 ---
 
 # Uso de bibliotecas del lado del cliente{#using-client-side-libraries}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Los sitios web modernos dependen en gran medida del procesamiento del lado del cliente impulsado por código CSS y JavaScript complejo. Organizar y optimizar el servicio de este código puede ser un problema complicado.
 
@@ -165,11 +169,11 @@ A continuación, configure la variable `allowProxy` propiedad en `foo` a true.
 
 1. Abra el CRXDE Lite en un explorador web ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Seleccione la carpeta en la que desea localizar la carpeta de la biblioteca del cliente y haga clic en **Crear > Crear nodo**.
-1. Escriba un nombre para el archivo de biblioteca y, en la lista Tipo, seleccione `cq:ClientLibraryFolder`. Haga clic en **OK** y haga clic en **Guardar todo**.
+1. Escriba un nombre para el archivo de biblioteca y, en la lista Tipo, seleccione `cq:ClientLibraryFolder`. Haga clic en **Aceptar** y luego en **Guardar todo**.
 1. Para especificar la categoría o categorías a las que pertenece la biblioteca, seleccione la opción `cq:ClientLibraryFolder` , agregue la siguiente propiedad y, a continuación, haga clic en **Guardar todo**:
 
    * Nombre: categories
-   * Tipo: Cadena
+   * Tipo: cadena
    * Valor: El nombre de la categoría
    * Varios: Select
 
@@ -205,7 +209,7 @@ Cuando el código de la carpeta de la biblioteca de cliente haga referencia a ot
 Las dependencias deben ser otras `cq:ClientLibraryFolder`. Para identificar dependencias, agregue una propiedad a su `cq:ClientLibraryFolder` con los siguientes atributos:
 
 * **Nombre:** dependencias
-* **Tipo:** Cadena`[]`
+* **Tipo:** cadena`[]`
 * **Valores:** El valor de la propiedad categories del nodo cq:ClientLibraryFolder del que depende la carpeta de biblioteca actual.
 
 Por ejemplo, / `etc/clientlibs/myclientlibs/publicmain` tiene una dependencia de `cq.jquery` biblioteca. El JSP que hace referencia a la biblioteca de cliente principal genera un HTML que incluye el siguiente código:
@@ -228,7 +232,7 @@ Se recomienda mantener todos los archivos relacionados con la aplicación en la 
 Utilice la propiedad categories para identificar la carpeta de biblioteca de cliente que desea incrustar. Para incrustar la biblioteca, agregue una propiedad a la incrustación `cq:ClientLibraryFolder` utilizando los siguientes atributos de propiedad:
 
 * **Nombre:** embed
-* **Tipo:** Cadena`[]`
+* **Tipo:** cadena`[]`
 * **Valor:** El valor de la propiedad categories de la `cq:ClientLibraryFolder` para incrustar.
 
 #### Usar la incrustación para minimizar las solicitudes {#using-embedding-to-minimize-requests}
@@ -302,7 +306,7 @@ Utilice la variable `channels` propiedad de una carpeta de biblioteca de cliente
 Para asociar una carpeta de biblioteca de cliente con un grupo de dispositivos, agregue una propiedad a su `cq:ClientLibraryFolder` con los siguientes atributos:
 
 * **Nombre:** canales
-* **Tipo:** Cadena`[]`
+* **Tipo:** cadena`[]`
 * **Valores:** Nombre del grupo móvil. Para excluir la carpeta de la biblioteca de un grupo, anteponga el nombre con un signo de exclamación (&quot;!&quot;).
 
 Por ejemplo, la tabla siguiente enumera el valor de la variable `channels` propiedad para cada carpeta de biblioteca cliente de `cq.widgets` categoría:

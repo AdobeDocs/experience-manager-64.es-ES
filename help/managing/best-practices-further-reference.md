@@ -10,14 +10,18 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: d561bb0a-352f-4be2-95ed-32dd1e2b4019
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3741'
+source-wordcount: '3777'
 ht-degree: 2%
 
 ---
 
 # Lista de comprobación: referencia adicional{#the-checklist-further-reference}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Esta página proporciona más detalles para detallar y/o ampliar los documentos y principios abarcados por la [Administración de proyectos: lista de comprobación de prácticas recomendadas](/help/managing/best-practices.md).
 
@@ -143,7 +147,7 @@ Estos indicadores pueden ser:
    * Se utiliza para medir objetivos clave del negocio.
    * Es importante elegir los KPI adecuados para su negocio o escenario con definiciones claras de cuáles son, cómo se medirán, cómo se utilizarán y quién los usará.
 
-* Actuación:
+* Rendimiento:
 
    * Defina cómo medir el rendimiento del sistema.
    * Algunos ejemplos son el tiempo de carga de la página, el tiempo de respuesta del servidor y el rendimiento de la consulta de la base de datos.
@@ -218,7 +222,7 @@ Dependiendo de su situación y de la importancia estratégica del sitio web, est
 * número de servidores
 * número de instancias de AEM (autor y publicación)
 
-### Actuación {#performance}
+### Rendimiento {#performance}
 
 Hay varios factores de rendimiento que se pueden evaluar:
 
@@ -581,7 +585,7 @@ Además, las secciones siguientes revisten especial interés:
 Adobe proporciona otras Prácticas recomendadas para todas las fases y audiencias:
 
 * [Implementación](/help/sites-deploying/best-practices.md)
-* [Creación  ](/help/sites-authoring/best-practices.md)
+* [Creación](/help/sites-authoring/best-practices.md)
 * [Administración](/help/sites-administering/administer-best-practices.md)
 * [Desarrollo de](/help/sites-developing/best-practices.md)
 * [Administración de proyectos](/help/managing/best-practices.md)

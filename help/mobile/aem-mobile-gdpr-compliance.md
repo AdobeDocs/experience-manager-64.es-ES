@@ -1,21 +1,24 @@
 ---
 title: 'AEM Mobile: preparación para el RGPD'
-seo-title: 'AEM Mobile: preparación para el RGPD'
-description: '"AEM Mobile: preparación para el RGPD"'
-seo-description: nulo
+seo-title: AEM Mobile - GDPR Readiness
+description: "AEM Mobile: preparación para el RGPD"
+seo-description: null
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
 discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 2b73e843-690b-4cf3-9b8f-936b70c84406
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '697'
-ht-degree: 1%
+source-wordcount: '728'
+ht-degree: 2%
 
 ---
 
-
 # AEM Mobile: preparación para el RGPD {#aem-mobile-gdpr-readiness}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 >[!IMPORTANT]
 >
@@ -48,12 +51,12 @@ Obligatorio:
 Proporcione al menos una de las siguientes características:
 
 * El cliente del usuario final proporcionó un ID de OAuth (el ID que se utiliza en el sistema de asignación directa de derechos del cliente): *dpsc-directEntitlementId*
-* Para los usuarios de aplicaciones de Windows, el ID de App Store del usuario final: *dpsc-windowsAppStoreId*
-* La dirección de correo electrónico que el usuario final utilizó para interactuar con la aplicación DPS: *correo electrónico*
+* Para los usuarios de aplicaciones de Windows, el App Store ID del usuario final: *dpsc-windowsAppStoreId*
+* La dirección de correo electrónico que el usuario final utilizó para interactuar con la aplicación DPS: *email*
 
 ### Preguntas más frecuentes {#frequently-asked-questions-faq}
 
-**¿Eliminará la Adobe mis compras de App Store al iniciar una solicitud de DELETE?**
+**¿Eliminará Adobe mis compras de App Store al iniciar una solicitud de DELETE?**
 
 El Adobe eliminará la información que tiene de las compras de la tienda de aplicaciones (suscripciones, etc.) pero las compras seguirán estando registradas en las tiendas de aplicaciones. Si el usuario final (la aplicación) ha iniciado sesión en la tienda de aplicaciones, esos recibos se recuperarán de nuevo y se enviarán a Adobe y, posteriormente, se considerarán nuevas compras y la aplicación los restaurará para volver a tener acceso.
 
@@ -303,4 +306,3 @@ email = “test@what.com”
 
 }
 ```
-

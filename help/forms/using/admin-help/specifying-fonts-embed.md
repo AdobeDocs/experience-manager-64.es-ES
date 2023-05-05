@@ -1,5 +1,5 @@
 ---
-title: Especificación de fuentes para incrustar
+title: Especificar fuentes para incrustar
 seo-title: Specifying fonts to embed
 description: Aprenda a especificar fuentes para incrustar.
 seo-description: Learn how to specify fonts to embed.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 4c83694c-b00f-40be-9ac4-f5785cd60741
 exl-id: 0bde7192-9d21-40b4-9164-314c9a30153b
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 0%
+source-wordcount: '286'
+ht-degree: 6%
 
 ---
 
-# Especificación de fuentes para incrustar {#specifying-fonts-to-embed}
+# Especificar fuentes para incrustar {#specifying-fonts-to-embed}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede especificar qué fuentes se incrustan siempre o nunca se incrustan en los formularios que genera el servicio de Forms. La incrustación de fuentes aumenta el tamaño de archivo de los formularios. Incruste fuentes inusuales que los usuarios rara vez tienen en sus sistemas. No incruste fuentes comunes que normalmente tienen instaladas.
 

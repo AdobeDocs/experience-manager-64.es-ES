@@ -1,5 +1,5 @@
 ---
-title: Inicio rápido de la API de Java del servicio de firma (SOAP)
+title: Inicio rápido (SOAP) de la API de Java del servicio de firma
 seo-title: Signature Service Java API QuickStart(SOAP)
 description: Utilice el servicio de firma para agregar un campo de firma a un documento de PDF, recuperar nombres de campo de firma, modificar un campo de firma, firmar digitalmente un documento de PDF, firmar digitalmente un formulario basado en XFA, certificar un documento de PDF, comprobar una firma digital, comprobar varias firmas digitales y quitar una firma digital.
 seo-description: Use the Signature service to add a signature field to a PDF document, retrieve signature field names, modify a signature field, digitally sign a PDF document, digitally sign an XFA-based form, certify a PDF document, verify a digital signature, verify multiple digital signatures, and remove a digital signature.
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 07fffbd5-5430-4abc-b532-0840ecc7b1b0
 role: Developer
 exl-id: 72726c83-e0e4-40ae-ad1d-8ac9589d9e8f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '833'
-ht-degree: 0%
+source-wordcount: '869'
+ht-degree: 1%
 
 ---
 
 # Inicio rápido de la API de Java del servicio de firma (SOAP) {#signature-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El inicio rápido de la API de Java (SOAP) está disponible para el servicio de firma:
 

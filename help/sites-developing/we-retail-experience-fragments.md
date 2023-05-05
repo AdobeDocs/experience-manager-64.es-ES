@@ -10,18 +10,22 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: fe44a941-a09b-4421-b766-1d433291f2cc
 exl-id: cdde702e-34b7-4f5d-93db-d9a4b1a94d09
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 40%
+source-wordcount: '271'
+ht-degree: 21%
 
 ---
 
 # Cómo probar fragmentos de experiencias en We.Retail{#trying-out-experience-fragments-in-we-retail}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
 Cómo probar fragmentos de experiencias en We.Retail
 
-Un [fragmento de experiencias](/help/sites-authoring/experience-fragments.md) es un grupo de uno o varios componentes que incluye contenido y diseño que se puede consultar dentro de las páginas. Estos pueden contener cualquier componente.
+Un [Fragmento de experiencia](/help/sites-authoring/experience-fragments.md) es un grupo de uno o más componentes que incluye contenido y diseño al que se puede hacer referencia dentro de las páginas. Pueden contener cualquier componente.
 
 Permiten a un autor reutilizar partes de una página (un fragmento de una experiencia) sin tener que copiar y pegar el contenido.
 
@@ -31,7 +35,7 @@ Esto admite el caso de uso del Sistema de administración de contenido (CMS) sin
 >
 >Los **[fragmentos de contenido](/help/sites-developing/we-retail-content-fragments.md)** y los **fragmentos de experiencias** son funciones distintas de AEM:
 >
->* Los **fragmentos de contenido** son contenido editorial, principalmente texto e imágenes relacionadas. Se trata de contenido puro, sin diseño ni maquetación.
+>* **Fragmentos de contenido** son contenido editorial, principalmente texto e imágenes relacionadas. Son contenido puro, sin diseño ni diseño.
 >* Los **fragmentos de experiencias** son contenidos plenamente diseñados; un fragmento de una página web. 
 >
 >Los fragmentos de experiencias pueden incluir contenido en forma de fragmentos, pero no lo contrario.

@@ -1,5 +1,5 @@
 ---
-title: Configuración de SSL para el servidor de aplicaciones JBoss
+title: Configurar SSL para el servidor de aplicaciones JBoss
 seo-title: Configuring SSL for JBoss Application Server
 description: Aprenda a configurar SSL para el servidor de aplicaciones JBoss.
 seo-description: Learn how to configure SSL for JBoss Application Server.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 exl-id: 1888b8c7-d077-4e54-b442-5df0ba557513
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 0%
+source-wordcount: '944'
+ht-degree: 2%
 
 ---
 
-# Configuración de SSL para el servidor de aplicaciones JBoss {#configuring-ssl-for-jboss-application-server}
+# Configurar SSL para el servidor de aplicaciones JBoss {#configuring-ssl-for-jboss-application-server}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Para configurar SSL en el servidor de aplicaciones JBoss, necesita una credencial SSL para la autenticación. Puede utilizar la herramienta de claves Java para crear una credencial o solicitud e importar una credencial de una entidad de certificación (CA). Luego debe habilitar SSL en JBoss.
 
@@ -136,7 +140,7 @@ En este procedimiento:
    ```
 
 1. Cambie el valor de la variable `keystoreFile` y la variable `keystorePass` a la contraseña del almacén de claves que especificó al crear el almacén de claves.
-1. Reinicie el servidor de aplicaciones:
+1. Reinicie el servidor de la aplicación:
 
    * Para instalaciones llave en mano:
 

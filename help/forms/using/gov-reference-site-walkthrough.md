@@ -1,5 +1,5 @@
 ---
-title: Recorrido por el sitio web de referencia de We.Gov
+title: Tutorial del sitio de referencia de We.Gov para el cumplimiento de la ley
 seo-title: We.Gov reference site walkthrough
 description: Consulte el tutorial del sitio de referencia de We.Gov para comprender cómo AEM Forms ayuda a los gobiernos a administrar la información individual.
 seo-description: See the We.Gov reference site walkthrough to understand how AEM Forms helps governments manage individual information.
@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 25a6d702-9995-4c63-99d8-3e5d710bb0c4
 exl-id: c8ebd18b-fa24-4264-bd17-f553a2a784d9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2717'
-ht-degree: 0%
+source-wordcount: '2753'
+ht-degree: 7%
 
 ---
 
-# Recorrido por el sitio web de referencia de We.Gov {#we-gov-reference-site-walkthrough}
+# Tutorial del sitio de referencia de We.Gov para el cumplimiento de la ley  {#we-gov-reference-site-walkthrough}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Requisitos previos {#pre-requisite}
 
@@ -24,7 +28,7 @@ Configure su sitio de referencia de We.Gov tal como se describe en la sección [
 
 ## Situación del sitio de referencia {#reference-site-scenario}
 
-We.Gov es una organización estatal que permite a los padres adoptivos inscribirse para recibir apoyo infantil si adoptan a un niño. El sitio administra lo siguiente:
+We.Gov es un organismo público que permite a los padres adoptivos inscribirse para recibir una pensión alimenticia si adoptan a un niño. El sitio administra lo siguiente:
 
 * Elegibilidad del solicitante, el padre adoptivo
 * Datos personales y profesionales del solicitante (si el solicitante tiene derecho a la pensión alimenticia)
@@ -81,7 +85,7 @@ La comprobación de elegibilidad forma parte del formulario adaptable de la apli
 * El solicitante tiene el cuidado diario principal del niño
 * La edad del niño que recibe servicios de apoyo es menor de 16 años.
 
-### Véalo usted mismo {#see-it-yourself}
+### Puede verlo usted mismo {#see-it-yourself}
 
 En el explorador, abra `https://<hostname>:<PublishPort>/content/we-gov/en.html`. En el sitio de We.Gov, haga clic en Asistencia a niños. En la página Asistencia para niños, haga clic en Comprobar su elegibilidad.
 
@@ -119,7 +123,7 @@ El formulario de asistencia secundaria en el sitio de We.Gov utiliza formularios
 
 >[!NOTE]
 >
->El flujo de trabajo de reanudación por correo electrónico solo funciona con usuarios que iniciaron sesión. En el escenario del sitio de referencia, asegúrese de que se añade la usuaria Sarah Rose. Las credenciales de inicio de sesión de Sarah son `srose/password`.
+>El flujo de trabajo de reanudación por correo electrónico funciona únicamente con usuarios que han iniciado sesión. Asegúrese de añadir el usuario Sarah Rose en el escenario del sitio de referencia. Las credenciales de inicio de sesión de Sarah son `srose/password`.
 
 ![mob1](assets/mob1.png)
 
@@ -169,11 +173,11 @@ Sarah introduce sus datos y clics en su tarjeta de crédito **[!UICONTROL Pagar 
 
 ![sarah-sign-1](assets/sarah-sign-1.png)
 
-Sarah puede elegir entre escribir, usar dibujar para escribir a mano, insertar una imagen de firma o usar la pantalla táctil de su móvil para dibujar su firma. Sarah escribe su nombre y hace clic en Haga clic para firmar.
+Sarah puede elegir entre escribir, dibujar a mano, insertar una imagen de su firma o usar la pantalla táctil de su móvil para firmar. Sarah escribe su nombre y hace clic en Haga clic para firmar.
 
 Su solicitud se presenta al sitio de We.Gov.
 
-### <strong>Sarah recibe un correo electrónico de reconocimiento</strong> {#strong-sarah-receives-an-acknowledgement-email-strong}
+### <strong>Sarah recibe un correo electrónico de confirmación</strong> {#strong-sarah-receives-an-acknowledgement-email-strong}
 
 Después de que Sarah pague la cuota de solicitud, recibe un correo electrónico de reconocimiento del sitio de We.Gov.\
 We.Gov procesa la solicitud, y Sarah está informada de que recibirá una compensación mensual después de que su solicitud sea aprobada.
@@ -194,7 +198,7 @@ La comprobación de idoneidad utiliza las reglas especificadas en el formulario.
 
 `HIDE failMsg WHEN (Does the child lives in the state of GX? is equal to Yes) AND ( (Do you live in the state of GX? is equal to Yes) AND (Who has the main day-to-day care of the child? is equal to You) ) AND (Is the child you are applying for: is equal to Under 16 years) AND (Are you: is equal to The custodial parent) ELSE Show`
 
-### Véalo usted mismo {#see-it-yourself-1}
+### Puede verlo usted mismo {#see-it-yourself-1}
 
 En el explorador, abra `https://<hostname>:<PublishPort>/content/forms/af/we-gov/child-support/css.html` y rellene la información requerida. Cuando envíe la solicitud después de completar la información requerida, pague las tarifas y firme el documento, recibirá el correo electrónico de acuse de recibo.
 
@@ -212,15 +216,15 @@ Para ver todas las reglas, realice los pasos siguientes:
 
 ## Gloria recibe la aplicación {#gloria-receives-the-application}
 
-Gloria, jefe de aprobaciones en We.Gov, puede ver, aprobar o rechazar las solicitudes enviadas. AEM Bandeja de entrada le permite ver todas las solicitudes enviadas en un solo lugar.
+Gloria, jefe de aprobaciones en We.Gov, puede ver, aprobar o rechazar las solicitudes enviadas. La Bandeja de entrada AEM le permite ver todas las solicitudes enviadas desde un mismo sitio.
 
 ### Funcionamiento {#how-it-works-2}
 
 Cuando Sarah rellena y envía la solicitud de ayuda secundaria, se crea un PDF o documento de registro de la aplicación y se envía a la bandeja de entrada de Gloria Rios. Gloria puede ver la solicitud presentada y aceptarla o rechazarla.
 
-### Véalo usted mismo {#see-it-yourself-2}
+### Puede verlo usted mismo {#see-it-yourself-2}
 
-Abrir página `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. En la página, pulse **[!UICONTROL Iniciar sesión]**, seleccione **[!UICONTROL Iniciar sesión como representante]** , inicie sesión en la bandeja de entrada AEM usando grios/contraseña como nombre de usuario/contraseña para Gloria Rios. Aparecerá la aplicación de soporte secundario. Para obtener información sobre el uso de AEM Bandeja de entrada para tareas de flujo de trabajo centradas en formularios, consulte [Administrar aplicaciones y tareas de Forms en AEM bandeja de entrada](/help/forms/using/manage-applications-inbox.md).
+Abrir página `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. En la página, pulse **[!UICONTROL Iniciar sesión]**, seleccione **[!UICONTROL Iniciar sesión como representante]** , inicie sesión en la bandeja de entrada AEM usando grios/contraseña como nombre de usuario/contraseña para Gloria Rios. Aparecerá la aplicación de soporte secundario. Para obtener información sobre el uso de la Bandeja de entrada AEM para tareas de flujo de trabajo centradas en Forms, consulte [Administrar aplicaciones y tareas de Forms en Bandeja de entrada AEM](/help/forms/using/manage-applications-inbox.md).
 
 ![La bandeja de entrada de Gloria en el sitio web de We.Gov](assets/gloria-inbox.png)
 
@@ -237,7 +241,7 @@ Gloria puede aprobar o rechazar la solicitud. Sin embargo, Gloria hace clic **[!
 
 La aplicación de Sarah es un punto de partida en el flujo de trabajo AEM. Inicia el flujo de trabajo AEM cuando se envía el formulario de solicitud de compatibilidad secundaria. El flujo de trabajo AEM crea una tarea para Gloria, que se muestra en su bandeja de entrada AEM. Cuando Gloria solicita una evaluación in situ, se crea una nueva tarea para el agente de campo.
 
-### Véalo usted mismo {#see-it-yourself-3}
+### Puede verlo usted mismo {#see-it-yourself-3}
 
 Si se completa la configuración, el flujo de trabajo de AEM se inicia inmediatamente después de enviar el formulario. Inicie sesión en la bandeja de entrada con las credenciales de Gloria.
 
@@ -270,7 +274,7 @@ Cuando Gloria solicita una evaluación, se inicia el siguiente paso en AEM flujo
 
 Conard visita el lugar de Sarah, verifica que la información que Sarah ha proporcionado es genuina, y rellena el formulario de evaluación. Conard puede acceder a un PDF del formulario completo que ha rellenado Sarah.
 
-### Véalo usted mismo {#see-it-yourself-4}
+### Puede verlo usted mismo {#see-it-yourself-4}
 
 Abra la bandeja de entrada de AEM en la tableta y utilice las credenciales de Conard para iniciar sesión.
 
@@ -297,7 +301,7 @@ Después de que Conard envíe la evaluación, Gloria verá una tarea de revisió
 
 Gloria aprueba la solicitud.
 
-### Véalo usted mismo {#see-it-yourself-5}
+### Puede verlo usted mismo {#see-it-yourself-5}
 
 Abra la bandeja de entrada e inicie sesión con las credenciales de Gloria. En la bandeja de entrada aparece una nueva tarea denominada Revisión.
 
@@ -325,7 +329,7 @@ Cuando Gloria aprueba la aplicación, Sarah recibe un correo electrónico automa
 
 El documento de inscripción es una comunicación interactiva y se puede ver en cualquier dispositivo. Contiene detalles del servicio de apoyo a la infancia, e información proporcionada por Sarah.
 
-### Véalo usted mismo {#see-it-yourself-6}
+### Puede verlo usted mismo {#see-it-yourself-6}
 
 Compruebe el cliente de correo electrónico configurado para el correo electrónico automatizado con un vínculo al documento de inscripción.
 
@@ -341,7 +345,7 @@ We.Gov, de vez en cuando, revisa el rendimiento de su aplicación de servicios d
 
 Las métricas de rendimiento del formulario de aplicación de servicios de soporte secundarios se rastrean con Adobe Analytics. Para obtener más información sobre la configuración de Adobe Analytics y la visualización de informes, consulte [Configuración de analytics para formularios y documentos](/help/forms/using/configure-analytics-forms-documents.md).
 
-### Véalo usted mismo {#see-it-yourself-7}
+### Puede verlo usted mismo {#see-it-yourself-7}
 
 Para que pueda ver y explorar el informe de análisis, proporcionamos datos semilla para la aplicación de servicios de soporte secundarios en el sitio de referencia. Antes de utilizar los datos de origen, consulte [Configuración de Analytics](/help/forms/using/setup-reference-sites.md#configureanalytics). Realice los siguientes pasos en la instancia de autor para ver el informe con los datos semilla:
 

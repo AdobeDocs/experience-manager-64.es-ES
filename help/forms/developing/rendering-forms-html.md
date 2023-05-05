@@ -1,5 +1,5 @@
 ---
-title: Representación de Forms como HTML
+title: Procesar formularios como HTML
 seo-title: Rendering Forms as HTML
 description: Utilice el servicio Forms para procesar formularios como HTML en respuesta a una solicitud HTTP de un explorador web. Puede utilizar la API de Java y la API de servicio web para procesar formularios como HTML.
 seo-description: Use the Forms service to render forms as HTML in response to an HTTP request from a web browser. You can use the Java API and Web Service API to render forms as HTML.
@@ -12,20 +12,24 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: 2e8bcdf8-ae57-4ccd-945a-8f3fda4aa3c2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4137'
+source-wordcount: '4173'
 ht-degree: 1%
 
 ---
 
-# Representación de Forms como HTML {#rendering-forms-as-html}
+# Procesar formularios como HTML {#rendering-forms-as-html}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El servicio Forms procesa los formularios como HTML en respuesta a una solicitud HTTP de un explorador web. Una ventaja de procesar un formulario como HTML es que el equipo en el que se encuentra el explorador web del cliente no requiere Adobe Reader, Acrobat ni Flash Player (para guías de formulario (obsoleto)).
 
 Para procesar un formulario como HTML, el diseño de formulario debe guardarse como archivo XDP. Un diseño de formulario guardado como archivo PDF no se puede representar como HTML. Cuando desarrolle un diseño de formulario en Designer que se procese como HTML, tenga en cuenta los siguientes criterios:
 
-* No utilice las propiedades de borde de un objeto para dibujar líneas, cuadros o cuadrículas en el formulario. Algunos exploradores no alinean los bordes tal como se muestran en la vista previa de Los objetos pueden aparecer en capas diferentes o desplazar otros objetos de la posición prevista.
+* No utilice las propiedades de borde de un objeto para dibujar líneas, cuadros o cuadrículas en el formulario. Es posible que algunos exploradores no alineen los bordes exactamente como aparecen en una vista previa. Los objetos pueden aparecer en capas o pueden desplazar a otros objetos fuera de la posición esperada.
 * Puede utilizar líneas, rectángulos y círculos para definir el fondo.
 * Dibuje texto ligeramente más grande de lo que parece ser necesario para dar cabida al texto. Algunos exploradores web no muestran el texto de forma legible.
 
@@ -237,7 +241,7 @@ La renderización de un formulario de HTML también requiere valores, como valor
 
 Cuando el servicio Forms procesa un formulario de HTML, devuelve un flujo de datos de formulario que debe escribir en el explorador web del cliente. Cuando se escribe en el explorador web del cliente, el formulario de HTML es visible para el usuario.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Representar un formulario como HTML mediante la API de Java](#render-a-form-as-html-using-the-java-api)
 
@@ -249,7 +253,7 @@ Cuando el servicio Forms procesa un formulario de HTML, devuelve un flujo de dat
 
 [Inicio rápido de la API del servicio de Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Renderización de PDF forms interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Procesar formularios PDF interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Representación de Forms HTML con barras de herramientas personalizadas](/help/forms/developing/rendering-html-forms-custom-toolbars.md)
 
@@ -302,9 +306,9 @@ Representar un formulario de HTML mediante la API de Forms (Java):
    * Cree una matriz de bytes y rellénela con la secuencia de datos del formulario invocando la variable `InputStream` del objeto `read` y pasando la matriz de bytes como argumento.
    * Invocar el `javax.servlet.ServletOutputStream` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Representación de Forms como HTML](#rendering-forms-as-html)
+[Procesar formularios como HTML](#rendering-forms-as-html)
 
 [Inicio rápido (modo SOAP): Representación de un formulario de HTML mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
 
@@ -365,8 +369,8 @@ Representar un formulario de HTML mediante la API de Forms (servicio web):
    * Cree una matriz de bytes y rellénela invocando la variable `BLOB` del objeto `getBinaryData` método. Esta tarea asigna el contenido de la variable `FormsResult` a la matriz de bytes.
    * Invocar el `javax.servlet.http.HttpServletResponse` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Representación de Forms como HTML](#rendering-forms-as-html)
+[Procesar formularios como HTML](#rendering-forms-as-html)
 
 [Invocación de AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

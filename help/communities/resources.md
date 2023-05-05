@@ -1,8 +1,8 @@
 ---
 title: Consola Recursos de habilitación
-seo-title: Consola Recursos de habilitación
+seo-title: Enablement Resources Console
 description: La consola Recursos es donde los administradores de habilitación crean, administran y asignan recursos a los miembros de un sitio de la comunidad de habilitación
-seo-description: La consola Recursos es donde los administradores de habilitación crean, administran y asignan recursos a los miembros de un sitio de la comunidad de habilitación
+seo-description: The Resources console is where Enablement Managers create, manage, and assign resources to members of an enablement community site
 uuid: 52445b39-c339-4b39-8004-eb36de99bced
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,25 +11,29 @@ content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
 role: Admin
 exl-id: 67d80ec9-64c9-43a5-8cb1-9da819471797
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2979'
+source-wordcount: '2993'
 ht-degree: 5%
 
 ---
 
 # Consola Recursos de habilitación {#enablement-resources-console}
 
-Para AEM Communities, la consola Recursos es donde [Enablement Managers](users.md) crean, administran y asignan recursos a los miembros de un sitio de la comunidad de habilitación.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-## Requisitos {#requirements}
+Para AEM Communities, la consola Recursos es donde [Administradores de habilitación](users.md) cree, administre y asigne recursos a los miembros de un sitio de la comunidad de habilitación.
+
+## Requisitos  {#requirements}
 
 Antes de agregar recursos de habilitación para un sitio de comunidad, las instancias de AEM deben configurarse correctamente, incluidas:
 
 * SCORM
 * FFmpeg
 
-Para obtener más información, consulte [Configuración de habilitación](enablement.md).
+Para obtener más información, consulte [Configuración de la habilitación](enablement.md).
 
 >[!CAUTION]
 >
@@ -37,11 +41,11 @@ Para obtener más información, consulte [Configuración de habilitación](enabl
 
 >[!NOTE]
 >
->Con el lanzamiento de [AEM 6.3](deploy-communities.md#latestfeaturepack) y los paquetes de funciones equivalentes de Communities [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) y [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack), la función de habilitación ya no requiere una [base de datos MySQL](mysql.md).
+>Con el lanzamiento de [AEM 6.3](deploy-communities.md#latestfeaturepack) y los paquetes de funciones de Communities equivalentes [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) y [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest Feature Pack), la función de habilitación ya no requiere un [Base de datos MySQL](mysql.md).
 
 ## Terminología {#terminology}
 
-### Medio {#resource}
+### Recurso {#resource}
 
 Los recursos son esenciales para una [comunidad de habilitación](overview.md#enablement-community). Son los materiales asignados a los miembros que les permiten mejorar sus habilidades.
 
@@ -61,9 +65,9 @@ Una ruta de aprendizaje es un conjunto lógico de recursos de habilitación agru
 
 ### Grupo de miembros {#members-group}
 
-Cuando se crea un sitio de comunidad, el nombre proporcionado al sitio para la URL se utiliza en la creación de los [grupos de usuarios específicos del sitio](users.md) configurados con varios permisos para diversas funciones. Todos estos grupos creados automáticamente tienen el prefijo `Community *<site-name>*`.
+Cuando se crea un sitio de comunidad, el nombre que se da al sitio para la URL se utiliza en la creación de la variable [grupos de usuarios específicos del sitio](users.md) configurado con varios permisos para diversas funciones. A todos estos grupos creados automáticamente se les agregará el prefijo `Community *<site-name>*`.
 
-Uno de estos grupos de usuarios es el grupo `Community *<site-name>* Members` , que identifica a los usuarios registrados en el entorno de publicación como miembros de la comunidad. Consulte el tutorial [Introducción a AEM Communities para Habilitación](getting-started-enablement.md) para ver un ejemplo.
+Uno de estos grupos de usuarios es `Community *<site-name>* Members` , que identifica a los usuarios registrados en el entorno de publicación como miembros de la comunidad. Consulte el tutorial [Introducción a AEM Communities para la activación](getting-started-enablement.md) por ejemplo.
 
 Para [comunidades de participación](overview.md#egagementcommunity), es razonable permitir que los visitantes del sitio se registren por su cuenta o utilicen un inicio de sesión social, momento en el cual se añaden automáticamente al grupo de miembros.
 
@@ -89,7 +93,7 @@ Una vez seleccionado un sitio de comunidad específico, se puede acceder a los r
 
 ![chlimage_1-164](assets/chlimage_1-164.png)
 
-#### Búsqueda   {#search-features}
+#### Búsqueda {#search-features}
 
 ![chlimage_1-165](assets/chlimage_1-165.png)
 
@@ -109,7 +113,7 @@ Para seleccionar varios recursos de habilitación, seleccione la primera al pasa
 
 Para agregar un nuevo recurso de habilitación al sitio de la comunidad
 
-* Seleccione el icono `Create`
+* Seleccione el `Create` icono
 * En el submenú que se muestra, seleccione `Resource`
 
 Esto inicia un proceso paso a paso de
@@ -128,7 +132,7 @@ Cuando el recurso forma parte de un curso, una ruta de aprendizaje, los miembros
 
 * **[!UICONTROL Agregar imagen]**
 
-   (*opcional*) Una imagen que se mostrará en la tarjeta del recurso de habilitación en la página de asignaciones del miembro, así como en la consola Recursos. La imagen se selecciona del sistema de archivos local del servidor. Si no se proporciona una imagen, se generará una miniatura para el recurso cargado.
+   (*opcional*) Imagen que se mostrará en la tarjeta del recurso de habilitación en la página de asignaciones del miembro, así como en la consola Recursos. La imagen se selecciona del sistema de archivos local del servidor. Si no se proporciona una imagen, se generará una miniatura para el recurso cargado.
 
    ***Nota***: el tamaño recomendado de la imagen no es simplemente 480 x 480 píxeles. Debido al diseño interactivo de las tarjetas con distintas dimensiones del navegador, el tamaño de visualización variará de 220 X 165 píxeles a 400 x 165 píxeles.
 
@@ -138,7 +142,7 @@ Cuando el recurso forma parte de un curso, una ruta de aprendizaje, los miembros
 
 * **[!UICONTROL Nombre&amp;ast de recurso;]**
 
-   (*obligatorio*) El nombre para mostrar del recurso. Se crea un nombre de nodo válido a partir del nombre para mostrar.
+   (*obligatorio*) Nombre para mostrar del recurso. Se crea un nombre de nodo válido a partir del nombre para mostrar.
 
 * **[!UICONTROL Etiquetas]**
 
@@ -146,7 +150,7 @@ Cuando el recurso forma parte de un curso, una ruta de aprendizaje, los miembros
 
 * **[!UICONTROL Mostrar en el catálogo]**
 
-   Cuando está desactivada, el recurso de habilitación no aparece en ningún catálogo. Si se selecciona, el recurso de habilitación aparecerá en todos los catálogos a menos que [haya filtrado previamente](catalog-developer-essentials.md#pre-filters) o que los filtros de miembro procedan de la interfaz de usuario. El valor predeterminado no está seleccionado.
+   Cuando está desactivada, el recurso de habilitación no aparece en ningún catálogo. Si se selecciona, el recurso de habilitación aparecerá en todos los catálogos a menos que [prefiltrado](catalog-developer-essentials.md#pre-filters) o los filtros de miembro de la interfaz de usuario. El valor predeterminado no está seleccionado.
 
 * **[!UICONTROL Descripción]**
 
@@ -172,15 +176,15 @@ Cuando el recurso forma parte de un curso, una ruta de aprendizaje, los miembros
 
 Aunque aparece como si se pudieran seleccionar varios recursos de habilitación, solo se permite uno.
 
-Seleccione `'+' icon`, en la esquina superior derecha, para comenzar el proceso de selección del recurso identificando el origen.
+Seleccione el `'+' icon`, en la esquina superior derecha, para comenzar el proceso de selección del recurso identificando el origen.
 
 ![chlimage_1-171](assets/chlimage_1-171.png)
 
-* **[!UICONTROL Cargar desde mis]**
-archivos localesAl cargar desde el sistema de archivos local, se utilizará el explorador de archivos nativo para seleccionar y cargar un archivo. Los tipos de archivo admitidos son SCORM.zip (HTML5 o SWF), vídeo MP4, SWF, PDF y tipos de imagen (JPG, PNG, GIF, BMP). El nombre de archivo se convierte en el nombre del recurso, que se añade a la biblioteca de recursos.
+* **[!UICONTROL Cargar desde mis archivos locales]**
+La carga desde el sistema de archivos local utilizará el explorador de archivos nativo para seleccionar y cargar un archivo. Los tipos de archivo admitidos son SCORM.zip (HTML5 o SWF), vídeo MP4, SWF, PDF y tipos de imagen (JPG, PNG, GIF, BMP). El nombre de archivo se convierte en el nombre del recurso, que se añade a la biblioteca de recursos.
 
-* **[!UICONTROL Examinar]**
-biblioteca de recursosSeleccione en la biblioteca de recursos. La selección está limitada a las que son visibles dentro del sitio de la comunidad.
+* **[!UICONTROL Examinar la biblioteca de recursos]**
+Seleccione en Biblioteca de recursos. La selección está limitada a las que son visibles dentro del sitio de la comunidad.
 
 * **[!UICONTROL Añadir URL externa]**
 
@@ -230,7 +234,7 @@ biblioteca de recursosSeleccione en la biblioteca de recursos. La selección est
 
 * **[!UICONTROL Imagen de portada del medio]**
 
-   La imagen de portada es una imagen que se mostrará cuando se vea por primera vez el recurso de habilitación. Por ejemplo, la imagen de portada se muestra cuando un recurso de vídeo aún no se está reproduciendo. Si no se carga una imagen personalizada, se muestra una imagen predeterminada. Para los recursos de vídeo, puede ser posible [generar una miniatura](enablement.md#ffmpeg), pero solo cuando se carga y no cuando se hace referencia al vídeo como URL. Para los recursos de ubicación, la imagen se puede utilizar para proporcionar información adicional.
+   La imagen de portada es una imagen que se mostrará cuando se vea por primera vez el recurso de habilitación. Por ejemplo, la imagen de portada se muestra cuando un recurso de vídeo aún no se está reproduciendo. Si no se carga una imagen personalizada, se muestra una imagen predeterminada. Para los recursos de vídeo, es posible que [generar una miniatura](enablement.md#ffmpeg), pero solo cuando se carga y no cuando se hace referencia al vídeo como URL. Para los recursos de ubicación, la imagen se puede utilizar para proporcionar información adicional.
 
    El tamaño recomendado para la imagen de portada es de 640 x 360 píxeles.
 
@@ -248,7 +252,7 @@ biblioteca de recursosSeleccione en la biblioteca de recursos. La selección est
 
 * **[!UICONTROL Entornos sociales]**
 
-   Estos ajustes controlan si los estudiantes pueden proporcionar información sobre el recurso de habilitación. Los [ajustes de moderación](sites-console.md#moderation) son los del sitio de la comunidad principal.
+   Estos ajustes controlan si los estudiantes pueden proporcionar información sobre el recurso de habilitación. La variable [configuración de moderación](sites-console.md#moderation) son los del sitio de la comunidad principal.
 
    * **[!UICONTROL Permitir comentarios]**
 
@@ -267,22 +271,22 @@ biblioteca de recursosSeleccione en la biblioteca de recursos. La selección est
    *(Opcional)* Se puede seleccionar una fecha en la que se debe completar la asignación.
 
 * **[!UICONTROL Autor del medio]**
-   *(Opcional)* El autor del recurso de habilitación. Utilice el menú desplegable para seleccionar entre los usuarios que son miembros del [grupo de miembros](#members-group).
+   *(Opcional)* El autor del recurso de habilitación. Utilice el menú desplegable para seleccionar entre los usuarios que son miembros de la [grupo de miembros](#members-group).
 
 * **[!UICONTROL Contacto&amp;ast de recursos;]**
-   *(Obligatorio)* Una persona a la que el miembro puede ponerse en contacto con respecto al recurso de habilitación. Utilice el menú desplegable para seleccionar entre los usuarios que son miembros del [grupo de miembros](#members-group).
+   *(Obligatorio)* Persona a la que el miembro puede ponerse en contacto con respecto al recurso de habilitación. Utilice el menú desplegable para seleccionar entre los usuarios que son miembros de la [grupo de miembros](#members-group).
 
 * **[!UICONTROL Experto de medios]**
-   *(Opcional)* Una persona a la que el miembro puede ponerse en contacto con quien tenga experiencia en el recurso de habilitación. Utilice el menú desplegable para seleccionar entre los usuarios que son miembros del [grupo de miembros](#members-group).
+   *(Opcional)* Una persona a la que el miembro puede ponerse en contacto con la que tenga experiencia en relación con el recurso de habilitación. Utilice el menú desplegable para seleccionar entre los usuarios que son miembros de la [grupo de miembros](#members-group).
 
 ### 4 Asignaciones {#assignments}
 
 ![chlimage_1-174](assets/chlimage_1-174.png)
 
-* **[!UICONTROL Agregar]**
-usuarios asignadosUtilice el menú desplegable para seleccionar entre los  [miembros](#members-group)  (los usuarios y grupos de usuarios (enumerados en negrita)) los que se inscribirán como estudiantes. Cuando los miembros inicien sesión en el sitio de la comunidad, los recursos de habilitación (y las rutas de aprendizaje) en los que estén inscritos aparecerán en su página [Asignaciones](functions.md#assignments-function).
+* **[!UICONTROL Agregar usuarios asignados]**
+Utilice el menú desplegable para seleccionar [miembros](#members-group) - los usuarios y grupos de usuarios (enumerados en negrita) - que se inscribirán como estudiantes. Cuando los miembros inicien sesión en el sitio de la comunidad, los recursos de habilitación (y las rutas de aprendizaje) en los que estén inscritos aparecerán en sus [Asignaciones](functions.md#assignments-function) página.
 
-* seleccione **[!UICONTROL Crear]**
+* select **[!UICONTROL Crear]**
 
 ![chlimage_1-175](assets/chlimage_1-175.png)
 
@@ -294,7 +298,7 @@ La creación correcta del recurso de habilitación devuelve a la consola Recurso
 
 Para agregar una nueva ruta de aprendizaje al sitio de la comunidad
 
-* Seleccione el icono `Create`
+* Seleccione el `Create` icono
 * En el submenú que se muestra, seleccione `Learning Path`
 
 Esto inicia un proceso paso a paso de
@@ -315,7 +319,7 @@ Para los recursos de habilitación incluidos en una ruta de aprendizaje, las asi
 
 * **[!UICONTROL Agregar imagen]**
 
-   (*opcional*) Una imagen que se mostrará en la tarjeta para la ruta de aprendizaje en la página de asignaciones del miembro, así como en la consola Recursos. La imagen se selecciona del sistema de archivos local del servidor. Si no se proporciona una imagen, se generará una miniatura para el recurso cargado.
+   (*opcional*) Imagen que se mostrará en la tarjeta de la ruta de aprendizaje en la página de asignaciones del miembro, así como en la consola Recursos. La imagen se selecciona del sistema de archivos local del servidor. Si no se proporciona una imagen, se generará una miniatura para el recurso cargado.
 
    ***Nota***: el tamaño recomendado de la imagen ya no es simplemente 480 x 480 píxeles. Debido al diseño interactivo de las tarjetas con distintas dimensiones del navegador, el tamaño de visualización variará de 220 X 165 píxeles a 400 x 165 píxeles.
 
@@ -325,7 +329,7 @@ Para los recursos de habilitación incluidos en una ruta de aprendizaje, las asi
 
 * **[!UICONTROL Nombre de la ruta de aprendizaje]**
 
-   (*obligatorio*) El nombre para mostrar de la ruta de aprendizaje. Se crea un nombre de nodo válido a partir del nombre para mostrar.
+   (*obligatorio*) Nombre para mostrar de la ruta de aprendizaje. Se crea un nombre de nodo válido a partir del nombre para mostrar.
 
 * **[!UICONTROL Etiquetas]**
 
@@ -333,7 +337,7 @@ Para los recursos de habilitación incluidos en una ruta de aprendizaje, las asi
 
 * **[!UICONTROL Mostrar en el catálogo]**
 
-   Cuando está desactivada, la ruta de aprendizaje no aparece en ningún catálogo. Si se selecciona, la ruta de aprendizaje aparecerá en todos los catálogos a menos que [se filtre previamente](catalog-developer-essentials.md#pre-filters) o que los filtros de miembro procedan de la interfaz de usuario. Mostrar la ruta de aprendizaje en un catálogo otorgará indirectamente el acceso READ a todos sus recursos contenidos. El valor predeterminado no está seleccionado.
+   Cuando está desactivada, la ruta de aprendizaje no aparece en ningún catálogo. Si se selecciona, la ruta de aprendizaje aparecerá en todos los catálogos a menos que [prefiltrado](catalog-developer-essentials.md#pre-filters) o los filtros de miembro de la interfaz de usuario. Mostrar la ruta de aprendizaje en un catálogo otorgará indirectamente el acceso READ a todos sus recursos contenidos. El valor predeterminado no está seleccionado.
 
 * **[!UICONTROL Descripción]**
 
@@ -359,7 +363,7 @@ Para los recursos de habilitación incluidos en una ruta de aprendizaje, las asi
 
 * **[!UICONTROL Rutas de aprendizaje necesarias]**
 (
-** (opcional) Cuando se seleccionan otras rutas de aprendizaje publicadas, deben completarse antes de que un estudiante pueda seleccionar esta ruta de aprendizaje.
+*opcional*) Cuando se seleccionan otras rutas de aprendizaje publicadas, deben completarse antes de que el alumno pueda seleccionar esta ruta de aprendizaje.
 
 * Seleccione **[!UICONTROL Siguiente]**
 
@@ -369,9 +373,9 @@ Para los recursos de habilitación incluidos en una ruta de aprendizaje, las asi
 
 * **[!UICONTROL Aplicar el orden de la ruta de aprendizaje]**
 
-   (*opcional*) si se configura en Activado, el orden en que se agregan los recursos de habilitación es el orden en que los alumnos deben continuar a través de la ruta de aprendizaje. El valor predeterminado es Desactivado.
+   (*opcional*) si se establece en Activado, el orden en el que se añaden los recursos de habilitación es el orden en el que se requiere que los alumnos avancen por la ruta de aprendizaje. El valor predeterminado es Desactivado.
 
-* **[!UICONTROL Medios]**
+* **[!UICONTROL Recursos]**
 
    Uno o más recursos elegidos entre los *publicados *recursos de habilitación creados para el sitio de la comunidad actual.
 
@@ -387,11 +391,11 @@ Para los recursos de habilitación incluidos en una ruta de aprendizaje, las asi
 
 * **[!UICONTROL Añadir matriculaciones]**
 
-   Utilice el menú desplegable para seleccionar entre los miembros y grupos de miembros (enumerados en negrita) que sean miembros del [grupo de miembros](#members-group) del sitio de la comunidad. No es necesario añadir asignaciones al crear por primera vez la ruta de aprendizaje. Las propiedades de la ruta de aprendizaje se pueden modificar para añadir alumnos posteriormente.
+   Utilice el menú desplegable para seleccionar entre los miembros y grupos de miembros (enumerados en negrita) que sean miembros del sitio de la comunidad [grupo de miembros](#members-group). No es necesario añadir asignaciones al crear por primera vez la ruta de aprendizaje. Las propiedades de la ruta de aprendizaje se pueden modificar para añadir alumnos posteriormente.
 
 * **[!UICONTROL Ruta de aprendizaje Contacto&amp;ast;]**
 
-   *(Obligatorio)* Una persona a la que el miembro puede ponerse en contacto con respecto a la ruta de aprendizaje. Utilice el menú desplegable para seleccionar entre los usuarios que son miembros del [grupo de miembros](#members-group) del sitio de la comunidad.
+   *(Obligatorio)* Una persona con la que el miembro puede ponerse en contacto en relación con la ruta de aprendizaje. Utilice el menú desplegable para seleccionar entre los usuarios que son miembros del sitio de la comunidad [grupo de miembros](#members-group).
 
 * Seleccione **[!UICONTROL Crear]**
 
@@ -431,7 +435,7 @@ Si el único cambio es modificar asignaciones en el paso Configuración , al gua
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
-Al seleccionar el icono de la papelera, el recurso de habilitación será `Delete`d después de la confirmación.
+Al seleccionar el icono de la papelera, el recurso de habilitación se `Delete`d después de la confirmación.
 
 ### Publicación {#publish}
 
@@ -440,8 +444,8 @@ Al seleccionar el icono de la papelera, el recurso de habilitación será `Delet
 Antes de que los alumnos puedan ver los recursos de habilitación asignados, debe publicarse:
 
 * Seleccione el icono del mundo para `Publish`
-* En el cuadro de diálogo que aparece, seleccione **[!UICONTROL Publicar]** de nuevo
-* Seleccione **[!UICONTROL Cerrar]**
+* En el cuadro de diálogo que aparece, seleccione **[!UICONTROL Publicación]** again
+* Select **[!UICONTROL Cerrar]**
 
 Aunque el cuadro de diálogo indica que la acción está en cola, a menudo se publica inmediatamente.
 
@@ -449,7 +453,7 @@ Aunque el cuadro de diálogo indica que la acción está en cola, a menudo se pu
 
 ![chlimage_1-184](assets/chlimage_1-184.png)
 
-Para que los miembros del entorno de publicación no puedan acceder temporalmente a los recursos de habilitación sin eliminarlos, utilice el icono del mundo para `Unpublish`el recurso.
+Para que los miembros del entorno de publicación no puedan acceder temporalmente a los recursos de habilitación sin eliminarlos, utilice el icono del mundo para `Unpublish`el recurso .
 
 ### Informe {#report}
 
@@ -457,17 +461,17 @@ Para que los miembros del entorno de publicación no puedan acceder temporalment
 
 El icono Informe proporciona acceso a los informes generados cuando los alumnos interactúan con los recursos de habilitación asignados en el entorno de publicación. El informe varía según el tipo de recurso.
 
-Para todas las rutas de aprendizaje, es posible ver un informe basado en los recursos o en los estudiantes ( `User Report`).
+Para todas las rutas de aprendizaje, es posible ver un informe en función de los recursos o los estudiantes ( `User Report`).
 
 ![chlimage_1-186](assets/chlimage_1-186.png)
 
-Este informe es específicamente para el recurso de habilitación o la ruta de aprendizaje actual. La profundidad de los informes proporcionados depende de si [Adobe Analytics](analytics.md) tiene o no licencia y está habilitado para el sitio de la comunidad. Los informes [Línea de tiempo](#timeline), [Participación del visualizador](#viewer-engagement) y [Participación por dispositivo](#engagement-by-device) se importan desde Adobe Analytics en función del [intervalo de sondeo](analytics.md#report-importer).
+Este informe es específicamente para el recurso de habilitación o la ruta de aprendizaje actual. La profundidad de los informes proporcionados depende de si se ha proporcionado o no [Adobe Analytics](analytics.md) tiene licencia y está habilitado para el sitio de la comunidad. La variable [Cronología](#timeline), [Participación del visualizador](#viewer-engagement)y [Participación por dispositivo](#engagement-by-device) los informes se importan desde Adobe Analytics según la variable [intervalo de sondeo](analytics.md#report-importer).
 
-Para todos los recursos de habilitación, independientemente de si Adobe Analytics está habilitado o no, existen informes sobre [Estado asignado](#assignee-status) y [Clasificaciones](#ratings), así como una tabla [Resumen de informe](#report-summary).
+Para todos los recursos de habilitación, independientemente de si Adobe Analytics está habilitado o no, hay informes sobre [Estado asignado](#assignee-status) y [Clasificaciones](#ratings) así como una [Resumen del informe](#report-summary) tabla.
 
 ![chlimage_1-187](assets/chlimage_1-187.png)
 
-#### Escala de tiempo {#timeline}
+#### Escala de cronología {#timeline}
 
 El informe Cronología de Analytics muestra cuándo se producen eventos con el paso del tiempo para este recurso de activación:
 
@@ -491,7 +495,7 @@ El eje vertical es el número de eventos.
 
 El eje horizontal es la hora del calendario.
 
-[Adobe Analytics obligatorio](sites-console.md#analytics).
+[Se requiere Adobe Analytics](sites-console.md#analytics).
 
 #### Participación del visor {#viewer-engagement}
 
@@ -549,13 +553,13 @@ Para un informe de usuario de ruta de aprendizaje, el resumen del informe es una
    * Número de recursos completados
    * Su situación
 
-Es posible ajustar la visualización de la tabla seleccionando columnas mediante el selector `Show / hide columns`.
+Es posible ajustar la visualización de la tabla seleccionando columnas utilizando la variable `Show / hide columns` selector.
 
 #### Descargar informe como CSV {#download-report-as-csv}
 
 La tabla Resumen de informes se puede descargar en formato CSV con un botón en la parte superior de la consola.
 
-* para un recurso de habilitación: Botón `Download Resource Report as CSV`
-* para una ruta de aprendizaje: Botón `Download Learning Path Report as CSV`
+* para un recurso de habilitación: `Download Resource Report as CSV` botón
+* para una ruta de aprendizaje: `Download Learning Path Report as CSV` botón
 
 El resumen completo de los informes se descarga independientemente de las columnas que se elijan para mostrar.

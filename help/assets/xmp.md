@@ -1,30 +1,34 @@
 ---
 title: Metadatos de XMP
-description: Obtenga información sobre el estándar de metadatos XMP (Plataforma de metadatos extensible) que utiliza  [!DNL Experience Manager] Assets para la administración de metadatos. XMP proporciona un formato estándar para la creación, el procesamiento y el intercambio de metadatos para una amplia variedad de aplicaciones.
+description: Obtenga información sobre el estándar de metadatos XMP (plataforma de metadatos extensible) que utiliza el [!DNL Experience Manager] Recursos para la administración de metadatos. XMP proporciona un formato estándar para la creación, el procesamiento y el intercambio de metadatos para una amplia variedad de aplicaciones.
 contentOwner: AG
 feature: Metadata
 role: User,Admin
 exl-id: 32c4ca3d-2e9e-46a3-b4c7-70dcc50daaaa
-source-git-commit: 1e3cd6ce3138113721183439f7cfb9daed6e0e58
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '810'
+source-wordcount: '846'
 ht-degree: 19%
 
 ---
 
 # Metadatos XMP {#xmp-metadata}
 
-XMP (Extensible Metadata Platform) es el estándar de metadatos que utilizan los [!DNL Experience Manager] Assets para la administración de todos los metadatos. XMP proporciona un formato estándar para la creación, el procesamiento y el intercambio de metadatos para una amplia variedad de aplicaciones.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-Además de ofrecer codificación de metadatos universal que se puede incrustar en todos los formatos de archivo, XMP ofrece un [modelo de contenido](xmp.md#xmp-core-concepts) enriquecido y es [compatible con Adobe](xmp.md#advantages-of-xmp) y otras empresas, de modo que los usuarios de XMP en combinación con [!DNL Experience Manager] Assets tengan una potente plataforma en la que basarse.
+XMP (Extensible Metadata Platform) es el estándar de metadatos que utiliza el [!DNL Experience Manager] Recursos para toda la administración de metadatos. XMP proporciona un formato estándar para la creación, el procesamiento y el intercambio de metadatos para una amplia variedad de aplicaciones.
 
-La [especificación de XMP](https://www.adobe.com/devnet/xmp.html) está disponible en el Adobe.
+Además de ofrecer una codificación de metadatos universal que se puede incrustar en todos los formatos de archivo, XMP proporciona un [modelo de contenido](xmp.md#xmp-core-concepts) y es [compatible con Adobe](xmp.md#advantages-of-xmp) y otras empresas, de modo que los usuarios de XMP en combinación con [!DNL Experience Manager] Los recursos tienen una potente plataforma sobre la que basarse.
+
+La variable [especificación XMP](https://www.adobe.com/devnet/xmp.html) está disponible en Adobe.
 
 ## ¿Qué es XMP? {#what-is-xmp}
 
 [!DNL Experience Manager] Assets es compatible de forma nativa con la XMP: la plataforma de metadatos extensible encabezada por el Adobe. XMP es un estándar para procesar y almacenar metadatos estandarizados y de propiedad en recursos digitales. XMP está diseñado para ser el estándar común que permite que varias aplicaciones funcionen eficazmente con metadatos.
 
-Los profesionales de producción, por ejemplo, utilizan la compatibilidad XMP integrada en las aplicaciones de Adobe para pasar información a través de varios formatos de archivo. El repositorio de [!DNL Experience Manager] activos extrae los metadatos de XMP y los utiliza para administrar el ciclo de vida del contenido y ofrece la capacidad de crear flujos de trabajo de automatización.
+Los profesionales de producción, por ejemplo, utilizan la compatibilidad XMP integrada en las aplicaciones de Adobe para pasar información a través de varios formatos de archivo. La variable [!DNL Experience Manager] El repositorio de recursos extrae los metadatos de XMP y los utiliza para administrar el ciclo de vida del contenido y ofrece la capacidad de crear flujos de trabajo de automatización.
 
 XMP estandariza la forma en que se definen, crean y procesan los metadatos proporcionando un modelo de datos, un modelo de almacenamiento y esquemas. Todos estos conceptos se tratan en esta sección.
 
@@ -69,7 +73,7 @@ Las secciones siguientes describen los conceptos principales de XMP, incluidos l
 Un esquema XMP es un conjunto de nombres de propiedades en un espacio de nombres XML común que incluye\
 el tipo de datos y la información descriptiva. Un esquema XMP se identifica mediante su URI de área de nombres XML. El uso de áreas de nombres evita conflictos entre propiedades en distintos esquemas que tienen el mismo nombre pero un significado diferente.
 
-Por ejemplo, la propiedad **Creator** en dos esquemas diseñados de forma independiente puede significar la persona que creó el recurso o puede significar la aplicación que lo creó (por ejemplo, Adobe Photoshop).
+Por ejemplo, la variable **Creador** en dos esquemas diseñados de forma independiente, puede significar la persona que creó el recurso o puede significar la aplicación que lo creó (por ejemplo, Adobe Photoshop).
 
 ### Propiedades y valores {#properties-and-values}
 
@@ -84,4 +88,4 @@ Por ejemplo, un subconjunto típico utilizado por muchas aplicaciones de Adobe p
 
 ### Alternativas de idioma {#language-alternatives}
 
-XMP le ofrece la posibilidad de agregar una propiedad **xml:lang** a las propiedades de texto para especificar el idioma del texto.
+XMP le ofrece la posibilidad de agregar un **xml:lang** propiedad a propiedades de texto para especificar el idioma del texto.

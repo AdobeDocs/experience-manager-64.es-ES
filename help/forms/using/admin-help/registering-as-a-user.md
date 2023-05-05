@@ -1,5 +1,5 @@
 ---
-title: Registro como usuario
+title: Registrarse como usuario
 seo-title: Registering as a User
 description: Aprenda a utilizar los documentos protegidos por políticas que reciba de un usuario de seguridad de documentos, incluso si es externo a la organización del usuario.
 seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user’s organization.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 feature: Document Security
 exl-id: 24641bf5-7c1c-4c92-8c11-2134039085f7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 6%
+source-wordcount: '736'
+ht-degree: 8%
 
 ---
 
-# Registro como usuario {#registering-as-a-user}
+# Registrarse como usuario {#registering-as-a-user}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede utilizar documentos protegidos por políticas que reciba de un usuario de seguridad de documentos, incluso si es externo a la organización del usuario. Para utilizar un documento protegido por políticas, debe registrarse con document security. Si anteriormente no se le invitó a registrarse, la seguridad del documento inicia el proceso de registro cuando se producen estos eventos:
 

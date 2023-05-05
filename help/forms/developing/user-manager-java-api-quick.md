@@ -1,5 +1,5 @@
 ---
-title: Inicio rápido de la API de Java del Administrador de usuarios (SOAP)
+title: Inicio rápido (SOAP) de la API de Java del servicio administrador de usuarios
 seo-title: User Manager Java API Quick Start(SOAP)
 description: Utilice la API de administrador de usuarios para agregar usuarios, eliminar usuarios, crear grupos, administrar usuarios y grupos, administrar funciones y permisos, sincronizar usuarios mediante programación y administrar los nodos de preferencias mediante programación.
 seo-description: Use User Manager API to add users, delete users, create groups, manage users and groups, manage roles and permissions, synchronize users programmatically, and manage the Preferences Nodes programmatically.
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 role: Developer
 exl-id: 130b5669-4533-4e88-9a64-bbbd7c68a5ca
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 0%
+source-wordcount: '530'
+ht-degree: 4%
 
 ---
 
-# Inicio rápido de la API de Java (SOAP) del administrador de usuarios {#user-manager-java-api-quick-start-soap}
+# Inicio rápido (SOAP) de la API de Java del servicio administrador de usuarios {#user-manager-java-api-quick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El inicio rápido de la API de Java (SOAP) está disponible para la API de User Manager.
 

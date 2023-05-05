@@ -1,5 +1,5 @@
 ---
-title: Configuración de colas compartidas
+title: Configurar colas compartidas
 seo-title: Configuring Shared Queues
 description: Las colas compartidas le permiten configurar y administrar las colas de usuario de forma eficaz. Obtenga información sobre cómo configurar colas compartidas.
 seo-description: Shared Queues allow you to configure and manage user queues effectively. Learn how to configure shared queues.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: fc403a60-b635-4334-9bf8-2f3d2036b2f3
 exl-id: 40890db3-240c-4021-967a-b6b3eb1d4b7c
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 0%
+source-wordcount: '688'
+ht-degree: 2%
 
 ---
 
-# Configuración de colas compartidas{#configuring-shared-queues}
+# Configurar colas compartidas{#configuring-shared-queues}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Las colas compartidas le permiten configurar y administrar las colas de usuario de forma eficaz. Una cola de usuario es simplemente todas las tareas asignadas a un usuario; consulte [Listas de tareas](https://help.adobe.com/en_US/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html) para obtener más información. Puede asignar, anular la asignación y reasignar colas de usuario según sus necesidades organizativas. Puede administrar las colas compartidas de dos maneras:
 

@@ -1,8 +1,8 @@
 ---
 title: 'JSRP: proveedor de recursos de almacenamiento JCR'
-seo-title: 'JSRP: proveedor de recursos de almacenamiento JCR'
+seo-title: JSRP - JCR Storage Resource Provider
 description: JSRP es generalmente el más adecuado para entornos de demostración o desarrollo de una instancia de publicación y una instancia de autor
-seo-description: JSRP es generalmente el más adecuado para entornos de demostración o desarrollo de una instancia de publicación y una instancia de autor
+seo-description: JSRP is generally best suited for demonstration or development environments of one publish instance and one author instance
 uuid: 358a43c1-4137-4300-8443-c0d7166968ad
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 role: Admin
 exl-id: 73c59497-43fe-4e15-afda-e3cf5264696e
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 1%
+source-wordcount: '477'
+ht-degree: 2%
 
 ---
 
 # JSRP: proveedor de recursos de almacenamiento JCR {#jsrp-jcr-storage-resource-provider}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Acerca de JSRP {#about-jsrp}
 
@@ -34,7 +38,7 @@ Consulte también [Características de las opciones de SRP](working-with-srp.md#
 
 De forma predeterminada, JSRP es la opción de almacenamiento para UGC.
 
-La [consola de configuración de almacenamiento](srp-config.md) permite seleccionar la configuración de almacenamiento predeterminada, que identifica qué implementación de SRP utilizar.
+La variable [Consola de configuración de almacenamiento](srp-config.md) permite seleccionar la configuración de almacenamiento predeterminada, que identifica qué implementación de SRP utilizar.
 
 En el entorno de creación, para llegar a la consola de configuración de almacenamiento
 
@@ -42,7 +46,7 @@ En el entorno de creación, para llegar a la consola de configuración de almace
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
-* Seleccione **[!UICONTROL proveedor de recursos de almacenamiento JCR (JSRP)]**
+* Select **[!UICONTROL Proveedor de recursos de almacenamiento JCR (JSRP)]**
 * Seleccione **[!UICONTROL Enviar]**
 
 ### Publicación de la configuración {#publishing-the-configuration}
@@ -52,16 +56,16 @@ Aunque JSRP es la configuración predeterminada, para garantizar que la configur
 * Sobre el autor:
 
    * Desde la navegación global: **[!UICONTROL Herramientas > Implementación > Replicación]**
-   * Seleccione **[!UICONTROL Activar árbol]**
+   * Select **[!UICONTROL Activar árbol]**
    * **[!UICONTROL Ruta de inicio]**:
 
       * Vaya a `/conf/global/settings/community/srpc/`
-   * Seleccione **[!UICONTROL Activar]**
+   * Select **[!UICONTROL Activar]**
 
 
 ## Administración de datos de usuario {#managing-user-data}
 
-Para obtener información sobre los *usuarios*, *perfiles de usuario* y *grupos de usuarios*, que a menudo se introducen en el entorno de publicación, visite
+Para obtener información sobre *usuarios*, *perfiles de usuario* y *grupos de usuarios*, introducidos a menudo en el entorno de publicación, visita
 
 * [Sincronización de usuarios](sync.md)
 * [Administración de usuarios y grupos de usuarios](users.md)
@@ -76,8 +80,8 @@ En todas las instancias de creación y publicación de AEM, vuelva a la consola 
 
 * en JCR, si [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
 
-   * No contiene un nodo [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc), significa que el proveedor de almacenamiento es JSRP
-   * Si el nodo srpc existe y contiene el nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration), las propiedades de la configuración predeterminada deben definir JSRP para que sea el proveedor predeterminado
+   * No contiene un [srpc](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc) , significa que el proveedor de almacenamiento es JSRP
+   * Si el nodo srpc existe y contiene el nodo [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community/srpc/defaultconfiguration), las propiedades de configuración predeterminada deben definir JSRP para que sea el proveedor predeterminado
 
 ### UGC no visible en la instancia de autor {#ugc-not-visible-on-author-instance}
 
@@ -85,7 +89,7 @@ Este no es un error. Una característica de JSRP es que el contenido de la comun
 
 ### UGC no visible en la instancia de publicación {#ugc-not-visible-on-publish-instance}
 
-Si se implementa una sola instancia de publicación o un clúster de publicación, siga las instrucciones para [UGC Not Visible in JCR](#ugc-not-visible-in-jcr).
+Si se implementa una instancia de publicación única o un clúster de publicación, siga las instrucciones para [UGC no visible en JCR](#ugc-not-visible-in-jcr).
 
 Si se implementa un conjunto de servidores de publicación, una característica de JSRP es que el contenido de la comunidad solo será visible en la instancia de publicación en la que se publicó.
 

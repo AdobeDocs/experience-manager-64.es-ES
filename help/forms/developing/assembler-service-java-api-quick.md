@@ -1,5 +1,5 @@
 ---
-title: Inicio rápido de la API de Java del servicio del ensamblador (SOAP)
+title: Inicio rápido (SOAP) de la API de Java del servicio Assembler
 seo-title: Assembler Service Java API QuickStart(SOAP)
 description: Utilice el servicio Assembler para ensamblar un documento de PDF, desmontar un documento de PDF, ensamblar un documento de PDF cifrado, ensamblar un documento de PDF con numeración de bates, ensamblar un documento de PDF no interactivo, determinar si un documento es compatible con PDF/A, validar documentos DDX, ensamblar documentos de PDF con marcadores, crear un documento DDX de forma dinámica, ensamblar portafolios de PDF y XLE fragmentos.
 seo-description: Use the Assembler service to assemble a PDF document, disassemble a PDF document, assemble an encrypted PDF document, assemble a PDF document with bates numbering, assemble a non-interactive PDF document, determine whether a document is PDF/A compliant, validate DDX documents, assemble PDF documents with bookmarks, create a DDX document dynamically, assemble PDF portfolios, and assemble multiple XDP fragments.
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 role: Developer
 exl-id: 2efc0a84-4808-47dd-a859-76caf98b1872
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 0%
+source-wordcount: '1093'
+ht-degree: 1%
 
 ---
 
-# Inicio rápido de la API de Java del servicio del ensamblador (SOAP) {#assembler-service-java-api-quickstart-soap}
+# Inicio rápido (SOAP) de la API de Java del servicio Assembler  {#assembler-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El inicio rápido de la API de Java (SOAP) está disponible para el servicio Assembler
 

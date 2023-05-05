@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 10e6177a-8228-4515-aba9-bbe59bede449
 exl-id: 45e5b682-3d21-4843-8f62-9d0d493d91c0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 0%
+source-wordcount: '510'
+ht-degree: 2%
 
 ---
 
 # Administración de usuarios {#user-management}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 La administración de usuarios permite habilitar el inicio de sesión único (SSO) entre módulos de formularios AEM y aplicaciones protegidas por Netegrity SiteMinder mediante el uso del lenguaje de marcado de aserción de seguridad (SAML). Cuando se implementa SSO, las páginas de inicio de sesión del usuario de los formularios AEM no son necesarias y no se muestran si el usuario ya está autenticado a través del portal de la empresa.
 

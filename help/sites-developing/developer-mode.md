@@ -10,14 +10,18 @@ topic-tags: components
 content-type: reference
 discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
 exl-id: 733eddf1-48f9-45c2-a1b4-138cf32b4b59
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '686'
-ht-degree: 1%
+source-wordcount: '722'
+ht-degree: 2%
 
 ---
 
 # Modo de desarrollador{#developer-mode}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Al editar páginas en AEM, varias [modos](/help/sites-authoring/author-environment-tools.md#page-modes) están disponibles, incluido el modo de desarrollador. Se abre un panel lateral con varias fichas que proporcionan a los desarrolladores información sobre la página actual. Las tres pestañas son:
 

@@ -1,8 +1,8 @@
 ---
 title: Lista de paquetes obsoletos desinstalados después de la actualización
-seo-title: Lista de paquetes obsoletos desinstalados después de la actualización
+seo-title: List of Obsolete Bundles Uninstalled After the Upgrade
 description: Una lista que detalla los paquetes que se desinstalan automáticamente al actualizar a AEM 6.3.
-seo-description: Una lista que detalla los paquetes que se desinstalan automáticamente al actualizar a AEM 6.3.
+seo-description: A list detailing the bundles that are automatically uninstalled when upgrading to AEM 6.3.
 uuid: b015e857-31c1-4982-b71c-f3201b49ec8e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,19 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: 797a6f3b-d2a8-4835-81ab-a1602677417f
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 0f075a01-f286-4e16-9061-4e902c553eb9
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '189'
-ht-degree: 1%
+source-wordcount: '203'
+ht-degree: 3%
 
 ---
 
-
 # Lista de paquetes obsoletos desinstalados después de la actualización{#list-of-obsolete-bundles-uninstalled-after-the-upgrade}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
@@ -68,4 +71,3 @@ Al actualizar a AEM 6.3, los siguientes paquetes se desinstalarán automáticame
 * com.day.cq.cq-pinauthhandler, versión 1.0.0, activo
 * com.day.cq.dam.commons.nekohtml, versión 0.9.5, Activo
 * com.day.crx.crxde-support, versión 2.3.14, instalado
-

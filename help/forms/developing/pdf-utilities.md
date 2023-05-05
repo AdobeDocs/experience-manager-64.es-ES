@@ -1,5 +1,5 @@
 ---
-title: Uso de utilidades de PDF
+title: Trabajar con utilidades PDF
 seo-title: Working with PDF Utilities
 description: Utilice el servicio Utilidades de PDF para convertir entre los formatos de archivo PDF y XDP, establecer y recuperar propiedades de documento de PDF y manipular metadatos de XMP.
 seo-description: Use the PDF Utilities service to convert between PDF and XDP file formats, set and retrieve PDF document properties, and manipulate XMP metadata.
@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: d816bf2e-5236-4084-b7c4-c32b72cdff97
 role: Developer
 exl-id: 1fdabd73-ee74-426b-b815-68022ea27c4e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2565'
+source-wordcount: '2601'
 ht-degree: 1%
 
 ---
 
-# Uso de utilidades de PDF {#working-with-pdf-utilities}
+# Trabajar con utilidades PDF {#working-with-pdf-utilities}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 **Acerca del Servicio de Utilidades del PDF**
 
@@ -63,7 +67,7 @@ Para poder realizar una operación de PDF Utilidades mediante programación, deb
 
 Después de crear el cliente de servicio, puede invocar el PDF a la operación de conversión XDP.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Conversión de documentos PDF en documentos XDP mediante la API de Java](pdf-utilities.md#convert-pdf-documents-into-xdp-documents-using-the-java-api)
 
@@ -89,7 +93,7 @@ Convierta documentos PDF en documentos XDP usando la API de PDF Utilities (Java)
 
    Para realizar la conversión, invoque la función `PDFUtilityServiceClient` del objeto `convertPDFtoXDP` método y pasar un `com.adobe.idp.Document` que representa el archivo PDF. El método devuelve un valor `com.adobe.idp.Document` que representa el archivo XDP recién creado.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Conversión de documentos PDF en documentos XDP](pdf-utilities.md#converting-pdf-documents-into-xdp-documents)
 
@@ -114,7 +118,7 @@ Convierta documentos PDF en documentos XDP utilizando la API de utilidades de PD
 
    Invocar el `PDFUtilityServiceService` del objeto `convertPDFtoXDP` método y pasar un `BLOB` que representa el archivo PDF. El método devuelve un valor `BLOB` que representa el archivo XDP recién creado.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Conversión de documentos PDF en documentos XDP](pdf-utilities.md#converting-pdf-documents-into-xdp-documents)
 
@@ -150,7 +154,7 @@ Para poder realizar una operación de PDF Utilidades mediante programación, deb
 
 Después de crear el cliente de servicio, puede invocar el XDP a la operación de conversión de PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Conversión de documentos XDP en documentos de PDF mediante la API de Java](pdf-utilities.md#convert-xdp-documents-into-pdf-documents-using-the-java-api)
 
@@ -176,7 +180,7 @@ Convierta documentos XDP en documentos de PDF mediante la API de utilidades de P
 
    Para realizar la conversión, invoque la función `PDFUtilityServiceClient` del objeto `convertXDPtoPDF` método y pasar un `com.adobe.idp.Document` que representa el archivo XDP. El método devuelve un valor `com.adobe.idp.Document` que representa el archivo PDF recién creado.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Conversión de documentos XDP en documentos de PDF](pdf-utilities.md#converting-xdp-documents-into-pdf-documents)
 
@@ -201,7 +205,7 @@ Convierta documentos XDP en documentos de PDF mediante la API de utilidades de P
 
    Para realizar la conversión, invoque la función `PDFUtilityServiceService` del objeto `convertXDPtoPDF` método y pasar un `BLOB` que representa el archivo XDP. El método devuelve un valor `BLOB` que representa el archivo PDF recién creado.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Conversión de documentos XDP en documentos de PDF](pdf-utilities.md#converting-xdp-documents-into-pdf-documents)
 
@@ -237,7 +241,7 @@ Para poder realizar una operación de PDF Utilidades mediante programación, deb
 
 Después de crear el cliente de servicio, puede invocar la operación de recuperación de propiedades.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Recuperar propiedades de documento del PDF mediante la API de Java](pdf-utilities.md#retrieve-pdf-document-properties-using-the-java-api)
 
@@ -268,7 +272,7 @@ Recupere las propiedades del documento del PDF mediante la API de utilidades del
 
    El método devuelve un valor `PDFPropertiesResult` que contiene los resultados de la consulta.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Recuperación de las propiedades del documento PDF](pdf-utilities.md#retrieving-pdf-document-properties)
 
@@ -298,7 +302,7 @@ Recupere las propiedades del documento del PDF mediante la API del servicio web 
 
    El método devuelve un valor `PDFPropertiesResult` que contiene los resultados de la consulta.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Recuperación de las propiedades del documento PDF](pdf-utilities.md#retrieving-pdf-document-properties)
 
@@ -352,7 +356,7 @@ Una vez que el servicio Utilidades del PDF establece el modo Guardar especificad
 >
 >El inicio rápido asociado a esta sección establece la variable `FAST_WEB_VIEW` y, a continuación, pasa el documento del PDF al `encryptUsingPassword` operación.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Establecer las opciones de guardado del documento del PDF mediante la API de Java](pdf-utilities.md#set-pdf-document-save-options-using-the-java-api)
 
@@ -395,7 +399,7 @@ Establezca las opciones de guardado del documento del PDF mediante la API de uti
 
    * Pase el `com.adobe.idp.Document` a otra operación de AEM Forms.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Configuración de los modos de guardado de documentos del PDF](pdf-utilities.md#setting-pdf-document-save-modes)
 
@@ -435,7 +439,7 @@ Establezca las opciones de guardado del documento del PDF mediante el AP (servic
 
    * Pase el `BLOB` a otra operación de AEM Forms.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Configuración de los modos de guardado de documentos del PDF](pdf-utilities.md#setting-pdf-document-save-modes)
 
@@ -471,7 +475,7 @@ Antes de realizar una operación de sanización mediante programación, debe cre
 
 Después de crear el cliente de servicio, puede invocar la operación de sanización.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Conversión de documentos PDF en documentos XDP mediante la API de Java](pdf-utilities.md#convert-pdf-documents-into-xdp-documents-using-the-java-api)
 
@@ -497,7 +501,7 @@ Sanice los documentos utilizando la API de PDF Utilities (Java):
 
    Para realizar la conversión, invoque la función `PDFUtilityServiceClient` del objeto `convertPDFtoXDP` método y pasar un `com.adobe.idp.Document` que representa el archivo PDF. El método devuelve un valor `com.adobe.idp.Document` que representa el archivo XDP recién creado.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Sanitización de documentos PDF](/help/forms/developing/pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
 

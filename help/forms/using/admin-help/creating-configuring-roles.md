@@ -1,5 +1,5 @@
 ---
-title: Creación y configuración de funciones
+title: Crear y configurar roles
 seo-title: Creating and configuring roles
 description: Obtenga información sobre cómo asociar usuarios y grupos con funciones que ya forman parte de la base de datos de Administración de usuarios. También puede crear, editar y eliminar funciones.
 seo-description: Learn how to associate users and groups with roles that are already part of the User Management database. You can also create, edit, and delete roles.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 737fb4d1-adef-47e1-9a0d-8cddd13132cb
 exl-id: 794769f8-57c7-43c1-87dd-952121ced3e4
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2562'
 ht-degree: 0%
 
 ---
 
-# Creación y configuración de funciones{#creating-and-configuring-roles}
+# Crear y configurar roles{#creating-and-configuring-roles}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Mediante las páginas web de Administración de usuarios, puede asociar usuarios y grupos con funciones que ya forman parte de la base de datos de Administración de usuarios. También puede crear, editar y eliminar funciones.
 

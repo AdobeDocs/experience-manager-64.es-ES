@@ -1,8 +1,8 @@
 ---
 title: 'SRP: Almacenamiento de contenido de la comunidad'
-seo-title: 'SRP: Almacenamiento de contenido de la comunidad'
+seo-title: SRP - Community Content Storage
 description: A partir de AEM Communities 6.1, el contenido generado por el usuario (UGC) se almacena en un único almacén común proporcionado por un proveedor de recursos de almacenamiento (SRP)
-seo-description: A partir de AEM Communities 6.1, el contenido generado por el usuario (UGC) se almacena en un único almacén común proporcionado por un proveedor de recursos de almacenamiento (SRP)
+seo-description: As of AEM Communities 6.1, user generated content (UGC) is stored in a single, common store provided by a storage resource provider (SRP)
 uuid: 651af1d7-70e8-4b56-8c01-871cb397678e
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: e975e026-e815-4445-be3e-b1237ed3f6b2
 role: Admin
 exl-id: 4ff530ae-c676-4259-86f2-a3881843b642
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '922'
-ht-degree: 0%
+source-wordcount: '932'
+ht-degree: 1%
 
 ---
 
 # SRP: Almacenamiento de contenido de la comunidad {#srp-community-content-storage}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Introducción {#introduction}
 
@@ -26,7 +30,7 @@ A partir de AEM Communities 6.1, el contenido generado por el usuario (UGC) se a
 
 A diferencia de las versiones anteriores, no hay una replicación inversa/avanzada de UGC en AEM instancias. En su lugar, el SRP hace que UGC sea directamente accesible para crear, leer, actualizar y eliminar operaciones (CRUD) desde todas las instancias de autor y publicación, con una excepción para JSRP.
 
-A continuación se muestran las [características de cada opción de SRP](#characteristics-of-srp-options), que es información crucial para el proceso de decisión al elegir el SRP apropiado y la [implementación subyacente](topologies.md).
+A continuación se muestra el [características de cada opción SRP](#characteristics-of-srp-options), que es información crucial para el proceso de decisión a la hora de elegir el PRS apropiado y [implementación subyacente](topologies.md).
 
 Para obtener más información sobre el uso de SRP para UGC, consulte [Información general del proveedor de recursos de almacenamiento](srp.md).
 
@@ -36,9 +40,9 @@ Para obtener más información sobre el uso de SRP para UGC, consulte [Informaci
 
 >[!CAUTION]
 >
->A partir de AEM 6.1, [UGC nunca se replica](#ugc-never-replicated).
+>A partir del AEM 6.1, [UGC nunca se replica](#ugc-never-replicated).
 >
->Cuando la implementación no incluye un almacén común, como la topología predeterminada [JSRP](topologies.md#jsrp), UGC solo será visible en la instancia de autor o publicación de AEM en la que se introdujo. Solo si la topología incluye un clúster de publicación, el UGC estará visible en cualquier instancia de publicación.
+>Cuando la implementación no incluye un almacén común, como el valor predeterminado [JSRP](topologies.md#jsrp) , UGC solo será visible en la instancia de publicación o autor de AEM en la que se introdujo. Solo si la topología incluye un clúster de publicación, el UGC estará visible en cualquier instancia de publicación.
 
 ## Características de las opciones de SRP {#characteristics-of-srp-options}
 
@@ -86,7 +90,7 @@ Con la opción predeterminada, no hay ningún almacén común. El UGC solo se ma
 
 ## Configuración de SRP {#configuring-srp}
 
-La especificación de la opción de almacenamiento predeterminada, basada en la implementación subyacente, se realiza a través de la [Consola de configuración de almacenamiento](srp-config.md).
+La especificación de la opción de almacenamiento predeterminada, basada en la implementación subyacente, se realiza mediante la variable [Consola de configuración de almacenamiento](srp-config.md).
 
 Para obtener detalles de configuración de cada opción, consulte:
 
@@ -111,7 +115,7 @@ Mientras el contenido del sitio se replica, UGC nunca se replica.
 
 ### Administración de datos de usuario {#managing-user-data}
 
-También son de interés para las comunidades [*usuarios*, *grupos de usuarios* y *perfiles de usuario*](users.md). Estos datos relacionados con el usuario, cuando se crean y actualizan en el entorno de publicación, deben estar disponibles para otras instancias de publicación cuando la topología es un [conjunto de servidores de publicación](../../help/sites-deploying/recommended-deploys.md#tarmk-farm).
+También son de interés para las comunidades [*usuarios*, *grupos de usuarios* y *perfiles de usuario*](users.md). Estos datos relacionados con el usuario, cuando se crean y actualizan en el entorno de publicación, deben estar disponibles para otras instancias de publicación cuando la topología es [publicar granja](../../help/sites-deploying/recommended-deploys.md#tarmk-farm).
 
 A partir de AEM Communities 6.1, los datos relacionados con el usuario se sincronizan mediante la distribución Sling en lugar de la replicación. Para obtener más información, visite [Sincronización de usuarios](sync.md).
 

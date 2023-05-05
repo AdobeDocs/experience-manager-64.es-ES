@@ -1,5 +1,5 @@
 ---
-title: Inicio y parada de servicios
+title: Iniciar y detener servicios
 seo-title: Starting and stopping services
 description: Obtenga información sobre cómo iniciar y detener servicios asociados con módulos AEM Forms y el servidor de aplicaciones y la base de datos.
 seo-description: Learn how to start and stop services associated with AEM Forms modules and the application server and database.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b93060bd-c6e1-40d2-8acd-ccafb8ed56da
 exl-id: 6e0607d6-171c-4119-95a1-373b30fb63c1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 0%
+source-wordcount: '301'
+ht-degree: 5%
 
 ---
 
-# Inicio y parada de servicios {#starting-and-stopping-services}
+# Iniciar y detener servicios {#starting-and-stopping-services}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Existen dos tipos de servicios que forman parte de AEM formularios:
 

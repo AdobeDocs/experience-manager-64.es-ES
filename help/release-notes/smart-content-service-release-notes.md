@@ -8,14 +8,18 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER
 discoiquuid: 9f88c773-ddeb-4c66-ac07-7d3aa196c51b
 exl-id: 6e7ac9d2-7181-48bb-82c4-61a90e594ff5
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '305'
-ht-degree: 10%
+source-wordcount: '341'
+ht-degree: 5%
 
 ---
 
 # Notas de la versión del servicio de contenido inteligente {#smart-content-service-release-notes}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Información general sobre el servicio de contenido inteligente y problemas conocidos relacionados con el servicio.
 
@@ -36,10 +40,10 @@ El servicio de contenido inteligente incluye las siguientes mejoras clave:
 
 ## Vínculos {#links}
 
-* [Página del producto Adobe Experience Manager en adobe.com](https://www.adobe.com/marketing-cloud/experience-manager.html)
+* [Página de productos de Adobe Experience Manager en adobe.com](https://www.adobe.com/marketing-cloud/experience-manager.html)
 * [Documentación de etiquetas inteligentes mejorada](/help/assets/enhanced-smart-tags.md)
 
-## Asistencia y acceso al producto (sitios restringidos) {#product-access-and-support-restricted-sites}
+## Acceso y asistencia al producto (sitios restringidos) {#product-access-and-support-restricted-sites}
 
 Estos sitios solo están disponibles para los clientes. Si es cliente de y requiere acceso, póngase en contacto con su administrador de cuentas de Adobe.
 

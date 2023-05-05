@@ -1,7 +1,7 @@
 ---
-title: Personalización de cuadros de diálogo de error
+title: Personalizar cuadros de diálogo de error
 seo-title: Customizing error dialogs
-description: Personalización de los cuadros de diálogo de errores del espacio de trabajo de AEM Forms de LiveCycle para agregar distintas descripciones de errores.
+description: Personalizar los cuadros de diálogo de errores de AEM Forms Workspace de LiveCycle para agregar distintas descripciones de errores.
 seo-description: How-to customize the error dialogs of LiveCycle AEM Forms workspace to add different fault descriptions.
 uuid: 5ed1da68-bd5b-4a36-9a14-9d61733237e6
 content-type: reference
@@ -9,20 +9,24 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
 exl-id: e45f7f79-a5c3-439c-bf6c-7b14590cd3fc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '148'
-ht-degree: 2%
+source-wordcount: '184'
+ht-degree: 84%
 
 ---
 
-# Personalización de cuadros de diálogo de error {#customizing-error-dialogs}
+# Personalizar cuadros de diálogo de error {#customizing-error-dialogs}
 
-El espacio de trabajo de AEM Forms le permite personalizar los cuadros de diálogo de error. Realice la [Pasos genéricos para la personalización del espacio de trabajo de AEM Forms](/help/forms/using/generic-steps-html-workspace-customization.md) seguido de los pasos a continuación para personalizar los cuadros de diálogo de error.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-## Personalización de texto {#customizing-text}
+El espacio de trabajo de AEM Forms le permite personalizar los cuadros de diálogo de error. Realice los [pasos genéricos para personalizar AEM Forms Workspace](/help/forms/using/generic-steps-html-workspace-customization.md) seguido de los siguientes pasos para personalizar los cuadros de diálogo de error.
 
-1. En el `/apps/ws/locales/en-US/translation.json` , cambie los valores de `wserror` a los valores personalizados. Por ejemplo:
+## Personalizar texto {#customizing-text}
+
+1. En el archivo `/apps/ws/locales/en-US/translation.json`, cambie los valores de `wserror` a los valores personalizados. Por ejemplo:
 
    ```
    "wserror" : {
@@ -45,11 +49,11 @@ El espacio de trabajo de AEM Forms le permite personalizar los cuadros de diálo
 
    >[!NOTE]
    >
-   >Agregue los pares de clave-valor correspondientes para todos los idiomas compatibles.
+   >Agregar los pares clave-valor correspondientes para todos los idiomas compatibles.
 
-## Personalización de CSS {#customizing-css}
+## Personalizar CSS {#customizing-css}
 
-1. Puede actualizar el cuadro de diálogo, el encabezado, el área de contenido, la barra de pie, los botones de barra de pie y otros elementos colaterales agregando el siguiente fragmento de código en la variable `/apps/ws/css/newStyle.css` archivo:
+1. Puede actualizar el cuadro de diálogo, el encabezado, el área de contenido, la barra inferior, los botones de la barra inferior y otros elementos colaterales si agrega el siguiente fragmento de código en el archivo `/apps/ws/css/newStyle.css`:
 
    ```css
    /*-------- Error Dialog -------------------------------------------------------------------------------------------------------------------*/
@@ -184,7 +188,7 @@ El espacio de trabajo de AEM Forms le permite personalizar los cuadros de diálo
    }
    ```
 
-1. Para el espacio del botón de la barra de pies, separe el `.error-dialog` y `.foot-bar` expande desde la lista compuesta. Para realizar este cambio, agregue lo siguiente al nuevo archivo Style.css:
+1. Para el espacio del botón de inferior, separe el `.error-dialog` y el botón `.foot-bar` se expandirá desde la lista compuesta. Para realizar este cambio, agregue lo siguiente al archivo newStyle.css:
 
    ```css
    .browse-btn span, .attachementbtn span, .cancelAttachmentUpdate span, #taskAttachmentsContainer .uploadStatus span, .submitNoteButton span, .updateNoteButton span, .cancelNoteUpdate span,
@@ -219,11 +223,11 @@ El espacio de trabajo de AEM Forms le permite personalizar los cuadros de diálo
 
 >[!NOTE]
 >
->Si está haciendo referencia a imágenes adicionales, agréguelas a la jerarquía deseada debajo de `/apps/ws/images`.
+>Si hace referencia a imágenes adicionales, agréguelas a la jerarquía deseada debajo de `/apps/ws/images`.
 
 ## Ejemplos {#examples}
 
-* **Para personalizar el cuadro de diálogo de error, cambie:**
+* **Para personalizar el cuadro de diálogo de error, cambie lo siguiente:**
 
 ```css
 .error-dialog{
@@ -255,7 +259,7 @@ To
 }
 ```
 
-* **Para personalizar el encabezado del cuadro de diálogo de error, cambie:**
+* **Para personalizar el encabezado del cuadro de diálogo de error, cambie lo siguiente:**
 
 ```css
 .error-dialog .head-bar{

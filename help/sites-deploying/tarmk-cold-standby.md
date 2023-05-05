@@ -11,14 +11,18 @@ topic-tags: deploying
 discoiquuid: cb041407-ec30-47f8-a01e-314c4835a5d9
 feature: Configuring
 exl-id: 73f5c1a4-3d2d-4594-877e-93bd09a94e91
-source-git-commit: ce025f42bcd7105b83aa6a931e091aa21269a6f3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2724'
+source-wordcount: '2760'
 ht-degree: 0%
 
 ---
 
 # Ejecución de AEM con el modo de espera pasiva TarMK{#how-to-run-aem-with-tarmk-cold-standby}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Introducción {#introduction}
 
@@ -65,7 +69,7 @@ Una implementación típica de modo en espera pasiva de TarMK:
 
 El flujo de datos está diseñado para detectar y gestionar automáticamente los problemas relacionados con la conexión y la red. Todos los paquetes están empaquetados con sumas de comprobación y tan pronto como se activan los problemas con la conexión o los paquetes dañados, se activan mecanismos de reintento.
 
-### Actuación {#performance}
+### Rendimiento {#performance}
 
 Habilitar el modo de espera en frío TarMK en la instancia principal casi no tiene ningún impacto medible en el rendimiento. El consumo adicional de CPU es muy bajo y el disco duro adicional y la E/S de red no deben producir problemas de rendimiento.
 
@@ -89,7 +93,6 @@ Además, puede especificar las instancias en espera que pueden conectarse restri
 >
 >* de org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService a org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
 >* de org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService para org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
-
 >
 >Asegúrese de realizar los ajustes de configuración necesarios para reflejar este cambio.
 

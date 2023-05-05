@@ -1,5 +1,5 @@
 ---
-title: Representación de Forms de HTML mediante archivos CSS personalizados
+title: Procesar formularios HTML mediante archivos CSS personalizados
 seo-title: Rendering HTML Forms Using Custom CSS Files
 description: Utilice el servicio Forms para hacer referencia a archivos CSS personalizados para procesar formularios HTML en respuesta a una solicitud HTTP de un explorador web. Puede procesar un formulario de HTML que utilice un archivo CSS mediante la API de Java y la API de servicio web.
 seo-description: Use the Forms service to refer to custom CSS files to render HTML forms in response to an HTTP request from a web browser. You can render an HTML form that uses a CSS file using the Java API and Web Service API.
@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 role: Developer
 exl-id: d10cbb97-1cec-4b1b-9104-48063e75a2cd
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1674'
-ht-degree: 0%
+source-wordcount: '1710'
+ht-degree: 3%
 
 ---
 
-# Representación de Forms de HTML mediante archivos CSS personalizados {#rendering-html-forms-using-custom-css-files}
+# Procesar formularios HTML mediante archivos CSS personalizados {#rendering-html-forms-using-custom-css-files}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El servicio Forms procesa formularios HTML en respuesta a una solicitud HTTP de un explorador web. Al procesar un formulario de HTML, el servicio de Forms puede hacer referencia a un archivo CSS personalizado. Puede crear un archivo CSS personalizado para satisfacer los requisitos empresariales y hacer referencia a ese archivo CSS cuando utilice el servicio Forms para procesar formularios HTML.
 
@@ -75,7 +79,7 @@ La renderización de un formulario HTML también requiere valores, como valores 
 
 Cuando el servicio Forms procesa un formulario de HTML, devuelve un flujo de datos de formulario que debe escribir en el explorador web del cliente para que el usuario pueda ver el formulario del HTML.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Representar un formulario de HTML que utiliza un archivo CSS mediante la API de Java](#render-an-html-form-that-uses-a-css-file-using-the-java-api)
 
@@ -85,9 +89,9 @@ Cuando el servicio Forms procesa un formulario de HTML, devuelve un flujo de dat
 
 [Inicio rápido de la API del servicio de Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Renderización de PDF forms interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Procesar formularios PDF interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Representación de Forms como HTML](/help/forms/developing/rendering-forms-html.md)
+[Procesar formularios como HTML](/help/forms/developing/rendering-forms-html.md)
 
 [Creación de aplicaciones web que procesen Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -133,9 +137,9 @@ Representar un formulario de HTML que utilice un archivo CSS personalizado media
    * Cree una matriz de bytes y rellénela con la secuencia de datos del formulario invocando la variable `InputStream` del objeto `read` y pasando la matriz de bytes como argumento.
    * Invocar el `javax.servlet.ServletOutputStream` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Representación de Forms de HTML mediante archivos CSS personalizados](#rendering-html-forms-using-custom-css-files)
+[Procesar formularios HTML mediante archivos CSS personalizados](#rendering-html-forms-using-custom-css-files)
 
 [Inicio rápido (modo SOAP): Representación de un formulario de HTML que utiliza un archivo CSS mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api)
 
@@ -191,8 +195,8 @@ Representar un formulario de HTML que utiliza un archivo CSS personalizado media
    * Cree una matriz de bytes y rellénela invocando la variable `BLOB` del objeto `getBinaryData` método. Esta tarea asigna el contenido de la variable `FormsResult` a la matriz de bytes.
    * Invocar el `javax.servlet.http.HttpServletResponse` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Representación de Forms de HTML mediante archivos CSS personalizados](#rendering-html-forms-using-custom-css-files)
+[Procesar formularios HTML mediante archivos CSS personalizados](#rendering-html-forms-using-custom-css-files)
 
 [Invocación de AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

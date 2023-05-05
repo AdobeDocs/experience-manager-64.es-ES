@@ -1,5 +1,5 @@
 ---
-title: Configuración de los extremos del Administrador de tareas
+title: Configurar los extremos del Administrador de tareas
 seo-title: Configuring Task Manager endpoints
 description: Obtenga información sobre cómo configurar los extremos del Administrador de tareas.
 seo-description: Learn how to configure Task Manager endpoints.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9c55feb9-23d8-4798-a3c5-70ec736df3ad
 exl-id: 546a699e-975f-42a1-8ab5-0de4bd7f4a8f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '232'
-ht-degree: 0%
+source-wordcount: '268'
+ht-degree: 5%
 
 ---
 
-# Configuración de los extremos del Administrador de tareas {#configuring-task-manager-endpoints}
+# Configurar los extremos del Administrador de tareas {#configuring-task-manager-endpoints}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Los extremos del Administrador de tareas permiten a los usuarios de Workspace invocar el servicio.
 

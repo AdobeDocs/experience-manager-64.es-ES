@@ -1,7 +1,7 @@
 ---
-title: proxy de servicio de formularios HTML5
+title: Proxy de servicio de formularios HTML5
 seo-title: HTML5 forms service proxy
-description: HTML5 forms Service Proxy es una configuración para registrar un proxy para el servicio de envío. Para configurar el proxy de servicio, especifique la URL del servicio de envío mediante el parámetro de solicitud submitServiceProxy.
+description: El proxy de servicio de formularios HTML5 es una configuración para registrar un proxy para el servicio de envío. Para configurar el proxy de servicio, especifique la URL del servicio de envío mediante el parámetro de solicitud submissionServiceProxy.
 seo-description: HTML5 forms Service Proxy is a configuration to register a proxy for the submission service. To configure Service Proxy, specify the URL of submission service through request parameter submissionServiceProxy.
 uuid: 03ee7dea-d23e-4600-8b0a-698f4530b889
 content-type: reference
@@ -10,42 +10,46 @@ topic-tags: hTML5_forms
 discoiquuid: 2791c9a1-38a2-4154-8bea-2f7c564b46c8
 feature: Mobile Forms
 exl-id: 42da25de-7ad0-4e9a-8139-149954f9bd8e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '697'
-ht-degree: 1%
+source-wordcount: '733'
+ht-degree: 96%
 
 ---
 
-# proxy de servicio de formularios HTML5 {#html-forms-service-proxy}
+# Proxy de servicio de formularios HTML5 {#html-forms-service-proxy}
 
-HTML5 forms Service Proxy es una configuración para registrar un proxy para el servicio de envío. Para configurar el proxy de servicio, especifique la URL del servicio de envío mediante el parámetro de solicitud *submitServiceProxy*.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+El proxy de servicio de formularios HTML5 es una configuración para registrar un proxy para el servicio de envío. Para configurar el proxy de servicio, especifique la URL del servicio de envío mediante el parámetro de solicitud *submissionServiceProxy*.
 
 ## Ventajas del proxy de servicio {#benefits-of-service-proxy-br}
 
 El proxy de servicio elimina lo siguiente:
 
-* El flujo de trabajo de formularios de HTML5 requiere la apertura del servicio de envío &quot;/content/xfaforms/submit/default&quot; para los usuarios de formularios de HTML5. Expone AEM servidores a una audiencia no deseada más amplia.
+* El flujo de trabajo de formularios HTML5 requiere la apertura del servicio de envío “/content/xfaforms/submission/default” para los usuarios de formularios HTML5. Expone servidores de AEM a una audiencia no deseada más amplia.
 * La URL del servicio está incrustada en el modelo de tiempo de ejecución del formulario. No es posible cambiar la ruta de la URL del servicio.
 * El envío es un proceso de dos pasos. Para enviar los datos del formulario, el envío requiere al menos dos recorridos para el servidor. Por lo tanto, aumenta la carga en el servidor.
-* Los formularios de HTML5 envían datos en la solicitud del POST en lugar de en la solicitud del PDF. Para el flujo de trabajo que incluye formularios PDF y HTML5, se requieren dos métodos diferentes de procesamiento de los envíos.
+* Los formularios HTML5 envían datos en la solicitud POST en lugar de en la solicitud PDF. Para el flujo de trabajo que incluye formularios PDF y HTML5, se requieren dos métodos diferentes de procesamiento de los envíos.
 
 ## Topologías {#topologies-br}
 
-Los formularios HTML5 pueden utilizar las siguientes topologías para conectarse a los servidores AEM.
+Los formularios HTML5 pueden utilizar las siguientes topologías para conectarse a los servidores de AEM.
 
 * Topología en la que los formularios de AEM Server o HTML5 envían datos mediante POST al servidor.
 * Topología en la que el servidor proxy envía datos de POST al servidor.
 
-![topologías de proxy del servicio de formularios HTML5](assets/topology.png)
+![Topologías de proxy de servicio de formularios HTML5](assets/topology.png)
 
-topologías de proxy del servicio de formularios HTML5
+Topologías de proxy de servicio de formularios HTML5
 
-Los formularios de HTML5 se conectan a los servidores de AEM para ejecutar secuencias de comandos, servicios web y envíos del lado del servidor. El tiempo de ejecución XFA de los formularios HTML5 utiliza llamadas Ajax en el punto final &quot;/bin/xfaforms/submitaction&quot; con varios parámetros para conectarse a los servidores AEM. Los formularios de HTML5 conectan AEM servidores para realizar las siguientes operaciones:
+Los formularios HTML5 se conectan a los servidores de AEM para ejecutar scripts, servicios web y envíos del lado del servidor. El tiempo de ejecución XFA de los formularios HTML5 utiliza llamadas Ajax en el punto final “/bin/xfaforms/submitaction” con varios parámetros para conectarse a los servidores de AEM. Los formularios HTML5 conectan servidores de AEM para realizar las siguientes operaciones:
 
-### Ejecución de scripts y servicios web del lado del servidor {#execute-server-sided-scripts-and-web-services}
+### Ejecutar scripts y servicios web del lado del servidor {#execute-server-sided-scripts-and-web-services}
 
-Las secuencias de comandos marcadas para ejecutarse en el servidor se conocen como secuencias de comandos del lado del servidor. En la tabla siguiente se enumeran todos los parámetros utilizados en secuencias de comandos del lado del servidor y Web Services.
+Los scripts marcados para ejecutarse en el servidor se conocen como scripts del lado del servidor. En la siguiente tabla se enumeran todos los parámetros utilizados en scripts del lado del servidor y servicios web.
 
 <table> 
  <tbody> 
@@ -55,31 +59,31 @@ Las secuencias de comandos marcadas para ejecutarse en el servidor se conocen co
   </tr> 
   <tr> 
    <td><p>activity</p> </td> 
-   <td><p>Activity contiene los eventos que configuran el déclencheur de la solicitud. Como clic, salida o cambio</p> </td> 
+   <td><p>Activity contiene los eventos que configuran el activador de la solicitud. Como clic, salida o cambio</p> </td> 
   </tr> 
   <tr> 
    <td><p>contextSom</p> </td> 
    <td><p>contextSom contiene la expresión SOM del objeto donde se ejecutan los eventos.</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Plantilla</p> </td> 
-   <td><p>Plantilla contiene la plantilla utilizada para procesar el formulario.</p> </td> 
+   <td><p>Template</p> </td> 
+   <td><p>Template contiene la plantilla utilizada para procesar el formulario.</p> </td> 
   </tr> 
   <tr> 
    <td><p>contentRoot</p> </td> 
    <td><p>contentRoot contiene el directorio raíz de la plantilla utilizado para procesar el formulario.</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Datos</p> </td> 
-   <td><p>Los datos contienen bytes de datos utilizados para procesar el formulario.</p> </td> 
+   <td><p>Data</p> </td> 
+   <td><p>Data contiene bytes de datos utilizados para procesar el formulario.</p> </td> 
   </tr> 
   <tr> 
    <td><p>formDom</p> </td> 
-   <td><p>formDom contiene DOM del formulario HTML5 en formato JSON.</p> </td> 
+   <td><p>formDom contiene el DOM del formulario HTML5 en formato JSON.</p> </td> 
   </tr> 
   <tr> 
    <td><p>packet</p> </td> 
-   <td><p>se especifica como formulario.</p> </td> 
+   <td><p>packet se especifica como formulario.</p> </td> 
   </tr> 
   <tr> 
    <td><p>debugDir</p> </td> 
@@ -90,7 +94,7 @@ Las secuencias de comandos marcadas para ejecutarse en el servidor se conocen co
 
 ### Enviar datos {#submit-data}
 
-Al hacer clic en el botón de envío, los formularios de HTML5 envían datos al servidor. En la tabla siguiente se enumeran todos los parámetros que los formularios de HTML5 envían al servidor.
+Al hacer clic en el botón Enviar, los formularios HTML5 envían datos al servidor. En la siguiente tabla se enumeran todos los parámetros que envían los formularios HTML5 al servidor.
 
 <table> 
  <tbody> 
@@ -99,7 +103,7 @@ Al hacer clic en el botón de envío, los formularios de HTML5 envían datos al 
    <td><p><strong>Descripción</strong></p> </td> 
   </tr> 
   <tr> 
-   <td><p>Plantilla</p> </td> 
+   <td><p>Template</p> </td> 
    <td><p>Plantilla utilizada para procesar el formulario.</p> </td> 
   </tr> 
   <tr> 
@@ -120,18 +124,18 @@ Al hacer clic en el botón de envío, los formularios de HTML5 envían datos al 
   </tr> 
   <tr> 
    <td><p>debugDir</p> </td> 
-   <td><p>El directorio de depuración utilizado para procesar el formulario.</p> </td> 
+   <td><p>Directorio de depuración utilizado para procesar el formulario.</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ### ¿Cómo funciona el proxy de envío? {#how-nbsp-the-nbsp-submit-proxy-works}
 
-El proxy del servicio de envío actúa como un paso a través si el envío no está presente en el parámetro de solicitud. Actúa como una transmisión. Envía la solicitud al punto final /bin/xfaforms/submitaction y envía la respuesta al tiempo de ejecución de XFA.
+El proxy del servicio de envío actúa como un paso a través si submiturl no está presente en el parámetro de la solicitud. Actúa como una transmisión. Envía la solicitud al punto final /bin/xfaforms/submitaction y envía la respuesta al tiempo de ejecución de XFA.
 
 El proxy del servicio de envío selecciona una topología si el envío está presente en el parámetro de solicitud.
 
-* Si AEM servidores publican los datos, el servicio proxy actúa como un paso a través. Envía la solicitud al punto final /bin/xfaforms/submitaction y envía la respuesta al tiempo de ejecución de XFA.
-* Si el proxy publica los datos, el servicio proxy pasa todos los parámetros excepto submitUrl al */bin/xfaforms/submitaction* punto final y recibe bytes xml en el flujo de respuesta. A continuación, el servicio proxy envía los bytes xml de datos a submitUrl para su procesamiento.
+* Si los servidores de AEM publican los datos, el servicio proxy actuará como un paso a través. Envía la solicitud al punto final /bin/xfaforms/submitaction y envía la respuesta al tiempo de ejecución de XFA.
+* Si el proxy publica los datos, el servicio proxy pasa todos los parámetros excepto submitUrl al punto final */bin/xfaforms/submitaction* y recibe bytes xml en el flujo de respuesta. A continuación, el servicio proxy envía los bytes xml de datos a submitUrl para su procesamiento.
 
-* Antes de enviar datos (solicitud del POST) a un servidor, los formularios de HTML5 comprueban la conectividad y disponibilidad del servidor. Para comprobar la conectividad y la disponibilidad, los formularios de HTML envían una solicitud de encabezado vacía al servidor. Si el servidor está disponible, el formulario HTML5 envía datos (solicitud del POST) al servidor. Si el servidor no está disponible, aparece un mensaje de error, *No se pudo conectar al servidor,* se muestra. La detección avanzada evita que los usuarios tengan que rellenar el formulario. El servlet proxy gestiona la solicitud del encabezado y no emite una excepción.
+* Antes de enviar datos (petición POST) a un servidor, los formularios HTML5 comprueban la conectividad y disponibilidad del servidor. Para comprobar la conectividad y la disponibilidad, los formularios HTML envían una solicitud de encabezado vacía al servidor. Si el servidor está disponible, el formulario HTML5 enviará datos (petición POST) al servidor. Si el servidor no está disponible, aparecerá un mensaje de error, *No se pudo conectar al servidor*. La detección avanzada evita que los usuarios tengan que rellenar el formulario. El servlet proxy administra la solicitud del encabezado y no emite excepciones.

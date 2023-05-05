@@ -1,5 +1,5 @@
 ---
-title: Configuración de Connector para Documentum de EMC
+title: Configurar Connector para Documentum de EMC
 seo-title: Configuring Connector for EMC Documentum
 description: Aprenda a configurar el Connector para Documentum de EMC para permitir la comunicación entre formularios AEM y Documentum de EMC.
 seo-description: Learn how to configure the Connector for EMC Documentum to enable communication between AEM forms and EMC Documentum.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
 exl-id: 86cc01f0-b6c0-4beb-a203-96dc1989d8f0
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 1%
+source-wordcount: '1060'
+ht-degree: 3%
 
 ---
 
-# Configuración de Connector para Documentum de EMC {#configuring-connector-for-emc-documentum}
+# Configurar Connector para Documentum de EMC {#configuring-connector-for-emc-documentum}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Connector for EMC Documentum permite la comunicación entre formularios AEM y Documentum de EMC. Para obtener más información, consulte &quot;Conectores para ECM&quot; en [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_63).
 

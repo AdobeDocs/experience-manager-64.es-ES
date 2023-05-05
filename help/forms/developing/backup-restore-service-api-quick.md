@@ -1,5 +1,5 @@
 ---
-title: Inicio de APIQuick de servicio de copia de seguridad y restauración
+title: Inicio de rápido de la API del servicio de copia de seguridad y restauración
 seo-title: Backup and Restore Service APIQuick Starts
 description: Utilice la API de servicio de copia de seguridad y restauración para entrar y salir del modo de copia de seguridad mediante el inicio rápido de la API de Java.
 seo-description: Use the Backup and Restore Service API to enter and leave backup mode using the Java API Quick Start.
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 role: Developer
 exl-id: b4fa018f-48a6-4991-9f80-d2d6e0b30555
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 0%
+source-wordcount: '285'
+ht-degree: 4%
 
 ---
 
 # Inicio rápido de API de servicio de copia de seguridad y restauración {#backup-and-restore-service-apiquick-starts}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El inicio rápido de la API de Java (SOAP) está disponible para la API de servicio de copia de seguridad y restauración.
 

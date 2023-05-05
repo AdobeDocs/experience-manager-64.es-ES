@@ -1,7 +1,7 @@
 ---
-title: Visualización del avatar del usuario
+title: Visualizar el avatar del usuario
 seo-title: Displaying the user avatar
-description: Cómo personalizar el espacio de trabajo de AEM Forms para mostrar la imagen de un usuario que ha iniciado sesión.
+description: Cómo personalizar AEM Forms Workspace para visualizar la imagen de un usuario que ha iniciado sesión.
 seo-description: How to customize the AEM Forms workspace to display the image of a logged-in user.
 uuid: 2961dc93-f0d0-4842-80f1-3c239a20e348
 contentOwner: robhagat
@@ -10,23 +10,27 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: aec03ea5-17a6-4775-92cb-2ad361895fdf
 exl-id: 2bc70cd6-1ea6-4594-9b42-ab3d3000a0c5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 0%
+source-wordcount: '228'
+ht-degree: 87%
 
 ---
 
-# Visualización del avatar del usuario {#displaying-the-user-avatar}
+# Visualizar el avatar del usuario {#displaying-the-user-avatar}
 
-El avatar del usuario que ha iniciado sesión se muestra en la esquina superior derecha del espacio de trabajo de AEM Forms. Además, los avatares de los informes directos de la jerarquía organizativa se muestran en la vista Administrador. Puede configurar el espacio de trabajo de AEM Forms para que elija las imágenes de usuario de la base de datos, por ejemplo, el servidor LDAP.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+El avatar del usuario que haya iniciado sesión se mostrará en la esquina superior derecha de AEM Forms Workspace. Además, los avatares de los informes directos de la jerarquía organizativa se mostrarán en la vista Administrador. Puede configurar AEM Forms Workspace para que elija las imágenes de usuario de la base de datos, por ejemplo, del servidor LDAP.
 
 >[!NOTE]
 >
 >La relación de aspecto admitida en las imágenes del usuario es de 1:1.
 
-1. Cree una DSC con los detalles mencionados en el paso siguiente. Para obtener más información, consulte el tema &quot;Desarrollo de componentes para AEM Forms&quot; en [Programación con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guía.
-1. En el DSC, defina un nuevo SPI que exponga los métodos getCurrentUserImageUrl y getUserImageUrl para obtener una URL de imagen para un usuario de AEM Forms. A continuación se muestra un ejemplo de fragmento de código Java™:
+1. Cree un DSC con los detalles mencionados en el siguiente paso. Para obtener más información, consulte el tema “Desarrollar componentes para AEM Forms” en la guía [Programar con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
+1. En el DSC, defina un nuevo SPI que exponga los métodos getCurrentUserImageUrl y getUserImageUrl para obtener una URL de imagen para un usuario de AEM Forms. A continuación se muestra un ejemplo de un fragmento de código Java™:
 
    ```as3
    public class DemoUserImageURLProviderService { 
@@ -41,7 +45,7 @@ El avatar del usuario que ha iniciado sesión se muestra en la esquina superior 
    }
    ```
 
-1. Cree un archivo component.xml. Asegúrese de que spec-id se muestra en el siguiente fragmento de código.
+1. Cree un archivo component.xml. Asegúrese de que spec-id se muestre en el siguiente fragmento de código.
 
    El siguiente fragmento de código es un ejemplo. Personalícelo para adaptarlo a sus necesidades específicas.
 
@@ -83,5 +87,5 @@ El avatar del usuario que ha iniciado sesión se muestra en la esquina superior 
    </component>
    ```
 
-1. Implementar DSC a través de Workbench. Restart `ProcessManagementClientSessionService` servicio.
-1. Es posible que tenga que actualizar su navegador o cerrar la sesión/iniciar sesión con el usuario de nuevo.
+1. Implementar DSC a través de Workbench. Reiniciar el servicio `ProcessManagementClientSessionService`.
+1. Es posible que tenga que actualizar su explorador o cerrar la sesión/iniciar sesión con el usuario de nuevo.

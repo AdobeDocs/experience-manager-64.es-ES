@@ -2,14 +2,19 @@
 title: Uso de imágenes inteligentes con relación de píxeles de dispositivo del lado del cliente
 description: Aprenda a utilizar la proporción de píxeles de dispositivo del lado del cliente con imágenes inteligentes en Adobe Experience Manager as a Cloud Service con Dynamic Media.
 role: Admin,User
-source-git-commit: 675e98231e53bb9771446c33d9d8ec8968531014
+exl-id: 3c19a02f-9d97-4ed4-92ea-0b5861267219
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '323'
-ht-degree: 0%
+source-wordcount: '359'
+ht-degree: 2%
 
 ---
 
 # Acerca de las imágenes inteligentes con proporción de píxeles de dispositivo del lado del cliente (DPR) {#client-side-dpr}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 La solución de imágenes inteligentes actual utiliza cadenas del agente de usuario para determinar el tipo de dispositivo (escritorio, tableta, móvil, etc.) que se está utilizando.
 
@@ -69,3 +74,4 @@ Los siguientes archivos JavaScript de la descarga solo se proporcionan como refe
 >[!MORELIKETHIS]
 >
 >* [Imágenes inteligentes](/help/assets/imaging-faq.md)
+

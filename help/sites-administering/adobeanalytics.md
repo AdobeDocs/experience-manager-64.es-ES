@@ -1,45 +1,48 @@
 ---
 title: Integración con Adobe Analytics
-seo-title: Integración con Adobe Analytics
+seo-title: Integrating with Adobe Analytics
 description: Aprenda a integrar AEM con Adobe Analytics.
-seo-description: Aprenda a integrar AEM con Adobe Analytics.
+seo-description: Learn how to integrate AEM with Adobe Analytics.
 uuid: 8329d891-1897-46f6-80ee-40244b079c0e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 0089394f-0107-49eb-ad73-52e9cabe71b1
-translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+exl-id: ca11bfcd-06d1-4ca9-9069-afa91d8a6610
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '302'
-ht-degree: 21%
+source-wordcount: '326'
+ht-degree: 65%
 
 ---
 
-
 # Integración con Adobe Analytics{#integrating-with-adobe-analytics}
 
-La integración de Adobe Analytics y AEM le permite rastrear la actividad de su página web:
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-* Una configuración de Adobe Analytics permite AEM autenticarse con Adobe Analytics.
-* Un marco identifica los datos que se envían al grupo de informes de Adobe Analytics.
+La integración de Adobe Analytics y AEM permite rastrear la actividad de la página web:
 
-Los datos incluyen datos de página y de usuario; por ejemplo:
+* Una configuración de Adobe Analytics permite a AEM autenticarse con Adobe Analytics.
+* Un marco de trabajo identifica los datos que se envían al grupo de informes de Adobe Analytics.
 
-* datos que AEM los componentes recopilan
+Los datos incluyen datos de página y usuario; por ejemplo:
+
+* datos que recopilan los componentes de AEM
 * clics en vínculos
 * información de uso de vídeo
-* el número de visitas a la página desde Adobe Analytics
+* número de visitas a la página desde Adobe Analytics
 
-Las páginas siguientes le ayudan a configurar la integración:
+Las siguientes páginas le ayudan a configurar la integración:
 
-* [Conexión a Adobe Analytics y creación de marcos](/help/sites-administering/adobeanalytics-connect.md)
-* [Configuración del seguimiento de vínculos para Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
-* [Asignación de datos de componentes con propiedades de Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
-* [Configuración del seguimiento de videos para Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
+* [Conectarse a Adobe Analytics y crear marcos](/help/sites-administering/adobeanalytics-connect.md)
+* [Configuración de Seguimiento de vínculos para Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
+* [Asignación de datos de componente con propiedades de Adobe Analytics](/help/sites-administering/adobeanalytics-mapping.md)
+* [Configuración del seguimiento de vídeo para Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
 
-También puede utilizar el [Asistente para la selección](/help/sites-administering/opt-in.md) para realizar fácilmente la integración.
+También puede usar la variable [Asistente de inclusión](/help/sites-administering/opt-in.md) para realizar fácilmente la integración.
 
 >[!NOTE]
 >
@@ -49,19 +52,16 @@ También puede utilizar el [Asistente para la selección](/help/sites-administer
 
 Consulte:
 
-* [Ampliación de la ](/help/sites-developing/extending-analytics.md) integración de Adobe Analytics para obtener información sobre el desarrollo de componentes que recopilan datos de usuario y la personalización del marco de trabajo de Adobe Analytics.
-* El artículo de la base de conocimientos, [Integración de Adobe Analytics: solución de problemas](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), para obtener información sobre la solución de problemas de la integración con Adobe Analytics.
+* [Ampliación de la integración con Adobe Analytics](/help/sites-developing/extending-analytics.md) para obtener información acerca del desarrollo de componentes que recopilan datos de usuario y la personalización del marco de trabajo de Adobe Analytics.
+* El artículo de la base de conocimiento, [Integración de Adobe Analytics: solución de problemas](https://helpx.adobe.com/es/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), para obtener información acerca de la solución de problemas de la integración de Adobe Analytics.
 
 >[!NOTE]
 >
->Si utiliza Adobe Analytics con una configuración proxy personalizada, debe [configurar dos paquetes](/help/sites-deploying/configuring-osgi.md) OSGi (por ejemplo, con la consola web) necesarios para las configuraciones proxy del cliente **HTTP de Apache**. Ambas son necesarias, ya que algunas funcionalidades de AEM utilizan las API 3.x, mientras que otras utilizan las API 4.x. Configuración:
+>Si utiliza Adobe Analytics con una configuración proxy personalizada, debe [configurar dos paquetes](/help/sites-deploying/configuring-osgi.md) OSGi (por ejemplo, con la consola web) necesarios para las configuraciones proxy del cliente **HTTP de Apache**. Ambas son necesarias, ya que algunas funcionalidades de AEM utilizan las API 3.x, mientras que otras utilizan las API 4.x. Configuración de:
 >
->* **Day Commons HTTP Client 3.1** para configurar la API 3.x;\
+>* **Cliente HTTP 3.1 de Day Commons** para configurar la API 3.x;\
    >  por ejemplo, [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
-   >
-   >
-* **Configuración del proxy de componentes HTTP de Apache** para configurar la API 4.x;
 >
->  
-por ejemplo, [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
-
+>* **Configuración proxy de componentes HTTP de Apache** para configurar la API 4.x;
+>
+>  por ejemplo, [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)

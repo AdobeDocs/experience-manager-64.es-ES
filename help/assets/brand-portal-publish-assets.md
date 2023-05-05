@@ -5,16 +5,20 @@ contentOwner: VG
 feature: Brand Portal
 role: User
 exl-id: 6b78124d-4022-452f-8d0f-b667de337bf4
-source-git-commit: de5632ff0ee87a4ded88e792b57e818baf4c01a3
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '439'
 ht-degree: 30%
 
 ---
 
 # Publicar recursos en Brand Portal {#publish-assets-to-brand-portal}
 
-Como administrador de Adobe Experience Manager Assets, puede publicar recursos en la instancia [!DNL Experience Manager Assets Brand Portal] (o programar el flujo de trabajo de publicación para una fecha y hora posteriores) de su organización. Sin embargo, primero debe configurar [!DNL Assets] con [!DNL Brand Portal]. Para obtener más información, consulte [Configuración [!DNL Assets] con [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md).
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+Como administrador de Adobe Experience Manager Assets, puede publicar recursos en [!DNL Experience Manager Assets Brand Portal] (o programe el flujo de trabajo de publicación para una fecha y hora posteriores) para su organización. Sin embargo, primero debe configurar [!DNL Assets] con [!DNL Brand Portal]. Para obtener más información, consulte [Configurar [!DNL Assets] con [!DNL Brand Portal]](configure-aem-assets-with-brand-portal.md).
 
 Después de publicar un recurso, este está disponible para los usuarios de Brand Portal.
 
@@ -24,9 +28,9 @@ Una vez que la replicación se haya realizado correctamente, puede publicar recu
 
 >[!NOTE]
 >
->Adobe recomienda la publicación escalonada, preferiblemente durante las horas no pico, para que el autor [!DNL Experience Manager] no ocupe recursos excesivos.
+>Adobe recomienda la publicación escalonada, preferiblemente durante las horas no pico, para que la variable [!DNL Experience Manager] el autor no ocupa recursos excesivos.
 
-1. En la consola Recursos, pase el ratón sobre los recursos que quiera y seleccione la opción **[!UICONTROL Publicar]** en las acciones rápidas.
+1. En la consola Recursos , pase el ratón sobre los recursos que quiera y seleccione **[!UICONTROL Publicación]** de las acciones rápidas.
 
    También puede seleccionar los recursos que desea publicar en Brand Portal.
 
@@ -40,13 +44,13 @@ Una vez que la replicación se haya realizado correctamente, puede publicar recu
 
 Para publicar los recursos seleccionados en Brand Portal, haga una de las acciones siguientes:
 
-* En la barra de herramientas, seleccione **[!UICONTROL Publicación rápida]**. A continuación, en el menú, seleccione **[!UICONTROL Publicar en Brand Portal]**.
+* En la barra de herramientas, seleccione **[!UICONTROL Publicación rápida]**. A continuación, en el menú , seleccione **[!UICONTROL Publicar en Brand Portal]**.
 
 * En la barra de herramientas, seleccione **[!UICONTROL Administrar publicación]**.
 
-   1. A continuación, en **[!UICONTROL Action]** seleccione **[!UICONTROL Publicar en Brand Portal]** y, en **[!UICONTROL Programación]**, seleccione **[!UICONTROL Ahora]**. Toque o haga clic en **[!UICONTROL Siguiente].**
+   1. A continuación, desde el **[!UICONTROL Acción]** select **[!UICONTROL Publicar en Brand Portal]** y de **[!UICONTROL Programación]** select **[!UICONTROL Ahora]**. Toque o haga clic **[!UICONTROL Siguiente].**
 
-   2. Dentro de **[!UICONTROL Scope]**, confirme la selección y pulse o haga clic en **[!UICONTROL Publicar en Brand Portal]**.
+   2. Within **[!UICONTROL Ámbito]**, confirme la selección y pulse o haga clic en **[!UICONTROL Publicar en Brand Portal]**.
 
 Aparece un mensaje que indica que los recursos se han puesto en cola para su publicación en Brand Portal. Inicie sesión en la interfaz de Brand Portal para ver los recursos publicados.
 
@@ -54,14 +58,14 @@ Aparece un mensaje que indica que los recursos se han puesto en cola para su pub
 
 Para programar la publicación de recursos en Brand Portal para una fecha u hora posterior:
 
-1. Una vez que haya seleccionado los recursos o las carpetas que desea publicar, seleccione **[!UICONTROL Administrar publicación]** en la barra de herramientas de la parte superior.
-2. En la página **[!UICONTROL Administrar publicación]**, seleccione **[!UICONTROL Publicar en Brand Portal]** en **[!UICONTROL Acción]** y seleccione **[!UICONTROL Más adelante]** en **[!UICONTROL Programación]**.
+1. Una vez que haya seleccionado los recursos o carpetas que desea publicar, seleccione **[!UICONTROL Administrar publicación]** en la barra de herramientas de la parte superior.
+2. Activado **[!UICONTROL Administrar publicación]** página, seleccione **[!UICONTROL Publicar en Brand Portal]** from **[!UICONTROL Acción]** y seleccione **[!UICONTROL Más tarde]** from **[!UICONTROL Programación]**.
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 
-3. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Toque o haga clic en **[!UICONTROL Siguiente]**.
-4. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Toque o haga clic en **[!UICONTROL Siguiente]**.
-5. Especifique un título de flujo de trabajo en **[!UICONTROL Flujos de trabajo]**. Toque o haga clic en **[!UICONTROL Publicar posteriormente]**.
+3. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Toque o haga clic **[!UICONTROL Siguiente]**.
+4. Seleccione una **[!UICONTROL Fecha de activación]** y especifique la hora. Toque o haga clic **[!UICONTROL Siguiente]**.
+5. Especifique un título de flujo de trabajo en **[!UICONTROL Flujos de trabajo]**. Toque o haga clic **[!UICONTROL Publicar más tarde]**.
 
    ![publishworkflow](assets/publishworkflow.png)
 

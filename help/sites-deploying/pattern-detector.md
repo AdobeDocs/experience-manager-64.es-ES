@@ -1,8 +1,8 @@
 ---
 title: Evaluación de la complejidad de la actualización con Pattern Detector
-seo-title: Evaluación de la complejidad de la actualización con Pattern Detector
+seo-title: Assessing the Upgrade Complexity with the Pattern Detector
 description: Aprenda a utilizar Pattern Detector para evaluar la complejidad de la actualización.
-seo-description: Aprenda a utilizar Pattern Detector para evaluar la complejidad de la actualización.
+seo-description: Learn how to use the Pattern Detector to assess the complexity of your upgrade.
 uuid: 4fcfdb16-3183-442a-aa5b-5f9c4fb7e091
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,16 +10,19 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 375e202c-21d4-41f1-a2d5-592ac95c8f25
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 3%
+source-wordcount: '536'
+ht-degree: 4%
 
 ---
 
-
 # Evaluación de la complejidad de la actualización con Pattern Detector{#assessing-the-upgrade-complexity-with-the-pattern-detector}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Información general {#overview}
 
@@ -32,7 +35,7 @@ Esto podría servir como una evaluación de las actividades de desarrollo que se
 
 ## Configuración {#how-to-set-up}
 
-Pattern Detector se presenta de forma independiente como [un paquete](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) que trabaja en cualquier versión de origen AEM de 6.1 a 6.5 que tenga como objetivo AEM actualización 6.5. Se puede instalar mediante el [Administrador de paquetes](https://helpx.adobe.com/es/experience-manager/6-5/sites/administering/using/package-manager.html).
+El detector de patrones se libera por separado como un [un paquete](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65)  trabajar en cualquier versión de AEM de origen de 6.1 a 6.5, segmentando AEM actualización a 6.5. Se puede instalar utilizando la variable [Administrador de paquetes](https://helpx.adobe.com/es/experience-manager/6-5/sites/administering/using/package-manager.html).
 
 ## Usos {#how-to-use}
 
@@ -42,7 +45,7 @@ Pattern Detector se presenta de forma independiente como [un paquete](https://ww
 >
 >* aumentar la tasa de detección
 >* evite cualquier ralentización en instancias críticas para el negocio\
-   >al mismo tiempo, se recomienda ejecutarlo **en entornos de ensayo** lo más cerca posible de los de producción en las áreas de aplicaciones de usuario, contenido y configuraciones.
+   >al mismo tiempo, se recomienda ejecutarlo **en entornos de ensayo** que estén lo más cerca posible de las de producción en las áreas de aplicaciones de usuario, contenido y configuraciones.
 
 
 Puede utilizar varios métodos para comprobar la salida del detector de patrones:
@@ -50,13 +53,13 @@ Puede utilizar varios métodos para comprobar la salida del detector de patrones
 * **A través de la consola Felix Inventory:**
 
 1. Vaya a la consola web de AEM navegando hasta: https://<i></i>serveraddress:serverport/system/console/configMgr
-1. Seleccione **Estado - detector de patrones** como se muestra en la imagen siguiente:
+1. Select **Estado: detector de patrones** como se muestra en la siguiente imagen:
 
    ![captura de pantalla-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **A través de una interfaz JSON normal o basada en texto reactivo**
 
-* **A través de una interfaz** de líneas JSON reactivas, que genera un documento JSON independiente en cada línea.
+* **A través de una interfaz de líneas JSON reactiva**, que genera un documento JSON independiente en cada línea.
 
 Estos dos métodos se detallan a continuación:
 
@@ -85,7 +88,7 @@ El resultado tendrá este aspecto:
 2018-02-13T14:18:32.071+01:00 [SUSPICION] The pattern=ECU/extraneous.content.usage was found by detector=ContentAccessDetector with id=a07fd94318f12312c165e06d890cbd3c2c8b8dad0c030663db8b4c800dd7c33f message="Cross-boundary overlay of internal marked path /libs/granite/operations/components/commons/commons.jsp/jcr:content referenced at /apps/granite/operations/components/commons/commons.jsp/jcr:content with properties redefined: jcr:lastModifiedBy, jcr:mimeType, jcr:data, jcr:lastModified, jcr:uuid". More info at=https://www.adobe.com/go/aem6_EC
 ```
 
-El progreso se puede filtrar mediante el comando `grep`:
+El progreso se puede filtrar usando la variable `grep` comando:
 
 ```shell
 curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep PROGRESS
@@ -101,7 +104,7 @@ Lo que resulta en la siguiente salida:
 
 ## Gestión de la interfaz JSON {#handling-the-json-interface}
 
-Del mismo modo, JSON se puede procesar mediante la [herramienta jq](https://stedolan.github.io/jq/) en cuanto se publique.
+Del mismo modo, JSON se puede procesar mediante el [herramienta jq](https://stedolan.github.io/jq/) tan pronto como se publique.
 
 ```shell
 curl -Nsu 'admin:admin' http://localhost:4502/system/console/status-pattern-detector.json | tee patterns-report.json | jq --unbuffered -C 'select(.suspicion == true)'
@@ -211,7 +214,7 @@ Con la salida:
 
 >[!NOTE]
 >
->El método recomendado es guardar todo el resultado de curl en el archivo y luego procesarlo a través de `jq` o `grep` para filtrar el tipo de información.
+>El método recomendado es guardar toda la salida de curl en el archivo y luego procesarla mediante `jq` o `grep` para filtrar el tipo de información.
 
 ## Ámbito de detección {#scope}
 
@@ -222,4 +225,3 @@ El detector de patrones actual permite comprobar:
 * definiciones de índices Oak (compatibilidad)
 * Paquetes VLT (sobreutilización)
 * rep:Compatibilidad de nodos de usuario (en el contexto de la configuración de OAuth)
-

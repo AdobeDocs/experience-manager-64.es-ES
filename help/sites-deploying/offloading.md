@@ -1,8 +1,8 @@
 ---
 title: Descarga de trabajos
-seo-title: Descarga de trabajos
+seo-title: Offloading Jobs
 description: Aprenda a configurar y utilizar instancias de AEM en una topología para realizar tipos de procesamiento específicos.
-seo-description: Aprenda a configurar y utilizar instancias de AEM en una topología para realizar tipos de procesamiento específicos.
+seo-description: Learn how to configure and use AEM instances in a topology in order to perform specific types of processing.
 uuid: e971d403-dfd2-471f-b23d-a67e35f1ed88
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,22 +10,25 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 feature: Configuring
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: b10bf1b6-0360-45ca-b1aa-f4184cbfb5c0
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2804'
+source-wordcount: '2818'
 ht-degree: 1%
 
 ---
 
-
 # Descarga de trabajos{#offloading-jobs}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Introducción {#introduction}
 
 La descarga distribuye tareas de procesamiento entre instancias de Experience Manager en una topología. Con la descarga, puede utilizar instancias de Experience Manager específicas para realizar tipos de procesamiento específicos. El procesamiento especializado le permite maximizar el uso de los recursos de servidor disponibles.
 
-La descarga se basa en las funciones [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) y Sling JobManager. Para utilizar la descarga, agregue clústeres de Experience Manager a una topología e identifique los temas de trabajo que procesa el clúster. Los clústeres están formados por una o más instancias de Experience Manager, de modo que una sola instancia se considera un clúster.
+La descarga se basa en la variable [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) y Sling JobManager. Para utilizar la descarga, agregue clústeres de Experience Manager a una topología e identifique los temas de trabajo que procesa el clúster. Los clústeres están formados por una o más instancias de Experience Manager, de modo que una sola instancia se considera un clúster.
 
 Para obtener información sobre cómo agregar instancias a una topología, consulte [Administración de topologías](/help/sites-deploying/offloading.md#administering-topologies).
 
@@ -41,7 +44,7 @@ Cuando JobManager crea un trabajo, el marco de descarga selecciona un clúster d
 * El clúster debe incluir una o más instancias que ejecuten un JobConsumer registrado para el tema del trabajo.
 * El tema debe estar habilitado para al menos una instancia del clúster.
 
-Consulte [Configuración del consumo de tema](/help/sites-deploying/offloading.md#configuring-topic-consumption) para obtener información sobre cómo refinar la distribución de trabajos.
+Consulte [Configuración del consumo de tema](/help/sites-deploying/offloading.md#configuring-topic-consumption) para obtener información sobre cómo perfeccionar la distribución de trabajos.
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
@@ -220,9 +223,9 @@ El servicio Apache Sling Job Consumer Manager proporciona propiedades de lista d
 
 **Nota:** Si la instancia pertenece a una topología, también puede utilizar el Explorador de descarga en cualquier equipo de la topología para habilitar o deshabilitar temas.
 
-La lógica que crea la lista de temas habilitados permite primero todos los temas que están en la lista de permitidos y luego elimina los temas que están en la lista de bloqueados. De forma predeterminada, todos los temas están habilitados (el valor de lista de permitidos es `*`) y no hay temas deshabilitados (la lista de bloqueados no tiene valor).
+La lógica que crea la lista de temas habilitados permite primero todos los temas que están en la lista de permitidos y luego elimina los temas que están en la lista de bloqueados. De forma predeterminada, todos los temas están habilitados (el valor de lista de permitidos es `*`) y no hay temas desactivados (la lista de bloqueados no tiene valor).
 
-Utilice la consola web o un nodo `sling:OsgiConfig` para configurar las siguientes propiedades. Para los nodos `sling:OsgiConfig`, el PID del servicio de Job Consumer Manager es org.apache.sling.event.impl.jobs.JobConsumerManager.
+Utilice la consola web o una `sling:OsgiConfig` para configurar las siguientes propiedades. Para `sling:OsgiConfig` , el PID del servicio de Job Consumer Manager es org.apache.sling.event.impl.jobs.JobConsumerManager.
 
 | Nombre de propiedad en la consola web | OSGi ID | Descripción |
 |---|---|---|
@@ -235,7 +238,7 @@ El marco de descarga utiliza la replicación para transportar recursos entre el 
 
 >[!CAUTION]
 >
->Un problema conocido con los agentes de replicación generados automáticamente requiere que cree manualmente nuevos agentes de replicación. Siga el procedimiento de [Problemas al usar los agentes de replicación generados automáticamente](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) antes de crear los agentes para la descarga.
+>Un problema conocido con los agentes de replicación generados automáticamente requiere que cree manualmente nuevos agentes de replicación. Siga el procedimiento descrito en [Problemas al usar los agentes de replicación generados automáticamente](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) antes de crear los agentes para la descarga.
 
 Cree los agentes de replicación que transportan cargas de trabajo entre instancias para su descarga. La siguiente ilustración muestra los agentes necesarios para descargar del autor en una instancia de trabajo. El autor tiene un Sling ID de 1 y la instancia de trabajo tiene un Sling ID de 2:
 
@@ -255,17 +258,17 @@ Este esquema de replicación es similar al utilizado entre instancias de autor y
 
 ### Asignación de nombres a los agentes de replicación para la descarga {#naming-the-replication-agents-for-offloading}
 
-Utilice un formato específico para la propiedad ***Name*** de los agentes de replicación de modo que el marco de descarga utilice automáticamente el agente correcto para instancias de trabajo específicas.
+Utilice un formato específico para la variable ***Nombre*** propiedad de los agentes de replicación para que el marco de descarga utilice automáticamente el agente correcto para instancias de trabajo específicas.
 
 **Asigne un nombre al agente saliente en la instancia de autor:**
 
-`offloading_<slingid>`, donde  `<slingid>` es el ID de Sling de la instancia de trabajo.
+`offloading_<slingid>`, donde `<slingid>` es el ID de Sling de la instancia de trabajo.
 
 Ejemplo: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **Asigne un nombre al agente inverso en la instancia de autor:**
 
-`offloading_reverse_<slingid>`, donde  `<slingid>` es el ID de Sling de la instancia de trabajo.
+`offloading_reverse_<slingid>`, donde `<slingid>` es el ID de Sling de la instancia de trabajo.
 
 Ejemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
@@ -275,10 +278,10 @@ Ejemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Creación del agente saliente {#creating-the-outgoing-agent}
 
-1. Cree un **Agente de replicación** en el autor. (Consulte el [documento mención para agentes de replicación](/help/sites-deploying/replication.md)). Especifique cualquier **Título**. El **Name** debe seguir la convención de nomenclatura.
+1. Cree un **Agente de replicación** en author. (Consulte la [documentación para agentes de replicación](/help/sites-deploying/replication.md)). Especifique cualquier **Título**. La variable **Nombre** debe seguir la convención de nomenclatura.
 1. Cree el agente con las siguientes propiedades:
 
-   | Propiedad | Value |
+   | Propiedad | Valor |
    |---|---|
    | Configuración > Tipo de serialización | Predeterminado |
    | Transporte >URI de transporte | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
@@ -289,7 +292,7 @@ Ejemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Creación del agente inverso {#creating-the-reverse-agent}
 
-1. Cree un **Agente de replicación inversa** en el autor. (Consulte el [documento mención para agentes de replicación](/help/sites-deploying/replication.md)). Especifique cualquier **Título**. El **Name** debe seguir la convención de nomenclatura.
+1. Cree un **Agente de replicación inversa** en author. (Consulte la [documentación para agentes de replicación](/help/sites-deploying/replication.md).) Especifique cualquier **Título**. La variable **Nombre** debe seguir la convención de nomenclatura.
 1. Cree el agente con las siguientes propiedades:
 
    | Propiedad | Valor |
@@ -302,7 +305,7 @@ Ejemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Creación del agente de la bandeja de salida {#creating-the-outbox-agent}
 
-1. Cree un **Agente de replicación** en la instancia de trabajo. (Consulte el [documento mención para agentes de replicación](/help/sites-deploying/replication.md)). Especifique cualquier **Título**. El **Nombre** debe ser `offloading_outbox`.
+1. Cree un **Agente de replicación** en la instancia de trabajo. (Consulte la [documentación para agentes de replicación](/help/sites-deploying/replication.md).) Especifique cualquier **Título**. La variable **Nombre** debe `offloading_outbox`.
 1. Cree el agente con las siguientes propiedades.
 
    | Propiedad | Valor |
@@ -315,7 +318,7 @@ Ejemplo: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 Obtenga el ID de Sling de una instancia de Experience Manager mediante cualquiera de los métodos siguientes:
 
-* Abra la consola web y, en la configuración de Sling, busque el valor de la propiedad de ID de Sling ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Este método es útil si la instancia aún no forma parte de la topología.
+* Abra la consola web y, en la configuración de Sling, busque el valor de la propiedad ID de Sling ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Este método es útil si la instancia aún no forma parte de la topología.
 * Utilice el explorador de topología si la instancia ya forma parte de la topología.
 
 ## Descarga del procesamiento de recursos DAM {#offloading-the-processing-of-dam-assets}
@@ -326,16 +329,16 @@ De forma predeterminada, el Experience Manager ejecuta el flujo de trabajo de re
 
 >[!CAUTION]
 >
->Ningún flujo de trabajo debe ser transitorio cuando se utiliza con la descarga del flujo de trabajo. Por ejemplo, el flujo de trabajo de recursos de actualización de DAM no debe ser transitorio cuando se utiliza para la descarga de recursos. Para establecer o anular el indicador transitorio de un flujo de trabajo, consulte [Flujos de trabajo transitorios](/help/assets/performance-tuning-guidelines.md#workflows).
+>Ningún flujo de trabajo debe ser transitorio cuando se utiliza con la descarga del flujo de trabajo. Por ejemplo, el flujo de trabajo de recursos de actualización de DAM no debe ser transitorio cuando se utiliza para la descarga de recursos. Para establecer o anular el indicador transitorio en un flujo de trabajo, consulte [Flujos de trabajo transitorios](/help/assets/performance-tuning-guidelines.md#workflows).
 
 El siguiente procedimiento asume las siguientes características para la topología de descarga:
 
 * Una o más instancias de Experience Manager son instancias de creación con las que los usuarios interactúan para agregar o actualizar recursos DAM.
 * Los usuarios no interactúan directamente con una o más instancias de Experience Manager que procesan los recursos DAM. Estas instancias están dedicadas al procesamiento en segundo plano de los recursos DAM.
 
-1. En cada instancia de Experience Manager, configure Discovery Service para que apunte al conector de topografía raíz. (Consulte [Configuración de la pertenencia a la topología](#title4)).
+1. En cada instancia de Experience Manager, configure Discovery Service para que apunte al conector de topografía raíz. (Consulte [Configuración de la pertenencia a la topología](#title4).)
 1. Configure el conector de topografía raíz para que las instancias de conexión estén en la lista de permitidos.
-1. Abra el Explorador de descargas y deshabilite el tema `com/adobe/granite/workflow/offloading` en las instancias con las que los usuarios interactúan para cargar o cambiar recursos DAM.
+1. Abra el explorador de descargas y deshabilite la `com/adobe/granite/workflow/offloading` sobre las instancias con las que los usuarios interactúan para cargar o cambiar recursos DAM.
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
@@ -344,7 +347,7 @@ El siguiente procedimiento asume las siguientes características para la topolog
    1. Abra la consola Flujo de trabajo .
    1. Haga clic en la ficha Iniciador .
    1. Busque las dos configuraciones de Launch que ejecutan el flujo de trabajo de recursos de actualización de DAM. Un tipo de evento de configuración de lanzador es Nodo creado y el otro tipo es Nodo modificado.
-   1. Cambie ambos tipos de eventos para que ejecuten el flujo de trabajo de descarga de recursos de actualización de DAM . (Para obtener información sobre las configuraciones del iniciador, consulte [Inicio de flujos de trabajo cuando cambian los nodos](/help/sites-administering/workflows-starting.md)).
+   1. Cambie ambos tipos de eventos para que ejecuten el flujo de trabajo de descarga de recursos de actualización de DAM . (Para obtener información sobre las configuraciones del iniciador, consulte [Empezar flujos de trabajo cuando cambian los nodos](/help/sites-administering/workflows-starting.md).)
 
 1. En las instancias que realizan el procesamiento en segundo plano de los recursos DAM, desactive los iniciadores de flujo de trabajo que ejecutan el flujo de trabajo de recursos de actualización DAM.
 
@@ -352,7 +355,6 @@ El siguiente procedimiento asume las siguientes características para la topolog
 
 Además de los detalles presentados en esta página, también puede leer lo siguiente:
 
-* Para obtener información sobre el uso de las API de Java para crear trabajos y consumidores de trabajos, consulte [Creación y consumo de trabajos para descarga](/help/sites-developing/dev-offloading.md).
+* Para obtener información sobre el uso de las API de Java para crear trabajos y para consumidores de empleo, consulte [Creación y consumo de trabajos para descarga](/help/sites-developing/dev-offloading.md).
 * Para obtener instrucciones generales y prácticas recomendadas para la descarga de recursos, consulte [Directrices generales y prácticas recomendadas para la descarga de recursos](/help/assets/assets-offloading-best-practices.md#general-guidance-and-best-practices-for-asset-offloading).
-* Para saber cómo deshabilitar la creación automática de agentes de descarga, consulte [Desactivación de la administración automática de agentes](/help/assets/assets-offloading-best-practices.md#turning-off-automatic-agent-management).
-
+* Para saber cómo desactivar la creación automática de agentes de descarga, consulte [Desactivación de la administración automática de agentes](/help/assets/assets-offloading-best-practices.md#turning-off-automatic-agent-management).

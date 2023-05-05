@@ -5,16 +5,20 @@ contentOwner: AG
 feature: Developer Tools,Asset Management
 role: User,Admin
 exl-id: 12899f61-9ceb-4bde-a501-6c50c93e3276
-source-git-commit: 1679bbab6390808a1988cb6fe9b7692c3db31ae4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3300'
+source-wordcount: '3336'
 ht-degree: 2%
 
 ---
 
 # Creación y configuración de páginas del Editor de recursos {#creating-and-configuring-asset-editor-pages}
 
-En este documento se describe lo siguiente:
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+Este documento describe lo siguiente:
 
 * Por qué se crean páginas personalizadas del Editor de recursos.
 * Cómo crear y personalizar páginas del Editor de recursos, que son páginas WCM que permiten ver y editar metadatos, así como realizar acciones en el recurso.
@@ -26,13 +30,13 @@ En este documento se describe lo siguiente:
 
 ## ¿Por qué crear y configurar páginas del Editor de recursos? {#why-create-and-configure-asset-editor-pages}
 
-La administración de activos digitales se está utilizando en cada vez más escenarios. Al pasar de una solución a pequeña escala para un pequeño grupo de usuarios de formación profesional -por ejemplo, fotógrafos o taxónomos- a grupos de usuarios más grandes y diversos, por ejemplo usuarios empresariales, autores de WCM, periodistas, etc.-, la potente interfaz de usuario de [!DNL Adobe Experience Manager Assets] para usuarios profesionales puede proporcionar demasiada información y los interesados empiezan a solicitar interfaces de usuario o aplicaciones específicas para acceder a los recursos digitales que les son de importancia.
+La administración de activos digitales se está utilizando en cada vez más escenarios. Cuando se pasa de una solución a pequeña escala para un pequeño grupo de usuarios de formación profesional -por ejemplo, fotógrafos o taxónomos- a grupos de usuarios más grandes y diversos -por ejemplo, usuarios empresariales, autores de WCM, periodistas, etc.-, la poderosa interfaz de usuario de [!DNL Adobe Experience Manager Assets] los usuarios profesionales pueden proporcionar demasiada información y las partes interesadas empiezan a solicitar interfaces de usuario o aplicaciones específicas para acceder a los recursos digitales que les son de importancia.
 
 Estas aplicaciones centradas en los recursos pueden ser simples galerías de fotos en una intranet donde los empleados pueden cargar fotos de las visitas a los espectáculos comerciales o un centro de prensa en un sitio web público, como el ejemplo proporcionado con Geometrixx. Las aplicaciones centradas en recursos también pueden extenderse a soluciones completas, incluidos carros de compras, cierres de compra y procesos de verificación.
 
-La creación de una aplicación centrada en los recursos se convierte, en gran medida, en un proceso de configuración que no requiere codificación, solo conocimiento de los grupos de usuarios y sus necesidades, así como conocimiento de los metadatos que se utilizan. Las aplicaciones centradas en recursos creadas con [!DNL Assets] son ampliables: con un esfuerzo de codificación moderado, se pueden crear componentes reutilizables para buscar, ver y modificar recursos.
+La creación de una aplicación centrada en los recursos se convierte, en gran medida, en un proceso de configuración que no requiere codificación, solo conocimiento de los grupos de usuarios y sus necesidades, así como conocimiento de los metadatos que se utilizan. Aplicaciones centradas en recursos creadas con [!DNL Assets] son ampliables: con un esfuerzo de codificación moderado, se pueden crear componentes reutilizables para buscar, ver y modificar recursos.
 
-Una aplicación centrada en recursos en [!DNL Experience Manager] consiste en una página del Editor de recursos, que puede utilizarse para obtener una vista detallada de un recurso específico. Una página del Editor de recursos también permite editar metadatos, siempre que el usuario que accede al recurso tenga los permisos necesarios.
+Una aplicación centrada en los recursos en [!DNL Experience Manager] consta de una página del Editor de recursos, que puede utilizarse para obtener una vista detallada de un recurso específico. Una página del Editor de recursos también permite editar metadatos, siempre que el usuario que accede al recurso tenga los permisos necesarios.
 
 ## Creación y configuración de una página Uso compartido de recursos {#creating-and-configuring-an-asset-share-page}
 
@@ -53,11 +57,11 @@ Para crear una nueva página Uso compartido de recursos, puede crearla cuando es
 >
 >De forma predeterminada, al crear una página Uso compartido de recursos desde **Nuevo** en el administrador de recursos digital, automáticamente se crea un visualizador de recursos y un editor de recursos.
 
-Para crear una nueva página Uso compartido de recursos en la consola **Sitios web**:
+Para crear una nueva página Uso compartido de recursos en la **Sitios web** consola:
 
-1. En la pestaña **[!UICONTROL Sitios web]**, desplácese hasta el lugar donde desee crear una página de uso compartido de recursos y haga clic en **[!UICONTROL Nuevo]**.
+1. En el **[!UICONTROL Sitios web]** , desplácese hasta el lugar en el que desee crear una página de uso compartido de recursos y haga clic en **[!UICONTROL Nuevo]**.
 
-1. Seleccione la página **[!UICONTROL Asset Share]** y haga clic en **[!UICONTROL Create]**. La nueva página se crea y la página de uso compartido de recursos se enumera en la pestaña **[!UICONTROL Sitios web]**.
+1. Seleccione el **[!UICONTROL Uso compartido de recursos]** página y haga clic en **[!UICONTROL Crear]**. La nueva página se crea y la página de uso compartido de recursos se enumera en el **[!UICONTROL Sitios web]** pestaña .
 
 ![dam8](assets/dam8.png)
 
@@ -71,8 +75,8 @@ Para personalizar la página Uso compartido de recursos, utilice elementos de la
 
 Para crear una nueva página de uso compartido de recursos a través del administrador de recursos digital:
 
-1. En el administrador de recursos digitales, en **[!UICONTROL Nuevo]**, seleccione **[!UICONTROL Nuevo uso compartido de recursos]**.
-1. En **[!UICONTROL Title]**, introduzca el nombre de la página de uso compartido de recursos. Si lo desea, escriba un nombre para la dirección URL.
+1. En el administrador de recursos digitales, en **[!UICONTROL Nuevo]**, seleccione **[!UICONTROL Nuevo recurso compartido]**.
+1. En el **[!UICONTROL Título]**, introduzca el nombre de la página de uso compartido de recursos. Si lo desea, escriba un nombre para la dirección URL.
 
    ![screen_shot_2012-04-19at23626pm](assets/screen_shot_2012-04-19at23626pm.png)
 
@@ -80,7 +84,7 @@ Para crear una nueva página de uso compartido de recursos a través del adminis
 
    ![screen_shot_2012-04-19at24114pm](assets/screen_shot_2012-04-19at24114pm.png)
 
-   De forma predeterminada, al crear una página Uso compartido de recursos desde **[!UICONTROL Nuevo]**, automáticamente se crea un visualizador de recursos y un editor de recursos.
+   De forma predeterminada, al crear una página Uso compartido de recursos desde **[!UICONTROL Nuevo]**, un visualizador de recursos y un editor de recursos se crean automáticamente.
 
 #### Personalización de acciones {#customizing-actions}
 
@@ -88,21 +92,21 @@ Puede determinar qué acciones pueden realizar los usuarios en los recursos digi
 
 Para agregar acciones a la página Uso compartido de recursos:
 
-1. En la página Uso compartido de recursos que desea personalizar, haga clic en **[!UICONTROL Acciones]** en la barra de tareas.
+1. En la página Uso compartido de recursos que desee personalizar, haga clic en **[!UICONTROL Acciones]** en la barra de tareas.
 
    Las acciones disponibles son las siguientes:
    ![assetshare2](assets/assetshare2.bmp)
 
 | Acción | Descripción |
 |---|---|
-| [!UICONTROL Acción Eliminar] | Los usuarios pueden eliminar los recursos seleccionados. |
+| [!UICONTROL Eliminar acción] | Los usuarios pueden eliminar los recursos seleccionados. |
 | [!UICONTROL Acción de descarga] | Permite a los usuarios descargar los recursos seleccionados en sus equipos. |
-| [!UICONTROL Acción de Lightbox] | Guarda los recursos en un &quot;lightbox&quot;   donde puede realizar otras acciones en ellos. Esto resulta útil cuando se trabaja   con recursos en varias páginas. La caja de luz también se puede usar como un   carro de compras para activos. |
-| [!UICONTROL Acción de mover] | Los usuarios pueden mover el recurso a otro   ubicación |
-| [!UICONTROL Acción de etiquetas] | Permite que los usuarios agreguen etiquetas a los recursos seleccionados |
-| [!UICONTROL Acción de ver recursos] | Abre el recurso en el editor de recursos para   manipulación de usuarios. |
+| [!UICONTROL Acción de Lightbox] | Guarda los recursos en un &quot;lightbox&quot; donde puede realizar otras acciones en ellos. Esto resulta útil cuando se trabaja con recursos en varias páginas. La caja de luz también se puede utilizar como carro de compras para los activos. |
+| [!UICONTROL Acción de mover] | Los usuarios pueden mover el recurso a otra ubicación |
+| [!UICONTROL Acción de etiqueta] | Permite que los usuarios agreguen etiquetas a los recursos seleccionados |
+| [!UICONTROL Acción de ver recursos] | Abre el recurso en el editor de recursos para su manipulación por parte del usuario. |
 
-1. Arrastre la acción adecuada al área **Actions** de la página. Al hacerlo, se crea un botón que se utiliza para ejecutar esa acción.
+1. Arrastre la acción adecuada a la **Acciones** en la página. Al hacerlo, se crea un botón que se utiliza para ejecutar esa acción.
 
    ![chlimage_1-387](assets/chlimage_1-387.png)
 
@@ -112,7 +116,7 @@ Puede determinar cómo se muestran los resultados a partir de una lista predefin
 
 Para cambiar la forma en que se ven los resultados de la búsqueda:
 
-1. En la página Uso compartido de recursos que desea personalizar, haga clic en **[!UICONTROL Buscar]**.
+1. En la página Uso compartido de recursos que desee personalizar, haga clic en **[!UICONTROL Buscar]**.
 
    ![imagen_1](assets/chlimage_1.bmp)
 
@@ -122,14 +126,14 @@ Las lentes disponibles son las siguientes:
 
 | Objetivo | Descripción |
 |---|---|
-| **[!UICONTROL Vista de lista]** | Presenta los recursos en una lista con detalles. |
+| **[!UICONTROL Lista de vistas]** | Presenta los recursos en una lista con detalles. |
 | **[!UICONTROL Vista en mosaico]** | Presenta los recursos en forma de mosaico. |
 
 #### Vista en mosaico {#mosaic-lens}
 
 ![chlimage_1-388](assets/chlimage_1-388.png)
 
-#### Vista de lista {#list-lens}
+#### Lista de vistas {#list-lens}
 
 ![chlimage_1-389](assets/chlimage_1-389.png)
 
@@ -139,50 +143,50 @@ El generador de consultas permite introducir términos de búsqueda y crear cont
 
 Para personalizar el generador de consultas:
 
-1. En la página Uso compartido de recursos que desea personalizar, haga clic en **[!UICONTROL Editar]** en el Generador de consultas. De forma predeterminada, se abre la pestaña **[!UICONTROL General]**.
+1. En la página Uso compartido de recursos que desee personalizar, haga clic en **[!UICONTROL Editar]** en el Generador de consultas. De forma predeterminada, la variable **[!UICONTROL General]** se abre.
 
 1. Seleccione el número de resultados por página, la ruta del editor de recursos (si tiene un editor de recursos personalizado) y el título de las acciones.
 
    ![screen_shot_2012-04-23at15055pm](assets/screen_shot_2012-04-23at15055pm.png)
 
-1. Haga clic en la pestaña **[!UICONTROL Rutas]**. Introduzca una ruta o varias rutas que se ejecutarán en la búsqueda. Estas rutas se sobrescriben si el usuario utiliza el predicado Rutas .
+1. Haga clic en el **[!UICONTROL Rutas]** pestaña . Introduzca una ruta o varias rutas que se ejecutarán en la búsqueda. Estas rutas se sobrescriben si el usuario utiliza el predicado Rutas .
 
    ![screen_shot_2012-04-23at15150pm](assets/screen_shot_2012-04-23at15150pm.png)
 
 1. Introduzca otro tipo de nodo, si lo desea.
 
-1. En el campo **[!UICONTROL Query Builder URL]** puede anular o ajustar el generador de consultas e introducir las nuevas direcciones URL del servlet con el componente existente del generador de consultas. En el campo **[!UICONTROL Feed URL]** también puede anular la URL de la fuente.
+1. En el **[!UICONTROL URL del generador de consultas]** , puede anular o ajustar el generador de consultas e introducir las nuevas direcciones URL del servlet con el componente existente del generador de consultas. En el **[!UICONTROL Dirección URL de la fuente]** , también puede anular la URL de la fuente.
 
    ![screen_shot_2012-04-23at15313pm](assets/screen_shot_2012-04-23at15313pm.png)
 
-1. En el campo **[!UICONTROL Text]**, introduzca el texto que desea que aparezca para los resultados y los números de página de los resultados. Haga clic en **[!UICONTROL OK]** cuando termine de realizar los cambios.
+1. En el **[!UICONTROL Texto]** , introduzca el texto que desea que aparezca para los resultados y los números de página de los resultados. Haga clic en **[!UICONTROL OK]** cuando haya terminado de realizar los cambios.
 
    ![screen_shot_2012-04-23at15300pm](assets/screen_shot_2012-04-23at15300pm.png)
 
 #### Agregar predicados {#adding-predicates}
 
-[!DNL Experience Manager Assets] incluye una serie de predicados que puede agregar a la página Uso compartido de recursos. Esto permite que los usuarios restrinjan aún más las búsquedas. En algunos casos, pueden anular un parámetro del generador de consultas (por ejemplo, el parámetro Path).
+[!DNL Experience Manager Assets] incluye varios predicados que puede agregar a la página Uso compartido de recursos. Esto permite que los usuarios restrinjan aún más las búsquedas. En algunos casos, pueden anular un parámetro del generador de consultas (por ejemplo, el parámetro Path).
 
 Para agregar predicados:
 
-1. En la página Uso compartido de recursos que desea personalizar, haga clic en **[!UICONTROL Buscar]**.
+1. En la página Uso compartido de recursos que desee personalizar, haga clic en **[!UICONTROL Buscar]**.
 
    ![assetshare3](assets/assetshare3.bmp)
 
 1. Arrastre los predicados adecuados a la página Uso compartido de recursos debajo del generador de consultas. Al hacerlo, se crean los campos adecuados.
 
-   ![recurso compartido4](assets/assetshare4.bmp)
+   ![assetshare4](assets/assetshare4.bmp)
 
    Están disponibles los siguientes predicados:
 
 | Predicado | Descripción |
 |---|---|
-| **[!UICONTROL Predicado de fecha]** | Permite que los usuarios busquen recursos que se modificaron antes y después de determinadas fechas. |
+| **[!UICONTROL Predicado Fecha]** | Permite que los usuarios busquen recursos que se modificaron antes y después de determinadas fechas. |
 | **[!UICONTROL Predicado de opciones]** | El propietario del sitio puede especificar una propiedad para buscar (como en el predicado de propiedades, por ejemplo cq:tags) y un árbol de contenido desde el que rellenar las opciones (por ejemplo, el árbol de etiquetas). Al hacerlo, se genera una lista de opciones en la que los usuarios pueden seleccionar los valores (etiquetas) que debe tener la propiedad seleccionada (propiedad tag). Este predicado permite crear controles de lista como la lista de etiquetas, tipos de archivo, orientaciones de imagen, etc. Es bueno para un conjunto fijo de opciones. |
 | **[!UICONTROL Predicado de ruta]** | Permite a los usuarios definir la ruta y las subcarpetas, si lo desean. |
-| **[!UICONTROL Predicado de propiedades]** | El propietario del sitio especifica una propiedad que se va a buscar, por ejemplo tiff:ImageLength y el usuario puede escribir un valor, por ejemplo, 800. Esto devuelve todas las imágenes que tengan una altura de 800 píxeles. predicado útil si su propiedad puede tener valores arbitrarios. |
+| **[!UICONTROL Predicado de propiedad]** | El propietario del sitio especifica una propiedad que se va a buscar, por ejemplo tiff:ImageLength y el usuario puede escribir un valor, por ejemplo, 800. Esto devuelve todas las imágenes que tengan una altura de 800 píxeles. predicado útil si su propiedad puede tener valores arbitrarios. |
 
-Para obtener más información, consulte el [predicado javadocs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
+Para obtener más información, consulte la [predicar javadocs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html).
 
 1. Para seguir configurando el predicado, haga doble clic en él. Por ejemplo, al abrir el predicado de rutas, debe asignar la ruta raíz.
 
@@ -202,19 +206,19 @@ Al crear la página Editor de recursos, se recomienda crear la página directame
 
 Para crear una página del Editor de recursos:
 
-1. En la pestaña **[!UICONTROL Sitios web]**, desplácese hasta el lugar donde desee crear una página de editor de recursos y haga clic en **[!UICONTROL Nuevo]**.
+1. En el **[!UICONTROL Sitios web]** , vaya al lugar en el que desea crear una página de editor de recursos y haga clic en **[!UICONTROL Nuevo]**.
 
-1. Seleccione **[!UICONTROL Editor de recursos de Geometrixx]** y haga clic en **[!UICONTROL Crear]**. La nueva página se crea y la página se enumera en la pestaña **[!UICONTROL Sitios web]**.
+1. Select **[!UICONTROL Editor de recursos de Geometrixx]** y haga clic en **[!UICONTROL Crear]**. La nueva página se crea y la página se enumera en el **[!UICONTROL Sitios web]** pestaña .
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
 
 La página básica creada con la plantilla Editor de recursos de Geometrixx tiene el siguiente aspecto:
 
-![recurso compartido5](assets/assetshare5.bmp)
+![assetshare5](assets/assetshare5.bmp)
 
 Para personalizar la página Editor de recursos, utilice elementos de la barra de tareas. La página Editor de recursos a la que se accede desde **[!UICONTROL Centro de prensa de Geometrixx]** es una versión personalizada de una página basada en esta plantilla:
 
-![recurso compartido6](assets/assetshare6.bmp)
+![assetshare6](assets/assetshare6.bmp)
 
 #### Definir qué editor de recursos se abre desde una página Uso compartido de recursos {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
@@ -226,9 +230,9 @@ Para establecer la página Editor de recursos:
 
    ![screen_shot_2012-04-23at20123pm](assets/screen_shot_2012-04-23at20123pm.png)
 
-1. Haga clic en la pestaña **[!UICONTROL General]** si no está seleccionada.
+1. Haga clic en el **[!UICONTROL General]** si aún no está seleccionada.
 
-1. En el campo **[!UICONTROL Ruta del Editor de recursos]**, introduzca la ruta al editor de recursos en el que desea que se abra la página Uso compartido de recursos y haga clic en **[!UICONTROL Aceptar]**.
+1. En el **[!UICONTROL Ruta del Editor de recursos]** , introduzca la ruta al editor de recursos en el que desea que la página Uso compartido de recursos abra los recursos y haga clic en **[!UICONTROL OK]**.
 
    ![screen_shot_2012-04-23at21653pm](assets/screen_shot_2012-04-23at21653pm.png)
 
@@ -238,7 +242,7 @@ Para determinar la funcionalidad de un editor de recursos, agregue componentes a
 
 Para añadir componentes del editor de recursos:
 
-1. En la página Editor de recursos que desea personalizar, seleccione **[!UICONTROL Editor de recursos]** en la barra de tareas. Se muestran todos los componentes del editor de recursos disponibles.
+1. En la página Editor de recursos que desee personalizar, seleccione **[!UICONTROL Editor de recursos]** en la barra de tareas. Se muestran todos los componentes del editor de recursos disponibles.
 
    >[!NOTE]
    >
@@ -252,8 +256,8 @@ Para añadir componentes del editor de recursos:
 
    | Componente | Descripción |
    |---|---|
-   | **[!UICONTROL Campo de ] formulario y  [!UICONTROL texto de metadatos]** | Permite agregar metadatos adicionales a un recurso y realizar una acción, como enviar, en ese recurso. |
-   | **[!UICONTROL Recursos secundarios]** | Permite personalizar subrecursos. |
+   | **[!UICONTROL Formulario de metadatos] y [!UICONTROL Campo de texto de metadatos]** | Permite agregar metadatos adicionales a un recurso y realizar una acción, como enviar, en ese recurso. |
+   | **[!UICONTROL Subrecursos]** | Permite personalizar subrecursos. |
    | **Etiquetas** | Permite a los usuarios seleccionar y agregar etiquetas a un recurso. |
    | **[!UICONTROL Miniatura]** | Muestra una miniatura del recurso, su nombre de archivo y le permite agregar un texto alternativo. Aquí también puede agregar acciones del editor de recursos. |
    | **[!UICONTROL Título]** | Muestra el título del recurso, que se puede personalizar. |
@@ -262,30 +266,30 @@ Para añadir componentes del editor de recursos:
 
 #### Formulario de metadatos y campo de texto: configuración del componente Ver metadatos {#metadata-form-and-text-field-configuring-the-view-metadata-component}
 
-El formulario de metadatos es un formulario que incluye una acción de inicio y finalización. Entre medias, se especifican los campos **[!UICONTROL Text]**. Consulte [Forms](../sites-authoring/default-components.md) para obtener más información sobre cómo trabajar con formularios.
+El formulario de metadatos es un formulario que incluye una acción de inicio y finalización. En el medio, se introduce **[!UICONTROL Texto]** campos. Consulte [Forms](../sites-authoring/default-components.md) para obtener más información sobre el trabajo con formularios.
 
-1. Cree una acción de inicio haciendo clic en **[!UICONTROL Editar]** en el área Inicio del formulario. Si lo desea, puede introducir un título de Cuadro. De forma predeterminada, el título del cuadro es **[!UICONTROL Metadata]**. Seleccione la casilla Validación del cliente si desea que se genere el código de cliente de java-script para la validación.
+1. Cree una acción de inicio haciendo clic en **[!UICONTROL Editar]** en el área Inicio del formulario. Si lo desea, puede introducir un título de Cuadro. De forma predeterminada, el título del cuadro es **[!UICONTROL Metadatos]**. Seleccione la casilla Validación del cliente si desea que se genere el código de cliente de java-script para la validación.
 
    ![screen_shot_2012-04-23at22911pm](assets/screen_shot_2012-04-23at22911pm.png)
 
-1. Cree una acción final haciendo clic en **[!UICONTROL Editar]** en el área final del formulario. Por ejemplo, es posible que desee crear un botón **[!UICONTROL Submit]** que permita a los usuarios enviar sus cambios en los metadatos. De forma opcional, puede agregar un botón **[!UICONTROL Reset]** que restablezca los metadatos a su estado original.
+1. Cree una acción final haciendo clic en **[!UICONTROL Editar]** en el área final del formulario. Por ejemplo, puede que desee crear un **[!UICONTROL Submit]** para permitir a los usuarios enviar sus cambios de metadatos. De forma opcional, puede agregar un **[!UICONTROL Restablecer]** que restablece los metadatos a su estado original.
 
    ![screen_shot_2012-04-23at23138pm](assets/screen_shot_2012-04-23at23138pm.png)
 
-1. Entre **[!UICONTROL Inicio de formulario]** y **Fin de formulario**, arrastre Campos de texto de metadatos al formulario. Los usuarios rellenan los metadatos en estos campos de texto, en los que pueden enviar o completar otra acción.
+1. Entre las **[!UICONTROL Inicio del formulario]** y **Final del formulario**, arrastre Campos de texto de metadatos al formulario. Los usuarios rellenan los metadatos en estos campos de texto, en los que pueden enviar o completar otra acción.
 
-1. Haga doble clic en el nombre del campo, por ejemplo, **Title** para abrir el campo de metadatos y realizar cambios. En la pestaña **[!UICONTROL General]** de la ventana [!UICONTROL Editar componente], se define el área de nombres y la etiqueta del campo, así como el tipo, por ejemplo, `dc:title`.
+1. Haga doble clic en el nombre del campo, por ejemplo, **Título** para abrir el campo de metadatos y realizar cambios. En el **[!UICONTROL General]** de la pestaña [!UICONTROL Editar componente] , define el área de nombres y la etiqueta del campo, así como el tipo, por ejemplo, `dc:title`.
 
 
    ![screen_shot_2012-04-23at23305pm](assets/screen_shot_2012-04-23at23305pm.png)
 
-   Consulte [Personalización y ampliación [!DNL Assets]](extending-assets.md) para obtener información sobre cómo modificar los espacios de nombres disponibles en el formulario de metadatos.
+   Consulte [Personalización y ampliación [!DNL Assets]](extending-assets.md) para obtener información sobre cómo modificar las áreas de nombres disponibles en el formulario de metadatos.
 
-1. Haga clic en la pestaña **[!UICONTROL Constraints]**. Aquí puede seleccionar si un campo es obligatorio y, si es necesario, agregar restricciones.
+1. Haga clic en el **[!UICONTROL Restricciones]** pestaña . Aquí puede seleccionar si un campo es obligatorio y, si es necesario, agregar restricciones.
 
    ![screen_shot_2012-04-23at23435pm](assets/screen_shot_2012-04-23at23435pm.png)
 
-1. Haga clic en la pestaña **[!UICONTROL Display]**. Aquí puede introducir una nueva anchura y un número de filas para el campo de metadatos. Seleccione la casilla de verificación **Field is read only** para permitir que los usuarios editen los metadatos.
+1. Haga clic en el **[!UICONTROL Mostrar]** pestaña . Aquí puede introducir una nueva anchura y un número de filas para el campo de metadatos. Seleccione el **El campo es de solo lectura** para permitir a los usuarios editar los metadatos.
 
    ![screen_shot_2012-04-23at23446pm](assets/screen_shot_2012-04-23at23446pm.png)
 
@@ -295,9 +299,9 @@ El formulario de metadatos es un formulario que incluye una acción de inicio y 
 
 En la página Editor de recursos , los usuarios pueden introducir valores en los campos de metadatos (si son editables) y realizar la acción final (por ejemplo, enviar los cambios).
 
-#### Recursos secundarios {#sub-assets}
+#### Subrecursos {#sub-assets}
 
-El componente Recursos secundarios es donde puede ver y seleccionar subrecursos. Puede determinar qué nombres aparecen en los [recursos principales](assets.md#what-are-digital-assets) y subrecursos.
+El componente Recursos secundarios es donde puede ver y seleccionar subrecursos. Puede determinar qué nombres aparecen en la sección [recurso principal](assets.md#what-are-digital-assets) y subactivos.
 
 ![screen_shot_2012-04-23at24025pm](assets/screen_shot_2012-04-23at24025pm.png)
 
@@ -319,7 +323,7 @@ El componente Etiquetas es un componente en el que los usuarios pueden asignar e
 
 ![screen_shot_2012-04-23at25031pm](assets/screen_shot_2012-04-23at25031pm.png)
 
-Haga doble clic en el componente Etiquetas para abrir el cuadro de diálogo Etiquetas, donde puede cambiar el título de Etiquetas, si lo desea, y donde puede seleccionar los espacios de nombres asignados. Para que este campo se pueda editar, desactive la casilla de verificación del botón **Ocultar Editar**. De forma predeterminada, las etiquetas son editables.
+Haga doble clic en el componente Etiquetas para abrir el cuadro de diálogo Etiquetas, donde puede cambiar el título de Etiquetas, si lo desea, y donde puede seleccionar los espacios de nombres asignados. Para que este campo sea editable, borre la **Ocultar Editar** en la ventana De forma predeterminada, las etiquetas son editables.
 
 ![screen_shot_2012-04-23at24731pm](assets/screen_shot_2012-04-23at24731pm.png)
 
@@ -333,11 +337,11 @@ El siguiente es un componente Etiquetas rellenado:
 
 #### Miniatura    {#thumbnail}
 
-El componente Miniatura es donde el recurso muestra la miniatura seleccionada (para muchos de los formatos la miniatura se extrae automáticamente). Además, el componente muestra el nombre de archivo y [acciones que puede modificar](assets-finder-editor.md#adding-asset-editor-actions).
+El componente Miniatura es donde el recurso muestra la miniatura seleccionada (para muchos de los formatos la miniatura se extrae automáticamente). Además, el componente muestra el nombre de archivo y [acciones que se pueden modificar](assets-finder-editor.md#adding-asset-editor-actions).
 
 ![screen_shot_2012-04-23at25452pm](assets/screen_shot_2012-04-23at25452pm.png)
 
-Haga doble clic en el componente de miniatura para abrir el cuadro de diálogo de miniaturas donde puede cambiar el texto alternativo. De forma predeterminada, el texto alternativo de la miniatura es **[!UICONTROL Click to download]** asset.
+Haga doble clic en el componente de miniatura para abrir el cuadro de diálogo de miniaturas donde puede cambiar el texto alternativo. De forma predeterminada, el texto alternativo de la miniatura es **[!UICONTROL Haga clic para descargar]** recurso.
 
 ![screen_shot_2012-04-23at25604pm](assets/screen_shot_2012-04-23at25604pm.png)
 
@@ -351,13 +355,13 @@ El componente Título muestra el título del recurso y una descripción.
 
 ![chlimage_1-391](assets/chlimage_1-391.png)
 
-De forma predeterminada, está en modo de solo lectura, por lo que los usuarios no pueden editarlo. Para que sea editable, haga doble clic en el componente y desactive la casilla **Ocultar botón de edición**. Además, introduzca un título para varios recursos.
+De forma predeterminada, está en modo de solo lectura, por lo que los usuarios no pueden editarlo. Para que sea editable, haga doble clic en el componente y borre la **Ocultar botón de edición** casilla de verificación. Además, introduzca un título para varios recursos.
 
 ![screen_shot_2012-04-23at35100pm](assets/screen_shot_2012-04-23at35100pm.png)
 
-Si se puede editar el Título, puede agregar un título y una descripción haciendo clic en el lápiz para abrir la ventana **Propiedades del recurso**. Además, puede activar y desactivar el recurso seleccionando la fecha y la hora.
+Si se puede editar el título, puede agregar un título y una descripción haciendo clic en el lápiz para abrir el **Propiedades de los recursos** ventana. Además, puede activar y desactivar el recurso seleccionando la fecha y la hora.
 
-Cuando los usuarios editan el Título haciendo clic en el icono Lápiz, pueden cambiar el **Título**, **Descripción** e introducir **Tiempo de activación** y **Tiempo de desactivación** para activar y desactivar el recurso.
+Cuando los usuarios editan el título haciendo clic en el icono de lápiz, pueden cambiar la variable **Título**, **Descripción** y escriba **Activado** y **Tiempos de inactividad** para activar y desactivar el recurso.
 
 ![screen_shot_2012-04-23at35241pm](assets/screen_shot_2012-04-23at35241pm.png)
 
@@ -371,7 +375,7 @@ Puede determinar qué acciones pueden realizar los usuarios en los recursos digi
 
 Para agregar acciones a la página Editor de recursos:
 
-1. En la página Editor de recursos que desea personalizar, haga clic en **[!UICONTROL Editor de recursos]** en la barra de tareas.<br>
+1. En la página Editor de recursos que desee personalizar, haga clic en **[!UICONTROL Editor de recursos]** en la barra de tareas.<br>
 
    ![seleccionar editor de recursos en la barra de tareas](assets/screen_shot_2012-04-23at35515pm.png)
 
@@ -379,55 +383,55 @@ Para agregar acciones a la página Editor de recursos:
 
    | Acción | Descripción |
    |---|---|
-   | [!UICONTROL Descargar] | Permite a los usuarios descargar seleccionados   activos en sus equipos. |
-   | [!UICONTROL Editores] | Permite a los usuarios editar una imagen   (edición interactiva) |
-   | [!UICONTROL Lightbox] | Guarda los recursos en un   &quot;lightbox&quot; donde puede realizar otras acciones en ellos. Esto viene   muy útil cuando se trabaja con recursos en varias páginas. |
-   | [!UICONTROL Bloqueo] | Permite a los usuarios bloquear recursos. Esta   la funcionalidad no está activada de forma predeterminada y debe habilitarse en la lista   de los componentes. |
-   | [!UICONTROL Referencias] | Haga clic aquí para mostrar en qué páginas   el recurso se está utilizando. |
-   | [!UICONTROL Versiones] | Permite crear y restaurar   versiones de un recurso. |
+   | [!UICONTROL Descargar] | Permite a los usuarios descargar los recursos seleccionados en sus equipos. |
+   | [!UICONTROL Editores] | Permite a los usuarios editar una imagen (edición interactiva) |
+   | [!UICONTROL Lightbox] | Guarda los recursos en un &quot;lightbox&quot; donde puede realizar otras acciones en ellos. Esto resulta útil cuando se trabaja con recursos en varias páginas. |
+   | [!UICONTROL Bloqueo] | Permite a los usuarios bloquear recursos. Esta funcionalidad no está habilitada de forma predeterminada y debe habilitarse en la lista de componentes. |
+   | [!UICONTROL Referencias] | Haga clic en esto para mostrar en qué páginas se está utilizando el recurso. |
+   | [!UICONTROL Versiones] | Permite crear y restaurar versiones de un recurso. |
 
-1. Arrastre la acción adecuada al área **Actions** de la página. Al hacerlo, se crea un botón que se utiliza para ejecutar esa acción.
+1. Arrastre la acción adecuada a la **Acciones** en la página. Al hacerlo, se crea un botón que se utiliza para ejecutar esa acción.
 
 ![chlimage_1-393](assets/chlimage_1-393.png)
 
 ## Editar varios recursos con la página Editor de recursos {#multi-editing-assets-with-the-asset-editor-page}
 
-Con [!DNL Assets] puede realizar cambios en varios recursos a la vez. Después de haber seleccionado los recursos, puede cambiar simultáneamente sus:
+con [!DNL Assets] puede realizar cambios en varios recursos a la vez. Después de haber seleccionado los recursos, puede cambiar simultáneamente sus:
 
 * Etiquetas
 * Metadatos
 
 Para editar varios recursos con la página Editor de recursos:
 
-1. Abra la página **[!UICONTROL Centro de prensa]** del Geometrixx en `http://localhost:4502/content/geometrixx/en/company/press.html`.
+1. Abra la Geometrixx **[!UICONTROL Centro de prensa]** página en `http://localhost:4502/content/geometrixx/en/company/press.html`.
 1. Seleccione los recursos:
 
    * en Windows: `Ctrl + click` cada recurso.
    * en Mac: `Cmd + click` cada recurso.
 
-   Para seleccionar un rango de recursos: haga clic en el primer recurso y luego en `Shift + click` el último recurso.
+   Para seleccionar un rango de recursos: haga clic en el primer recurso y, a continuación, `Shift + click` el último recurso.
 
-1. Haga clic en **[!UICONTROL Editar metadatos]** en el campo **Actions** (parte izquierda de la página).
+1. Haga clic en **[!UICONTROL Editar metadatos]** en el **Acciones** (parte izquierda de la página).
 
-1. La página **[!UICONTROL Press Center Asset Editor]** se abre en una nueva pestaña. Los metadatos de los recursos se muestran de la siguiente manera:
+1. El Geometrixx **[!UICONTROL Editor de recursos del Centro de prensa]** se abre en una pestaña nueva. Los metadatos de los recursos se muestran de la siguiente manera:
 
    * Una etiqueta de , que no se aplica a todos los recursos pero solo a algunos, se muestra en cursiva.
    * Una etiqueta que se aplica a todos los recursos se muestra con una fuente normal.
    * Metadatos que no sean etiquetas: el valor del campo solo se muestra si es el mismo para todos los recursos seleccionados.
 
 1. Haga clic en **[!UICONTROL Descargar]** para descargar un archivo ZIP que contenga las representaciones originales de los recursos.
-1. Haga clic en el icono de lápiz situado junto al campo **[!UICONTROL Etiquetas]** para editar las etiquetas:
+1. Haga clic en el icono de lápiz situado junto a la **[!UICONTROL Etiquetas]** para editar las etiquetas:
 
    * Una etiqueta que no se aplica a todos los recursos, pero solo a unos pocos tiene un fondo gris.
    * Una etiqueta que se aplica a todos los recursos tiene un fondo blanco.
 
    Puede hacer lo siguiente:
 
-   * Haga clic en el icono `x` para eliminar la etiqueta de todos los recursos.
-   * Haga clic en el icono `+` para añadir la etiqueta a todos los recursos.
-   * Haga clic en `arrow` y seleccione una etiqueta para agregar una etiqueta nueva a todos los recursos.
+   * Haga clic en el `x` para eliminar la etiqueta de todos los recursos.
+   * Haga clic en el `+` para añadir la etiqueta a todos los recursos.
+   * Haga clic en el `arrow` y seleccione una etiqueta para agregar una etiqueta nueva a todos los recursos.
 
-   Haga clic en **[!UICONTROL OK]** para escribir los cambios en el formulario. La casilla junto al campo **Etiquetas** está seleccionada automáticamente.
+   Haga clic en **[!UICONTROL OK]** para escribir los cambios en el formulario. La caja junto a la **Etiquetas** se marca automáticamente.
 
 1. Edite el campo Description . Por ejemplo, establézcalo en: `This is a common description`. Cuando se edita un campo, su valor sobrescribe los valores existentes de los recursos seleccionados cuando se envía el formulario. La casilla junto al campo se marca automáticamente cuando se edita el campo.
 

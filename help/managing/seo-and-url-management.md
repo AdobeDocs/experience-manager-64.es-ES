@@ -1,24 +1,27 @@
 ---
-title: 'Recomendaciones para la administración de direcciones URL y SEO '
-seo-title: 'Recomendaciones para la administración de direcciones URL y SEO '
-description: Obtenga información sobre las optimizaciones y recomendaciones de SEO para lograr estos objetivos en una implementación AEM.
-seo-description: Obtenga información sobre las optimizaciones y recomendaciones de SEO para lograr estos objetivos en una implementación AEM.
+title: Prácticas recomendadas para la administración de direcciones URL y SEO
+seo-title: SEO and URL Management Best Practices
+description: Obtenga información sobre las prácticas recomendadas de SEO y las recomendaciones para lograrlas en una implementación AEM.
+seo-description: Learn about SEO best practices and recommendations for achieving these on an AEM implementation.
 uuid: 7fffbe30-7cf8-44ce-b275-e128732577dd
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing
 content-type: reference
 discoiquuid: 150b43e3-9fb3-4c1c-b1cd-ccfd162974ad
-translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+exl-id: d45fe856-4709-437b-b193-e8243a695d2c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3117'
-ht-degree: 98%
+source-wordcount: '3133'
+ht-degree: 97%
 
 ---
 
+# Prácticas recomendadas para la administración de direcciones URL y SEO{#seo-and-url-management-best-practices}
 
-# Recomendaciones para la administración de direcciones URL y SEO{#seo-and-url-management-best-practices} 
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 La optimización de los motores de búsqueda (SEO) se ha convertido en una preocupación clave para muchos expertos en marketing. En consecuencia, es necesario abordar las preocupaciones de la SEO en muchos proyectos AEM.
 
@@ -178,7 +181,7 @@ Los beneficios de este enfoque son:
 
 En AEM, todas las páginas web se almacenan en `/content/my-brand/my-content`. Aunque esto puede resultar útil desde la perspectiva de la administración de datos del repositorio, no es necesariamente la forma en que desea que los clientes vean el sitio y puede entrar en conflicto con las directrices de SEO para que las URL sean lo más cortas posible. Además, es posible que sirva varios sitios web desde la misma instancia de AEM y desde diferentes nombres de dominio.
 
-En esta sección se analizan las opciones disponibles en AEM para administrar estas URL y presentarlas a los usuarios de una forma más fácil de leer y compatible con la optimización para motores de búsqueda.
+En esta sección se analizan las opciones disponibles en AEM para administrar estas URL y presentarlas a los usuarios de una forma más fácil de leer y compatible con la optimización de los motores de búsqueda.
 
 #### URL de vanidad {#vanity-urls}
 
@@ -224,7 +227,7 @@ También permite a los usuarios finales interactuar con el nombre de la página 
 
 En una instalación estándar de AEM:
 
-* para la configuración OSGi::
+* para la configuración OSGi:
 
    **Apache Sling Resource Resolver Factory**
 
@@ -236,15 +239,15 @@ En una instalación estándar de AEM:
 
    (`resource.resolver.map.location`)
 
-* se establece de forma predeterminada en:
+* tiene el valor predeterminado:
 
    `/etc/map`
 
 En esta ubicación se pueden agregar definiciones de asignación a solicitudes entrantes de asignación, reescribir direcciones URL en páginas de AEM o en ambas.
 
-Para crear una nueva asignación, cree un nuevo `sling:Mapping` nodo en esta ubicación debajo de `/http` o `/https`. En función de las propiedades `sling:match` y `sling:internalRedirect` establecidas en este nodo, AEM redireccionará todo el tráfico de la URL coincidente al valor especificado en la propiedad `internalRedirect` .
+Para crear una nueva asignación, cree un nuevo `sling:Mapping` nodo en esta ubicación debajo de `/http` o `/https`. En función de las propiedades `sling:match` y `sling:internalRedirect` establecidas en este nodo, AEM redireccionará todo el tráfico de la URL coincidente al valor especificado en la propiedad `internalRedirect`.
 
-Si bien este es el enfoque que se documenta en la documentación oficial de AEM y Sling, el soporte de expresión regular proporcionado por esta implementación es limitado cuando se compara con las opciones disponibles utilizando directamente `SlingResourceResolver` . Además, la implementación de asignaciones de este modo puede provocar problemas con la invalidación de la caché del despachante.
+Si bien este es el enfoque que se documenta en la documentación oficial de AEM y Sling, el soporte de expresión regular proporcionado por esta implementación es limitado cuando se compara con las opciones disponibles utilizando directamente `SlingResourceResolver`. Además, la implementación de asignaciones de este modo puede provocar problemas con la invalidación de la caché del despachante.
 
 A continuación se muestra un ejemplo de cómo se produce este problema:
 
@@ -264,7 +267,7 @@ Sin embargo, también hay una forma más sencilla de gestionarlo:
 
    Mediante la consola web (por ejemplo, localhost:4502/system/console/configMgr) puede configurar el Sling Resource Resolver:
 
-   * **Fábrica de resolución de recursos de Apache Sling**
+   * **Apache Sling Resource Resolver Factory**
 
       `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`.
    Se recomienda crear las asignaciones necesarias para acortar las URL como expresiones regulares y luego definir estas configuraciones en un nodo OsgiConfignode `config.publish`, que se incluye en la creación.
@@ -337,14 +340,14 @@ El valor `href` puede ser relativo o absoluto. El código debe incluirse en el m
 
 La práctica recomendada es utilizar letras minúsculas en todas las páginas. Sin embargo, no desea que un usuario obtenga un error 404 cuando acceda al sitio web con letras mayúsculas en su URL. Por este motivo, Adobe recomienda agregar una regla de reescritura en la configuración de Apache HTTP Server para asignar todas las URL entrantes a minúsculas. Además, los autores de contenido deben recibir formación para crear sus páginas con nombres en minúsculas.
 
-Para configurar Apache para que convierta todo el tráfico entrante a minúsculas, agregue lo siguiente a la configuración `vhost` :
+Para configurar Apache para que convierta todo el tráfico entrante a minúsculas, agregue lo siguiente a la configuración `vhost`:
 
 ```xml
 RewriteEngine On
 RewriteMap lowercase int:tolower
 ```
 
-Además, agregue lo siguiente a la parte superior del archivo `htaccess` :
+Además, agregue lo siguiente a la parte superior del archivo `htaccess`:
 
 ```xml
 RewriteCond $1 [A-Z]
@@ -353,7 +356,7 @@ RewriteRule ^(.*)$ /${lowercase:$1} [R=301,L]
 
 ### Implementación de robots.txt para proteger los entornos de desarrollo {#implementing-robots-txt-to-protect-development-environments}
 
-Los motores de búsqueda *deben* comprobar la presencia de un `robots.txt` archivo en la raíz del sitio antes de rastrear el sitio. Debe destacarse aquí porque mientras los principales motores de búsqueda como Google, Yahoo o Bing respetan esto, algunos motores de búsqueda extranjeros no lo hacen.
+Los motores de búsqueda *deben* comprobar la presencia de un archivo `robots.txt` en la raíz del sitio antes de rastrear el sitio. Debe destacarse aquí porque mientras los principales motores de búsqueda como Google, Yahoo o Bing respetan esto, algunos motores de búsqueda extranjeros no lo hacen.
 
 La manera más sencilla de bloquear el acceso a todo el sitio es colocar un archivo denominado `robots.txt` en la raíz del sitio con el siguiente contenido:
 
@@ -368,7 +371,7 @@ La advertencia de colocar el archivo `robots.txt` en la raíz del sitio es que l
 
 ### Crear un mapa del sitio XML en AEM {#building-an-xml-sitemap-on-aem}
 
-Los rastreadores utilizan mapas del sitio XML para comprender mejor la estructura de los sitios web. Si bien no hay garantías de que proporcionar un mapa del sitio conduzca a mejores clasificaciones SEO, se trata de una práctica recomendada acordada. Puede mantener manualmente un archivo XML en el servidor web para utilizarlo como mapa del sitio, pero se recomienda generar el mapa del sitio mediante programación, lo que garantiza que, a medida que los autores creen nuevo contenido, el mapa del sitio reflejará automáticamente sus cambios.
+Los rastreadores utilizan mapas del sitio en XML para comprender mejor la estructura de los sitios web. Si bien no hay garantías de que proporcionar un mapa del sitio conduzca a mejores clasificaciones SEO, se trata de una práctica recomendada acordada. Puede mantener manualmente un archivo XML en el servidor web para utilizarlo como mapa del sitio, pero se recomienda generar el mapa del sitio mediante programación, lo que garantiza que, a medida que los autores creen nuevo contenido, el mapa del sitio reflejará automáticamente sus cambios.
 
 Para generar un mapa del sitio mediante programación, registre un servlet Sling que espere una llamada `sitemap.xml` . A continuación, el servlet puede utilizar el recurso proporcionado mediante la API de servlet para ver la página actual y sus elementos secundarios, con lo que se obtiene XML. El XML se almacenará en la caché en el despachante. Se debe hacer referencia a esta ubicación en la propiedad del mapa del sitio del archivo `robots.txt` . Además, será necesario implementar una regla de vaciado personalizada para asegurarse de vaciar este archivo cada vez que se active una nueva página.
 

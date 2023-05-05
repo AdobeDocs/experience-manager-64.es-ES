@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 role: Developer
 exl-id: 92bc6878-6963-442a-8441-fba42e89c859
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '3505'
-ht-degree: 1%
+source-wordcount: '3541'
+ht-degree: 2%
 
 ---
 
 # Rellenado previo de Forms con diseños flexibles {#prepopulating-forms-with-flowable-layouts1}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Rellenado previo de Forms con diseños flexibles {#prepopulating-forms-with-flowable-layouts2}
 
@@ -28,7 +32,7 @@ Cumplimentar previamente un formulario tiene las siguientes ventajas:
 
 * Permite al usuario ver datos personalizados en un formulario.
 * Reduce la cantidad de escritura que el usuario hace para rellenar un formulario.
-* Asegura la integridad de los datos teniendo control sobre dónde se colocan los datos.
+* Garantiza la integridad de los datos al tener control sobre dónde se colocan los datos.
 
 Los dos orígenes de datos XML siguientes pueden rellenar previamente un formulario:
 
@@ -70,7 +74,7 @@ En la tabla siguiente se describen los pasos de este diagrama.
 <table> 
  <thead> 
   <tr> 
-   <th><p>Etapa</p></th> 
+   <th><p>Paso</p></th> 
    <th><p>Descripción</p></th> 
   </tr> 
  </thead> 
@@ -226,7 +230,7 @@ Un origen de datos XML en memoria que se crea mediante `org.w3c.dom` se pueden c
 
 Los formularios rellenados previamente se representan del mismo modo que los demás formularios. La única diferencia es que usa la variable `com.adobe.idp.Document` objeto que contiene el origen de datos XML para rellenar previamente el formulario.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -234,7 +238,7 @@ Los formularios rellenados previamente se representan del mismo modo que los dem
 
 [Inicio rápido de la API del servicio de Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Renderización de PDF forms interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Procesar formularios PDF interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Creación de aplicaciones web que procesen Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -307,7 +311,7 @@ Para rellenar previamente un formulario con una presentación flexible mediante 
    * Invocar el `javax.servlet.ServletOutputStream` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido (modo SOAP): Rellenado previo de Forms con diseños flexibles mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
@@ -393,6 +397,6 @@ Para rellenar previamente un formulario con una presentación flexible mediante 
    >
    >La variable `renderPDFForm` rellena el `com.adobe.idp.services.holders.FormsResultHolder` objeto que se pasa como el último valor de argumento con un flujo de datos de formulario que debe escribirse en el explorador web del cliente.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

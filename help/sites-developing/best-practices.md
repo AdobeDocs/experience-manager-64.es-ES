@@ -10,14 +10,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: a2a299b5-a15a-47d9-a9d8-83f45917d080
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '462'
-ht-degree: 19%
+source-wordcount: '498'
+ht-degree: 13%
 
 ---
 
 # Prácticas recomendadas{#best-practices}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Prácticas recomendadas para desarrolladores: introducción {#best-practices-for-developers-getting-started}
 
@@ -42,17 +46,17 @@ Las siguientes áreas tienen documentación disponible específica para el desar
 * [Communities](/help/sites-developing/best-practices.md#communities)
 * [Herramientas/HTL](/help/sites-developing/best-practices.md#tooling-htl)
 
-Las tablas siguientes describen los documentos e incluyen vínculos a ellos.
+Los documentos específicos se describen y vinculan a ellos en las tablas siguientes.
 
 Para conocer las prácticas recomendadas sobre administración, implementación y mantenimiento, o creación, consulte uno de los siguientes temas:
 
-* [Prácticas recomendadas sobre administración](/help/sites-administering/administer-best-practices.md)
+* [Prácticas recomendadas de administración](/help/sites-administering/administer-best-practices.md)
 * [Prácticas recomendadas sobre la creación](/help/sites-authoring/best-practices.md)
-* [Prácticas recomendadas sobre implementación](/help/sites-deploying/best-practices.md)
+* [Prácticas recomendadas de implementación](/help/sites-deploying/best-practices.md)
 
-## Sitios {#sites}
+## Sites {#sites}
 
-Para administrar y crear contenido en un sitio web, hay que seguir estas prácticas recomendadas:
+La gestión y la creación del contenido de su sitio web tiene algunas prácticas recomendadas que se describen a continuación:
 
 <table> 
  <tbody>
@@ -79,7 +83,7 @@ Para administrar y crear contenido en un sitio web, hay que seguir estas prácti
  </tbody>
 </table>
 
-## Comunidades {#communities}
+## Communities {#communities}
 
 [AEM Communities](/help/communities/overview.md) simplifica la creación y gestión de comunidades locales.
 

@@ -1,5 +1,5 @@
 ---
-title: Protección de documentos con directivas
+title: Proteger documentos mediante directivas
 seo-title: Protecting Documents with Policies
 description: Utilice el servicio de seguridad de documentos para aplicar de forma dinámica la configuración de confidencialidad a los documentos de Adobe PDF y para mantener el control sobre los documentos. El servicio de seguridad de documentos también permite a los usuarios mantener el control sobre cómo utilizan los destinatarios el documento de PDF protegido por políticas.
 seo-description: Use the Document Security service to dynamically apply confidentiality settings to Adobe PDF documents and to maintain control over the documents. The Document Security service also enables the users to maintain control over how recipients use the policy-protected PDF document.
@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 role: Developer
 exl-id: 88065c4d-8ca9-4dfb-8663-ac8772e5e556
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '15500'
+source-wordcount: '15536'
 ht-degree: 0%
 
 ---
 
-# Protección de documentos con directivas {#protecting-documents-with-policies}
+# Proteger documentos mediante directivas {#protecting-documents-with-policies}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 **Acerca del servicio de seguridad de documentos**
 
@@ -588,7 +592,7 @@ Para aplicar una directiva a un documento de PDF, haga referencia a una directiv
 
 Una vez que el servicio de seguridad de documentos aplica una directiva a un documento de PDF, puede guardar el documento de PDF protegido por políticas como un archivo de PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -643,7 +647,7 @@ Para ver ejemplos de código que utilicen el servicio de seguridad de documentos
 * &quot;Inicio rápido (modo EJB): Aplicación de una directiva a un documento de PDF mediante la API de Java&quot;
 * &quot;Inicio rápido (modo SOAP): Aplicación de una directiva a un documento de PDF mediante la API de Java&quot;
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -752,7 +756,7 @@ Puede quitar una directiva de un documento de PDF protegido por políticas siemp
 
 Una vez que el servicio de seguridad de documentos elimina una directiva de un documento de PDF, puede guardar el documento de PDF no protegido como un archivo de PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -845,7 +849,7 @@ Para ver ejemplos de código que utilicen el servicio de seguridad de documentos
 * &quot;Inicio rápido (MTOM): Eliminación de una directiva de un documento de PDF mediante la API de servicio web&quot;
 * &quot;Inicio rápido (SwaRef): Eliminación de una directiva de un documento de PDF mediante la API de servicio web&quot;
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
@@ -892,7 +896,7 @@ Para revocar un documento protegido por políticas, especifique el identificador
 >
 >Si intenta revocar un documento que ya se ha revocado, se produce una excepción.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -987,7 +991,7 @@ Para ver ejemplos de código que utilicen el servicio de seguridad de documentos
 * &quot;Inicio rápido (MTOM): Revocación de un documento mediante la API de servicio web&quot;
 * &quot;Inicio rápido (SwaRef): Revocación de un documento mediante la API de servicio web&quot;
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Eliminación de directivas de documentos de Word](protecting-documents-policies.md#removing-policies-from-word-documents)
 
@@ -1028,7 +1032,7 @@ Debe recuperar el identificador de licencia del documento del PDF revocado para 
 
 Para restablecer el acceso a un documento de PDF revocado, debe especificar el identificador de licencia del documento revocado. Si intenta restablecer el acceso a un documento PDF que no se revoque, provocará una excepción.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1115,7 +1119,7 @@ Para ver ejemplos de código que utilicen el servicio de seguridad de documentos
 * &quot;Inicio rápido (MTOM): Restablecimiento del acceso a un documento revocado mediante la API de servicio web&quot;
 * &quot;Inicio rápido (SwaRef): Restablecimiento del acceso a un documento revocado mediante la API de servicio web&quot;
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
@@ -1164,7 +1168,7 @@ Si protege un documento con una directiva que pertenece a Mis directivas y luego
 
 Si el documento está protegido mediante una directiva incluida en un conjunto de directivas (distinto de Mis políticas), `RMInspectResult.getPolicysetName` y `RMInspectResult.getPolicysetId` devuelven cadenas válidas.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1252,7 +1256,7 @@ Para ver ejemplos de código que utilicen el servicio de seguridad de documentos
 * &quot;Inicio rápido (MTOM): Inspección de documentos de PDF protegidos por políticas mediante la API de servicio web&quot;
 * &quot;Inicio rápido (SwaRef): Inspección de documentos de PDF protegidos por políticas mediante la API de servicio web&quot;
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
@@ -1310,22 +1314,22 @@ En la tabla siguiente se enumeran los pares de clave y valor que son necesarios 
   <tr> 
    <td><p><code>WaterBackCmd:IS_USERNAME_ENABLED</code></p></td> 
    <td><p>Especifica si el nombre de usuario del usuario que abre el documento forma parte de la marca de agua.</p></td> 
-   <td><p>True o false</p></td> 
+   <td><p>True o False</p></td> 
   </tr> 
   <tr> 
    <td><p><code>WaterBackCmd:IS_USERID_ENABLED</code></p></td> 
    <td><p>Especifica si la identificación del usuario que abre el documento forma parte de la marca de agua.</p></td> 
-   <td><p>True o false</p></td> 
+   <td><p>True o False</p></td> 
   </tr> 
   <tr> 
    <td><p><code>WaterBackCmd:IS_CURRENTDATE_ENABLED</code></p></td> 
    <td><p>Especifica si la fecha actual forma parte de la marca de agua.</p></td> 
-   <td><p>True o false</p></td> 
+   <td><p>True o False</p></td> 
   </tr> 
   <tr> 
    <td><p><code>WaterBackCmd:IS_CUSTOMTEXT_ENABLED</code></p></td> 
    <td><p>Si este valor es true, el valor del texto personalizado debe especificarse mediante <code>WaterBackCmd:SRCTEXT</code>.</p></td> 
-   <td><p>True o false</p></td> 
+   <td><p>True o False</p></td> 
   </tr> 
   <tr> 
    <td><p><code>WaterBackCmd:OPACITY</code></p></td> 
@@ -1340,7 +1344,7 @@ En la tabla siguiente se enumeran los pares de clave y valor que son necesarios 
   <tr> 
    <td><p><code>WaterBackCmd:SCALE</code></p></td> 
    <td><p>Si se especifica este valor, <code>WaterBackCmd:IS_SIZE_ENABLED</code> debe estar presente y el valor debe ser verdadero. Si no se especifica este atributo, el comportamiento predeterminado se ajusta a la página.</p></td> 
-   <td><p>Un valor mayor que 0.0 y menor o igual que 1.0.</p></td> 
+   <td><p>Un valor bueno que es 0,0 y menor o igual que 1,0.</p></td> 
   </tr> 
   <tr> 
    <td><p><code>WaterBackCmd:HORIZ_ALIGN</code></p></td> 
@@ -1354,18 +1358,18 @@ En la tabla siguiente se enumeran los pares de clave y valor que son necesarios 
   </tr> 
   <tr> 
    <td><p><code>WaterBackCmd:IS_USE_BACKGROUND</code></p></td> 
-   <td><p>Especifica si la marca de agua es de fondo. El valor predeterminado es false.</p></td> 
-   <td><p>True o false</p></td> 
+   <td><p>Especifica si la marca de agua es de fondo. El valor predeterminado es False.</p></td> 
+   <td><p>True o False</p></td> 
   </tr> 
   <tr> 
    <td><p><code>WaterBackCmd:IS_SIZE_ENABLED</code></p></td> 
    <td><p>True si se especifica una escala personalizada. Si este valor es true, también debe especificarse SCALE. Si este valor es false, el valor predeterminado se ajusta a la página.</p></td> 
-   <td><p>True o false</p></td> 
+   <td><p>True o False</p></td> 
   </tr> 
   <tr> 
    <td><p><code>WaterBackCmd:SRCTEXT</code></p></td> 
    <td><p>Especifica el texto personalizado para una marca de agua. Si este valor está presente, <code>WaterBackCmd:IS_CUSTOMTEXT_ENABLED</code> también debe estar presente y configurarse como verdadero.</p></td> 
-   <td><p>True o false</p></td> 
+   <td><p>True o False</p></td> 
   </tr> 
  </tbody> 
 </table>
@@ -1383,7 +1387,7 @@ Todos los demás atributos son opcionales.
 
 Una nueva marca de agua debe estar registrada en el servicio de seguridad de documentos para poder utilizarse. Después de registrar una marca de agua, puede utilizarla dentro de las directivas.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1471,7 +1475,7 @@ Para ver ejemplos de código que utilicen el servicio de seguridad de documentos
 * &quot;Inicio rápido (MTOM): Creación de una marca de agua mediante la API de servicio web&quot;
 * &quot;Inicio rápido (SwaRef): Creación de una marca de agua mediante la API de servicio web&quot;
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
@@ -1529,7 +1533,7 @@ Para modificar una marca de agua existente, cambie el valor de uno o varios atri
 
 Después de modificar los atributos de una marca de agua, debe actualizarla.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1660,7 +1664,7 @@ Debe especificar el evento que desea buscar. Por ejemplo, puede buscar el evento
 
 Después de especificar el evento que se va a buscar, puede utilizar la API de Java de Rights Management o la API de servicio web de Rights Management para buscar el evento.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1943,7 +1947,7 @@ Para ver ejemplos de código que utilicen el servicio de Rights Management, cons
 * &quot;Inicio rápido (MTOM): Búsqueda de eventos mediante la API de servicio web&quot;
 * &quot;Inicio rápido (SwaRef): Búsqueda de eventos mediante la API de servicio web&quot;
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
@@ -1989,7 +1993,7 @@ Para aplicar una directiva a un documento de Word, debe hacer referencia a una d
 
 Después de que el servicio de seguridad de documentos aplique una directiva a un documento de Word, puede guardar el documento de Word protegido por políticas como un archivo DOC.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -2145,7 +2149,7 @@ Puede quitar una directiva de un documento de Word protegido por políticas siem
 
 Una vez que el servicio de seguridad de documentos elimina una directiva de un documento de Word, puede guardar el documento de Word no protegido como un archivo DOC.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -2237,6 +2241,6 @@ Para ver ejemplos de código que utilicen el servicio Document Security, consult
 
 * &quot;Inicio rápido (MTOM): Eliminación de una directiva de un documento de Word mediante la API de servicio Web&quot;
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

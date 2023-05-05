@@ -1,30 +1,33 @@
 ---
-title: 'Búsqueda  '
-seo-title: 'Búsqueda  '
-description: Encuentre contenido más rápidamente con una búsqueda detallada
-seo-description: Encuentre contenido más rápidamente con una búsqueda detallada
+title: Búsqueda
+seo-title: Search
+description: Encuentre el contenido más rápido con una búsqueda completa
+seo-description: Find your content faster with comprehensive search
 uuid: 1e80cf85-653f-4dde-930a-de05415b994f
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: cd87e1e8-5329-4e60-ac9d-2705f54d0da6
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 9e93b28b-627d-4676-82a6-d719de4d152a
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '520'
-ht-degree: 94%
+source-wordcount: '548'
+ht-degree: 70%
 
 ---
 
+# Búsqueda  {#search-features}
 
-# Búsqueda{#search-features}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El entorno de autor AEM ofrece varios mecanismos para buscar contenido, en función del tipo de recurso.
 
 >[!NOTE]
 >
->Fuera del entorno de creación también hay otros mecanismos disponibles para buscar, como [Query Builder](/help/sites-developing/querybuilder-api.md) y [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Fuera del entorno de creación también hay otros mecanismos disponibles para buscar, como la variable [Generador de consultas](/help/sites-developing/querybuilder-api.md) y [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Conceptos básicos de búsqueda {#search-basics}
 
@@ -65,21 +68,21 @@ Para buscar y filtrar sus recursos:
 
    ![](do-not-localize/screen_shot_2018-03-23at101542.png)
 
-   Según el tipo de recurso, la búsqueda mostrará una selección predefinida de criterios de búsqueda o de filtro.
+   Según el tipo de recurso, la búsqueda mostrará una selección predefinida de criterios de búsqueda/filtro.
 
    El panel lateral permite seleccionar:
 
    * Búsquedas guardadas
    * Directorio de búsqueda
    * Etiquetas
-   * Criterios de búsqueda; por ejemplo, fechas de modificación, estado de publicación o estado de Live Copy
+   * Criterios de búsqueda; por ejemplo, fechas de modificación, estado de publicación o estado de LiveCopy
 
    >[!NOTE]
    >
    >Los criterios de búsqueda pueden variar:
    >
-   >* Según el tipo de recurso que haya seleccionado; por ejemplo, los criterios de comunidades y recursos son comprensivamente especializados.
-   >* Su instancia, al igual que los [formularios de búsqueda](/help/sites-administering/search-forms.md), se puede personalizar (según la ubicación en AEM).
+   >* Según el tipo de recurso que haya seleccionado; por ejemplo, los criterios de activos y comunidades son comprensiblemente especializados.
+   >* Su instancia como el [Buscar en Forms](/help/sites-administering/search-forms.md) se puede personalizar (según la ubicación dentro de AEM).
 
 
    ![screen_shot_2018-03-23at101619](assets/screen_shot_2018-03-23at101619.png)
@@ -92,7 +95,7 @@ Para buscar y filtrar sus recursos:
 
 >[!NOTE]
 >
->Los criterios de búsqueda se mantienen al seleccionar un elemento en los resultados de la búsqueda.
+>Los criterios de búsqueda se mantienen al seleccionar un elemento en los resultados de búsqueda.
 >
 >Cuando se selecciona un elemento en la página de resultados de la búsqueda, al volver a la página de búsqueda después de usar el botón Atrás del explorador, los criterios de búsqueda se mantienen. 
 
@@ -112,7 +115,7 @@ Además de buscar aplicando una amplia gama de criterios, también puede guardar
 
    ![screen_shot_2018-03-23at102128](assets/screen_shot_2018-03-23at102128.png)
 
-1. Una vez guardada, podrá:
+1. Una vez guardada, puede:
 
    * Use **x** (con el nombre de la búsqueda guardada) para iniciar una nueva consulta (la búsqueda guardada en sí no se eliminará).
    * Use la opción **Editar búsqueda guardada**, cambie las condiciones de búsqueda y luego utilice **Guardar** nuevamente.
@@ -120,4 +123,3 @@ Además de buscar aplicando una amplia gama de criterios, también puede guardar
 Las búsquedas guardadas se pueden modificar seleccionando la búsqueda guardada y haciendo clic en **Editar búsqueda guardada** en la parte inferior del panel de búsqueda.
 
 ![screen_shot_2018-03-23at102213](assets/screen_shot_2018-03-23at102213.png)
-

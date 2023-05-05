@@ -10,14 +10,18 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 0aefe8c0-662e-4177-a369-feab174fa510
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '414'
-ht-degree: 7%
+source-wordcount: '450'
+ht-degree: 6%
 
 ---
 
 # Configuración de la página para la edición masiva de las propiedades de página {#configuring-your-page-for-bulk-editing-of-page-properties}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 [Edición masiva de propiedades de página](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) permite editar las propiedades de varias páginas a la vez.
 
@@ -40,7 +44,7 @@ Debido a la posibilidad de que haya diferentes valores, las propiedades de pági
 
 >[!NOTE]
 >
->La edición por lotes también está disponible para Assets. Se parece mucho, pero presenta algunos aspectos diferentes. Consulte [Edición de propiedades de varios recursos](/help/assets/managing-multiple-assets.md) para obtener más información. Puede personalizar los campos del editor de metadatos masivos para los recursos mediante la función [Editor de esquemas](/help/assets/metadata-schemas.md).
+>La edición por lotes también está disponible para Assets. Es muy similar, pero difiere en algunos puntos. Consulte [Edición de propiedades de varios recursos](/help/assets/managing-multiple-assets.md) para obtener más información. Puede personalizar los campos del editor de metadatos masivos para los recursos mediante la función [Editor de esquemas](/help/assets/metadata-schemas.md).
 
 ## Activación de un campo {#enabling-a-field}
 

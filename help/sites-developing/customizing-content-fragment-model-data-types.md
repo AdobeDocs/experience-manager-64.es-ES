@@ -8,15 +8,19 @@ uuid: d8215dbf-2dbe-43cb-a5c1-dc1cb412a204
 contentOwner: AEM Docs
 discoiquuid: a8b8155c-852c-4d16-b59b-7e19527c2bd4
 noindex: true
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1625'
-ht-degree: 1%
+source-wordcount: '1661'
+ht-degree: 2%
 
 ---
 
 
 # NO PUBLICAR, PERO NO DELETE Personalizar tipos de datos para modelos de fragmentos de contenido{#do-not-publish-but-do-not-delete-customizing-data-types-for-content-fragment-models}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 [Fragmentos de contenido](/help/assets/content-fragments.md) se basan en [modelos de fragmento de contenido](/help/assets/content-fragments-models.md). Estos modelos se crean a partir de [elementos](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) de diferentes tipos de datos.
 
@@ -141,7 +145,7 @@ Para que el tipo de datos esté presente en el editor de modelos, deben estar pr
   <tr> 
    <td>Fecha y hora</td> 
    <td>calendario</td> 
-   <td>time</td> 
+   <td>hora</td> 
   </tr> 
   <tr> 
    <td>Lista desglosada</td> 

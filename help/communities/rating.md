@@ -1,55 +1,58 @@
 ---
 title: Uso de clasificaciones
-seo-title: Uso de clasificaciones
-description: Añadir un componente Clasificación en una página
-seo-description: Añadir un componente Clasificación en una página
+seo-title: Using Ratings
+description: Adición de un componente Clasificación a una página
+seo-description: Adding a Rating component to a page
 uuid: a986970b-1221-4648-9a69-410f4480e0ae
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
-translation-type: tm+mt
-source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+exl-id: 1de28140-5334-4ca2-a476-5ad253809808
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 1%
+source-wordcount: '242'
+ht-degree: 4%
 
 ---
 
-
 # Uso de clasificaciones {#using-ratings}
 
-El componente `Rating`se utiliza de forma independiente o junto con otras características de Communities. Este componente permite a los miembros de la comunidad con sesión iniciada expresar sus opiniones mediante la clasificación del contenido.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-## Añadir una clasificación en una página {#adding-a-rating-to-a-page}
+La variable `Rating`se utiliza de forma independiente o junto con otras funciones de Communities. Este componente permite a los miembros de la comunidad que han iniciado sesión expresar sus opiniones clasificando el contenido.
 
-Para agregar un componente `Rating`a una página en modo de autor, localice el componente `Communities / Rating` y arrástrelo a su lugar en una página, como una posición relativa a la función que los miembros deben clasificar.
+## Adición de una clasificación a una página {#adding-a-rating-to-a-page}
 
-Para obtener la información necesaria, visite [Conceptos básicos de los componentes de comunidades](basics.md).
+Para agregar un `Rating`a una página en modo de autor, busque el componente `Communities / Rating` y arrástrela a su lugar en una página, como una posición relativa a la función que deben clasificar los miembros.
 
-Cuando se incluyen las [bibliotecas requeridas del lado del cliente](rating-basics.md#essentials-for-client-side), así es como aparecerá el componente `Rating`.
+Para obtener la información necesaria, visite [Conceptos básicos de los componentes de Communities](basics.md).
+
+Cuando la variable [bibliotecas requeridas del lado del cliente](rating-basics.md#essentials-for-client-side) se incluyen, así es como se muestra la variable `Rating` aparecerá el componente.
 
 ![chlimage_1-493](assets/chlimage_1-493.png)
 
-## Configuración de clasificación {#configuring-rating}
+## Configuración de la clasificación {#configuring-rating}
 
-Seleccione el componente `Rating` colocado para acceder y seleccione el icono `Configure` que abre el cuadro de diálogo de edición.
+Seleccione la colocación `Rating` para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
 
 ![chlimage_1-494](assets/chlimage_1-494.png)
 
-En la ficha **[!UICONTROL Textos y etiquetas]** debe especificar el identificador interno de la clasificación.
+En el **[!UICONTROL Textos y etiquetas]** especifique el identificador interno de la clasificación.
 
 ![chlimage_1-495](assets/chlimage_1-495.png)
 
-**[!UICONTROL Tally Name]**
-(*Requerido*) Un nombre sencillo para la instancia  `Rating`que identifica exclusivamente a esta instancia. Debe ser un nombre de nodo válido para el repositorio.
+**[!UICONTROL Nombre Tally]**
+(*Requerido*) Un nombre sencillo para el `Rating`que identifica de forma exclusiva esta instancia. Debe ser un nombre de nodo válido para el repositorio.
 
-## Experiencia de Visitante del sitio {#site-visitor-experience}
+## Experiencia del visitante del sitio {#site-visitor-experience}
 
 ### Miembros {#members}
 
-Solo se permite una clasificación por miembro. El miembro puede cambiar su calificación en cualquier momento.
+Solo se permite una clasificación por miembro. El miembro podrá cambiar su calificación en cualquier momento.
 
 ### Anónimo {#anonymous}
 
@@ -57,4 +60,4 @@ No se admite la publicación anónima de una clasificación. Los visitantes del 
 
 ## Información adicional {#additional-information}
 
-Puede encontrar más información en la página [Rating Essentials](rating-basics.md) para desarrolladores.
+Puede encontrar más información en la [Aspectos básicos de la clasificación](rating-basics.md) para desarrolladores.

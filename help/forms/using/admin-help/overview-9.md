@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7d2a9de8-13d1-4981-9ba2-9654127556b8
 exl-id: df534e6d-ec34-4851-bbd2-5b9b06d1da10
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 2%
+source-wordcount: '290'
+ht-degree: 18%
 
 ---
 
 # Descripción general del flujo de trabajo de Forms {#overview-of-forms-workflow}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El flujo de trabajo de Forms permite a los usuarios diseñar, administrar y optimizar procesos centrados en el ser humano. Mediante el flujo de trabajo de formularios, los usuarios también pueden administrar aplicaciones automatizadas de procesos empresariales que conecten sistemas y personas.
 
@@ -41,7 +45,7 @@ En cada página de flujo de trabajo de Forms en la consola de administración, p
      <li><p>Configuración de notificaciones de administrador</p></li>
      <li><p>Configurar los ajustes de configuración para la supervisión de actividades empresariales </p></li>
     </ul></td> 
-   <td><p><a href="/help/forms/using/admin-help/configuring-server-settings.md#configuring-server-settings">Configuración del servidor</a></p></td> 
+   <td><p><a href="/help/forms/using/admin-help/configuring-server-settings.md#configuring-server-settings">Configurar el servidor</a></p></td> 
   </tr> 
   <tr>
    <td><p>flujo de trabajo de formularios</p></td> 
@@ -51,7 +55,7 @@ En cada página de flujo de trabajo de Forms en la consola de administración, p
      <li><p>Ver y trabajar con instancias de proceso, operaciones y tareas</p></li>
      <li><p>Suspender, finalizar y reintentar instancias de proceso, subprocesos y operaciones</p></li>
     </ul></td> 
-   <td><p><a href="/help/forms/using/admin-help/processes.md#managing-processes">Administración de procesos</a></p></td> 
+   <td><p><a href="/help/forms/using/admin-help/processes.md#managing-processes">Administrar procesos</a></p></td> 
   </tr> 
   <tr>
    <td><p>Búsqueda del proceso</p></td> 
@@ -59,7 +63,7 @@ En cada página de flujo de trabajo de Forms en la consola de administración, p
     <ul>
      <li><p>Buscar procesos</p></li>
     </ul></td> 
-   <td><p><a href="/help/forms/using/admin-help/searching-process-instances.md#searching-for-process-instances">Búsqueda de instancias de proceso</a></p></td> 
+   <td><p><a href="/help/forms/using/admin-help/searching-process-instances.md#searching-for-process-instances">Buscar instancias de proceso</a></p></td> 
   </tr> 
   <tr>
    <td><p>Búsqueda de tareas</p></td> 
@@ -67,7 +71,7 @@ En cada página de flujo de trabajo de Forms en la consola de administración, p
     <ul>
      <li><p>Buscar tareas por usuario o ID de tarea</p></li>
     </ul></td> 
-   <td><p><a href="/help/forms/using/admin-help/tasks.md#working-with-tasks">Trabajo con tareas</a></p></td> 
+   <td><p><a href="/help/forms/using/admin-help/tasks.md#working-with-tasks">Trabajar con tareas</a></p></td> 
   </tr> 
   <tr>
    <td><p>Errores de operaciones interrumpidas</p></td> 
@@ -76,7 +80,7 @@ En cada página de flujo de trabajo de Forms en la consola de administración, p
      <li><p>Ver todas las operaciones interrumpidas y sus errores</p></li>
      <li><p>Reintentar o finalizar operaciones interrumpidas</p></li>
     </ul></td> 
-   <td><p><a href="/help/forms/using/admin-help/stalled-operations-branches.md#working-with-stalled-operations-and-branches">Trabajo con operaciones y ramas estancadas</a></p></td> 
+   <td><p><a href="/help/forms/using/admin-help/stalled-operations-branches.md#working-with-stalled-operations-and-branches">Trabajar con operaciones y ramas estancadas</a></p></td> 
   </tr> 
   <tr>
    <td><p>Errores de ramas interrumpidas</p></td> 
@@ -85,7 +89,7 @@ En cada página de flujo de trabajo de Forms en la consola de administración, p
      <li><p>Ver todas las ramas paralizadas y sus errores</p></li>
      <li><p>Reintentar ramas estancadas</p></li>
     </ul></td> 
-   <td><p><a href="/help/forms/using/admin-help/stalled-operations-branches.md#working-with-stalled-operations-and-branches">Trabajo con operaciones y ramas estancadas</a></p></td> 
+   <td><p><a href="/help/forms/using/admin-help/stalled-operations-branches.md#working-with-stalled-operations-and-branches">Trabajar con operaciones y ramas estancadas</a></p></td> 
   </tr> 
   <tr>
    <td><p>Fuera de la oficina</p></td> 
@@ -96,7 +100,7 @@ En cada página de flujo de trabajo de Forms en la consola de administración, p
      <li><p>Agregar un intervalo de fechas fuera de la oficina </p></li>
      <li><p>Especificar qué hacer con las tareas mientras el usuario está fuera de la oficina</p></li>
     </ul></td> 
-   <td><p><a href="/help/forms/using/admin-help/configuring-out-office-settings.md#configuring-out-of-office-settings">Configuración de fuera de la oficina</a></p></td> 
+   <td><p><a href="/help/forms/using/admin-help/configuring-out-office-settings.md#configuring-out-of-office-settings">Configurar Fuera de la oficina</a></p></td> 
   </tr> 
   <tr>
    <td><p>Calendarios empresariales</p></td> 
@@ -104,7 +108,7 @@ En cada página de flujo de trabajo de Forms en la consola de administración, p
     <ul>
      <li><p>Crear calendarios empresariales que definan días laborables y no laborables</p></li>
     </ul></td> 
-   <td><p><a href="/help/forms/using/admin-help/configuring-business-calendars.md#configuring-business-calendars">Configuración de calendarios comerciales</a></p></td> 
+   <td><p><a href="/help/forms/using/admin-help/configuring-business-calendars.md#configuring-business-calendars">Configurar calendarios comerciales</a></p></td> 
   </tr> 
   <tr>
    <td><p>Cola compartida</p></td> 

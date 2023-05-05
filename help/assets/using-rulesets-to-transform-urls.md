@@ -1,21 +1,25 @@
 ---
 title: Uso de conjuntos de reglas para transformar direcciones URL
-description: 'Puede implementar conjuntos de reglas en Dynamic Media para transformar direcciones URL. Los conjuntos de reglas son conjuntos de instrucciones escritos en un lenguaje de secuencias de comandos (como JavaScript) que evalúan los datos XML y realizan determinadas acciones si dichos datos cumplen determinadas condiciones. '
+description: Puede implementar conjuntos de reglas en Dynamic Media para transformar direcciones URL. Los conjuntos de reglas son conjuntos de instrucciones escritos en un lenguaje de secuencias de comandos (como JavaScript) que evalúan los datos XML y realizan determinadas acciones si dichos datos cumplen determinadas condiciones.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 exl-id: f0cd3a75-03ed-40a9-b336-8a782f3cfe69
-feature: Conjuntos de reglas
+feature: Rulesets
 role: Admin,User,Developer
-source-git-commit: 5d96c09ef764b02e08dcdf480da1ee18f4d9a30c
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '763'
-ht-degree: 5%
+source-wordcount: '798'
+ht-degree: 6%
 
 ---
 
 # Uso de conjuntos de reglas para transformar direcciones URL {#using-rulesets-to-transform-urls}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede implementar conjuntos de reglas en Dynamic Media para transformar direcciones URL. Los conjuntos de reglas son conjuntos de instrucciones escritos en un lenguaje de secuencias de comandos (como JavaScript) que evalúan los datos XML y realizan determinadas acciones si dichos datos cumplen determinadas condiciones. Cada regla consta de al menos una condición y una acción. Una regla evalúa los datos XML comparándolos con las condiciones y, si se cumple una condición, toma la acción adecuada. Algunos ejemplos de conjuntos de reglas son los siguientes:
 
@@ -29,9 +33,9 @@ Puede implementar conjuntos de reglas en Dynamic Media para transformar direccio
    Consulte [Compatibilidad de Adobe Dynamic Media Classic con SEO](/help/assets/assets/s7_seo.pdf).
 
 * Configuración de la disposición de contenido para almacenar en déclencheur una descarga.
-* Simplifique las URL de plantilla de Image Serving para la personalización. Por ejemplo, convertir `rgb{XX,YY,ZZ}` en  listo para RTF `\redXX\greenYY\blueZZ`
+* Simplifique las URL de plantilla de Image Serving para la personalización. Por ejemplo, girar `rgb{XX,YY,ZZ}` en la lista RTF `\redXX\greenYY\blueZZ`
 
-* Solicite que se codificen ciertos caracteres, como `$`, `{` y `}`, y que se descodificen ciertos caracteres para ImageServer. Por ejemplo, Facebook no funciona bien con las direcciones URL que contienen caracteres especiales.
+* Solicite ciertos caracteres para codificarlos, como `$`, `{`y `}`, y ciertos caracteres que se van a decodificar en ImageServer. Por ejemplo, Facebook no funciona bien con las direcciones URL que contienen caracteres especiales.
 
    Consulte [Eliminación de caracteres especiales de las direcciones URL](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/remove-special-characters-urls.html).
 
@@ -45,12 +49,12 @@ Hay disponibles conjuntos de reglas de ejemplo que pueden ayudarle a crear su pr
 Consulte [Referencia del conjunto de reglas](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html).
 
 Al igual que con la creación de todos los conjuntos de reglas, asegúrese de que el archivo XML sea válido antes de cargarlo mediante un programa de validador XML como xmlvalid.\
-Consulte también [Resolución de problemas de conjuntos de reglas](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
+Consulte también [Resolución de problemas de los conjuntos de reglas](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html).
 
 Además, asegúrese de probar primero el conjunto de reglas en un entorno de ensayo que no afecte al entorno de producción activo.\
 Los entornos de producción y los entornos de ensayo generalmente requieren diferentes inicios de sesión.
 
-Consulte la aplicación de escritorio [Adobe Dynamic Media Classic para obtener información de inicio de sesión](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
+Consulte la [Aplicación de escritorio de Adobe Dynamic Media Classic para información de inicio de sesión](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
 
 <!-- * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -67,15 +71,15 @@ Consulte también [Uso de la imagen &quot;asset&quot; en lugar de la imagen &quo
 1. Cargue el archivo del conjunto de reglas haciendo lo siguiente:
 
    * En la barra de navegación global, haga clic en **[!UICONTROL Cargar]**.
-   * En la página **[!UICONTROL Upload]**, cerca de la esquina superior izquierda, haga clic en **[!UICONTROL Browse]**.
-   * En el cuadro de diálogo **[!UICONTROL Abrir]**, busque el archivo del conjunto de reglas (XML).
-   * Seleccione el archivo y haga clic en **[!UICONTROL Open]**.
-   * A la derecha de la página **[!UICONTROL Upload]**, seleccione una carpeta de destino para el archivo del conjunto de reglas.
-   * Cerca de la parte inferior de la página, asegúrese de que **[!UICONTROL Publicar después de cargar]** está marcado.
+   * En el **[!UICONTROL Cargar]** página, cerca de la esquina superior izquierda, haga clic en **[!UICONTROL Examinar]**.
+   * En el **[!UICONTROL Apertura]** , busque el archivo del conjunto de reglas (XML).
+   * Seleccione el archivo y haga clic en **[!UICONTROL Apertura]**.
+   * En el lado derecho del **[!UICONTROL Cargar]** seleccione una carpeta de destino para el archivo del conjunto de reglas.
+   * Cerca de la parte inferior de la página, asegúrese de **[!UICONTROL Publicar después de la carga]** está activada.
    * En la esquina inferior derecha de la página, haga clic en **[!UICONTROL Enviar carga]**.
-   * En la barra de navegación global, haga clic en **[!UICONTROL Trabajos]** para comprobar el estado del trabajo de carga. Cuando la columna **[!UICONTROL Status]** de la página **[!UICONTROL Job]** indique Upload Done, continúe con los pasos siguientes.
+   * En la barra de navegación global, haga clic en **[!UICONTROL Trabajos]** para comprobar el estado del trabajo de carga. Cuando la variable **[!UICONTROL Estado]** en la columna **[!UICONTROL Trabajo]** La página indica Cargar finalizado y continúe con los pasos siguientes.
 
-1. En la barra de navegación cerca de la parte superior de la página, haga clic en **[!UICONTROL Configuración > Configuración de la aplicación > Configuración de la publicación > Servidor de imágenes]**.
+1. En la barra de navegación cerca de la parte superior de la página, haga clic en **[!UICONTROL Configuración > Configuración de la aplicación > Configuración de publicación > Servidor de imágenes]**.
 1. En la página **[!UICONTROL Publicación del servidor de imágenes]**, en el grupo **[!UICONTROL Administración de catálogos]**, busque **[!UICONTROL Ruta del archivo de definición de conjunto de reglas]** y haga clic en **[!UICONTROL Seleccionar]**.
 1. En la página **[!UICONTROL Seleccionar archivo de definición de conjunto de reglas (XML)]**, busque el archivo de conjunto de reglas y, en la esquina inferior derecha de la página, haga clic en **[!UICONTROL Seleccionar]**.
 1. En la esquina inferior derecha de la página Configuración, haga clic en **[!UICONTROL Cerrar]**.

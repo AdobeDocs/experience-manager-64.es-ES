@@ -1,5 +1,5 @@
 ---
-title: Configuración de fuera de la oficina
+title: Configurar Fuera de la oficina
 seo-title: Configuring Out of Office Settings
 description: La función Fuera de la oficina permite especificar cuándo un usuario estará fuera de la oficina y no podrá completar las tareas asignadas por AEM formularios.
 seo-description: The Out of Office feature enables you to specify when a user will be out of the office and unable to complete tasks assigned by AEM forms.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 30312159-58a5-4781-b554-29dcbce696cb
 exl-id: 8787ffa9-9ddc-439d-9934-8913d1ed459e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 0%
+source-wordcount: '695'
+ht-degree: 3%
 
 ---
 
-# Configuración de fuera de la oficina {#configuring-out-of-office-settings}
+# Configurar Fuera de la oficina {#configuring-out-of-office-settings}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 La función Fuera de la oficina permite a los usuarios o administradores especificar cuándo un usuario estará fuera de la oficina y no podrá completar las tareas asignadas por AEM formularios. Mientras un usuario está establecido en Fuera de la oficina, sus tareas se asignan a uno o más usuarios designados. Los usuarios pueden cambiar la configuración fuera de la oficina en Workspace o los administradores pueden cambiar la configuración en nombre de un usuario en el flujo de trabajo de formularios.
 

@@ -1,48 +1,51 @@
 ---
 title: Resolución de problemas de AEM durante la creación
-seo-title: Resolución de problemas de AEM durante la creación
+seo-title: Troubleshooting AEM when Authoring
 description: La sección siguiente trata ciertos problemas que pueden producirse al utilizar AEM, así como sugerencias para solucionarlos.
-seo-description: La sección siguiente trata ciertos problemas que pueden producirse al utilizar AEM, así como sugerencias para solucionarlos.
+seo-description: The following section covers some issues that you might encounter when using AEM, together with suggestions on how to troubleshoot them.
 uuid: eb95e5ba-1eed-4ffb-80c1-9b8468820c22
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
-translation-type: tm+mt
-source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+exl-id: 09409631-c579-4b1f-9193-1348896f6a09
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 95%
+source-wordcount: '466'
+ht-degree: 29%
 
 ---
 
-
 # Resolución de problemas de AEM durante la creación{#troubleshooting-aem-when-authoring}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 La sección siguiente trata ciertos problemas que pueden producirse al utilizar AEM, así como sugerencias para solucionarlos.
 
 >[!NOTE]
 >
->Si está experimentando problemas, puede consultar la lista de [Problemas conocidos](/help/release-notes/known-issues.md) de su instancia (versión y Service Packs).
+>Cuando experimenta problemas, también vale la pena comprobar la lista de [Problemas conocidos](/help/release-notes/known-issues.md) para su instancia (versión y service packs).
 
 >[!NOTE]
 >
->Los usuarios con privilegios de administrador que deseen solucionar problemas de AEM pueden utilizar los métodos de resolución de problemas descritos en [Resolución de problemas de AEM (para administradores)](/help/sites-administering/troubleshoot.md). Si no dispone de suficientes privilegios, póngase en contacto con el administrador del sistema para la resolución de problemas de AEM.
+>Los usuarios que tengan privilegios de administrador y que deseen solucionar problemas con AEM, pueden utilizar los métodos de resolución de problemas descritos en [Solución de problemas de AEM (para administradores)](/help/sites-administering/troubleshoot.md). Si no dispone de suficientes privilegios, consulte con el administrador del sistema sobre la resolución de problemas AEM.
 
 ## La versión anterior de la página sigue en el sitio publicado {#old-page-version-still-on-published-site}
 
 * **Problema**:
 
-   * Ha realizado cambios en una página y replicado la página en el sitio de publicación, pero la versión *antigua* de la página todavía se muestra en el sitio de publicación.
+   * Ha realizado cambios en una página y replicado la página en el sitio de publicación, pero la variable *old* la versión de la página sigue mostrándose en el sitio de publicación.
 
 * **Motivo**:
 
-   * Puede haber varios motivos. Normalmente es la caché (su navegador local o Dispatcher), aunque a veces puede haber un problema con la cola de replicación.
+   * Esto puede tener varias causas, la mayoría de las veces la caché (su navegador local o Dispatcher), aunque a veces puede ser un problema con la cola de replicación.
 
 * **Soluciones**:
 
-   * Hay varias posibilidades:
+   * Aquí hay varias posibilidades:
    * Confirme que la página se haya replicado correctamente. Compruebe el estado de la página y, si es necesario, el estado de la cola de replicación.
    * Borre la caché del navegador local y vuelva a acceder a la página.
    * Añada `?` al final de la URL de la página. Por ejemplo:
@@ -61,7 +64,7 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
 * **Motivo**:
 
-   * En casos muy contados, puede haber colocado el encabezado de la barra de tareas fuera del ámbito de la ventana actual. Esto significa que no puede volver a colocarla.
+   * En casos excepcionales, es posible que haya colocado el encabezado de la barra de tareas fuera del ámbito de la ventana actual. Esto significa que no puede volver a colocarlo.
 
 * **Solución**:
 
@@ -71,11 +74,11 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
 * **Problema:**
 
-   * Al utilizar la opción **Buscar y reemplazar** puede suceder que no todas las instancias del término `find` se reemplacen en una página.
+   * Al usar la variable **Buscar y reemplazar** puede suceder que no todas las instancias de la variable `find` en una página.
 
 * **Motivo**:
 
-   * La fiabilidad de **Buscar y reemplazar** depende de cómo se guarde el contenido y si se puede buscar. Por ejemplo, un texto de blog se guarda en la propiedad `jcr:text`, que no está configurada para la búsqueda. El alcance predeterminado para el servlet de buscar y reemplazar cubre las siguientes propiedades:
+   * La capacidad de **Buscar y reemplazar** depende de cómo se guarde el contenido y de si se puede buscar. Por ejemplo, un texto de blog se almacena en `jcr:text` que no está configurada para ser buscada. El ámbito predeterminado para el servlet de buscar y reemplazar cubre las siguientes propiedades:
 
       * `jcr:title`
       * `jcr:description`
@@ -84,7 +87,6 @@ La sección siguiente trata ciertos problemas que pueden producirse al utilizar 
 
 * **Solución**:
 
-   * Estas definiciones pueden cambiarse con la configuración del **Servlet Find Replace Day WCM CQ** mediante la **Consola web**; por ejemplo en
+   * Estas definiciones se pueden cambiar con la configuración de **Servlet Find Replace Day CQ WCM** usando la variable **Consola web**; por ejemplo, en
 
       `http://localhost:4502/system/console/configMgr`
-

@@ -11,14 +11,18 @@ topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 role: Developer
 exl-id: e4e99b9d-3023-4b9b-9c93-be04c7a871ee
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 0%
+source-wordcount: '1818'
+ht-degree: 1%
 
 ---
 
-# Creación de aplicaciones de Flash Builder que realizan autenticación SSO mediante tokens HTTP {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
+# Crear aplicaciones de Flash Builder que realizan autenticación SSO mediante tokens HTTP {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede crear una aplicación cliente mediante un Flash Builder que realice la autenticación de inicio de sesión único (SSO) mediante tokens HTTP. Supongamos, por ejemplo, que crea una aplicación basada en web con Flash Builder. A continuación, suponga que la aplicación contiene vistas diferentes, en las que cada vista invoca una operación de AEM Forms diferente. En lugar de autenticar a un usuario para cada operación de Forms, puede crear una página de inicio de sesión que permita que un usuario se autentique una vez. Una vez autenticado, un usuario puede invocar varias operaciones sin tener que volver a autenticarse. Por ejemplo, si un usuario ha iniciado sesión en Workspace (u otra aplicación de Forms), no tendrá que volver a autenticarse.
 

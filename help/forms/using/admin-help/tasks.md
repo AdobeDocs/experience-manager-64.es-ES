@@ -1,5 +1,5 @@
 ---
-title: Trabajo con tareas
+title: Trabajar con tareas
 seo-title: Working with tasks
 description: Utilice la página Búsqueda de tareas para buscar tareas por nombre de usuario o ID de tarea. Obtenga más información sobre cómo trabajar con tareas.
 seo-description: Use the Task Search page to search for tasks by user name or task ID. Learn more about working with tasks.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9161c8ca-ef33-4ec9-affc-94b5b3e48a4c
 exl-id: 130ba568-b035-4c80-b47a-e19ed8d8ac25
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 0%
+source-wordcount: '876'
+ht-degree: 1%
 
 ---
 
-# Trabajo con tareas {#working-with-tasks}
+# Trabajar con tareas {#working-with-tasks}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Utilice la página Búsqueda de tareas para buscar tareas por nombre de usuario o ID de tarea. Los resultados de búsqueda se muestran en la página Lista de tareas, donde puede acceder al historial de una tarea. También puede reasignar una tarea si un usuario tiene demasiadas tareas o si un usuario ha recibido una asignación de tareas por error.
 

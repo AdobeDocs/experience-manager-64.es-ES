@@ -1,5 +1,5 @@
 ---
-title: Conversión de archivos mediante el Generador de PDF
+title: Convertir archivos mediante el generador de PDF
 seo-title: Converting files using PDF Generator
 description: Obtenga información sobre cómo convertir archivos mediante el Generador de PDF.
 seo-description: Learn how to convert files using PDF Generator.
@@ -11,14 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 feature: PDF Generator
 exl-id: 3eecff45-405f-482f-b0de-acf6557a7813
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1117'
-ht-degree: 1%
+source-wordcount: '1153'
+ht-degree: 3%
 
 ---
 
-# Conversión de archivos mediante el Generador de PDF{#converting-files-using-pdf-generator}
+# Convertir archivos mediante el generador de PDF{#converting-files-using-pdf-generator}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede utilizar las páginas web de Generador de PDF para convertir archivos.
 
@@ -103,9 +107,9 @@ Puede exportar archivos de PDF a varios formatos de archivo, tal como se describ
 1. En el archivo Export PDF que desea enumerar, seleccione el formato al que desea exportar el archivo PDF.
 1. En el cuadro Especificar un tiempo de espera, introduzca el tiempo de espera antes de que se agote el tiempo de espera de la aplicación. El valor predeterminado es 270 segundos.
 
-   El tiempo de conversión que se muestra cuando se convierte el archivo puede ser mayor que el valor especificado aquí. El tiempo de conversión incluye el tiempo de espera para el subproceso o proceso, el tiempo necesario para convertir el archivo y el tiempo que tarda el convertidor de reserva (si corresponde). time. El valor Especificar un tiempo de espera es solo el tiempo que se tarda en convertir el archivo.
+   El tiempo de conversión que se muestra cuando se convierte el archivo puede ser mayor que el valor especificado aquí. El tiempo de conversión incluye el tiempo de espera para el subproceso o proceso, el tiempo necesario para convertir el archivo y el tiempo que tarda el convertidor de reserva (si corresponde). hora. El valor Especificar un tiempo de espera es solo el tiempo que se tarda en convertir el archivo.
 
-1. (Opcional) En la **Especificar perfil de Preflight personalizado** , haga clic en Examinar y seleccione una [perfil de comprobación previa personalizado](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Los perfiles de comprobación previa solo se utilizan al convertir documentos al formato de archivo PDF (PDF/A).
+1. (Opcional) En la **Especificar perfil de Preflight personalizado** , haga clic en Examinar y seleccione una [perfil de comprobación previa personalizado](https://helpx.adobe.com/es/acrobat/using/preflight-profiles-acrobat-pro.html). Los perfiles de comprobación previa solo se utilizan al convertir documentos al formato de archivo PDF (PDF/A).
 1. Haga clic en Exportar. Cuando se completa la conversión, aparece un vínculo al archivo exportado.
 1. Haga clic en el vínculo para ver el archivo convertido.
 

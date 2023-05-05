@@ -1,30 +1,33 @@
 ---
 title: Reestructuración de repositorios de comercio electrónico en AEM 6.4
-seo-title: Reestructuración de repositorios de comercio electrónico en AEM 6.4
+seo-title: E-Commerce Repository Restructuring in AEM 6.4
 description: Aprenda a realizar los cambios necesarios para migrar a la nueva estructura de repositorios en AEM 6.4 para comercio electrónico.
-seo-description: Aprenda a realizar los cambios necesarios para migrar a la nueva estructura de repositorios en AEM 6.4 para comercio electrónico.
+seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for E-Commerce.
 uuid: 1fff1a4b-c8d0-4016-92fb-e2ea26e3a302
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 28c92e7d-2106-4333-afa6-c5528a00d7b4
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 6adcc1a4-eb0f-4410-8219-dbd7e6bbe469
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 3%
+source-wordcount: '237'
+ht-degree: 5%
 
 ---
 
+# Reestructuración de repositorios de comercio electrónico en AEM 6.4{#e-commerce-repository-restructuring-in-aem}
 
-# Reestructuración del repositorio de comercio electrónico en AEM 6.4{#e-commerce-repository-restructuring-in-aem}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-Como se describe en la página principal [Reestructuración del repositorio en AEM 6.4](/help/sites-deploying/repository-restructuring.md), los clientes que actualicen a AEM 6.4 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios del repositorio que afectan a la solución de comercio electrónico AEM. Algunos cambios requieren un esfuerzo de trabajo durante el proceso de actualización de AEM 6.4, mientras que otros se pueden aplazar hasta una actualización de 6.5.
+Tal como se describe en el elemento principal [Reestructuración de repositorios en AEM 6.4](/help/sites-deploying/repository-restructuring.md) , los clientes que actualicen a AEM 6.4 deben utilizar esta página para evaluar el esfuerzo de trabajo asociado con los cambios en el repositorio que afectan a la solución de comercio electrónico de AEM. Algunos cambios requieren un esfuerzo de trabajo durante el proceso de actualización de AEM 6.4, mientras que otros se pueden aplazar hasta una actualización de 6.5.
 
-## Con actualización de 6.4 {#with-upgrade}
+## Con actualización a la versión 6.4 {#with-upgrade}
 
-### Productos, Pedidos, Colecciones, Clasificaciones, Métodos de Envío y Métodos de Pago Datos {#product-order-collections-classifications-shipping-methods-and-payment-methods-data}
+### Datos de Productos, Pedidos, Colecciones, Clasificaciones, Métodos de Envío y Métodos de Pago {#product-order-collections-classifications-shipping-methods-and-payment-methods-data}
 
 <table> 
  <tbody>
@@ -38,7 +41,7 @@ Como se describe en la página principal [Reestructuración del repositorio en A
   </tr>
   <tr>
    <td><strong>Directrices de reestructuración</strong></td> 
-   <td><p>Puede utilizar una tarea <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Lazy Migration</a> para migrar datos de comercio electrónico.</p> <p>Realiza los siguientes pasos:</p> 
+   <td><p>Puede usar un <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Migración diferida</a> para migrar datos de comercio electrónico.</p> <p>Realiza los siguientes pasos:</p> 
     <ul> 
      <li>ajusta las referencias a la ubicación antigua para que apunten a la nueva ubicación</li> 
      <li>mueve el contenido de la ubicación antigua a la nueva ubicación</li> 
@@ -58,4 +61,3 @@ Como se describe en la página principal [Reestructuración del repositorio en A
   </tr>
  </tbody>
 </table>
-

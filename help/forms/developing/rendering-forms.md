@@ -1,5 +1,5 @@
 ---
-title: Renderización de Forms
+title: Representar formularios
 seo-title: Rendering Forms
 description: Utilice el servicio Forms para crear aplicaciones cliente de captura de datos interactivas que validen, procesan, transforman y entregan formularios creados normalmente en Designer. Los creadores de formularios pueden desarrollar un único diseño de formulario que el servicio de Forms procesa en PDF, SWF o HTML en varios entornos de explorador.
 seo-description: Use the Forms service to create interactive data capture client applications that validate, process, transform, and deliver forms typically created in Designer. Form authors can develop a single form design that the Forms service renders in PDF, SWF, or HTML in various browser environments.
@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 role: Developer
 exl-id: 61d63c89-26e8-4a50-b6a3-1bcf1a1b4c54
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 0%
+source-wordcount: '593'
+ht-degree: 2%
 
 ---
 
-# Renderización de Forms {#rendering-forms}
+# Representar formularios {#rendering-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 **Acerca del servicio Forms**
 
@@ -46,7 +50,7 @@ Puede realizar estas tareas mediante el servicio Forms:
 
 * Procesar PDF forms interactivos. (Consulte [Renderización de PDF forms interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 * Procesar formularios en el cliente. (Consulte [Representación de Forms en el cliente](/help/forms/developing/rendering-forms-client.md).)
-* Procesar formularios basados en fragmentos. (Consulte [Representación de Forms basada en fragmentos](/help/forms/developing/rendering-forms-based-fragments.md).)
+* Procesar formularios basados en fragmentos (Consulte [Representación de Forms basada en fragmentos](/help/forms/developing/rendering-forms-based-fragments.md).)
 * Representar formularios habilitados para derechos. (Consulte [Renderización de Forms con derechos activados](/help/forms/developing/rendering-rights-enabled-forms.md).)
 * Procesar formularios como HTML. (Consulte [Representación de Forms como HTML](/help/forms/developing/rendering-forms-html.md).)
 * Renderización de Forms HTML mediante archivos CSS personalizados ([Representación de Forms de HTML mediante archivos CSS personalizados](/help/forms/developing/rendering-html-forms-using-custom.md).)

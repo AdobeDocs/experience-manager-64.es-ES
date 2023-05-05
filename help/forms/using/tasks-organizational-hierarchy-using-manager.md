@@ -1,7 +1,7 @@
 ---
-title: Administración de tareas en una jerarquía organizativa mediante la vista Administrador
+title: Administrar tareas en una jerarquía organizativa mediante la vista Administrador
 seo-title: Managing tasks in an organizational hierarchy using Manager View
-description: Cómo los administradores y los jefes de organización pueden acceder y trabajar en las tareas de sus informes directos e indirectos en la pestaña Tareas pendientes del espacio de trabajo de AEM Forms.
+description: Cómo los administradores y los jefes de organización pueden acceder y trabajar en las tareas de sus informes directos e indirectos en la pestaña Tareas pendientes de AEM Forms Workspace.
 seo-description: How managers and organization heads can access and work on the tasks of their direct and indirect reports in the To-do tab in AEM Forms workspace.
 uuid: a44d5a64-c03a-4337-8577-b121e6202449
 contentOwner: robhagat
@@ -10,29 +10,33 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c7cf28bf-2806-47bc-a803-8bc0e803fc4d
 exl-id: 28877528-2f91-4ee0-b9d8-c7df364ed803
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '344'
-ht-degree: 0%
+source-wordcount: '380'
+ht-degree: 92%
 
 ---
 
-# Administración de tareas en una jerarquía organizativa mediante la vista Administrador {#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
+# Administrar tareas en una jerarquía organizativa mediante la vista Administrador {#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
 
-En el espacio de trabajo de AEM Forms, los administradores ahora pueden acceder a las tareas asignadas a cualquier persona de su jerarquía (informes directos o indirectos) y realizar diversas acciones en ellas. Las tareas están disponibles en la ficha Tareas pendientes del espacio de trabajo de AEM Forms. Las acciones compatibles con las tareas de los informes directos son:
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-**Adelante** Reenviar una tarea desde un informe directo a cualquier usuario.
+En AEM Forms Workspace, los administradores ahora pueden acceder a las tareas asignadas a cualquier persona de su jerarquía (informes directos o indirectos) y realizar diversas acciones en ellas. Las tareas están disponibles en la pestaña Tareas pendientes de AEM Forms Workspace. Las acciones compatibles con las tareas de los informes directos son las siguientes:
 
-**Reclamación** Reclama una tarea de un informe directo.
+**Reenviar** reenviar una tarea desde un informe directo a cualquier usuario.
 
-**Reclamar y abrir** Reclame una tarea de un informe directo y ábrala automáticamente en la lista de tareas pendientes del administrador.
+**Reclamar** reclamar una tarea de un informe directo.
 
-**Rechazar** Rechace una tarea reenviada a un informe directo por otro usuario. Esta opción está disponible para las tareas reenviadas por otros usuarios a un informe directo.
+**Reclamar y abrir** reclamar una tarea de un informe directo y abrirla automáticamente en la lista de tareas pendientes del administrador.
+
+**Rechazar** rechazar una tarea reenviada a un informe directo por otro usuario. Esta opción está disponible para las tareas reenviadas por otros usuarios a un informe directo.
 
 AEM Forms restringe el acceso de los usuarios solo a aquellas tareas para las que el usuario tiene control de acceso (ACL). Esta comprobación garantiza que un usuario solo pueda recuperar las tareas en las que tiene permisos de acceso. Mediante servicios web e implementaciones de terceros para definir la jerarquía, una organización puede personalizar la definición de administrador y dirigir informes para adaptarlos a sus necesidades.
 
-1. Crear un DSC. Para obtener más información, consulte el tema &quot;Desarrollo de componentes para AEM Forms&quot; en [Programación con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) guía.
-1. En el DSC, defina un nuevo SPI para la administración de jerarquías a fin de definir jerarquías e informes directos dentro de los usuarios de AEM Forms. A continuación se muestra un fragmento de código Java™ de muestra.
+1. Crear un DSC. Para obtener más información, consulte el tema “Desarrollar componentes para AEM Forms” en la guía [Programar con AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63).
+1. En el DSC, defina un nuevo SPI para administrar jerarquías a fin de definir jerarquías e informes directos dentro de los usuarios de AEM Forms. A continuación se muestra un fragmento de código Java™ de ejemplo.
 
    ```as3
    public class MyHierarchyMgmtService 
@@ -67,7 +71,7 @@ AEM Forms restringe el acceso de los usuarios solo a aquellas tareas para las qu
    }
    ```
 
-1. Cree un archivo component.xml. Asegúrese de que spec-id debe ser el mismo que se muestra en el fragmento de código siguiente. A continuación se muestra un fragmento de código de ejemplo que puede reutilizar.
+1. Cree un archivo component.xml. Asegúrese de que el spec-id debe ser el mismo que se muestra en el siguiente fragmento de código. A continuación se muestra un fragmento de código de ejemplo que puede reutilizar.
 
    ```as3
    <component xmlns="https://adobe.com/idp/dsc/component/document"> 
@@ -111,11 +115,11 @@ AEM Forms restringe el acceso de los usuarios solo a aquellas tareas para las qu
    </component>
    ```
 
-1. Implementar DSC a través de Workbench. Restart `ProcessManagementTeamTasksService` servicio.
-1. Es posible que tenga que actualizar su navegador o cerrar la sesión/iniciar sesión con el usuario de nuevo.
+1. Implementar DSC a través de Workbench. Reiniciar el servicio `ProcessManagementTeamTasksService`.
+1. Es posible que tenga que actualizar su explorador o cerrar la sesión/iniciar sesión con el usuario de nuevo.
 
 La siguiente pantalla ilustra el acceso a las tareas de los informes directos y a las acciones disponibles.
 
 ![cu_manager_view](assets/cu_manager_view.png)
 
-Acceso a tareas de informes directos y realización de tareas
+Acceder tareas de informes directos y trabajar en las tareas

@@ -1,5 +1,5 @@
 ---
-title: Invocación de AEM Forms mediante la API de Java
+title: Invocar AEM Forms mediante la API de Java
 seo-title: Invoking AEM Forms using the JavaAPI
 description: Utilice el protocolo de transporte AEM Forms Java API for RMI para invocación remota, transporte de VM para invocación local, SOAP para invocación remota, autenticación diferente, como nombre de usuario y contraseña, y solicitudes de invocación sincrónicas y asincrónicas.
 seo-description: Use the AEM Forms Java API for RMI transport protocol for remote invocation, VM transport for local invocation, SOAP for remote invocation, different authentication, such as user name and password, and synchronous and asynchronous invocation requests.
@@ -11,14 +11,18 @@ topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 role: Developer
 exl-id: 1c239c05-e221-442a-a748-0c28704ee032
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '5385'
-ht-degree: 0%
+source-wordcount: '5421'
+ht-degree: 1%
 
 ---
 
 # Invocación de AEM Forms mediante la API de Java {#invoking-aem-forms-using-the-javaapi}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 AEM Forms se puede invocar utilizando la API Java de AEM Forms. Al utilizar la API Java de AEM Forms, puede utilizar las bibliotecas API de invocación o de cliente Java. Las bibliotecas de cliente Java están disponibles para servicios como el servicio de Rights Management. Estas API con establecimiento inflexible de tipos le permiten desarrollar aplicaciones Java que invoquen AEM Forms.
 
@@ -35,13 +39,13 @@ La API de Java admite las siguientes funciones:
 * Solicitudes de invocación sincrónicas y asíncronas
 
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](#including-aem-forms-java-library-files)
 
 [Invocación de procesos de larga vida centrados en el ser humano](invoking-human-centric-long-lived.md)
 
-[Invocación de AEM Forms mediante servicios web](/help/forms/developing/invoking-aem-forms-using-web.md)
+[Invocar AEM Forms mediante servicios web](/help/forms/developing/invoking-aem-forms-using-web.md)
 
 [Configuración de las propiedades de conexión](#setting-connection-properties)
 
@@ -405,7 +409,7 @@ Suponiendo que esté actualizando a AEM Forms. Para utilizar una aplicación Jav
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante la API de Java](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
@@ -680,7 +684,7 @@ El siguiente ejemplo muestra el contenido de un archivo jndi.properties que se u
 >
 >Consulte con su administrador para determinar el nombre y el número de puerto del servidor de aplicaciones J2EE.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -747,7 +751,7 @@ Una aplicación puede contener ambos `com.adobe.idp.Document` y `org.w3c.dom.Doc
         inDoc.dispose();
 ```
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante la API de Java](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
@@ -844,7 +848,7 @@ El archivo c:/temp/input.pdf debe estar ubicado en el equipo cliente (no en el e
  Document myPDFDocument = new Document(myURL);
 ```
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante la API de Java](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
@@ -878,7 +882,7 @@ El siguiente ejemplo de código copia el contenido de un `com.adobe.idp.Document
  myDocument.copyToFile (outFile);
 ```
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante la API de Java](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
@@ -941,7 +945,7 @@ El siguiente ejemplo de código determina el tipo de contenido de un `com.adobe.
  System.out.println("The content type of the Document object is " +ct);
 ```
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante la API de Java](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
@@ -951,7 +955,7 @@ El siguiente ejemplo de código determina el tipo de contenido de un `com.adobe.
 
 Cuando ya no necesite un `Document` , se recomienda eliminarlo invocando su `dispose` método. Cada `Document` consume un descriptor de archivo y hasta 75 MB de espacio RAM en la plataforma host de la aplicación. Si `Document` no se ha eliminado, el proceso de recopilación de Java Garage lo elimina. Sin embargo, eliminándolo antes, usando la variable `dispose` , puede liberar la memoria ocupada por el `Document` objeto.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante la API de Java](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
@@ -1001,7 +1005,7 @@ Puede invocar el servicio Repositorio utilizando una biblioteca de cliente Java 
    * Un valor de cadena que especifica la ruta a la colección de recursos que contiene el nuevo recurso
    * La variable `Resource` objeto creado
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido (modo EJB): Escritura de un recurso mediante la API de Java](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
 
@@ -1069,7 +1073,7 @@ Invocar el `MyApplication/EncryptDocument` proceso breve mediante la API de invo
 1. Cree un `java.io.File` y asegúrese de que la extensión de archivo es .pdf.
 1. Invocar el `com.adobe.idp.Document` del objeto `copyToFile` para copiar el contenido del `com.adobe.idp.Document` al archivo. Asegúrese de usar la variable `com.adobe.idp.Document` objeto devuelto por el `getOutputParameter` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido: Invocación de un proceso de corta duración mediante la API de invocación](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-using-the-invocation-api)
 

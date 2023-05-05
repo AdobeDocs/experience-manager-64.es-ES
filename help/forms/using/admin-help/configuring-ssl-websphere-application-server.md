@@ -1,5 +1,5 @@
 ---
-title: Configuración de SSL para el servidor de aplicaciones WebSphere
+title: Configurar SSL para el servidor de aplicaciones WebSphere
 seo-title: Configuring SSL for WebSphere Application Server
 description: Aprenda a configurar SSL para el servidor de aplicaciones WebSphere.
 seo-description: Learn how to configure SSL for WebSphere Application Server.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
 exl-id: 653daaa4-9e35-40eb-a61e-274109f5f0d2
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1227'
-ht-degree: 1%
+source-wordcount: '1263'
+ht-degree: 3%
 
 ---
 
-# Configuración de SSL para el servidor de aplicaciones WebSphere {#configuring-ssl-for-websphere-application-server}
+# Configurar SSL para el servidor de aplicaciones WebSphere {#configuring-ssl-for-websphere-application-server}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Esta sección incluye los siguientes pasos para configurar SSL con el servidor de aplicaciones IBM WebSphere.
 

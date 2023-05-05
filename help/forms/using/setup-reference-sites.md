@@ -9,14 +9,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 exl-id: 9c5d956c-06bc-4428-afcd-02b4f81b802f
-source-git-commit: f8b19b6723d333e76fed111b9fde376b3bb13a1d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2911'
-ht-degree: 2%
+source-wordcount: '2947'
+ht-degree: 5%
 
 ---
 
 # Configuración de sitios de referencia de AEM Forms {#set-up-and-configure-aem-forms-reference-sites}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 AEM Forms proporciona implementación de sitios de referencia para demostrar cómo AEM Forms ayuda a las organizaciones gubernamentales y del sector de servicios financieros a transformar sus complejas transacciones en experiencias digitales simples y atractivas en cualquier lugar, en cualquier momento y en cualquier dispositivo.
 
@@ -53,7 +57,7 @@ Puede utilizar cualquier servicio SMTP.
 
 * **Cuenta de desarrollador de Acrobat Sign y aplicación de API de Acrobat Sign**
 
-   Para utilizar las funciones de firma digital, se requiere una cuenta de desarrollador de Acrobat Sign. Consulte [Acrobat Sign](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html).
+   Para utilizar las funciones de firma digital, se requiere una cuenta de desarrollador de Acrobat Sign. Consulte [Acrobat Sign](https://acrobat.adobe.com/es/es/why-adobe/developer-form.html).
 
 * Instancia en ejecución de Microsoft Dynamics 365 para integrarla con AEM Forms. Para ejecutar el sitio de referencia, importe los datos de ejemplo en la instancia de Microsoft Dynamics para rellenar previamente la comunicación interactiva utilizada en el sitio de referencia.
 * Instancia en ejecución de AEM 6.4 con el paquete de complementos de Forms. Para obtener más información, consulte [Instalación y configuración de AEM Forms](installing-configuring-aem-forms-osgi.md).
@@ -68,23 +72,23 @@ Realice los siguientes pasos en la secuencia recomendada para configurar los sit
    <th><strong>Notas</strong></th> 
   </tr> 
   <tr> 
-   <td><a href="#installaemforms">Instalación y configuración de AEM Forms</a></td> 
-   <td>Creación y publicación</td> 
+   <td><a href="#installaemforms">Instalar y configurar AEM Forms</a></td> 
+   <td>Autor y publicación</td> 
    <td>Instale y configure instancias de creación y publicación de AEM Forms.</td> 
   </tr> 
   <tr> 
    <td><a href="#ssl">Configuración de SSL</a></td> 
-   <td>Creación y publicación<br /> </td> 
+   <td>Autor y publicación<br /> </td> 
    <td>Habilite HTTP sobre SSL para comunicaciones seguras con Acrobat Sign.</td> 
   </tr> 
   <tr> 
    <td><p><a href="#externalizer">Configurar la configuración del externalizador Day CQ Link</a></p> </td> 
-   <td>Creación y publicación<br /> </td> 
+   <td>Autor y publicación<br /> </td> 
    <td><p>Los casos de uso del sitio de referencia envían correos electrónicos para diferentes transacciones. Esta configuración es necesaria para la entrega de newsletters por correo electrónico. Garantiza que las URL y las imágenes apunten a la instancia de publicación. </p> </td> 
   </tr> 
   <tr> 
    <td><a href="#cqmail">Configurar el servicio Day CQ Mail</a></td> 
-   <td>Creación y publicación</td> 
+   <td>Autor y publicación</td> 
    <td>Necesario para la comunicación por correo electrónico.</td> 
   </tr> 
   <tr> 
@@ -104,22 +108,22 @@ Realice los siguientes pasos en la secuencia recomendada para configurar los sit
   </tr> 
   <tr> 
    <td><a href="/help/forms/using/setup-reference-sites.md#optional-import-sample-data-into-microsoft-dynamics">Importar datos de ejemplo en Microsoft Dynamics</a></td> 
-   <td>Creación y publicación</td> 
+   <td>Autor y publicación</td> 
    <td>Importar datos de muestra para la aplicación de tarjeta de crédito, la aplicación de hipoteca de origen y el tutorial de la aplicación de seguro de vivienda</td> 
   </tr> 
   <tr> 
    <td><a href="/help/forms/using/setup-reference-sites.md#configure-oauth-cloud-service-for-microsoft-dynamics">Configuración del servicio en la nube OAuth para Microsoft Dynamics</a></td> 
-   <td>Creación y publicación</td> 
+   <td>Autor y publicación</td> 
    <td>Configure el servicio en la nube OAuth en AEM Forms para habilitar la comunicación entre AEM Forms y Microsoft Dynamics. </td> 
   </tr> 
   <tr> 
    <td><a href="#scheduler">Configuración del planificador de Acrobat Sign</a></td> 
-   <td>Creación y publicación<br /> </td> 
+   <td>Autor y publicación<br /> </td> 
    <td>Cambie la configuración del planificador para comprobar el estado cada dos minutos.</td> 
   </tr> 
   <tr> 
    <td><a href="#sign-service">Configuración del Cloud Service de referencia de Acrobat Sign del sitio</a></td> 
-   <td>Creación y publicación<br /> </td> 
+   <td>Autor y publicación<br /> </td> 
    <td>Una configuración que viene con paquetes de sitios de referencia y necesita reconfiguración con credenciales válidas.</td> 
   </tr> 
   <tr> 
@@ -129,13 +133,13 @@ Realice los siguientes pasos en la secuencia recomendada para configurar los sit
   </tr> 
   <tr> 
    <td><a href="#fdm">Modificar el archivo de intercambio de servicio de descanso para el modelo de datos de formulario</a></td> 
-   <td>Creación y publicación<br /> </td> 
+   <td>Autor y publicación<br /> </td> 
    <td>Modifique el servicio para su entorno.</td> 
   </tr> 
  </tbody> 
 </table>
 
-## Instalación y configuración de AEM Forms {#install-and-configure-aem-forms}
+## Instalar y configurar AEM Forms {#install-and-configure-aem-forms}
 
 Instale e implemente AEM Forms como se describe en [Instalación y configuración de AEM Forms en OSGi](/help/forms/using/installing-configuring-aem-forms-osgi.md).
 
@@ -195,7 +199,7 @@ Realice los siguientes pasos para configurar el servicio de correo en la instanc
 
 Las plantillas de correo electrónico del sitio de referencia de We.Finance contienen vínculos personalizados en los correos electrónicos. Estos vínculos tienen un marcador de posición como `${placeholder}`. Estos marcadores de posición se sustituyen por valores reales antes de enviar correos electrónicos. La configuración de protección XSS predeterminada para AEM no permite llaves (**{ }**) en la dirección URL en el contenido del HTML. Sin embargo, puede anular la configuración predeterminada realizando los siguientes pasos en la instancia de publicación:
 
-1. Copiar `/libs/cq/xssprotection/config.xml` a `/apps/cq/xssprotection/config.xml`.
+1. Copie `/libs/cq/xssprotection/config.xml` en `/apps/cq/xssprotection/config.xml`.
 1. Abra `/apps/cq/xssprotection/config.xml`.
 1. En el `common-regexps` , modifique la `onsiteURL` escriba lo siguiente y guarde el archivo.
 
@@ -328,7 +332,7 @@ Puede integrar AEM Forms con Adobe Analytics y Adobe Target. Aunque Adobe Analyt
 
 Haga lo siguiente para configurar Adobe Analytics y Adobe Target en AEM Forms.
 
-### Configuración de Adobe Analytics {#configure-adobe-analytics}
+### Configuración de Adobe Analytics {#configure-adobe-analytics}
 
 La integración de AEM Forms con Adobe Analytics le permite supervisar y analizar cómo interactúan sus clientes con sus formularios y documentos. Le ayuda a identificar y corregir áreas problemáticas y a aumentar la tasa de conversión.
 
@@ -354,7 +358,7 @@ Para generar un informe, los datos semilla se incluyen en los sitios de referenc
 
    Los sitios de referencia proporcionan a los informes de análisis datos semilla para los casos de uso de tarjetas de crédito, hipotecas de viviendas y soporte infantil. Para obtener información sobre la configuración de los datos semilla, consulte [Recorrido por el sitio web de referencia de We.Finance](/help/forms/using/finance-reference-site-walkthrough.md) y [Recorrido por el sitio web de referencia de We.Gov](/help/forms/using/gov-reference-site-walkthrough.md).
 
-### Configurar Target {#configure-target}
+### Configuración de Target {#configure-target}
 
 El sitio de referencia muestra la integración de AEM Forms con Adobe Target que le permite incluir contenido personalizado y dirigido en documentos adaptables. También permite crear pruebas A/B para formularios adaptables.
 
@@ -373,7 +377,7 @@ Para experimentar la integración en el sitio de referencia, haga lo siguiente p
 1. Especifique el código de cliente, el correo electrónico y la contraseña asociados a su cuenta de Target. Seleccione el tipo de API como **[!UICONTROL REST]**.
 1. Haga clic en **[!UICONTROL Conectarse al destino del Adobe]**. Una vez configurada correctamente la cuenta de Target, haga clic en **[!UICONTROL OK]**. Puede ver que la configuración empaquetada tiene un Target Framework.
 
-1. Vaya a https://&lt;*hostname*>:&lt;*puerto*>/system/console/configMgr.
+1. Vaya a https://&lt;*hostname*>:&lt;*port*>/system/console/configMgr.
 
 1. Haga clic en **[!UICONTROL Configuración de AEM Forms Target]**.
 1. Seleccione un marco de Target.
@@ -385,7 +389,7 @@ Los casos de uso de las aplicaciones de tarjetas de crédito e hipotecas domést
 
 ## Siguiente paso {#next-step}
 
-Ahora todos están listos para explorar el sitio de referencia. Para obtener más información sobre el flujo de trabajo y los pasos del sitio de referencia, consulte:
+Ahora, todos están listos para explorar el sitio de referencia de Para obtener más información sobre el flujo de trabajo y los pasos del sitio de referencia, consulte:
 
 * [Recorrido por el sitio web de referencia de We.Finance](/help/forms/using/finance-reference-site-walkthrough.md)
 * [Recorrido por el sitio web de referencia de We.Gov](/help/forms/using/gov-reference-site-walkthrough.md)

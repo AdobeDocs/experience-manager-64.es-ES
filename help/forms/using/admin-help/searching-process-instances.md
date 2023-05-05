@@ -1,5 +1,5 @@
 ---
-title: Búsqueda de instancias de proceso
+title: Buscar instancias de proceso
 seo-title: Searching for process instances
 description: Utilice la página Buscar en proceso para introducir criterios de búsqueda para encontrar una instancia de proceso.
 seo-description: Use the Process Search page to enter search criteria for finding a process instance.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 88b634bb-8f6c-4830-ad01-821668609615
 exl-id: 25a01630-47ec-4823-ad11-9a636697f3dc
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 0%
+source-wordcount: '485'
+ht-degree: 3%
 
 ---
 
-# Búsqueda de instancias de proceso{#searching-for-process-instances}
+# Buscar instancias de proceso{#searching-for-process-instances}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Utilice la página Buscar en proceso para introducir criterios de búsqueda para encontrar una instancia de proceso. Puede acceder a la página Buscar en proceso desde la página de flujo de trabajo de formularios o haciendo clic en Buscar en la página Instancia de proceso .
 

@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
 feature: Multi Site Manager
 exl-id: 13d044bd-fa61-4e24-ac1d-69a6f10847a4
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '4006'
+source-wordcount: '4042'
 ht-degree: 44%
 
 ---
 
 # Creación y sincronización de Live Copies{#creating-and-synchronizing-live-copies}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede crear una Live Copy desde una página o configuración de modelo y, a continuación, administrar la herencia y la sincronización.
 
@@ -570,7 +574,7 @@ Para realizar un seguimiento de los cambios realizados, puede ver la página de 
 
 1. Las dos páginas (Live Copy y modelo) se abrirán en paralelo.
 
-   Para obtener información completa sobre el uso de esta característica, consulte la [diferencia de la página](/help/sites-authoring/page-diff.md).
+   Para obtener información completa sobre el uso de esta función, consulte [Diferencias de página](/help/sites-authoring/page-diff.md).
 
 ## Desasociación de una Live Copy {#detaching-a-live-copy}
 

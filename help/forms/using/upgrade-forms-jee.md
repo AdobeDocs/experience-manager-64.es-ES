@@ -11,14 +11,18 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: e41eb0fa-ae88-44d5-9181-0d925b8b62c6
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1680'
-ht-degree: 0%
+source-wordcount: '1716'
+ht-degree: 15%
 
 ---
 
-# Actualización a AEM 6.4 Forms en JEE {#upgrade-to-aem-forms-jee}
+# Actualizar a AEM 6.4 Forms en JEE {#upgrade-to-aem-forms-jee}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Utilice una de las siguientes rutas de actualización, según corresponda para su entorno.
 
@@ -26,19 +30,19 @@ Utilice una de las siguientes rutas de actualización, según corresponda para s
 
 Realice el siguiente procedimiento para actualizar el Forms AEM 6.2 existente en JEE o AEM 6.3 Forms en JEE a AEM 6.4 Forms en JEE:
 
-1. Descargue el instalador AEM 6.4 de Forms en JEE desde el [Sitio web de licencias de Adobe (LWS)](https://licensing.adobe.com/). Necesita un contrato de mantenimiento y soporte válido para descargar el instalador.
+1. Descargue el programa de instalación de AEM 6.4 de Forms en JEE desde el [Sitio web de licencias de Adobe (LWS)](https://licensing.adobe.com/). Necesita un contrato de mantenimiento y soporte válido para descargar el programa de instalación.
 1. Consulte [Planificación y lista de comprobación de la actualización](https://www.adobe.com/go/learn_aemfroms_upgrade_checklist_63) para obtener más información sobre las comprobaciones que se deben realizar para garantizar una actualización correcta.
-1. Consulte [Preparación para actualizar a AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_63) para aprender y realizar las tareas que garantizan que la actualización se ejecute correctamente con un tiempo de inactividad mínimo en el servidor.
+1. Consulte [Prepararse para actualizar a AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_63_es) para aprender y realizar las tareas que garantizan que la actualización se ejecute correctamente con un tiempo de inactividad mínimo en el servidor.
 1. Según el entorno y el servidor de aplicaciones existentes, elija uno de los siguientes documentos y siga las instrucciones.
 
-   * [Actualización de AEM 6.2 o AEM 6.3 Forms a AEM 6.4 Forms para JBoss](assets/upgrade-jboss.pdf)
+   * [Actualizar de AEM 6.2 o AEM 6.3 Forms a AEM 6.4 Forms para JBoss](assets/upgrade-jboss.pdf)
    * [Actualización de AEM 6.2 o AEM 6.3 Forms a AEM 6.4 Forms para WebLogic](assets/upgrade-weblogic.pdf)
-   * [Actualización de AEM 6.2 o AEM 6.3 Forms a AEM 6.4 Forms para WebSphere](assets/upgrade-websphere.pdf)
-   * [Actualización de AEM 6.2 o AEM 6.3 Forms a AEM 6.4 Forms para JBoss Turnkey](assets/upgrade-turnkey.pdf)
+   * [Actualizar de AEM 6.2 o AEM 6.3 Forms a AEM 6.4 Forms para WebSphere](assets/upgrade-websphere.pdf)
+   * [Actualizar de AEM 6.2 o AEM 6.3 Forms a AEM 6.4 Forms para JBoss Turnkey](assets/upgrade-turnkey.pdf)
 
 ## AEM 6.0 Forms en JEE > AEM 6.3 Forms en JEE {#aem-forms-jee-60-to-63}
 
-No está disponible la actualización directa desde LiveCycle ES2, LiveCycle ES3, AEM 6.0 Forms, AEM 6.1 Forms a AEM 6.4 Forms. Puede realizar una actualización intermedia a una o más versiones de LiveCycle o AEM Forms y, a continuación, actualizar desde AEM 6.4 Forms. Para obtener la lista de versiones intermedias y las instrucciones de actualización correspondientes, consulte [Elija una ruta de actualización](upgrade.md).
+La actualización directa desde LiveCycle ES2, LiveCycle ES3, AEM 6.0 6.1 Forms, AEM Forms a AEM 6.4 Forms no está disponible. Puede realizar una actualización intermedia a una o más versiones de LiveCycle o AEM Forms y, a continuación, actualizar desde AEM 6.4 Forms. Para obtener la lista de versiones intermedias y las instrucciones de actualización correspondientes, consulte [Elegir una ruta de actualización](upgrade.md).
 
 ## LiveCycle ES4 SP1 > AEM 6.4 Forms en JEE {#livecycle-es4sp1-forms-jee}
 
@@ -48,7 +52,7 @@ A continuación se ofrece una descripción general del procedimiento para actual
 
 1. Antes de actualizar:
 
-   1. Descargue el instalador AEM 6.4 de Forms en JEE desde el [Sitio web de licencias de Adobe (LWS)](https://licensing.adobe.com/). Necesita un contrato de mantenimiento y soporte válido para descargar el instalador.
+   1. Descargue el programa de instalación de AEM 6.4 de Forms en JEE desde el [Sitio web de licencias de Adobe (LWS)](https://licensing.adobe.com/). Necesita un contrato de mantenimiento y soporte válido para descargar el programa de instalación.
    1. Decida el tipo de Repositorio de contenido (Repositorio CRX) que se va a usar. Solo unas pocas funciones de AEM Forms en JEE utilizan la persistencia del repositorio de contenido para almacenar contenido y recursos. Instale y configure el Repositorio de contenido solo si planea utilizar este AEM Forms en las funcionalidades JEE:
 
       * En LiveCycle ES4 SP1, las funciones de Gestión de Correspondencia, Portal de Forms, Espacio de trabajo de HTML e Informes de procesos utilizan el Repositorio de contenido. Si no utilizó estas funciones en LiveCycle ES4 y planea no utilizarlas en AEM Forms, no es necesario el repositorio de contenido.
@@ -112,7 +116,7 @@ A continuación se ofrece una descripción general del procedimiento para actual
 
 1. Antes de actualizar:
 
-   1. Descargue el instalador AEM 6.4 de Forms en JEE desde el [Sitio web de licencias de Adobe (LWS)](https://licensing.adobe.com/). Necesita un contrato de mantenimiento y soporte válido para descargar el instalador.
+   1. Descargue el programa de instalación de AEM 6.4 de Forms en JEE desde el [Sitio web de licencias de Adobe (LWS)](https://licensing.adobe.com/). Necesita un contrato de mantenimiento y soporte válido para descargar el programa de instalación.
    1. Decida el tipo de Repositorio de contenido (Repositorio CRX) que se va a usar. Solo unas pocas funciones de AEM Forms en JEE utilizan la persistencia del repositorio de contenido para almacenar contenido y recursos. Instale y configure el Repositorio de contenido solo si planea utilizar este AEM Forms en las funcionalidades JEE:
 
       * En AEM Forms, Adaptive Forms, Correspondence Management, HTML5 Forms, Forms Portal, HTML Workspace, Process Reporting y los flujos de trabajo centrados de Forms en las funciones OSGi utilizan el repositorio de contenido. Si planea utilizar AEM Forms para estas funciones, se requiere el Repositorio de contenido.

@@ -1,5 +1,5 @@
 ---
-title: Firma y certificación digitales de documentos
+title: Firmar y certificar documentos digitalmente
 seo-title: Digitally Signing and Certifying Documents
 description: Utilice el servicio de firma para agregar y eliminar campos de firma digital a un documento de PDF, recuperar los nombres de campos de firma ubicados en un documento de PDF, modificar campos de firma, firmar digitalmente documentos de PDF, certificar documentos de PDF, validar firmas digitales ubicadas en un documento de PDF, validar todas las firmas digitales ubicadas en un documento de PDF y quitar una firma digital de un campo de firma.
 seo-description: Use the Signature service to add and delete digital signature fields to a PDF document, retrieve the names of signature fields located in a PDF document, modify signature fields, digitally sign PDF documents, certify PDF documents, validate digital signatures located in a PDF document, validate all digital signatures located in a PDF document, and remove a digital signature from a signature field.
@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 role: Developer
 exl-id: b8488a39-44dd-4e6c-b3f0-857d67c79385
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '17032'
-ht-degree: 0%
+source-wordcount: '17068'
+ht-degree: 4%
 
 ---
 
-# Firma y certificación digitales de documentos {#digitally-signing-and-certifying-documents}
+# Firmar y certificar documentos digitalmente  {#digitally-signing-and-certifying-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 **Acerca del servicio de firma**
 
@@ -53,9 +57,9 @@ Puede realizar estas tareas mediante el servicio de firma:
 
 ## Adición de campos de firma {#adding-signature-fields}
 
-Las firmas digitales aparecen en los campos de firma, que son campos de formulario que contienen una representación gráfica de la firma. Los campos de firma pueden ser visibles o invisibles. Los firmantes pueden utilizar un campo de firma preexistente o se puede agregar un campo de firma mediante programación. En cualquier caso, el campo de firma debe existir antes de que se pueda firmar un documento de PDF.
+Las firmas digitales aparecen en los campos de firma, que son campos de formulario que contienen una representación gráfica de la firma. Los campos de firma pueden ser visibles o invisibles. Los firmantes pueden utilizar un campo de firma preexistente o se puede agregar un campo de firma mediante programación. En cualquier caso, el campo de firma debe existir antes de que se pueda firmar un documento PDF.
 
-Puede añadir mediante programación un campo de firma utilizando la API de Java del servicio de firma o la API del servicio web de firma. Puede agregar más de un campo de firma a un documento de PDF; sin embargo, cada nombre de campo de firma debe ser único.
+Puede agregar mediante programación un campo de firma mediante la API de Java del servicio de firma o la API del servicio web de firma. Puede agregar más de un campo de firma a un documento de PDF; sin embargo, cada nombre de campo de firma debe ser único.
 
 >[!NOTE]
 >
@@ -99,7 +103,7 @@ Para agregar correctamente un campo de firma a un documento de PDF, se especific
 
 Una vez que el servicio de firma agrega un campo de firma al documento del PDF, puede guardar el documento como archivo del PDF para que los usuarios puedan abrirlo en Acrobat o Adobe Reader.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -148,7 +152,7 @@ Agregue un campo de firma utilizando la API de firma (Java):
    * Cree un `java.io.File` y asegúrese de que la extensión de archivo es .pdf.
    * Invocar el `com.adobe.idp`. `Document` del objeto `copyToFile` para copiar el contenido del `Document` al archivo. Asegúrese de usar la variable `com.adobe.idp`. `Document` objeto devuelto por el `addSignatureField` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido de la API del servicio de firma](/help/forms/developing/signature-service-java-api-quick.md#signature-service-java-api-quick-start-soap)
 
@@ -205,7 +209,7 @@ Para añadir un campo de firma mediante la API de firma (servicio web):
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en un archivo de PDF invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
@@ -213,7 +217,7 @@ Para añadir un campo de firma mediante la API de firma (servicio web):
 
 ## Recuperación de nombres de campos de firma {#retrieving-signature-field-names}
 
-Puede recuperar los nombres de todos los campos de firma que se encuentran en un documento de PDF que desee firmar o certificar. Si no está seguro de los nombres de los campos de firma que se encuentran en un documento de PDF o desea verificarlos, puede recuperarlos mediante programación. El servicio de firma devuelve el nombre completo del campo de firma, como `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+Puede recuperar los nombres de todos los campos de firma que se encuentran en un documento PDF que desee firmar o certificar. Si no está seguro de los nombres de los campos de firma que se encuentran en un documento PDF o desea verificarlos, puede recuperarlos mediante programación. El servicio Firma devuelve el nombre completo del campo de firma, como `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 >[!NOTE]
 >
@@ -254,7 +258,7 @@ Recupere un documento de PDF que contenga campos de firma.
 
 Puede recuperar los nombres de los campos de firma después de recuperar un documento de PDF que contenga uno o más campos de firma.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Recuperar nombres de campos de firma mediante la API de Java](digitally-signing-certifying-documents.md#retrieve-signature-field-names-using-the-java-api)
 
@@ -289,7 +293,7 @@ Recupere los nombres de los campos de firma utilizando la API de firma (Java):
    * Recupere los nombres de los campos de firma invocando la variable `SignatureServiceClient` del objeto `getSignatureFieldList` y pasando el `com.adobe.idp.Document` objeto que contiene el documento del PDF que contiene campos de firma. Este método devuelve un `java.util.List` objeto, en el que cada elemento contiene un `PDFSignatureField` objeto. Con este objeto, puede obtener información adicional sobre un campo de firma, como si está visible.
    * Iterar a través de la variable `java.util.List` para determinar si hay nombres de campo de firma. Para cada campo de firma del documento del PDF, puede obtener una `PDFSignatureField` objeto. Para obtener el nombre del campo de firma, invoque la variable `PDFSignatureField` del objeto `getName` método. Este método devuelve un valor de cadena que especifica el nombre del campo de firma.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Recuperación de nombres de campos de firma](digitally-signing-certifying-documents.md#retrieving-signature-field-names)
 
@@ -337,7 +341,7 @@ Recupere los nombres de los campos de firma mediante la API de firma (servicio w
    * Recupere los nombres de los campos de firma invocando `SignatureServiceClient` del objeto `getSignatureFieldList` y pasando el `BLOB` objeto que contiene el documento del PDF que contiene campos de firma. Este método devuelve un `MyArrayOfPDFSignatureField` objeto de colección donde cada elemento contiene un `PDFSignatureField` objeto.
    * Iterar a través de la variable `MyArrayOfPDFSignatureField` para determinar si hay nombres de campo de firma. Para cada campo de firma del documento del PDF, puede obtener una `PDFSignatureField` objeto. Para obtener el nombre del campo de firma, invoque la variable `PDFSignatureField` del objeto `getName` método. Este método devuelve un valor de cadena que especifica el nombre del campo de firma.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Recuperación de nombres de campos de firma](digitally-signing-certifying-documents.md#retrieving-signature-field-names)
 
@@ -347,7 +351,7 @@ Recupere los nombres de los campos de firma mediante la API de firma (servicio w
 
 ## Modificación de campos de firma {#modifying-signature-fields}
 
-Puede modificar los campos de firma que se encuentran en un documento de PDF mediante la API de Java y la API de servicio web. La modificación de un campo de firma implica la manipulación de sus valores de diccionario de bloqueo de campo de firma o valores de diccionario de valores semilla.
+Puede modificar los campos de firma que se encuentran en un documento de PDF mediante la API de Java y la API de servicio web. La modificación de un campo de firma implica la manipulación de sus valores del diccionario de bloqueo de campos de firma o valores del diccionario de valores de semillas.
 
 A *diccionario de bloqueo de campo* especifica una lista de campos que están bloqueados cuando se firma el campo de firma. Un campo bloqueado impide que los usuarios realicen cambios en el campo. A *diccionario de valores semilla* contiene información de restricción que se utiliza en el momento en que se aplica la firma. Por ejemplo, puede cambiar los permisos que controlan las acciones que se pueden producir sin invalidar una firma.
 
@@ -424,7 +428,7 @@ Después de crear un cliente de servicios de firma, recuperar el documento del P
 
 Guarde el documento PDF que contiene el campo de firma modificado como archivo PDF para que los usuarios puedan abrirlo en Acrobat o Adobe Reader.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -545,7 +549,7 @@ Modifique un campo de firma utilizando la API de firma (servicio web):
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en un archivo de PDF invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
@@ -553,7 +557,7 @@ Modifique un campo de firma utilizando la API de firma (servicio web):
 
 ## Firma digital de documentos PDF {#digitally-signing-pdf-documents}
 
-Las firmas digitales se pueden aplicar a documentos PDF para proporcionar un nivel de seguridad. Las firmas digitales, como las firmas manuscritas, proporcionan un medio para que los firmantes se identifiquen y hagan declaraciones sobre un documento. La tecnología utilizada para firmar documentos digitalmente ayuda a garantizar que tanto el firmante como los destinatarios tengan una idea clara de lo que se firmó y estén seguros de que el documento no se alteró desde que se firmó.
+Las firmas digitales se pueden aplicar a documentos PDF para proporcionar cierto nivel de seguridad. Las firmas digitales, como las firmas manuscritas, proporcionan un medio para que los firmantes se identifiquen y hagan declaraciones sobre un documento. La tecnología utilizada para firmar documentos digitalmente ayuda a garantizar que tanto el firmante como los destinatarios tengan una idea clara de lo que se firmó y estén seguros de que el documento no se ha alterado desde que se firmó.
 
 Los documentos PDF se firman mediante tecnología de clave pública. Un firmante tiene dos claves: una clave pública y una clave privada. La clave privada se almacena en las credenciales de un usuario que deben estar disponibles en el momento de la firma. La clave pública se almacena en el certificado del usuario que debe estar disponible para que los destinatarios validen la firma. La información sobre los certificados revocados se encuentra en las listas de revocación de certificados (CRL) y en las respuestas del Protocolo de estado de certificado en línea (OCSP) distribuidas por las autoridades de certificación (CA). La hora de la firma se puede obtener de una fuente de confianza conocida como Autoridad de marca de tiempo.
 
@@ -679,7 +683,7 @@ También debe hacer referencia a una credencial de seguridad para firmar digital
 
 Una vez que el servicio de firma firma firma digitalmente el documento de PDF, puede guardarlo como archivo de PDF para que los usuarios puedan abrirlo en Acrobat o Adobe Reader.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Firmar digitalmente documentos PDF mediante la API de Java](digitally-signing-certifying-documents.md#digitally-sign-pdf-documents-using-the-java-api)
 
@@ -734,7 +738,7 @@ Firme digitalmente un documento de PDF mediante la API de firma (Java):
    * Cree un `java.io.File` y asegúrese de que la extensión de archivo es .pdf.
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` método y pase `java.io.File`para copiar el contenido del `Document` al archivo. Asegúrese de usar la variable `com.adobe.idp.Document` objeto devuelto por el `sign` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Firma digital de documentos PDF](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
 
@@ -804,7 +808,7 @@ Para firmar digitalmente un documento de PDF mediante la API de firma (servicio 
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en un archivo de PDF invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Firma digital de documentos PDF](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
 
@@ -884,7 +888,7 @@ Las opciones de aspecto se configuran mediante una `PDFSignatureAppearanceOption
 
 Una vez que el servicio de firma firme digitalmente el documento del PDF, puede guardarlo como archivo del PDF. El archivo PDF se puede abrir en Acrobat o Adobe Reader.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Firmar digitalmente un formulario interactivo mediante la API de Java](digitally-signing-certifying-documents.md#digitally-sign-an-interactive-form-using-the-java-api)
 
@@ -896,7 +900,7 @@ Una vez que el servicio de firma firme digitalmente el documento del PDF, puede 
 
 [Firma digital de documentos PDF](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)
 
-[Renderización de PDF forms interactivos](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)
+[Procesar formularios PDF interactivos](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)
 
 ### Firmar digitalmente un formulario interactivo mediante la API de Java {#digitally-sign-an-interactive-form-using-the-java-api}
 
@@ -955,7 +959,7 @@ Firme digitalmente un formulario interactivo utilizando Forms y la API de firma 
    * Cree un `java.io.File` y asegúrese de que la extensión de nombre de archivo es .pdf.
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` método y pase `java.io.File`para copiar el contenido del `Document` al archivo. Asegúrese de usar la variable `com.adobe.idp.Document` que la variable `sign` método devuelto.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Firma digital de Forms interactivo](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
 
@@ -1051,19 +1055,19 @@ Firme digitalmente un formulario interactivo utilizando la API de Forms y Firma 
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en un archivo de PDF invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Firma digital de Forms interactivo](digitally-signing-certifying-documents.md#digitally-signing-interactive-forms)
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-## Certificación de documentos del PDF {#certifying-pdf-documents}
+## Certificar documentos PDF {#certifying-pdf-documents}
 
-Puede proteger un documento PDF certificándolo con un tipo concreto de firma denominada firma certificada. Una firma certificada se distingue de una firma digital de las siguientes maneras:
+Puede proteger un documento PDF certificándolo con un tipo de firma concreto denominada firma certificada. Una firma certificada se distingue de una firma digital de las siguientes maneras:
 
-* Debe ser la primera firma aplicada al documento PDF; es decir, en el momento en que se aplica la firma certificada, cualquier otro campo de firma del documento debe estar sin firmar. Sólo se permite una firma certificada en un documento de PDF. Si desea firmar y certificar un documento de PDF, debe certificarlo antes de firmarlo. Después de certificar un documento de PDF, puede firmar digitalmente campos de firma adicionales.
-* El autor o el creador del documento pueden especificar que el documento se puede modificar de determinadas formas sin invalidar la firma certificada. Por ejemplo, el documento puede permitir rellenar formularios o hacer comentarios. Si el autor especifica que no se permite una modificación determinada, Acrobat impide que los usuarios modifiquen el documento de esa manera. Si se realizan dichas modificaciones, como por ejemplo utilizando otra aplicación, la firma certificada no es válida y Acrobat emite una advertencia cuando un usuario abre el documento. (Con las firmas no certificadas, no se evitan las modificaciones y las operaciones de edición normales no invalidan la firma original).
-* En el momento de la firma, el documento se analiza para detectar tipos específicos de contenido que puedan hacer que el contenido de un documento sea ambiguo o engañoso. Por ejemplo, una anotación podría oscurecer algún texto de una página que sea importante para comprender qué se está certificando. Se puede proporcionar una explicación (autenticación legal) sobre dicho contenido.
+* Debe ser la primera firma aplicada al documento PDF; es decir, en el momento en que se aplique la firma certificada, cualquier otro campo de firma del documento debe estar sin firmar. Solo se permite una firma certificada en un documento PDF. Si desea firmar y certificar un documento PDF, deberá certificarlo antes de firmarlo. Después de certificar un documento PDF, puede firmar digitalmente en los campos de firma adicionales.
+* El autor o el creador del documento pueden especificar que el documento se puede modificar de determinadas formas sin invalidar la firma certificada. Por ejemplo, el documento puede permitir rellenar formularios o hacer comentarios. Si el autor especifica que no se permite una modificación determinada, Acrobat impedirá que los usuarios modifiquen el documento de esta manera. Si se realizan dichas modificaciones, como por ejemplo utilizar otra aplicación, la firma certificada no será válida y Acrobat emitirá una advertencia cuando cualquier usuario abra el documento. (Con las firmas no certificadas no se evitan las modificaciones y las operaciones de edición normales no invalidan la firma original).
+* En el momento de la firma, el documento se analizará para detectar tipos de contenido específicos que puedan hacer que el contenido de un documento sea ambiguo o engañoso. Por ejemplo, una anotación podría complicar algún texto de una página que sea importante para comprender qué se certifica. Se puede proporcionar una explicación (autenticación legal) sobre dicho contenido.
 
 Puede certificar mediante programación documentos de PDF mediante la API de Java del servicio de firmas o la API del servicio web de firmas. Al certificar un documento de PDF, debe hacer referencia a una credencial de seguridad que existe en el servicio Credencial. Para obtener información sobre las credenciales de seguridad, consulte la *Instalación e implementación de AEM Forms* para su servidor de aplicaciones.
 
@@ -1131,7 +1135,7 @@ Para certificar correctamente un documento de PDF, se requieren los siguientes v
 * **Ubicación del firmante**: La ubicación del firmante especificada por la credencial.
 * **Información de contacto**: Información de contacto, como la dirección y el número de teléfono del firmante.
 * **Información de permisos**: Permisos que controlan las acciones que un usuario final puede realizar en un documento sin que la firma certificada no sea válida. Por ejemplo, puede establecer el permiso para que cualquier cambio en el documento del PDF haga que la firma certificada no sea válida.
-* **Explicación legal**: Cuando un documento está certificado, se analiza automáticamente para detectar tipos específicos de contenido que podrían hacer que el contenido de un documento sea ambiguo o engañoso. Por ejemplo, una anotación podría oscurecer algún texto de una página que sea importante para comprender qué se está certificando. El proceso de digitalización genera advertencias sobre estos tipos de contenido. Este valor proporciona una explicación adicional del contenido que puede haber generado advertencias.
+* **Explicación legal**: Cuando un documento está certificado, se analiza automáticamente para detectar tipos específicos de contenido que podrían hacer que el contenido de un documento sea ambiguo o engañoso. Por ejemplo, una anotación podría complicar algún texto de una página que sea importante para comprender qué se certifica. El proceso de digitalización genera advertencias sobre estos tipos de contenido. Este valor proporciona una explicación adicional del contenido que puede haber generado advertencias.
 * **Opciones de aspecto**: Opciones que controlan el aspecto de la firma certificada. Por ejemplo, la firma certificada puede mostrar información de fecha.
 * **Comprobación de revocación**: Este valor especifica si la comprobación de revocación se realiza para el certificado del firmante. La configuración predeterminada de `false` significa que la comprobación de revocación no se ha realizado.
 * **Configuración de OCSP**: Configuración de la compatibilidad con el Protocolo de estado de certificado en línea (OCSP), que proporciona información sobre el estado de las credenciales que se usan para certificar el documento del PDF. Por ejemplo, puede especificar la dirección URL del servidor que proporciona información sobre las credenciales que utiliza para iniciar sesión en el documento del PDF.
@@ -1142,7 +1146,7 @@ Para certificar correctamente un documento de PDF, se requieren los siguientes v
 
 Una vez que el servicio de firma certifica el documento de PDF, puede guardarlo como archivo de PDF para que los usuarios puedan abrirlo en Acrobat o Adobe Reader.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Certificar documentos del PDF mediante la API de Java](digitally-signing-certifying-documents.md#certify-pdf-documents-using-the-java-api)
 
@@ -1198,9 +1202,9 @@ Certificar un documento de PDF mediante la API de firma (Java):
    * Cree un `java.io.File` y asegúrese de que la extensión de archivo es .pdf.
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` para copiar el contenido del `com.adobe.idp.Document` al archivo.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Certificación de documentos del PDF](digitally-signing-certifying-documents.md#certifying-pdf-documents)
+[Certificar documentos PDF](digitally-signing-certifying-documents.md#certifying-pdf-documents)
 
 [Inicio rápido (modo SOAP): Certificación de un documento de PDF mediante la API de Java](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api)
 
@@ -1273,9 +1277,9 @@ Certifique un documento del PDF mediante la API de firma (servicio web):
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en un archivo de PDF invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Certificación de documentos del PDF](digitally-signing-certifying-documents.md#certifying-pdf-documents)
+[Certificar documentos PDF](digitally-signing-certifying-documents.md#certifying-pdf-documents)
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
@@ -1283,7 +1287,7 @@ Certifique un documento del PDF mediante la API de firma (servicio web):
 
 ## Verificación de firmas digitales {#verifying-digital-signatures}
 
-Las firmas digitales se pueden comprobar para garantizar que no se haya modificado un documento PDF firmado y que la firma digital sea válida. Al verificar una firma digital, puede comprobar el estado de la firma y las propiedades de la firma, como la identidad del firmante. Antes de confiar en una firma digital, se recomienda verificarla. Al verificar una firma digital, haga referencia a un documento de PDF que contenga una firma digital.
+Las firmas digitales se pueden verificar para garantizar que no se haya modificado un documento PDF firmado y que la firma digital sea válida. Al verificar una firma digital, puede comprobar el estado de la firma y las propiedades de la firma, como la identidad del firmante. Antes de confiar en una firma digital, se recomienda verificarla. Al verificar una firma digital, haga referencia a un documento de PDF que contenga una firma digital.
 
 Supongamos que se desconoce la identidad del firmante. Cuando abre el documento del PDF en Acrobat, un mensaje de advertencia indica que la identidad del firmante es desconocida, como se muestra en la siguiente ilustración.
 
@@ -1381,7 +1385,7 @@ Puede determinar la identidad del firmante, que puede ser uno de los siguientes 
 * **De confianza**: Este firmante es de confianza.
 * **No confiable**: Este firmante no es de confianza.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Verificación de firmas digitales mediante la API de Java](#unresolvedlink-lc-si)
 
@@ -1435,7 +1439,7 @@ Compruebe una firma digital utilizando la API del servicio de firma (Java):
    * Determine la identidad del firmante invocando la variable `PDFSignatureVerificationInfo` del objeto `getSigner` método. Este método devuelve un `IdentityInformation` objeto.
    * Invocar el `IdentityInformation` del objeto `getStatus` para determinar la identidad del firmante. Este método devuelve un `IdentityStatus` valor de enumeración que especifica la identidad. Por ejemplo, si el firmante es de confianza, este método devuelve `IdentityStatus.TRUSTED`.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Verificación de firmas digitales](#unresolvedlink-lc-si)
 
@@ -1504,7 +1508,7 @@ Compruebe una firma digital utilizando la API del servicio de firma (servicio we
    * Determine la identidad del firmante recuperando el valor de la variable `PDFSignatureVerificationInfo` del objeto `signer` miembro de datos. Este miembro devuelve un `IdentityInformation` objeto.
    * Recupere el `IdentityInformation` del objeto `status` miembro de datos para determinar la identidad del firmante. Este miembro de datos devuelve un `IdentityStatus` valor de enumeración que especifica la identidad. Por ejemplo, si el firmante es de confianza, este miembro devuelve `IdentityStatus.TRUSTED`.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Verificación de firmas digitales](#unresolvedlink-lc-si)
 
@@ -1575,7 +1579,7 @@ Si no realiza la comprobación de revocación, el servicio de firma no comprueba
 
 >[!NOTE]
 >
->Puede anular la dirección URL especificada en el certificado utilizando una `CRLOptionSpec` y `OCSPOptionSpec` objeto. Por ejemplo, para anular el servidor CRL, puede invocar la variable `CRLOptionSpec` del objeto `setLocalURI` método.
+>Puede anular la dirección URL especificada en el certificado mediante una `CRLOptionSpec` y `OCSPOptionSpec` objeto. Por ejemplo, para anular el servidor CRL, puede invocar la variable `CRLOptionSpec` del objeto `setLocalURI` método.
 
 La marca de hora es el proceso de seguimiento del momento en que se modificó un documento firmado o certificado. Después de firmar un documento, nadie puede modificarlo. La marca de hora ayuda a hacer cumplir la validez de un documento firmado o certificado. Puede establecer las opciones de marca de hora utilizando un `TSPOptionSpec` objeto. Por ejemplo, puede especificar la URL de un servidor de proveedor de marca de hora (TSP).
 
@@ -1599,7 +1603,7 @@ Iterar a través de cada firma. Es decir, para cada firma, verifique la firma di
 >
 >No es necesario iterar todas las firmas si el requisito es todo el documento.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Verificar varias firmas digitales mediante la API de Java](#unresolvedlink-lc-si)
 
@@ -1648,7 +1652,7 @@ Compruebe varias firmas digitales mediante la API del servicio de firma (Java):
    * Interrumpa todas las firmas invocando la variable `PDFDocumentVerificationInfo` del objeto `getVerificationInfos` método. Este método devuelve un `java.util.List` objeto donde cada elemento es un `PDFSignatureVerificationInfo` objeto. Utilice un `java.util.Iterator` para iterar en la lista de firmas.
    * Al usar la variable `PDFSignatureVerificationInfo` , puede realizar tareas como determinar el estado de la firma invocando la variable `PDFSignatureVerificationInfo` del objeto `getStatus` método. Este método devuelve un `SignatureStatus` cuyo miembro de datos estáticos le informa sobre el estado de la firma. Por ejemplo, si la firma es desconocida, este método devuelve `SignatureStatus.DocumentSignatureUnknown`.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Verificación de varias firmas digitales](#unresolvedlink-lc-si)
 
@@ -1714,7 +1718,7 @@ Compruebe varias firmas digitales mediante la API del servicio de firma (servici
    * Iterar a través de todas las firmas obteniendo el `PDFDocumentVerificationInfo` del objeto `verificationInfos` miembro de datos. Este miembro de datos devuelve un `Object` matriz donde cada elemento es un `PDFSignatureVerificationInfo` objeto.
    * Al usar la variable `PDFSignatureVerificationInfo` , puede realizar tareas como determinar el estado de la firma obteniendo la variable `PDFSignatureVerificationInfo` del objeto `status` miembro de datos. Este miembro de datos devuelve un `SignatureStatus` cuyo miembro de datos estáticos le informa sobre el estado de la firma. Por ejemplo, si la firma es desconocida, este método devuelve `SignatureStatus.DocumentSignatureUnknown`.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Verificación de varias firmas digitales](#unresolvedlink-lc-si)
 
@@ -1770,7 +1774,7 @@ Para quitar correctamente una firma digital de un documento de PDF, debe especif
 
 Una vez que el servicio de firma elimina una firma digital de un campo de firma, puede guardar el documento PDF como archivo PDF para que los usuarios puedan abrirlo en Acrobat o Adobe Reader.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Eliminación de firmas digitales mediante la API de Java](digitally-signing-certifying-documents.md#remove-digital-signatures-using-the-java-api)
 
@@ -1814,7 +1818,7 @@ Elimine una firma digital utilizando la API de firma (Java):
    * Cree un `java.io.File` y asegúrese de que la extensión de archivo es .pdf.
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` método. Pase el `java.io.File` para copiar el contenido del `com.adobe.idp.Document` al archivo. Asegúrese de usar la variable `Document` objeto devuelto por el `clearSignatureField` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Eliminación de firmas digitales](digitally-signing-certifying-documents.md#removing-digital-signatures)
 
@@ -1873,7 +1877,7 @@ Elimine una firma digital mediante la API de firma (servicio web):
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en el archivo de PDF invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Eliminación de firmas digitales](digitally-signing-certifying-documents.md#removing-digital-signatures)
 

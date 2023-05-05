@@ -1,5 +1,5 @@
 ---
-title: Inicio rápido de la API de Java (SOAP) de LiveCycleProcess
+title: Inicio rápido (SOAP) de la API de Java de LiveCycleProcess
 seo-title: LiveCycleProcess Java API(SOAP)Quick Start
 description: Utilice el inicio rápido de la API Java (SOAP) de LiveCycleProcess para buscar instancias de proceso, suspender instancias de proceso, iniciar instancias de proceso suspendidas, finalizar instancias de proceso, depurar datos de proceso y recuperar el estado de un trabajo.
 seo-description: Use the LiveCycleProcess Java API (SOAP) Quick Start to search for process instances, suspend process instances, start suspended process instances, terminate process instances, purge process data, and retrieve the status of a job.
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 role: Developer
 exl-id: ee8f5f16-218a-41eb-be42-fda4537b2b4e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 0%
+source-wordcount: '464'
+ht-degree: 4%
 
 ---
 
-# Inicio rápido de la API de Java (SOAP) de LiveCycleProcess {#livecycleprocess-java-api-soap-quick-start}
+# Inicio rápido (SOAP) de la API de Java de LiveCycleProcess {#livecycleprocess-java-api-soap-quick-start}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El inicio rápido de la API de Java (SOAP) está disponible para procesos. A *instancia de proceso* es una ocurrencia de un proceso específico que se inició con un método de invocación como la API de invocación o desde Workspace.
 

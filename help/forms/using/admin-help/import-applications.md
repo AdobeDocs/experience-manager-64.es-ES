@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archiv
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: dc53a6d0-317a-4abd-990c-455e13f8b824
 exl-id: 81a48c01-8052-47b1-be39-e126c37c7f0f
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '820'
-ht-degree: 0%
+source-wordcount: '856'
+ht-degree: 2%
 
 ---
 
 # Importar y administrar aplicaciones{#import-and-manage-applications}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 En AEM formularios, una *aplicación* es un contenedor para almacenar recursos necesarios para implementar una solución de formularios AEM. Algunos ejemplos de recursos son diseños de formulario, fragmentos de formulario, imágenes, procesos, archivos DDX, guías de formulario, páginas HTML y archivos SWF. Durante la fase de desarrollo de un proyecto, los usuarios de Workbench pueden implementar aplicaciones directamente desde la vista Aplicaciones de Workbench. Una vez implementadas, estas aplicaciones aparecen en la consola de administración, en la ficha Aplicaciones de la página Administración de aplicaciones .
 

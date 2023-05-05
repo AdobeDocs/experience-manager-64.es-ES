@@ -1,5 +1,5 @@
 ---
-title: Configuración de fuentes de reserva
+title: Configurar fuentes de reserva
 seo-title: Configuring fallback fonts
 description: Aprenda a configurar fuentes de reserva.
 seo-description: Learn how to configure fallback fonts.
@@ -11,14 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d997a268-a40a-462d-badd-94f0731f7ba4
 feature: PDF Generator
 exl-id: 6942b6fc-8d04-429f-8433-1ab74c68fcc1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 0%
+source-wordcount: '290'
+ht-degree: 4%
 
 ---
 
-# Configuración de fuentes de reserva {#configuring-fallback-fonts}
+# Configurar fuentes de reserva {#configuring-fallback-fonts}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede configurar manualmente el archivo FontManagerResources.properties para asignar las fuentes de formularios AEM predeterminadas a las fuentes de reserva (o sustituirlas) si las fuentes predeterminadas no están disponibles en el servidor. Este archivo de propiedad se encuentra en el archivo adobe-fontmanager.jar .
 

@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 exl-id: 407db3cf-8add-486b-8cf5-daeecc18bf30
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2142'
-ht-degree: 0%
+source-wordcount: '2178'
+ht-degree: 3%
 
 ---
 
 # Archivos para realizar copias de seguridad y recuperar {#files-to-back-up-and-recover}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 La aplicación y los archivos de datos de los que se debe realizar una copia de seguridad se describen con más detalle en las secciones siguientes.
 
@@ -58,13 +62,13 @@ Puede habilitar AEM almacenamiento de documentos de formularios en la base de da
 
 Cuando selecciona la opción &quot;Habilitar el almacenamiento de documentos en la base de datos&quot; en la configuración del sistema principal de la consola de administración o mediante Configuration Manager, AEM formularios no permiten el modo de copia de seguridad de instantáneas ni el modo de copia de seguridad móvil. Por lo tanto, no es necesario administrar los modos de copia de seguridad mediante AEM formularios. Si utiliza esta opción, debe realizar una copia de seguridad del GDS solo una vez después de habilitar la opción. Cuando se recuperan AEM formularios de una copia de seguridad, no es necesario cambiar el nombre del directorio de copia de seguridad para el GDS ni restaurar el GDS.
 
-## repositorio AEM {#aem-repository}
+## Repositorio de AEM {#aem-repository}
 
 AEM repositorio (crx-repository) se crea si crx-repository está configurado al instalar AEM formularios. La ubicación del directorio crx-repository se determina durante el proceso de instalación de formularios AEM. Se requiere AEM copia de seguridad y restauración del repositorio junto con la base de datos y GDS para obtener datos de formularios AEM coherentes en AEM formularios. AEM repositorio contiene datos para la solución de gestión de correspondencia, Forms Manager y AEM Forms Workspace.
 
 ### Solución de administración de correspondencia {#correspondence-management-solution}
 
-Correspondence Management Solution centraliza y administra la creación, el ensamblaje y la entrega de correspondencia segura, personalizada e interactiva. Le permite ensamblar rápidamente la correspondencia de contenido preaprobado y creado a medida en un proceso optimizado, desde la creación hasta el archivado. Como resultado, sus clientes obtienen comunicación oportuna, precisa, conveniente, segura y relevante. Su empresa maximiza el valor de las interacciones con los clientes y minimiza los costos y los riesgos con un proceso optimizado para facilitar, acelerar y aumentar la productividad.
+Correspondence Management Solution centraliza y administra la creación, el ensamblaje y la entrega de correspondencia segura, personalizada e interactiva. Le permite combinar rápidamente la correspondencia de contenido preaprobado y creado a medida en un proceso optimizado, desde la creación hasta el archivado. Como resultado, sus clientes obtienen comunicación oportuna, precisa, conveniente, segura y relevante. Su empresa maximiza el valor de las interacciones con los clientes y minimiza los costes y los riesgos con un proceso optimizado para facilitar, acelerar y aumentar la productividad.
 
 Una sencilla configuración de la solución de gestión de correspondencia incluye una instancia de autor y una instancia de publicación en el mismo equipo o en diferentes equipos
 
@@ -121,7 +125,7 @@ Utilice copias de seguridad instantáneas o configure la base de datos de Oracle
 
 [Referencia de Backup y Recuperación de la Base de Datos de oracle:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf) Proporciona información completa sobre sintaxis y semántica para todos los comandos RMAN, y describe las vistas de la base de datos que están disponibles para generar informes sobre actividades de backup y recuperación.
 
-### SQL Server {#sql-server}
+### SQL Server {#sql-server}
 
 Utilice copias de seguridad instantáneas o configure la base de datos de SQL Server para que se ejecute en el modo de registro de transacciones.
 

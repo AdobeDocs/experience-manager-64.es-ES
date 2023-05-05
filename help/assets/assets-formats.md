@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Asset Management,Renditions
 role: User,Admin
 exl-id: ee25fe8f-36fb-42b3-9f90-0ea77bc02e2f
-source-git-commit: cc47644419f7b7f4f1f00bb848050aa4a98efa09
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1645'
-ht-degree: 10%
+source-wordcount: '1681'
+ht-degree: 11%
 
 ---
 
 # Formatos de archivo compatibles con [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 [!DNL Experience Manager Assets] admite una amplia gama de formatos de archivo y cada funcionalidad tiene compatibilidad variada con distintos tipos de MIME.
 
@@ -41,7 +45,7 @@ Los formatos de imagen rasterizados admitidos para las funciones de administraci
 | PGM | ✓ | ✓ |  |  |  |  | ✓ |
 | PBM | ✓ | ✓ |  |  |  |  | ✓ |
 | PPM | ✓ | ✓ |  |  |  |  | ✓ |
-| PSD **}** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
+| PSD **‡** | ✓ | ✓ | ✓ | ✓ |  |  | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ |  | ✓ |  |
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
@@ -61,7 +65,7 @@ Los formatos de imagen rasterizados admitidos para las funciones de Dynamic Medi
 | PGM |  |  |  |  |  |
 | PBM |  |  |  |  |  |
 | PPM |  |  |  |  |  |
-| PSD **}** | ✓ |  |  |  |  |
+| PSD **‡** | ✓ |  |  |  |  |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ |
 | PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
@@ -177,16 +181,16 @@ Además de la funcionalidad anterior, considere lo siguiente:
 
 | Formato | Almacenamiento | Gestión de metadatos | Extracción de metadatos | Generación de miniaturas | Transcodificación FFMPEG |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ |  | - | &#42; |
-| MIDI | ✓ | ✓ |  | - | &#42; |
-| 3GP | ✓ | ✓ |  | - | &#42; |
-| MP3 | ✓ | ✓ | ✓ | - | &#42; |
-| MPG | ✓ | ✓ |  | - | &#42; |
-| OGA | ✓ | ✓ |  | - | &#42; |
-| OGG | ✓ | ✓ |  | - | &#42; |
-| RA | ✓ | ✓ |  | - | &#42; |
-| WAV | ✓ | ✓ |  | - | &#42; |
-| WMA | ✓ | ✓ |  | - | &#42; |
+| AAC | ✓ | ✓ |  | − | &#42; |
+| MIDI | ✓ | ✓ |  | − | &#42; |
+| 3GP | ✓ | ✓ |  | − | &#42; |
+| MP3 | ✓ | ✓ | ✓ | − | &#42; |
+| MPG | ✓ | ✓ |  | − | &#42; |
+| OGA | ✓ | ✓ |  | − | &#42; |
+| OGG | ✓ | ✓ |  | − | &#42; |
+| RA | ✓ | ✓ |  | − | &#42; |
+| WAV | ✓ | ✓ |  | − | &#42; |
+| WMA | ✓ | ✓ |  | − | &#42; |
 | DVI | ✓ | ✓ |  | &#42; | &#42; |
 | FLV | ✓ | ✓ |  | &#42; | &#42; |
 | M4V | ✓ | ✓ |  | &#42; | &#42; |
@@ -296,7 +300,7 @@ Una lista de tipos MIME admitidos está disponible en CRXDE Lite en `/conf/globa
 | PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options.html)</li><li>[photoshopLayerOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options.html)</li></ul> |
 | RTF | application/rtf |  |  |
 | SVG | image/svg+xml |  |  |
-| SWF | aplicación/x-shock-flash |  |  |
+| SWF | application/x-shockwave-flash |  |  |
 | TAR | application/x-tar |  |  |
 | TIF / TIFF | image/tiff |  |  |
 | TTC | application/x-font-ttf |  |  |

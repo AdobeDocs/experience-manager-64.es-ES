@@ -1,5 +1,5 @@
 ---
-title: Uso de utilidades XMP
+title: Trabajar con utilidades XMP
 seo-title: Working with XMP Utilities
 description: Utilice las API de XMP Utilities Java y Web Service para importar de forma programada metadatos de XMP en un documento de PDF y recuperar y guardar XMP metadatos de un documento de PDF.
 seo-description: Use the XMP Utilities Java and Web Service APIs to programmatically import XMP metadata into a PDF document and retrieve and save XMP metadata from a PDF document.
@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 01d5677f-5c87-4a6e-987b-8eda9acc0b27
 role: Developer
 exl-id: 00a7989f-0a08-4552-8493-d4d790ed81e9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1391'
-ht-degree: 0%
+source-wordcount: '1427'
+ht-degree: 1%
 
 ---
 
-# Uso de utilidades XMP {#working-with-xmp-utilities}
+# Trabajar con utilidades XMP {#working-with-xmp-utilities}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 **Acerca del servicio de utilidades XMP**
 
@@ -136,7 +140,7 @@ Para poder realizar mediante programación una operación XMP Utilidades, debe c
 
 Después de crear el cliente de servicio, puede invocar una de las operaciones de importación de metadatos de XMP para importar los metadatos de XMP en el documento de PDF especificado.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Importación XMP metadatos mediante la API de Java](xmp-utilities.md#import-xmp-metadata-using-the-java-api)
 
@@ -178,7 +182,7 @@ Importe XMP metadatos mediante la API de utilidades XMP (Java):
 
    En cualquier caso, el valor devuelto es un `com.adobe.idp.Document` que representa el archivo PDF con los metadatos recién importados. A continuación, puede guardar este objeto en el disco.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Importación de metadatos en documentos de PDF](xmp-utilities.md#importing-metadata-into-pdf-documents)
 
@@ -215,7 +219,7 @@ Para importar mediante programación metadatos de XMP mediante la API de servici
 
    En cualquier caso, el valor devuelto es un `BLOB` que representa el archivo PDF con los metadatos recién importados. A continuación, puede guardar este objeto en el disco.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Importación de metadatos en documentos de PDF](xmp-utilities.md#importing-metadata-into-pdf-documents)
 
@@ -253,7 +257,7 @@ Para poder realizar mediante programación una operación XMP Utilidades, debe c
 
 Después de crear el cliente de servicio, puede invocar una de las operaciones de exportación de metadatos de XMP, que se puede utilizar para inspeccionar los metadatos de XMP o guardarlos en el disco.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Importación XMP metadatos mediante la API de Java](xmp-utilities.md#import-xmp-metadata-using-the-java-api)
 
@@ -285,7 +289,7 @@ Exporte XMP metadatos mediante la API de utilidades de XMP (Java):
 
    Para recuperar y guardar los metadatos de XMP, invoque la variable `XMPUtilityServiceClient` del objeto `exportXMP` método y pasar un `com.adobe.idp.Document` que representa el archivo PDF. El método devuelve un valor `com.adobe.idp.Document` que contiene los metadatos recuperados, que posteriormente se pueden guardar en disco como un archivo XML.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Exportación de metadatos desde documentos de PDF](xmp-utilities.md#exporting-metadata-from-pdf-documents)
 
@@ -312,7 +316,7 @@ Exporte XMP metadatos mediante la API de utilidades XMP (servicio web):
 
    Para recuperar y guardar los metadatos de XMP, invoque la variable `XMPUtilityServiceClient` del objeto `exportXMP` método y pasar un `BLOB` que representa el archivo PDF. El método devuelve un valor `BLOB` que contiene los metadatos recuperados, que posteriormente se pueden guardar en disco como un archivo XML.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Exportación de metadatos desde documentos de PDF](xmp-utilities.md#exporting-metadata-from-pdf-documents)
 

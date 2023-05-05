@@ -10,20 +10,24 @@ topic-tags: integration
 content-type: reference
 discoiquuid: a84fd0ab-0bcd-48cf-bba3-fb29308fa0f8
 exl-id: f47e5c6a-ed52-4493-83bd-73e5e693d117
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 7%
+source-wordcount: '558'
+ht-degree: 10%
 
 ---
 
 # Requisitos previos para la integración con Adobe Target{#prerequisites-for-integrating-with-adobe-target}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
 Como parte del [integración de AEM y Adobe Target](/help/sites-administering/target.md), debe registrarse con Adobe Target, configurar el agente de replicación y establecer la configuración de actividad segura en el nodo de publicación.
 
 ## Registro con Adobe Target {#registering-with-adobe-target}
 
-Para integrar AEM con Adobe Target, debe tener una cuenta de Adobe Target válida. Esta cuenta debe tener al menos **aprobador **permisos de nivel. Al registrarse en Adobe Target, recibe un código de cliente. Necesita el código de cliente, el nombre de inicio de sesión y la contraseña de Adobe Target para conectarse AEM Adobe Target.
+Para integrar AEM con Adobe Target, debe tener una cuenta de Adobe Target válida. Esta cuenta debe tener al menos **aprobador **permisos de nivel. Al registrarse en Adobe Target, recibirá un código de cliente. Necesita el código de cliente, el nombre de inicio de sesión y la contraseña de Adobe Target para conectarse AEM Adobe Target.
 
 El código de cliente identifica la cuenta de cliente de Adobe Target al llamar al servidor de Adobe Target.
 

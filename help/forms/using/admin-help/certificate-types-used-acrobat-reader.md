@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 331b9317-87b5-4a96-a1bc-429675ff90c5
 exl-id: 8a65d9cc-33d0-4176-97e1-70ad67cbb982
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '936'
-ht-degree: 3%
+source-wordcount: '972'
+ht-degree: 6%
 
 ---
 
 # Tipos de certificados utilizados por las extensiones de Acrobat Reader DC {#certificate-types-used-by-acrobat-reader-dc-extensions}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El visor de certificados proporciona la siguiente información sobre el certificado:
 
@@ -192,7 +196,7 @@ Los derechos de uso de las extensiones de Acrobat Reader DC permitidas constan d
    <td><p>Cree páginas a partir de páginas de plantilla dentro del mismo formulario de PDF.</p></td> 
   </tr> 
   <tr> 
-   <td><p>Firma</p></td> 
+   <td><p>Firmar</p></td> 
    <td><p>Firme y guarde digitalmente documentos PDF y borre firmas digitales.</p></td> 
   </tr> 
   <tr> 

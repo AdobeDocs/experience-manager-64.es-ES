@@ -1,5 +1,5 @@
 ---
-title: Creación de flujos de salida de documento
+title: Crear flujos de salida de documento
 seo-title: Creating Document Output Streams
 description: Utilice el servicio Output para convertir documentos como formatos de PDF (incluidos documentos de PDF/A), PostScript, Printer Control Language (PCL) y Zebra - ZPL, Intertypes - IPL, Datamax - DPL y TecToshiba - TPCL.
 seo-description: Use the Output service to convert documents as PDF (including PDF/A documents), PostScript, Printer Control Language (PCL), and Zebra - ZPL, Intermec - IPL, Datamax - DPL, and TecToshiba - TPCL label formats.
@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 role: Developer
 exl-id: 31f60907-0b9c-43ac-bb9f-74eacf6976d7
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '19002'
+source-wordcount: '19038'
 ht-degree: 1%
 
 ---
 
-# Creación de flujos de salida de documento  {#creating-document-output-streams}
+# Crear flujos de salida de documento  {#creating-document-output-streams}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 **Acerca del servicio de salida**
 
@@ -196,7 +200,7 @@ Si el archivo XDP contiene imágenes (u otros recursos como fragmentos), coloque
 
 Una vez que el servicio Output realiza una operación, devuelve varios elementos de datos, como datos XML de estado, que especifican si la operación se realizó correctamente.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Creación de un documento de PDF mediante la API de Java](creating-document-output-streams.md#create-a-pdf-document-using-the-java-api)
 
@@ -277,7 +281,7 @@ Cree un documento de PDF utilizando la API de salida (Java):
 
    Aunque el servicio Output escribe el documento del PDF en la ubicación especificada por el argumento que se pasa al `PDFOutputOptionsSpec` del objeto `setFileURI` , puede recuperar mediante programación el documento PDF/A invocando el método `OutputResult` del objeto `getGeneratedDoc` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
@@ -461,7 +465,7 @@ Después de hacer referencia a un origen de datos XML válido que contiene datos
 
 Una vez que el servicio Output realiza una operación, devuelve varios elementos de datos, como datos XML, que especifican si la operación se realizó correctamente.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Creación de un documento de PDF/A mediante la API de Java](creating-document-output-streams.md#create-a-pdf-a-document-using-the-java-api)
 
@@ -537,7 +541,7 @@ Cree un documento PDF/A utilizando la API de salida (Java):
    >
    >Aunque el servicio Output escribe el documento PDF/A en la ubicación especificada por el argumento que se pasa al `PDFOutputOptionsSpec` del objeto `setFileURI` , puede recuperar mediante programación el documento PDF/A invocando el método `OutputResult` del objeto `getGeneratedDoc`* método.*
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
@@ -620,7 +624,7 @@ Cree un documento PDF/A utilizando la API de salida (servicio web):
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en el archivo XML invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
@@ -674,7 +678,7 @@ Para procesar un formulario no interactivo, pase el `com.adobe.idp.Document` ins
 
 Puede guardar el formulario no interactivo como un archivo PDF. El formulario se puede ver en Adobe Reader o Acrobat.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Pasar documentos al servicio de salida mediante la API de Java](creating-document-output-streams.md#pass-documents-to-the-output-service-using-the-java-api)
 
@@ -731,7 +735,7 @@ Pase un documento recuperado de Content Services (desaprobada) mediante el servi
    * Cree un `java.io.File` que contiene los resultados de la operación. Asegúrese de que la extensión del nombre de archivo es .pdf.
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` para copiar el contenido del `com.adobe.idp.Document` al archivo (asegúrese de usar la variable `com.adobe.idp.Document` objeto devuelto por el `getGeneratedDoc` método).
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
@@ -810,7 +814,7 @@ Pase un documento recuperado de Content Services (desaprobada) mediante el servi
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en un archivo de PDF invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
@@ -876,7 +880,7 @@ Para procesar un formulario no interactivo, pase el `com.adobe.idp.Document` ins
 
 Puede guardar el formulario no interactivo como un archivo PDF. El formulario se puede ver en Adobe Reader o Acrobat.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Pasar documentos ubicados en el repositorio al servicio de salida mediante la API de Java](creating-document-output-streams.md#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api)
 
@@ -925,7 +929,7 @@ Pase un documento recuperado del repositorio utilizando el servicio de salida y 
    * Cree un `java.io.File` que contiene los resultados de la operación. Asegúrese de que la extensión del nombre de archivo es .pdf.
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` para copiar el contenido del `com.adobe.idp.Document` al archivo (asegúrese de usar la variable `com.adobe.idp.Document` objeto devuelto por el `getGeneratedDoc` método).
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
@@ -983,7 +987,7 @@ Puede utilizar el servicio Output para generar un documento de PDF utilizando el
 
 Una vez que el servicio Output haya creado un documento de PDF, puede guardarlo como archivo de PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Creación de un documento de PDF basado en fragmentos mediante la API de Java](creating-document-output-streams.md#create-a-pdf-document-based-on-fragments-using-the-java-api)
 
@@ -995,7 +999,7 @@ Una vez que el servicio Output haya creado un documento de PDF, puede guardarlo 
 
 [Inicio rápido de la API del servicio de salida](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
-[Agrupación de varios fragmentos XDP](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments)
+[Agrupar varios fragmentos XDP](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments)
 
 [Creación de documentos de PDF](creating-document-output-streams.md#creating-pdf-documents)
 
@@ -1047,7 +1051,7 @@ Cree un documento de PDF basado en fragmentos utilizando la API de servicio de s
    * Cree un `java.io.File` que contiene los resultados de la operación. Asegúrese de que la extensión del nombre del archivo sea .pdf.
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` para copiar el contenido del `com.adobe.idp.Document` al archivo. (Asegúrese de usar la variable `com.adobe.idp.Document` que la variable `getGeneratedDoc` método devuelto).
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
@@ -1136,7 +1140,7 @@ Cree un documento de PDF basado en fragmentos utilizando la API del servicio de 
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en un archivo de PDF invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
@@ -1200,7 +1204,7 @@ Para imprimir en un archivo, debe definir la opción de tiempo de ejecución del
 
 >[!NOTE]
 >
->Existen opciones opcionales en tiempo de ejecución que puede definir. Para obtener información sobre todas las opciones que puede establecer, consulte la `PrintedOutputOptionsSpec` referencia de clase en [Referencia de la API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>Existen opciones opcionales en tiempo de ejecución que puede definir. Para obtener información sobre todas las opciones que puede configurar, consulte la `PrintedOutputOptionsSpec` referencia de clase en [Referencia de la API de AEM Forms](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Imprimir el flujo de impresión en un archivo**
 
@@ -1210,7 +1214,7 @@ Después de hacer referencia a un origen de datos XML válido que contiene datos
 
 Una vez que el servicio Output realiza una operación, devuelve varios elementos de datos, como datos XML, que especifican si la operación se realizó correctamente.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Imprimir en archivos mediante la API de Java](creating-document-output-streams.md#print-to-files-using-the-java-api)
 
@@ -1269,7 +1273,7 @@ Imprimir en un archivo mediante la API de salida (Java):
    * Cree un `java.io.File` que contendrá los resultados de la operación. Asegúrese de que la extensión de archivo es XML.
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` para copiar el contenido del `com.adobe.idp.Document` al archivo (asegúrese de usar la variable `com.adobe.idp.Document` objeto devuelto por el `getStatusDoc` método).
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
@@ -1339,7 +1343,7 @@ Imprimir en un archivo mediante la API de salida (servicio web):
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en el archivo XML invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
@@ -1795,7 +1799,7 @@ Una vez que el servicio Output realiza una operación, devuelve datos XML que es
  </printResult>
 ```
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1851,7 +1855,7 @@ Cree varios archivos de PDF utilizando la API de salida (Java):
    * Cree un `java.io.File` que representa un archivo XML que contendrá los resultados de la `generatePDFOutput` método. Asegúrese de que la extensión del nombre de archivo es .xml.
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` para copiar el contenido del `com.adobe.idp.Document` al archivo (asegúrese de usar la variable `com.adobe.idp.Document` objeto devuelto por el `applyUsageRights` método).
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
@@ -1928,7 +1932,7 @@ Cree varios archivos de PDF mediante la API de salida (servicio web):
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en el archivo XML invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
@@ -2011,7 +2015,7 @@ Después de hacer referencia a un origen de datos XML válido y establecer las o
 
 Una vez que el servicio Output realiza una operación, devuelve datos XML que especifican si la operación se ha realizado correctamente.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -2082,7 +2086,7 @@ Cree reglas de búsqueda usando la API de salida (Java):
    * Cree un `java.io.File` que contendrá los resultados de la operación. Asegúrese de que la extensión de archivo es .xml.
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` para copiar el contenido del `com.adobe.idp.Document` al archivo (asegúrese de usar la variable `com.adobe.idp.Document` objeto devuelto por el `getStatusDoc` método).
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
@@ -2187,7 +2191,7 @@ Cree reglas de búsqueda mediante la API de salida (servicio web):
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en el archivo XML invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
@@ -2250,7 +2254,7 @@ Después de recuperar un documento de PDF interactivo, puede transformarlo en un
 
 Puede guardar el documento de PDF no interactivo como un archivo de PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Acoplar un documento de PDF mediante la API de Java](creating-document-output-streams.md#flatten-a-pdf-document-using-the-java-api)
 
@@ -2297,7 +2301,7 @@ Acople un documento de PDF interactivo a un documento de PDF no interactivo medi
    * Cree un `java.io.File` y asegúrese de que la extensión del nombre de archivo es .pdf.
    * Invocar el `Document` del objeto `copyToFile` para copiar el contenido del `Document` al archivo (asegúrese de usar la variable `Document` objeto devuelto por el `transformPDF` método).
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 
@@ -2363,7 +2367,7 @@ Acople un documento de PDF interactivo a un documento de PDF no interactivo medi
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en un archivo de PDF invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](creating-document-output-streams.md#summary-of-steps)
 

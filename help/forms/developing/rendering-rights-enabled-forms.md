@@ -1,5 +1,5 @@
 ---
-title: Renderización de Forms con derechos activados
+title: Procesar formularios con derechos activados
 seo-title: Rendering Rights-Enabled Forms
 description: Utilice el servicio Forms para procesar formularios que tengan derechos de uso aplicados a ellos. Puede procesar formularios habilitados para derechos mediante la API de Java y la API de servicio web.
 seo-description: Use the Forms service to render forms that have usage rights applied to them. You can render rights-enabled forms using the Java API and Web Service API.
@@ -12,16 +12,20 @@ topic-tags: operations
 discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 role: Developer
 exl-id: 0cee94ba-1a72-4021-b606-8fa945312483
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1463'
-ht-degree: 0%
+source-wordcount: '1499'
+ht-degree: 4%
 
 ---
 
-# Renderización de Forms con derechos activados {#rendering-rights-enabled-forms}
+# Procesar formularios con derechos activados {#rendering-rights-enabled-forms}
 
-El servicio Forms puede procesar formularios que tengan derechos de uso aplicados a ellos. Los derechos de uso pertenecen a funciones que están disponibles de forma predeterminada en Acrobat pero no en Adobe Reader, como la capacidad de agregar comentarios a un formulario o de rellenar los campos del formulario y guardar el formulario. Los Forms que tienen derechos de uso aplicados se denominan formularios habilitados para derechos. Un usuario que abre un formulario con derechos activados en Adobe Reader puede realizar operaciones que estén habilitadas para ese formulario.
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+El servicio Forms puede procesar formularios que tengan derechos de uso aplicados a ellos. Los derechos de uso pertenecen a una funcionalidad que está disponible de forma predeterminada en Acrobat pero no en Adobe Reader, como la capacidad de agregar comentarios a un formulario o rellenar los campos del formulario y guardarlo. Los Forms que tienen derechos de uso aplicados se denominan formularios habilitados para derechos. Un usuario que abre un formulario con derechos activados en Adobe Reader puede realizar operaciones que estén habilitadas para ese formulario.
 
 Para aplicar derechos de uso a un formulario, el servicio de extensiones de Acrobat Reader DC debe formar parte de la instalación de AEM forms. Además, debe tener una credencial válida que le permita aplicar derechos de uso a documentos del PDF. Es decir, debe configurar correctamente el servicio de extensiones de Acrobat Reader DC para poder procesar un formulario con derechos activados. (Consulte [Acerca del servicio de extensiones de Acrobat Reader DC](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service).)
 
@@ -71,7 +75,7 @@ Para procesar un formulario con derechos activados, se utiliza la misma lógica 
 
 Cuando el servicio Forms procesa un formulario con derechos activados, devuelve un flujo de datos de formulario que debe escribirse en el explorador web del cliente. Una vez escrito en el explorador web del cliente, el formulario es visible para el usuario. Un usuario que vea el formulario con derechos activados en Adobe Reader puede realizar operaciones que estén habilitadas para ese formulario.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Representar formularios habilitados para derechos mediante la API de Java](#render-rights-enabled-forms-using-the-java-api)
 
@@ -83,7 +87,7 @@ Cuando el servicio Forms procesa un formulario con derechos activados, devuelve 
 
 [Inicio rápido de la API del servicio de Forms](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Renderización de PDF forms interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Procesar formularios PDF interactivos](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [Creación de aplicaciones web que procesen Forms](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -132,7 +136,7 @@ Representar un formulario habilitado para derechos mediante la API de Forms (Jav
    * Crear una matriz de bytes rellenarla con la secuencia de datos del formulario invocando la variable `InputStream` del objeto `read` y pasando la matriz de bytes como argumento.
    * Invocar el `javax.servlet.ServletOutputStream` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido (modo SOAP): Representación de un formulario con derechos activados mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
 
@@ -180,8 +184,8 @@ Representar un formulario con derechos activados mediante la API de Forms (servi
    * Cree una matriz de bytes y rellénela invocando la variable `BLOB` del objeto `getBinaryData` método. Esta tarea asigna el contenido de la variable `FormsResult` a la matriz de bytes.
    * Invocar el `javax.servlet.http.HttpServletResponse` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Renderización de Forms con derechos activados](#rendering-rights-enabled-forms)
+[Procesar formularios con derechos activados](#rendering-rights-enabled-forms)
 
 [Invocación de AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

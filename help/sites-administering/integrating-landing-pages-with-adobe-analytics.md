@@ -1,48 +1,51 @@
 ---
-title: Integración de Páginas de aterrizaje con Adobe Analytics
-seo-title: Integración de Páginas de aterrizaje con Adobe Analytics
+title: Integración de páginas de aterrizaje con Adobe Analytics
+seo-title: Integrating Landing Pages with Adobe Analytics
 description: Aprenda a integrar páginas de aterrizaje con Adobe Analytics.
-seo-description: Aprenda a integrar páginas de aterrizaje con Adobe Analytics.
+seo-description: Learn how to integrate landing pages with Adobe Analytics.
 uuid: 8f6672d1-497f-4ccb-b3cc-f6120fc467ba
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 2923ae94-375a-4c44-a08f-f992eb08000a
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 24%
+source-wordcount: '412'
+ht-degree: 2%
 
 ---
 
+# Integración de páginas de aterrizaje con Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-# Integración de Páginas de aterrizaje con Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-AEM ha integrado la solución páginas de aterrizaje con [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) mediante los siguientes componentes de llamada a acción (CTA):
+AEM ha integrado la solución de páginas de aterrizaje con [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) mediante los siguientes componentes de llamada a acción:
 
 1. Componente de pulsaciones
 1. Componente de vínculo gráfico
 
-Estos componentes exponen determinados atributos que se pueden asignar mediante variables de Adobe Analytics (tráfico, variables de conversión) y eventos de éxito para enviar información a Adobe Analytics.
+Estos componentes exponen ciertos atributos que se pueden asignar mediante variables de Adobe Analytics (tráfico, variables de conversión) y eventos de éxito para enviar información a Adobe Analytics.
 
 ## Requisitos previos {#prerequisites}
 
-Adobe recomienda que consulte la [integración existente de AEM-Adobe Analytics](/help/sites-administering/adobeanalytics.md) para comprender cómo funciona esta integración.
+Adobe recomienda pasar por el [integración AEM-Adobe Analytics existente](/help/sites-administering/adobeanalytics.md) para comprender cómo funciona esta integración.
 
-## Componentes que se pueden asignar {#components-available-for-mapping}
+## Componentes disponibles para asignación {#components-available-for-mapping}
 
-En AEM, los componentes **Llamada a acción** - **ClickThroughLink** y **GraphicalLink** - mostrados aquí en la barra de tareas, se pueden asignar a variables de Adobe Analytics.
+En AEM, la variable **Llamada a acción** componentes - **ClickThroughLink** y **GraphicalLink** - mostrado aquí en la barra de tareas, se puede asignar a variables de Adobe Analytics.
 
-![chlimage_1-29](assets/chlimage_1-21.jpeg)
+![imagen_1-21](assets/chlimage_1-21.jpeg)
 
-### Asignación de componentes de Página de aterrizaje a Adobe Analytics {#mapping-landing-page-components-to-adobe-analytics}
+### Asignación de componentes de la página de aterrizaje a Adobe Analytics {#mapping-landing-page-components-to-adobe-analytics}
 
 Para asignar componentes de página de aterrizaje a Adobe Analytics:
 
-1. Después de crear la configuración de Adobe Analytics y crear una nueva estructura, seleccione el grupo de sistemas de informes adecuado en el menú desplegable. Esto resulta en recuperar las variables de Adobe Analytics y mostrarlas en el buscador de contenido.
-1. Arrastre los componentes de llamada a acción de la barra de tareas y suéltelos en el área de asignación situada en la parte central de la página, como convenga.
+1. Después de crear la configuración de Adobe Analytics y crear una nueva estructura, seleccione el grupo de informes correspondiente en el menú desplegable. Esto hace que se recuperen las variables de Adobe Analytics y se muestren en el buscador de contenido.
+1. Arrastre y suelte los componentes de Llamada a acción (CTA) de la barra de tareas en el área de asignación en medio de la página, según corresponda.
 
 <table> 
  <tbody>
@@ -54,17 +57,17 @@ Para asignar componentes de página de aterrizaje a Adobe Analytics:
   <tr>
    <td><strong>Llamada a acción: vínculo de pulsaciones</strong></td> 
    <td><i>eventdata.clickthroughLinkLabel</i> <br /> </td> 
-   <td>La etiqueta en el vínculo o el texto del vínculo </td> 
+   <td>Etiqueta del vínculo o el texto del vínculo </td> 
   </tr>
   <tr>
    <td><br type="_moz" /> </td> 
    <td><i>eventdata.clickthroughLinkTarget</i> <br /> </td> 
-   <td>El destino al que se dirigirá cuando haga clic en el vínculo </td> 
+   <td>Destino al que se dirigirá cuando haga clic en el vínculo </td> 
   </tr>
   <tr>
    <td><br type="_moz" /> </td> 
-   <td><i>eventdata.eventos.clickthroughLinkClick</i> <br /> </td> 
-   <td>Evento de clic </td> 
+   <td><i>eventdata.events.clickLinkClick</i> <br /> </td> 
+   <td>El evento de clic </td> 
   </tr>
   <tr>
    <td><strong>Llamada a acción: vínculo gráfico</strong></td> 
@@ -74,7 +77,7 @@ Para asignar componentes de página de aterrizaje a Adobe Analytics:
   <tr>
    <td><br type="_moz" /> </td> 
    <td><i>eventdata.clicktroughImageTarget</i> <br /> </td> 
-   <td>Destino al que se dirigirá el usuario cuando haga clic en la imagen que contenga un vínculo</td> 
+   <td>Destino al que se dirigirá cuando haga clic en la imagen que contiene un vínculo</td> 
   </tr>
   <tr>
    <td><br type="_moz" /> </td> 
@@ -83,16 +86,15 @@ Para asignar componentes de página de aterrizaje a Adobe Analytics:
   </tr>
   <tr>
    <td><br type="_moz" /> </td> 
-   <td><i>eventdata.eventos.clicktroughImageClick</i> <br /> </td> 
-   <td>Evento de clic</td> 
+   <td><i>eventdata.events.clicktroughImageClick</i> <br /> </td> 
+   <td>El evento de clic</td> 
   </tr>
  </tbody>
 </table>
 
-1. Asigne estos atributos expuestos a cualquier variable de Adobe Analytics desde Content Finder. El marco está listo para usarse.
-1. Ahora puede crear una nueva página de aterrizaje o abrir una página de aterrizaje existente con componentes de llamada a acción existentes, hacer clic en la ficha **Cloud Services** de **Propiedades de la página** de la barra de tareas (en la IU táctil, seleccione **Propiedades abiertas** y haga clic en **Cloud Services**) y configurar la estructura que se utilizará con página de aterrizaje. Seleccione la estructura de la lista desplegable.
+1. Asigne estos atributos expuestos con cualquier variable de Adobe Analytics desde Content Finder. El marco ya está listo para utilizarse.
+1. Ahora puede crear una nueva página de aterrizaje o abrir una página de aterrizaje existente con componentes de llamada a acción existentes y hacer clic en **Cloud Services** en **Propiedades de página** en la barra de tareas (en la IU táctil, seleccione **Abrir propiedades** y haga clic en **Cloud Services**) y configure el marco que se utilizará con la página de aterrizaje. Seleccione el marco en la lista desplegable.
 
    ![chlimage_1-25](assets/chlimage_1-25.png)
 
 1. Después de configurar la estructura con la página de aterrizaje, ahora puede utilizar los componentes instrumentados y cualquier clic en CTA se registra en Adobe Analytics.
-

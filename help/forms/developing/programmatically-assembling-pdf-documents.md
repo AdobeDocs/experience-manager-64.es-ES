@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 role: Developer
 exl-id: be09271b-3004-4866-b43b-fb03c91305ec
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2110'
-ht-degree: 0%
+source-wordcount: '2146'
+ht-degree: 1%
 
 ---
 
 # Configuración programática de documentos PDF {#programmatically-assembling-pdf-documents}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede utilizar la API del servicio Assembler para ensamblar varios documentos de PDF en un único documento de PDF. La siguiente ilustración muestra tres documentos PDF que se están combinando en un solo documento PDF.
 
@@ -146,7 +150,7 @@ En la tabla siguiente se resumen algunos de los valores clave y tipos de objeto 
  </tbody> 
 </table>
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -209,7 +213,7 @@ Ensamble un documento de PDF mediante la API del servicio Assembler (Java):
    >
    >If `*LOG_LEVEL*` se configuró para producir un registro, puede extraer el registro utilizando la variable `*AssemblerResult*` del objeto `*getJobLog*` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido (modo SOAP): Montaje de un documento de PDF mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
 
@@ -290,6 +294,6 @@ Ensamble los documentos del PDF mediante la API del servicio Assembler (servicio
    >
    >If `LOG_LEVEL` se ha configurado para producir un registro, puede extraer el registro obteniendo el valor de la variable `AssemblerResult` del objeto `jobLog` miembro de datos.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

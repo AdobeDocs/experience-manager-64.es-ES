@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: 9d4dba7f-49d8-4112-bc8a-04dafc99a936
 role: Developer
 exl-id: d580b32c-a344-4a8c-bd61-0949da76d981
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 0%
+source-wordcount: '267'
+ht-degree: 4%
 
 ---
 
-# Gestión programática de los nodos de preferencias {#programmatically-managing-the-preferencesnodes}
+# Administración programática de los nodos de preferencias {#programmatically-managing-the-preferencesnodes}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 En este tema se describe cómo utilizar la API de servicio de Administrador de preferencias (Java) para administrar mediante programación los nodos de preferencias.
 

@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 2ec2a75e-4191-4660-a6f2-26cc667720b3
 role: Developer
 exl-id: 8369beeb-4628-40ea-9167-717f112768da
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 0%
+source-wordcount: '505'
+ht-degree: 4%
 
 ---
 
-# Inicio rápido de la API de Java del cliente de Application Manager (SOAP) {#application-manager-client-javaapi-quick-start-soap}
+# Inicio rápido (SOAP) de Application Manager Client JavaAPI {#application-manager-client-javaapi-quick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El siguiente inicio rápido de la API de Java (SOAP) está disponible para el cliente de Application Manager.
 

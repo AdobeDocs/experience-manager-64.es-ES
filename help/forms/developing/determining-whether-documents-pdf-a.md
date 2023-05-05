@@ -1,5 +1,5 @@
 ---
-title: Determinación de si los documentos cumplen los criterios de PDF/A
+title: Determinar si los documentos cumplen los criterios de PDF/A
 seo-title: Determining Whether Documents Are PDF/A-Compliant
 description: Utilice el servicio Assembler para determinar si un documento de PDF es compatible con el PDF/A mediante la API de Java y la API del servicio web.
 seo-description: Use the Assembler service to determine if a PDF document is PDF/A-compliant using the Java API and Web Service API.
@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: c429d6e1-7847-43c8-bf75-cb0078dbb9d5
 role: Developer
 exl-id: fa9d0720-f4bf-4933-ae63-c24bb835cc60
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2082'
-ht-degree: 2%
+source-wordcount: '2118'
+ht-degree: 3%
 
 ---
 
-# Determinación de si los documentos cumplen los criterios de PDF/A {#determining-whether-documents-are-pdf-a-compliant}
+# Determinar si los documentos cumplen los criterios de PDF/A {#determining-whether-documents-are-pdf-a-compliant}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede determinar si un documento de PDF es compatible con el PDF/A mediante el servicio Assembler. Un documento PDF/A existe como formato de archivo destinado a la conservación a largo plazo del contenido del documento. Las fuentes están incrustadas en el documento y el archivo no está comprimido. Como resultado, un documento PDF/A suele ser más grande que un documento PDF estándar. Además, un documento PDF/A no contiene contenido de audio y vídeo.
 
@@ -108,7 +112,7 @@ El documento XML que devuelve el servicio Assembler especifica si el documento d
 
 Guarde el documento XML como archivo XML para que pueda abrir el archivo y ver los resultados.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Determinar si un documento es compatible con el PDF/A mediante la API de Java](/help/forms/developing/determining-whether-documents-pdf-a.md#determine-whether-a-document-is-pdf-a-compliant-using-the-java-api)
 
@@ -171,7 +175,7 @@ Determine si un documento de PDF es compatible con el PDF/A mediante la API de s
    * Iterar a través de la variable `java.util.Map` hasta que encuentre el resultado `com.adobe.idp.Document` objeto.
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` para extraer el documento XML. Asegúrese de guardar los datos XML como un archivo XML.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido (modo SOAP): Determinación de si un documento es compatible con el PDF/A mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api) (modo SOAP)
 
@@ -248,6 +252,6 @@ Determine si un documento de PDF es compatible con el PDF/A mediante el uso de l
    * Iterar a través de la variable `Map` para obtener cada documento resultante. A continuación, convierta el valor de ese miembro de la matriz en un `BLOB`.
    * Extraiga los datos binarios que representan los datos XML accediendo a su `BLOB` del objeto `MTOM` campo . Este campo almacena una matriz de bytes a los que puede escribir como archivo XML.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

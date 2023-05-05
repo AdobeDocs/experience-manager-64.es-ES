@@ -1,39 +1,42 @@
 ---
-title: La comunidad de AEM
-seo-title: La comunidad de AEM
-description: La comunidad de AEM
-seo-description: La comunidad de AEM
+title: La Comunidad AEM
+seo-title: The AEM Community
+description: La Comunidad AEM
+seo-description: The AEM Community
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
-translation-type: tm+mt
-source-git-commit: 4c1b1210503dc535585ae8912a7b94b88d1604cf
+exl-id: 537f6fe5-011b-4d4a-ac71-71708fd72b85
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '330'
-ht-degree: 33%
+source-wordcount: '360'
+ht-degree: 5%
 
 ---
 
+# La Comunidad AEM {#the-aem-community}
 
-# La comunidad de AEM {#the-aem-community}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## ¿Qué es la Comunidad AEM? {#what-is}
 
-La Comunidad AEM tiene miles de miembros en todo el mundo. desde personas que empiezan a usar Experience Manager hasta desarrolladores y administradores experimentados.  Estamos a su disposición para ayudarle desde preguntas sobre las capacidades de AEM hasta cuestiones de desarrollo. Organizamos regularmente sesiones con expertos en las que participan usuarios experimentados internos y externos que ayudan a crear muestras, artículos y tutoriales que pueden serle de gran utilidad.
+La Comunidad AEM tiene miles de miembros en todo el mundo. Van desde personas nuevas a Experience Manager, hasta desarrolladores y administradores experimentados.  Estamos a su disposición para ayudarle, desde preguntas sobre AEM capacidades hasta preguntas sobre desarrollo. Realizamos sesiones periódicas de expertos con expertos internos y externos y ayudamos a crear muestras, artículos y tutoriales para usted.
 
-[Únase a la comunidad hoy mismo para acceder al mejor contenido y a personas y conocimientos que le pueden resultar de gran ayuda.](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager) Está abierto a todos. Si te interesa AEM, entonces eres bienvenido. ¡Venga hoy!
+[Únase a la comunidad hoy mismo para acceder al mejor contenido, a las personas y al mejor conocimiento.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=es) Está abierto a todos. Si tienes interés en AEM, entonces eres bienvenido. ¡Pasa hoy!
 
-## ¿Qué eventos existen para AEM miembros de la Comunidad? {#events}
+## ¿Qué acontecimientos se producen para AEM miembros de la comunidad? {#events}
 
-¡Hay una gran cantidad de eventos para los miembros! Cada mes celebramos sesiones en las que puede preguntar al experto sobre temas AEM específicos. También le informaremos sobre los principales eventos, como [Immerse](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__fb7p-the_immerseagendai.html) o la [Cumbre de Adobe](http://summit.adobe.com/na/?promoid=6JMR7JQY&amp;mv=other), o incluso los eventos de grupos de usuarios en su área.
+¡Hay una gran cantidad de eventos para los miembros! Cada mes celebramos sesiones en las que puede preguntar al experto sobre temas AEM específicos. También le informaremos sobre eventos importantes, como [Inmerso](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__fb7p-the_immerseagendai.html) o [Adobe Summit](http://summit.adobe.com/na/?promoid=6JMR7JQY&amp;mv=other), o incluso eventos de grupo de usuarios en su área.
 
-Lo mejor es [visitar la comunidad de AEM hoy y ver qué está pasando.](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
+Lo mejor es [visite la comunidad de AEM hoy y vea lo que está pasando.](http://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html)
 
 ## ¿Puedo obtener ejemplos de código para ayudarme? {#code-samples}
 
-El equipo de la comunidad AEM está produciendo continuamente guías de &quot;cómo&quot; y muestras de código para ayudar a los desarrolladores y usuarios de Experience Manager a comprender la solución. [Esta es nuestra lista completa de artículos prácticos y ejemplos de código.](https://helpx.adobe.com/es/experience-manager/topics/how-to.html)
+El equipo de la comunidad AEM está produciendo continuamente guías de &quot;cómo&quot; y muestras de código para ayudar a los desarrolladores y usuarios Experience Manager a comprender la solución. [Aquí está nuestra lista completa de artículos prácticos y ejemplos de código.](https://helpx.adobe.com/experience-manager/topics/how-to.html)
 
 ## Consulte las sesiones de expertos de la comunidad y GEMS {#gems}
 
-La Comunidad AEM celebra eventos periódicos para ayudar a educar a los miembros sobre las técnicas y las mejores prácticas. Puede asistir a estos webcasts en directo o reproducirlos posteriormente cuando desee. Disponemos de eventos de expertos y también de descripciones generales de funciones y de las nuevas grabaciones.
+La Comunidad AEM celebra periódicamente actos para ayudar a educar a los miembros sobre técnicas y prácticas recomendadas. Puede asistir a estos webcasts en directo o reproducirlos a su gusto. Tenemos eventos de expertos y también descripciones generales de funciones y novedades de las grabaciones.
 
-[La lista completa de anteriores sesiones de Experience Manager expertos está aquí.](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/atace-index.html)
+[La lista completa de las sesiones anteriores de expertos Experience Manager está disponible aquí.](https://helpx.adobe.com/experience-manager/kt/eseminars/ask-the-expert/atace-index.html)

@@ -1,5 +1,5 @@
 ---
-title: Configuración del conector para IBM Content Manager
+title: Configurar el conector para IBM Content Manager
 seo-title: Configuring Connector for IBM Content Manager
 description: Configure el conector para IBM Content Manager para permitir la comunicación entre AEM formularios y IBM Content Manager.
 seo-description: Configure the Connector for IBM Content Manager to enable communication between AEM forms and IBM Content Manager.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 3094b178-3b1a-46b3-8fbd-c20388afa3a7
 exl-id: 8c65531e-f4f0-4cc4-b328-eaefb5662cf1
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '277'
-ht-degree: 0%
+source-wordcount: '313'
+ht-degree: 7%
 
 ---
 
-# Configuración del conector para IBM Content Manager{#configuring-connector-for-ibm-content-manager}
+# Configurar el conector para IBM Content Manager{#configuring-connector-for-ibm-content-manager}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El conector para IBM Content Manager permite la comunicación entre AEM formularios y IBM Content Manager. Para obtener más información, consulte &quot;Conectores para ECM&quot; en [Referencia de servicios](https://www.adobe.com/go/learn_aemforms_services_63).
 

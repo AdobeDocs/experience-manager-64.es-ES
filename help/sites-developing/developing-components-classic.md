@@ -4,14 +4,18 @@ seo-title: Developing AEM Components (Classic UI)
 description: La IU clásica utiliza ExtJS para crear utilidades que proporcionen la apariencia de los componentes. HTL no es el lenguaje de secuencias de comandos recomendado para AEM.
 seo-description: The classic UI uses ExtJS to create widgets that provide the look-and-feel of the components. HTL is not the recommended scripting language for AEM.
 exl-id: 725e4f82-7019-4365-9c01-b5d95ea2a8fa
-source-git-commit: 51358642a2fa8f59f3f5e3996b0c37269632c4cb
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2391'
+source-wordcount: '2427'
 ht-degree: 1%
 
 ---
 
 # Desarrollo de componentes AEM (IU clásica){#developing-aem-components-classic-ui}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 La IU clásica utiliza ExtJS para crear utilidades que proporcionen la apariencia de los componentes. Debido a la naturaleza de estas utilidades, hay algunas diferencias entre la forma en que los componentes interactúan con la IU clásica y la [IU táctil](/help/sites-developing/developing-components.md).
 
@@ -370,7 +374,7 @@ Para deshabilitar esta capacidad, utilizamos el componente de imagen estándar c
 
    * Establezca **jcr:title** a `Image (Extended)`
 
-1. Vaya a `/apps/geometrixx/components/image/dialog/items/image`.
+1. Navegue hasta `/apps/geometrixx/components/image/dialog/items/image`.
 1. Añadir una nueva propiedad:
 
    * **Nombre**: `allowUpload`

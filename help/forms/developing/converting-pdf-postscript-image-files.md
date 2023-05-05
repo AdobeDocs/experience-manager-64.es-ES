@@ -1,5 +1,5 @@
 ---
-title: Conversión de PDF a archivos Postscript e Image
+title: Convertir archivos PDF a Postscript andImage
 seo-title: Converting PDF to Postscript andImage Files
 description: Utilice el servicio Convertir PDF para convertir documentos de PDF a PostScript y a varios formatos de imagen (JPEG, JPEG 2000, PNG y TIFF) mediante la API de Java y la API de servicio web.
 seo-description: Use the Convert PDF service to convert PDF documents to PostScript and to a number of image formats (JPEG, JPEG 2000, PNG, and TIFF) using the Java API and Web Service API.
@@ -11,18 +11,22 @@ topic-tags: operations
 discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
 role: Developer
 exl-id: 4afed537-1694-4187-8968-608f49116c2e
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2795'
-ht-degree: 0%
+source-wordcount: '2831'
+ht-degree: 2%
 
 ---
 
 # Conversión de PDF a archivos de imagen y Postscript {#converting-pdf-to-postscript-andimage-files}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
 **Acerca del servicio Convertir PDF**
 
-El servicio Convertir PDF convierte los documentos de PDF a PostScript y a varios formatos de imagen (JPEG, JPEG 2000, PNG y TIFF). La conversión de un documento PDF a PostScript es útil para la impresión desatendida basada en servidor en cualquier impresora PostScript. La conversión de un documento de PDF en un archivo de TIFF de varias páginas es práctica cuando se archivan documentos en sistemas de administración de contenido que no admiten documentos de PDF.
+El servicio Convertir PDF convierte los documentos de PDF a PostScript y a varios formatos de imagen (JPEG, JPEG 2000, PNG y TIFF). Convertir un documento PDF a PostScript es útil para la impresión desatendida basada en servidor en cualquier impresora PostScript. Convertir un documento PDF en un archivo TIFF de varias páginas es práctico cuando se archivan documentos en sistemas de administración de contenido que no admiten documentos PDF.
 
 Puede realizar estas tareas mediante el servicio Convertir PDF:
 
@@ -86,7 +90,7 @@ Después de crear el cliente de servicio y establecer las opciones de tiempo de 
 
 Después de convertir el documento de PDF a PostScript, puede guardar la salida como un archivo PostScript.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Convertir un documento PDF a PS mediante la API de Java](converting-pdf-postscript-image-files.md#convert-a-pdf-document-to-ps-using-the-java-api)
 
@@ -135,7 +139,7 @@ Convertir un documento de PDF a PostScript mediante la Convertir API de servicio
    * Cree un `java.io.File` y asegúrese de que la extensión de nombre de archivo es .ps.
    * Invocar el `Document` del objeto `copyToFile` para copiar el contenido del `Document` al archivo (asegúrese de usar la variable `Document` objeto devuelto por el `toPS2` método).
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](converting-pdf-postscript-image-files.md#summary-of-steps)
 
@@ -199,7 +203,7 @@ Convertir un documento de PDF a PostScript mediante la API Convertir servicio de
    * Cree un `System.IO.BinaryWriter` invocando su constructor y pasando el `System.IO.FileStream` objeto.
    * Escriba el contenido de la matriz de bytes en el archivo PostScript invocando la variable `System.IO.BinaryWriter` del objeto `Write` y pasando la matriz de bytes.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Resumen de los pasos](converting-pdf-postscript-image-files.md#summary-of-steps)
 
@@ -254,7 +258,7 @@ Puede recuperar archivos de imagen de un objeto de colección que devuelva el se
 
 El formato del archivo de imagen depende del `ImageConvertFormat` durante la ejecución. Es decir, si configura la variable `ImageConvertFormat` opción de tiempo de ejecución a `ImageConvertFormat.JPEG`, puede guardar archivos de imagen como archivos JPG.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -302,7 +306,7 @@ Convertir un documento PDF a un formato de imagen mediante la Convertir API de s
 
    Iterar a través de la variable `java.util.List` para determinar si las imágenes están presentes. Cada elemento es un `com.adobe.idp.Document` instancia. Guarde la imagen invocando `com.adobe.idp.Document` del objeto `copyToFile` método y pasar una `java.io.File` objeto.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido (modo SOAP): Conversión de un documento de PDF en archivos de JPEG mediante la API de Java](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
@@ -362,7 +366,7 @@ Convertir un documento PDF a un formato de imagen mediante la Convertir API de s
    * Determine el número de elementos de la variable `MyArrayOfBLOB` obteniendo el valor de su `Count` campo . Cada elemento es un `BLOB` objeto que contiene la imagen.
    * Iterar a través de la variable `MyArrayOfBLOB` y guarde cada archivo de imagen.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 

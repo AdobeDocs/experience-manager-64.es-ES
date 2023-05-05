@@ -1,5 +1,5 @@
 ---
-title: Prevención de ataques del CSRF
+title: Prevenir ataques CSRF
 seo-title: Preventing CSRF attacks
 description: Aprenda a evitar ataques de falsificación de solicitudes entre sitios (CSRF) y a evitar que los datos de los usuarios se vean comprometidos.
 seo-description: Learn how to prevent Cross-site request forgery (CSRF) attacks and safeguard user data from being compromised.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a3cbffb7-c1d1-47c2-bcfd-70f1e2d81ac9
 exl-id: 89286798-e02a-45d8-a91d-c50ef4dc7f25
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '971'
-ht-degree: 0%
+source-wordcount: '1007'
+ht-degree: 5%
 
 ---
 
-# Prevención de ataques del CSRF {#preventing-csrf-attacks}
+# Prevenir ataques CSRF {#preventing-csrf-attacks}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Cómo funcionan los ataques de la CSRF {#how-csrf-attacks-work}
 
@@ -45,10 +49,10 @@ Permita un referente nulo en los extremos SOAP y REST. También permita un refer
 
 AEM formularios proporciona filtrado de referentes, que puede ayudar a prevenir ataques de CSRF. Así funciona el filtrado de referentes:
 
-1. El servidor de formularios comprueba el método HTTP utilizado para la invocación:
+1. El servidor de Forms comprueba el método HTTP utilizado para la invocación:
 
    * Si es POST, el servidor de formularios realiza la comprobación del encabezado del referente.
-   * Si es GET, el servidor de formularios evita la comprobación del remitente del reenvío, a menos que CSRF_CHECK_GETS esté establecido en true, en cuyo caso realiza la comprobación del encabezado del remitente. CSRF_CHECK_GETS se especifica en el archivo web.xml para su aplicación. (Consulte &quot;Protección contra ataques de falsificación de solicitudes entre sitios&quot; en [Guía de endurecimiento y seguridad](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).)
+   * Si es GET, el servidor de formularios evita la comprobación del remitente del reenvío, a menos que CSRF_CHECK_GETS esté establecido en true, en cuyo caso realiza la comprobación del encabezado del remitente. CSRF_CHECK_GETS se especifica en el archivo web.xml de la aplicación. (Consulte &quot;Protección contra ataques de falsificación de solicitudes entre sitios&quot; en [Guía de endurecimiento y seguridad](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).)
 
 1. El servidor de formularios comprueba si el URI solicitado está incluido en la lista de permitidos:
 
@@ -57,8 +61,8 @@ AEM formularios proporciona filtrado de referentes, que puede ayudar a prevenir 
 
 1. Si hay un referente en la solicitud, el servidor comprueba si es un referente permitido. Si está permitido, el servidor comprueba la existencia de una excepción de referente:
 
-   * Si es una excepción, la solicitud se bloquea.
-   * Si no es una excepción, se pasa la solicitud.
+   * Si existe una excepción, la solicitud se bloquea.
+   * Si hay ninguna excepción, se pasa la solicitud.
 
 1. Si no hay ningún referente en la solicitud, el servidor comprueba si se permite un referente nulo.
 

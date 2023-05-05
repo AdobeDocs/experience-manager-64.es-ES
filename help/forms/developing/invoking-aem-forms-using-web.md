@@ -1,5 +1,5 @@
 ---
-title: Invocación de AEM Forms mediante servicios web
+title: Invocar AEM Forms mediante servicios web
 seo-title: Invoking AEM Forms using Web Services
 description: Invoque los procesos de AEM Forms mediante servicios web con compatibilidad total con la generación de WSDL.
 seo-description: Invoke AEM Forms processes using web services with full support for WSDL generation.
@@ -11,14 +11,18 @@ topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: cd4b5e40-afd5-422d-ae2e-cfde0f4d6b1a
-source-git-commit: e608249c3f95f44fdc14b100910fa11ffff5ee32
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '9928'
+source-wordcount: '9964'
 ht-degree: 0%
 
 ---
 
-# Invocación de AEM Forms mediante servicios web {#invoking-aem-forms-using-web-services}
+# Invocar AEM Forms mediante servicios web {#invoking-aem-forms-using-web-services}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 La mayoría de los servicios de AEM Forms del contenedor de servicios están configurados para exponer un servicio web, con compatibilidad total con la generación de lenguaje de definición de servicio web (WSDL). Es decir, puede crear objetos proxy que consuman la pila nativa SOAP de un servicio AEM Forms. Como resultado, los servicios de AEM Forms pueden intercambiar y procesar los siguientes mensajes SOAP:
 
@@ -65,7 +69,7 @@ En la tabla siguiente se enumeran las definiciones de WSDL de servicio (suponien
  </thead> 
  <tbody>
   <tr> 
-   <td><p>Ensamblador</p></td> 
+   <td><p>Assembler</p></td> 
    <td><p><code>http://localhost:8080/soap/services/ AssemblerService?wsdl</code></p></td> 
   </tr> 
   <tr> 
@@ -73,7 +77,7 @@ En la tabla siguiente se enumeran las definiciones de WSDL de servicio (suponien
    <td><p><code>http://localhost:8080/soap/services/BackupService?wsdl</code></p></td> 
   </tr> 
   <tr> 
-   <td><p>formularios con códigos de barras</p></td> 
+   <td><p>formularios con código de barras</p></td> 
    <td><p><code>http://localhost:8080/soap/services/ BarcodedFormsService?wsdl</code></p></td> 
   </tr> 
   <tr> 
@@ -229,7 +233,7 @@ El protocolo de transmisión para la devolución `BLOB` Los objetos dependen de 
 
    * El parámetro de extremo SOAP del servicio Default Protocol For Output Blob Objects está establecido en Smart.
 
-      Para cada servicio con un extremo SOAP, la consola de administración permite especificar el protocolo de transmisión para cualquier blobs devuelto. (Consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63).)
+      Para cada servicio con un extremo SOAP, la consola de administración permite especificar el protocolo de transmisión para cualquier blobs devuelto. (Consulte [ayuda de administración](https://www.adobe.com/go/learn_aemforms_admin_63_es).)
 
    * El servicio AEM Forms toma uno o más documentos como entrada.
 
@@ -452,7 +456,7 @@ Puede utilizar JAX-WS para convertir un servicio WSDL de Forms a clases proxy de
    >
    >Todos los inicios rápidos del servicio web Java (excepto el servicio Forms) ubicados en Programación con formularios AEM crean archivos proxy Java usando JAX-WS. Además, todos los inicios rápidos del servicio web de Java, utilizan SwaRef. (Consulte [Invocación de AEM Forms mediante SwaRef](#invoking-aem-forms-using-swaref).)
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Creación de clases de proxy Java mediante el eje Apache](#creating-java-proxy-classes-using-apache-axis)
 
@@ -558,7 +562,7 @@ Puede generar archivos de biblioteca Java del eje siguiendo estos pasos:
 
    Estos archivos JAR están en la *[directorio de instalación]*/Adobe/Adobe Experience Manager Forms/sdk/lib/thirdparty
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Creación de clases de proxy Java mediante JAX-WS](#creating-java-proxy-classes-using-jax-ws)
 
@@ -712,7 +716,7 @@ Puede invocar un servicio de AEM Forms utilizando las clases proxy de Java y Bas
 1. Cree una matriz de bytes que contenga el documento del PDF cifrado invocando la variable `BLOB` del objeto `getBinaryData` método.
 1. Guarde el documento de PDF cifrado como archivo de PDF. Escriba la matriz de bytes en un archivo.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido: Invocación de un servicio mediante archivos proxy Java y codificación Base64](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-service-using-java-proxy-files-and-base64-encoding)
 
@@ -825,7 +829,7 @@ Tenga en cuenta las `MyApplication/EncryptDocument` proceso que acepta un docume
 >
 >La mayoría de las operaciones de servicio de AEM Forms tienen un inicio rápido MTOM. Puede ver estos inicios rápidos en la sección de inicio rápido correspondiente de un servicio. Por ejemplo, para ver la sección Salida de inicio rápido , consulte [Inicio rápido de la API del servicio de salida](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap).
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido: Invocación de un servicio mediante MTOM en un proyecto .NET](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-service-using-mtom-in-a-net-project)
 
@@ -914,7 +918,7 @@ Para invocar la variable `MyApplication/EncryptDocument` Para procesar mediante 
 >
 >La mayoría de las operaciones de servicio de AEM Forms tienen un inicio rápido de SwaRef. Puede ver estos inicios rápidos en la sección de inicio rápido correspondiente de un servicio. Por ejemplo, para ver la sección Salida de inicio rápido , consulte [Inicio rápido de la API del servicio de salida](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap).
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido: Invocación de un servicio mediante SwaRef en un proyecto Java](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-service-using-swaref-in-a-java-project)
 
@@ -1161,7 +1165,7 @@ Para invocar la variable `MyApplication/EncryptDocument` (que se creó en Workbe
 1. Cree un `java.io.FileOutputStream` usando su constructor y pasando el `java.io.File` objeto.
 1. Invocar el `java.io.FileOutputStream` del objeto `write` y pase la matriz de bytes que contiene el flujo de datos que representa el documento del PDF cifrado.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido: Invocación de un servicio mediante DIME en un proyecto Java](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-service-using-dime-in-a-java-project)
 

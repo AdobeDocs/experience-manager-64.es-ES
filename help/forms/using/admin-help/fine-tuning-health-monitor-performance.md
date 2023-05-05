@@ -1,5 +1,5 @@
 ---
-title: Ajuste del rendimiento del Monitor de estado
+title: Ajustar el rendimiento del monitor de estado
 seo-title: Fine-tuning Health Monitor performance
 description: Aprenda a ajustar el rendimiento del Monitor de estado
 seo-description: Learn how to fine-tune Health Monitor performance
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 exl-id: b2814b0d-e843-4aba-8c74-a3be0a96f726
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 2%
+source-wordcount: '443'
+ht-degree: 15%
 
 ---
 
-# Ajuste del rendimiento del Monitor de estado{#fine-tuning-health-monitor-performance}
+# Ajustar el rendimiento del monitor de estado{#fine-tuning-health-monitor-performance}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 La recopilación de estadísticas del sistema que rellenan el Monitor de estado tiene algún impacto en el rendimiento del entorno de formularios AEM. Este impacto se puede controlar configurando las opciones de Java que se enumeran a continuación en el servidor de aplicaciones.
 
@@ -73,10 +77,10 @@ La recopilación de estadísticas del sistema que rellenan el Monitor de estado 
 
 1. Inicie la consola de administración de WebLogic escribiendo https://[nombre de host]:[puerto]/console en la línea URL de un explorador web.
 1. Escriba el nombre de usuario y la contraseña que creó para el dominio de WebLogic Server y haga clic en Registro en el Centro de cambios, haga clic en Bloquear y editar.
-1. En Estructura del dominio, haga clic en Entorno > Servidores y, en el panel derecho, haga clic en el nombre del servidor administrado.
-1. En la siguiente pantalla, haga clic en la ficha Configuración > Inicio del servidor .
+1. En Estructura de dominio, haga clic en Entorno > Servidores y, en el panel derecho, haga clic en el nombre del servidor administrado.
+1. En la siguiente pantalla, haga clic en la pestaña Configuración > y luego en la pestaña Inicio de servidor.
 1. En el cuadro Argumentos , anexe los argumentos que necesite al final del contenido actual. Por ejemplo, si agrega `Dadobe.healthmonitor.enabled=false` deshabilita el Monitor de estado.
-1. Haga clic en Guardar y, a continuación, en Activar cambios.
+1. Haga clic en Guardar y luego en Activar cambios.
 1. Reinicie el servidor administrado por WebLogic.
 
 ## Agregar opciones de Java a WebSphere {#add-java-options-to-websphere}

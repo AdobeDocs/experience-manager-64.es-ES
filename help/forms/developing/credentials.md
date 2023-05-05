@@ -1,5 +1,5 @@
 ---
-title: Uso de credenciales
+title: Trabajar con credenciales
 seo-title: Working with Credentials
 description: Importe credenciales en AEM Forms mediante la API de administrador de confianza y la API de Java. Además, aprenda a eliminar credenciales mediante la API de administrador de confianza y la API de Java.
 seo-description: Import credentials into AEM Forms using the Trust Manager API and Java API. In addition, learn how to delete credentials using the Trust Manager API and Java API.
@@ -11,14 +11,18 @@ topic-tags: operations
 discoiquuid: bc06d9bd-af6c-47b1-b46f-aab990ef5816
 role: Developer
 exl-id: 7dcfcee1-998e-41d8-badc-3106055e6ba7
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1071'
-ht-degree: 0%
+source-wordcount: '1107'
+ht-degree: 2%
 
 ---
 
-# Uso de credenciales {#working-with-credentials}
+# Trabajar con credenciales {#working-with-credentials}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 **Acerca del servicio Credencial**
 
@@ -34,7 +38,7 @@ Puede interactuar mediante programación con el servicio Credential mediante la 
 
 >[!NOTE]
 >
->También puede importar y eliminar certificados mediante la consola de administración. (Consulte [ayuda de administración.](https://www.adobe.com/go/learn_aemforms_admin_63))
+>También puede importar y eliminar certificados mediante la consola de administración. (Consulte [ayuda de administración.](https://www.adobe.com/go/learn_aemforms_admin_63_es))
 
 ## Importación de credenciales mediante la API del administrador de confianza {#importing-credentials-by-using-the-trust-manager-api}
 
@@ -83,7 +87,7 @@ Haga referencia a una credencial que desee importar en AEM Forms. El inicio ráp
 
 Después de hacer referencia a las credenciales, importe las credenciales en AEM Forms. Si la credencial no se importa correctamente, se genera una excepción. Al importar una credencial, se especifica un alias para la credencial.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Importar credenciales mediante la API de Java](credentials.md#import-credentials-using-the-java-api)
 
@@ -123,7 +127,7 @@ Importe una credencial en AEM Forms mediante la API del administrador de confian
       * Un valor de cadena que especifica la contraseña asociada a la credencial.
       * La matriz de cadenas que contiene el valor de uso. Por ejemplo, puede especificar este valor `truststore.usage.type.sign`. Para importar una credencial de extensión de Reader, especifique `truststore.usage.type.lcre`.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Importación de credenciales mediante la API del administrador de confianza](credentials.md#importing-credentials-by-using-the-trust-manager-api)
 
@@ -169,7 +173,7 @@ Antes de poder eliminar mediante programación una credencial, cree un cliente d
 
 Para eliminar una credencial, especifique el alias que corresponda a la credencial. Si especifica un alias que no existe, se genera una excepción.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Importar credenciales mediante la API de Java](credentials.md#import-credentials-using-the-java-api)
 
@@ -196,7 +200,7 @@ Elimine una credencial de AEM Forms mediante la API del administrador de confian
 
    Invocar el `CredentialServiceClient` del objeto `deleteCredential` y pasa un valor de cadena que especifica el valor de alias.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Eliminación de credenciales mediante la API del administrador de confianza](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
 

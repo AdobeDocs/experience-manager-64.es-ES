@@ -1,114 +1,117 @@
 ---
-title: Analizar el rendimiento de la página
-seo-title: Analizar el rendimiento de la página
+title: Análisis del rendimiento de la página
+seo-title: Analyzing Page Performance
 description: Utilice la página Perspectiva de contenido para analizar el rendimiento de la página que esté creando
-seo-description: Utilice la página Perspectiva de contenido para analizar el rendimiento de la página que esté creando
+seo-description: Use the Content Insight page to analyze the performance of the page that you are authoring
 uuid: 6b8a489d-f262-495d-adff-125c9a2c49b9
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: ead74e39-3b07-488e-aeb1-fcb4aa6ff200
-translation-type: tm+mt
-source-git-commit: 3addef2141ebb831f8677d011d68faf88e648dc2
+exl-id: dc24edaf-ca1d-4a6b-a2dc-86677267e18d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 94%
+source-wordcount: '698'
+ht-degree: 1%
 
 ---
 
+# Análisis del rendimiento de la página{#analyzing-page-performance}
 
-# Analizar el rendimiento de la página{#analyzing-page-performance}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-Abra la página Perspectiva de contenido[](/help/sites-authoring/content-insights.md) para analizar el rendimiento de la página que esté creando. Configure el período de informe para centrar su análisis.
+Abra el [Perspectiva de contenido](/help/sites-authoring/content-insights.md) para analizar el rendimiento de la página que está creando. Configure el período de informe para centrar el análisis.
 
-## Abrir Analítica y recomendaciones para una página {#opening-analytics-and-recommendations-for-a-page}
+## Apertura de Analytics y Recommendations para una página {#opening-analytics-and-recommendations-for-a-page}
 
-Utilice el procedimiento siguiente para ver Analítica y recomendaciones para una página:
+Utilice el siguiente procedimiento para ver Analytics y Recommendations para una página:
 
-1. Vaya a la página que desee analizar.
-1. En la barra de herramientas, toque o haga clic en **Analítica y recomendaciones**.
+1. Desplácese a la página que desee analizar.
+1. En la barra de herramientas, toque o haga clic en **Analytics y Recommendations**.
 
    >[!NOTE]
    >
-   >Analítica y recomendaciones para una página solo se muestra si ha configurado AEM para [integrarse con Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md).
+   >Analytics y Recommendations para una página solo aparecen si ha configurado AEM para [integrar con Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md).
 
    ![screen_shot_2017-11-29at135651](assets/screen_shot_2017-11-29at135651.png)
 
 ## Cambio del período de informe {#changing-the-reporting-period}
 
-Cambie las siguientes proporciones temporales de los informes analíticos:
+Cambie los siguientes aspectos relacionados con el tiempo de los informes de análisis:
 
-* El período de tiempo sobre el que se informa.
+* Período de tiempo sobre el que se debe informar.
 * La granularidad de los datos.
 
-Las herramientas para cambiar las proporciones temporales de los informes aparecen en la parte superior de la página Perspectiva de contenido. ![chlimage_1-249](assets/chlimage_1-249.png)
+Las herramientas para cambiar los aspectos relacionados con el tiempo de los informes aparecen en la parte superior de la página Perspectiva de contenido . ![chlimage_1-249](assets/chlimage_1-249.png)
 
 ### Cambio del período de informe {#changing-the-reporting-period-1}
 
-Cambie el período de informe de la página Perspectiva de contenido para centrar el análisis de la actividad de la página en un período de tiempo concreto. Al cambiar el período de informe, los informes se actualizan automáticamente. El área sombreada del intervalo de tiempo representa el período de informe. En el intervalo de tiempo, las fechas ascienden de izquierda a derecha.
+Cambie el período de informe de la página Perspectiva de contenido para centrar el análisis de la actividad de la página en un período de tiempo específico. Al cambiar el período de informe, los informes se actualizan automáticamente. El área sombreada del periodo de tiempo representa el período de informe. Las fechas del periodo de tiempo aumentan de izquierda a derecha.
 
 ![chlimage_1-250](assets/chlimage_1-250.png)
 
-Para cambiar el período de informe de una página Perspectiva de contenido:
+Para cambiar el período de informe de una página de Perspectiva de contenido:
 
-1. Si el período de tiempo no aparece en la parte superior de la página, toque o haga clic en el icono Alternar intervalo de tiempo.
+1. Si el marco de tiempo no aparece en la parte superior de la página, toque o haga clic en el icono Alternar intervalo de tiempo .
 
    ![](do-not-localize/chlimage_1-22.png)
 
-1. Para cambiar la fecha de inicio del período de informe, arrastre el círculo que aparece en la parte izquierda del área sombreada a la fecha de inicio deseada.
+1. Para cambiar la fecha de inicio del período de informe, arrastre el círculo que aparece en el lado izquierdo del área sombreada a la fecha de inicio deseada.
 
-   Si no puede ver la parte izquierda del área sombreada, utilice la barra de desplazamiento para que se vea.
+   Si no puede ver el lado izquierdo del área sombreada, utilice la barra de desplazamiento para verlo.
 
-1. Para cambiar la fecha de finalización del período de informe, arrastre el círculo que aparece en la parte derecha del área sombreada a la fecha de finalización deseada.
+1. Para cambiar la fecha de finalización del período de informe, arrastre el círculo que aparece a la derecha del área sombreada a la fecha de finalización deseada.
 
-### Cambio de la granularidad del período de informe  {#changing-the-granularity-of-the-reporting-period}
+### Cambio de la granularidad del período de informe {#changing-the-granularity-of-the-reporting-period}
 
-Cambie la cantidad de tiempo que cada punto de datos abarca en un informe. Por ejemplo, al seleccionar la granularidad Semana, cada punto de datos del informe Vistas representa la cantidad de vistas realizadas durante una semana.
+Cambiar la cantidad de tiempo que cada punto de datos abarca en un informe. Por ejemplo, cuando se selecciona la granularidad Semana , cada punto de datos del informe Vistas representa el número de vistas de una semana.
 
 ![screen_shot_2017-11-29at141001](assets/screen_shot_2017-11-29at141001.png)
 
-La granularidad afecta a los informes que asignan datos a valores temporales, como los informes Vistas y Promedio de minutos de visita de la página. La granularidad también afecta a la escala del período de tiempo.
+La granularidad afecta a los informes que trazan los datos con respecto al tiempo, como los informes Vistas y Promedio de minutos de participación de la página . La granularidad también afecta a la escala del periodo de tiempo.
 
-1. Si no aparece el control de la granularidad, toque o haga clic en el icono Alternar granularidad.
+1. Si el control de granularidad no aparece, toque o haga clic en el icono Alternar granularidad .
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Toque o haga clic en la granularidad que desee. Una vez seleccionado, el informe se actualiza automáticamente para reflejar la granularidad.
+1. Toque o haga clic en la granularidad deseada. Una vez seleccionado, el informe se actualiza automáticamente para reflejar la granularidad.
 
-## Asignación de tareas para Recomendaciones de SEO  {#assigning-tasks-for-seo-recommendations}
+## Asignación de tareas para SEO Recommendations {#assigning-tasks-for-seo-recommendations}
 
-Utilice el informe Recomendaciones de SEO para crear tareas para mejorar la visibilidad de la página para los motores de búsqueda. Para cada recomendación del informe que no tenga una marca, puede crear una tarea que asigna a un usuario para realizar el trabajo necesario.
+Utilice el informe SEO Recommendations para crear tareas que mejoren la visibilidad de la página para los motores de búsqueda. Para cada recomendación del informe que no tenga una marca de verificación, puede crear una tarea que asigne a un usuario para realizar el trabajo requerido.
 
 ![chlimage_1-252](assets/chlimage_1-252.png)
 
-El estado de la recomendación de SEO indica cuándo se ha creado la tarea, pero aún no se ha completado.
+El estado de la recomendación de SEO indica cuándo se crea la tarea pero aún no se ha completado.
 
 ![chlimage_1-253](assets/chlimage_1-253.png)
 
-Una vez creada, la tarea aparece en la lista Tareas del usuario. Para obtener información sobre tareas, consulte [Uso de Tareas](/help/sites-authoring/task-content.md).
+Cuando se crea, la tarea aparece en la lista Tareas del usuario. Para obtener información sobre las tareas, consulte [Uso de tareas](/help/sites-authoring/task-content.md).
 
-Siga el procedimiento que aparece a continuación para crear una tarea para una recomendación de SEO.
+Utilice el siguiente procedimiento para crear una tarea para una recomendación de SEO.
 
-1. Toque o haga clic en el icono de información para la recomendación de SEO.
+1. Toque o haga clic en el icono de información de la recomendación de SEO.
 
    ![](do-not-localize/chlimage_1-23.png)
 
-1. Haga clic en el icono de triángulo dentro del círculo que aparece al lado del icono de información.
+1. Haga clic en el icono de triángulo rodeado que aparece junto al icono de información.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
-1. Rellene los campos del formulario que aparecen y, a continuación, toque Crear:
+1. Rellene los campos de formulario que aparecen y, a continuación, pulse Crear:
 
-   * Proyecto: seleccione el proyecto en el que se va a crear la tarea.
-   * Nombre: el nombre que identifica la tarea. El nombre predeterminado es el título de la recomendación de SEO.
-   * Asignar a: seleccione al usuario a quien asignará la tarea. Comience a escribir el nombre de usuario para filtrar la lista.
-   * Descripción: una descripción de la actividad necesaria para completar la tarea. La descripción predeterminada es la información que acompaña a la recomendación de SEO.
-   * Prioridad de tareas: la prioridad de la tarea.
-   * Fecha de caducidad: la fecha en la que la tarea debe terminarse.
+   * Proyecto: Seleccione el proyecto en el que desea crear la tarea.
+   * Nombre: El nombre que identifica la tarea. El nombre predeterminado es el título de la recomendación de SEO.
+   * Asignar a: Seleccione el usuario al que desea asignar la tarea. Empiece a escribir el nombre del usuario para filtrar la lista.
+   * Descripción: Descripción de la actividad necesaria para completar la tarea. La descripción predeterminada es la información que acompaña a la recomendación de SEO.
+   * Prioridad de tareas: La prioridad de la tarea.
+   * Fecha de vencimiento: La fecha en la que se debe completar la tarea.
 
-1. Toque o haga clic en Hecho para cerrar el mensaje Tarea creada.
+1. Pulse o haga clic en Listo para cerrar el mensaje Tarea creada .
 
 >[!NOTE]
 >
->La tarea que se crea también incluye la ruta a la página a la que se aplica la recomendación SEO.
+>La tarea que se crea también incluye la ruta a la página a la que se aplica la recomendación de SEO.

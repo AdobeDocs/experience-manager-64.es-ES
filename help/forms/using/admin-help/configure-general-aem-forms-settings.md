@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_je
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bd648c38-731b-420e-973d-a4728b69868e
 exl-id: 8f7e7fa4-3971-43cb-9403-a91304b46690
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1714'
-ht-degree: 1%
+source-wordcount: '1750'
+ht-degree: 2%
 
 ---
 
 # Configuración general de AEM Forms {#general-aem-forms-settings}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 La página Configuraciones principales de la consola de administración proporciona una configuración que puede ayudar a mejorar el rendimiento del sistema. Después de configurar o actualizar esta configuración, reinicie el servidor de aplicaciones.
 
@@ -62,7 +66,7 @@ Si no especifica un directorio raíz GDS, el directorio toma como valor predeter
 >
 >No especifique el mismo directorio para el directorio temporal y el directorio GDS.
 
-Para obtener información adicional sobre el directorio GDS, consulte [Preparación para instalar AEM formularios (un solo servidor)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
+Para obtener información adicional sobre el directorio GDS, consulte [Preparación para instalar AEM formularios (un solo servidor)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_es).
 
 **Ubicación del directorio de fuentes del servidor de Adobe** Escriba la ruta al directorio que contiene las fuentes del servidor de Adobe. Estas fuentes se instalan con formularios AEM. La ubicación predeterminada para estas fuentes es la [raíz de aem-forms]directorio /fonts. Si no se puede acceder a este directorio, puede copiar las fuentes en otra parte y utilizar esta configuración para especificar la nueva ubicación.
 
@@ -108,10 +112,10 @@ Active esta opción en entornos de desarrollo, donde los desarrolladores utiliza
 
 **Habilitar estadística de invocación de DSC** Cuando se selecciona esta opción, AEM forms rastrea las estadísticas de invocación, como el número de invocaciones, el tiempo que se tarda en invocar y el número de errores en invocaciones. Esta información se almacena en un bean JMX para que pueda utilizar Java™ JConsole o software de terceros para ver las estadísticas. Si no desea ver estas estadísticas, anule la selección de esta opción para mejorar AEM rendimiento de los formularios.
 
-**Habilitar RDS** Al seleccionar esta opción, se habilita el servlet de Servicios de desarrollo remoto (RDS) dentro de AEM formularios. Cuando esta opción está habilitada, las herramientas del lado del cliente pueden interactuar con los servicios de datos para hacer cosas como implementar o anular la implementación de modelos para crear destinos y extremos, o para averiguar qué modelos se han implementado en extremos. De forma predeterminada, está opción no está seleccionada.
+**Habilitar RDS** Al seleccionar esta opción, se habilita el servlet de Servicios de desarrollo remoto (RDS) dentro de AEM formularios. Cuando esta opción está habilitada, las herramientas del lado del cliente pueden interactuar con los servicios de datos para hacer cosas como implementar o anular la implementación de modelos para crear destinos y extremos, o para averiguar qué modelos se han implementado en extremos. De forma predeterminada, esta opción no está seleccionada.
 
 **Permitir solicitud de RDS no segura** Cuando se selecciona esta opción, las solicitudes RDS no necesitan utilizar https. De forma predeterminada, esta opción no está seleccionada y todas las comunicaciones con los servicios de datos deben ser solicitudes https.
 
-**Permitir carga de documentos no segura desde aplicaciones de Flex:** El servlet de carga de archivos utilizado para cargar documentos desde aplicaciones de Flex® de Adobe a formularios AEM requiere que los usuarios estén autenticados y autorizados antes de poder cargar documentos. Se debe asignar al usuario la función Usuario de la aplicación de carga de documento u otra función que incluya el permiso de carga de documento. Esto ayuda a evitar que los usuarios no autorizados carguen documentos en el servidor de AEM forms. Seleccione esta opción si desea deshabilitar esta función de seguridad en un entorno de desarrollo o para la compatibilidad con versiones anteriores de AEM formularios. De forma predeterminada, está opción no está seleccionada. Para obtener más información, consulte &quot;Invocación de formularios AEM mediante AEM reasignación de formularios&quot; en Programación con formularios AEM.
+**Permitir carga de documentos no segura desde aplicaciones de Flex:** El servlet de carga de archivos utilizado para cargar documentos desde aplicaciones de Flex® de Adobe a formularios AEM requiere que los usuarios estén autenticados y autorizados antes de poder cargar documentos. Se debe asignar al usuario la función Usuario de la aplicación de carga de documento u otra función que incluya el permiso de carga de documento. Esto ayuda a evitar que los usuarios no autorizados carguen documentos en el servidor de AEM forms. Seleccione esta opción si desea deshabilitar esta función de seguridad en un entorno de desarrollo o para la compatibilidad con versiones anteriores de AEM formularios. De forma predeterminada, esta opción no está seleccionada. Para obtener más información, consulte &quot;Invocación de formularios AEM mediante AEM reasignación de formularios&quot; en Programación con formularios AEM.
 
-**Permitir carga de documentos no segura desde aplicaciones Java SDK:** Las cargas HTTP DocumentManager deben estar seguras. De forma predeterminada, las cargas HTTP requieren que los usuarios estén autenticados y autorizados antes de poder cargar documentos. Se debe asignar al usuario la función de usuario de servicios u otra función que contenga el permiso de invocación de servicio. Esto ayuda a evitar que usuarios no autorizados carguen documentos en el servidor de formularios. Seleccione esta opción si desea deshabilitar esta función de seguridad en un entorno de desarrollo, para la compatibilidad con versiones anteriores de AEM formularios o en función de la configuración del cortafuegos. De forma predeterminada, está opción no está seleccionada. Para obtener más información, consulte &quot;Invocación de AEM formularios con la API de Java&quot; en Programación con AEM formularios.
+**Permitir carga de documentos no segura desde aplicaciones Java SDK:** Las cargas HTTP DocumentManager deben estar seguras. De forma predeterminada, las cargas HTTP requieren que los usuarios estén autenticados y autorizados antes de poder cargar documentos. Se debe asignar al usuario la función de usuario de servicios u otra función que contenga el permiso de invocación de servicio. Esto ayuda a evitar que usuarios no autorizados carguen documentos en el servidor de formularios. Seleccione esta opción si desea deshabilitar esta función de seguridad en un entorno de desarrollo, para la compatibilidad con versiones anteriores de AEM formularios o en función de la configuración del cortafuegos. De forma predeterminada, esta opción no está seleccionada. Para obtener más información, consulte &quot;Invocación de AEM formularios con la API de Java&quot; en Programación con AEM formularios.

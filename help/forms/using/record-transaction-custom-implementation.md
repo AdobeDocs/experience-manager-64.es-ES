@@ -1,7 +1,7 @@
 ---
 title: Registrar una transacción para implementaciones personalizadas
 seo-title: Record a transaction for custom implementations
-description: Utilice la API TransactionRecorder para registrar acciones que no se contabilizan como transacciones automáticamente
+description: Utilice la API TransactionRecorder para registrar acciones que no se contabilizan como transacciones automáticamente.
 seo-description: Use the TransactionRecorder API to record actions which are not accounted as transactions automatically
 uuid: a22b1a0b-7553-4a17-8fb4-a3bee97b4a98
 contentOwner: khsingh
@@ -9,20 +9,24 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 0d961630-573b-4c8e-902f-996f1d1265b6
 exl-id: e97ecb77-96a0-44cf-8da9-1e85cc122011
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 0%
+source-wordcount: '252'
+ht-degree: 88%
 
 ---
 
 # Registrar una transacción para implementaciones personalizadas {#record-a-transaction-for-custom-implementations}
 
-Utilice la API TransactionRecorder para registrar acciones que no se contabilizan como transacciones automáticamente
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-Puede utilizar un código personalizado para enviar un formulario de PDF, enviar la URL de vista previa de la interfaz de usuario del agente a los usuarios finales para obtener una vista previa de una comunicación interactiva o enviar un formulario mediante métodos personalizados en lugar de utilizar los métodos de envío proporcionados con AEM Forms. Todas las acciones e implementaciones personalizadas de las API de AEM Forms mencionadas anteriormente no se contabilizan como transacciones. AEM Forms proporciona una API, [TransactionRecorder](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), para registrar acciones como transacciones.
+Utilice la API TransactionRecorder para registrar acciones que no se contabilizan como transacciones automáticamente.
 
-Para registrar una transacción, escriba el [servlet estándar de sling](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) y llame al servlet desde un cliente para registrar una transacción. Puede llamar al servlet mediante AJAX o cualquier otro método estándar.
+Puede utilizar un código personalizado para enviar un formulario PDF, enviar la URL de la vista previa de la interfaz de usuario del agente a los usuarios finales para obtener una vista previa de una comunicación interactiva, o enviar un formulario mediante métodos personalizados en lugar de utilizar los métodos de envío proporcionados con AEM Forms. Ninguna de las acciones e implementaciones personalizadas de las API de AEM Forms mencionadas anteriormente se contabiliza como una transacción. AEM Forms proporciona una API, [TransactionRecorder](https://helpx.adobe.com/es/experience-manager/6-4/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), para registrar este tipo de acciones como transacciones.
+
+Para registrar una transacción, escriba el [servlet estándar de sling](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) y llame a dicho servlet desde un cliente para registrar una transacción. Puede llamar al servlet mediante AJAX o mediante cualquier otro método estándar.
 
 ## Código de ejemplo del lado del servidor {#sample-server-sided-code}
 
@@ -74,7 +78,7 @@ private TransactionRecord extractTxRecordFromRequest(SlingHttpServletRequest req
 
 ## Ejemplo de código del lado del cliente {#sample-client-side-code}
 
-Puede utilizar el siguiente código de ejemplo para llamar al servlet que tiene la variable `TransactionRecorder`API.
+Puede utilizar el siguiente código de ejemplo para llamar al servlet que tiene la API `TransactionRecorder`.
 
 ```
 $.ajax({
@@ -93,5 +97,5 @@ $.ajax({
 ## Artículos relacionados {#related-articles}
 
 * [Información general sobre los informes de transacciones](/help/forms/using/transaction-reports-overview.md)
-* [Visualización y comprensión de informes de transacciones](/help/forms/using/viewing-and-understanding-transaction-reports.md)
+* [Ver y comprender los informes de transacciones](/help/forms/using/viewing-and-understanding-transaction-reports.md)
 * [API facturables de informes de transacciones](/help/forms/using/transaction-reports-billable-apis.md)

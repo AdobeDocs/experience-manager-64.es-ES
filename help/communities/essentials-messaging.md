@@ -1,28 +1,31 @@
 ---
-title: Esenciales de mensajería
-seo-title: Esenciales de mensajería
-description: Descripción general del componente Mensajería
-seo-description: Descripción general del componente Mensajería
+title: Elementos básicos de mensajería
+seo-title: Messaging Essentials
+description: Información general del componente Mensajería
+seo-description: Messaging component overview
 uuid: 53711f4d-6bbc-4be9-aefe-4e75a81cd67f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: eb8fd2b3-0a31-425e-b0f1-38f09e1106df
-translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+exl-id: c6ad3c2b-8776-4ec4-99da-ab73ecc61153
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '392'
-ht-degree: 3%
+source-wordcount: '423'
+ht-degree: 4%
 
 ---
 
+# Elementos básicos de mensajería {#messaging-essentials}
 
-# Messaging Essentials {#messaging-essentials}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-Esta página documentos los detalles de cómo trabajar con el componente Mensajería para incluir una función de mensajería en un sitio web.
+Esta página documenta los detalles de cómo trabajar con el componente Mensajería para incluir una función de mensajería en un sitio web.
 
-## Esenciales para el cliente {#essentials-for-client-side}
+## Elementos esenciales para el cliente {#essentials-for-client-side}
 
 **Componer mensaje**
 
@@ -30,7 +33,7 @@ Esta página documentos los detalles de cómo trabajar con el componente Mensaje
  <tbody> 
   <tr> 
    <td> <strong>resourceType</strong></td> 
-   <td><p>social/mensajería/componentes/hbs/composemess</p> </td> 
+   <td><p>social/messaging/components/hbs/composemmessage</p> </td> 
   </tr> 
   <tr> 
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientllibs</strong></a></td> 
@@ -46,16 +49,16 @@ Esta página documentos los detalles de cómo trabajar con el componente Mensaje
   </tr> 
   <tr> 
    <td><strong>propiedades</strong></td> 
-   <td>consulte <a href="configure-messaging.md">Configuración de la mensajería</a></td> 
+   <td>see <a href="configure-messaging.md">Configuración de mensajería</a></td> 
   </tr> 
   <tr> 
    <td><strong>configuración de administración</strong></td> 
-   <td><a href="messaging.md">Configuración de mensajes</a></td> 
+   <td><a href="messaging.md">Configuración de mensajería</a></td> 
   </tr> 
  </tbody> 
 </table>
 
-**Lista**  de mensajes (para Bandeja de entrada, Enviado y Papelera)
+**Lista de mensajes** (para Bandeja de entrada, Enviado y Papelera)
 
 <table> 
  <tbody> 
@@ -68,7 +71,7 @@ Esta página documentos los detalles de cómo trabajar con el componente Mensaje
    <td><p>cq.social.hbs.messaging</p> </td> 
   </tr> 
   <tr> 
-   <td> <strong>plantillas</strong></td> 
+   <td> <strong>templates</strong></td> 
    <td>/libs/social/messaging/components/hbs/messagebox/messagebox.hbs</td> 
   </tr> 
   <tr> 
@@ -77,39 +80,37 @@ Esta página documentos los detalles de cómo trabajar con el componente Mensaje
   </tr> 
   <tr> 
    <td><strong>propiedades</strong></td> 
-   <td>Consulte <a href="configure-messaging.md">Configuración de la mensajería</a></td> 
+   <td>Consulte <a href="configure-messaging.md">Configuración de mensajería</a></td> 
   </tr> 
   <tr> 
    <td><strong>configuración de administración</strong></td> 
-   <td><a href="messaging.md">Configuración de mensajes</a></td> 
+   <td><a href="messaging.md">Configuración de mensajería</a></td> 
   </tr> 
  </tbody> 
 </table>
 
 Consulte también [Personalizaciones del lado del cliente](client-customize.md)
 
-## Esenciales para servidor {#essentials-for-server-side}
+## Elementos esenciales para el servidor {#essentials-for-server-side}
 
-* [Configuración de mensajes](configure-messaging.md)
+* [Configuración de mensajería](configure-messaging.md)
 
-* [API de cliente ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) de mensajería para componentes SCF
+* [API de cliente de mensajería](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) para componentes SCF
 
-* [API de mensajería ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) para el servicio
+* [API de mensajería](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) para el servicio
 
-* [Extremos de mensajería](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
+* [Puntos finales de mensajería](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 
 * [Personalizaciones del lado del servidor](server-customize.md)
 
 >[!CAUTION]
 >
->El parámetro String *no debe *contener una barra diagonal final &quot;/&quot; para los siguientes métodos de MessageBuilder:
+>El parámetro String *no *debe contener una barra diagonal &quot;/&quot; para los siguientes métodos de MessageBuilder:
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
-
 >
->
-Por ejemplo:
+>Por ejemplo:
 >
 >
 ```
@@ -119,34 +120,34 @@ Por ejemplo:
 
 ### Sitio de la comunidad {#community-site}
 
-Una estructura de sitio de comunidad, creada con el asistente, incluirá la función de mensajería cuando se seleccione. Consulte `User Management` configuración de [Consola de sitios de la comunidad](sites-console.md#user-management).
+Una estructura de sitio de comunidad, creada con el asistente, incluirá la función de mensajería cuando se seleccione. Consulte `User Management` configuración de [Consola Sitios de la comunidad](sites-console.md#user-management).
 
-### Código de muestra: Notificación de mensaje recibido {#sample-code-message-received-notification}
+### Código de ejemplo: Notificación de mensaje recibido {#sample-code-message-received-notification}
 
-La característica Mensajería social emite eventos para operaciones, por ejemplo `send`, `marking read`, `marking delete`. Estos eventos se pueden capturar y se pueden tomar medidas sobre los datos contenidos en el evento.
+La función Mensajería social lanza eventos para operaciones, por ejemplo `send`, `marking read`, `marking delete`. Estos eventos se pueden capturar y se pueden realizar acciones con los datos contenidos en el evento.
 
-El siguiente ejemplo es de un controlador de evento que escucha el evento `message sent` y envía un correo electrónico a todos los destinatarios de mensajes mediante `Day CQ Mail Service`.
+El siguiente ejemplo es de un controlador de eventos que escucha el `message sent` y envía un correo electrónico a todos los destinatarios de mensajes utilizando la variable `Day CQ Mail Service`.
 
-Para probar la secuencia de comandos de muestra del lado del servidor, necesitará un entorno de desarrollo y la capacidad de crear un paquete OSGi.
+Para probar el script de ejemplo del lado del servidor, necesitará un entorno de desarrollo y la capacidad de crear un paquete OSGi.
 
-1. Iniciar sesión como administrador para ` [CRXDE|Lite](http://localhost:4502/crx/de)`
+1. Inicie sesión como administrador para ` [CRXDE|Lite](http://localhost:4502/crx/de)`
 1. Cree un `bundle node`en `/apps/engage/install` con nombres arbitrarios, como
 
-   * **[!UICONTROL Nombre]** simbólico: com.engagement.media.social.messaging.MessagingNotification
+   * **[!UICONTROL Nombre simbólico]**: com.comprometer.media.social.messaging.MessagingNotification
    * **[!UICONTROL Nombre]**: Notificación de mensaje de tutorial de introducción
-   * **[!UICONTROL Descripción]**: un servicio de muestra para enviar una notificación por correo electrónico a los usuarios cuando reciben un mensaje
-   * **[!UICONTROL Paquete]**:  `com.engage.media.social.messaging.notification`
+   * **[!UICONTROL Descripción]**: un servicio de ejemplo para enviar una notificación por correo electrónico a los usuarios cuando reciban un mensaje
+   * **[!UICONTROL Paquete]**: `com.engage.media.social.messaging.notification`
 
-1. Ir a `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`
+1. Navegue hasta `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`
 
-   1. Eliminar la clase `Activator.java` creada automáticamente
+   1. Elimine el `Activator.java` clase creada automáticamente
    1. Crear clase `MessageEventHandler.java`
    1. Copie/pegue el código siguiente en `MessageEventHandler.java`
 
 1. Haga clic en **[!UICONTROL Guardar todo]**
-1. Vaya a `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` y agregue todas las sentencias de importación tal como están escritas en el código `MessageEventHandler.java`.
+1. Vaya a `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` y añada todas las instrucciones de importación tal como se han escrito en la variable `MessageEventHandler.java` código.
 1. Crear el paquete
-1. Asegúrese de que el servicio `Day CQ Mail Service`OSGi esté configurado
+1. Asegúrese `Day CQ Mail Service`El servicio OSGi está configurado
 1. Inicie sesión como un usuario de demostración y envíe un correo electrónico a otro
 1. El destinatario debe recibir un correo electrónico con respecto a un nuevo mensaje
 
@@ -241,4 +242,3 @@ public class MessagingEventHandler implements EventHandler {
     }
 }
 ```
-

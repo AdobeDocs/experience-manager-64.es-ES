@@ -1,5 +1,5 @@
 ---
-title: Inicio rápido de la API de Java del servicio de cifrado (SOAP)
+title: Inicio rápido (SOAP) de la API de Java del servicio de cifrado
 seo-title: Encryption Service Java API QuickStart(SOAP)
 description: Utilice la API de Java del servicio de cifrado para cifrar un documento de PDF, eliminar el cifrado basado en contraseña, cifrar un documento de PDF con un certificado, eliminar el cifrado basado en certificado, desbloquear un documento de PDF cifrado y determinar el tipo de cifrado.
 seo-description: Use the Encryption Service Java API to encrypt a PDF document, remove password-based encryption, encrypt a PDF document with a certificate, remove certificate-based encryption, unlock an encrypted PDF document, and determine encryption type.
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: f12c10c3-1ce6-4415-ba9d-5349d1888237
 role: Developer
 exl-id: 3f287fb1-b1bb-4494-ad66-5addcc6ef2a8
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 0%
+source-wordcount: '517'
+ht-degree: 2%
 
 ---
 
 # Inicio rápido de la API de Java del servicio de cifrado (SOAP) {#encryption-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 [Inicio rápido (modo SOAP): Codificación de un documento de PDF mediante la API de Java](encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 

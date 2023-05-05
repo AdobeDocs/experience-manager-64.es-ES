@@ -1,5 +1,5 @@
 ---
-title: XMP Utilities Service Java APIQuick Start (SOAP)
+title: Inicio rápido (SOAP) de la API de Java del servicio Utilidades XMP
 seo-title: XMP Utilities Service Java APIQuick Start(SOAP)
 description: Utilice el servicio XMP Utilidades para exportar e importar XMP metadatos.
 seo-description: Use the XMP Utilities service to export and import XMP metadata.
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: 1b229ddf-9350-40b6-8056-dcbe0c5afd5b
 role: Developer
 exl-id: fdbf9942-7e4d-4b76-971f-d26d89c4c4cf
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '233'
-ht-degree: 0%
+source-wordcount: '269'
+ht-degree: 5%
 
 ---
 
 # Inicio rápido de la API de Java del servicio de utilidades de XMP (SOAP) {#xmp-utilities-service-java-apiquick-start-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Los siguientes Inicio rápido están disponibles para el servicio XMP Utilidades.
 

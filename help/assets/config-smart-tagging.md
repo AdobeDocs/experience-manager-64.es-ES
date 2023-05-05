@@ -5,14 +5,18 @@ contentOwner: AG
 feature: Smart Tags,Tagging
 role: Admin
 exl-id: 11c5dd92-f824-41d2-9ab2-b32bdeae01b6
-source-git-commit: bd65633e85226659df99da1d3834fa18a89de11e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1340'
 ht-degree: 32%
 
 ---
 
 # Configuración del etiquetado de recursos mediante el servicio de contenido inteligente {#configure-asset-tagging-using-the-smart-content-service}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede integrar [!DNL Adobe Experience Manager] con el servicio de contenido inteligente mediante [!DNL Adobe Developer Console]. Utilice esta configuración para acceder al servicio de contenido inteligente desde [!DNL Experience Manager].
 
@@ -147,7 +151,7 @@ Para configurar la integración, utilice los valores de [!UICONTROL ID DE CUENTA
    | [!UICONTROL Clave de API] | [!UICONTROL ID DE CLIENTE] |
    | [!UICONTROL Id. de cuenta técnica] | [!UICONTROL ID DE CUENTA TÉCNICA] |
    | [!UICONTROL Id. de organización] | [!UICONTROL ID. DE ORGANIZACIÓN] |
-   | [!UICONTROL Secreto del cliente] | [!UICONTROL SECRETO DEL CLIENTE] |
+   | [!UICONTROL Secreto de cliente] | [!UICONTROL SECRETO DEL CLIENTE] |
 
 ## Validación de la configuración {#validate-the-configuration}
 

@@ -1,5 +1,5 @@
 ---
-title: Recuperación de los datos de los formularios AEM
+title: Recuperación de los datos de AEM Forms
 seo-title: Recovering the AEM forms data
 description: En este documento se describen los pasos necesarios para recuperar los datos de los formularios AEM.
 seo-description: This document describes the steps required to recover the AEM forms data.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 exl-id: 8469b063-ea22-4706-ad02-1477d5f9d6c5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1157'
-ht-degree: 0%
+source-wordcount: '1193'
+ht-degree: 1%
 
 ---
 
-# Recuperación de los datos de los formularios AEM {#recovering-the-aem-forms-data}
+# Recuperación de los datos de AEM Forms {#recovering-the-aem-forms-data}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 En esta sección se describen los pasos necesarios para recuperar los datos de los formularios AEM. Consulte también [Consideraciones especiales para backup y recuperación](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md#special-considerations-for-backup-and-recovery).
 
@@ -92,7 +96,7 @@ Si falla un solo nodo de un clúster de nodos múltiples y los nodos restantes d
    **Agrupado:** Durante el proceso de recuperación, restaure todos los directorios de los que se hizo backup. Para restaurar el directorio raíz del índice, realice los siguientes pasos en cada nodo del clúster:
 
    * Elimine todo el contenido del directorio raíz del índice.
-   * Si el directorio /backup-lucene-indexes está presente, copie el contenido del *Directorio raíz del almacenamiento de contenido*/backup-lucene-indexes directorio en el directorio raíz del índice y elimine el *Directorio raíz del almacenamiento de contenido*/backup-lucene-indexes.
+   * Si el directorio /backup-lucene-indexes está presente, copie el contenido del *Directorio raíz del almacenamiento de contenido*/backup-lucene-indexes directorio en el directorio raíz del índice y elimine el directorio *Directorio raíz del almacenamiento de contenido*/backup-lucene-indexes.
    * Si el directorio /lucene-indexes está presente, copie el contenido de *Directorio raíz del almacenamiento de contenido*/lucene-indexes directorio raíz del índice.
 
 1. Restaure/recupere el repositorio CRX.

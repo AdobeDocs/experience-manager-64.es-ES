@@ -8,14 +8,18 @@ content-type: reference
 feature: Workflow,Asset Management,Renditions
 role: User,Admin
 exl-id: 78d76b4f-a46c-4ffc-b772-ed925eb8e34c
-source-git-commit: a778c3bbd0e15bb7b6de2d673b4553a7bd146143
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1374'
-ht-degree: 2%
+source-wordcount: '1410'
+ht-degree: 3%
 
 ---
 
 # Acerca de los perfiles para procesar metadatos, imágenes y vídeos {#profiles-for-processing-metadata-images-and-videos}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Un perfil es una fórmula para las opciones que se aplican a los recursos que se cargan en una carpeta. Por ejemplo, puede especificar qué perfil de metadatos y perfil de codificación de vídeo se aplicarán a los recursos de vídeo que cargue. O bien, qué perfil de imagen aplicar a los recursos de imagen para recortarlos correctamente.
 
@@ -29,7 +33,7 @@ Debe tener derechos de administrador para crear, editar y eliminar metadatos, im
 
 Después de crear los metadatos, la imagen o el perfil de vídeo, los asigna a una o varias carpetas que utiliza como destino para los recursos recién cargados.
 
-Un concepto importante con respecto al uso de perfiles en [!DNL Experience Manager] Assets es que se asignan a carpetas. Dentro de un perfil hay configuraciones en forma de perfiles de metadatos, junto con perfiles de vídeo o perfiles de imagen. Esta configuración procesa el contenido de una carpeta junto con cualquiera de sus subcarpetas. Por lo tanto, la forma de asignar nombres a archivos y carpetas, organizar subcarpetas y administrar los archivos de estas carpetas tiene un impacto significativo en la forma en que un perfil procesa esos recursos. Si utiliza estrategias de nomenclatura de archivos y carpetas coherentes y adecuadas, junto con prácticas recomendadas en materia de metadatos, puede sacar el máximo partido de la recopilación de recursos digitales y asegurarse de que el perfil correcto procesa los archivos adecuados. Para ver un ejemplo, consulte [organización de recursos mediante carpetas](organize-assets.md#organize-using-folders).
+Un concepto importante sobre el uso de perfiles en [!DNL Experience Manager] Assets es que se asignan a carpetas. Dentro de un perfil hay configuraciones en forma de perfiles de metadatos, junto con perfiles de vídeo o perfiles de imagen. Esta configuración procesa el contenido de una carpeta junto con cualquiera de sus subcarpetas. Por lo tanto, la forma de asignar nombres a archivos y carpetas, organizar subcarpetas y administrar los archivos de estas carpetas tiene un impacto significativo en la forma en que un perfil procesa esos recursos. Si utiliza estrategias de nomenclatura de archivos y carpetas coherentes y adecuadas, junto con prácticas recomendadas en materia de metadatos, puede sacar el máximo partido de la recopilación de recursos digitales y asegurarse de que el perfil correcto procesa los archivos adecuados. Para ver un ejemplo, consulte [organizar recursos mediante carpetas](organize-assets.md#organize-using-folders).
 
 >[!NOTE]
 >
@@ -41,15 +45,15 @@ Un concepto importante con respecto al uso de perfiles en [!DNL Experience Manag
 
 >[!NOTE]
 >
->Se aplica a *Dynamic Media - Scene7 mode* solo en [!DNL Experience Manager] 6.4.7.0 o posterior.
+>Se aplica a *Dynamic Media: modo Scene7* solo en [!DNL Experience Manager] 6.4.7.0 o posterior.
 
 Puede volver a procesar los recursos en una carpeta que ya tenga un perfil de procesamiento existente que haya cambiado posteriormente.
 
-Por ejemplo, supongamos que ha creado un perfil de imagen y lo ha asignado a una carpeta. Los recursos de imagen que haya cargado en la carpeta de forma automática tenían el perfil de imagen aplicado a los recursos. Sin embargo, más adelante decidirá agregar una nueva proporción de recorte inteligente al perfil. Ahora, en lugar de tener que seleccionar y volver a cargar los recursos en la carpeta de nuevo, simplemente ejecute el *Scene7: Volver a procesar el flujo de trabajo de Assets*.
+Por ejemplo, supongamos que ha creado un perfil de imagen y lo ha asignado a una carpeta. Los recursos de imagen que haya cargado en la carpeta de forma automática tenían el perfil de imagen aplicado a los recursos. Sin embargo, más adelante decidirá agregar una nueva proporción de recorte inteligente al perfil. Ahora, en lugar de tener que seleccionar y volver a cargar los recursos en la carpeta de nuevo, simplemente ejecute el *Scene7: Volver a procesar recursos* flujo de trabajo.
 
 Puede ejecutar el flujo de trabajo de reprocesamiento en un recurso cuyo procesamiento haya fallado por primera vez. Por lo tanto, aunque no haya editado un perfil de procesamiento ni aplicado un perfil de procesamiento, puede ejecutar el flujo de trabajo de reprocesamiento en una carpeta de recursos en cualquier momento.
 
-Si lo desea, puede ajustar el tamaño del lote del flujo de trabajo de reprocesamiento de un valor predeterminado de 50 recursos hasta 1000. Al ejecutar el _Scene7: Reprocesar el flujo de trabajo de Assets_ en una carpeta, los recursos se agrupan en lotes y se envían al servidor de Dynamic Media para su procesamiento. Después del procesamiento, los metadatos de cada recurso en todo el conjunto de lotes se actualizan en AEM. Si el tamaño del lote es muy grande, puede experimentar un retraso en el procesamiento. O, si el tamaño del lote es demasiado pequeño, puede causar demasiados viajes de ida y vuelta al servidor de Dynamic Media.
+Si lo desea, puede ajustar el tamaño del lote del flujo de trabajo de reprocesamiento de un valor predeterminado de 50 recursos hasta 1000. Al ejecutar el _Scene7: Volver a procesar recursos_ en una carpeta, los recursos se agrupan en lotes y se envían al servidor de Dynamic Media para su procesamiento. Después del procesamiento, los metadatos de cada recurso en todo el conjunto de lotes se actualizan en AEM. Si el tamaño del lote es muy grande, puede experimentar un retraso en el procesamiento. O, si el tamaño del lote es demasiado pequeño, puede causar demasiados viajes de ida y vuelta al servidor de Dynamic Media.
 
 Consulte [Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento](#adjusting-load).
 
@@ -61,7 +65,7 @@ Consulte [Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento](#
 
 **Para volver a procesar los recursos en una carpeta**:
 
-1. En AEM, en la página Recursos, vaya a una carpeta de recursos que tenga un perfil de procesamiento asignado y para la que desee aplicar el **Scene7: Volver a procesar el flujo de trabajo de Asset**,
+1. En AEM, en la página Recursos, vaya a una carpeta de recursos que tenga un perfil de procesamiento asignado y para la que desee aplicar la variable **Scene7: Volver a procesar el recurso** flujo de trabajo,
 
    Las carpetas que ya tienen un perfil de procesamiento asignado se indican mostrando el nombre del perfil directamente debajo del nombre de la carpeta en la vista de tarjeta.
 
@@ -72,50 +76,50 @@ Consulte [Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento](#
    * Como práctica recomendada, debe evitar ejecutar este flujo de trabajo en una jerarquía de carpetas que tenga más de 1000 activos.
 
 1. Cerca de la esquina superior izquierda de la página, en la lista desplegable, haga clic en **[!UICONTROL Cronología]**.
-1. Cerca de la esquina inferior izquierda de la página, a la derecha del campo Comentario , haga clic en el icono del carro ( **^** ) .
+1. Cerca de la esquina inferior izquierda de la página, a la derecha del campo Comentario , haga clic en el icono del carro ( **^** ).
 
    ![Flujo de trabajo de reprocesamiento de recursos 1](/help/assets/assets/reprocess-assets1.png)
 
 1. Haga clic en **[!UICONTROL Iniciar flujo de trabajo]**.
-1. En la lista desplegable **[!UICONTROL Iniciar flujo de trabajo]**, elija **[!UICONTROL Scene7: Volver a procesar los recursos]**.
-1. (Opcional) En el campo de texto **Enter title of workflow** introduzca un nombre para el flujo de trabajo. Puede utilizar el nombre para hacer referencia a la instancia de flujo de trabajo, si es necesario.
+1. En el **[!UICONTROL Iniciar flujo de trabajo]** lista desplegable, elija **[!UICONTROL Scene7: Volver a procesar recursos]**.
+1. (Opcional) En la **Introduzca el título del flujo de trabajo** , introduzca un nombre para el flujo de trabajo. Puede utilizar el nombre para hacer referencia a la instancia de flujo de trabajo, si es necesario.
 
    ![Volver a procesar los recursos 2](/help/assets/assets/reprocess-assets2.png)
 
-1. Haga clic en **[!UICONTROL Start]** y, a continuación, haga clic en **[!UICONTROL Confirm]**.
+1. Haga clic en **[!UICONTROL Inicio]** y haga clic en **[!UICONTROL Confirmar]**.
 
-   Para monitorizar el flujo de trabajo o comprobar su progreso, en la página de la consola principal [!DNL Experience Manager], haga clic en **[!UICONTROL Tools > Workflow]**. En la página Instancias de flujo de trabajo , seleccione un flujo de trabajo. En la barra de menús, haga clic en **[!UICONTROL Abrir historial]**. También puede finalizar, suspender o cambiar el nombre de un flujo de trabajo seleccionado desde la misma página Instancias de flujo de trabajo .
+   Para monitorizar el flujo de trabajo o comprobar su progreso, desde el [!DNL Experience Manager] página de la consola principal, haga clic en **[!UICONTROL Herramientas > Flujo de trabajo]**. En la página Instancias de flujo de trabajo , seleccione un flujo de trabajo. En la barra de menús, haga clic en **[!UICONTROL Abrir historial]**. También puede finalizar, suspender o cambiar el nombre de un flujo de trabajo seleccionado desde la misma página Instancias de flujo de trabajo .
 
 ### Ajuste del tamaño del lote del flujo de trabajo de reprocesamiento {#adjusting-load}
 
-(Opcional) El tamaño predeterminado del lote en el flujo de trabajo de reprocesamiento es de 50 activos por trabajo. Este tamaño óptimo de lote se rige por el tamaño medio del recurso y los tipos de MIME en los que se ejecuta el reprocesamiento. Un valor superior significa que tendrá muchos archivos en un solo trabajo de reprocesamiento. Por lo tanto, el banner de procesamiento permanece en activos [!DNL Experience Manager] durante más tiempo. Sin embargo, si el tamaño promedio del archivo es pequeño-1 MB o menor de Adobe, se recomienda aumentar el valor a varios cientos, pero nunca más de 1000. Si el tamaño promedio del archivo es de cientos de megabytes-Adobe, se recomienda reducir el tamaño del lote hasta 10.
+(Opcional) El tamaño predeterminado del lote en el flujo de trabajo de reprocesamiento es de 50 activos por trabajo. Este tamaño óptimo de lote se rige por el tamaño medio del recurso y los tipos de MIME en los que se ejecuta el reprocesamiento. Un valor superior significa que tendrá muchos archivos en un solo trabajo de reprocesamiento. Por lo tanto, el banner de procesamiento permanece activado [!DNL Experience Manager] activos durante un tiempo más largo. Sin embargo, si el tamaño promedio del archivo es pequeño-1 MB o menor de Adobe, se recomienda aumentar el valor a varios cientos, pero nunca más de 1000. Si el tamaño promedio del archivo es de cientos de megabytes-Adobe, se recomienda reducir el tamaño del lote hasta 10.
 
 **Para ajustar opcionalmente el tamaño del lote del flujo de trabajo de reprocesamiento**
 
 1. En Experience Manager, pulse **[!UICONTROL Adobe Experience Manager]** para acceder a la consola de navegación global y, a continuación, pulse el icono **[!UICONTROL Herramientas]** (martillo) > **[!UICONTROL Flujo de trabajo > Modelos]**.
-1. En la página Modelos de flujo de trabajo , en Vista de tarjeta o Vista de lista, seleccione **[!UICONTROL Scene7: Volver a procesar los recursos]**.
+1. En la página Modelos de flujo de trabajo , en Vista de tarjeta o Vista de lista, seleccione **[!UICONTROL Scene7: Volver a procesar recursos]**.
 
    ![Página Modelos de flujo de trabajo con Scene7: Flujo de trabajo de reprocesamiento de recursos seleccionado en Vista de tarjeta](/help/assets/assets-dm/reprocess-assets7.png)
 
 1. En la barra de herramientas, haga clic en **[!UICONTROL Editar]**. Una nueva pestaña del explorador abre Scene7: Volver a procesar la página del modelo de flujo de trabajo de Assets.
-1. En Scene7: Vuelva a procesar la página de flujo de trabajo de Assets, cerca de la esquina superior derecha, pulse **[!UICONTROL Editar]** para &quot;desbloquear&quot; el flujo de trabajo.
+1. En Scene7: página de flujo de trabajo Reprocesar recursos , cerca de la esquina superior derecha, pulse **[!UICONTROL Editar]** para &quot;desbloquear&quot; el flujo de trabajo.
 1. En el flujo de trabajo, seleccione el componente Carga por lotes de Scene7 para abrir la barra de herramientas y, a continuación, pulse **[!UICONTROL Configurar]** en la barra de herramientas.
 
    ![Componente Carga por lotes de Scene7](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. En el cuadro de diálogo **[!UICONTROL Carga por lotes a propiedades de los pasos de Scene7]**, configure lo siguiente:
-   * En los campos de texto **[!UICONTROL Title]** y **[!UICONTROL Description]**, introduzca un nuevo título y una descripción para el trabajo, si lo desea.
-   * Seleccione **[!UICONTROL Avance del controlador]** si el controlador va a avanzar al siguiente paso.
-   * En el campo **[!UICONTROL Timeout]**, introduzca el tiempo de espera del proceso externo (segundos).
-   * En el campo **[!UICONTROL Period]**, introduzca un intervalo de sondeo (segundos) para probar la finalización del proceso externo.
-   * En el **[!UICONTROL Batch field]**, introduzca el número máximo de activos (50-1000) que se procesarán en un trabajo de carga por lotes del servidor de Dynamic Media.
-   * Seleccione **[!UICONTROL Avanzar en el tiempo de espera]** si desea avanzar cuando se alcance el tiempo de espera. Anule la selección si desea continuar con la bandeja de entrada cuando se alcance el tiempo de espera.
+1. En el **[!UICONTROL Carga por lotes a las propiedades de los pasos de Scene7]** , configure lo siguiente:
+   * En el **[!UICONTROL Título]** y **[!UICONTROL Descripción]** , introduzca un nuevo título y una descripción para el trabajo, si lo desea.
+   * Select **[!UICONTROL Avance del controlador]** si el controlador avanza al siguiente paso.
+   * En el **[!UICONTROL Tiempo de espera]** , introduzca el tiempo de espera del proceso externo (segundos).
+   * En el **[!UICONTROL Periodo]** , introduzca un intervalo de sondeo (segundos) para probar la finalización del proceso externo.
+   * En el **[!UICONTROL Campo por lotes]**, introduzca el número máximo de recursos (50-1000) que se procesarán en un trabajo de carga por lotes del servidor de Dynamic Media.
+   * Select **[!UICONTROL Avanzar en tiempo de espera]** si desea avanzar cuando se alcance el tiempo de espera. Anule la selección si desea continuar con la bandeja de entrada cuando se alcance el tiempo de espera.
 
    ![Cuadro de diálogo Propiedades](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. En la esquina superior derecha del cuadro de diálogo **[!UICONTROL Carga por lotes a propiedades de los pasos de Scene7]**, pulse **[!UICONTROL Listo]**.
+1. En la esquina superior derecha de la variable **[!UICONTROL Carga por lotes a las propiedades de los pasos de Scene7]** cuadro de diálogo, toque **[!UICONTROL Listo]**.
 
-1. En la esquina superior derecha de Scene7: Vuelva a procesar la página del modelo de flujo de trabajo de Assets, pulse **[!UICONTROL Sincronizar]**. Cuando ve **[!UICONTROL Sincronizado]**, el modelo de tiempo de ejecución del flujo de trabajo se sincroniza correctamente y está listo para volver a procesar los recursos en una carpeta.
+1. En la esquina superior derecha de Scene7: Volver a procesar la página del modelo de flujo de trabajo de Assets, pulse **[!UICONTROL Sincronización]**. Cuando vea **[!UICONTROL Sincronizado]**, el modelo de tiempo de ejecución del flujo de trabajo se sincroniza correctamente y está listo para volver a procesar el recurso en una carpeta.
 
    ![Sincronización del modelo de flujo de trabajo](/help/assets/assets-dm/reprocess-assets1.png)
 

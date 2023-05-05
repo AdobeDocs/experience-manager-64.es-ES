@@ -1,5 +1,5 @@
 ---
-title: Configuración de calendarios comerciales
+title: Configurar calendarios comerciales
 seo-title: Configuring Business Calendars
 description: Los calendarios comerciales definen los días laborables y no laborables de su organización. Obtenga información sobre cómo configurar los calendarios empresariales.
 seo-description: Business calendars define business and non-business days for your organization. Learn how to configure the business calendars.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 exl-id: d29e1b1e-62df-4b0d-aa64-ad98568cf4a6
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1914'
-ht-degree: 0%
+source-wordcount: '1950'
+ht-degree: 1%
 
 ---
 
-# Configuración de calendarios comerciales {#configuring-business-calendars}
+# Configurar calendarios comerciales {#configuring-business-calendars}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 *Calendarios empresariales* defina los días laborables y no laborables (por ejemplo, días festivos legales, fines de semana y días de cierre de la empresa) para su organización. Al utilizar calendarios empresariales, AEM formularios omite los días no laborables al realizar determinados cálculos de fechas. En Workbench, puede especificar si desea usar calendarios empresariales para eventos asociados al usuario, como recordatorios de tareas, plazos y escalaciones, o para acciones que no están asociadas con usuarios, como Eventos de temporizador y el servicio de espera.
 

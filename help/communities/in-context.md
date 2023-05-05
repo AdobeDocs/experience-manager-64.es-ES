@@ -1,8 +1,8 @@
 ---
 title: Moderación en contexto
-seo-title: Moderación en contexto
+seo-title: In-Context Moderation
 description: Cómo realizar acciones de moderador
-seo-description: Cómo realizar acciones de moderador
+seo-description: How to perform moderator actions
 uuid: 282a8bea-2822-4e5c-b9f4-4d9a5380d895
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,18 +11,22 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: a7678273-81f6-4089-ac73-2458d940e374
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '796'
-ht-degree: 1%
+source-wordcount: '825'
+ht-degree: 2%
 
 ---
 
 # Moderación en contexto {#in-context-moderation}
 
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
 Para AEM Communities, la moderación puede ser realizada por administradores y miembros de la comunidad de confianza directamente en la página publicada donde se publicó el contenido de la comunidad.
 
-Al utilizar una [consola de moderación](moderation.md), la información mostrada para el contenido incluye un enlace a la página publicada para permitir el acceso a acciones de moderación adicionales disponibles al moderar en contexto.
+Al usar un [consola de moderación](moderation.md), la información mostrada para el contenido incluye un vínculo a la página publicada para permitir el acceso a acciones de moderación adicionales disponibles al moderar en contexto.
 
 ## Acciones de moderación {#moderation-actions}
 
@@ -40,11 +44,11 @@ La IU presentada al moderador de la instancia de publicación está incluida en 
 
 ## Ejemplo {#example}
 
-Con el sitio [Participación de Geometrixx](http://localhost:4503/content/sites/engage/en.html) creado al [Introducción a AEM Communities](getting-started.md), es posible configurar rápidamente un subproceso en un foro en el que experimentar varias actividades de moderación en el entorno de publicación, como se ve a continuación.
+Al usar la variable [Participación de Geometrixx](http://localhost:4503/content/sites/engage/en.html) el sitio creado [Introducción a AEM Communities](getting-started.md), es posible configurar rápidamente un subproceso en un foro en el que experimentar varias actividades de moderación en el entorno de publicación, como se ve a continuación.
 
 Aaron McDonald (aaron.mcdonald@mailinator.com) fue identificado como un miembro de la comunidad de confianza al agregarlo al grupo de moderadores que interactúan con la comunidad al crear el sitio.
 
-Rebekah Larsen (rebekah.larsen@trashymail.com) se puede añadir como miembro del grupo de miembros que participan en la comunidad mediante la [consola Miembros](members.md).
+Rebekah Larsen (rebekah.larsen@trashymail.com) puede añadirse como miembro del grupo de miembros que participan en la comunidad utilizando el [Consola Miembros](members.md).
 
 Para obtener más información sobre los grupos de usuarios de la comunidad, visite [Administración de usuarios y grupos de usuarios](users.md).
 
@@ -96,9 +100,9 @@ Un visitante anónimo del sitio solo puede ver el foro, pero no puede publicar c
 
 ### Nuevo miembro (#4) {#new-member}
 
-En el autor, inicie sesión como administrador y añada Boyd Larsen (boyd.larsen@dodgit.com) como nuevo miembro del grupo de miembros de la comunidad utilizando la [consola de miembros](members.md) y, a continuación, cierre la sesión.
+En el autor, inicie sesión como administrador y añada Boyd Larsen (boyd.larsen@dodgit.com) como nuevo miembro del grupo de miembros de la comunidad utilizando la variable [Consola Miembros](members.md)y, a continuación, cierre la sesión.
 
-En la publicación, inicie sesión como Boyd Larsen y acceda al subproceso seleccionando `Forum` y luego `Read more` para la publicación de colibrí.
+En la publicación, inicie sesión como Boyd Larsen y acceda al subproceso seleccionando `Forum`y luego `Read more` para el post de hummingbird.
 
 Aviso
 
@@ -123,7 +127,7 @@ Aviso
 
 ![community-admin-forum](assets/communityadmin-forum.png)
 
-Seleccione el elemento de menú Administración para acceder a la [consola de moderación](moderation.md) desde el entorno de publicación.
+Seleccione el elemento de menú Administración para acceder al [consola de moderación](moderation.md) del entorno de publicación.
 
 Tenga en cuenta que, para un administrador, todo el contenido moderable es visible, no solo el contenido del sitio de la comunidad de Geometrixx Engage.
 
@@ -146,7 +150,7 @@ Aviso
 
 ![Chlimage_1-2](assets/chlimage_1-2.png)
 
-Seleccione el elemento de menú Administración para acceder a la [consola de moderación](moderation.md) desde el entorno de publicación.
+Seleccione el elemento de menú Administración para acceder al [consola de moderación](moderation.md) del entorno de publicación.
 
 Tenga en cuenta que, para un moderador de la comunidad, solo está visible el contenido moderable del sitio de la comunidad de Geometrixx Engage.
 

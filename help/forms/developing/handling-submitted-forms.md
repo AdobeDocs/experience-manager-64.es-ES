@@ -1,5 +1,5 @@
 ---
-title: Gestión de Forms enviado
+title: Administrar formularios enviados
 seo-title: Handling Submitted Forms
 description: Utilice el servicio Forms para recuperar los datos enviados introducidos en un formulario interactivo. El usuario puede enviar los datos del formulario en los formatos XML, PDF y URL UTF-16.
 seo-description: Use the Forms service to retrieve the submitted data entered in an interactive form. The user can submit the form data in XML, PDF, and URL UTF-16 formats.
@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 role: Developer
 exl-id: 9d32c815-b66e-459e-bf36-c0d2e1ed707a
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2890'
-ht-degree: 0%
+source-wordcount: '2926'
+ht-degree: 1%
 
 ---
 
-# Gestión de Forms enviado {#handling-submitted-forms}
+# Administrar formularios enviados {#handling-submitted-forms}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Las aplicaciones basadas en la Web que permiten a un usuario rellenar formularios interactivos requieren que los datos se envíen de nuevo al servidor. Con el servicio Forms, puede recuperar los datos introducidos por el usuario en un formulario interactivo. Después de recuperar los datos, puede procesarlos para satisfacer los requisitos empresariales. Por ejemplo, puede almacenar los datos en una base de datos, enviarlos a otra aplicación, enviarlos a otro servicio, combinar los datos en un diseño de formulario, mostrar los datos en un explorador Web, etc.
 
@@ -34,7 +38,7 @@ En la tabla siguiente se explican los pasos del diagrama.
 <table>
  <thead>
   <tr>
-   <th><p>Etapa</p></th>
+   <th><p>Paso</p></th>
    <th><p>Descripción</p></th>
   </tr>
  </thead>
@@ -81,7 +85,7 @@ En la tabla siguiente se describen los pasos de este diagrama.
 <table>
  <thead>
   <tr>
-   <th><p>Etapa</p></th>
+   <th><p>Paso</p></th>
    <th><p>Descripción</p></th>
   </tr>
  </thead>
@@ -179,7 +183,7 @@ Después de determinar si un formulario contiene archivos adjuntos, puede proces
 
 Según el tipo de contenido de los datos enviados, puede extraer valores de campo de formulario individuales de los datos XML enviados o guardar los datos de PDF enviados como archivo de PDF (o enviarlos a otro servicio). Para extraer campos de formulario individuales, convierta los datos XML enviados a un origen de datos XML y, a continuación, recupere los valores de orígenes de datos XML utilizando `org.w3c.dom` clases .
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -252,7 +256,7 @@ Gestione un formulario enviado mediante la API de Forms (Java):
       * Rellene el archivo del PDF invocando la variable `com.adobe.idp.Document` del objeto `copyToFile` y pasando el `java.io.File` objeto.
 
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido (modo SOAP): Gestión de PDF forms enviados como XML mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
@@ -329,6 +333,6 @@ Gestione un formulario enviado mediante la API de Forms (servicio web):
       * Rellene el archivo del PDF invocando la variable `java.io.FileOutputStream` del objeto `write` y pasando la matriz de bytes.
 
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

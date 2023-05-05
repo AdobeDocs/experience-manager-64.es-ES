@@ -1,5 +1,5 @@
 ---
-title: Creación de formularios adaptables mediante el esquema XML
+title: Crear formularios adaptables mediante el esquema XML
 seo-title: Creating adaptive forms using XML Schema
 description: Los formularios adaptables pueden utilizar el esquema XML como modelo de formulario, lo que permite aprovechar las plantillas XSD existentes para crear formularios adaptables. Puede arrastrar y soltar elementos de esquema de XSD en el formulario adaptable.
 seo-description: Adaptive forms can use XML schema as form model, allowing you to leverage existing XSD templates to create adaptive forms. You can drag-and-drop schema elements from XSD onto your adaptive form.
@@ -10,20 +10,24 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
 feature: Adaptive Forms
 exl-id: 5f6d23b2-ab8b-48fd-b853-eea7d6c9d651
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1044'
-ht-degree: 64%
+source-wordcount: '1080'
+ht-degree: 91%
 
 ---
 
-# Creación de formularios adaptables mediante el esquema XML {#creating-adaptive-forms-using-xml-schema}
+# Crear formularios adaptables mediante el esquema XML {#creating-adaptive-forms-using-xml-schema}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Requisitos previos {#prerequisites}
 
-La creación de un formulario adaptable utilizando un esquema XML como modelo de formulario requiere una comprensión básica de los esquemas XML. Además, se recomienda leer el siguiente contenido antes que este artículo.
+La creación de un formulario adaptable con un esquema XML como modelo de formulario requiere una comprensión básica de los esquemas XML. Además, se recomienda leer el siguiente contenido antes que este artículo.
 
-* [Creación de un formulario adaptable](/help/forms/using/creating-adaptive-form.md)
+* [Crear un formulario adaptable](/help/forms/using/creating-adaptive-form.md)
 * [Esquema XML](https://www.w3.org/TR/xmlschema-2/)
 
 ## Uso de un esquema XML como modelo de formulario {#using-an-xml-schema-as-form-model}
@@ -36,9 +40,9 @@ Estas son las características clave del uso de un esquema XML:
 * Puede rellenar previamente el formulario utilizando XML que cumpla con el esquema asociado.
 * Al realizar el envío, los datos introducidos por el usuario se envían como XML que se ajusta al esquema asociado.
 
-Un esquema XML consta de tipos de elementos simples y complejos. Los elementos tienen atributos que agregan reglas al elemento. Cuando estos elementos y atributos se arrastran a un formulario adaptable, se asignan automáticamente al componente de formulario adaptable correspondiente.
+Un esquema XML consta de tipos de elementos simples y complejos. Los elementos tienen atributos que agregan reglas al elemento. Cuando estos elementos y atributos se arrastran a un formulario adaptable, se asignan automáticamente al componente del formulario adaptable correspondiente.
 
-Esta asignación de elementos XML con componentes de formulario adaptables es la siguiente:
+Esta asignación de elementos XML con componentes del formulario adaptable se produce de la siguiente forma:
 
 <table> 
  <tbody> 
@@ -131,13 +135,13 @@ Este es un ejemplo de esquema XML.
 
 ## Adición de propiedades especiales a campos mediante un esquema XML {#adding-special-properties-to-fields-using-xml-schema}
 
-Puede añadir los siguientes atributos a los elementos del esquema XML para añadir propiedades especiales a los campos del formulario adaptable asociado.
+Puede agregar los siguientes atributos a los elementos de esquema XML para agregar propiedades especiales a los campos del formulario adaptable asociado.
 
 <table> 
  <tbody> 
   <tr> 
    <th><strong>Propiedad de esquema</strong></th> 
-   <th><strong>Uso en forma adaptable</strong></th> 
+   <th><strong>Uso en formularios adaptables</strong></th> 
    <th><strong>Admitido en </strong></th> 
   </tr> 
   <tr> 
@@ -166,16 +170,16 @@ Puede añadir los siguientes atributos a los elementos del esquema XML para aña
 
 >[!NOTE]
 >
->Al arrastrar un elemento de esquema a un formulario adaptable, se genera un rótulo predeterminado mediante:
+>Al arrastrar un elemento de esquema a un formulario adaptable, se genera una descripción predeterminada de las siguientes formas:
 >
 >* al poner en mayúscula el primer carácter del nombre del elemento;
 >* al insertar un espacio en blanco en los límites de Camel Case.
 >
->Por ejemplo, si agrega la variable `userFirstName` elemento de esquema, el rótulo generado en el formulario adaptable es `User First Name`.
+>Por ejemplo, si agrega el elemento de esquema `userFirstName`, la descripción generada en el formulario adaptable es `User First Name`.
 
-## Límite de valores aceptables para un componente de formulario adaptable {#limit-acceptable-values-for-an-adaptive-form-component}
+## Limitar los valores aceptables para un componente de formulario adaptable {#limit-acceptable-values-for-an-adaptive-form-component}
 
-Puede añadir las siguientes restricciones a los elementos de esquema XML para limitar los valores aceptables para un componente de formulario adaptable:
+Puede agregar las siguientes restricciones a los elementos de esquema XML para limitar los valores aceptables para un componente de formulario adaptable:
 
 <table> 
  <tbody> 
@@ -281,7 +285,7 @@ Puede añadir las siguientes restricciones a los elementos de esquema XML para l
    <td><p>Especifica la secuencia de caracteres. Un componente acepta los caracteres si se ajustan al patrón especificado.</p> <p>La propiedad pattern se asigna al patrón de validación del componente de formulario adaptable correspondiente.</p> </td> 
    <td> 
     <ul> 
-     <li>Todos los componentes de formularios adaptables asignados a un esquema XSD </li> 
+     <li>Todos los componentes de formulario adaptable asignados a un esquema XSD </li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -295,11 +299,11 @@ Al hacer doble clic en un elemento del Buscador de contenido, una ventana emerge
 
 ![Campo bindref de un elemento de esquema XML](assets/dblclick.png)
 
-bindRef</code> El campo muestra la asociación entre un elemento de árbol y un elemento o atributo de un esquema.
+bindRef</code> El campo muestra la asociación entre un elemento del árbol y un elemento o atributo de un esquema.
 
 >[!NOTE]
 >
->Los atributos tienen un `@` símbolo en su `bindRef`para distinguirlos de los elementos. Por ejemplo, `/config/projectDetails/@duration`.
+>Los atributos tienen un símbolo `@` en su valor `bindRef`para distinguirlos de los elementos. Por ejemplo, `/config/projectDetails/@duration`.
 
 **¿Por qué no puedo arrastrar elementos individuales de un subformulario (estructura generada a partir de cualquier tipo complejo) para subformularios repetibles (los valores minOccours o maxOccurs son superiores a 1)?**
 
@@ -314,4 +318,4 @@ Tiene dos opciones:
 
 **¿Qué es bindRef?**
 
-A `bindRef` es la conexión entre un componente de formulario adaptable y un elemento o atributo de esquema. Determina en qué `XPath` está disponible el valor capturado de este componente o campo en el XML de salida. `bindRef` también se utiliza cuando se rellena previamente un valor de campo de un XML prerellenado (rellenado previamente).
+Un `bindRef` es la conexión entre un componente de formulario adaptable y un elemento o atributo de esquema. Determina en qué `XPath` está disponible el valor capturado de este componente o campo en el XML de salida. `bindRef` también se utiliza cuando se rellena previamente un valor de campo de un XML prerellenado (rellenado previamente).

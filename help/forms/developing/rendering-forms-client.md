@@ -1,5 +1,5 @@
 ---
-title: Representación de Forms en el cliente
+title: Procesar formularios en el cliente
 seo-title: Rendering Forms at the Client
 description: Optimice la entrega del contenido del PDF y mejore la capacidad del servicio de Forms para gestionar la carga de red mediante la función de renderización del lado del cliente de Acrobat o Adobe Reader.
 seo-description: Optimize the delivery of PDF content and improve the Forms service’s ability to handle network load by using the client-side rendering capability of Acrobat or Adobe Reader.
@@ -12,16 +12,20 @@ topic-tags: operations
 discoiquuid: 08d36e9f-cafc-478e-9781-8fc29ac6262e
 role: Developer
 exl-id: 641452e6-bf7e-4af4-a4f9-6e5627db9fca
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1684'
-ht-degree: 0%
+source-wordcount: '1720'
+ht-degree: 2%
 
 ---
 
-# Representación de Forms en el cliente {#rendering-forms-at-the-client}
+# Procesar formularios en el cliente {#rendering-forms-at-the-client}
 
-## Representación de Forms en el cliente {#rendering-forms-at-the-client-inner}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
+
+## Procesar formularios en el cliente {#rendering-forms-at-the-client-inner}
 
 Puede optimizar la entrega del contenido del PDF y mejorar la capacidad del servicio Forms para gestionar la carga de red mediante la función de renderización del lado del cliente de Acrobat o Adobe Reader. Este proceso se conoce como procesamiento de un formulario en el cliente. Para procesar un formulario en el cliente, el dispositivo cliente (normalmente un explorador web) debe utilizar Acrobat 7.0 o Adobe Reader 7.0 o posterior.
 
@@ -73,7 +77,7 @@ Para procesar un formulario en el cliente, debe asegurarse de que las opciones d
 
 El servicio Forms crea un flujo de datos de formulario que debe escribir en el explorador web del cliente. Cuando se escribe en el explorador web del cliente, el formulario lo representa Acrobat 7.0 o Adobe Reader 7.0 o posterior y es visible para el usuario.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Representar un formulario en el cliente mediante la API de Java](#render-a-form-at-the-client-using-the-java-api)
 
@@ -129,7 +133,7 @@ Representar un formulario en el cliente mediante la API de Forms (Java):
    * Cree una matriz de bytes y rellénela con la secuencia de datos del formulario invocando la variable `InputStream` del objeto `read` y pasando la matriz de bytes como argumento.
    * Invocar el `javax.servlet.ServletOutputStream` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido (modo SOAP): Representación de un formulario en el cliente mediante la API de Java](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
 
@@ -181,8 +185,8 @@ Representar un formulario en el cliente mediante la API de Forms (servicio web):
    * Cree una matriz de bytes y rellénela invocando la variable `BLOB` del objeto `getBinaryData` método. Esta tarea asigna el contenido de la variable `FormsResult` a la matriz de bytes.
    * Invocar el `javax.servlet.http.HttpServletResponse` del objeto `write` método para enviar la secuencia de datos del formulario al explorador web del cliente. Pase la matriz de bytes a la `write` método.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
-[Representación de Forms en el cliente](#rendering-forms-at-the-client)
+[Procesar formularios en el cliente](#rendering-forms-at-the-client)
 
 [Invocación de AEM Forms mediante la codificación Base64](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

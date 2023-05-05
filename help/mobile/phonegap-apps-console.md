@@ -10,14 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 7317fd2f-9756-4231-b343-ea808ea159ec
-source-git-commit: 0f4f8c2640629f751337e8611a2c8f32f21bcb6d
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2617'
-ht-degree: 0%
+source-wordcount: '2653'
+ht-degree: 1%
 
 ---
 
 # Creación y edición de aplicaciones mediante la consola Aplicaciones{#creating-and-editing-apps-using-the-apps-console}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 >[!NOTE]
 >
@@ -343,7 +347,7 @@ Añada una imagen al contenido de la aplicación.
 
 Agregue texto enriquecido al contenido de la aplicación.
 
-### Ubicaciones de almacenes de campañas {#store-locations}
+### Ubicaciones de las tiendas {#store-locations}
 
 El componente Ubicaciones de la tienda proporciona a los usuarios herramientas para encontrar puntos de venta comerciales:
 

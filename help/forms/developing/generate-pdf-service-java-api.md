@@ -1,5 +1,5 @@
 ---
-title: Inicio rápido de la API de Java del servicio de PDF (SOAP)
+title: Inicio rápido (SOAP) de la API de Java del servicio Generar PDF
 seo-title: Generate PDF Service Java API QuickStart(SOAP)
 description: Utilice el servicio Generar PDF para convertir un documento de Microsoft Word en un documento PDF, convertir el contenido del HTML en un documento PDF y convertir un documento PDF en un archivo RTF mediante la API de Java.
 seo-description: Use the Generate PDF service to convert a Microsoft Word document to a PDF document, convert HTML content to a PDF document, convert a PDF document to an RTF file using the Java API.
@@ -11,14 +11,18 @@ topic-tags: develop
 discoiquuid: a7c0c4cf-7476-41e7-8d4e-564e6a21458d
 role: Developer
 exl-id: 897be9a1-a2e7-469f-8c60-2ede787cef29
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '324'
-ht-degree: 0%
+source-wordcount: '360'
+ht-degree: 4%
 
 ---
 
 # Inicio rápido de la API de Java del servicio de PDF (SOAP) {#generate-pdf-service-java-api-quickstart-soap}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 El inicio rápido de la API de Java (SOAP) está disponible para el servicio Generar PDF.
 

@@ -1,5 +1,5 @@
 ---
-title: Especificación de las opciones de configuración XCI
+title: Especificar las opciones de configuración XCI
 seo-title: Specifying XCI configuration options
 description: Aprenda a especificar las opciones de configuración de XCI.
 seo-description: Learn how to specify XCI configuration options.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 162c9fda-f4d4-4ad5-a9ab-7554828e821c
 exl-id: 7a13b13f-3eee-4fc0-8957-bd42f43119e9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '130'
-ht-degree: 1%
+source-wordcount: '166'
+ht-degree: 10%
 
 ---
 
-# Especificación de las opciones de configuración XCI {#specifying-xci-configuration-options}
+# Especificar las opciones de configuración XCI {#specifying-xci-configuration-options}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Forms le permite especificar un archivo XCI personalizado que utilizará para la renderización. (Consulte [Configuración de ubicaciones para Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).) De forma predeterminada, Forms anula algunas de las opciones especificadas en el archivo XCI, entre las que se incluyen las siguientes:
 

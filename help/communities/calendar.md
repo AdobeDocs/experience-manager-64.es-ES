@@ -1,57 +1,60 @@
 ---
 title: Función de calendario
-seo-title: Función de calendario
-description: Proporciona información de evento de la comunidad en formato de calendario
-seo-description: Proporciona información de evento de la comunidad en formato de calendario
+seo-title: Calendar Feature
+description: Proporciona información de eventos de la comunidad en formato de calendario
+seo-description: Provides community event information in a calendar format
 uuid: 6f1f327f-bf4b-4357-b8fd-4bec74016921
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 8b8e74c5-8b65-4117-9ef0-da9d9e47191f
-translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+exl-id: f95d1471-82a1-4c37-ac5b-0eb861c823a1
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1196'
 ht-degree: 7%
 
 ---
 
+# Función de calendario {#calendar-feature}
 
-# Característica de calendario {#calendar-feature}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Introducción {#introduction}
 
-La función de calendario permite proporcionar información de evento de la comunidad en un formato de calendario a todos los visitantes del sitio o solo a los visitantes del sitio (miembros de la comunidad), mientras que solo los miembros autorizados pueden agregar eventos.
+La función de calendario permite proporcionar información de eventos de la comunidad en formato de calendario a todos los visitantes del sitio o solo a los visitantes del sitio (miembros de la comunidad), mientras que solo los miembros autorizados pueden agregar eventos.
 
 Esta sección de la documentación describe:
 
-* Añadir la función de calendario en un sitio AEM
-* Configuración de los componentes `Calendar`
+* Adición de la función de calendario a un sitio AEM
+* Ajustes de configuración para `Calendar`componentes
 
-## Añadir un calendario en una página {#adding-a-calendar-to-a-page}
+## Adición de un calendario a una página {#adding-a-calendar-to-a-page}
 
-Para agregar un componente `Calendar` a una página en modo de autor, utilice el navegador de componentes para localizar
+Para agregar un `Calendar` a una página en modo de autor, utilice el navegador de componentes para localizar
 
 * `Communities / Calendar`
 
-y arrástrelo a su lugar en una página, como una posición relativa a la función que los usuarios deben revisar.
+y arrástrela a su lugar en una página, por ejemplo, una posición relativa a la función para que los usuarios la revisen.
 
-Para obtener la información necesaria, visite [Conceptos básicos de los componentes de comunidades](basics.md).
+Para obtener la información necesaria, visite [Conceptos básicos de los componentes de Communities](basics.md).
 
-Cuando se incluyen las [bibliotecas requeridas del lado del cliente](calendar-basics-for-developers.md#essentials-for-client-side), así es como aparecerá el componente `Calendar`.
+Cuando la variable [bibliotecas requeridas del lado del cliente](calendar-basics-for-developers.md#essentials-for-client-side) se incluyen, así es como se muestra la variable `Calendar` aparecerá el componente.
 
 ![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### Configuración del calendario {#configuring-calendar}
 
-Seleccione el componente `Calendar`colocado para acceder y seleccione el icono `Configure` que abre el cuadro de diálogo de edición.
+Seleccione la colocación `Calendar`para acceder y seleccionar el componente `Configure` que abre el cuadro de diálogo de edición.
 
 ![chlimage_1-113](assets/chlimage_1-113.png) ![chlimage_1-114](assets/chlimage_1-114.png)
 
 #### Ficha Configuración {#settings-tab}
 
-En la ficha **[!UICONTROL Configuración]**, especifique si desea o no permitir que las etiquetas se apliquen a las entradas de calendario.
+En el **[!UICONTROL Configuración]** , especifique si desea permitir o no que las etiquetas se apliquen a las entradas del calendario.
 
 * **[!UICONTROL Eventos por página]**
 
@@ -59,19 +62,19 @@ En la ficha **[!UICONTROL Configuración]**, especifique si desea o no permitir 
 
 * **[!UICONTROL Moderado]**
 
-   Si se selecciona, la publicación de eventos y comentarios de calendario debe aprobarse antes de que aparezcan en un sitio de publicación. El valor predeterminado no está marcado.
+   Si se selecciona, la publicación de eventos de calendario y comentarios debe aprobarse antes de que aparezcan en un sitio de publicación. El valor predeterminado no está seleccionado.
 
 * **[!UICONTROL Cerrado]**
 
-   Si se selecciona, el calendario se cierra a nuevas entradas y comentarios de evento. El valor predeterminado no está marcado.
+   Si se selecciona, el calendario se cierra a nuevas entradas de eventos y comentarios. El valor predeterminado no está seleccionado.
 
 * **[!UICONTROL Editor de texto enriquecido]**
 
-   Si se selecciona, los eventos y comentarios del calendario pueden introducirse con marcado. El valor predeterminado está marcado.
+   Si se selecciona, los eventos de calendario y los comentarios se pueden introducir con marcado. El valor predeterminado está marcado.
 
 * **[!UICONTROL Permitir etiquetado]**
 
-   Si está activada, permita que los miembros agreguen etiquetas a los eventos que publiquen (consulte la ficha **Campo de etiqueta**). El valor predeterminado está marcado.
+   Si está activada, permita que los miembros agreguen etiquetas a los eventos que anuncien (consulte **Campo de etiqueta** ). El valor predeterminado está marcado.
 
 * **[!UICONTROL Permitir cargas de archivos]**
 
@@ -79,35 +82,35 @@ En la ficha **[!UICONTROL Configuración]**, especifique si desea o no permitir 
 
 * **[!UICONTROL Permitir seguimiento]**
 
-   Si está activada, permita que los miembros sigan los eventos publicados en el calendario. El valor predeterminado está marcado.
+   Si está activada, permita que los miembros sigan los eventos anunciados en el calendario. El valor predeterminado está marcado.
 
 * **[!UICONTROL Tamaño máximo de archivo]**
 
-   Solo es pertinente si se comprueba `Allow File Uploads`. Este campo limitará el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
+   Solo relevante si `Allow File Uploads` está activada. Este campo limita el tamaño (en bytes) de un archivo cargado. El valor predeterminado es 104857600 (10 Mb).
 
 * **[!UICONTROL Tipos de archivo permitidos]**
 
-   Solo es pertinente si se comprueba `Allow File Uploads`. Lista separada por comas de extensiones de archivo con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar los no especificados. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
+   Solo relevante si `Allow File Uploads` está activada. Lista de extensiones de archivo separados por coma con el separador &quot;punto&quot;. Por ejemplo: .jpg, .jpeg, .png, .doc, .docx, .pdf. Si se especifica algún tipo de archivo, no se permitirá cargar aquellos que no se especifiquen. El valor predeterminado no se especifica de forma que se permitan todos los tipos de archivo.
 
 * **[!UICONTROL Tamaño máximo de archivo de imagen adjunto]**
 
-   Solo es relevante si está activada la opción Permitir cargas de archivos. Número máximo de bytes que puede tener un archivo de imagen cargado. El valor predeterminado es 2097152 (2 Mb).
+   Solo es relevante si está marcada la opción Permitir cargas de archivos . Número máximo de bytes que puede tener un archivo de imagen cargado. El valor predeterminado es 2097152 (2 Mb).
 
 * **[!UICONTROL Tipos de imagen de portada permitidos]**
 
-   Lista separada por comas de extensiones de archivo de imagen con el separador &quot;punto&quot;. El valor predeterminado es `.jpg,.jpeg,.png,.gif,.bmp`.
+   Lista separada por comas de las extensiones de archivo de imagen con el separador &quot;punto&quot;. El valor predeterminado es `.jpg,.jpeg,.png,.gif,.bmp`.
 
 * **[!UICONTROL Permitir respuestas de debate]**
 
-   Si está activada, permita respuestas a los comentarios publicados en el evento del calendario. El valor predeterminado está marcado.
+   Si está marcada esta opción, permita que se respondan a los comentarios anunciados en el evento de calendario. El valor predeterminado está marcado.
 
 * **[!UICONTROL Permitir que los usuarios eliminen comentarios y eventos]**
 
-   Si está activada, permita que los miembros eliminen los comentarios y eventos de calendario que han publicado. El valor predeterminado está marcado.
+   Si está activada, permita que los miembros eliminen los comentarios y los eventos de calendario que hayan publicado. El valor predeterminado está marcado.
 
 * **[!UICONTROL Habilitar la votación]**
 
-   Si está activada, incluya la función de voto con un evento de calendario. El valor predeterminado está marcado.
+   Si está marcada esta opción, incluya la función Votación con un evento de calendario. El valor predeterminado está marcado.
 
 * **[!UICONTROL Mostrar rutas]**
 
@@ -115,108 +118,108 @@ En la ficha **[!UICONTROL Configuración]**, especifique si desea o no permitir 
 
 * **[!UICONTROL Filtro de intervalo de fechas]**
 
-   Define el número de días agregados a la fecha actual para calcular el valor &quot;A&quot; del filtro de página de lista de eventos de calendario. El número predeterminado es 30.
+   Define el número de días agregados a la fecha actual para calcular el valor &quot;Para&quot; del filtro de página de lista de eventos de calendario. El número predeterminado es 30.
 
 * **[!UICONTROL Permitir contenido destacado]**
 
-   Si se selecciona, la idea se puede identificar como [contenido destacado](featured.md). El valor predeterminado no está marcado.
+   Si se selecciona, la idea puede identificarse como [contenido destacado](featured.md). El valor predeterminado no está seleccionado.
 
-En la ficha **[!UICONTROL Moderación del usuario]**, especifique cómo se administran los temas publicados y las respuestas (contenido generado por el usuario). Para obtener más información, consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
+En el **[!UICONTROL Moderación del usuario]** especifique cómo se administran los temas publicados y las respuestas (contenido generado por el usuario). Para obtener más información, consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-#### Ficha Moderación del usuario {#user-moderation-tab}
+#### Pestaña Moderación del usuario {#user-moderation-tab}
 
 * **[!UICONTROL Denegar entradas]**
 
-   Si se selecciona, los moderadores miembros de confianza podrán denegar las publicaciones e impedir que aparezcan en el foro público. El valor predeterminado está marcado.
+   Si se selecciona, se permitirá a los moderadores miembros de confianza denegar publicaciones e impedir que la publicación aparezca en el foro público. El valor predeterminado está marcado.
 
 * **[!UICONTROL Cerrar/abrir de nuevo los eventos]**
 
-   Si se selecciona, los moderadores de miembros de confianza pueden cerrar un evento para realizar más ediciones y comentarios, y también pueden volver a abrir un evento. El valor predeterminado está marcado.
+   Si se selecciona, los moderadores miembros de confianza pueden cerrar un evento para realizar más ediciones y comentarios, y también pueden volver a abrir un evento. El valor predeterminado está marcado.
 
 * **[!UICONTROL Marcar entradas]**
 
-   Si se selecciona, permita que los miembros marquen los eventos o comentarios de otros como inapropiados. El valor predeterminado está marcado.
+   Si está activada, permita que los miembros marquen los eventos o comentarios de otros como inapropiados. El valor predeterminado está marcado.
 
 * **[!UICONTROL Lista de motivos de indicación]**
 
-   Si se selecciona, permita que los miembros elijan, desde una lista desplegable, el motivo por el que marcan un evento o comentario como inapropiado. El valor predeterminado no está marcado.
+   Si está marcada esta opción, permita que los miembros elijan, desde una lista desplegable, el motivo por el que marcan un evento o comentario como inapropiado. El valor predeterminado no está seleccionado.
 
 * **[!UICONTROL Motivo de indicación personalizado]**
 
-   Si se selecciona, permita que los miembros especifiquen su propio motivo para marcar un evento o comentario como inapropiado. El valor predeterminado no está marcado.
+   Si está marcada esta opción, permita que los miembros especifiquen su propio motivo para marcar un evento o comentario como inapropiado. El valor predeterminado no está seleccionado.
 
 * **[!UICONTROL Umbral de moderación]**
 
-   Escriba el número de veces que los miembros deben marcar un evento o comentario antes de que se notifique a los moderadores. El valor predeterminado es 1 ( una vez).
+   Introduzca el número de veces que los miembros deben marcar un evento o comentario antes de notificar a los moderadores. El valor predeterminado es 1 ( una vez).
 
 * **[!UICONTROL Límite de indicación]**
 
-   Escriba el número de veces que se debe marcar un evento o comentario antes de ocultarlo en la vista pública. Si se establece en -1, el tema o comentario marcado nunca se oculta en la vista pública. De lo contrario, este número debe ser bueno o igual al umbral de moderación. El valor predeterminado es 5.
+   Introduzca el número de veces que se debe marcar un evento o comentario antes de ocultarlo de la vista pública. Si se establece en -1, el tema o comentario marcado nunca se oculta a la vista del público. De lo contrario, este número debe ser bueno o igual al umbral de moderación. El valor predeterminado es 5.
 
 #### Ficha Campo de etiqueta {#tag-field-tab}
 
-En la ficha **[!UICONTROL Campo de etiqueta]**, las etiquetas que se pueden aplicar, si se permiten en la ficha **[!UICONTROL Configuración]**, están limitadas según las Áreas de nombres elegidas.
+En el **[!UICONTROL Campo de etiqueta]** , las etiquetas que se pueden aplicar, si se permiten en la sección **[!UICONTROL Configuración]** , se limitan según los espacios de nombres seleccionados.
 
 * **[!UICONTROL Espacios de nombres permitidos]**
 
-   Relevante si `Allow Tagging` está marcado en la ficha **[!UICONTROL Configuración]**. Las etiquetas que se pueden aplicar están limitadas a las que se encuentran dentro de las categorías de Área de nombres seleccionadas. La lista de Áreas de nombres incluye &quot;Etiquetas estándar&quot; (la Área de nombres predeterminada) y &quot;Incluir todas las etiquetas&quot;. El valor predeterminado no está marcado, lo que significa que se permiten todas las Áreas de nombres.
+   Pertinente si `Allow Tagging` se marca en la sección **[!UICONTROL Configuración]** pestaña . Las etiquetas que se pueden aplicar se limitan a las que están dentro de las categorías de espacio de nombres seleccionadas. La lista de áreas de nombres incluye &quot;Etiquetas estándar&quot; (el espacio de nombres predeterminado) así como &quot;Incluir todas las etiquetas&quot;. El valor predeterminado es ninguno activado, lo que significa que se permiten todas las áreas de nombres.
 
 * **[!UICONTROL Límite de sugerencias]**
 
-   Escriba el número de etiquetas que se mostrarán como una sugerencia para el miembro que se publica en el foro. El valor predeterminado es `-1` (sin límites).
+   Introduzca el número de etiquetas que se mostrarán como una sugerencia para el usuario que publica en el foro. El valor predeterminado es `-1` (sin límites).
 
 >[!NOTE]
 >
->Visite [Administración de etiquetas](../../help/sites-administering/tags.md) para obtener información sobre cómo agregar una nueva Área de nombres de etiquetas (taxonomía).
+>Visita [Administración de etiquetas](../../help/sites-administering/tags.md) para aprender a añadir un nuevo espacio de nombres de etiqueta (taxonomía).
 
 #### Ficha Traducción {#translation-tab}
 
-En la ficha **[!UICONTROL Traducción]**, si la traducción está habilitada para el sitio de la comunidad, la traducción puede configurarse para traducir el subproceso completo (eventos y comentarios) en lugar de publicaciones específicas.
+En el **[!UICONTROL Traducción]** , si la traducción está habilitada para el sitio de la comunidad, la traducción se puede configurar para que traduzca todo el subproceso (evento y comentarios) en lugar de anuncios específicos.
 
 * **[!UICONTROL Traducir todos]**
 
    Si se selecciona, el evento y los comentarios se traducen al idioma preferido del usuario. El valor predeterminado está marcado.
 
-## Experiencia de Visitante del sitio {#site-visitor-experience}
+## Experiencia del visitante del sitio {#site-visitor-experience}
 
 En el entorno de publicación, la función de calendario mostrará un campo de búsqueda con un intervalo de fechas predeterminado y cualquier evento de calendario que se encuentre dentro de ese intervalo.
 
 Cuando se selecciona un evento de calendario, se muestran los detalles, la descripción y los comentarios del evento de calendario.
 
-Otras capacidades dependen de si el visitante del sitio es un moderador, administrador, miembro de la comunidad, miembro privilegiado o anónimo.
+Otras capacidades dependen de si el visitante del sitio es moderador, administrador, miembro de la comunidad, miembro privilegiado o anónimo.
 
 ### Moderadores y administradores {#moderators-and-administrators}
 
-Cuando el usuario que ha iniciado sesión tiene privilegios de moderador o administrador, puede realizar [tareas de moderación](moderate-ugc.md) (según lo permite la configuración del componente) en todos los eventos de calendario y comentarios publicados en un evento.
+Cuando el usuario que ha iniciado sesión tiene privilegios de moderador o administrador, puede realizar [tareas de moderación](moderate-ugc.md) (según lo permita la configuración del componente) en todos los eventos de calendario y comentarios anunciados en un evento.
 
-![chlimage_1-114](assets/chlimage_1-115.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
 ### Miembros {#members}
 
-Cuando el usuario que ha iniciado sesión es un miembro de la comunidad o [miembro con privilegios](users.md#privileged-members-group) (según la configuración), puede seleccionar `New Event` para crear y anunciar un nuevo evento de calendario.
+Cuando el usuario que ha iniciado sesión es un miembro de la comunidad o [miembro privilegiado](users.md#privileged-members-group) (según la configuración), pueden seleccionar `New Event` para crear y anunciar un nuevo evento de calendario.
 
 Concretamente, pueden
 
 * Crear un nuevo evento de calendario
-* Anunciar un comentario en un evento de calendario
-* Editar su propio evento o comentario de calendario
+* Publicar un comentario en un evento de calendario
+* Editar su propio evento de calendario o comentario
 * Eliminar su propio evento de calendario o comentario
-* Marcar los eventos o comentarios del calendario de otros
+* Marcar eventos de calendario o comentarios de otros
 
 ![chlimage_1-116](assets/chlimage_1-116.png) ![chlimage_1-117](assets/chlimage_1-117.png)
 
 ### Anónimo {#anonymous}
 
-Los visitantes del sitio que no hayan iniciado sesión sólo podrán leer los eventos del calendario publicados, traducirlos si son compatibles, pero no podrán agregar un evento o comentario ni marcar los eventos o comentarios de otros.
+Los visitantes del sitio que no hayan iniciado sesión solo podrán leer los eventos de calendario anunciados, traducirlos si son compatibles, pero no pueden agregar un evento o comentario ni marcar los eventos o comentarios de otros.
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
 ## Información adicional {#additional-information}
 
-Puede encontrar más información en la página [Calendar Essentials](calendar-basics-for-developers.md) para desarrolladores.
+Puede encontrar más información en la [Elementos básicos del calendario](calendar-basics-for-developers.md) para desarrolladores.
 
-Para obtener información sobre la moderación de eventos y comentarios de calendario, consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
+Para moderar eventos de calendario y comentarios, consulte [Moderación del contenido generado por el usuario](moderate-ugc.md).
 
-Para etiquetar eventos de calendario y comentarios, consulte [Etiquetado de contenido generado por el usuario](tag-ugc.md).
+Para etiquetar eventos de calendario y comentarios, consulte [Etiquetado del contenido generado por el usuario](tag-ugc.md).
 
-Para obtener la traducción de eventos y comentarios de calendario, consulte [Traducción de contenido generado por el usuario](translate-ugc.md).
+Para ver la traducción de los eventos y comentarios del calendario, consulte [Traducción del contenido generado por el usuario](translate-ugc.md).

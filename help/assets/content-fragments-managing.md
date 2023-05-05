@@ -1,5 +1,5 @@
 ---
-title: Administrar fragmentos de contenido
+title: Administración de los fragmentos de contenido
 seo-title: Managing Content Fragments
 description: Los fragmentos de contenido se almacenan como recursos, por lo que se administran principalmente desde la consola Recursos.
 seo-description: Content Fragments are stored as Assets, so are primarily managed from the Assets console.
@@ -12,14 +12,18 @@ discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 exl-id: b21ba7a1-6e6f-4b95-9336-b49f7e932af5
 feature: Content Fragments
 role: User
-source-git-commit: 3358f6b8b492ff2b5858867a1f48a57b06944b1e
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 63%
+source-wordcount: '1528'
+ht-degree: 62%
 
 ---
 
-# Administrar fragmentos de contenido {#managing-content-fragments}
+# Administración de los fragmentos de contenido {#managing-content-fragments}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 >[!CAUTION]
 >

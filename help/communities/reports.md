@@ -1,8 +1,8 @@
 ---
 title: Consola Informes
-seo-title: Consola Informes
+seo-title: Reports Console
 description: Obtenga información sobre cómo acceder a los informes
-seo-description: Obtenga información sobre cómo acceder a los informes
+seo-description: Learn how to access reports
 uuid: 580f5eb8-24b2-4404-90d4-81f7108d1ee6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,14 +11,18 @@ content-type: reference
 discoiquuid: 0042893e-3d2c-469e-8759-404be16e7436
 role: Admin
 exl-id: 766711ea-f3d3-49ab-8346-4e4477c261bd
-source-git-commit: 3c050c33a384d586d74bd641f7622989dc1d6b22
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 5%
+source-wordcount: '587'
+ht-degree: 6%
 
 ---
 
 # Consola Informes {#reports-console}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 ## Información general {#overview}
 
@@ -26,11 +30,11 @@ Para AEM Communities, existen varios informes a los que se puede acceder de vari
 
 En general, los diversos informes son:
 
-* [Informe de asignaciones](#assignments-report) : para una comunidad de  [habilitación](overview.md#enablement-community), proporciona una visión general del progreso de los estudiantes en sus asignaciones, incluida una puntuación asociada si se implementa el estándar SCORM
-* [Informe de vistas](#views-report) : proporciona un gráfico de las vistas de contenido por los miembros de la comunidad y los visitantes del sitio para cualquier sitio de la comunidad
-* [Informe de anuncios](#posts-report) : proporciona un gráfico de varios tipos de anuncios de los miembros de la comunidad en cualquier sitio de la comunidad
+* [Informe de asignaciones](#assignments-report) - para [comunidad de habilitación](overview.md#enablement-community), proporciona una descripción general del progreso de los estudiantes en sus asignaciones, incluida una puntuación asociada si se implementa el estándar SCORM
+* [Informe de vistas](#views-report) : proporciona un gráfico de las vistas de contenido por los miembros de la comunidad y los visitantes del sitio para cualquier sitio de la comunidad.
+* [Informe de anuncios](#posts-report) - proporciona un gráfico de varios tipos de anuncios de los miembros de la comunidad en cualquier sitio de la comunidad
 
-Cuando [Adobe Analytics está habilitado](sites-console.md#analytics), los informes incluirán la cantidad de vistas, reproducciones, comentarios y clasificaciones de cada recurso de habilitación a lo largo del tiempo
+When [Adobe Analytics está habilitado](sites-console.md#analytics), los informes incluirán el número de vistas, reproducciones, comentarios y clasificaciones de cada recurso de habilitación a lo largo del tiempo
 
 Los informes tabulares se pueden exportar en formato .csv para su procesamiento posterior.
 
@@ -52,9 +56,9 @@ Los informes tabulares se pueden exportar en formato .csv para su procesamiento 
 
 * Desde la navegación global: **[!UICONTROL Navegación > Comunidades > Recursos]**
 * Seleccionar un sitio de comunidad de habilitación existente
-   * Seleccione el icono **[!UICONTROL Report]** para generar informes que cubran todos los recursos de habilitación
+   * Select **[!UICONTROL Informe]** para generar informes que cubran todos los recursos de habilitación
    * Seleccionar una ruta de aprendizaje de habilitación
-   * Seleccione el icono **[!UICONTROL Informe]** para generar informes
+   * Select **[!UICONTROL Informe]** icono para generar informes para
       * Los recursos de habilitación incluidos
       * Los estudiantes asignados a la ruta de aprendizaje
 * Estos informes proporcionan:
@@ -65,7 +69,7 @@ Los informes tabulares se pueden exportar en formato .csv para su procesamiento 
       * Número de observaciones formuladas
       * Clasificación por estrellas
 
-Para obtener más información, consulte la [sección Informes](resources.md#report) de la consola Recursos.
+Para obtener más información, consulte [Sección Informes](resources.md#report) de la consola Recursos.
 
 ## Informe de asignaciones {#assignments-report}
 
@@ -77,16 +81,15 @@ El informe proporciona información sobre su progreso, así como cualquier comen
 
 Seleccione los criterios del informe:
 
-* ****
-SitioSeleccione un sitio de la comunidad de habilitación
+* **[!UICONTROL Sitio]**
+Seleccionar un sitio de comunidad de habilitación
 * **[!UICONTROL Usuario o grupo]**
    * Seleccionar usuario para generar un informe para un alumno
-   * Seleccionar grupo para generar un informe para un grupo de estudiantes
-El servicio de túnel accederá a los miembros y grupos de miembros desde el entorno de publicación
-* ****
-AsignaciónElija entre los recursos de habilitación asignados a los alumnos seleccionados
+   * Seleccionar grupo para generar un informe para un grupo de estudiantes El servicio de túnel accederá a los miembros y grupos de miembros desde el entorno de publicación
+* **[!UICONTROL Asignación]**
+Elija entre los recursos de habilitación asignados a los alumnos seleccionados
 
-Seleccione **[!UICONTROL Generate]** para crear el informe:
+Select **[!UICONTROL Generar]** para crear el informe:
 
 ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -98,18 +101,17 @@ La consola Vistas permite que las funciones de la comunidad generen informes sob
 
 Seleccione los criterios del informe:
 
-* ****
-SitioSeleccionar un sitio de comunidad
-* **[!UICONTROL Tipo de]**
-contenidoPuede elegir Todo el contenido o seleccionar una de las funciones presentes en el sitio
-* Lapso de tiempo
-Seleccione una de las siguientes opciones:
+* **[!UICONTROL Sitio]**
+Seleccionar un sitio de comunidad
+* **[!UICONTROL Tipo de contenido]**
+Puede elegir Todo el contenido o seleccionar una de las funciones presentes en el sitio
+* Lapso de tiempo Seleccione uno de:
    * Últimos 7 días
    * Últimos 30 días
    * Últimos 90 días
    * Año pasado
 
-Seleccione **[!UICONTROL Generate]** para crear el informe:
+Select **[!UICONTROL Generar]** para crear el informe:
 
 ![chlimage_1-160](assets/chlimage_1-160.png)
 
@@ -121,18 +123,17 @@ La consola Anuncios permite generar informes sobre el número de anuncios a las 
 
 Seleccione los criterios del informe:
 
-* ****
-SitioSeleccionar un sitio de comunidad
-* **[!UICONTROL Tipo de]**
-contenidoPuede elegir Todo el contenido o seleccionar una de las funciones presentes en el sitio
-* Lapso de tiempo
-Seleccione una de las siguientes opciones:
+* **[!UICONTROL Sitio]**
+Seleccionar un sitio de comunidad
+* **[!UICONTROL Tipo de contenido]**
+Puede elegir Todo el contenido o seleccionar una de las funciones presentes en el sitio
+* Lapso de tiempo Seleccione uno de:
    * Últimos 7 días
    * Últimos 30 días
    * Últimos 90 días
    * Año pasado
 
-Seleccione **[!UICONTROL Generate]** para crear el informe:
+Select **[!UICONTROL Generar]** para crear el informe:
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 

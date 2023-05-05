@@ -1,5 +1,5 @@
 ---
-title: Configuración de la configuración de seguridad
+title: Configurar la seguridad
 seo-title: Configuring security settings
 description: Obtenga información sobre cómo configurar los ajustes de seguridad.
 seo-description: Learn how to configure security settings.
@@ -11,14 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a89ab508-173f-4b1c-88d9-ef944af4d9ae
 feature: PDF Generator
 exl-id: a5a12344-acbd-4f77-b849-b0b9db716ac5
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1367'
-ht-degree: 0%
+source-wordcount: '1403'
+ht-degree: 1%
 
 ---
 
-# Configuración de la configuración de seguridad{#configuring-security-settings}
+# Configurar la seguridad{#configuring-security-settings}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede limitar el acceso a los documentos del PDF configurando contraseñas y restringiendo ciertas funciones, como la impresión y la edición. Cuando un documento PDF tiene características restringidas, las herramientas y los elementos de menú relacionados con esas características se ven atenuados. También puede utilizar otros métodos para crear documentos seguros, como codificar o certificar un documento. Una configuración de seguridad contiene la contraseña y las opciones específicas que se deben utilizar para determinadas conversiones de PDF.
 

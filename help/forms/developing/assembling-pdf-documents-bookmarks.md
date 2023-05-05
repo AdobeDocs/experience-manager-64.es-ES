@@ -1,5 +1,5 @@
 ---
-title: Agrupación de documentos del PDF con marcadores
+title: Agrupar documentos PDF con marcadores
 seo-title: Assembling PDF Documents with Bookmarks
 description: Utilice el servicio Assembler para modificar un documento de PDF que contenga marcadores e incluir marcadores mediante la API de Java y la API del servicio Web.
 seo-description: Use the Assembler service to modify a PDF document that does contain bookmarks to include bookmarks using the Java API and the Web Service API.
@@ -12,14 +12,18 @@ topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 role: Developer
 exl-id: 2506835b-a75b-4d15-8fd4-1292d40a2132
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '2544'
-ht-degree: 0%
+source-wordcount: '2580'
+ht-degree: 1%
 
 ---
 
-# Agrupación de documentos del PDF con marcadores {#assembling-pdf-documents-with-bookmarks}
+# Agrupar documentos PDF con marcadores {#assembling-pdf-documents-with-bookmarks}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede ensamblar un documento PDF que contenga marcadores. Por ejemplo, supongamos que tiene un documento PDF que no contiene marcadores y que desea modificarlo proporcionando marcadores. Con el servicio Assembler, puede pasarle un documento PDF que no contenga marcadores y recuperar un documento PDF que contenga marcadores.
 
@@ -164,7 +168,7 @@ Para ensamblar un documento de PDF que contenga marcadores nuevos, utilice el `i
 
 Debe extraer los resultados del objeto de asignación devuelto y guardar el documento de PDF correspondiente. (Consulte &quot;Extraer los resultados&quot; en [Configuración programática de documentos PDF](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inclusión de archivos de biblioteca Java de AEM Forms](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -236,7 +240,7 @@ Ensamble un documento de PDF con marcadores mediante la API del servicio Assembl
    * Iterar a través de la variable `java.util.Map` hasta que encuentre el resultado `com.adobe.idp.Document` objeto. (Puede utilizar el elemento de resultado del PDF especificado en el documento DDX para obtener el documento).
    * Invocar el `com.adobe.idp.Document` del objeto `copyToFile` método para extraer el documento PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Inicio rápido (modo SOAP): Agrupación de documentos del PDF con marcadores mediante la API de Java](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api)
 
@@ -324,6 +328,6 @@ Ensamble un documento de PDF con marcadores mediante la API del servicio Assembl
    * Iterar a través de la variable `Map` hasta que encuentre la clave que coincida con el nombre del documento resultante. A continuación, cree el `value` a `BLOB`.
    * Extraiga los datos binarios que representan el documento del PDF accediendo a su `BLOB` del objeto `MTOM` campo . Esto devuelve una matriz de bytes que puede escribir en un archivo PDF.
 
-**Consulte también lo siguiente**
+**Consulte también**
 
 [Invocación de AEM Forms mediante MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

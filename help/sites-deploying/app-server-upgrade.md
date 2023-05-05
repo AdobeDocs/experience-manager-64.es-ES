@@ -1,8 +1,8 @@
 ---
 title: Pasos de actualización para las instalaciones del servidor de aplicaciones
-seo-title: Pasos de actualización para las instalaciones del servidor de aplicaciones
+seo-title: Upgrade Steps for Application Server Installations
 description: Obtenga información sobre cómo actualizar instancias de AEM que se implementan mediante servidores de aplicaciones.
-seo-description: Obtenga información sobre cómo actualizar instancias de AEM que se implementan mediante servidores de aplicaciones.
+seo-description: Learn how to upgrade instances of AEM that are deployed via Application Servers.
 uuid: df3fa715-af4b-4c81-b2c5-130fbc82f395
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,22 +10,25 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: c427c8b6-eb94-45fa-908f-c3d5a337427d
 feature: Upgrading
-translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+exl-id: 1c72093e-82c8-49ad-bd3c-d61904aaab28
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 0%
+source-wordcount: '540'
+ht-degree: 1%
 
 ---
 
+# Pasos de actualización para las instalaciones del servidor de aplicaciones{#upgrade-steps-for-application-server-installations}
 
-# Pasos de actualización para instalaciones del servidor de aplicaciones{#upgrade-steps-for-application-server-installations}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 En esta sección se describe el procedimiento que debe seguirse para actualizar el AEM de las instalaciones del servidor de aplicaciones.
 
-Todos los ejemplos de este procedimiento utilizan JBoss como servidor de aplicaciones e implican que tiene una versión de trabajo de AEM ya implementado. El procedimiento está pensado para documentar las actualizaciones realizadas de **AEM versión 5.6 a 6.3**.
+Todos los ejemplos de este procedimiento utilizan JBoss como servidor de aplicaciones e implican que tiene una versión de trabajo de AEM ya implementado. El procedimiento está pensado para documentar las actualizaciones realizadas desde **AEM versión 5.6 a 6.3**.
 
-1. Primero, inicie JBoss. En la mayoría de los casos, puede hacerlo ejecutando el script de inicio `standalone.sh`, ejecutando este comando desde el terminal:
+1. Primero, inicie JBoss. En la mayoría de los casos, puede hacerlo ejecutando el `standalone.sh` ejecute este comando desde el terminal:
 
    ```shell
    jboss-install-folder/bin/standalone.sh
@@ -71,9 +74,9 @@ Todos los ejemplos de este procedimiento utilizan JBoss como servidor de aplicac
 
 1. Elimine los archivos y carpetas que ya no sean necesarios. Los elementos que debe eliminar específicamente son:
 
-   * **launchpad/startup folder**. Puede eliminarlo ejecutando el siguiente comando en el terminal: `rm -rf crx-quickstart/launchpad/startup`
-   * El **archivo base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
-   * El archivo **BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * La variable **carpeta de inicio/panel de lanzamiento**. Puede eliminarlo ejecutando el siguiente comando en el terminal: `rm -rf crx-quickstart/launchpad/startup`
+   * La variable **archivo base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
+   * La variable **Archivo BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
 1. Copie el almacén de segmentos recién migrado a su ubicación correcta:
 
@@ -87,9 +90,9 @@ Todos los ejemplos de este procedimiento utilizan JBoss como servidor de aplicac
    mv crx-quickstart/repository/repository/datastore crx-quickstart/repository/datastore
    ```
 
-1. A continuación, debe crear la carpeta que contendrá las configuraciones de OSGi que se utilizarán con la nueva instancia actualizada. Más específicamente, una carpeta denominada install debe crearse en **crx-quickstart**.
+1. A continuación, debe crear la carpeta que contendrá las configuraciones de OSGi que se utilizarán con la nueva instancia actualizada. Más específicamente, debe crearse una carpeta denominada install en **crx-quickstart**.
 
-1. Ahora, cree el almacén de nodos y el almacén de datos que se utilizarán con AEM 6.3. Para ello, cree dos archivos con los nombres siguientes en **crx-quickstart\install**:
+1. Ahora, cree el almacén de nodos y el almacén de datos que se utilizarán con AEM 6.3. Puede hacerlo creando dos archivos con los nombres siguientes en **crx-quickstart\install**:
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
 
@@ -99,7 +102,7 @@ Todos los ejemplos de este procedimiento utilizan JBoss como servidor de aplicac
 
 1. Edite los archivos de configuración para que estén listos para su uso. Más específicamente:
 
-   * Agregue la línea siguiente a **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:
+   * Añada la línea siguiente a **org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**:
 
       `customBlobStore=true`
 
@@ -116,13 +119,13 @@ Todos los ejemplos de este procedimiento utilizan JBoss como servidor de aplicac
    find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \
    ```
 
-1. Ahora necesita cambiar los modos de ejecución en el archivo war AEM 6.3. Para ello, primero cree una carpeta temporal que aloje la guerra de AEM 6.3. El nombre de la carpeta en este ejemplo será **temp**. Una vez copiado el archivo war, extraiga su contenido ejecutándolo desde la carpeta temporal:
+1. Ahora necesita cambiar los modos de ejecución en el archivo war AEM 6.3. Para ello, primero cree una carpeta temporal que aloje la guerra de AEM 6.3. El nombre de la carpeta en este ejemplo es **temp**. Una vez copiado el archivo war, extraiga su contenido ejecutándolo desde la carpeta temporal:
 
    ```shell
    jar xvf aem-quickstart-6.3.0.war
    ```
 
-1. Una vez extraído el contenido, vaya a la carpeta **WEB-INF** y edite el archivo `web.xml` para cambiar los modos de ejecución. Para encontrar la ubicación donde se establecen en el XML, busque la cadena `sling.run.modes`. Una vez que lo encuentre, cambie los modos de ejecución en la siguiente línea de código, que de forma predeterminada está configurada como autor:
+1. Una vez extraído el contenido, vaya a la **WEB-INF** y edite la `web.xml` para cambiar los modos de ejecución. Para buscar la ubicación donde están configurados en el XML, busque la variable `sling.run.modes` cadena. Una vez que lo encuentre, cambie los modos de ejecución en la siguiente línea de código, que de forma predeterminada está configurada como autor:
 
    ```shell
    <param-value >author</param-value>
@@ -150,4 +153,3 @@ Todos los ejemplos de este procedimiento utilizan JBoss como servidor de aplicac
    ```shell
    cp temp/aem62.war jboss-install-folder/standalone/deployments/aem61.war
    ```
-

@@ -1,5 +1,5 @@
 ---
-title: Supervisión de las implementaciones de formularios AEM
+title: Supervisar las implementaciones de AEM Forms
 seo-title: Monitoring AEM forms deployments
 description: Puede supervisar las implementaciones de formularios AEM desde un nivel de sistema y desde un nivel interno. Obtenga más información sobre la supervisión de las implementaciones de formularios AEM en este documento.
 seo-description: You can monitor AEM forms deployments from both a system level and an internal level. Learn more about monitoring AEM forms deployments from this document.
@@ -10,14 +10,18 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
 exl-id: d2cd532b-4086-4553-ac26-f311da6d5ca9
-source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '614'
-ht-degree: 0%
+source-wordcount: '650'
+ht-degree: 2%
 
 ---
 
-# Supervisión de las implementaciones de formularios AEM {#monitoring-aem-forms-deployments}
+# Supervisar las implementaciones de AEM Forms {#monitoring-aem-forms-deployments}
+
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Puede supervisar las implementaciones de formularios AEM desde un nivel de sistema y desde un nivel interno. Puede utilizar herramientas de administración especializadas como HP OpenView, IBM Tivoli y CA UniCenter, así como un monitor JMX de terceros denominado *JConsole* para monitorizar específicamente la actividad de Java. La implementación de una estrategia de monitorización mejora la disponibilidad, fiabilidad y rendimiento de las implementaciones de formularios AEM.
 

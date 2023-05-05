@@ -1,28 +1,31 @@
 ---
 title: Guía rápida de WCAG 2.0
-seo-title: Guía rápida de WCAG 2.0
-description: Lea una breve descripción general de las directrices de accesibilidad de WCAG 2.0.
-seo-description: Lea una breve descripción general de las directrices de accesibilidad de WCAG 2.0.
+seo-title: Quick Guide to WCAG 2.0
+description: Lea información general rápida sobre las directrices de accesibilidad de WCAG 2.0.
+seo-description: Read a quick overview of the WCAG 2.0 accessibility guidelines.
 uuid: a5cf463e-89e9-4cc0-9c91-69a1fd3d8ea2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing-accessibility
 content-type: reference
 discoiquuid: 3cac0e34-7514-48ce-a93b-592bbdbcd252
-translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+exl-id: 80edcd53-bc3c-4f61-8dfb-c592e7e51f60
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1708'
 ht-degree: 82%
 
 ---
 
+# Guía rápida de WCAG 2.0{#quick-guide-to-wcag}
 
-# Guía rápida para WCAG 2.0{#quick-guide-to-wcag}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
-AEM se ha desarrollado para maximizar el cumplimiento con las directrices de accesibilidad del contenido web:
+AEM se ha desarrollado para maximizar el cumplimiento de las directrices de accesibilidad del contenido web:
 
-Las [Pautas de Accesibilidad al Contenido Web versión 2.0 (WCAG2)](https://www.w3.org/TR/WCAG/) son un conjunto de directrices internacionalmente reconocidas desarrolladas por el [Consorcio World Wide Web (W3C)](https://www.w3.org/) bajo su [Iniciativa de Accesibilidad Web (WAI)](https://www.w3.org/WAI/).
+La variable [Directrices de accesibilidad del contenido web versión 2.0 (WCAG2)](https://www.w3.org/TR/WCAG/) son un conjunto de directrices internacionalmente reconocidas elaboradas por el [World Wide Web Consortium (W3C)](https://www.w3.org/) en su [Iniciativa de accesibilidad web (WAI)](https://www.w3.org/WAI/).
 
 WCAG 2.0 consiste en un conjunto de directrices tecnológicas independientes y criterios de éxito para ayudar a crear contenido web accesible para, y utilizable por, personas con discapacidades. Brindan asesoramiento a autores, diseñadores y desarrolladores de contenido web para garantizar que los recursos que producen sean lo suficientemente accesibles para la mayor cantidad de personas, independientemente de cualquier discapacidad que tengan; por ejemplo, problemas visuales o auditivos, dificultades de aprendizaje, limitaciones relacionadas con la edad, entre otras.
 
@@ -36,17 +39,17 @@ Por lo tanto, comprender los objetivos de WCAG 2.0 y cómo se estructuran las di
 
 La intención de WCAG 2.0 es proporcionar directrices que:
 
-* Son **tecnológicamente agnósticos:**
+* Son **independiente de la tecnología:**
 
-   En otras palabras, las directrices que pueden aplicarse a una amplia gama de formatos de contenido web, no solo a HTML. Por lo tanto, WCAG 2.0 puede cubrir el contenido generado o provisto por PDF, Flash, JavaScript y otras tecnologías web actuales y futuras. Este objetivo es abordar una debilidad reconocida de WCAG 1.0, ya que se centró en HTML a expensas de otros formatos de contenido web.
+   En otras palabras, las directrices que se pueden aplicar a una amplia gama de formatos de contenido web, no solo al HTML. Por lo tanto, WCAG 2.0 puede cubrir el contenido generado o provisto por PDF, Flash, JavaScript y otras tecnologías web actuales y futuras. El objetivo de esto es abordar una debilidad reconocida de WCAG 1.0, ya que se centró en el HTML a expensas de otros formatos de contenido web.
 
-* Son **comprobables:**
+* Son **comprobable:**
 
-   Cada directriz está redactada de manera que pueda probarse objetivamente para garantizar que un grupo de expertos en accesibilidad esté generalmente de acuerdo en que se ha cumplido la directriz. Uno de los problemas de las directrices de accesibilidad es que, si bien algunas se pueden probar técnicamente, otras requieren del criterio humano para determinar si la directriz se ha cumplido o no con éxito. WCAG 2.0 se ha escrito con el objetivo de reducir la subjetividad presente en algunas de las directrices y puntos de comprobación de WCAG 1.0.
+   Cada directriz está redactada de manera que pueda probarse objetivamente para garantizar que un grupo de expertos en accesibilidad esté de acuerdo en general en que se ha cumplido la directriz. Uno de los problemas de las directrices de accesibilidad es que, si bien algunas se pueden probar técnicamente, otras requieren del criterio humano para determinar si la directriz se ha cumplido o no con éxito. WCAG 2.0 se ha escrito con el objetivo de reducir la subjetividad presente en algunas de las directrices y puntos de comprobación de WCAG 1.0.
 
 * Apoyar la **implementación contextual y priorizada:**
 
-   Al igual que en el caso de WCAG 1.0, las directrices de WCAG 2.0 tienen prioridad, en relación con el posible impacto de no seguir una directriz sobre un grupo particular de usuarios con discapacidad. Esto permite a los autores tomar una decisión informada sobre las directrices más importantes para su situación particular. Además, se introduce el concepto de *accesibilidad compatible*. Esto permite a los autores tomar decisiones sobre la mejor manera de utilizar tecnologías web que pueden no tener una compatibilidad de accesibilidad completa, o pueden requerir que los usuarios tengan tecnologías de asistencia y/o exploradores específicos para beneficiarse de las características de accesibilidad.
+   Al igual que con WCAG 1.0, las directrices WCAG 2.0 tienen prioridad en relación con el posible efecto de no seguir una directriz sobre un grupo determinado de usuarios con discapacidades. Esto permite a los autores tomar una decisión informada sobre las directrices más importantes para su situación particular. Además, se introduce el concepto de *accesibilidad compatible*. Esto permite a los autores tomar decisiones sobre la mejor manera de utilizar tecnologías web que pueden no tener una compatibilidad de accesibilidad completa, o pueden requerir que los usuarios tengan tecnologías de asistencia y/o exploradores específicos para beneficiarse de las características de accesibilidad.
 
 Estos objetivos han influido de manera significativa en la estructura de WCAG 2.0.
 
@@ -56,20 +59,20 @@ Estos objetivos han influido de manera significativa en la estructura de WCAG 2.
 
 >[!NOTE]
 >
->Si está familiarizado con WCAG 1.0, notará algunos cambios en WCAG 2.0. Se refieren al alcance, la organización y el objetivo.
+>Si está familiarizado con WCAG 1.0, notará algunos cambios en WCAG 2.0. Se refieren al ámbito, la organización y el objetivo.
 
 ## Estructura {#structure}
 
 WCAG 2.0 se estructura de manera que introduce conceptos de creación de contenido web accesible de manera progresiva y detallada. Esto puede dar la impresión de que WCAG 2.0 es un conjunto muy complejo de documentos interrelacionados, pero el objetivo es proporcionar (progresivamente) información más detallada a medida que los autores la necesiten, en lugar de proporcionarla en un documento muy grande.
 
-WCAG 2.0 consta de cuatro principios fundamentales para el diseño accesible. Estos son:
+WCAG 2.0 consta de cuatro principios clave para un diseño accesible. Estos son:
 
 1. **Perceptible**: ¿puede un usuario percibir el contenido web en cuestión?
 1. **Operable**: ¿puede un usuario navegar, introducir datos o interactuar de otro modo con el contenido web?
 1. **Comprensible**: ¿puede un usuario procesar y comprender el contenido web que se le presenta?
 1. **Sólido**: ¿está disponible el contenido web de la forma prevista en una amplia gama de entornos de navegación, incluidos los entornos de navegación antiguos y emergentes?
 
-Estos principios son a veces mencionados por el acrónimo POUR.
+A veces estos principios se mencionan en el acrónimo POUR.
 
 * Cada **principio** consiste en una o más **directrices**.
 
@@ -91,7 +94,7 @@ Si bien WCAG 2.0 es un documento estable y no cambiará, la mayoría de estos re
 
 ### Recursos WCAG 2.0 {#wcag-resources}
 
-* [Un esquema de todos los documentos](https://www.w3.org/WAI/intro/wcag.php) relacionados con WCAG 2.0;
+* [Esquema de todos los documentos relacionados con WCAG 2.0](https://www.w3.org/WAI/intro/wcag.php);
 * [Explicación de cómo se relacionan los distintos componentes entre sí](https://www.w3.org/WAI/intro/wcag20);
 * [Preguntas frecuentes sobre WCAG 2.0](https://www.w3.org/WAI/WCAG20/wcag2faq.html);
 

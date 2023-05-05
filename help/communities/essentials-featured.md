@@ -1,30 +1,33 @@
 ---
-title: Elementos esenciales del contenido destacado
-seo-title: Elementos esenciales del contenido destacado
-description: Uso del contenido de las funciones
-seo-description: Uso del contenido de las funciones
+title: Elementos esenciales de contenido destacado
+seo-title: Featured Content Essentials
+description: Trabajo con contenido de funciones
+seo-description: Working with feature content
 uuid: b376828a-1431-4d16-ad6b-b23a3ea62a75
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
-translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+exl-id: 4805db0f-18d2-4bbc-a4d6-eaafa7a4c152
+source-git-commit: c5b816d74c6f02f85476d16868844f39b4c47996
 workflow-type: tm+mt
-source-wordcount: '113'
-ht-degree: 6%
+source-wordcount: '142'
+ht-degree: 10%
 
 ---
 
+# Elementos esenciales de contenido destacado {#featured-content-essentials}
 
-# Elementos esenciales del contenido destacado {#featured-content-essentials}
+>[!CAUTION]
+>
+>AEM 6.4 ha llegado al final de la compatibilidad ampliada y esta documentación ya no se actualiza. Para obtener más información, consulte nuestra [períodos de asistencia técnica](https://helpx.adobe.com/es/support/programs/eol-matrix.html). Buscar las versiones compatibles [here](https://experienceleague.adobe.com/docs/).
 
 Esta página proporciona la información esencial para trabajar con contenido destacado.
 
-A diferencia de fijar una publicación en la parte superior de un foro, esta función permite resaltar contenido en cualquier parte del sitio de la comunidad.
+A diferencia de fijar una publicación en la parte superior de un foro, esta función permite que el contenido se resalte en cualquier parte dentro del sitio de la comunidad.
 
-## Esenciales para el cliente {#essentials-for-client-side}
+## Elementos esenciales para el cliente {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -59,4 +62,4 @@ A diferencia de fijar una publicación en la parte superior de un foro, esta fun
 
 ### Función Biblioteca del archivo {#file-library-function}
 
-Una estructura de sitio de comunidad que incluye la [función Contenido destacado](functions.md#featured-content-function), incluye un componente configurado `featured content`.
+Una estructura de sitio de la comunidad que incluye el [Función Contenido destacado](functions.md#featured-content-function), incluye un `featured content` componente.
